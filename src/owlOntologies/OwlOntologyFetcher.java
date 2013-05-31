@@ -31,6 +31,7 @@ import org.semanticweb.owlapi.util.SimpleIRIMapper;
 
 public class OwlOntologyFetcher {
 	
+	static OWLOntologyID currentOntologyID;
 	
 	public OwlOntologyFetcher(){
 		
@@ -40,33 +41,67 @@ public class OwlOntologyFetcher {
 	public static void main(String[] args){
 		OwlOntologyFetcher owl = new OwlOntologyFetcher();
 		try {
-			OWLOntologyManager manager = owl.loadOntologyFromFile("/home/nicholas/Desktop/temp/matr.owl");
-			OWLOntology ontology = manager.getOntologies().iterator().next();
-			ArrayList<OWLClass> classes = owl.getNamesOfClasses(ontology);
 			
-			System.out.println( "classes to test are : " +  classes.get(0).toString() + " " +  classes.get(1).toString());
-			owl.shouldAddSubclassAxiom(manager, classes.get(0), classes.get(1));
-			System.out.println(owl.isSuperClass(manager, classes.get(0), classes.get(1)));
-			System.out.println(owl.isSuperClass(manager, classes.get(1), classes.get(0)));
+			//TEST 1 start   passes 5/31/13
+//			OWLOntologyManager manager = owl.loadOntologyFromFile("/home/nicholas/research/Experiments/DataONEjava/ontologies/matr.owl");
+//			OWLOntology ontology = manager.getOntologies().iterator().next();
+//			ArrayList<OWLClass> classes = owl.getClasses(ontology);
+//			
+//			System.out.println( "classes to test are : " +  classes.get(0).toString() + " " +  classes.get(1).toString());
+//			owl.shouldAddSubclassAxiom(manager, classes.get(0), classes.get(1));
+//			
+//			System.out.println(owl.isSuperClass(manager, classes.get(0), classes.get(1)));  //should be true
+//			System.out.println(owl.isSuperClass(manager, classes.get(1), classes.get(0)));  //should be false
+			//TEST 1 end
 			
 			
+			//TEST 2 start   passes 5/31/13
+//			OWLOntologyManager manager = owl.loadOntologyFromFile("/home/nicholas/research/Experiments/DataONEjava/ontologies/human.owl");
+//			OWLOntology ontology = manager.getOntology(currentOntologyID);
+//			ArrayList<String> classNames = owl.getNamesOfClasses(ontology);
+//			//classes should contain: Behavior, CivilDisturbance, HumanActivity, WaterHeating (this is just a sample)
+//			if ( classNames.contains("Behavior") &&classNames.contains("CivilDisturbance") &&classNames.contains("HumanActivity") && classNames.contains("WaterHeating") )
+//				System.out.println("contains the correct classes");
+//			else
+//				System.out.println("missing classes");
+//
+//			//SpaceHeating is a subclass of EnergyEndUse
+//			//EnergyEndUse is a subclass of HumanActivity
+//			//SocialBehavior is a subclass of SocialActivity
+//			//these are just a sampling			
+//			ArrayList<OWLClass> classes = owl.getClasses(ontology);
+//			for(int i =0; i < classes.size(); i++){	
+//				Set<OWLClassExpression> superClasses = classes.get(i).getSuperClasses(ontology);
+//				System.out.println(classes.get(i) + ": " + superClasses.toString());
+//			}
+			//TEST 2 end
 			
-			
+
 		} catch (Exception e) {
-			System.out.println("hrmmm");
+			e.printStackTrace();
 		}
 	}
 	
 	
 	//given an ontology it will return the classes as an arrayList of classes.  note that the commented out line will return the name of the classes without the prefix
-	public ArrayList<OWLClass> getNamesOfClasses(OWLOntology ontology){
+	public ArrayList<OWLClass> getClasses(OWLOntology ontology){
 		
 		ArrayList<OWLClass> classes = new ArrayList<OWLClass>();
 		for (OWLClass cls : ontology.getClassesInSignature())
-			//classes.add( cls.getIRI().getFragment() );
 			classes.add(cls);
 		return classes;
 	}
+	
+	//given an ontology it will return the classes as an arrayList of classes.  this in contrast only returns the class names...this is for testing purposes
+	public ArrayList<String> getNamesOfClasses(OWLOntology ontology){
+		
+		ArrayList<String> classes = new ArrayList<String>();
+		for (OWLClass cls : ontology.getClassesInSignature())
+			classes.add( cls.getIRI().getFragment() );
+			
+		return classes;
+	}
+	
 	
 	//loads an ontology and returns the manager for it
 	public OWLOntologyManager loadOntologyFromURL(String URL) throws OWLOntologyCreationException{
@@ -76,6 +111,8 @@ public class OwlOntologyFetcher {
 		IRI iri = IRI.create(URL);
 		OWLOntology URLOntology = manager.loadOntologyFromOntologyDocument(iri);
 		System.out.println("Loaded ontology: " + URLOntology);
+		currentOntologyID =  URLOntology.getOntologyID();
+		
 		return manager;
 		
 		
@@ -85,14 +122,13 @@ public class OwlOntologyFetcher {
 	public OWLOntologyManager loadOntologyFromFile(String filePath) throws OWLOntologyCreationException{
 		// Get hold of an ontology manager
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		// We can also load ontologies from files. Download the pizza ontology
-		// from http://www.co-ode.org/ontologies/pizza/pizza.owl and put it
-		// somewhere on your hard drive Create a file object that points to the
-		// local copy
+		// We can also load ontologies from files.
 		File file = new File(filePath);
 		// Now load the local copy
 		OWLOntology fileOntology = manager.loadOntologyFromOntologyDocument(file);
 		System.out.println("Loaded ontology: " + fileOntology);
+		
+		currentOntologyID =  fileOntology.getOntologyID();
 		return manager;
 		
 	}
@@ -146,6 +182,8 @@ public class OwlOntologyFetcher {
 		manager.applyChange(setOntologyID);
 		System.out.println("Ontology: " + ontology);
 		
+		currentOntologyID = ontology.getOntologyID();//set the global field for ontologies
+		
 		return manager;
 		
 	}
@@ -155,7 +193,7 @@ public class OwlOntologyFetcher {
 	//this method takes two classes and an ontology manager, and creates an axiom where a is a subclass of b
 	//@param manager: the manager can only have ONE ontology in it. 
 	public void shouldAddSubclassAxiom(OWLOntologyManager manager, OWLClass classA, OWLClass classB) throws OWLOntologyCreationException,OWLOntologyStorageException {
-		OWLOntology ontology = manager.getOntologies().iterator().next(); //we assert here that the manager only has ONE ontology within it
+		OWLOntology ontology = manager.getOntology(currentOntologyID); 
 			
 		// Now we want to specify that A is a subclass of B. To do this, we add
 		// a subclass axiom. A subclass axiom is simply an object that specifies
@@ -181,7 +219,7 @@ public class OwlOntologyFetcher {
 	public void shouldCreatePropertyAssertions(OWLOntologyManager manager, OWLObjectProperty prop, OWLNamedIndividual name0, 
 			OWLNamedIndividual name1) throws OWLOntologyStorageException, OWLOntologyCreationException {
 		
-		OWLOntology ontology = manager.getOntologies().iterator().next(); //we assert here that the manager only has ONE ontology within it
+		OWLOntology ontology = manager.getOntology(currentOntologyID);
 			
 		// Get hold of a data factory from the manager and set up a prefix
 		// manager to make things easier
@@ -202,7 +240,7 @@ public class OwlOntologyFetcher {
 			throws OWLOntologyCreationException,OWLOntologyStorageException {
 		
 		
-		OWLOntology ontology = manager.getOntologies().iterator().next(); //we assert here that the manager only has ONE ontology within it
+		OWLOntology ontology = manager.getOntology(currentOntologyID);
 		String base = ontology.getOntologyID().getOntologyIRI().getNamespace(); //this returns the prefix for the given class
 		OWLDataFactory dataFactory = manager.getOWLDataFactory();
 		// Now create a ClassAssertion to specify that name is an instance of cls
@@ -220,7 +258,7 @@ public class OwlOntologyFetcher {
 	
 	//given two classes within an ongology, return true if classA is a subclass of class B.  in other words, b is an ASSERTED superclass of A
 	public boolean isSuperClass(OWLOntologyManager manager, OWLClass classA, OWLClass classB){
-		OWLOntology ontology = manager.getOntologies().iterator().next(); //we assert here that the manager only has ONE ontology within it
+		OWLOntology ontology = manager.getOntology(currentOntologyID);
 		
 		Set<OWLClassExpression> superClasses = classA.getSuperClasses(ontology);
 		return superClasses.contains(classB);
