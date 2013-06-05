@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY sstate "http://sweet.jpl.nasa.gov/2.3/stateSolid.owl#">    
+   <!ENTITY pstate "http://sweet.jpl.nasa.gov/2.3/statePhysical.owl#">    
+   <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl#">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&sstate;"
+   xmlns:sstate = "&sstate;"
+   xmlns:rela = "&rela;"
+   xmlns:pstate = "&pstate;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/statePhysical.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/rela.owl"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#SolidSt">
+    <rdfs:subClassOf rdf:resource="&pstate;PhysicalState"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;hasState" />
+        <owl:hasValue rdf:resource="&pstate;Solid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <sstate:SolidState rdf:about="#Amorphous">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Consolid"/>
+
+  <sstate:SolidState rdf:about="#Unconsolid">
+    <owl:differentFrom rdf:resource="#Consolid"/>
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Brittl">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Crush">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Compress">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Crush">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Crystal">
+    <owl:sameAs rdf:resource="#Crystallin"/>
+    <owl:sameAs rdf:resource="#CrystalStructur"/>
+  </sstate:SolidState>
+  <sstate:SolidState rdf:about="#Crystallin"/>
+  <sstate:SolidState rdf:about="#CrystalStructur"/>
+
+  <sstate:SolidState rdf:about="#Crystal">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Deform">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Detrit">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Ductil">
+    <owl:differentFrom rdf:resource="#Brittl"/>
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Elastic">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Fibrous">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Fragment">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Granular">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Hard">
+    <owl:sameAs rdf:resource="#Harden"/>
+  </sstate:SolidState>
+  <sstate:SolidState rdf:about="#Harden"/>
+
+  <sstate:SolidState rdf:about="#Indurat">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Metamorphos">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Molten">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Muddi">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Pit">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Plastic">
+    <owl:differentFrom rdf:resource="#Elastic"/>
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Polycrystallin">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Powder">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Rigid">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Rough">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Shatter">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Soft">
+    <owl:sameAs rdf:resource="#Soften"/>
+  </sstate:SolidState>
+  <sstate:SolidState rdf:about="#Soften"/>
+
+  <sstate:SolidState rdf:about="#Solidifi">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Stiff">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Superhard">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Viscoelast">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Refractori">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#FineStructur"/>
+
+  <sstate:SolidState rdf:about="#Microstructur"/>
+
+  <sstate:SolidState rdf:about="#Clastic">
+  </sstate:SolidState>
+
+  <sstate:SolidState rdf:about="#Flake">
+  </sstate:SolidState>
+
+</rdf:RDF>

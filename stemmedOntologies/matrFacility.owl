@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY struc "http://sweet.jpl.nasa.gov/2.3/matrFacility.owl">
+  <!ENTITY infr "http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl">
+  <!ENTITY hum "http://sweet.jpl.nasa.gov/2.3/relaHuman.owl">
+  <!ENTITY tran "http://sweet.jpl.nasa.gov/2.3/humanTransportation.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&struc;"
+         xmlns:infr="&infr;"
+         xmlns:tran="&tran;"
+         xmlns:struc="&struc;"
+         xmlns:hum="&hum;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&infr;"/>   
+     <owl:imports rdf:resource="&tran;"/>   
+     <owl:imports rdf:resource="&hum;"/>   
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Base">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Build">
+    <rdfs:subClassOf rdf:resource="#Structur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CulturalFeatur">
+    <rdfs:subClassOf rdf:resource="#Structur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Dome">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Facil">
+    <rdfs:subClassOf rdf:resource="#Structur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Habitat">
+    <rdfs:subClassOf rdf:resource="#Build"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Platform">
+    <rdfs:subClassOf rdf:resource="#Structur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Station">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Structur">
+    <rdfs:subClassOf rdf:resource="&infr;#Infrastructur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeteorologicalFacil">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Meteost">
+    <rdfs:subClassOf rdf:resource="#MeteorologicalFacil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CommunicationFacil">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TransportationFacil">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+<!-- Farm -->
+  <owl:Class rdf:about="#AgriculturalProductionFacil">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Farm">
+    <rdfs:subClassOf rdf:resource="#AgriculturalProductionFacil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Fisheri">
+    <rdfs:subClassOf rdf:resource="#AgriculturalProductionFacil"/>
+  </owl:Class>
+
+   <owl:Class rdf:about="#Plantat">
+    <rdfs:subClassOf rdf:resource="#Farm"/>
+   </owl:Class>
+
+<!-- Airport -->
+  <owl:Class rdf:about="#Airport">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirportFacil">
+    <rdfs:subClassOf rdf:resource="#Facil" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&hum;#hasHumanAct" />
+        <owl:allValuesFrom rdf:resource="&tran;#AirTraff" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirTrafficControlCent">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirTrafficControlEnRouteCent">
+    <rdfs:subClassOf rdf:resource="#AirTrafficControlCent" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirTrafficControlRadarRoom">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirTrafficControlTow">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#AirTransitway">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Runway">
+    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  </owl:Class>
+
+<!-- Undergraound -->
+  <owl:Class rdf:about="#Mine">
+    <rdfs:subClassOf rdf:resource="#MiningFacil"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MiningFacil">
+    <rdfs:subClassOf rdf:resource="#Facil"/>
+  </owl:Class>
+
+</rdf:RDF>

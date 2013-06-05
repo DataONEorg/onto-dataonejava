@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY proc "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl">
+  <!ENTITY space "http://sweet.jpl.nasa.gov/2.3/propSpace.owl">  
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl">  
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">  
+  <!ENTITY mass "http://sweet.jpl.nasa.gov/2.3/propMass.owl">  
+  <!ENTITY units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY xten "http://sweet.jpl.nasa.gov/2.3/propSpaceDistance.owl">
+  <!ENTITY wavep "http://sweet.jpl.nasa.gov/2.3/procWave.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&xten;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:xten="&xten;"
+         xmlns:wavep="&wavep;"
+         xmlns:prop="&prop;"
+         xmlns:quan="&quan;"
+         xmlns:mass="&mass;"
+         xmlns:proc="&proc;"
+         xmlns:space="&space;"
+         xmlns:units="&units;"
+         xmlns:screla="&screla;"
+         xmlns:mrela="&mrela;"
+         xmlns:rela="&rela;"
+>
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&proc;"/>
+     <owl:imports rdf:resource="&wavep;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&quan;"/>
+     <owl:imports rdf:resource="&mass;"/>
+     <owl:imports rdf:resource="&units;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&space;"/>
+  </owl:Ontology>
+  
+  <owl:Class rdf:about="#Size">
+    <rdfs:subClassOf rdf:resource="&space;#SpatialExt"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SizeRang">
+    <rdfs:subClassOf rdf:resource="&space;#SpatialExt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
+        <owl:someValuesFrom rdf:resource="#Size"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SizeRange_micron">
+   <rdfs:subClassOf rdf:resource="#SizeRang"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#micron"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DistanceRang">
+    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
+        <owl:someValuesFrom rdf:resource="#Distanc"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DistanceRange_km">
+   <rdfs:subClassOf rdf:resource="#DistanceRang"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilomet"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Rang">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Length">
+    <rdfs:subClassOf rdf:resource="&space;#SpatialExt"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Distanc">
+    <rdfs:subClassOf rdf:resource="#Length"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeanFreePath">
+    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
+    <rdfs:subClassOf rdf:resource="#Distanc" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&proc;#Collis"/>
+        <owl:onProperty rdf:resource="&rela;#hasProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Wavelength">
+    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Wavelength_nm">
+    <rdfs:subClassOf rdf:resource="#Wavelength"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#nanomet"/>
+        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Wavelength_cm">
+    <rdfs:subClassOf rdf:resource="#Wavelength"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#centimet"/>
+        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WavelengthBand">
+    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
+        <owl:allValuesFrom rdf:resource="#Wavelength"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WavelengthBand_nm">
+    <rdfs:subClassOf rdf:resource="#WavelengthBand"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#nanomet"/>
+        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Fetch">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PulseLength">
+    <rdfs:subClassOf rdf:resource="#Length"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DebyeLength">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+    <owl:equivalentClass rdf:resource="#DebyeScreeningLength"/>
+  </owl:Class>
+  <owl:Class rdf:about="#DebyeScreeningLength"/>
+
+  <owl:Class rdf:about="#RossbyRadiusOfDeform">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MixingLength">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ObukhovLength">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Gyroradius">
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+    <owl:equivalentClass rdf:resource="#CyclotronRadius"/>
+    <owl:equivalentClass rdf:resource="#LarmorRadius"/>
+  </owl:Class>
+  <owl:Class rdf:about="#CyclotronRadius"/>
+  <owl:Class rdf:about="#LarmorRadius"/>
+
+  <owl:Class rdf:about="#GrainSiz">
+    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Visibl">
+    <rdfs:subClassOf rdf:resource="&prop;#RadiationMediumInteractionProperti"/>
+    <rdfs:subClassOf rdf:resource="#Distanc"/>
+    <rdfs:comment xml:lang="en">The greatest distance in a given direction at which it is just possible to see and identify with the unaided eye</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Dispers">
+    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DispersionCoeffienct">
+    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#measureOf" />
+        <owl:someValuesFrom rdf:resource="#Dispers" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+<!-- per Distance -->
+  <owl:Class rdf:about="#PerMeterQuant">
+    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#perMet"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialFrequ">
+    <rdfs:subClassOf rdf:resource="#PerMeterQuant"/>
+    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ScatteringCoeffici">
+    <rdfs:subClassOf rdf:resource="#SpatialFrequ"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProcess" />
+        <owl:allValuesFrom rdf:resource="&wavep;#Scatter" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A measure of the extinction due to scattering of monochromatic radiation as it traverses a medium containing scattering particles.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExtinctionCoeffici">
+    <rdfs:subClassOf rdf:resource="#SpatialFrequ"/>
+    <owl:equivalentClass rdf:resource="#AttenuationCoeffici" />
+    <rdfs:comment>The extinction coefficient for a particular substance is a measure of how well it scatters and absorbs electromagnetic radiation (EM waves). If the EM wave can pass through very easily, the material has a low extinction coefficient. Conversely, if the radiation hardly penetrates the material, but rather quickly becomes extinct within it, the extinction coefficient is high.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#AttenuationCoeffici"/>
+
+  <owl:Class rdf:about="#WaveNumb">
+    <rdfs:subClassOf rdf:resource="#PerMeterQuant"/>
+    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CompactionCoeffici">
+    <rdfs:subClassOf rdf:resource="#PerMeterQuant"/>
+  </owl:Class>
+
+</rdf:RDF>

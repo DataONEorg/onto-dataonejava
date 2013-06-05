@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+   <!ENTITY sys "http://sweet.jpl.nasa.gov/2.3/phenSystem.owl">   
+   <!ENTITY mod "http://sweet.jpl.nasa.gov/2.3/reprSciModel.owl">   
+   <!ENTITY phen "http://sweet.jpl.nasa.gov/2.3/phen.owl">
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF
+    xml:base = "&sys;"
+    xmlns:phen = "&phen;"
+    xmlns:sys = "&sys;"
+    xmlns:mod = "&mod;"
+    xmlns:owl = "&owl;"
+    xmlns:rdf = "&rdf;"
+    xmlns:rdfs = "&rdfs;"
+    xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+    <owl:imports rdf:resource = "&mod;"/>
+    <owl:imports rdf:resource = "&phen;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#System">
+    <rdfs:subClassOf rdf:resource="&mod;#Model"/>
+    <rdfs:comment> System is a set of interacting or interdependent entities, real or abstract, forming an integrated whole.
+    </rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Chang">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Displac">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Disrupt">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Disturb">
+    <rdfs:subClassOf rdf:resource="#Variat" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Exchang">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Flow">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Interact">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+    <rdfs:comment>process that multiple substances are in contact and have some consequence</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Interrupt">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SystemStateChang">
+    <rdfs:subClassOf rdf:resource="#Chang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Demand">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SystemPhenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Drift">
+    <rdfs:subClassOf rdf:resource="#Trend" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Shift">
+    <rdfs:subClassOf rdf:resource="#Trend" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Trend">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Lag">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Stress">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Convers">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+<!-- System growth -->
+  <owl:Class rdf:about="#Return">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Comeback">
+    <rdfs:subClassOf rdf:resource="#Return"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Accumul">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Deposit">
+    <rdfs:subClassOf rdf:resource="#Accumul" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Extension">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Inundat">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Growth">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Increas">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+    <owl:equivalentClass rdf:resource="#Rise"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Rise"/>
+  
+  <owl:Class rdf:about="#Replenish">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Collect">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+<!-- System loss -->
+  <owl:Class rdf:about="#Remov">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Loss">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Destruct">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Decreas">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+    <owl:equivalentClass rdf:resource="#Drop"/>
+    <owl:equivalentClass rdf:resource="#Fall"/>
+    <owl:equivalentClass rdf:resource="#Declin"/>
+    <owl:equivalentClass rdf:resource="#Reduct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Drop"/>
+  <owl:Class rdf:about="#Fall"/>
+  <owl:Class rdf:about="#Declin"/>
+  <owl:Class rdf:about="#Reduct"/>
+  
+  <owl:Class rdf:about="#Halt">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Retreat">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Oscillat">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Perturb">
+    <rdfs:subClassOf rdf:resource="#Variat" />
+    <rdfs:comment xml:lang="en">Any departure introduced into an assumed steady state of a system.   The magnitude is often assumed to be small so that product terms in the dependent variables may be neglected.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Vacil">
+    <rdfs:subClassOf rdf:resource="#Oscillat" />
+    <rdfs:comment xml:lang="en">Oscillation, usually of a small amplitude, about a reference state.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Variabl">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Variat">
+    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Recycl">
+    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  </owl:Class>
+
+</rdf:RDF>

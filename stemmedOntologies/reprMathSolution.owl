@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY math "http://sweet.jpl.nasa.gov/2.3/reprMath.owl">
+  <!ENTITY res "http://sweet.jpl.nasa.gov/2.3/humanResearch.owl">
+  <!ENTITY sol "http://sweet.jpl.nasa.gov/2.3/reprMathSolution.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF 
+   xml:base = "&sol;"
+   xmlns:math = "&math;"
+   xmlns:res = "&res;"
+   xmlns:sol = "&sol;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&math;"/>
+     <owl:imports rdf:resource="&res;"/>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="#Algorithm">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AlgebraicSolut">
+    <rdfs:subClassOf rdf:resource="#AnalyticalSolut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AnalyticalSolut">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Approxim">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BreadthFirstSearch">
+    <rdfs:subClassOf rdf:resource="#Search"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DepthFirstSearch">
+    <rdfs:subClassOf rdf:resource="#Search"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DivideAndConqu">
+    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DynamicProgram">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExhaustiveSearch">
+    <rdfs:subClassOf rdf:resource="#Search"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Expansion">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FlowChart">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GeneticAlgorithm">
+    <rdfs:subClassOf rdf:resource="#HeuristicAlgorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HeuristicAlgorithm">
+    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Iterat">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MapReduc">
+    <rdfs:subClassOf rdf:resource="#ParallelAlgorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NewtonianRelax">
+    <rdfs:subClassOf rdf:resource="#NumericalSolut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NumericalApproxim">
+    <rdfs:subClassOf rdf:resource="#Approxim"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NumericalSolut">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Parallel">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ParallelAlgorithm">
+    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Reduct">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Search">
+    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SensitivityAnalysi">
+    <rdfs:subClassOf rdf:resource="&res;#Assessment"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SeriesAlgorithm">
+    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Simul">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+    <owl:equivalentClass rdf:resource="#Simul"/>
+    <owl:equivalentClass rdf:resource="#Emulat"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Simul"/>
+  <owl:Class rdf:about="#Emulat"/>
+
+  <owl:Class rdf:about="#Solut">
+    <rdfs:subClassOf rdf:resource="&math;#NumericalEnt"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TaylorSeri">
+    <rdfs:subClassOf rdf:resource="#NumericalSolut"/>
+    <rdfs:subClassOf rdf:resource="#Expansion"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VisualSolut">
+    <rdfs:subClassOf rdf:resource="#Solut"/>
+    <rdfs:subClassOf rdf:resource="#Approxim"/>
+  </owl:Class>
+
+
+</rdf:RDF>

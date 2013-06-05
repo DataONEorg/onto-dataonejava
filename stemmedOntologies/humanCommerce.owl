@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY comm "http://sweet.jpl.nasa.gov/2.3/humanCommerce.owl">
+  <!ENTITY infr "http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl">
+  <!ENTITY cons "http://sweet.jpl.nasa.gov/2.3/humanEnvirConservation.owl">
+  <!ENTITY hrela "http://sweet.jpl.nasa.gov/2.3/relaHuman.owl">
+  <!ENTITY huma "http://sweet.jpl.nasa.gov/2.3/human.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&comm;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:comm="&comm;"
+         xmlns:infr="&infr;"
+         xmlns:cons="&cons;"
+         xmlns:hrela="&hrela;"
+         xmlns:huma="&huma;"
+>
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&hrela;"/>
+     <owl:imports rdf:resource="&huma;"/>
+     <owl:imports rdf:resource="&cons;"/>
+     <owl:imports rdf:resource="&infr;"/>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="#Assembl">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Construct">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Develop">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Grade">
+    <rdfs:subClassOf rdf:resource="#Process"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Industrial">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LandUs">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Manafactur">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Manag">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ManagementSystem">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Manag"/>
+        <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Process">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Product">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Packag">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EngineeringAct">
+    <rdfs:subClassOf rdf:resource="#Product"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Product">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CapacityBuiid">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ConsumptiveUs">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Demand">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SustainableDevelop">
+    <rdfs:subClassOf rdf:resource="#Develop"/>
+     <rdfs:subClassOf>
+       <owl:Restriction>
+         <owl:allValuesFrom rdf:resource="&cons;#Sustain"/>
+         <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+       </owl:Restriction>
+     </rdfs:subClassOf>
+  </owl:Class>
+
+<!-- other -->
+  <owl:Class rdf:about="#Urbaniz">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Forestri">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#InSitu">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+    <owl:equivalentClass rdf:resource="#OnSite"/>
+  </owl:Class>
+  <owl:Class rdf:about="#OnSite"/>
+
+  <owl:Class rdf:about="#FossilFuelBurn">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ClearCut">
+    <rdfs:subClassOf rdf:resource="#Forestri"/>
+  </owl:Class>
+
+<!-- Extraction -->
+  <owl:Class rdf:about="#Dig">
+    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Drill">
+    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Explorat">
+    <rdfs:subClassOf rdf:resource="#EngineeringAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Extraction">
+    <rdfs:subClassOf rdf:resource="#EngineeringAct"/>
+    <owl:equivalentClass rdf:resource="#ResourceExtract"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ResourceExtract"/>
+
+  <owl:Class rdf:about="#Mine">
+    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Prospect">
+    <rdfs:subClassOf rdf:resource="#Explorat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StripMin">
+    <rdfs:subClassOf rdf:resource="#Mine"/>
+  </owl:Class>
+
+</rdf:RDF>

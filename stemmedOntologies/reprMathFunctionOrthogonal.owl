@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY math "http://sweet.jpl.nasa.gov/2.3/reprMath.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl">
+  <!ENTITY orth "http://sweet.jpl.nasa.gov/2.3/reprMathFunctionOrthogonal.owl">
+  <!ENTITY func "http://sweet.jpl.nasa.gov/2.3/reprMathFunction.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF 
+   xml:base = "&orth;"
+   xmlns:func = "&func;"
+   xmlns:math = "&math;"
+   xmlns:mrela= "&mrela;"
+   xmlns:repr = "&repr;"
+   xmlns:orth = "&orth;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&math;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&repr;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#OrthogonalFunct">
+    <rdfs:subClassOf rdf:resource="&func;#BasisFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Fourier">
+    <rdfs:subClassOf rdf:resource="&func;#ExponentialFunct"/>
+    <owl:equivalentClass rdf:resource="#FourierFunct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#FourierFunct"/>
+
+  <owl:Class rdf:about="#SphericalHarmon">
+    <rdfs:subClassOf rdf:resource="#OrthogonalFunct"/>
+    <rdfs:subClassOf rdf:resource="&func;#TranscendentalFunct"/>
+    <owl:equivalentClass rdf:resource="#SphericalHarmonicFunct"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasOrder"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#SphericalHarmonicFunct"/>
+
+  <owl:Class rdf:about="#WaveletFunct">
+    <rdfs:subClassOf rdf:resource="#OrthogonalFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Harmon">
+    <rdfs:subClassOf rdf:resource="&repr;#Coordin"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Degre">
+    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Order">
+    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mode">
+    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Coeffici">
+    <rdfs:subClassOf rdf:resource="&math;#Scalar"/>
+  </owl:Class>
+
+</rdf:RDF>

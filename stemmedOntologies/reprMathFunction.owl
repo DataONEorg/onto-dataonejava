@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY math "http://sweet.jpl.nasa.gov/2.3/reprMath.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl">
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY func "http://sweet.jpl.nasa.gov/2.3/reprMathFunction.owl">
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF 
+   xml:base = "&func;"
+   xmlns:func = "&func;"
+   xmlns:math = "&math;"
+   xmlns:mrela= "&mrela;"
+   xmlns:srela= "&srela;"
+   xmlns:oper = "&oper;"
+   xmlns:repr = "&repr;"
+   xmlns:quan = "&quan;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&math;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&repr;"/>
+     <owl:imports rdf:resource="&quan;"/>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="#AlgebraicFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BinaryFunct" >
+    <rdfs:subClassOf rdf:resource="#DiscreteFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Bivari" >
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BoxCar">
+    <rdfs:subClassOf rdf:resource="#AlgebraicFunct"/>
+    <owl:equivalentClass rdf:resource="#SquareWav"/>
+  </owl:Class>
+  <owl:Class rdf:about="#SquareWav"/>
+
+  <owl:Class rdf:about="#ChiSquar">
+    <rdfs:subClassOf rdf:resource="#DistributionFunct"/>
+    <owl:equivalentClass rdf:resource="#ChiSquareDistribut"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ChiSquareDistribut"/>
+
+  <owl:Class rdf:about="#Continu">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Cubic">
+    <rdfs:subClassOf rdf:resource="#Polynomi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Dirac" >
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Discret" >
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:equivalentClass rdf:resource="#DiscreteFunct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#DiscreteFunct"/>
+
+  <owl:Class rdf:about="#DistributionFunct">
+    <rdfs:subClassOf rdf:resource="#NormalizedFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExponentialFunct">
+    <rdfs:subClassOf rdf:resource="#TranscendentalFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExponentialGrowth">
+    <rdfs:subClassOf rdf:resource="#ExponentialFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExponentialDecay">
+    <rdfs:subClassOf rdf:resource="#ExponentialFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Filter">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Function">
+    <rdfs:subClassOf rdf:resource="&oper;#Operat"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&repr;#IndependentVari"/>
+        <owl:onProperty rdf:resource="&mrela;#hasInput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&repr;#DependentVari"/>
+        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Kernel">
+    <rdfs:subClassOf rdf:resource="#Filter"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Linear">
+    <rdfs:subClassOf rdf:resource="#Polynomi"/>
+    <owl:equivalentClass rdf:resource="#Affine"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Affine"/>
+
+  <owl:Class rdf:about="#Logist">
+    <rdfs:subClassOf rdf:resource="#TranscendentalFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Logarithm">
+    <rdfs:subClassOf rdf:resource="#TranscendentalFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Nonlinear">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:disjointWith rdf:resource="#Linear"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Normal">
+    <rdfs:subClassOf rdf:resource="#DistributionFunct"/>
+    <owl:equivalentClass rdf:resource="#NormalDistribut"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NormalDistribut"/>
+
+  <owl:Class rdf:about="#NormalizedFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#OptimizationFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Polynomi">
+    <rdfs:subClassOf rdf:resource="#AlgebraicFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PowerFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ProbabilityDensityFunct">
+    <owl:equivalentClass rdf:resource="#pdf"/>
+    <rdfs:subClassOf rdf:resource="#NormalizedFunct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#pdf"/>
+
+  <owl:Class rdf:about="#ProbabilityDistributionFunct">
+    <rdfs:subClassOf rdf:resource="#NormalizedFunct"/>
+    <owl:equivalentClass rdf:resource="#cdf"/>
+  </owl:Class>
+  <owl:Class rdf:about="#cdf"/>
+
+  <owl:Class rdf:about="#Quadrat">
+    <rdfs:subClassOf rdf:resource="#Polynomi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Quartic">
+    <rdfs:subClassOf rdf:resource="#Polynomi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ScalarFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&math;#Scalar"/>
+        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TranscendentalFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:disjointWith rdf:resource="#AlgebraicFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TrigonometricFunct">
+    <rdfs:subClassOf rdf:resource="#TranscendentalFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#UtilityFunct">
+    <rdfs:subClassOf rdf:resource="#OptimizationFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Well">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Step">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VectorFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&math;#Vector"/>
+        <owl:onProperty rdf:resource="&mrela;#hasInput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VectorQuant">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&math;#Vector"/>
+        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TensorFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&math;#Tensor"/>
+        <owl:onProperty rdf:resource="&mrela;#hasInput"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+<!-- Fields -->
+  <owl:Class rdf:about="#Field">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialDistribut" />
+        <owl:allValuesFrom rdf:resource="&quan;#Quantiti" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VectorField">
+    <rdfs:subClassOf rdf:resource="#Field"/>
+    <rdfs:subClassOf rdf:resource="#VectorFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TensorField">
+    <rdfs:subClassOf rdf:resource="#Field"/>
+    <rdfs:subClassOf rdf:resource="#TensorFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ScalarField">
+    <rdfs:subClassOf rdf:resource="#ScalarFunct"/>
+  </owl:Class>
+
+<!-- Continuity -->
+  <owl:Class rdf:about="#Continu">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:equivalentClass rdf:resource="#Continu"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Continu"/>
+
+  <owl:Class rdf:about="#Discret">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:disjointWith rdf:resource="#Continu" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Discontinu">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:equivalentClass rdf:resource="#Discontinu"/>
+    <owl:disjointWith rdf:resource="#Continu" />
+    <rdfs:comment xml:lang="en">A point in the range of a function at which it is undefined or not continuous [Wiktionary]</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Discontinu"/>
+
+  <owl:Class rdf:about="#MaxwellBoltzmannDistribut">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+<!-- Basis functions -->
+  <owl:Class rdf:about="#RadialBasisFunct">
+    <rdfs:subClassOf rdf:resource="#BasisFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BasisFunct">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BSpline">
+    <rdfs:subClassOf rdf:resource="#CubicSplin"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CubicSplin">
+    <rdfs:subClassOf rdf:resource="#Cubic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Sin">
+    <rdfs:subClassOf rdf:resource="#TrigonometricFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Cosin">
+    <rdfs:subClassOf rdf:resource="#TrigonometricFunct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Profil">
+    <rdfs:subClassOf rdf:resource="#Function"/>
+    <owl:equivalentClass rdf:resource="#Horizon"/>
+    <owl:equivalentClass rdf:resource="#VerticalProfil"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Horizon"/>
+  <owl:Class rdf:about="#VerticalProfil"/>
+
+  <owl:Class rdf:about="#PowerLaw">
+    <rdfs:subClassOf rdf:resource="&func;#PowerFunct"/>
+  </owl:Class>
+
+</rdf:RDF>

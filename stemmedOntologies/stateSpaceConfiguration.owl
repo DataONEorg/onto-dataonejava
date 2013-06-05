@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl#">  
+  <!ENTITY spac "http://sweet.jpl.nasa.gov/2.3/propSpace.owl#">  
+  <!ENTITY func "http://sweet.jpl.nasa.gov/2.3/propFunction.owl#">  
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#">  
+  <!ENTITY sdir "http://sweet.jpl.nasa.gov/2.3/reprSpaceDirection.owl#">  
+  <!ENTITY obj "http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl#">  
+  <!ENTITY conf "http://sweet.jpl.nasa.gov/2.3/stateSpaceConfiguration.owl#">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&conf;"
+         xmlns:mrela="&mrela;"
+         xmlns:srela="&srela;"
+         xmlns:spac="&spac;"
+         xmlns:sdir="&sdir;"
+         xmlns:func="&func;"
+         xmlns:conf="&conf;"
+         xmlns:obj="&obj;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+>
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaMath.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSpace.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propSpace.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/reprSpaceDirection.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propFunction.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl"/>  
+  </owl:Ontology>
+
+
+<!-- Shape -->
+  <spac:Shape rdf:about="#Arched"/>
+
+  <spac:Shape rdf:about="#Round"/>
+
+  <spac:Shape rdf:about="#Round">
+     <mrela:approximates rdf:resource="#Round" />
+  </spac:Shape>
+
+  <spac:Shape rdf:about="#Bent"/>
+
+  <spac:Shape rdf:about="#Dip"/>
+
+  <spac:Shape rdf:about="#Sigmoid"/>
+
+  <spac:Shape rdf:about="#Blade"/>
+
+  <spac:Shape rdf:about="#Compact"/>
+
+  <spac:Shape rdf:about="#Curv"/>
+
+  <spac:Shape rdf:about="#Elliptic"/>
+
+  <spac:Shape rdf:about="#Flat"/>
+
+  <spac:Shape rdf:about="#Flattend">
+     <mrela:approximates rdf:resource="#Flat" />
+  </spac:Shape>
+
+  <spac:Shape rdf:about="#Fret"/>
+
+  <spac:Shape rdf:about="#Groov"/>
+
+  <spac:Shape rdf:about="#Hexagon"/>
+
+  <spac:Shape rdf:about="#Poloid"/>
+
+  <spac:Shape rdf:about="#Scallop"/>
+
+  <spac:Shape rdf:about="#Short"/>
+
+  <spac:Shape rdf:about="#Sinusoid"/>
+
+  <spac:Shape rdf:about="#Squar"/>
+
+  <spac:Shape rdf:about="#Toroid"/>
+
+  <spac:Shape rdf:about="#Toroion"/>
+
+  <spac:Shape rdf:about="#Twist"/>
+
+  <spac:Shape rdf:about="#Long"/>
+
+  <spac:Shape rdf:about="#Elongat">
+     <mrela:approximates rdf:resource="#Long" />
+  </spac:Shape>
+
+  <spac:Shape rdf:about="#Wide"/>
+
+  <spac:Shape rdf:about="#Broad"/>
+
+  <spac:Shape rdf:about="#Narrow">
+    <owl:differentFrom rdf:resource="#Wide" />
+  </spac:Shape>
+
+  <spac:Shape rdf:about="#Braid"/>
+
+  <spac:Shape rdf:about="#Branch"/>
+
+  <spac:Shape rdf:about="#Conceal"/>
+
+  <spac:Shape rdf:about="#Curtain"/>
+
+  <spac:Shape rdf:about="#Extant"/>
+
+  <spac:Shape rdf:about="#Sharp"/>
+
+  <spac:Shape rdf:about="#Spheric"/>
+
+  <spac:Shape rdf:about="#Prolat"/>
+
+  <spac:Shape rdf:about="#Oblate"/>
+
+  <spac:Shape rdf:about="#Ridg"/>
+
+  <spac:Shape rdf:about="#Sheet"/>
+
+  <spac:OrbitalConfiguration rdf:about="#Termin">
+    <rdf:type rdf:resource="&obj;GreatCircle"/>
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Geosynchron">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Geostationari">
+    <rdf:type rdf:resource="&obj;GreatCircle"/>
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#SunSynchron">
+    <rdf:type rdf:resource="&obj;GreatCircle"/>
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Aphelion">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Conjunct">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Eclips">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Opposit">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Perihelion">
+    <owl:differentFrom rdf:resource="#Aphelion" />
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Prograd">
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Retrograd">
+    <owl:differentFrom rdf:resource="#Prograd" />
+  </spac:OrbitalConfiguration>
+
+  <spac:OrbitalConfiguration rdf:about="#Transit">
+  </spac:OrbitalConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Anisotrop">
+    <owl:differentFrom rdf:resource="#Isotrop" />
+    <owl:sameAs rdf:resource="#Anisotropi"/>
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Anisotropi"/>
+
+  <spac:SpatialConfiguration rdf:about="#Asymmetri">
+    <owl:differentFrom rdf:resource="#Symmetri" />
+    <owl:sameAs rdf:resource="#Asymmetr"/>
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Asymmetr"/>
+
+  <spac:SpatialConfiguration rdf:about="#Axisymmetr">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Amorphous">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Dendrit">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Dispers">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Entrain">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Even"/>
+
+  <spac:SpatialConfiguration rdf:about="#Imbricat">
+    <owl:sameAs rdf:resource="#Imbricat"/>
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Imbricat"/>
+
+  <spac:SpatialConfiguration rdf:about="#Isometr">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Monoclin">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Orthorhomb">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Rhombic">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Steep">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Tetragon">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Trap">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Triclin">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Trigon">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Perch">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Isotrop">
+    <owl:sameAs rdf:resource="#Isotropi"/>
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Isotropi"/>
+
+  <spac:SpatialConfiguration rdf:about="#Symmetri">
+    <owl:sameAs rdf:resource="#Symmetr"/>
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Symmetr"/>
+
+  <spac:SpatialConfiguration rdf:about="#Biaxial"/>
+
+  <spac:SpatialConfiguration rdf:about="#Triaxial"/>
+
+  <spac:SpatialConfiguration rdf:about="#Incline"/>
+
+  <spac:SpatialConfiguration rdf:about="#Elevat"/>
+
+  <spac:SpatialConfiguration rdf:about="#String"/>
+
+  <spac:SpatialConfiguration rdf:about="#Rope"/>
+
+  <spac:SpatialConfiguration rdf:about="#Uneven">
+    <owl:differentFrom rdf:resource="#Even" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Crook">
+    <owl:differentFrom rdf:resource="#Straight" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Tilt">
+    <owl:differentFrom rdf:resource="#Straight" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Concentr">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Straight">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Ascend">
+    <owl:differentFrom rdf:resource="#Descend" />
+  </spac:SpatialConfiguration>
+  <spac:SpatialConfiguration rdf:about="#Descend"/>
+
+<!-- Density measures -->
+  <spac:SpatialConfiguration rdf:about="#Evacuat">
+    <owl:differentFrom rdf:resource="#Full" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Full">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Empti">
+    <owl:differentFrom rdf:resource="#Full" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Dens">
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Void">
+    <owl:differentFrom rdf:resource="#Full" />
+  </spac:SpatialConfiguration>
+
+  <spac:SpatialConfiguration rdf:about="#Spars">
+    <owl:differentFrom rdf:resource="#Dens" />
+  </spac:SpatialConfiguration>
+
+<!-- Connectivity states -->
+  <spac:Connectivity rdf:about="#Connect">
+    <owl:sameAs rdf:resource="#Interconnect" />
+  </spac:Connectivity>
+  <spac:Connectivity rdf:about="#Interconnect"/>
+
+  <spac:Connectivity rdf:about="#Isolat">
+    <owl:differentFrom rdf:resource="#Connect" />
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Unconnect">
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Interlock">
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Interwoven">
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Semiconfin">
+    <owl:differentFrom rdf:resource="#Confin" />
+    <owl:differentFrom rdf:resource="#Unconfin" />
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Unconfin">
+    <owl:differentFrom rdf:resource="#Confin" />
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Confin">
+    <owl:differentFrom rdf:resource="#Open" />
+    <owl:sameAs rdf:resource="#Trap" />
+  </spac:Connectivity>
+  <spac:Connectivity rdf:about="#Trap"/>
+
+  <spac:Connectivity rdf:about="#Seal">
+    <owl:differentFrom rdf:resource="#Open" />
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Contain">
+    <owl:differentFrom rdf:resource="#Open" />
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Open">
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Isolat">
+  </spac:Connectivity>
+
+  <spac:Connectivity rdf:about="#Cutoff">
+  </spac:Connectivity>
+
+  <owl:Class rdf:about="#Flank">
+    <rdfs:subClassOf rdf:resource="&spac;SpatialConfiguration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Juxtaposit">
+    <rdfs:subClassOf rdf:resource="&spac;SpatialConfiguration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Project">
+    <rdfs:subClassOf rdf:resource="&spac;SpatialConfiguration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Relief">
+    <rdfs:subClassOf rdf:resource="#Project"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Shadow">
+    <rdfs:subClassOf rdf:resource="#Project"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Side">
+    <rdfs:subClassOf rdf:resource="&spac;SpatialConfiguration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Bottom">
+    <rdfs:subClassOf rdf:resource="&func;Minimum"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;hasDirection"/>
+        <owl:hasValue rdf:resource="&sdir;Down"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#Base"/>
+    <owl:equivalentClass rdf:resource="#Basal"/>
+    <owl:equivalentClass rdf:resource="#Floor"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Base"/>
+  <owl:Class rdf:about="#Basal"/>
+  <owl:Class rdf:about="#Floor"/>
+  
+  <owl:Class rdf:about="#Top">
+    <rdfs:subClassOf rdf:resource="&func;Maximum"/>
+    <owl:equivalentClass rdf:resource="#Rim"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;hasDirection"/>
+        <owl:hasValue rdf:resource="&sdir;Up"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Bottom"/>
+        <owl:onProperty rdf:resource="&srela;above"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Rim"/>
+  <owl:Class rdf:about="#Antumbra">
+    <rdfs:subClassOf rdf:resource="#Shadow"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Umbra">
+    <rdfs:subClassOf rdf:resource="#Shadow"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Penumbra">
+    <rdfs:subClassOf rdf:resource="#Shadow"/>
+  </owl:Class>
+
+</rdf:RDF>

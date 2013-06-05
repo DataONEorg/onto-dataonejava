@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY cstate "http://sweet.jpl.nasa.gov/2.3/stateChemical.owl#">
+  <!ENTITY bstate "http://sweet.jpl.nasa.gov/2.3/stateBiological.owl#">
+  <!ENTITY state "http://sweet.jpl.nasa.gov/2.3/state.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&cstate;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:bstate="&bstate;"
+         xmlns:state="&state;"
+         xmlns:cstate="&cstate;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/stateBiological.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/state.owl"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#ChemicalSt">
+    <rdfs:subClassOf rdf:resource="&state;State"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BiochemicalSt">
+    <rdfs:subClassOf rdf:resource="#ChemicalSt"/>
+    <rdfs:subClassOf rdf:resource="&bstate;BiologicalState"/>
+  </owl:Class>
+
+  <cstate:ChemicalState rdf:about="#Aromat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Endotherm">
+    <owl:differentFrom rdf:resource="#Exotherm" />
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Exotherm">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#GroundStat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#ExcitedSt">
+    <owl:differentFrom rdf:resource="#GroundStat" />
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Acid">
+    <rdfs:comment xml:lang="en">An acid as a compound which donates a hydrogen ion (H+) to another compound (called a base). [Wikipedia]</rdfs:comment>
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Base">
+    <owl:differentFrom rdf:resource="#Acid"/>
+     <rdfs:comment xml:lang="en">A base is most commonly thought of as an aqueous substance that can accept hydrogen ions. [Wikipedia]</rdfs:comment>
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#NonPolar">
+    <owl:differentFrom rdf:resource="#Polar"/>
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Polar">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Tenuous">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Volatil">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Inert">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Fix">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Radioact">
+    <owl:sameAs rdf:resource="#Radioact"/>
+    <owl:sameAs rdf:resource="#RadioactiveDecay"/>
+  </cstate:ChemicalState>
+  <cstate:ChemicalState rdf:about="#Radioact"/>
+  <cstate:ChemicalState rdf:about="#RadioactiveDecay"/>
+
+  <cstate:ChemicalState rdf:about="#Potabl">
+    <owl:sameAs rdf:resource="#Potabl"/>
+  </cstate:ChemicalState>
+  <cstate:ChemicalState rdf:about="#Potabl"/>
+
+  <cstate:ChemicalState rdf:about="#Euhalin"/>
+
+  <cstate:ChemicalState rdf:about="#Salin">
+<!-- not supported
+    <chem:hasSubstance rdf:resource="&comp;#Salt"/>
+-->
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Aliphat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Brackish"/>
+
+  <cstate:ChemicalState rdf:about="#Metal"/>
+
+  <cstate:ChemicalState rdf:about="#Composit"/>
+
+  <cstate:ChemicalState rdf:about="#Oxidiz">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Oxygen">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Calcar">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Rocki">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Ici">
+    <owl:differentFrom rdf:resource="#Rocki"/>
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Satur">
+    <owl:sameAs rdf:resource="#Satur"/>
+    <owl:sameAs rdf:resource="#Satur"/>
+  </cstate:ChemicalState>
+  <cstate:ChemicalState rdf:about="#Satur"/>
+  <cstate:ChemicalState rdf:about="#Satur"/>
+
+  <cstate:ChemicalState rdf:about="#Unsatur">
+    <owl:differentFrom rdf:resource="#Satur" />
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Undersatur">
+    <owl:differentFrom rdf:resource="#Satur" />
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Vibrat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Rotat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Translat">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Electron">
+  </cstate:ChemicalState>
+
+  <cstate:ChemicalState rdf:about="#Carbonac">
+  </cstate:ChemicalState>
+
+  <cstate:BiochemicalState rdf:about="#Aerob">
+  </cstate:BiochemicalState>
+
+  <cstate:BiochemicalState rdf:about="#Anerob">
+    <owl:differentFrom rdf:resource="#Aerob" />
+  </cstate:BiochemicalState>
+
+  <cstate:BiochemicalState rdf:about="#Anoxia">
+    <owl:sameAs rdf:resource="#Anoxic"/>
+  </cstate:BiochemicalState>
+  <cstate:BiochemicalState rdf:about="#Anoxic"/>
+
+  <cstate:BiochemicalState rdf:about="#Eutroph">
+  </cstate:BiochemicalState>
+
+  <cstate:BiochemicalState rdf:about="#Hypoxia">
+    <owl:sameAs rdf:resource="#Hypox"/>
+  </cstate:BiochemicalState>
+  <cstate:BiochemicalState rdf:about="#Hypox"/>
+
+</rdf:RDF>

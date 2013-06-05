@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY space "http://sweet.jpl.nasa.gov/2.3/propSpace.owl#">  
+  <!ENTITY meas  "http://sweet.jpl.nasa.gov/2.3/reprSpace.owl">  
+  <!ENTITY prop  "http://sweet.jpl.nasa.gov/2.3/prop.owl">  
+  <!ENTITY proc  "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl">  
+  <!ENTITY units  "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">  
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">  
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">  
+  <!ENTITY func  "http://sweet.jpl.nasa.gov/2.3/reprMathFunction.owl">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&space;"
+         xmlns:meas="&meas;"
+         xmlns:prop="&prop;"
+         xmlns:proc="&proc;"
+         xmlns:func="&func;"
+         xmlns:space="&space;"
+         xmlns:units="&units;"
+         xmlns:screla="&screla;"
+         xmlns:rela="&rela;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+>
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&meas;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&proc;"/>
+     <owl:imports rdf:resource="&units;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&func;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#SpatialProperti">
+    <rdfs:subClassOf rdf:resource="&prop;#Properti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&meas;#Space"/>
+        <owl:onProperty rdf:resource="&screla;#measureOf"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialMeasur">
+    <rdfs:subClassOf rdf:resource="#SpatialProperti"/>
+    <rdfs:subClassOf rdf:resource="&prop;#Measur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LinearExt">
+    <rdfs:subClassOf rdf:resource="#SpatialMeasur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilomet"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialExt">
+    <rdfs:subClassOf rdf:resource="#LinearExt"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Shape">
+    <rdfs:subClassOf rdf:resource="#SpatialConfigur"/>
+   <rdfs:comment xml:lang="en">Description of the form of an object</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialConfigur">
+    <rdfs:subClassOf rdf:resource="#SpatialProperti"/>
+    <owl:equivalentClass rdf:resource="#Configur"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Configur"/>
+
+  <owl:Class rdf:about="#OrbitalConfigur">
+    <rdfs:subClassOf rdf:resource="#SpatialConfigur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProcess" />
+        <owl:allValuesFrom rdf:resource="&proc;#Orbit" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Connect">
+    <rdfs:subClassOf rdf:resource="#SpatialConfigur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Contain">
+    <rdfs:subClassOf rdf:resource="#SpatialConfigur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Morpholog">
+    <rdfs:subClassOf rdf:resource="#SpatialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialSourc">
+    <rdfs:subClassOf rdf:resource="#SpatialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Curvatur">
+    <rdfs:subClassOf rdf:resource="#SpatialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpatialDistribut">
+    <rdfs:subClassOf rdf:resource="&func;#DistributionFunct"/>
+    <rdfs:subClassOf rdf:resource="#SpatialConfigur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AngularDistribut">
+    <rdfs:subClassOf rdf:resource="#SpatialDistribut"/>
+  </owl:Class>
+  
+</rdf:RDF>

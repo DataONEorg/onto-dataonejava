@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY trust "http://sweet.jpl.nasa.gov/2.3/stateRoleTrust.owl#">  
+  <!ENTITY ordi "http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl#">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&trust;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:trust="&trust;"
+         xmlns:ordi="&ordi;"
+>
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl"/>
+  </owl:Ontology>
+
+<!-- Values -->
+  <ordi:Trust rdf:about="#Acceptabl">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Accurat">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Analyz">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Artifact">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Assess">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Believ">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Certain">
+    <owl:sameAs rdf:resource="#Certainti"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Certainti"/>
+
+  <ordi:Trust rdf:about="#Confid">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#DeepUncertainti">
+    <owl:differentFrom rdf:resource="#Certainti"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Defend">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Defend">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Discrep">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Examin">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Forecast">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Imprecis">
+    <owl:differentFrom rdf:resource="#Precis"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Inaccur">
+    <owl:differentFrom rdf:resource="#Accurat"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Irregular">
+    <owl:differentFrom rdf:resource="#Regular"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Known">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Observ">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#PeerReview">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Posterior">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Precis">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Predictive">
+    <owl:sameAs rdf:resource="#Predict"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Predict"/>
+
+  <ordi:Trust rdf:about="#Prior">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Proven">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Publish">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Question">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Regular">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Reliabl">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Research">
+    <owl:sameAs rdf:resource="#Investig"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Investig"/>
+
+  <ordi:Trust rdf:about="#Review">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Riski">
+    <owl:differentFrom rdf:resource="#Safe"/>
+    <owl:sameAs rdf:resource="#Risk"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Risk"/>
+
+  <ordi:Trust rdf:about="#Safe">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Schedul">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Spurious">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Sure">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Tenabl">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Test">
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Trust">
+    <owl:sameAs rdf:resource="#Trustworthi"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Trustworthi"/>
+
+  <ordi:Trust rdf:about="#Unaccept">
+    <owl:differentFrom rdf:resource="#Acceptabl"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unbeliev">
+    <owl:differentFrom rdf:resource="#Believ"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Uncertain">
+    <owl:differentFrom rdf:resource="#Certain"/>
+    <owl:sameAs rdf:resource="#Uncertainti"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#Uncertainti"/>
+
+  <ordi:Trust rdf:about="#Unconfid">
+    <owl:differentFrom rdf:resource="#Confid"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Undefend">
+    <owl:differentFrom rdf:resource="#Defend"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unknown">
+    <owl:differentFrom rdf:resource="#Known"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unpredict">
+    <owl:differentFrom rdf:resource="#Predict"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unforecast">
+    <owl:differentFrom rdf:resource="#Forecast"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unproven">
+    <owl:differentFrom rdf:resource="#Proven"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unreliabl">
+    <owl:differentFrom rdf:resource="#Reliabl"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unschedul">
+    <owl:differentFrom rdf:resource="#Schedul"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Unsure">
+    <owl:differentFrom rdf:resource="#Sure"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Untenabl">
+    <owl:differentFrom rdf:resource="#Tenabl"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Untest">
+    <owl:differentFrom rdf:resource="#Test"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Untrust">
+    <owl:differentFrom rdf:resource="#Trust"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Vagu">
+    <owl:differentFrom rdf:resource="#Precis"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#Valid">
+  </ordi:Trust>
+
+</rdf:RDF>

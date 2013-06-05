@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY res "http://sweet.jpl.nasa.gov/2.3/humanResearch.owl">
+  <!ENTITY meth "http://sweet.jpl.nasa.gov/2.3/reprSciMethodology.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+
+]>
+
+<rdf:RDF xml:base="&meth;"
+         xmlns:res="&res;"
+         xmlns:meth="&meth;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+	 xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&res;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#ResearchExplor">
+    <rdfs:subClassOf rdf:resource="&res;#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Altimetri">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#CarbonD">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Interferometri">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#IsotopeAnalysi">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Methodolog">
+    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Photometri">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Polarimetri">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#RadioactiveD">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Spectroscopi">
+    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#RetrievalApproach">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Image">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Photographi">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AerialPhotographi">
+    <rdfs:subClassOf rdf:resource="#Photographi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RemoteSens">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Tomographi">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#XRayDiffract">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Optic">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+    <rdfs:comment>Optics is a branch of physics that describes the behavior and properties of light and the interaction of light with matter. Optics explains optical phenomena</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Engineer">
+    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  </owl:Class>
+
+  <meth:RetrievalApproach rdf:about="#Passiv">
+  </meth:RetrievalApproach>
+
+  <meth:RetrievalApproach rdf:about="#Active">
+  </meth:RetrievalApproach>
+
+</rdf:RDF>

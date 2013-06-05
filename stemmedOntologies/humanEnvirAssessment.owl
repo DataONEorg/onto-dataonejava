@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY root "http://sweet.jpl.nasa.gov/2.3/">
+  <!ENTITY val "&root;humanEnvirAssessment.owl#">
+  <!ENTITY res "&root;humanResearch.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&val;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:val="&val;"
+         xmlns:res="&res;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&root;humanResearch.owl"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#ContinousEmissionMonitoringSystem">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+    <owl:equivalentClass rdf:resource="#CEMS"/>
+  </owl:Class>
+  <owl:Class rdf:about="#CEMS"/>
+
+  <owl:Class rdf:about="#CostBenefitAnalysi">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EmissionInventori">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnvironmentalImpactStat">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnvironmentalMonitor">
+    <rdfs:subClassOf rdf:resource="&res;Monitoring"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HealthRiskAssess">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+    <owl:equivalentClass rdf:resource="#HRA"/>
+  </owl:Class>
+  <owl:Class rdf:about="#HRA"/>
+
+  <owl:Class rdf:about="#NationalToxicsInventori">
+    <rdfs:subClassOf rdf:resource="#EmissionInventori"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NaturalCapit">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NewSourceReview">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+    <owl:equivalentClass rdf:resource="#NSR"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NSR"/>
+
+  <owl:Class rdf:about="#NoObservedAdverseEffectLevel">
+    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
+    <owl:equivalentClass rdf:resource="#NOAEL"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NOAEL"/>
+
+  <owl:Class rdf:about="#NoObservedEffectLevel">
+    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
+    <owl:equivalentClass rdf:resource="#NOEL"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NOEL"/>
+
+  <owl:Class rdf:about="#UnitRiskFactor">
+    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
+    <owl:equivalentClass rdf:resource="#URF"/>
+  </owl:Class>
+  <owl:Class rdf:about="#URF"/>
+
+  <owl:Class rdf:about="#EnvironmentalAssess">
+    <rdfs:subClassOf rdf:resource="&res;Assessment"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ImpactAssess">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StatusAssess">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SuitabilityAssess">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CarbonNeutr">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+    <owl:equivalentClass rdf:resource="#CarbonNeutr"/>
+  </owl:Class>
+  <owl:Class rdf:about="#CarbonNeutr"/>
+
+</rdf:RDF>

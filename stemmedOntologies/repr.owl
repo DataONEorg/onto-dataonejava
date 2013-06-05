@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl#">    
+   <!ENTITY math "http://sweet.jpl.nasa.gov/2.3/reprMath.owl">    
+   <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&repr;"
+   xmlns:repr = "&repr;"
+   xmlns:math = "&math;"
+   xmlns:mrela= "&mrela;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&math;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Represent"/>
+
+  <owl:Class rdf:about="#Knowledg">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Measur">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+  </owl:Class>
+
+<!-- Measurement Scales -->
+  <owl:Class rdf:about="#MeasurementScal">
+    <owl:equivalentClass rdf:resource="#Scale"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#IntervalScal">
+    <rdfs:subClassOf rdf:resource="#QuantitativeScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CategoricalScal">
+    <rdfs:subClassOf rdf:resource="#MeasurementScal"/>
+    <owl:disjointWith rdf:resource="#OrdinalScal"/>
+    <owl:disjointWith rdf:resource="#QuantitativeScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#OrdinalScal">
+    <rdfs:subClassOf rdf:resource="#MeasurementScal"/>
+    <owl:disjointWith rdf:resource="#QuantitativeScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#QuantitativeScal">
+    <rdfs:subClassOf rdf:resource="#MeasurementScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CardinalScal">
+    <rdfs:subClassOf rdf:resource="#QuantitativeScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LogarithmicScal">
+    <rdfs:subClassOf rdf:resource="#QuantitativeScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Qualit">
+    <rdfs:subClassOf rdf:resource="#MeasurementScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RatioScal">
+    <rdfs:subClassOf rdf:resource="#MeasurementScal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Scale">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+  </owl:Class>
+
+<!-- Coordinates -->
+  <owl:Class rdf:about="#Dimens">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+    <rdfs:comment>In common usage, a dimension is a parameter or measurement used to describe some relevant characteristic of an object. The most commonly used dimensions are the parameters describing the size of an object: length, width, and height, but dimensions can also be other physical parameters such as the mass and electric charge of an object, or even, in a context where cost is relevant, an economic parameter such as its price.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#1D">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#2D">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#3D">
+    <rdfs:subClassOf rdf:resource="#Represent"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Coordin">
+    <rdfs:subClassOf rdf:resource="&math;#Array"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Coordin"/>
+        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Coordin">
+    <rdfs:subClassOf rdf:resource="&math;#Scalar"/>
+    <owl:equivalentClass rdf:resource="#Compon"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Compon"/>
+
+  <owl:Class rdf:about="#CoordinateSystem">
+    <rdfs:subClassOf rdf:resource="#ReferenceFram"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ReferenceFram">
+    <rdfs:subClassOf rdf:resource="&math;#NumericalEnt"/>
+  </owl:Class>
+  
+ <owl:Class rdf:about="#DependentVari">
+    <rdfs:subClassOf rdf:resource="&math;#Variabl" />
+    <rdfs:comment xml:lang="en">Any variable considered as a function of other variables, the latter being called independent.</rdfs:comment>
+  </owl:Class>
+
+ <owl:Class rdf:about="#IndependentVari">
+    <rdfs:subClassOf rdf:resource="&math;#Variabl" />
+  </owl:Class>
+
+  <repr:ReferenceFrame rdf:about="#Barycentr">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Eulerian">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Geocentr">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Geodet">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Heliocentr">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Lagrangian">
+    <owl:differentFrom rdf:resource="#Eulerian"/>
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Spectral">
+  </repr:ReferenceFrame>
+
+  <repr:ReferenceFrame rdf:about="#Synopt">
+  </repr:ReferenceFrame>
+
+</rdf:RDF>

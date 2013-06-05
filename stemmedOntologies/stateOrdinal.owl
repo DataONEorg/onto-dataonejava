@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY ordi "http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl#">
+  <!ENTITY ostate "http://sweet.jpl.nasa.gov/2.3/stateOrdinal.owl#">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl#">  
+  <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl#">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&ostate;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:repr="&repr;"
+         xmlns:ordi="&ordi;"
+         xmlns:ostate="&ostate;"
+         xmlns:screla="&screla;"
+>
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSci.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/repr.owl"/>
+  </owl:Ontology>
+  
+<!-- Ordinal Properties -->
+  <ordi:MineralAssessment rdf:about="#Recover"/>
+
+  <ordi:MineralAssessment rdf:about="#Paramargin"/>
+
+  <ordi:MineralAssessment rdf:about="#Submargin"/>
+
+<!-- Qualifiers -->
+  <ordi:Qualifier rdf:about="#Acute">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Almost">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Extreme">
+    <screla:moreExtensiveThan rdf:resource="#Veri"/>
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Middl">
+    <owl:sameAs rdf:resource="#Medium"/>
+    <owl:sameAs rdf:resource="#Intermedi"/>
+  </ordi:Qualifier>
+  <ordi:Qualifier rdf:about="#Medium"/>
+  <ordi:Qualifier rdf:about="#Intermedi"/>
+
+  <ordi:Qualifier rdf:about="#Optimal">
+    <screla:moreExtensiveThan rdf:resource="#Slight"/>
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Semi">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Slight">
+    <owl:sameAs rdf:resource="#Slight"/>
+  </ordi:Qualifier>
+  <ordi:Qualifier rdf:about="#Slight"/>
+
+  <ordi:Qualifier rdf:about="#Suboptim">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Total">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Transit">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Well">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#Ultra">
+  </ordi:Qualifier>
+  
+  <ordi:Qualifier rdf:about="#Veri">
+  </ordi:Qualifier>
+
+</rdf:RDF>

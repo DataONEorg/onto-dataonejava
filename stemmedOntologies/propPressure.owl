@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY rate "http://sweet.jpl.nasa.gov/2.3/propTimeFrequency.owl">
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl">
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">
+  <!ENTITY mass "http://sweet.jpl.nasa.gov/2.3/propMass.owl">
+  <!ENTITY proc "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl">
+  <!ENTITY pres "http://sweet.jpl.nasa.gov/2.3/propPressure.owl">
+  <!ENTITY dist "http://sweet.jpl.nasa.gov/2.3/propSpaceDistance.owl">
+  <!ENTITY mult "http://sweet.jpl.nasa.gov/2.3/propSpaceMultidimensional.owl">
+  <!ENTITY sdir "http://sweet.jpl.nasa.gov/2.3/reprSpaceDirection.owl">
+  <!ENTITY units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&pres;"
+         xmlns:sdir="&sdir;"
+         xmlns:proc="&proc;"
+         xmlns:oper="&oper;"
+         xmlns:rate="&rate;"
+         xmlns:prop="&prop;"
+         xmlns:quan="&quan;"
+         xmlns:mass="&mass;"
+         xmlns:dist="&dist;"
+         xmlns:mult="&mult;"
+         xmlns:units="&units;"
+         xmlns:srela="&srela;"
+         xmlns:mrela="&mrela;"
+         xmlns:rela="&rela;"
+         xmlns:screla="&screla;"
+         xmlns:pres="&pres;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+ 	 xmlns:xsd="&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&proc;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&quan;"/>
+     <owl:imports rdf:resource="&mass;"/>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&rate;"/>
+     <owl:imports rdf:resource="&sdir;"/>
+     <owl:imports rdf:resource="&dist;"/>
+     <owl:imports rdf:resource="&mult;"/>
+     <owl:imports rdf:resource="&units;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&rela;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Compress">
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#perPasc"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Pressur">
+    <rdfs:subClassOf rdf:resource="&quan;#IntensiveProperti"/>
+    <rdfs:subClassOf rdf:resource="&oper;#Ratio"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#pascal"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand" />
+        <owl:allValuesFrom rdf:resource="&quan;#Forc" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand" />
+        <owl:allValuesFrom rdf:resource="&mult;#Area" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Force per unit area.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PartialPressur">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+    <rdfs:comment xml:lang="en">The pressure that a component of a gaseous mixture would have if it alone occupied the same volume at the same temperature as the mixture.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PressureGradi">
+    <rdfs:subClassOf rdf:resource="&oper;#Gradient"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Pressur"/>
+        <owl:onProperty rdf:resource="&mrela;#isDerivativeOf"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&dist;#Distanc"/>
+        <owl:onProperty rdf:resource="&mrela;#derivativeWithRespectTo"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="en">The derivative of pressure</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Stress">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TotalPressur">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DifferentialPressur">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SurfaceTens">
+    <rdfs:subClassOf rdf:resource="&prop;#FluidProperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf rdf:resource="&proc;#Tension"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#newtonPerMet"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HydrostaticPressur">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StaticPressur">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Suction">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BarometricPressur">
+    <owl:equivalentClass rdf:resource="#AirPressur" />
+    <owl:equivalentClass rdf:resource="#AtmosphericPressur" />
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+    <rdfs:comment xml:lang="en">The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the column of air lying directly above the point in question.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#AirPressur"/>
+  <owl:Class rdf:about="#AtmosphericPressur"/>
+
+  <owl:Class rdf:about="#BarometricTend">
+    <rdfs:subClassOf rdf:resource="#PressureTend"/>
+    <rdfs:comment xml:lang="en">The character and amount of atmospheric pressure change during a specified period of time, often a three-hour period preceding an observation.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExnerFunct">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SeaLevelPressur">
+    <rdfs:subClassOf rdf:resource="#AtmosphericPressur" />
+    <rdfs:comment xml:lang="en">The atmospheric pressure at mean sea level, either directly measured or, most commonly, empirically determined from the observed station pressure.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MomentumFlux">
+    <rdfs:subClassOf rdf:resource="#Pressur"/>
+    <rdfs:subClassOf rdf:resource="&quan;#Flux"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ShearStress">
+    <rdfs:subClassOf rdf:resource="#Stress"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasDirect" />
+        <owl:hasValue rdf:resource="&sdir;#Shear" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TensileStress">
+    <rdfs:subClassOf rdf:resource="#Stress"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasDirect" />
+        <owl:hasValue rdf:resource="&sdir;#Perpendicular" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#ShearStress"/>
+    <owl:equivalentClass rdf:resource="#NormalStress"/>
+  </owl:Class>
+  <owl:Class rdf:about="#NormalStress"/>
+
+  <owl:Class rdf:about="#BulkModulus">
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ShearModulus">
+    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasDirect" />
+        <owl:hasValue rdf:resource="&sdir;#Shear" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#youngsModulus">
+    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <owl:equivalentClass rdf:resource="#ModulusOfElast"/>
+  </owl:Class>
+  <owl:Class rdf:about="#ModulusOfElast"/>
+
+  <owl:Class rdf:about="#Viscos">
+    <rdfs:subClassOf rdf:resource="&prop;#FluidProperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&proc;#ViscousForc"/>
+        <owl:onProperty rdf:resource="&screla;#measureOf"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#pascalSecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#DynamicViscos"/>
+  </owl:Class>
+  <owl:Class rdf:about="#DynamicViscos"/>
+
+  <owl:Class rdf:about="#Strength">
+    <rdfs:subClassOf rdf:resource="&mass;#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CompressiveStrength">
+    <rdfs:subClassOf rdf:resource="#Strength"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TensileStrength">
+    <rdfs:subClassOf rdf:resource="#Strength"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Stiff">
+    <rdfs:subClassOf rdf:resource="&mass;#StrengthProperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#newtonPerMet"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PressureTend">
+    <rdfs:subClassOf rdf:resource="&rate;#Tendenc"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProperti" />
+        <owl:allValuesFrom rdf:resource="#Pressur" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">The character and amount of atmospheric pressure change during a specified period of time, often a three-hour period preceding an observation.</rdfs:comment>
+  </owl:Class>
+
+</rdf:RDF>

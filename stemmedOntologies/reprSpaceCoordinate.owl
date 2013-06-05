@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl">
+  <!ENTITY coord "http://sweet.jpl.nasa.gov/2.3/reprSpaceCoordinate.owl#">
+  <!ENTITY dir "http://sweet.jpl.nasa.gov/2.3/propSpaceDirection.owl">
+  <!ENTITY sdir "http://sweet.jpl.nasa.gov/2.3/reprSpaceDirection.owl">
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY srela2 "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&coord;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:sdir="&sdir;"
+         xmlns:repr="&repr;"
+         xmlns:dir="&dir;"
+         xmlns:coord="&coord;"
+         xmlns:srela="&srela;"
+         xmlns:srela2="&srela2;"
+         >
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&sdir;"/>
+     <owl:imports rdf:resource="&dir;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&repr;"/>
+  </owl:Ontology>
+
+<!-- Coordinates -->
+  <owl:Class rdf:about="#Vertic">
+    <rdfs:subClassOf rdf:resource="&repr;#Coordin"/>
+    <owl:equivalentClass rdf:resource="#VerticalCoordin"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasDirect"/>
+        <owl:hasValue rdf:resource="&sdir;#Up"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#VerticalCoordin"/>
+
+  <owl:Class rdf:about="#HorizontalCoordin">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#orthogonalTo"/>
+        <owl:allValuesFrom rdf:resource="#VerticalCoordin"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="&repr;#Coordin"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#AngularCoordin">
+    <rdfs:subClassOf rdf:resource="&repr;#Coordin"/>
+  </owl:Class>
+
+<!-- Coordinates -->
+  <coord:HorizontalCoordinate rdf:about="#X">
+     <srela2:hasDirection rdf:resource="&sdir;#East"/>
+  </coord:HorizontalCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#Y">
+     <srela2:hasDirection rdf:resource="&sdir;#North"/>
+  </coord:HorizontalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#Z">
+     <srela2:hasDirection rdf:resource="&sdir;#Up"/>
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#Level">
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#Pressur">
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#Elevat">
+     <srela2:hasDirection rdf:resource="&sdir;#Up"/>
+     <owl:sameAs rdf:resource="#Height"/>
+  </coord:VerticalCoordinate>
+  <coord:VerticalCoordinate rdf:about="#Height"/>
+  
+  <coord:VerticalCoordinate rdf:about="#Depth">
+     <srela2:hasDirection rdf:resource="&sdir;#Down"/>
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#PotentialDens">
+     <srela2:hasDirection rdf:resource="&sdir;#Down"/>
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#HybridHeight">
+     <srela2:hasDirection rdf:resource="&sdir;#Up"/>
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#HybridSigma">
+  </coord:VerticalCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#R">
+  </coord:HorizontalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#S">
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#Sigma">
+  </coord:VerticalCoordinate>
+  
+  <coord:VerticalCoordinate rdf:about="#SigmaNaught">
+  </coord:VerticalCoordinate>
+  
+  <coord:AngularCoordinate rdf:about="#Theta">
+  </coord:AngularCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#ZoneCod">
+  </coord:HorizontalCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#Latitud">
+    <srela2:hasDirection rdf:resource="&sdir;#North"/>
+  </coord:HorizontalCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#Colatitud">
+    <srela2:hasDirection rdf:resource="&sdir;#South"/>
+  </coord:HorizontalCoordinate>
+  
+  <coord:HorizontalCoordinate rdf:about="#Longitud">
+    <srela2:hasDirection rdf:resource="&sdir;#East"/>
+  </coord:HorizontalCoordinate>
+  
+  <coord:AngularCoordinate rdf:about="#RightAscens">
+    <owl:sameAs rdf:resource="#RA"/>
+  </coord:AngularCoordinate>
+  <coord:AngularCoordinate rdf:about="#RA"/>
+  
+  <coord:AngularCoordinate rdf:about="#Declin">
+  </coord:AngularCoordinate>
+
+  <coord:AngularCoordinate rdf:about="#Roll">
+  </coord:AngularCoordinate>
+
+  <coord:AngularCoordinate rdf:about="#Pitch">
+  </coord:AngularCoordinate>
+
+  <coord:AngularCoordinate rdf:about="#yaw">
+  </coord:AngularCoordinate>
+
+<!-- Parameters -->
+  <owl:Class rdf:about="#PrimeMeridian">
+    <rdfs:subClassOf rdf:resource="#Meridian"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Meridian">
+    <rdfs:subClassOf rdf:resource="#HorizontalCoordin"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Equator">
+    <rdfs:subClassOf rdf:resource="&dir;#Direct"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#perpendicularTo"/>
+        <owl:allValuesFrom rdf:resource="#Pole" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MagneticPol">
+    <rdfs:subClassOf rdf:resource="#Pole"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Pole">
+    <rdfs:subClassOf rdf:resource="&dir;#Direct"/>
+  </owl:Class>
+
+  <coord:Pole rdf:about="#SouthPol">
+     <srela2:hasDirection rdf:resource="&sdir;#South"/>
+  </coord:Pole>
+  
+  <coord:Pole rdf:about="#NorthPol">
+     <srela2:hasDirection rdf:resource="&sdir;#North"/>
+  </coord:Pole>
+  
+  <coord:MagneticPole rdf:about="#SouthMagneticPol">
+     <srela2:hasDirection rdf:resource="&sdir;#South"/>
+  </coord:MagneticPole>
+  
+  <coord:MagneticPole rdf:about="#NorthMagneticPol">
+     <srela2:hasDirection rdf:resource="&sdir;#North"/>
+  </coord:MagneticPole>
+  
+</rdf:RDF>

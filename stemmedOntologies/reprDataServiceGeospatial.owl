@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY serv "http://sweet.jpl.nasa.gov/2.3/reprDataService.owl">
+  <!ENTITY anal "http://sweet.jpl.nasa.gov/2.3/reprDataServiceAnalysis.owl">
+  <!ENTITY redu "http://sweet.jpl.nasa.gov/2.3/reprDataServiceReduction.owl">
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY geos "http://sweet.jpl.nasa.gov/2.3/reprDataServiceGeospatial.owl#">
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF 
+   xml:base = "&geos;"
+   xmlns:serv = "&serv;"
+   xmlns:redu = "&redu;"
+   xmlns:anal = "&anal;"
+   xmlns:oper = "&oper;"
+   xmlns:geos = "&geos;"
+   xmlns:srela = "&srela;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&serv;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&redu;"/>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&anal;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#GeospatialServic">
+    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="&srela;#hasLoc"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Clip">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Buffer">
+    <rdfs:subClassOf rdf:resource="#Proxim"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Proxim">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Geoloc">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+    <owl:equivalentClass rdf:resource="#Geoloc"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Geoloc"/>
+
+  <owl:Class rdf:about="#Georefer">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+    <owl:equivalentClass rdf:resource="#Georeferenc"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Georeferenc"/>
+
+  <owl:Class rdf:about="#Gazett">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+    <rdfs:subClassOf rdf:resource="&serv;#DiscoveryServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Geocod">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LocationBasedServic">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+    <owl:equivalentClass rdf:resource="#LBS"/>
+  </owl:Class>
+  <owl:Class rdf:about="#LBS"/>
+
+<!-- Gridding -->
+  <owl:Class rdf:about="#CoordinateTransform">
+    <rdfs:subClassOf rdf:resource="#Regrid"/>
+    <rdfs:comment>A conversion from one coordinate system to another, for example to a common spatial grid.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Grid">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Regrid">
+    <rdfs:subClassOf rdf:resource="&anal;#Interpol"/>
+    <owl:equivalentClass rdf:resource="#Regrid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Regrid"/>
+
+<!-- Other -->
+  <owl:Class rdf:about="#Gener">
+    <rdfs:subClassOf rdf:resource="#GeospatialServic"/>
+    <rdfs:subClassOf rdf:resource="&redu;#DataReductionServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Map">
+    <rdfs:subClassOf rdf:resource="&anal;#Visual"/>
+    <owl:equivalentClass rdf:resource="#Map"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Map"/>
+
+  <owl:Class rdf:about="#GeospatialInterfaceProtocol">
+    <rdfs:subClassOf rdf:resource="&serv;#InterfaceProtocol"/>
+  </owl:Class>
+
+  <geos:GeospatialInterfaceProtocol rdf:about="#WebCoverageServ">
+    <owl:sameAs rdf:resource="#WCS"/>
+  </geos:GeospatialInterfaceProtocol>
+  <geos:GeospatialInterfaceProtocol rdf:about="#WCS" />
+
+  <geos:GeospatialInterfaceProtocol rdf:about="#WebFeatureServ">
+    <owl:sameAs rdf:resource="#WFS"/>
+  </geos:GeospatialInterfaceProtocol>
+  <geos:GeospatialInterfaceProtocol rdf:about="#WFS"/>
+
+  <geos:GeospatialInterfaceProtocol rdf:about="#WebMapServ">
+    <owl:sameAs rdf:resource="#WMS"/>
+  </geos:GeospatialInterfaceProtocol>
+  <geos:GeospatialInterfaceProtocol rdf:about="#WMS"/>
+
+</rdf:RDF>

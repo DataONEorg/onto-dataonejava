@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY micro "http://sweet.jpl.nasa.gov/2.3/matrMicrobiota.owl">    
+   <!ENTITY plant "http://sweet.jpl.nasa.gov/2.3/matrPlant.owl">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&micro;"
+   xmlns:plant = "&plant;"
+   xmlns:micro = "&micro;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information --> 
+<!-- Ontology Information --> 
+<owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&plant;"/>
+  </owl:Ontology>
+
+<!-- Living Things -->
+   <owl:Class rdf:about="#Algae">
+      <rdfs:subClassOf rdf:resource="&plant;#Plant"/>
+      <owl:equivalentClass rdf:resource="#Algal"/>
+   </owl:Class>
+   <owl:Class rdf:about="#Algal"/>
+
+   <owl:Class rdf:about="#Amoeba">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Bacteria">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#BlueGreenAlga">
+      <rdfs:subClassOf rdf:resource="#Algae"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Ciliat">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Coccolithophor">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Diatom">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Diazotroph">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Flagel">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Foraminif">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#MarineMicrobiota">
+      <rdfs:subClassOf rdf:resource="&plant;#MarinePl"/>
+      <rdfs:subClassOf rdf:resource="#Microbiota"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Microbiota">
+      <rdfs:subClassOf rdf:resource="&plant;#Plant"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Microalga">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#MicrobiotaTaxonomi">
+      <rdfs:subClassOf rdf:resource="#Microbiota"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Microphyt">
+      <rdfs:subClassOf rdf:resource="&plant;#Plant"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Phytoplankton">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Picophytoplankton">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+   <owl:Class rdf:about="#Plankton">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Protist">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Radiolarian">
+      <rdfs:subClassOf rdf:resource="#MicrobiotaTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Mold">
+      <rdfs:subClassOf rdf:resource="&plant;#FungiTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#SlimeMold">
+      <rdfs:subClassOf rdf:resource="#Mold"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Sporozoan">
+      <rdfs:subClassOf rdf:resource="&plant;#FungiTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#yeast">
+      <rdfs:subClassOf rdf:resource="&plant;#FungiTaxonomi"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#ClostridiumPerfringen">
+      <rdfs:subClassOf rdf:resource="#Bacteria"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Coliform">
+      <rdfs:subClassOf rdf:resource="#Bacteria"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#Enterococci">
+      <rdfs:subClassOf rdf:resource="#Bacteria"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#EscherichiaColi">
+      <rdfs:subClassOf rdf:resource="#Bacteria"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#FecalColiform">
+      <rdfs:subClassOf rdf:resource="#Coliform"/>
+   </owl:Class>
+
+   <owl:Class rdf:about="#FecalStreptococci">
+      <rdfs:subClassOf rdf:resource="#Bacteria"/>
+   </owl:Class>
+
+</rdf:RDF>
+

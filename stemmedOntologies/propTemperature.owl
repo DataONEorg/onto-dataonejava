@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY part "http://sweet.jpl.nasa.gov/2.3/matrParticle.owl">
+  <!ENTITY pstate "http://sweet.jpl.nasa.gov/2.3/statePhysical.owl">
+  <!ENTITY tstate "http://sweet.jpl.nasa.gov/2.3/stateThermodynamic.owl">
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY seas "http://sweet.jpl.nasa.gov/2.3/reprTimeSeason.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY crela "http://sweet.jpl.nasa.gov/2.3/relaChemical.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY func "http://sweet.jpl.nasa.gov/2.3/propFunction.owl">
+  <!ENTITY wind "http://sweet.jpl.nasa.gov/2.3/phenAtmoWind.owl">
+  <!ENTITY thermo "http://sweet.jpl.nasa.gov/2.3/propTemperature.owl">
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">
+  <!ENTITY ener "http://sweet.jpl.nasa.gov/2.3/propEnergy.owl">
+  <!ENTITY units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&thermo;"
+         xmlns:owl="&owl;"
+         xmlns:quan="&quan;"
+         xmlns:part="&part;"
+         xmlns:wind="&wind;"
+         xmlns:oper="&oper;"
+         xmlns:ener="&ener;"
+         xmlns:func="&func;"
+         xmlns:seas="&seas;"
+         xmlns:units="&units;"
+         xmlns:tstate="&tstate;"
+         xmlns:pstate="&pstate;"
+         xmlns:thermo="&thermo;"
+         xmlns:mrela="&mrela;"
+         xmlns:crela="&crela;"
+         xmlns:screla="&screla;"
+         xmlns:rela="&rela;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+ 	 xmlns:xsd="&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&part;"/>
+     <owl:imports rdf:resource="&quan;"/>
+     <owl:imports rdf:resource="&wind;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&crela;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&ener;"/>
+     <owl:imports rdf:resource="&seas;"/>
+     <owl:imports rdf:resource="&func;"/>
+     <owl:imports rdf:resource="&units;"/>
+     <owl:imports rdf:resource="&tstate;"/>
+     <owl:imports rdf:resource="&pstate;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Temperatur">
+    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#measureOf" />
+        <owl:allValuesFrom rdf:resource="&ener;#Heat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BoilingPoint">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeltingPoint">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TriplePoint">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#KineticTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StaticTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TotalTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VirtualTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AntennaTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:comment xml:lang="en">Antenna temperature is a way of expressing the brightness of a radiation source - it is proportional to the power per unit area emitted by the source. In most cases where it is used it corresponds to the thermodynamic or physical temperature of the source being observed. It thus relates the power emitted by the source to an interesting physical property of that source. </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BrightnessTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:comment xml:lang="en">A descriptive measure of radiation in terms of the temperature of a hypothetical blackbody emitting an identical amount of radiation at the same wavelength.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DewPoint">
+    <owl:equivalentClass rdf:resource="#DewPointTemperatur"/>
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:comment xml:lang="en">The temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#DewPointTemperatur"/>
+
+  <owl:Class rdf:about="#DewPointDepress">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf rdf:resource="&oper;#Subtract"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#DewPointTemperatur"/>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#DryBulbTemperatur"/>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DryBulbTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EffectiveTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:comment xml:lang="en">The temperature at which motionless saturated air would induce, in a sedentary worker wearing ordinary indoor clothing, the same sensation of comfort as that induced by the actual conditions of temperature, humidity, and air movement. Effective temperature is used as a guide in air-conditioning practice, and, on the comfort chart (American Society of Heating and Air Conditioning Engineers), it appears as a family of curves that serves as one coordinate in defining comfort zones.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EquivalentTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PseudoEquivalentTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#approxim" />
+        <owl:allValuesFrom rdf:resource="#EquivalentTemperatur" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WetBulbTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GlobalWarmingPotenti">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WindChillIndex">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <owl:equivalentClass rdf:resource="#WindChil" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#measureOf" />
+        <owl:allValuesFrom rdf:resource="&wind;#Wind"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A means of quantifying the threat of rapid cooling during breezy or windy conditions that may result in hypothermia in cold conditions.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#WindChil"/>
+
+  <owl:Class rdf:about="#EquivalentPotentialTemperatur">
+    <rdfs:subClassOf rdf:resource="#PotentialTemperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PotentialTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:hasValue rdf:resource="&tstate;#Adiabat" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">The temperature that a parcel would have if brought adiabatically and reversibly from its initial state to a standard reference pressure, typically 100 kPa.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PseudoEquivalentPotentialTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#approxim" />
+        <owl:allValuesFrom rdf:resource="#EquivalentPotentialTemperatur" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#VirtualPotentialTemperatur">
+    <rdfs:subClassOf rdf:resource="#PotentialTemperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WetBulbPotentialTemperatur">
+    <rdfs:subClassOf rdf:resource="#PotentialTemperatur"/>
+    <rdfs:comment xml:lang="en">The temperature an air parcel would have if cooled from its initial state adiabatically to saturation, and thence brought to 1000 mb by a moist-adiabatic process.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ElectronTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&part;#Electron"/>
+        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#IonTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&pstate;#IonizedSt"/>
+        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NeutralTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&pstate;#NeutralSt"/>
+        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TemperatureRang">
+   <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
+        <owl:allValuesFrom rdf:resource="#Temperatur"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeanAnnualTemperatur">
+    <rdfs:subClassOf rdf:resource="&func;#AnnualAverag"/>
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeanMonthlyTemperatur">
+    <rdfs:subClassOf rdf:resource="&func;#MonthlyAverag"/>
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ColdestMonthTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:someValuesFrom rdf:resource="&seas;#ColdestMonth"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WarmestMonthTemperatur">
+    <rdfs:subClassOf rdf:resource="#Temperatur"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:someValuesFrom rdf:resource="&seas;#WarmestMonth"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>

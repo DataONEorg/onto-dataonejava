@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY pstate "http://sweet.jpl.nasa.gov/2.3/statePhysical.owl">
+  <!ENTITY mult "http://sweet.jpl.nasa.gov/2.3/propSpaceMultidimensional.owl">
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl">
+  <!ENTITY conc "http://sweet.jpl.nasa.gov/2.3/propMass.owl">
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">
+  <!ENTITY units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&conc;"
+         xmlns:pstate="&pstate;"
+         xmlns:mult="&mult;"
+         xmlns:prop="&prop;"
+         xmlns:quan="&quan;"
+         xmlns:units="&units;"
+         xmlns:oper="&oper;"
+         xmlns:mrela="&mrela;"
+         xmlns:screla="&screla;"
+         xmlns:rela="&rela;"
+         xmlns:conc="&conc;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+ 	 xmlns:xsd="&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&quan;"/>
+     <owl:imports rdf:resource="&pstate;"/>
+     <owl:imports rdf:resource="&mult;"/>
+     <owl:imports rdf:resource="&units;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Mass">
+    <rdfs:subClassOf rdf:resource="&quan;#ExtensiveProperti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Densiti">
+    <rdfs:subClassOf rdf:resource="&quan;#IntensiveProperti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilogramPerMeterCub"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">1. The ratio of the mass of any substance to the volume occupied by it (usually expressed in kilograms per cubic meter, but any other unit system may be used); the reciprocal of specific volume.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpecificVolum">
+    <rdfs:subClassOf rdf:resource="&quan;#IntensiveProperti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#meterCubedPerKilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">1. The ratio of the mass of any substance to the volume occupied by it (usually expressed in kilograms per cubic meter, but any other unit system may be used); the reciprocal of specific volume.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BulkDens">
+    <rdfs:subClassOf rdf:resource="#Densiti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DissolvedConcentr">
+    <rdfs:subClassOf rdf:resource="#MassConcentr"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DryWeight">
+    <rdfs:subClassOf rdf:resource="#Mass"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&pstate;#Dri"/>
+        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Content">
+    <rdfs:subClassOf rdf:resource="&oper;#Ratio"/>
+    <rdfs:subClassOf rdf:resource="#MassConcentr"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&mult;#Area"/>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MassCont">
+    <rdfs:subClassOf rdf:resource="#Content"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Mass"/>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilogramPerMeterSquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MassConcentr">
+    <owl:equivalentClass rdf:resource="#Densiti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MeanMolecularWeight">
+    <rdfs:subClassOf rdf:resource="#MolecularWeight"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MolecularWeight">
+    <rdfs:subClassOf rdf:resource="#MassConcentr"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mole">
+    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#mole"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PotentialDens">
+    <rdfs:subClassOf rdf:resource="#Densiti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SigmaT">
+    <rdfs:subClassOf rdf:resource="#Densiti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Dosag">
+    <rdfs:subClassOf rdf:resource="#Mass"/>
+    <owl:equivalentClass rdf:resource="#Dose"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Dose"/>
+
+  <owl:Class rdf:about="#Consist">
+    <rdfs:subClassOf rdf:resource="#ConsistenceProperti"/>
+    <owl:equivalentClass rdf:resource="#Consist"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Consist"/>
+
+  <owl:Class rdf:about="#ConsistenceProperti">
+    <rdfs:subClassOf rdf:resource="#MaterialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StrengthProperti">
+    <rdfs:subClassOf rdf:resource="#SolidProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SolidProperti">
+    <rdfs:subClassOf rdf:resource="#MaterialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MaterialProperti">
+    <rdfs:subClassOf rdf:resource="&prop;#PhysicalProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Textur">
+    <rdfs:subClassOf rdf:resource="#ConsistenceProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Elastic">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Malleabl">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Plastic">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Ductibl">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Flexur">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Structur">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Solid">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+    <owl:equivalentClass rdf:resource="#Solid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Solid"/>
+
+  <owl:Class rdf:about="#Rough">
+    <rdfs:subClassOf rdf:resource="#MaterialProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Hard">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Soft">
+    <rdfs:subClassOf rdf:resource="#StrengthProperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Grade">
+    <rdfs:subClassOf rdf:resource="#MassConcentr"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PotentialDens">
+    <rdfs:subClassOf rdf:resource="#Densiti"/>
+  <rdfs:comment xml:lang="en">The density of a unit of water after it is raised by an adiabatic process to the surface, i.e., determined from in-situ salinity and potential temperature (AGI, 1980). Density that would be reached by a compressible fluid if it were adiabatically compressed or expanded to a standard pressure.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#OpticalMass">
+    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#kilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">The vertical integral of the density of absorbers between two altitudes; used mainly in determining the transmission through an absorbing gas.</rdfs:comment>
+  </owl:Class>
+
+</rdf:RDF>

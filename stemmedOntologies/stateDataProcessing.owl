@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+   <!ENTITY mod "http://sweet.jpl.nasa.gov/2.3/reprDataModel.owl">   
+   <!ENTITY prrela "http://sweet.jpl.nasa.gov/2.3/relaProvenance.owl">   
+   <!ENTITY smod "http://sweet.jpl.nasa.gov/2.3/reprSciModel.owl">   
+   <!ENTITY sstate "http://sweet.jpl.nasa.gov/2.3/stateSystem.owl">   
+   <!ENTITY serv "http://sweet.jpl.nasa.gov/2.3/reprDataService.owl">   
+   <!ENTITY ordi "http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl">   
+   <!ENTITY geos "http://sweet.jpl.nasa.gov/2.3/reprDataServiceGeospatial.owl">   
+   <!ENTITY redu "http://sweet.jpl.nasa.gov/2.3/reprDataServiceReduction.owl">   
+   <!ENTITY stat "http://sweet.jpl.nasa.gov/2.3/stateDataProcessing.owl#">   
+   <!ENTITY prod "http://sweet.jpl.nasa.gov/2.3/reprDataProduct.owl">   
+   <!ENTITY prov "http://sweet.jpl.nasa.gov/2.3/reprSciProvenance.owl">   
+   <!ENTITY vali "http://sweet.jpl.nasa.gov/2.3/reprDataServiceValidation.owl">   
+   <!ENTITY anal "http://sweet.jpl.nasa.gov/2.3/reprDataServiceAnalysis.owl">   
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF
+    xmlns = "&stat;"
+    xml:base = "&stat;"
+    xmlns:serv = "&serv;"
+    xmlns:geos = "&geos;"
+    xmlns:stat = "&stat;"
+    xmlns:sstate = "&sstate;"
+    xmlns:prrela = "&prrela;"
+    xmlns:anal = "&anal;"
+    xmlns:ordi = "&ordi;"
+    xmlns:prod = "&prod;"
+    xmlns:redu = "&redu;"
+    xmlns:prov = "&prov;"
+    xmlns:vali = "&vali;"
+    xmlns:mod = "&mod;"
+    xmlns:smod = "&smod;"
+    xmlns:owl = "&owl;"
+    xmlns:rdf = "&rdf;"
+    xmlns:rdfs = "&rdfs;"
+    xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+    <owl:imports rdf:resource = "&mod;"/>
+    <owl:imports rdf:resource = "&smod;"/>
+    <owl:imports rdf:resource = "&serv;"/>
+    <owl:imports rdf:resource = "&geos;"/>
+    <owl:imports rdf:resource = "&prod;"/>
+    <owl:imports rdf:resource = "&ordi;"/>
+    <owl:imports rdf:resource = "&sstate;"/>
+    <owl:imports rdf:resource = "&prrela;"/>
+    <owl:imports rdf:resource = "&vali;"/>
+    <owl:imports rdf:resource = "&redu;"/>
+    <owl:imports rdf:resource = "&prov;"/>
+    <owl:imports rdf:resource = "&anal;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#DataSt">
+    <rdfs:subClassOf rdf:resource="&sstate;#SystemSt" />
+  </owl:Class>
+
+<!-- Values -->
+  <owl:Class rdf:about="#Archive">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&prod;#Archive"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Bin">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&redu;#Bin"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Cluster">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Cluster"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Calibr">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&vali;#Calibr"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Georeferenc">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Georeferenc"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Grid">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Grid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Interpol">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Interpol"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Level1">
+    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+    <owl:equivalentClass rdf:resource="#L1" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Geoloc"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#L1" />
+
+  <owl:Class rdf:about="#Level2">
+    <owl:equivalentClass rdf:resource="#L2" />
+    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&smod;#Parameter"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prrela;#hasDataModel" />
+        <owl:allValuesFrom rdf:resource="&mod;#Swath" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#L2" />
+
+  <owl:Class rdf:about="#Level3">
+    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Grid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prrela;#hasDataModel"/>
+        <owl:allValuesFrom rdf:resource="&mod;#Grid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#L3"/>
+  </owl:Class>
+  <owl:Class rdf:about="#L3" />
+
+  <owl:Class rdf:about="#Level4">
+    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Assimil"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#L4"/>
+  </owl:Class>
+  <owl:Class rdf:about="#L4" />
+
+  <owl:Class rdf:about="#Mine">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&redu;#Mine"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Normal">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&redu;#Normal"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Parameter">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Parameter"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Plot">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Plot"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Process">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Reanalyz">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Reanalysi"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Reconstruct">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&prov;#Reconstruct"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Reformat">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&serv;#Reformat"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Regrid">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Regrid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Scale">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&prod;#Scale"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Subset">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&redu;#Subset"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Train">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&anal;#Train"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Valid">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&vali;#Valid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Verif">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&vali;#Verif"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Map">
+    <rdfs:subClassOf rdf:resource="#DataSt"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#Map"/>
+        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>
