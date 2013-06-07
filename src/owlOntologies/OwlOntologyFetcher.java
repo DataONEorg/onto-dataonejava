@@ -77,11 +77,9 @@ public class OwlOntologyFetcher {
 			//TEST 2 end
 			
 			
-			OWLOntologyManager manager = owl.loadOntologyFromFile("/home/nicholas/research/Experiments/DataONEjava/testOntologies/humanAgriculture.owl");
+			OWLOntologyManager manager = owl.loadOntologyFromFile("/home/nicholas/research/Experiments/DataONEjava/stemmedOntologies/repr.owl");
 			OWLOntology ontology = manager.getOntology(currentOntologyID);
-			ArrayList<String> classNames = owl.getNamesOfClasses(ontology);
-			System.out.println(classNames);
-			
+			ArrayList<OWLClass> classNames = owl.getClasses(ontology);
 
 		} catch (Exception e) {
 			e.printStackTrace();
