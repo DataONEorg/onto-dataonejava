@@ -2,13 +2,18 @@ package owlOntologies;
 
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -58,8 +63,8 @@ public class CreateOntologyFromThesaurus {
 	
 	
 	
-	public OwlOntologyManager generateOwlOntologyManager(){
-		return new OwlOntologyManager();
+	public MyOwlOntologyManager generateOwlOntologyManager(){
+		return new MyOwlOntologyManager();
 	}
 	
 	
@@ -73,43 +78,71 @@ public class CreateOntologyFromThesaurus {
 		
 		HashSet<String> wordSet = cot.fetchCorpus(corpusPath);   //get the word set from the corpus
 		ThesaurusManager tm = cot.generateThesaurusManager(thesaurusPath);  //get the thesaurus
-		OwlOntologyManager owl = cot.generateOwlOntologyManager();  //create an ontology manager
-		
+		MyOwlOntologyManager owl = cot.generateOwlOntologyManager();  //create an ontology manager
 		
 		OWLOntologyManager manager = owl.shouldCreateOntology("corpusOntology");//initialize empty ontology 
-		OWLOntology ontology = manager.getOntology(owl.getCurrentOntologyID());
-
-		
-		OWLDataFactory factory = manager.getOWLDataFactory();
-		OWLClass clsA = factory.getOWLClass(IRI.create(owl.getCurrentOntologyID().getOntologyIRI() + "#" + "classA"));
-		OWLClass clsB = factory.getOWLClass(IRI.create(owl.getCurrentOntologyID().getOntologyIRI() + "#" + "classB"));
-		
-		/*
-		 * ensure we can add a class here
-			owl.shouldAddSubclassAxiom(manager, clsA, clsB );
-		*/
-		
-		owl.shouldSaveOntologies(manager, "/home/nicholas/research/Experiments/DataONEjava/corpus.owl");
+//		OWLOntology ontology = manager.getOntology(owl.getCurrentOntologyID());
 		
 		//for each word in the word set, make it a class in the ontology
-		for(String currentWord : wordSet){
-			
-		}
-		
-		//one by one add classes to ontology
+		cot.addClasses(wordSet, owl, manager);
 		
 		//one by one add "equal to" references from thesaurus
+		cot.addEquivilentClasses(wordSet, owl, manager, tm);
 		
 		//one by one add "subclass" references from thesaurus
 		
 		//save ontology
-		
-//		java.util.Date timeStamp2 = new java.util.Date();
-//		System.out.println(timeStamp2.toString());
-		
-		
+		owl.shouldSaveOntologies(manager, "/home/nicholas/research/Experiments/DataONEjava/corpus.owl");  //re-save now that we have new data
+		System.out.println("i have gathered the corpus, the synonyms, and made an ontology of it.  im DONE!");
 	}
 	
+	//given a set of words, add them all individually as classes into the ontology
+	public void addClasses(HashSet<String> wordSet, MyOwlOntologyManager owl, OWLOntologyManager manager){
+		for(String currentWord : wordSet){
+			owl.shouldAddClass(manager, currentWord);
+		}
+	}
+	
+	//given a set of words, and a thesaurus, add each class from teh thesaurus into the ontology, and then connect all words as eqivilent
+	//@param wordSet the words that already exist in the ontology
+	//@param owl access to myManager class
+	//@param manager access to the manager of the ontologies as decided by the API
+	//@param tm access to the thesaurus manager
+	public void addEquivilentClasses(HashSet<String> wordSet, MyOwlOntologyManager owl, OWLOntologyManager manager, ThesaurusManager tm) throws IOException{
+		int counter = 0;
+		
+		for(String currentWord : wordSet){
+			counter ++;
+			
+			if (counter % 100 == 0)
+				System.out.println("we have finished " + Integer.toString(counter) + " words with their synonyms, out of " + Integer.toString(wordSet.size()));
+			
+			HashSet<String> synonyms = tm.getSynonyms(currentWord);
+			
+			if (synonyms.isEmpty()) //this word had no synonyms, move on
+				continue;
+			
+			addClasses(synonyms, owl, manager); //add all the synonyms into the ontology		
+			ArrayList<String> equivalents = new ArrayList<String>();
+			equivalents.addAll(synonyms);
+			equivalents.add(currentWord);
+			
+			for(int i =0; i < equivalents.size(); i++){//every word in this set is "equivalent" to each other word...but dont bother doing it to itself.
+				for(int j = 0; j < equivalents.size(); j++){
+					if (i != j){
+						
+						//these could be passed into the method, but for readability, i make them separate calls
+						OWLClass cls1 = owl.getClassFromName(manager, equivalents.get(i)); 
+						OWLClass cls2 = owl.getClassFromName(manager, equivalents.get(j));
+						if ( cls1 == null || cls2 == null) //one of the classes has weird characters that cannot be represented, move on
+							continue;
+						
+						owl.shouldAddEquivalentClassAxiom(manager, cls1, cls2); 
+					}
+				}
+			}//end of for loop doing equivalents
+		}//end of for loop dealing with words from teh word set
+	}//end of method
 	
 	
 }

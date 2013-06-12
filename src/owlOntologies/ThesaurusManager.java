@@ -27,7 +27,10 @@ public class ThesaurusManager {
 	}
 	
 	public HashSet<String> getSynonyms(String key){
-		return thesaurus.get(key);
+		if (thesaurus.containsKey(key))
+			return thesaurus.get(key);
+		else
+			return new HashSet();
 	}
 	
 	
