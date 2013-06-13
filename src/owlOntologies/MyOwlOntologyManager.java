@@ -213,7 +213,7 @@ public class MyOwlOntologyManager {
 	
 	//this method takes two classes and an ontology manager, and creates an axiom where a is a subclass of b
 	//@param manager: the manager can only have ONE ontology in it. 
-	public void shouldAddSubclassAxiom(OWLOntologyManager manager, OWLClass classA, OWLClass classB) throws OWLOntologyCreationException,OWLOntologyStorageException {
+	public void shouldAddSubclassAxiom(OWLOntologyManager manager, OWLClass classA, OWLClass classB) throws OWLOntologyStorageException {
 		OWLOntology ontology = manager.getOntology(currentOntologyID); 
 			
 		// Now we want to specify that A is a subclass of B. To do this, we add

@@ -71,30 +71,79 @@ public class CreateOntologyFromThesaurus {
 	public static void main(String[] args) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
 //		java.util.Date timeStamp = new java.util.Date();
 //		System.out.println(timeStamp.toString());
+		String corpusPath = "/home/nicholas/research/Experiments/DataONEpython/data/test.txt";
+		String storagePath = "/home/nicholas/research/Experiments/DataONEjava/corpus.owl";
 		
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
-		String corpusPath = "/home/nicholas/research/Experiments/DataONEpython/data/noAllNumbers_5.txt";
+		cot.buildOntologyFromScratch(corpusPath, storagePath);
+	
+//		cot.addToOntology("/home/nicholas/research/Experiments/DataONEjava/corpus.owl", "rams");
+	}
+	
+	
+	/*
+	 * given an existing ontology, add a class to it.  this not only adds the class itself, but adds any synonyms, all equivalent classes
+	 * and all subclasses.  
+	 * @param ontPath: the absolute file path to the existing ontology
+	 * @param className the name of the class you want to add (e.g., car, or wonderstruck)
+	 */
+	public void addToOntology(String ontPath, String className) throws OWLOntologyCreationException, IOException, OWLOntologyStorageException{
+		
+		String thesaurusPath = "/home/nicholas/research/Experiments/DataONEjava/synonyms/GenEnglishSynCompendiumStemmed.txt";
+		ThesaurusManager tm = generateThesaurusManager(thesaurusPath);  //get the thesaurus
+		MyOwlOntologyManager owl = generateOwlOntologyManager();  //create an ontology manager
+		OWLOntologyManager manager = owl.loadOntologyFromFile(ontPath);
+		
+		owl.shouldAddClass(manager, className);
+		HashSet<String> classes = new HashSet<String>();  //put out word in a hashSet to use existing correct functionality  
+		classes.add(className);  
+		
+		addEquivilentClasses(classes, owl, manager, tm);
+		
+		//add subclasses
+		addSubClasses(classes, owl, manager, tm);
+
+		owl.shouldSaveOntologies(manager, ontPath);  //re-save now that we have new data
+		System.out.println("i took the existing ontology and added your specific class and all its implications.  im DONE!");
+		
+	}
+	
+	
+	
+	
+	/*
+	 * given a path to the corpus, build an ontology from it and store it at the requested location.  this adds each word in the corpus
+	 * document, all the synonyms, all the equivalence between them, and then checks for subclasses and adds those too.  its takes quite
+	 * some time to finish
+	 * @param corpusPath: the absolute path to the corpus
+	 * @param storagePath: the absolute path to the location where you want to save the owl ontology
+	 */
+	public void buildOntologyFromScratch(String corpusPath, String storagePath) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
+		
 		String thesaurusPath = "/home/nicholas/research/Experiments/DataONEjava/synonyms/GenEnglishSynCompendiumStemmed.txt";
 		
-		HashSet<String> wordSet = cot.fetchCorpus(corpusPath);   //get the word set from the corpus
-		ThesaurusManager tm = cot.generateThesaurusManager(thesaurusPath);  //get the thesaurus
-		MyOwlOntologyManager owl = cot.generateOwlOntologyManager();  //create an ontology manager
+		HashSet<String> wordSet = fetchCorpus(corpusPath);   //get the word set from the corpus
+		ThesaurusManager tm = generateThesaurusManager(thesaurusPath);  //get the thesaurus
+		MyOwlOntologyManager owl = generateOwlOntologyManager();  //create an ontology manager
 		
 		OWLOntologyManager manager = owl.shouldCreateOntology("corpusOntology");//initialize empty ontology 
 //		OWLOntology ontology = manager.getOntology(owl.getCurrentOntologyID());
 		
 		//for each word in the word set, make it a class in the ontology
-		cot.addClasses(wordSet, owl, manager);
+		addClasses(wordSet, owl, manager);
 		
 		//one by one add "equal to" references from thesaurus
-		cot.addEquivilentClasses(wordSet, owl, manager, tm);
+		addEquivilentClasses(wordSet, owl, manager, tm);
 		
 		//one by one add "subclass" references from thesaurus
+		addSubClasses(wordSet, owl, manager, tm);
 		
 		//save ontology
-		owl.shouldSaveOntologies(manager, "/home/nicholas/research/Experiments/DataONEjava/corpus.owl");  //re-save now that we have new data
+		owl.shouldSaveOntologies(manager, storagePath);  //re-save now that we have new data
 		System.out.println("i have gathered the corpus, the synonyms, and made an ontology of it.  im DONE!");
 	}
+	
+	
 	
 	//given a set of words, add them all individually as classes into the ontology
 	public void addClasses(HashSet<String> wordSet, MyOwlOntologyManager owl, OWLOntologyManager manager){
@@ -102,6 +151,40 @@ public class CreateOntologyFromThesaurus {
 			owl.shouldAddClass(manager, currentWord);
 		}
 	}
+	
+	/*
+	 * given a set of words, go through and see if there is symmetry within the synonyms.  for example, assume you have two words, A, and B
+	 * if A is a synonym of B, but B is not a synonym of A, then we say that A is a subclass of B
+	 * note that using this will add a lot of unreasonable classes, but shouldnt hurt the overall scores and should help as the ontology we
+	 * test shouldnt have these random associations
+	 * 	@param wordSet the words that already exist in the ontology
+	 *	@param owl access to myManager class
+     *	@param manager access to the manager of the ontologies as decided by the API
+	 *	@param tm access to the thesaurus manager
+	 */
+	public void addSubClasses(HashSet<String> wordSet, MyOwlOntologyManager owl, OWLOntologyManager manager, ThesaurusManager tm) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
+		int counter = 0;
+		HashSet<String> synonyms;
+		
+		for(String currentWord : wordSet){
+			counter ++;
+			if (counter % 100 == 0)
+				System.out.println("we have finished " + Integer.toString(counter) + " words for subclasses, out of " + Integer.toString(wordSet.size()));
+			
+			synonyms = tm.getSynonyms(currentWord);
+			
+			for(String currentSynonym: synonyms){
+				if (tm.getSynonyms(currentSynonym).contains(currentWord)) //both words are synonyms of each other, move on
+					continue;
+				else{ //the currentWord is a subclass of the currentSynonym
+					OWLClass cls1 = owl.getClassFromName(manager, currentWord); 
+					OWLClass cls2 = owl.getClassFromName(manager, currentSynonym);
+					owl.shouldAddSubclassAxiom(manager, cls1, cls2);
+				}
+			}//end of currentSynonym for loop
+		}//end of currentWord for loop
+	}
+	
 	
 	//given a set of words, and a thesaurus, add each class from teh thesaurus into the ontology, and then connect all words as eqivilent
 	//@param wordSet the words that already exist in the ontology
