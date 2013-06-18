@@ -68,11 +68,12 @@ public class CreateOntologyFromThesaurus {
 	}
 	
 	
+	//@param args:  args[0] needs to be the absolute path to the corpus, and args[1] needs to be the absolute path to where you want it stored
 	public static void main(String[] args) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
 //		java.util.Date timeStamp = new java.util.Date();
 //		System.out.println(timeStamp.toString());
-		String corpusPath = "/home/nicholas/research/Experiments/DataONEpython/data/test.txt";
-		String storagePath = "/home/nicholas/research/Experiments/DataONEjava/corpus.owl";
+		String corpusPath = args[0];
+		String storagePath = args[1];
 		
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
 		cot.buildOntologyFromScratch(corpusPath, storagePath);
