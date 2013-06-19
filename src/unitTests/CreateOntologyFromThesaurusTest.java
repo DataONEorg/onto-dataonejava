@@ -9,6 +9,7 @@ import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.semanticweb.owlapi.model.AxiomType;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -21,11 +22,6 @@ import owlOntologies.MyOwlOntologyManager;
 
 public class CreateOntologyFromThesaurusTest {
 
-
-	@Test
-	public void testMain() {
-		//this calls buildOntologyFromScratch, just test that with the right paths
-	}
 
 	
 	@Test
@@ -54,7 +50,6 @@ public class CreateOntologyFromThesaurusTest {
 		
 		
 		OWLOntology ontology = manager.getOntology(myOwl.getCurrentOntologyID());
-		
 		
 		//third, check that the following subclasses are here (or not)
 		Set<OWLClassExpression> superClasses = foal.getSuperClasses(ontology);

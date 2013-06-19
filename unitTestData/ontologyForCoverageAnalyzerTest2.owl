@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="corpusOntology#"
+     xml:base="corpusOntology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="corpusOntology">
+        <owl:versionIRI rdf:resource="corpusOntology/version1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- corpusOntology#assegai -->
+
+    <owl:Class rdf:about="corpusOntology#assegai">
+        <owl:equivalentClass rdf:resource="corpusOntology#bayonet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#bill"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#fishgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#fizgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#bayonet -->
+
+    <owl:Class rdf:about="corpusOntology#bayonet">
+        <owl:equivalentClass rdf:resource="corpusOntology#bill"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#fishgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#fizgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#bill -->
+
+    <owl:Class rdf:about="corpusOntology#bill">
+        <owl:equivalentClass rdf:resource="corpusOntology#fishgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#fizgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#colt -->
+
+    <owl:Class rdf:about="corpusOntology#colt">
+        <owl:equivalentClass rdf:resource="corpusOntology#filli"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#foal"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#filli -->
+
+    <owl:Class rdf:about="corpusOntology#filli">
+        <owl:equivalentClass rdf:resource="corpusOntology#foal"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#fishgig -->
+
+    <owl:Class rdf:about="corpusOntology#fishgig">
+        <owl:equivalentClass rdf:resource="corpusOntology#fizgig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#fizgig -->
+
+    <owl:Class rdf:about="corpusOntology#fizgig">
+        <owl:equivalentClass rdf:resource="corpusOntology#gaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#foal -->
+
+    <owl:Class rdf:about="corpusOntology#foal">
+        <owl:equivalentClass rdf:resource="corpusOntology#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#poni"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#hobbi"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#gaff -->
+
+    <owl:Class rdf:about="corpusOntology#gaff">
+        <owl:equivalentClass rdf:resource="corpusOntology#gar"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#gar -->
+
+    <owl:Class rdf:about="corpusOntology#gar">
+        <owl:equivalentClass rdf:resource="corpusOntology#gig"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#gig -->
+
+    <owl:Class rdf:about="corpusOntology#gig">
+        <owl:equivalentClass rdf:resource="corpusOntology#halberd"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#halberd -->
+
+    <owl:Class rdf:about="corpusOntology#halberd">
+        <owl:equivalentClass rdf:resource="corpusOntology#halfpik"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#halfpik -->
+
+    <owl:Class rdf:about="corpusOntology#halfpik">
+        <owl:equivalentClass rdf:resource="corpusOntology#harpoon"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#harpoon -->
+
+    <owl:Class rdf:about="corpusOntology#harpoon">
+        <owl:equivalentClass rdf:resource="corpusOntology#javelin"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#hobbi -->
+
+    <owl:Class rdf:about="corpusOntology#hobbi">
+        <owl:equivalentClass rdf:resource="corpusOntology#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#javelin -->
+
+    <owl:Class rdf:about="corpusOntology#javelin">
+        <owl:equivalentClass rdf:resource="corpusOntology#lanc"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#lanc -->
+
+    <owl:Class rdf:about="corpusOntology#lanc">
+        <owl:equivalentClass rdf:resource="corpusOntology#lancet"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#lancet -->
+
+    <owl:Class rdf:about="corpusOntology#lancet">
+        <owl:equivalentClass rdf:resource="corpusOntology#leister"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#leister -->
+
+    <owl:Class rdf:about="corpusOntology#leister">
+        <owl:equivalentClass rdf:resource="corpusOntology#partisan"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#partisan -->
+
+    <owl:Class rdf:about="corpusOntology#partisan">
+        <owl:equivalentClass rdf:resource="corpusOntology#pike"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#pike -->
+
+    <owl:Class rdf:about="corpusOntology#pike">
+        <owl:equivalentClass rdf:resource="corpusOntology#pikestaff"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#pikestaff -->
+
+    <owl:Class rdf:about="corpusOntology#pikestaff">
+        <owl:equivalentClass rdf:resource="corpusOntology#shaft"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#poni -->
+
+    <owl:Class rdf:about="corpusOntology#poni"/>
+    
+
+
+    <!-- corpusOntology#shaft -->
+
+    <owl:Class rdf:about="corpusOntology#shaft">
+        <owl:equivalentClass rdf:resource="corpusOntology#spear"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#spear -->
+
+    <owl:Class rdf:about="corpusOntology#spear">
+        <owl:equivalentClass rdf:resource="corpusOntology#trident"/>
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#assegai"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#bill"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#gaff"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#gar"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#halberd"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#halfpik"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#lancet"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#leister"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#partisan"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#pikestaff"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#shaft"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#trident"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#trident -->
+
+    <owl:Class rdf:about="corpusOntology#trident">
+        <owl:equivalentClass rdf:resource="corpusOntology#weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology#weapon -->
+
+    <owl:Class rdf:about="corpusOntology#weapon"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
+
