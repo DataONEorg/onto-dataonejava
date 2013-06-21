@@ -15,6 +15,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -22,6 +24,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.util.OWLOntologyMerger;
 
 
 public class CreateOntologyFromThesaurus {
@@ -79,6 +82,31 @@ public class CreateOntologyFromThesaurus {
 		cot.buildOntologyFromScratch(corpusPath, storagePath);
 	
 //		cot.addToOntology("/home/nicholas/research/Experiments/DataONEjava/corpus.owl", "rams");
+	}
+	
+	
+	/*
+	 * @param firstOntPath: the absolute path to the first ontology file
+	 * @param secondOntPath: the absolute path to the second ontology file
+	 * @param outputPath: the path and name of the second ontology file
+	 * this takes in existing ontology files and merges their elements.  It then stores the newly generated ontology.
+	 */
+	public void mergeOntology(String firstOntPath, String secondOntPath, String outputPath) throws OWLOntologyStorageException, OWLOntologyCreationException{
+		// Just load two arbitrary ontologies for the purposes of this example
+        OWLOntologyManager man = OWLManager.createOWLOntologyManager();
+        man.loadOntologyFromOntologyDocument(IRI.create(firstOntPath));
+        man.loadOntologyFromOntologyDocument(IRI.create(secondOntPath));
+        
+        // Create our ontology merger
+        OWLOntologyMerger merger = new OWLOntologyMerger(man);
+        // We merge all of the loaded ontologies. Since an OWLOntologyManager is an OWLOntologySetProvider we just pass this in. 
+        //We also need to specify the URI of the new ontology that will be created.
+        IRI mergedOntologyIRI = IRI.create(outputPath);
+        OWLOntology merged = merger.createMergedOntology(man, mergedOntologyIRI);
+        // Print out the axioms in the merged ontology.
+
+        // Save to RDF/XML
+        man.saveOntology(merged, new RDFXMLOntologyFormat(), IRI.create("file:" + outputPath));
 	}
 	
 	
@@ -180,6 +208,10 @@ public class CreateOntologyFromThesaurus {
 				else{ //the currentWord is a subclass of the currentSynonym
 					OWLClass cls1 = owl.getClassFromName(manager, currentWord); 
 					OWLClass cls2 = owl.getClassFromName(manager, currentSynonym);
+					
+					if(cls1 == null || cls2 == null) //if one of the super classes/sub classes had a weird name that breaks OWL, just move on
+						continue;
+					
 					owl.shouldAddSubclassAxiom(manager, cls1, cls2);
 				}
 			}//end of currentSynonym for loop
