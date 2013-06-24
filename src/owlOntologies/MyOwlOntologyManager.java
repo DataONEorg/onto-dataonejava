@@ -343,6 +343,25 @@ public class MyOwlOntologyManager {
 		
 	}
 	
+	//@param ontology: the ontology we are looking through
+	//@param name: the name of OWL class we want returned	
+	public OWLClass getClassFromName(OWLOntology ontology, String name) throws IOException{
+		for (OWLClass cls : ontology.getClassesInSignature()){
+			if( cls.getIRI().getFragment() == null)
+				continue; // some classes have weird characters (like super script) that cannot be represented, move on
+			
+			else if( cls.getIRI().getFragment().equals(name) )
+				return cls;
+		}
+		
+		//if we got here, its because you wanted a class that doesnt exist (ie its not in the corpus)
+		return null;
+		
+	}
+	
+	
+
+	
 	
 	//@param manager: the manager holding the ontology we care about
 	//@param name: the name of OWL class we want to add
