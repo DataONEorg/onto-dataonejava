@@ -94,8 +94,8 @@ public class CreateOntologyFromThesaurus {
 	public void mergeOntology(String firstOntPath, String secondOntPath, String outputPath) throws OWLOntologyStorageException, OWLOntologyCreationException{
 		// Just load two arbitrary ontologies for the purposes of this example
         OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-        man.loadOntologyFromOntologyDocument(IRI.create(firstOntPath));
-        man.loadOntologyFromOntologyDocument(IRI.create(secondOntPath));
+        man.loadOntologyFromOntologyDocument(new File(firstOntPath));
+        man.loadOntologyFromOntologyDocument(new File(secondOntPath));
         
         // Create our ontology merger
         OWLOntologyMerger merger = new OWLOntologyMerger(man);

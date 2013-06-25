@@ -2,6 +2,7 @@ package unitTests;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -78,7 +79,7 @@ public class CoverageAnalyzerTest {
 	
 	
 	@Test
-	public void testCalculateScore() throws OWLOntologyCreationException {
+	public void testCalculateScore() throws OWLOntologyCreationException, IOException {
 		ca.calculateScore(corpus1Path, ontology1Path);
 		assertEquals(1, ca.getClassScore(), 0.001);
 		assertEquals(1, ca.getSubclassScore(), 0.001);
@@ -96,11 +97,11 @@ public class CoverageAnalyzerTest {
 	}
 
 	@Test
-	public void testGetSubClassScore() {
+	public void testGetSubClassScore() throws IOException {
 		ca.reset();
-		assertEquals(2, ca.getSubClassScore(testOntology1, corpusOntology1));
+		assertEquals(2, ca.getSubClassScore(corpusOwl1, corpusManager1, testOntology1, corpusOwl1, corpusManager1, corpusOntology1));
 		ca.reset();
-		assertEquals(2, ca.getSubClassScore(testOntology2, corpusOntology2)); //the last number is the delta 
+		assertEquals(2, ca.getSubClassScore(corpusOwl2, corpusManager2, testOntology2, corpusOwl2, corpusManager2, corpusOntology2)); //the last number is the delta 
 		ca.reset();
 	}
 
@@ -114,11 +115,11 @@ public class CoverageAnalyzerTest {
 	}
 
 	@Test
-	public void testGetClassEquivScore() {
+	public void testGetClassEquivScore() throws IOException {
 		ca.reset();
-		assertEquals(10, ca.getClassEquivScore(testOntology1, corpusOntology1));
+		assertEquals(10, ca.getClassEquivScore(corpusOwl1, corpusManager1, testOntology1, corpusOwl1, corpusManager1, corpusOntology1));
 		ca.reset();
-		assertEquals(10, ca.getClassEquivScore(testOntology2, corpusOntology2)); //the last number is the delta 
+		assertEquals(10, ca.getClassEquivScore(corpusOwl2, corpusManager2, testOntology2, corpusOwl2, corpusManager2, corpusOntology2)); //the last number is the delta 
 		ca.reset();
 	}
 

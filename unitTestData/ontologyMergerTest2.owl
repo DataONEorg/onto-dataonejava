@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="corpusOntology2#"
+     xml:base="corpusOntology2"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="corpusOntology2">
+        <owl:versionIRI rdf:resource="corpusOntology2/version1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+ <!-- corpusOntology2#colt -->
+
+    <owl:Class rdf:about="corpusOntology2#colt">
+        <owl:equivalentClass rdf:resource="corpusOntology2#filli"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#foal"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology2#filli -->
+
+    <owl:Class rdf:about="corpusOntology2#filli">
+        <owl:equivalentClass rdf:resource="corpusOntology2#foal"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology2#foal -->
+
+    <owl:Class rdf:about="corpusOntology2#foal">
+        <owl:equivalentClass rdf:resource="corpusOntology2#hobbi"/>
+        <owl:equivalentClass rdf:resource="corpusOntology2#poni"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology2#hobbi"/>
+        <rdfs:subClassOf rdf:resource="corpusOntology2#poni"/>
+    </owl:Class>
+    
+
+
+    <!-- corpusOntology2#hobbi -->
+
+    <owl:Class rdf:about="corpusOntology2#hobbi">
+        <owl:equivalentClass rdf:resource="corpusOntology2#poni"/>
+    </owl:Class>
+
+        <!-- corpusOntology2#poni -->
+
+    <owl:Class rdf:about="corpusOntology2#poni"/>
+</rdf:RDF>

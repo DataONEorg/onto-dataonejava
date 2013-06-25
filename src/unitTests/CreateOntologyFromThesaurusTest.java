@@ -30,7 +30,7 @@ public class CreateOntologyFromThesaurusTest {
 	public void testBuildOntologyFromScratch() throws OWLOntologyCreationException, OWLOntologyStorageException, IOException {
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
 		String ontologyLocation = "/home/nicholas/research/Experiments/DataONEjava/outputTest.owl";
-		cot.buildOntologyFromScratch("/home/nicholas/research/Experiments/DataONEpython/data/test.txt", ontologyLocation);
+		cot.buildOntologyFromScratch("/home/nicholas/research/Experiments/DataONEjava/unitTestData/testForCreateOntologyFromThesaurus.txt", ontologyLocation);
 		//first, test that it wrote SOMETHING to the ontology location
 		File f = new File(ontologyLocation);
 		assertTrue(f.exists());
@@ -73,7 +73,7 @@ public class CreateOntologyFromThesaurusTest {
 	public void testAddToOntology() throws OWLOntologyCreationException, OWLOntologyStorageException, IOException {
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
 		String ontologyLocation = "/home/nicholas/research/Experiments/DataONEjava/outputTest.owl";
-		cot.buildOntologyFromScratch("/home/nicholas/research/Experiments/DataONEpython/data/test.txt", ontologyLocation);
+		cot.buildOntologyFromScratch("/home/nicholas/research/Experiments/DataONEjava/unitTestData/testForCreateOntologyFromThesaurus.txt", ontologyLocation);
 		
 		cot.addToOntology(ontologyLocation, "genoa");
 		
@@ -92,6 +92,18 @@ public class CreateOntologyFromThesaurusTest {
 		
 		assertTrue(equivalenceClassesForGenoa.contains(genova));
 		
+	}
+	
+	@Test
+	public void shouldMergeOntologies() throws OWLOntologyStorageException, OWLOntologyCreationException{
+		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
+		cot.mergeOntology("/home/nicholas/research/Experiments/DataONEjava/unitTestData/ontologyMergerTest1.owl", 
+				"/home/nicholas/research/Experiments/DataONEjava/unitTestData/ontologyMergerTest2.owl", 
+				"/home/nicholas/research/Experiments/DataONEjava/unitTestData/ontologyMergerResults.owl");
+		
+		File f = new File("/home/nicholas/research/Experiments/DataONEjava/unitTestData/ontologyMergerResults.owl");
+		assertTrue(f.exists());
+		//this only checks it exists, examine by hand to ensure its proper
 		
 	}
 

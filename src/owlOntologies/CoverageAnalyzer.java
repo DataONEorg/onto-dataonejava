@@ -1,5 +1,8 @@
 package owlOntologies;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -100,8 +103,17 @@ public class CoverageAnalyzer {
 		classScore = getClassScore(testClasses, new HashSet<String>(corpusOwl.getNamesOfClasses(corpusOntology))) /Double.valueOf(numClasses);
 		equivalenceScore = getClassEquivScore(testOwl, testManager, testOntology, corpusOwl, corpusManager, corpusOntology) / Double.valueOf(numEquivalences);
 		subClassScore = getSubClassScore(testOwl, testManager, testOntology, corpusOwl, corpusManager, corpusOntology) / Double.valueOf(numSubClasses);
+		breadth = (classScore + equivalenceScore +subClassScore) / 3;
 		
 		
+		String outputPath = testOnt.split("\\.")[0] + "CoverageScores.txt";
+		
+		BufferedWriter out = new BufferedWriter(new FileWriter(new File(outputPath)));
+		out.write("Class Score = " + Double.toString(classScore) + "\n");
+		out.write("Equivalence Score = " + Double.toString(equivalenceScore) + "\n");
+		out.write("SubClass Score = " + Double.toString(subClassScore) + "\n");
+		out.write("Breadth Score = " + Double.toString(breadth)) ;
+		out.close();
 		
 		//pretty print the scores
 		System.out.println("The total number of classes in the ontology under test is " + 
@@ -118,7 +130,7 @@ public class CoverageAnalyzer {
 		
 		System.out.println("The total number of relations and classes in the ontology under test is " + 
 				Integer.toString(numClasses + numEquivalences + numSubClasses) + " making an overall BREADTH score of "
-				+ Double.toString( (classScore + equivalenceScore + subClassScore) / (3) ));
+				+ Double.toString( breadth ));
 	}
 	
 	
