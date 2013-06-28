@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY crela "http://sweet.jpl.nasa.gov/2.3/relaChemical.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY poll "http://sweet.jpl.nasa.gov/2.3/matrAerosol.owl">
+  <!ENTITY atmo "http://sweet.jpl.nasa.gov/2.3/realmAtmo.owl">
+  <!ENTITY atmp "http://sweet.jpl.nasa.gov/2.3/phenAtmo.owl">
+  <!ENTITY prela "http://sweet.jpl.nasa.gov/2.3/relaPhysical.owl">
+  <!ENTITY inst "http://sweet.jpl.nasa.gov/2.3/phenFluidInstability.owl">
+  <!ENTITY thermo "http://sweet.jpl.nasa.gov/2.3/propTemperatureGradient.owl">
+  <!ENTITY realm "http://sweet.jpl.nasa.gov/2.3/realm.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&atmo;"
+         xmlns:atmo="&atmo;"
+         xmlns:atmp="&atmp;"
+         xmlns:inst="&inst;"
+         xmlns:poll="&poll;"
+         xmlns:srela="&srela;"
+         xmlns:crela="&crela;"
+         xmlns:rela="&rela;"
+         xmlns:realm="&realm;"
+         xmlns:thermo="&thermo;"
+         xmlns:prela="&prela;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+ 	 xmlns:xsd="&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&inst;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&crela;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&atmp;"/>
+     <owl:imports rdf:resource="&poll;"/>
+     <owl:imports rdf:resource="&prela;"/>
+     <owl:imports rdf:resource="&realm;"/>
+     <owl:imports rdf:resource="&thermo;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#InversionLay">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay" />
+    <owl:equivalentClass rdf:resource="#TemperatureInversionLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
+        <owl:someValuesFrom rdf:resource="&inst;#Inversion" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#TemperatureInversionLay"/>
+
+  <owl:Class rdf:about="#AtmosphereLay">
+    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryLay" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+<!--
+        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+-->
+        <owl:onProperty rdf:resource="&rela;#hasRealm" />
+        <owl:someValuesFrom rdf:resource="&realm;#Atmospher"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LowerAtmospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mesospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#dTdh"/>
+        <owl:hasValue rdf:resource="&thermo;#NegativeSlop"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasLowerBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Stratopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Mesopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MiddleAtmospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+    <owl:equivalentClass rdf:resource="#OzoneLay" />
+  </owl:Class>
+  <owl:Class rdf:about="#OzoneLay"/>
+
+  <owl:Class rdf:about="#Stratospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#dTdh"/>
+        <owl:hasValue rdf:resource="&thermo;#PositiveSlop"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasLowerBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Tropopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Stratopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Tropospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#dTdh"/>
+        <owl:hasValue rdf:resource="&thermo;#NegativeSlop"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasLowerBoundari"/>
+        <owl:allValuesFrom rdf:resource="&realm;#PlanetarySurfac"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Tropopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Thermospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#dTdh"/>
+        <owl:hasValue rdf:resource="&thermo;#PositiveSlop"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasLowerBoundari"/>
+        <owl:allValuesFrom rdf:resource="#Mesopaus"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#UpperAtmospher">
+    <rdfs:subClassOf rdf:resource="#AtmosphereLay"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FreeTropospher">
+    <rdfs:subClassOf rdf:resource="#Tropospher"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#JungeAerosolLay">
+    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphereLay"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&crela;#hasSubst" />
+        <owl:allValuesFrom rdf:resource="&poll;#Aerosol" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A maximum in large-particle concentrations observed in the lower stratosphere between 15 and 25 km.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mesopaus">
+    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryBoundari"/>
+    <rdfs:comment xml:lang="en">The top of the mesosphere and the base of the thermosphere. The mesopause is usually located at heights of 85?95 km, and is the site of the coldest temperatures in the atmosphere. Temperatures as low as 100 K (- 173?C) have been measured at the mesopause by rockets. See atmospheric shell.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Stratopaus">
+    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryBoundari"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Tropopaus">
+    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryBoundari"/>
+  </owl:Class>
+
+</rdf:RDF>

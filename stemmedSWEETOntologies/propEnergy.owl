@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY oper "http://sweet.jpl.nasa.gov/2.3/reprMathOperation.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY prela "http://sweet.jpl.nasa.gov/2.3/relaPhysical.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY phys "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl">  
+  <!ENTITY mult "http://sweet.jpl.nasa.gov/2.3/propSpaceMultidimensional.owl">  
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl">  
+  <!ENTITY quan "http://sweet.jpl.nasa.gov/2.3/propQuantity.owl">  
+  <!ENTITY ener "http://sweet.jpl.nasa.gov/2.3/propEnergy.owl">  
+  <!ENTITY mass "http://sweet.jpl.nasa.gov/2.3/propMass.owl">  
+  <!ENTITY time "http://sweet.jpl.nasa.gov/2.3/reprTime.owl">  
+  <!ENTITY units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl">
+  <!ENTITY statec "http://sweet.jpl.nasa.gov/2.3/procStateChange.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&ener;"
+         xmlns:oper="&oper;"
+         xmlns:phys="&phys;"
+         xmlns:quan="&quan;"
+         xmlns:prop="&prop;"
+         xmlns:time="&time;"
+         xmlns:mult="&mult;"
+         xmlns:ener="&ener;"
+         xmlns:mass="&mass;"
+         xmlns:units="&units;"
+         xmlns:statec="&statec;"
+         xmlns:screla="&screla;"
+         xmlns:mrela="&mrela;"
+         xmlns:prela="&prela;"
+         xmlns:rela="&rela;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+>
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&oper;"/>
+     <owl:imports rdf:resource="&phys;"/>
+     <owl:imports rdf:resource="&quan;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&time;"/>
+     <owl:imports rdf:resource="&mass;"/>
+     <owl:imports rdf:resource="&mult;"/>
+     <owl:imports rdf:resource="&statec;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&prela;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&units;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Energi">
+    <rdfs:subClassOf rdf:resource="&quan;#ExtensiveProperti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#joul"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergyDens">
+    <rdfs:subClassOf rdf:resource="&quan;#IntensiveProperti"/>
+    <rdfs:subClassOf rdf:resource="&oper;#Ratio"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#joulePerMeterSquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand" />
+        <owl:allValuesFrom rdf:resource="#Energi" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand" />
+        <owl:allValuesFrom rdf:resource="&mult;#Area" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Energy per unit area.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Entropi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Hamiltonian">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#InternalEnergi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Lagrangian">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PotentialEnergi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Power">
+    <rdfs:subClassOf rdf:resource="&quan;#ExtensiveProperti"/>
+    <rdfs:subClassOf rdf:resource="&oper;#Ratio"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand" />
+        <owl:allValuesFrom rdf:resource="#Energi" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand" />
+        <owl:allValuesFrom rdf:resource="&time;#Time" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#watt"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Luminos">
+    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
+    <rdfs:subClassOf rdf:resource="#Power"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpecificEnergi">
+    <rdfs:subClassOf rdf:resource="&quan;#IntensiveProperti"/>
+    <rdfs:subClassOf rdf:resource="&oper;#Ratio"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand" />
+        <owl:allValuesFrom rdf:resource="#Energi" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand" />
+        <owl:allValuesFrom rdf:resource="&mass;#Mass" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#joulePerKilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpecificPotentialEnergi">
+    <rdfs:subClassOf rdf:resource="#SpecificEnergi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand" />
+        <owl:allValuesFrom rdf:resource="#PotentialEnergi" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Work">
+    <rdfs:subClassOf rdf:resource="#Energi" />
+    <rdfs:comment xml:lang="en">A form of energy arising from the motion of a system against a force, existing only in the process of energy conversion.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#KineticEnergi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#ChemicalEnergi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Heat">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+    <owl:equivalentClass rdf:resource="#HeatEnergi"/>
+    <owl:equivalentClass rdf:resource="#ThermalEnergi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#HeatEnergi"/>
+  <owl:Class rdf:about="#ThermalEnergi"/>
+
+  <owl:Class rdf:about="#LatentHeat">
+    <rdfs:subClassOf rdf:resource="#Heat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SensibleHeat">
+    <rdfs:subClassOf rdf:resource="#Heat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ThermochemicalEnergi">
+    <rdfs:subClassOf rdf:resource="#ChemicalEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EvaporativeAvailablePotentialEnergi">
+    <rdfs:subClassOf rdf:resource="#AvailablePotentialEnergi" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasStateChang" />
+        <owl:allValuesFrom rdf:resource="&statec;#Evapor" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Analogous to convective available potential energy, except that it is related to the negative buoyancy associated with evaporative cooling of liquid water within a sinking cloudy air parcel.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Enthalpi">
+    <rdfs:subClassOf rdf:resource="#ChemicalEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GibbsFreeEnergi">
+    <rdfs:subClassOf rdf:resource="#ChemicalEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RadiantEnergi">
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProcess" />
+        <owl:allValuesFrom rdf:resource="&phys;#Radiat" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Infrequently, any energy propagated by a physical quantity governed by a wave equation.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AvailablePotentialEnergi">
+    <rdfs:subClassOf rdf:resource="#PotentialEnergi" />
+    <rdfs:comment xml:lang="en">That portion of the total potential energy that may be converted to kinetic energy in an adiabatically enclosed system.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ConvectiveInhibit">
+    <rdfs:subClassOf rdf:resource="#Energi" />
+    <rdfs:comment xml:lang="en">The energy needed to lift an air parcel vertically and pseudoadiabatically from its originating level to its level of free convection (LFC).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#IonizationEnergi">
+    <rdfs:subClassOf rdf:resource="#PotentialEnergi"/>
+    <rdfs:subClassOf rdf:resource="#ChemicalEnergi"/>
+    <owl:equivalentClass rdf:resource="#IonizationPotenti"/>
+  </owl:Class>
+  <owl:Class rdf:about="#IonizationPotenti"/>
+
+  <owl:Class rdf:about="#BindingEnergi">
+    <rdfs:subClassOf rdf:resource="#PotentialEnergi"/>
+    <rdfs:subClassOf rdf:resource="#ChemicalEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TotalSoilWaterPotenti">
+    <rdfs:subClassOf rdf:resource="&prop;#HydrogeologicalProperti"/>
+  <rdfs:comment xml:lang="en"> The sum of the energy-related components of a soil-water system; i.e., the sum of the gravitational, matric, and osmotic components.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Geopotenti">
+    <rdfs:subClassOf rdf:resource="#GravitationalPotenti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GravitationalPotenti">
+    <rdfs:subClassOf rdf:resource="&quan;#ScalarPotenti"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&phys;#Graviti" />
+        <owl:onProperty rdf:resource="&rela;#hasProcess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#meterSquaredPerSecondSquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MatricPotenti">
+    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
+    <rdfs:subClassOf rdf:resource="#Energi"/>
+    <rdfs:comment xml:lang="en">The energy required to extract water from a porous medium to overcome the capillary and adsorptive forces.</rdfs:comment> 
+  </owl:Class>
+
+<!-- Budgets -->
+  <owl:Class rdf:about="#EnergyBudget">
+    <rdfs:subClassOf rdf:resource="&quan;#Budget"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProperti" />
+        <owl:allValuesFrom rdf:resource="#Energi" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HeatBudget">
+    <rdfs:subClassOf rdf:resource="#EnergyBudget"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasProperti" />
+        <owl:allValuesFrom rdf:resource="#Heat" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>

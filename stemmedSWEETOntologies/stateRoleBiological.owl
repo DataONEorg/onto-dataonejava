@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY role "http://sweet.jpl.nasa.gov/2.3/stateRole.owl#">  
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl#">  
+  <!ENTITY biol "http://sweet.jpl.nasa.gov/2.3/matrBiomass.owl#">
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl#">
+  <!ENTITY brole "http://sweet.jpl.nasa.gov/2.3/stateRoleBiological.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&brole;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+         xmlns:biol="&biol;"
+         xmlns:prop="&prop;"
+         xmlns:role="&role;"
+         xmlns:brole="&brole;"
+         xmlns:screla="&screla;"
+>
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/stateRole.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSci.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/matrBiomass.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/prop.owl"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#BiologicalRol">
+    <rdfs:subClassOf rdf:resource="&prop;Role"/>
+  </owl:Class>
+
+<!-- Values -->
+  <brole:BiologicalRole rdf:about="#Contamin">
+  </brole:BiologicalRole>
+
+  <owl:Class rdf:about="#Consum">
+    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Produc">
+    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  </owl:Class>
+
+  <brole:BiologicalRole rdf:about="#Decompos">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Host">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Heterotroph">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Nutrient">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Macronutri">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Micronutri">
+    <owl:differentFrom rdf:resource="#Macronutri"/>
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Enzyme">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Carcinogen">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Toxin">
+    <owl:sameAs rdf:resource="#Toxic"/>
+  </brole:BiologicalRole>
+  <brole:BiologicalRole rdf:about="#Toxic"/>
+
+  <brole:BiologicalRole rdf:about="#Poision">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Forag">
+    <rdf:type rdf:resource="&biol;Biomass"/>
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Pollut">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Biomark">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Pest">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Defoil">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Pesticid">
+    <screla:kills rdf:resource="#Pest"/>
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#Insecticid">
+  </brole:BiologicalRole>
+
+  <brole:BiologicalRole rdf:about="#ToxicAirContamin">
+    <owl:sameAs rdf:resource="#TAC"/>
+  </brole:BiologicalRole>
+  <brole:BiologicalRole rdf:about="#TAC"/>
+
+  <owl:Class rdf:about="#Habitat">
+    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Autotroph">
+    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Chemoautotroph">
+    <rdfs:subClassOf rdf:resource="#Autotroph"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Chemoheterotroph">
+    <rdfs:subClassOf rdf:resource="#Heterotroph"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Heterotroph">
+    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+    <owl:disjointWith rdf:resource="#Autotroph" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Photoautotroph">
+    <rdfs:subClassOf rdf:resource="#Autotroph"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Photoheterotroph">
+    <rdfs:subClassOf rdf:resource="#Heterotroph"/>
+  </owl:Class>
+
+  <brole:BiologicalRole rdf:about="#TopOfFoodChain">
+     <screla:hasTrophicLevel rdf:datatype="&xsd;integer">5</screla:hasTrophicLevel>
+  </brole:BiologicalRole>
+
+  <brole:Habitat rdf:about="#FeedingHabitat">
+  </brole:Habitat>
+
+  <brole:Habitat rdf:about="#Nurseri">
+  </brole:Habitat>
+
+  <brole:Habitat rdf:about="#SpawningGround">
+  </brole:Habitat>
+
+  <brole:Producer rdf:about="#PrimaryProduc">
+     <screla:hasTrophicLevel rdf:datatype="&xsd;integer">1</screla:hasTrophicLevel>
+  </brole:Producer>
+
+  <brole:Consumer rdf:about="#PrimaryConsum">
+     <screla:hasTrophicLevel rdf:datatype="&xsd;integer">2</screla:hasTrophicLevel>
+  </brole:Consumer>
+
+  <brole:Consumer rdf:about="#SecondaryConsum">
+     <screla:hasTrophicLevel rdf:datatype="&xsd;integer">3</screla:hasTrophicLevel>
+  </brole:Consumer>
+
+  <brole:Consumer rdf:about="#TertiaryConsum">
+     <screla:hasTrophicLevel rdf:datatype="&xsd;integer">4</screla:hasTrophicLevel>
+  </brole:Consumer>
+
+</rdf:RDF>

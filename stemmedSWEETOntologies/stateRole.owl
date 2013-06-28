@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl#">
+  <!ENTITY proc "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl#">
+  <!ENTITY ordi "http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl#">
+  <!ENTITY rela  "http://sweet.jpl.nasa.gov/2.3/rela.owl#">  
+  <!ENTITY screla  "http://sweet.jpl.nasa.gov/2.3/relaSci.owl#">  
+  <!ENTITY role  "http://sweet.jpl.nasa.gov/2.3/stateRole.owl#">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&role;"
+         xmlns:role="&role;"
+         xmlns:rela="&rela;"
+         xmlns:screla="&screla;"
+         xmlns:prop="&prop;"
+         xmlns:proc="&proc;"
+         xmlns:ordi="&ordi;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+>
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/rela.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSci.owl"/>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/prop.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/procPhysical.owl"/>  
+  </owl:Ontology>
+
+<!-- Values -->
+  <prop:Role rdf:about="#Accessori">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Adjust">
+  </prop:Role>
+
+  <prop:Role rdf:about="#ByProduct">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Conduit">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Desir">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Domin">
+     <screla:greaterRoleThan rdf:resource="#Subordin"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Extraordinari">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Important">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Prevail">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Induce">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Key">
+    <owl:sameAs rdf:resource="#Keyston"/>
+  </prop:Role>
+  <prop:Role rdf:about="#Keyston"/>
+
+  <prop:Role rdf:about="#Main">
+     <screla:greaterRoleThan rdf:resource="#Secondari"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Major">
+     <screla:greaterRoleThan rdf:resource="#Minor"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Minor">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Nich">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Pioneer">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Negat">
+    <owl:differentFrom rdf:resource="#Posit"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Posit">
+  </prop:Role>
+
+  <prop:Role rdf:about="#PreExist">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Primari">
+     <screla:greaterRoleThan rdf:resource="#Secondari"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Princip">
+     <screla:greaterRoleThan rdf:resource="#Secondari"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Secur">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Secondari">
+     <screla:greaterRoleThan rdf:resource="#Tertiari"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Stressor">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Tertiari">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Subordin">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Surplus">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Trace">
+  </prop:Role>
+
+  <prop:Role rdf:about="#Undesir">
+    <owl:differentFrom rdf:resource="#Desir"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#Vulner">
+    <owl:differentFrom rdf:resource="#Secur"/>
+  </prop:Role>
+
+<!-- Physical roles -->
+  <owl:Class rdf:about="#PhysicalRol">
+    <rdfs:subClassOf rdf:resource="&prop;Role"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ConductionRol">
+    <rdfs:subClassOf rdf:resource="#PhysicalRol"/>
+    <rdfs:subClassOf rdf:resource="&ordi;OrdinalProperty"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;hasProcess" />
+        <owl:allValuesFrom rdf:resource="&proc;Conduction" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <role:ConductionRole rdf:about="#Conductor">
+  </role:ConductionRole>
+
+  <role:ConductionRole rdf:about="#Insulat">
+  </role:ConductionRole>
+
+  <role:PhysicalRole rdf:about="#Propel">
+  </role:PhysicalRole>
+
+  <role:PhysicalRole rdf:about="#Antifreez">
+  </role:PhysicalRole>
+
+  <role:PhysicalRole rdf:about="#Cryoprotect">
+  </role:PhysicalRole>
+
+<!-- other -->
+  <owl:Class rdf:about="#ProvenanceRol">
+    <rdfs:subClassOf rdf:resource="&prop;Role"/>
+  </owl:Class>
+
+  <role:ProvenanceRole rdf:about="#Accessor">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Archivist">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Author">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#ChangeReason">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Contributor">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Creator">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Curat">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Deploy">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Processor">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Provid">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Publish">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Refer">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Replac">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Serial">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Signer">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#Submitt">
+  </role:ProvenanceRole>
+
+  <role:ProvenanceRole rdf:about="#User">
+  </role:ProvenanceRole>
+
+</rdf:RDF>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  
+  <!ENTITY human "http://sweet.jpl.nasa.gov/2.3/human.owl">
+  <!ENTITY know "http://sweet.jpl.nasa.gov/2.3/repr.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF 
+   xml:base = "&human;"
+   xmlns:human = "&human;"
+   xmlns:know = "&know;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&know;"/>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="#Behavior">
+     <rdfs:subClassOf rdf:resource="#PsychologicalParamet"/>
+   </owl:Class>
+
+  <owl:Class rdf:about="#Census">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CivilDisturb">
+    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HumanAct" />
+
+  <owl:Class rdf:about="#HumanCapit">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+    <rdfs:subClassOf rdf:resource="&know;#Knowledg"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HumanNe">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Profess">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PsychologicalParamet">
+    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Recreat">
+    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Servic">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SocialAct">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SocialBehavior">
+    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Work">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Man">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Unman">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+    <owl:disjointWith rdf:resource="#Man"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Colon">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ConsumptiveUs">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Map">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergyEndUs">
+    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpaceCool">
+    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpaceH">
+    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WaterH">
+    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  </owl:Class>
+
+</rdf:RDF>

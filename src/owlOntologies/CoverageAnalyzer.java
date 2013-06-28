@@ -31,7 +31,9 @@ public class CoverageAnalyzer {
 	private double depth = Double.MAX_VALUE;
 	
 	/**
-	 * @param args
+	 /*
+	 * @param args[0] this is the absolute path for the ontology we created for the corpus
+	 * @param args[1] this is the absolute path for the ontology we are testing
 	 * @throws OWLOntologyCreationException 
 	 * @throws IOException 
 	 */
@@ -103,7 +105,15 @@ public class CoverageAnalyzer {
 		classScore = getClassScore(testClasses, new HashSet<String>(corpusOwl.getNamesOfClasses(corpusOntology))) /Double.valueOf(numClasses);
 		equivalenceScore = getClassEquivScore(testOwl, testManager, testOntology, corpusOwl, corpusManager, corpusOntology) / Double.valueOf(numEquivalences);
 		subClassScore = getSubClassScore(testOwl, testManager, testOntology, corpusOwl, corpusManager, corpusOntology) / Double.valueOf(numSubClasses);
+		
+		//note that the resulting score will be NaN (not a number) if there are no X  where X is equivalences, subclasses, etc...fix that so breadth isnt messed up
+		if (Double.isNaN(equivalenceScore))
+			equivalenceScore = 0.0;
+		if (Double.isNaN(subClassScore))
+			subClassScore = 0.0;
+		
 		breadth = (classScore + equivalenceScore +subClassScore) / 3;
+		 
 		
 		
 		String outputPath = testOnt.split("\\.")[0] + "CoverageScores.txt";

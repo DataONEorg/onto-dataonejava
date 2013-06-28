@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY fstate "http://sweet.jpl.nasa.gov/2.3/stateFluid.owl#">    
+   <!ENTITY pstate "http://sweet.jpl.nasa.gov/2.3/statePhysical.owl#">    
+   <!ENTITY sstate "http://sweet.jpl.nasa.gov/2.3/stateSystem.owl#">    
+   <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl#">    
+   <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl#">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&fstate;"
+   xmlns:mrela = "&mrela;"
+   xmlns:fstate = "&fstate;"
+   xmlns:pstate = "&pstate;"
+   xmlns:sstate = "&sstate;"
+   xmlns:rela = "&rela;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaMath.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/statePhysical.owl"/> 
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/stateSystem.owl"/> 
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/rela.owl"/> 
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#FluidStat">
+    <rdfs:subClassOf rdf:resource="&pstate;PhysicalState"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;hasState" />
+        <owl:hasValue rdf:resource="&pstate;Fluid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FluidEquilibriumSt">
+    <rdfs:subClassOf rdf:resource="#FluidStat"/>
+    <rdfs:subClassOf rdf:resource="&sstate;EquilibriumState"/>
+  </owl:Class>
+
+<!-- Values -->
+  <fstate:FluidState rdf:about="#Baroclin">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Barotrop">
+    <owl:differentFrom rdf:resource="#Baroclin" />
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Buoyant">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Convect">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Turbul">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Laminar">
+    <owl:differentFrom rdf:resource="#Turbul"/>
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Viscous">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#NonNewtonian">
+    <owl:differentFrom rdf:resource="#Newtonian"/>
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Newtonian">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Pressur"/>
+
+  <fstate:FluidState rdf:about="#Unpressur">
+    <owl:differentFrom rdf:resource="#Pressur"/>
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Rareifi">
+  </fstate:FluidState>
+
+  <fstate:FluidState rdf:about="#Stratifi">
+    <owl:sameAs rdf:resource="#Stratif" />
+  </fstate:FluidState>
+  <fstate:FluidState rdf:about="#Stratif"/>
+
+  <fstate:FluidState rdf:about="#Miscibl">
+    <rdfs:comment xml:lang="en">Said of two or more liquids that are mutually soluble (i.e. they will dissolve in each other) (McGraw-Hill, 1974).  The chemical property of two or more phases that, when brought together, have the ability to mix and form one phase (after AGI, 1980).</rdfs:comment>
+  </fstate:FluidState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Steric">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Thermoster">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Haloster">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#SverdrupBal">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Ekman">
+    <rdfs:comment xml:lang="en">Motions describing an equlibrium between pressure gradient force, Coriolis force and the turbulent drag force.</rdfs:comment>
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Ageostroph">
+    <owl:differentFrom rdf:resource="#Geostroph"/>
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Geostroph">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#SemiGeostroph">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#QuasiGeostroph">
+    <mrela:approximates rdf:resource="#Geostroph" />
+    <rdfs:comment xml:lang="en">A system or flow that evolves slowly in time compared to the rotation period of the earth, has a length scale of the deformation radius or larger, and undergoes only limited vertical excursions.</rdfs:comment>
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Hydrostat">
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#QuasiHydrostat">
+    <mrela:approximates rdf:resource="#Hydrostat" />
+  </fstate:FluidEquilibriumState>
+
+  <fstate:FluidEquilibriumState rdf:about="#Nonhydrostat">
+    <owl:differentFrom rdf:resource="#Hydrostat"/>
+  </fstate:FluidEquilibriumState>
+
+</rdf:RDF>

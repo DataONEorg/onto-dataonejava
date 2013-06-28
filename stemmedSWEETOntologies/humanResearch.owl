@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY repr "http://sweet.jpl.nasa.gov/2.3/repr.owl">
+  <!ENTITY huma "http://sweet.jpl.nasa.gov/2.3/human.owl">
+  <!ENTITY res "http://sweet.jpl.nasa.gov/2.3/humanResearch.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+
+]>
+
+<rdf:RDF xml:base="&res;"
+         xmlns:res="&res;"
+         xmlns:repr="&repr;"
+         xmlns:huma="&huma;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+	 xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&huma;"/>
+     <owl:imports rdf:resource="&repr;"/>
+  </owl:Ontology>
+
+<!-- Experiment -->
+
+  <owl:Class rdf:about="#Analysi">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AppliedResearch">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Assessment">
+    <rdfs:subClassOf rdf:resource="#Investig"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Campaign">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Correct">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Differ">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Evidenc">
+    <rdfs:subClassOf rdf:resource="#Assessment"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Experiment">
+    <rdfs:subClassOf rdf:resource="#Investig"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ExperimentAct">
+    <rdfs:subClassOf rdf:resource="#Experiment"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HypothesisTest">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Investig">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+    <owl:equivalentClass rdf:resource="#Investig"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Investig"/>
+
+  <owl:Class rdf:about="#Monitor">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+    <owl:equivalentClass rdf:resource="#Monitor"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Monitor"/>
+
+  <owl:Class rdf:about="#Observat">
+    <rdfs:subClassOf rdf:resource="#Investig"/>
+    <owl:equivalentClass rdf:resource="#Observ"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Observ"/>
+
+  <owl:Class rdf:about="#Project">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Proof">
+    <rdfs:subClassOf rdf:resource="#Valid"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Public">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Realiz">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Research">
+    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Residu">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Result">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Sampl">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Valid">
+    <rdfs:subClassOf rdf:resource="#ExperimentAct"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Variabl">
+    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WeightOfEvid">
+    <rdfs:subClassOf rdf:resource="#Assessment"/>
+  </owl:Class>
+
+<!-- Research environments -->
+  <owl:Class rdf:about="#ResearchSet">
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ProofOfConcept">
+    <rdfs:subClassOf rdf:resource="#Proof"/>
+    <rdfs:subClassOf rdf:resource="#Research"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EndToEndEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+    <owl:disjointWith rdf:resource="#LaboratoryEnviron" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#LaboratoryEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MissionTestedEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+    <owl:disjointWith rdf:resource="#LaboratoryEnviron" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#OperationalEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+    <owl:disjointWith rdf:resource="#LaboratoryEnviron" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#RepresentativeEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+    <owl:disjointWith rdf:resource="#LaboratoryEnviron" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#VerifiedValidatedEnviron">
+    <rdfs:subClassOf rdf:resource="#ResearchSet"/>
+    <owl:disjointWith rdf:resource="#LaboratoryEnviron" />
+  </owl:Class>
+
+</rdf:RDF>

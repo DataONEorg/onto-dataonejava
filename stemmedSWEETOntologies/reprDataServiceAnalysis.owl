@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+   <!ENTITY func "http://sweet.jpl.nasa.gov/2.3/reprMathFunctionOrthogonal.owl">   
+   <!ENTITY serv "http://sweet.jpl.nasa.gov/2.3/reprDataService.owl">   
+   <!ENTITY anal "http://sweet.jpl.nasa.gov/2.3/reprDataServiceAnalysis.owl#">   
+   <!ENTITY mod  "http://sweet.jpl.nasa.gov/2.3/reprSciModel.owl">   
+   <!ENTITY solu "http://sweet.jpl.nasa.gov/2.3/reprMathSolution.owl">   
+   <!ENTITY human "http://sweet.jpl.nasa.gov/2.3/human.owl">
+   <!ENTITY prrela "http://sweet.jpl.nasa.gov/2.3/relaProvenance.owl">
+   <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF
+    xmlns = "&anal;"
+    xml:base = "&anal;"
+    xmlns:serv = "&serv;"
+    xmlns:anal = "&anal;"
+    xmlns:func = "&func;"
+    xmlns:mod  = "&mod;"
+    xmlns:solu = "&solu;"
+    xmlns:human = "&human;"
+    xmlns:prrela = "&prrela;"
+    xmlns:mrela = "&mrela;"
+    xmlns:owl = "&owl;"
+    xmlns:rdf = "&rdf;"
+    xmlns:rdfs = "&rdfs;"
+    xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+    <owl:imports rdf:resource = "&human;"/>
+    <owl:imports rdf:resource = "&prrela;"/>
+    <owl:imports rdf:resource = "&mrela;"/>
+    <owl:imports rdf:resource = "&solu;"/>
+    <owl:imports rdf:resource = "&func;"/>
+    <owl:imports rdf:resource = "&mod;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#DataAnalysisServic">
+    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
+  </owl:Class>
+
+<!-- Parameterizion -->
+  <owl:Class rdf:about="#Parameter">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="&mod;#Parameter"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Assimil">
+    <rdfs:subClassOf rdf:resource="#Parameter"/>
+    <owl:equivalentClass rdf:resource="#Assimil"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Assimil"/>
+
+  <owl:Class rdf:about="#AssociationRuleLearn">
+    <rdfs:subClassOf rdf:resource="#Parameter"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Fit">
+    <rdfs:subClassOf rdf:resource="#Parameter"/>
+    <owl:equivalentClass rdf:resource="#Fit"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Fit"/>
+
+  <owl:Class rdf:about="#Train">
+    <rdfs:subClassOf rdf:resource="#Parameter"/>
+    <owl:equivalentClass rdf:resource="#Train"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Train"/>
+
+<!-- Data classification -->
+  <owl:Class rdf:about="#Classif">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#Classifi"/>
+    <owl:equivalentClass rdf:resource="#Classifi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Classifi"/>
+  <owl:Class rdf:about="#Classifi"/>
+
+  <anal:Classifier rdf:about="#DecisionTreeLearn">
+  </anal:Classifier>
+
+  <anal:Classifier rdf:about="#NaiveBay">
+  </anal:Classifier>
+
+  <anal:Classifier rdf:about="#NeuralNetwork">
+  </anal:Classifier>
+
+  <owl:Class rdf:about="#Cluster">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#Cluster"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Cluster"/>
+
+<!-- Spectral analysis -->
+  <owl:Class rdf:about="#Filter">
+    <rdfs:subClassOf rdf:resource="#SpectralAnalysi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Spectrum">
+    <rdfs:subClassOf rdf:resource="#SpectralAnalysi"/>
+    <owl:equivalentClass rdf:resource="#PowerSpectrum"/>
+  </owl:Class>
+  <owl:Class rdf:about="#PowerSpectrum"/>
+
+  <owl:Class rdf:about="#FourierAnalysi">
+    <rdfs:subClassOf rdf:resource="#SpectralAnalysi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&func;#FourierFunct"/>
+        <owl:onProperty rdf:resource="&mrela;#hasBasisFunct"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#FourierTransform"/>
+  </owl:Class>
+  <owl:Class rdf:about="#FourierTransform"/>
+
+  <owl:Class rdf:about="#SpectralAnalysi">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#FrequencyDomainAnalysi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#FrequencyDomainAnalysi"/>
+
+  <owl:Class rdf:about="#SpectralSynthesi">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SphericalHarmonicAnalysi">
+    <rdfs:subClassOf rdf:resource="#SpectralAnalysi"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&func;#SphericalHarmonicFunct"/>
+        <owl:onProperty rdf:resource="&mrela;#hasBasisFunct"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WaveletAnalysi">
+    <rdfs:subClassOf rdf:resource="#SpectralAnalysi"/>
+  </owl:Class>
+
+<!-- Scientific processing -->
+  <owl:Class rdf:about="#Reanalyz">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#Reanalysi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Reanalysi"/>
+
+  <owl:Class rdf:about="#Reconstruct">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#Reconstruct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Reconstruct"/>
+
+  <owl:Class rdf:about="#TimeSeri">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#KnowledgeDiscoveri">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+  </owl:Class>
+
+<!-- Interpolation -->
+  <owl:Class rdf:about="#Interpol">
+    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
+    <owl:equivalentClass rdf:resource="#Interpol"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Interpol"/>
+
+  <owl:Class rdf:about="#InterpolationMethod">
+    <rdfs:subClassOf rdf:resource="&solu;#Algorithm"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Interpol"/>
+        <owl:onProperty rdf:resource="&prrela;#hasDataServic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <anal:InterpolationMethod  rdf:about="#DistanceWeight">
+  </anal:InterpolationMethod>
+
+  <anal:InterpolationMethod  rdf:about="#NearestNeighbor">
+  </anal:InterpolationMethod>
+
+<!-- Visualization -->
+  <owl:Class rdf:about="#Visual">
+    <rdfs:subClassOf rdf:resource="#DataAnalysisServic"/>
+    <owl:equivalentClass rdf:resource="#Visual"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Visual"/>
+
+  <owl:Class rdf:about="#Animat">
+    <rdfs:subClassOf rdf:resource="#Visual"/>
+    <owl:equivalentClass rdf:resource="#Animat"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Animat"/>
+
+  <owl:Class rdf:about="#Overlay">
+    <rdfs:subClassOf rdf:resource="#Visual"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Superimpos">
+    <rdfs:subClassOf rdf:resource="#Visual"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#Plot">
+    <rdfs:subClassOf rdf:resource="#Visual"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Scattergram">
+    <rdfs:subClassOf rdf:resource="#Plot"/>
+  </owl:Class>
+
+</rdf:RDF>

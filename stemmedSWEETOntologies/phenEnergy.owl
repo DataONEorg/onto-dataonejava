@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY mener "http://sweet.jpl.nasa.gov/2.3/matrEnergy.owl">
+  <!ENTITY water "http://sweet.jpl.nasa.gov/2.3/matrWater.owl">
+  <!ENTITY ener "http://sweet.jpl.nasa.gov/2.3/propEnergy.owl"> 
+  <!ENTITY cons "http://sweet.jpl.nasa.gov/2.3/humanEnvirConservation.owl"> 
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl"> 
+  <!ENTITY huma "http://sweet.jpl.nasa.gov/2.3/human.owl"> 
+  <!ENTITY proc "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl"> 
+  <!ENTITY prela "http://sweet.jpl.nasa.gov/2.3/relaPhysical.owl"> 
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl"> 
+  <!ENTITY pener "http://sweet.jpl.nasa.gov/2.3/phenEnergy.owl"> 
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&pener;"
+         xmlns:ener="&ener;"
+         xmlns:cons="&cons;"
+         xmlns:prop="&prop;"
+         xmlns:huma="&huma;"
+         xmlns:proc="&proc;"
+         xmlns:pener="&pener;"
+         xmlns:mener="&mener;"
+         xmlns:water="&water;"
+         xmlns:prela="&prela;"
+         xmlns:rela="&rela;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+	 xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&ener;"/>
+     <owl:imports rdf:resource="&cons;"/>
+     <owl:imports rdf:resource="&huma;"/>
+     <owl:imports rdf:resource="&prop;"/>
+     <owl:imports rdf:resource="&water;"/>
+     <owl:imports rdf:resource="&mener;"/>
+     <owl:imports rdf:resource="&prela;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&proc;"/>
+  </owl:Ontology>
+
+<!-- Processes -->
+  <owl:Class rdf:about="#ActiveSolarEnergi">
+    <rdfs:subClassOf rdf:resource="#SolarEnergi"/>
+    <rdfs:subClassOf rdf:resource="#ThermalCollect"/>
+ </owl:Class>
+
+  <owl:Class rdf:about="#BinaryCycl">
+    <rdfs:subClassOf rdf:resource="#GeothermalPowerProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergySourc" />
+        <owl:allValuesFrom rdf:resource="&mener;#HeatExchang" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Biopow">
+    <rdfs:subClassOf rdf:resource="#RenewableEnergySourc"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergySourc" />
+        <owl:allValuesFrom rdf:resource="&mener;#Biomass" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergyProduct" />
+        <owl:someValuesFrom rdf:resource="#Electric" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ConcentratingSolarPow">
+    <rdfs:subClassOf rdf:resource="#SolarEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DirectUs">
+    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
+    <owl:disjointWith rdf:resource="#EnergyConversionProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergyProduct" />
+        <owl:allValuesFrom rdf:resource="&ener;#Heat" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DrySteam">
+    <rdfs:subClassOf rdf:resource="#GeothermalPowerProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergySourc" />
+        <owl:allValuesFrom rdf:resource="&water;#Steam" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Electric">
+    <rdfs:subClassOf rdf:resource="#EnergyForm"/>
+    <owl:equivalentClass rdf:resource="#PowerSourc"/>
+  </owl:Class>
+  <owl:Class rdf:about="#PowerSourc"/>
+
+  <owl:Class rdf:about="#EnergyForm">
+    <rdfs:subClassOf rdf:resource="&ener;#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergySourc">
+    <rdfs:subClassOf rdf:resource="&ener;#Energi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FlashSteam">
+    <rdfs:subClassOf rdf:resource="#GeothermalPowerProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergySourc" />
+        <owl:allValuesFrom rdf:resource="&water;#LiquidWat" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ElectricityProduct">
+    <rdfs:subClassOf rdf:resource="#EnergyConversionProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergyProduct" />
+        <owl:allValuesFrom rdf:resource="#Electric" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergyCollect">
+    <rdfs:subClassOf rdf:resource="#EnergyForm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergyConserv">
+    <rdfs:subClassOf rdf:resource="&cons;#Conserv"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EnergyConversionProcess">
+    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Gasif">
+    <rdfs:subClassOf rdf:resource="#EnergyConversionProcess"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasEnergyProduct" />
+        <owl:allValuesFrom rdf:resource="&mener;#Fuel" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Geotherm">
+    <rdfs:subClassOf rdf:resource="#RenewableEnergySourc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GeothermalPowerProcess">
+    <rdfs:subClassOf rdf:resource="#RenewableEnergySourc"/>
+    <rdfs:subClassOf rdf:resource="#EnergyConversionProcess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PassiveSolarEnergi">
+    <rdfs:subClassOf rdf:resource="#SolarEnergi"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Photovolta">
+    <rdfs:subClassOf rdf:resource="#SolarPow"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RenewableEnergySourc">
+    <rdfs:subClassOf rdf:resource="#EnergySourc"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasRol" />
+        <owl:allValuesFrom rdf:resource="&cons;#Sustain" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SolarEnergi">
+    <rdfs:subClassOf rdf:resource="#RenewableEnergySourc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SolarPow">
+    <rdfs:subClassOf rdf:resource="#SolarEnergi"/>
+    <rdfs:subClassOf rdf:resource="#PowerSourc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SolarThermalPow">
+    <rdfs:subClassOf rdf:resource="#SolarPow"/>
+    <rdfs:subClassOf rdf:resource="#ThermalCollect"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ThermalCollect">
+    <rdfs:subClassOf rdf:resource="#EnergyCollect"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WindEnergi">
+    <rdfs:subClassOf rdf:resource="#RenewableEnergySourc"/>
+    <rdfs:subClassOf rdf:resource="#PowerSourc"/>
+  </owl:Class>
+
+</rdf:RDF>

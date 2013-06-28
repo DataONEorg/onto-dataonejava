@@ -1,4 +1,4 @@
 Class Score = 0.0
-Equivalence Score = NaN
-SubClass Score = NaN
-Breadth Score = NaN
+Equivalence Score = 0.0
+SubClass Score = 0.0
+Breadth Score = 0.0

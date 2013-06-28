@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY climate "http://sweet.jpl.nasa.gov/2.3/phenPlanetClimate.owl">
+  <!ENTITY planet "http://sweet.jpl.nasa.gov/2.3/phen.owl">
+  <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">
+  <!ENTITY mrela "http://sweet.jpl.nasa.gov/2.3/relaMath.owl">
+  <!ENTITY srela "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl">
+  <!ENTITY screla "http://sweet.jpl.nasa.gov/2.3/relaSci.owl">
+  <!ENTITY scale "http://sweet.jpl.nasa.gov/2.3/stateSpaceScale.owl">
+  <!ENTITY mass "http://sweet.jpl.nasa.gov/2.3/propChemical.owl">
+  <!ENTITY temp "http://sweet.jpl.nasa.gov/2.3/propTemperature.owl">
+  <!ENTITY space "http://sweet.jpl.nasa.gov/2.3/reprSpace.owl">
+  <!ENTITY stat "http://sweet.jpl.nasa.gov/2.3/propFunction.owl">
+  <!ENTITY diff "http://sweet.jpl.nasa.gov/2.3/propDifference.owl">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&climate;"
+         xmlns:planet="&planet;"
+         xmlns:space="&space;"
+         xmlns:stat="&stat;"
+         xmlns:diff="&diff;"
+         xmlns:climate="&climate;"
+         xmlns:mass="&mass;"
+         xmlns:temp="&temp;"
+         xmlns:rela="&rela;"
+         xmlns:mrela="&mrela;"
+         xmlns:srela="&srela;"
+         xmlns:screla="&screla;"
+         xmlns:scale="&scale;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+	 xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&scale;"/>
+     <owl:imports rdf:resource="&space;"/>
+     <owl:imports rdf:resource="&stat;"/>
+     <owl:imports rdf:resource="&mass;"/>
+     <owl:imports rdf:resource="&temp;"/>
+     <owl:imports rdf:resource="&diff;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&mrela;"/>
+     <owl:imports rdf:resource="&srela;"/>
+     <owl:imports rdf:resource="&screla;"/>
+     <owl:imports rdf:resource="&planet;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#Climat">
+    <rdfs:subClassOf rdf:resource="&stat;#TemporalAverag"/>
+    <rdfs:subClassOf rdf:resource="&planet;#PlanetaryPhenomena"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#hasQuant"/>
+        <owl:someValuesFrom rdf:resource="&temp;#Temperatur"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#hasQuant"/>
+        <owl:someValuesFrom rdf:resource="&mass;#Moistur"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#ClimateAverag" />
+    <owl:equivalentClass rdf:resource="#ClimaticAverag" />
+    <owl:equivalentClass rdf:resource="#ClimatologicalAverag" />
+  </owl:Class>
+  <owl:Class rdf:about="#ClimateAverag"/>
+  <owl:Class rdf:about="#ClimaticAverag"/>
+  <owl:Class rdf:about="#ClimatologicalAverag"/>
+
+  <owl:Class rdf:about="#ClimateAnomali">
+    <rdfs:subClassOf rdf:resource="#ClimatePhenomena"/>
+    <rdfs:subClassOf rdf:resource="&diff;#Anomali"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Climat"/>
+        <owl:onProperty rdf:resource="&mrela;#deviationFrom"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#ClimaticAnomali" />
+  </owl:Class>
+  <owl:Class rdf:about="#ClimaticAnomali"/>
+
+  <owl:Class rdf:about="#ClimatePhenomena">
+    <rdfs:subClassOf rdf:resource="&planet;#PlanetaryPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ClimateChang">
+    <rdfs:subClassOf rdf:resource="#GlobalChang"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GlobalChang">
+    <rdfs:subClassOf rdf:resource="#ClimatePhenomena"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&scale;#Global"/>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GlobalWarm">
+    <rdfs:subClassOf rdf:resource="#GlobalChang"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#GreenhouseEffect"/>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GreenhouseEffect">
+    <rdfs:subClassOf rdf:resource="#GlobalWarm"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#GlobalClim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+    <rdfs:subClassOf rdf:resource="&stat;#Averag"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&space;#Space"/>
+        <owl:onProperty rdf:resource="&mrela;#averageOv"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&scale;#Global"/>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LocalClim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mesoclim">
+    <rdfs:subClassOf rdf:resource="#Climat" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
+        <owl:hasValue rdf:resource="&scale;#Mesoscal" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">The climate of a natural region of small extent, for example, valley, forest, plantation, and park. Because of subtle differences in elevation and exposure, the climate may not be representative of the general climate of the region.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Microclim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
+        <owl:hasValue rdf:resource="&scale;#Microscal" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Paleoclim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+    <rdfs:comment xml:lang="en">Climate for periods prior to the development of measuring instruments, including historic and geologic time, for which only proxy climate records are available.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RegionalClim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MoistureClim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#hasQuant"/>
+        <owl:someValuesFrom rdf:resource="&mass;#Moistur"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ThermalClim">
+    <rdfs:subClassOf rdf:resource="#Climat"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&screla;#hasQuant"/>
+        <owl:someValuesFrom rdf:resource="&temp;#Temperatur"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#HeatIsland">
+    <rdfs:subClassOf rdf:resource="#ClimatePhenomena"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
+        <owl:hasValue rdf:resource="&scale;#Microscal" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NuclearWint">
+    <rdfs:subClassOf rdf:resource="#ClimatePhenomena"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&scale;#Global"/>
+        <owl:onProperty rdf:resource="&srela;#hasSpatialScal"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Drought">
+    <rdfs:subClassOf rdf:resource="#ClimateAnomali"/>
+  </owl:Class>
+
+</rdf:RDF>

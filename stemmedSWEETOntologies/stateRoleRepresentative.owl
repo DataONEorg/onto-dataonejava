@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY ordi "http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl#">
+  <!ENTITY prop "http://sweet.jpl.nasa.gov/2.3/prop.owl#">
+  <!ENTITY repr  "http://sweet.jpl.nasa.gov/2.3/stateRoleRepresentative.owl#">  
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+
+<rdf:RDF xml:base="&repr;"
+         xmlns:repr="&repr;"
+         xmlns:prop="&prop;"
+         xmlns:ordi="&ordi;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:xsd="&xsd;"
+>
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about=""
+                owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl"/>  
+     <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/prop.owl"/>  
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#RepresentativeRol">
+    <rdfs:subClassOf rdf:resource="&prop;Role"/>
+    <rdfs:subClassOf rdf:resource="&ordi;OrdinalProperty"/>
+  </owl:Class>
+
+<!-- Representative Roles -->
+  <repr:RepresentativeRole rdf:about="#Actual">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Anomal">
+    <owl:sameAs rdf:resource="#Anomali"/>
+  </repr:RepresentativeRole>
+  <repr:RepresentativeRole rdf:about="#Anomali"/>
+
+  <repr:RepresentativeRole rdf:about="#Archetyp">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Atypic">
+    <owl:differentFrom rdf:resource="#Typic"/>
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Baselin">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Canon">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Defin">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Exotic">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Expect">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Indicat">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Instanc">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Noisi">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Outlier">
+    <owl:differentFrom rdf:resource="#Repres"/>
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Precious">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Proxi">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Refer">
+  </repr:RepresentativeRole>
+
+  <repr:RepresRole rdf:about="#Repres">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Robust">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Sampl">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#SemiPreci">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Typic">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Target">
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Unexpect">
+    <owl:differentFrom rdf:resource="#Expect"/>
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Unrepres">
+    <owl:differentFrom rdf:resource="#Repres"/>
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#Uniqu">
+  </repr:RepresentativeRole>
+
+</rdf:RDF>

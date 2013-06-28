@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY phen "http://sweet.jpl.nasa.gov/2.3/phen.owl">    
+   <!ENTITY rela "http://sweet.jpl.nasa.gov/2.3/rela.owl">    
+   <!ENTITY prela "http://sweet.jpl.nasa.gov/2.3/relaPhysical.owl">    
+   <!ENTITY sys "http://sweet.jpl.nasa.gov/2.3/phenSystem.owl">    
+   <!ENTITY sysc "http://sweet.jpl.nasa.gov/2.3/phenSystemComplexity.owl">    
+   <!ENTITY sol "http://sweet.jpl.nasa.gov/2.3/phenSolid.owl">    
+   <!ENTITY sdir "http://sweet.jpl.nasa.gov/2.3/reprSpaceDirection.owl">    
+   <!ENTITY wave "http://sweet.jpl.nasa.gov/2.3/phenWave.owl">    
+   <!ENTITY proc "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl">    
+   <!ENTITY inst "http://sweet.jpl.nasa.gov/2.3/phenFluidInstability.owl">    
+   <!ENTITY tran "http://sweet.jpl.nasa.gov/2.3/phenFluidTransport.owl">    
+   <!ENTITY pstate "http://sweet.jpl.nasa.gov/2.3/statePhysical.owl">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&wave;"
+   xmlns:wave = "&wave;"
+   xmlns:inst = "&inst;"
+   xmlns:proc = "&proc;"
+   xmlns:pstate = "&pstate;"
+   xmlns:phen = "&phen;"
+   xmlns:rela = "&rela;"
+   xmlns:prela = "&prela;"
+   xmlns:sdir = "&sdir;"
+   xmlns:tran = "&tran;"
+   xmlns:sys = "&sys;"
+   xmlns:sysc = "&sysc;"
+   xmlns:sol = "&sol;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&phen;"/>
+     <owl:imports rdf:resource="&sdir;"/>
+     <owl:imports rdf:resource="&rela;"/>
+     <owl:imports rdf:resource="&prela;"/>
+     <owl:imports rdf:resource="&sys;"/>
+     <owl:imports rdf:resource="&sysc;"/>
+     <owl:imports rdf:resource="&sol;"/>
+     <owl:imports rdf:resource="&pstate;"/>
+     <owl:imports rdf:resource="&inst;"/>
+     <owl:imports rdf:resource="&tran;"/>
+     <owl:imports rdf:resource="&proc;"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="#LongitudinalWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasOscillationDirect" />
+        <owl:hasValue rdf:resource="&sdir;#Parallel" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Longitudinal waves are waves that have vibrations along or parallel to their direction of travel. They include waves in which the motion of the medium is in the same direction as the motion of the wave. Mechanical longitudinal waves have been also referred to as compressional waves or pressure waves </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TransverseWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasOscillationDirect" />
+        <owl:hasValue rdf:resource="&sdir;#Perpendicular" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A transverse wave is a wave that causes vibration in the medium in a perpendicular direction to its own motion. For example: if a wave moves along the x-axis, its disturbances are in the yz-plane. In other words, it causes medium disturbances across the two-dimensional plane that it is travelling in. Contrary to popular belief, transversal waves do not necessarily move up and down.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SurfaceWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <owl:disjointWith rdf:resource="#BodyWav"/>
+    <owl:disjointWith rdf:resource="#InternalWav"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Wave">
+    <rdfs:subClassOf rdf:resource="&sys;#Oscillat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#WavePhenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
+        <owl:someValuesFrom rdf:resource="#Wave" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ShortWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:comment xml:lang="en">With regard to atmospheric circulation, a progressive wave in the horizontal pattern of air motion with dimensions of cyclonic scale, as distinguished from a long wave.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#StandingWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:comment xml:lang="en">A wave that is stationary with respect to the medium in which it is embedded, for example, two equal gravity waves moving in opposite directions.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TravelingWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <owl:disjointWith rdf:resource="#StandingWav"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CompressionWav">
+    <rdfs:subClassOf rdf:resource="#LongitudinalWav"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ShockWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
+        <owl:allValuesFrom rdf:resource="&sysc;#Shock" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#AcousticWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasRestoringForc" />
+        <owl:someValuesFrom rdf:resource="&proc;#Pressur" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#SoundWav"/>
+    <owl:equivalentClass rdf:resource="#Sound"/>
+    <owl:equivalentClass rdf:resource="#Acoustic"/>
+    <owl:equivalentClass rdf:resource="#Acoustic"/>
+  </owl:Class>
+  <owl:Class rdf:about="#SoundWav"/>
+  <owl:Class rdf:about="#Sound"/>
+  <owl:Class rdf:about="#Acoustic"/>
+  <owl:Class rdf:about="#Acoustic"/>
+
+<!-- Plasma waves -->
+  <owl:Class rdf:about="#AlfvenWav">
+    <rdfs:subClassOf rdf:resource="#PlasmaWav"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PlasmaWav">
+    <rdfs:subClassOf rdf:resource="#Wave"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:hasValue rdf:resource="&pstate;#Plasma" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MagnetohydrodynamicWav">
+    <rdfs:subClassOf rdf:resource="#PlasmaWav" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#Whistler">
+    <rdfs:subClassOf rdf:resource="#PlasmaWav"/>
+    <rdfs:subClassOf rdf:resource="#SoundWav"/>
+  </owl:Class>
+
+<!-- Fluid waves -->
+  <owl:Class rdf:about="#GravityWav">
+    <rdfs:subClassOf rdf:resource="#FluidWav" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasRestoringForc" />
+        <owl:someValuesFrom rdf:resource="&tran;#Buoyanc" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#GravitationalWav" />
+    <rdfs:label>Gravity Wave</rdfs:label>
+    <rdfs:comment xml:lang="en">A wave disturbance in which buoyancy (or reduced gravity) acts as the restoring force on parcels displaced from hydrostatic equilibrium.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#GravitationalWav"/>
+
+  <owl:Class rdf:about="#ShallowWaterWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:comment xml:lang="en">An ocean wave with its length sufficiently large compared to the water depth (i.e., 25 or more times the depth)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#InternalGravityWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:subClassOf rdf:resource="#InternalWav" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:someValuesFrom rdf:resource="&inst;#StaticSt" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#InternalWav" />
+    <rdfs:comment xml:lang="en">A wave that propagates in density-stratified fluid under the influence of buoyancy forces.
+    </rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalWav"/>
+
+  <owl:Class rdf:about="#HelmholtzWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:comment xml:lang="en">An unstable wave in a system of two homogeneous fluids with a velocity discontinuity at the interface.</rdfs:comment>
+  </owl:Class>  
+
+ <owl:Class rdf:about="#KelvinHelmholtzWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:allValuesFrom rdf:resource="&inst;#KelvinHelmholtzInst" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A waveform disturbance that arises from Kelvin?Helmholtz instability.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#KelvinWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:comment xml:lang="en">A type of low-frequency gravity wave trapped to a vertical boundary, or the equator, which propagates anticlockwise (in the Northerm Hemisphere) around a basin.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#InertiaWav">
+    <rdfs:subClassOf rdf:resource="#InternalWav" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasRestoringForc" />
+        <owl:someValuesFrom rdf:resource="&proc;#CoriolisForc" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="#InertialWav"/>
+    <rdfs:comment xml:lang="en">1. Any wave motion in which no form of energy other than kinetic energy is present. In this general sense, Helmholtz waves, barotropic disturbances, Rossby waves, etc., are inertia waves. 2. More restrictedly, a wave motion in which the source of kinetic energy of the disturbance is the rotation of the fluid about some given axis. In the atmosphere a westerly wind system is such a source, the inertia waves here being, in general, stable. A similar analysis has been applied to smaller vortices, such as the hurricane. See inertial instability</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#InertialWav"/>
+
+  <owl:Class rdf:about="#AcousticGravityWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav" />
+    <rdfs:subClassOf rdf:resource="#AcousticWav" />
+    <rdfs:label>Acoustic Gravity Wave</rdfs:label>
+    <rdfs:comment>A wave disturbance with restoring forces that include buoyancy and the elastic compressibility of the fluid medium.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RossbyWav">
+    <rdfs:subClassOf rdf:resource="#InertialWav"/>
+    <owl:equivalentClass rdf:resource="#PlanetaryWav"/>
+    <rdfs:comment xml:lang="en">Rossby (or planetary) waves are large-scale motions in the ocean or atmosphere whose restoring force is the variation in Coriolis effect with latitude. The waves were first identified in the atmosphere in 1939 by Carl-Gustaf Arvid Rossby who went on to explain their motion. Rossby waves are a subset of inertial waves</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#PlanetaryWav"/>
+
+  <owl:Class rdf:about="#CapillaryWav">
+    <rdfs:subClassOf rdf:resource="#Wave"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#LongCrestedWav">
+    <rdfs:subClassOf rdf:resource="#SurfaceWav" />
+    <rdfs:comment xml:lang="en">Ocean surface waves that are nearly two-dimensional, in that the crests appear very long in comparison with the wavelength, and the energy propagation is concentrated in a narrow band around the mean wave direction.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FluidWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:hasValue rdf:resource="&pstate;#Fluid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Seich">
+    <rdfs:subClassOf rdf:resource="#StandingWav"/>
+    <rdfs:comment xml:lang="en">A seiche is a standing wave in an enclosed or partially enclosed body of water. Seiches and seiche-related phenomena have been observed on lakes, reservoirs, bays and seas. The key requirement for formation of a seiche is that the body of water be at least partially bounded, allowing natural phenomena to form a standing wave.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TopographicWav">
+    <rdfs:subClassOf rdf:resource="#GravityWav"/>
+    <rdfs:comment>Waves with a restoring force arising from variations in depth. The stretching or compression of displaced columns of water generates anomalous vorticity tending to drive them back to their original position.</rdfs:comment>
+  </owl:Class>
+
+<!-- Solid waves -->
+  <owl:Class rdf:about="#SolidWav">
+    <rdfs:subClassOf rdf:resource="#Wave" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasStat" />
+        <owl:hasValue rdf:resource="&pstate;#Solid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#ShearWav">
+    <rdfs:subClassOf rdf:resource="#TransverseWav" />
+    <rdfs:subClassOf rdf:resource="#SolidWav" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&prela;#hasRestoringForc" />
+        <owl:someValuesFrom rdf:resource="&sol;#Shear" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#RayleighWav">
+    <rdfs:subClassOf rdf:resource="#SurfaceWav" />
+    <rdfs:subClassOf rdf:resource="#AcousticWav" />
+    <rdfs:subClassOf rdf:resource="#SolidWav" />
+    <rdfs:comment xml:lang="en">Rayleigh waves, also called ground roll, are surface waves that travel as ripples similar to those on the surface of water. The existence of these waves was predicted by John William Strutt, Lord Rayleigh, in 1885. They are slower than body waves, roughly 70% of the velocity of S waves, and have been asserted to be visible during an earthquake in an open space like a parking lot where the cars move up and down with the waves. Reports among seismologists suggest that the apparent motion may be due to distortion of the human eye during shaking. Anecdotally, placing people on shake tables causes the room to appear to ripple. In any case, waves of the reported amplitude, wavelength, and velocity of the visible waves have never been recorded instrumentally.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#BodyWav">
+    <rdfs:subClassOf rdf:resource="#SolidWav" />
+  </owl:Class>
+
+</rdf:RDF>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [ 
+   <!ENTITY ecol "http://sweet.jpl.nasa.gov/2.3/phenEcology.owl">    
+   <!ENTITY phen "http://sweet.jpl.nasa.gov/2.3/phen.owl">    
+   <!ENTITY owl "http://www.w3.org/2002/07/owl#">    
+   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#"> 
+   <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">    
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+   xml:base = "&ecol;"
+   xmlns:phen = "&phen;"
+   xmlns:ecol = "&ecol;"
+   xmlns:owl = "&owl;"
+   xmlns:rdf = "&rdf;"
+   xmlns:rdfs = "&rdfs;"
+   xmlns:xsd = "&xsd;">
+
+<!-- Ontology Information -->
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="" 
+owl:versionInfo="2.3">
+     <rdfs:label>SWEET Ontology</rdfs:label>
+     <owl:imports rdf:resource="&phen;"/>
+  </owl:Ontology>
+
+<!-- Phenomena -->
+  <owl:Class rdf:about="#Adaptat">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CommunityStructur">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Climax">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Competit">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DiurnalMov">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Divers">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Domin">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EcologicalDynam">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EcologicalPhenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Evolut">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FoodChain">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#FoodWebDynam">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Herbivori">
+    <rdfs:subClassOf rdf:resource="#Predat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Migrat">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mutat">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Mutual">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#NaturalSelect">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Parasit">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PopulationDynam">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Postbreed">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Predat">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#PrimaryProduct">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Scaveng">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SecondaryProduct">
+    <rdfs:subClassOf rdf:resource="#EcologicalPhenomena"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Select">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Speciat">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpeciesInteract">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#SpeciesRecruit">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Success">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Symbiosi">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#TrophicDynam">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Bioaccumul">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Bioconcentr">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EndangeredSpeci">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EcosystemHealth">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#EcosystemServic">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Biodivers">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+    <rdfs:comment xml:lang="en">Biodiversity is the variation of life forms within a given ecosystem, biome or for the entire Earth. Biodiversity is often used as a measure of the health of biological systems.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Overpopul">
+    <rdfs:subClassOf rdf:resource="#EcologicalDynam"/>
+  </owl:Class>
+
+</rdf:RDF>
