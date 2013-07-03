@@ -71,15 +71,18 @@ public class CreateOntologyFromThesaurus {
 	}
 	
 	
-	//@param args:  args[0] needs to be the absolute path to the corpus, and args[1] needs to be the absolute path to where you want it stored
+	//@param args:  args[0] needs to be the absolute path to the corpus, and 
+	//args[1] needs to be the absolute path to where you want it stored
+	//args[2] needs to be "true" or "false" on whether you want equivalent axioms or not
 	public static void main(String[] args) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
 //		java.util.Date timeStamp = new java.util.Date();
 //		System.out.println(timeStamp.toString());
 		String corpusPath = args[0];
 		String storagePath = args[1];
+		boolean equivalent = Boolean.valueOf(args[2]);
 		
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
-		cot.buildOntologyFromScratch(corpusPath, storagePath);
+		cot.buildOntologyFromScratch(corpusPath, storagePath, equivalent);
 	
 //		cot.addToOntology("/home/nicholas/research/Experiments/DataONEjava/corpus.owl", "rams");
 	}
@@ -146,8 +149,9 @@ public class CreateOntologyFromThesaurus {
 	 * some time to finish
 	 * @param corpusPath: the absolute path to the corpus
 	 * @param storagePath: the absolute path to the location where you want to save the owl ontology
+	 * @param equivalent: whether or not you want to add equivalent axioms
 	 */
-	public void buildOntologyFromScratch(String corpusPath, String storagePath) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
+	public void buildOntologyFromScratch(String corpusPath, String storagePath, boolean equivalent) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
 		
 		String thesaurusPath = "/home/nicholas/research/Experiments/DataONEjava/synonyms/GenEnglishSynCompendiumStemmed.txt";
 		
@@ -161,8 +165,11 @@ public class CreateOntologyFromThesaurus {
 		//for each word in the word set, make it a class in the ontology
 		addClasses(wordSet, owl, manager);
 		
-		//one by one add "equal to" references from thesaurus
-		addEquivilentClasses(wordSet, owl, manager, tm);
+
+		if(equivalent)
+			addEquivilentClasses(wordSet, owl, manager, tm);//one by one add "equal to" references from thesaurus
+		else
+			addSynonymClasses(wordSet, owl, manager, tm);//just add the synonyms as classes, dont worry about the equal to references
 		
 		//one by one add "subclass" references from thesaurus
 		addSubClasses(wordSet, owl, manager, tm);
@@ -180,6 +187,10 @@ public class CreateOntologyFromThesaurus {
 			owl.shouldAddClass(manager, currentWord);
 		}
 	}
+	
+	
+
+	
 	
 	/*
 	 * given a set of words, go through and see if there is symmetry within the synonyms.  for example, assume you have two words, A, and B
@@ -216,6 +227,35 @@ public class CreateOntologyFromThesaurus {
 				}
 			}//end of currentSynonym for loop
 		}//end of currentWord for loop
+	}
+	
+	
+	
+	/*
+	 * given a set of words, add all the synonyms as classes, but dont do any equivilance associations
+	 * note that using this will add a lot of unreasonable classes, but shouldnt hurt the overall scores and should help as the ontology we
+	 * test shouldnt have these random associations
+	 * 	@param wordSet the words that already exist in the ontology
+	 *	@param owl access to myManager class
+     *	@param manager access to the manager of the ontologies as decided by the API
+	 *	@param tm access to the thesaurus manager
+	 */
+	public void addSynonymClasses(HashSet<String> wordSet, MyOwlOntologyManager owl, OWLOntologyManager manager, ThesaurusManager tm) throws IOException{
+		int counter = 0;
+		
+		for(String currentWord : wordSet){
+			counter ++;
+			
+			if (counter % 100 == 0)
+				System.out.println("we have finished " + Integer.toString(counter) + " words with their synonyms, out of " + Integer.toString(wordSet.size()));
+			
+			HashSet<String> synonyms = tm.getSynonyms(currentWord);
+			
+			if (synonyms.isEmpty()) //this word had no synonyms, move on
+				continue;
+			
+			addClasses(synonyms, owl, manager); //add all the synonyms into the ontology
+		}
 	}
 	
 	

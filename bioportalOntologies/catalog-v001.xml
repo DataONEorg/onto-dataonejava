@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="http://escience.rpi.edu/ontology/vsto/2/0/cedar.owl" uri="cedar.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="http://escience.rpi.edu/ontology/vsto/2/0/mlso.owl" uri="mlso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl" uri="VSTO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="duplicate:http://purl.obolibrary.org/obo/PlantEnvironmentalConditionsOntology.obo" uri="PlantEnvironmentalConditionsOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="duplicate:http://purl.obolibrary.org/obo/PlantEnvironmentalConditionsOntology.obo" uri="test.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="http://purl.obolibrary.org/obo/po.owl" uri="PlantOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1372793967395" name="http://www.owl-ontologies.com/BiodiversityOntologyFull.owl" uri="Biodiversity.owl"/>
+    </group>
+</catalog>
