@@ -14,6 +14,8 @@ import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
@@ -48,11 +50,15 @@ public class CreateOntologyFromThesaurus {
 		BufferedReader in = new BufferedReader(new FileReader(new File(filePath)));
 		String[] wordsFromLine;
 		
+		Pattern p = Pattern.compile("[^a-z0-9]", Pattern.CASE_INSENSITIVE);		
 		String current = in.readLine();
 		while(current != null){
-			wordsFromLine = current.split(" ");
-			for(String word : wordsFromLine)
+//			wordsFromLine = current.split("\\s+");
+			wordsFromLine = p.split(current); //this is better because if there are weird characters, we split, they shouldnt be there
+			for(String word : wordsFromLine){
+
 				wordSet.add(word.trim());
+			}
 			current = in.readLine();
 		}
 		return wordSet;
@@ -250,11 +256,20 @@ public class CreateOntologyFromThesaurus {
 				System.out.println("we have finished " + Integer.toString(counter) + " words with their synonyms, out of " + Integer.toString(wordSet.size()));
 			
 			HashSet<String> synonyms = tm.getSynonyms(currentWord);
+			HashSet<String> filteredSyn = new HashSet<String>();
 			
 			if (synonyms.isEmpty()) //this word had no synonyms, move on
 				continue;
 			
-			addClasses(synonyms, owl, manager); //add all the synonyms into the ontology
+			Pattern p = Pattern.compile("[^a-z]",Pattern.CASE_INSENSITIVE);
+			Matcher m;
+			for(String s: synonyms){
+				m = p.matcher(s);
+				if(! m.find())
+					filteredSyn.add(s);
+			}
+			
+			addClasses(filteredSyn, owl, manager); //add all the synonyms into the ontology
 		}
 	}
 	
