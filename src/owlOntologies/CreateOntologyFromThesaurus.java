@@ -86,11 +86,11 @@ public class CreateOntologyFromThesaurus {
 		String corpusPath = args[0];
 		String storagePath = args[1];
 		boolean equivalent = Boolean.valueOf(args[2]);
+		String thesaurusPath = args[3];
 		
 		CreateOntologyFromThesaurus cot = new CreateOntologyFromThesaurus();
-		cot.buildOntologyFromScratch(corpusPath, storagePath, equivalent);
+		cot.buildOntologyFromScratch(corpusPath, storagePath, equivalent, thesaurusPath);
 	
-//		cot.addToOntology("/home/nicholas/research/Experiments/DataONEjava/corpus.owl", "rams");
 	}
 	
 	
@@ -124,10 +124,9 @@ public class CreateOntologyFromThesaurus {
 	 * and all subclasses.  
 	 * @param ontPath: the absolute file path to the existing ontology
 	 * @param className the name of the class you want to add (e.g., car, or wonderstruck)
+	 * @param thesaurusPath: the absolute file path to the thesaurus file
 	 */
-	public void addToOntology(String ontPath, String className) throws OWLOntologyCreationException, IOException, OWLOntologyStorageException{
-		
-		String thesaurusPath = "/home/nicholas/research/Experiments/DataONEjava/synonyms/GenEnglishSynCompendiumStemmed.txt";
+	public void addToOntology(String ontPath, String className, String thesaurusPath) throws OWLOntologyCreationException, IOException, OWLOntologyStorageException{
 		ThesaurusManager tm = generateThesaurusManager(thesaurusPath);  //get the thesaurus
 		MyOwlOntologyManager owl = generateOwlOntologyManager();  //create an ontology manager
 		OWLOntologyManager manager = owl.loadOntologyFromFile(ontPath);
@@ -156,11 +155,11 @@ public class CreateOntologyFromThesaurus {
 	 * @param corpusPath: the absolute path to the corpus
 	 * @param storagePath: the absolute path to the location where you want to save the owl ontology
 	 * @param equivalent: whether or not you want to add equivalent axioms
+	 * @param thesaurusPath: the absolute path to the thesaurus file we are using.
 	 */
-	public void buildOntologyFromScratch(String corpusPath, String storagePath, boolean equivalent) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
+	public void buildOntologyFromScratch(String corpusPath, String storagePath, boolean equivalent, String thesaurusPath) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException{
 		
-		String thesaurusPath = "/home/nicholas/research/Experiments/DataONEjava/synonyms/GenEnglishSynCompendiumStemmed.txt";
-		
+
 		HashSet<String> wordSet = fetchCorpus(corpusPath);   //get the word set from the corpus
 		ThesaurusManager tm = generateThesaurusManager(thesaurusPath);  //get the thesaurus
 		MyOwlOntologyManager owl = generateOwlOntologyManager();  //create an ontology manager

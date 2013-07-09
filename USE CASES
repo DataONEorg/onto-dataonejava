@@ -1,0 +1,20 @@
+USE CASES:
+
+----Build an ontology from a corpus----
+Developer joe has a new corpus of documents.  He wants to build an ontology for later experimentation from this corpus.  His steps are as follows:
+(1) normalize the corpus - python - corpusManager.normalizeCorpus
+(2) build the ontology - java - owlOntologies.CreateOntologyFromTheasaurus
+To normalize the corpus, he should use the Python package entitled "corpusManager"  The easiest way to normalize this is to use the "normalizeCorpus" module.  Note that the directory that contains ONLY the files will be passed in as input.  It will then produce a fully normalized corpus along with saving each partial step (in case he wants to investigate the intermediate results) in a directory called "data" that is in the parent directory of the python files.  The normalized corpus is saved in this data directory as "finishedCorpus_6.txt"  Note that if this files already exists, it may be overwritten.  The next step is to call the "CreateOntologyFromThesaurus" java file.  This files requires 4 parameters: (1) the absolute path to the normalized corpus generated earlier,  (2) the absolute path to the place where you want the generated ontology stored, (3) whether you want equivalence axioms or not ("true" for yes and "false" for no), and (4) the absolute path to the thesaurus we are using.  Developer joe now has his ontology in the location he chose.  Note that for this to work, joe has to have the natural language toolkit installed which can be found here: http://nltk.org/
+
+
+----Determine coverage for an ontology----
+Developer jane has a new ontology and she wants to determine its relevance to her given domain.  We will assume for this scenario that jane had already built an ontology from her corpus (as that scenario is already described above).  This is very simple, and consists of two steps,
+(1) normalize the ontology - python - ontologyWorker.ontologyStemmer
+(2) generate coverage - java - owlOntologies.CoverageAnalyzer
+First, jane has to stem the class names in the ontology.  This is done by simply calling the "ontologyStemmer" python file and passing in one argument, the directory containing the ontology we want to stem.  Note that this directory can have multiple ontologies and it will stem them all, but it can ONLY contain ontologies.  It will overwrite these ontologies with the stemmed version, jane wanted to have an unstemmed version saved, she should manually copy and paste them in a seperate directory.  Next jane simply calls the "CoverageAnalyzer" java file passing in two parameters, (1) the absolute path for the ontology we created for the corpus, and (2) the absolute path for the ontology we are testing.  This will run and produce two things, first, it will print to the console the various scores for this ontology.  In addition, it will write these scores into a file located in teh same directory as the ontology we are determining coverage for, and will appents "CoverageScores" to its name.  thus, if we are testing the "labor" ontology, the coverage file will be called "laborCoverageScores.txt".  One note, this process ONLY works with OWL ontologies, it will NOT work with OBO, or other formats.
+
+
+----Determine the number of classes, subclasses and equivalences in an ontology ----
+Developer bob has a new ontology and wants to know more about it.  He is interested in the number of classes and subclasses and equivalences contained therein.  He can determine this in a single step
+(1) mine data - python - util.dataMiner
+He simply calls this file, passing in a single parameter, the directory containing the ontology he is intersted in.  If he has multiple ontologies, thats ok, it will mine them all, but this directory must ONLY contain ontologies.  It will then print out the values, and generate a boxplot of the data (if it is only a single ontology, the boxplot is rather boring).  Note that for this to work, bob has to have matplotlib installed on his machine. If for some reason he didnt. he could find it here: http://matplotlib.org/

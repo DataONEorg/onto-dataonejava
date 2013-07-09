@@ -267,9 +267,6 @@ public class CoverageAnalyzer {
 	
 		return score/2; //its divided by two because for each equivalence, it adds it twice (because it says, if a-> b  and b-> a then there are two equivalences
 	}
-	
-	
 
-	
 
 }
