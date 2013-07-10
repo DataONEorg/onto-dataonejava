@@ -38,114 +38,114 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#SpatialReferenceSystem">
-    <rdfs:subClassOf rdf:resource="&repr;#ReferenceFram"/>
+  <owl:Class rdf:about="#spatialreferencesystem">
+    <rdfs:subClassOf rdf:resource="&repr;#referencefram"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
-        <owl:allValuesFrom rdf:resource="&space;#Space"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
+        <owl:allValuesFrom rdf:resource="&space;#space"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HorizontalCoordinateSystem">
-    <rdfs:subClassOf rdf:resource="#SpatialReferenceSystem"/>
+  <owl:Class rdf:about="#horizontalcoordinatesystem">
+    <rdfs:subClassOf rdf:resource="#spatialreferencesystem"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VerticalCoordinateSystem">
-    <rdfs:subClassOf rdf:resource="#SpatialReferenceSystem"/>
+  <owl:Class rdf:about="#verticalcoordinatesystem">
+    <rdfs:subClassOf rdf:resource="#spatialreferencesystem"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarCoordin">
-    <rdfs:subClassOf rdf:resource="#HorizontalCoordinateSystem"/>
+  <owl:Class rdf:about="#polarcoordin">
+    <rdfs:subClassOf rdf:resource="#horizontalcoordinatesystem"/>
   </owl:Class>
 
 <!-- Cooridnate Systems -->
-  <srs:SpatialReferenceSystem rdf:about="#Cartesian">
-    <mrela2:coordinate_1 rdf:resource="&coord;#X"/>
-    <mrela2:coordinate_2 rdf:resource="&coord;#Y"/>
-    <mrela2:coordinate_3 rdf:resource="&coord;#Z"/>
+  <srs:SpatialReferenceSystem rdf:about="#cartesian">
+    <mrela2:coordinate_1 rdf:resource="&coord;#x"/>
+    <mrela2:coordinate_2 rdf:resource="&coord;#y"/>
+    <mrela2:coordinate_3 rdf:resource="&coord;#z"/>
   </srs:SpatialReferenceSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#AlbersConicalEqualArea">
+  <srs:HorizontalCoordinateSystem rdf:about="#albersconicalequalarea">
   </srs:HorizontalCoordinateSystem>
   
-  <srs:HorizontalCoordinateSystem rdf:about="#AzimuthalEquidist">
+  <srs:HorizontalCoordinateSystem rdf:about="#azimuthalequidist">
   </srs:HorizontalCoordinateSystem>
   
-  <srs:HorizontalCoordinateSystem rdf:about="#EquidistantCon">
+  <srs:HorizontalCoordinateSystem rdf:about="#equidistantcon">
   </srs:HorizontalCoordinateSystem>
   
-  <srs:HorizontalCoordinateSystem rdf:about="#Equirectangular">
+  <srs:HorizontalCoordinateSystem rdf:about="#equirectangular">
   </srs:HorizontalCoordinateSystem>
   
-  <srs:HorizontalCoordinateSystem rdf:about="#GeneralVerticalNearSidedPesp">
+  <srs:HorizontalCoordinateSystem rdf:about="#generalverticalnearsidedpesp">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:SpatialReferenceSystem rdf:about="#Geograph">
-    <mrela2:coordinate_1 rdf:resource="&coord;#Longitud"/>
+  <srs:SpatialReferenceSystem rdf:about="#geograph">
+    <mrela2:coordinate_1 rdf:resource="&coord;#longitud"/>
   </srs:SpatialReferenceSystem>
 
-  <srs:SpatialReferenceSystem rdf:about="#RotatedLatitudeLongitud">
+  <srs:SpatialReferenceSystem rdf:about="#rotatedlatitudelongitud">
   </srs:SpatialReferenceSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#LambertConformalCon">
+  <srs:HorizontalCoordinateSystem rdf:about="#lambertconformalcon">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#LocalPlan">
+  <srs:HorizontalCoordinateSystem rdf:about="#localplan">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#Mercat">
+  <srs:HorizontalCoordinateSystem rdf:about="#mercat">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#MillerCylindr">
+  <srs:HorizontalCoordinateSystem rdf:about="#millercylindr">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#ModifiedStereograph">
+  <srs:HorizontalCoordinateSystem rdf:about="#modifiedstereograph">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#ObliqueMerc">
+  <srs:HorizontalCoordinateSystem rdf:about="#obliquemerc">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:PolarCoordinates rdf:about="#PolarStereograph">
+  <srs:PolarCoordinates rdf:about="#polarstereograph">
   </srs:PolarCoordinates>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#Polycon">
+  <srs:HorizontalCoordinateSystem rdf:about="#polycon">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#Robinson">
+  <srs:HorizontalCoordinateSystem rdf:about="#robinson">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#Sinusoid">
+  <srs:HorizontalCoordinateSystem rdf:about="#sinusoid">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#SpaceObliqueMerc">
+  <srs:HorizontalCoordinateSystem rdf:about="#spaceobliquemerc">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#Stereograph">
+  <srs:HorizontalCoordinateSystem rdf:about="#stereograph">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#TransformedEulerianMean">
+  <srs:HorizontalCoordinateSystem rdf:about="#transformedeulerianmean">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#TransverseMerc">
+  <srs:HorizontalCoordinateSystem rdf:about="#transversemerc">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#UniversalTransverseMerc">
+  <srs:HorizontalCoordinateSystem rdf:about="#universaltransversemerc">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:HorizontalCoordinateSystem rdf:about="#VanDeGrinten">
+  <srs:HorizontalCoordinateSystem rdf:about="#vandegrinten">
   </srs:HorizontalCoordinateSystem>
 
-  <srs:SpatialReferenceSystem rdf:about="#TaitBryanAngl">
+  <srs:SpatialReferenceSystem rdf:about="#taitbryanangl">
     <mrela2:coordinate_1 rdf:resource="&coord;#yaw"/>
-    <mrela2:coordinate_2 rdf:resource="&coord;#Pitch"/>
-    <mrela2:coordinate_3 rdf:resource="&coord;#Roll"/>
+    <mrela2:coordinate_2 rdf:resource="&coord;#pitch"/>
+    <mrela2:coordinate_3 rdf:resource="&coord;#roll"/>
   </srs:SpatialReferenceSystem>
 
-  <srs:SpatialReferenceSystem rdf:about="#Astronom">
-    <mrela2:coordinate_1 rdf:resource="&coord;#RightAscens"/>
-    <mrela2:coordinate_2 rdf:resource="&coord;#Declin"/>
+  <srs:SpatialReferenceSystem rdf:about="#astronom">
+    <mrela2:coordinate_1 rdf:resource="&coord;#rightascen"/>
+    <mrela2:coordinate_2 rdf:resource="&coord;#declin"/>
    <rdfs:comment>Coordinate System with its origin on the axis of the Earth and fixed with respect to the stars.</rdfs:comment>
   </srs:SpatialReferenceSystem>
 

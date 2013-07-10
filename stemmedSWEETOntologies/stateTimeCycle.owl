@@ -31,124 +31,124 @@
      <owl:imports rdf:resource="&mrela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#OscillationSt">
-    <rdfs:subClassOf rdf:resource="&pstate;#PhysicalSt"/>
+  <owl:Class rdf:about="#oscillationst">
+    <rdfs:subClassOf rdf:resource="&pstate;#physicalst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElNino">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#elnino">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#ENSO" />
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#enso" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A significant increase in sea surface temperature over the eastern and central equatorial Pacific that occurs at irregular intervals, generally ranging between two and seven years.</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#LaNina">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+ <owl:Class rdf:about="#lanina">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#ENSO" />
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#enso" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The most common of several names given toa significant decrease in sea surface temperature ("cold events") in the central and eastern equatorial Pacific.  La Nina is the counterpart to the El Nino "warm event," and its spatial and temporal evolution in the equatorial Pacific is, to a considerable extent, the mirror image of El Nino, although La Nina events tend to be somewhat less regular in their behavior and duration.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarMaximum">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#solarmaximum">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#SolarCycl" />
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#solarcycl" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarMinimum">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#solarminimum">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#SolarCycl" />
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#solarcycl" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MaunderMinimum">
-    <rdfs:subClassOf rdf:resource="#SolarMinimum"/>
+  <owl:Class rdf:about="#maunderminimum">
+    <rdfs:subClassOf rdf:resource="#solarminimum"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HighTid">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#hightid">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#Tide" />
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#LowTid">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#Tide" />
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#tide" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpringTid">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#lowtid">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="#LowTid" />
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="#HighTid" />
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#tide" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NeapTid">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#springtid">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="#LowTid" />
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="#lowtid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="#HighTid" />
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#IceAg">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#maximumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#IceAgeCycl" />
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="#hightid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interglaci">
-    <rdfs:subClassOf rdf:resource="#OscillationSt"/>
+  <owl:Class rdf:about="#neaptid">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#minimumOf" />
-        <owl:someValuesFrom rdf:resource="&cyc;#IceAgeCycl" />
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="#lowtid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="#hightid" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#iceag">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#maximumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#iceagecycl" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#interglaci">
+    <rdfs:subClassOf rdf:resource="#oscillationst"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&mrela;#minimumof" />
+        <owl:someValuesFrom rdf:resource="&cyc;#iceagecycl" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

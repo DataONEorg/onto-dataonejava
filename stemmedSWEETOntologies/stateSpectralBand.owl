@@ -40,36 +40,36 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <owl:Class rdf:about="#BroadSpectrum">
+  <owl:Class rdf:about="#broadspectrum">
     <rdfs:subClassOf rdf:resource="&ordi;SpectralBand"/>
-    <owl:equivalentClass rdf:resource="#BroadBand"/>
-    <owl:equivalentClass rdf:resource="#WhiteLight"/>
+    <owl:equivalentClass rdf:resource="#broadband"/>
+    <owl:equivalentClass rdf:resource="#whitelight"/>
     <owl:disjointWith rdf:resource="&ordi;SpectralLine"/>
   </owl:Class>
-  <owl:Class rdf:about="#BroadBand"/>
-  <owl:Class rdf:about="#WhiteLight"/>
+  <owl:Class rdf:about="#broadband"/>
+  <owl:Class rdf:about="#whitelight"/>
 
-  <owl:Class rdf:about="#Bolometr">
-    <rdfs:subClassOf rdf:resource="#BroadSpectrum"/>
+  <owl:Class rdf:about="#bolometr">
+    <rdfs:subClassOf rdf:resource="#broadspectrum"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Monochromat">
-    <rdfs:subClassOf rdf:resource="#NarrowSpectrum"/>
+  <owl:Class rdf:about="#monochromat">
+    <rdfs:subClassOf rdf:resource="#narrowspectrum"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NarrowSpectrum">
+  <owl:Class rdf:about="#narrowspectrum">
     <rdfs:subClassOf rdf:resource="&ordi;SpectralBand"/>
-    <owl:equivalentClass rdf:resource="#NarrowBand"/>
-    <owl:equivalentClass rdf:resource="#BandLimit"/>
+    <owl:equivalentClass rdf:resource="#narrowband"/>
+    <owl:equivalentClass rdf:resource="#bandlimit"/>
   </owl:Class>
-  <owl:Class rdf:about="#NarrowBand"/>
-  <owl:Class rdf:about="#BandLimit"/>
+  <owl:Class rdf:about="#narrowband"/>
+  <owl:Class rdf:about="#bandlimit"/>
 
-  <owl:Class rdf:about="#Polychromat">
-    <rdfs:subClassOf rdf:resource="#BroadSpectrum"/>
+  <owl:Class rdf:about="#polychromat">
+    <rdfs:subClassOf rdf:resource="#broadspectrum"/>
   </owl:Class>
 
-  <ordi:SpectralBand rdf:about="#GammaWav">
+  <ordi:SpectralBand rdf:about="#gammawav">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0</mrela:hasLowerBound>
@@ -78,7 +78,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#XRay">
+  <ordi:SpectralBand rdf:about="#xray">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0.03</mrela:hasLowerBound>
@@ -87,7 +87,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#HardXRay">
+  <ordi:SpectralBand rdf:about="#hardxray">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0.03</mrela:hasLowerBound>
@@ -96,7 +96,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#SoftXRay">
+  <ordi:SpectralBand rdf:about="#softxray">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0.3</mrela:hasLowerBound>
@@ -105,9 +105,9 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Ultraviolet">
-     <owl:sameAs rdf:resource="#ShortWav"/>
-     <owl:sameAs rdf:resource="#UV"/>
+  <ordi:SpectralBand rdf:about="#ultraviolet">
+     <owl:sameAs rdf:resource="#shortwav"/>
+     <owl:sameAs rdf:resource="#uv"/>
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5</mrela:hasLowerBound>
@@ -116,10 +116,10 @@
      </srela:hasWavelength>
     <rdfs:comment xml:lang="en">Electromagnetic radiation of shorter wavelength than visible radiation but longer than x-rays.</rdfs:comment>
   </ordi:SpectralBand>
-  <ordi:SpectralBand rdf:about="#ShortWav"/>
-  <ordi:SpectralBand rdf:about="#UV"/>
+  <ordi:SpectralBand rdf:about="#shortwav"/>
+  <ordi:SpectralBand rdf:about="#uv"/>
 
-  <ordi:SpectralBand rdf:about="#EUV">
+  <ordi:SpectralBand rdf:about="#euv">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5</mrela:hasLowerBound>
@@ -128,7 +128,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#UVC">
+  <ordi:SpectralBand rdf:about="#uvc">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">100</mrela:hasLowerBound>
@@ -137,7 +137,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#UVB">
+  <ordi:SpectralBand rdf:about="#uvb">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">280</mrela:hasLowerBound>
@@ -146,7 +146,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#UVA">
+  <ordi:SpectralBand rdf:about="#uva">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">315</mrela:hasLowerBound>
@@ -155,7 +155,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Violet">
+  <ordi:SpectralBand rdf:about="#violet">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">390</mrela:hasLowerBound>
@@ -164,7 +164,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Blue">
+  <ordi:SpectralBand rdf:about="#blue">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">455</mrela:hasLowerBound>
@@ -173,7 +173,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Green">
+  <ordi:SpectralBand rdf:about="#green">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">492</mrela:hasLowerBound>
@@ -191,7 +191,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Orang">
+  <ordi:SpectralBand rdf:about="#orang">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">597</mrela:hasLowerBound>
@@ -200,7 +200,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Red">
+  <ordi:SpectralBand rdf:about="#red">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">622</mrela:hasLowerBound>
@@ -209,7 +209,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#PhotosyntheticallyActiveRadi">
+  <ordi:SpectralBand rdf:about="#photosyntheticallyactiveradi">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">400</mrela:hasLowerBound>
@@ -218,7 +218,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Visibl">
+  <ordi:SpectralBand rdf:about="#visibl">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">390</mrela:hasLowerBound>
@@ -228,8 +228,8 @@
   </ordi:SpectralBand>
 
 
-  <ordi:SpectralBand rdf:about="#Infrare">
-    <owl:sameAs rdf:resource="#LongWav"/>
+  <ordi:SpectralBand rdf:about="#infrare">
+    <owl:sameAs rdf:resource="#longwav"/>
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">780</mrela:hasLowerBound>
@@ -237,9 +237,9 @@
        </waves:WavelengthBand_nm>
      </srela:hasWavelength>
   </ordi:SpectralBand>
-  <ordi:SpectralBand rdf:about="#LongWav"/>
+  <ordi:SpectralBand rdf:about="#longwav"/>
 
-  <ordi:SpectralBand rdf:about="#ThermalInfrar">
+  <ordi:SpectralBand rdf:about="#thermalinfrar">
      <srela:hasWavelength> 
        <waves:WavelengthBand_nm>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">780</mrela:hasLowerBound>
@@ -248,7 +248,7 @@
      </srela:hasWavelength>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#RadioWav">
+  <ordi:SpectralBand rdf:about="#radiowav">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0</mrela:hasLowerBound>
@@ -257,7 +257,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#FM">
+  <ordi:SpectralBand rdf:about="#fm">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">87.5</mrela:hasLowerBound>
@@ -266,7 +266,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#VLF">
+  <ordi:SpectralBand rdf:about="#vlf">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">0.003</mrela:hasLowerBound>
@@ -275,7 +275,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#LBand">
+  <ordi:SpectralBand rdf:about="#lband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1000</mrela:hasLowerBound>
@@ -284,7 +284,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#SBand">
+  <ordi:SpectralBand rdf:about="#sband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2000</mrela:hasLowerBound>
@@ -293,7 +293,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#CBand">
+  <ordi:SpectralBand rdf:about="#cband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4000</mrela:hasLowerBound>
@@ -302,7 +302,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#XBand">
+  <ordi:SpectralBand rdf:about="#xband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8000</mrela:hasLowerBound>
@@ -311,7 +311,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#KuBand">
+  <ordi:SpectralBand rdf:about="#kuband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">12000</mrela:hasLowerBound>
@@ -320,7 +320,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#KBand">
+  <ordi:SpectralBand rdf:about="#kband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">18000</mrela:hasLowerBound>
@@ -329,7 +329,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#KaBand">
+  <ordi:SpectralBand rdf:about="#kaband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">26500</mrela:hasLowerBound>
@@ -338,7 +338,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#VBand">
+  <ordi:SpectralBand rdf:about="#vband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">40000</mrela:hasLowerBound>
@@ -347,7 +347,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#WBand">
+  <ordi:SpectralBand rdf:about="#wband">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">75000</mrela:hasLowerBound>
@@ -356,7 +356,7 @@
      </trela:hasFrequency>
   </ordi:SpectralBand>
 
-  <ordi:SpectralBand rdf:about="#Microwav">
+  <ordi:SpectralBand rdf:about="#microwav">
      <trela:hasFrequency> 
        <freq:FrequencyBand_MHz>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">300</mrela:hasLowerBound>

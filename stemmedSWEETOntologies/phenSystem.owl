@@ -29,181 +29,181 @@
     <owl:imports rdf:resource = "&phen;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#System">
-    <rdfs:subClassOf rdf:resource="&mod;#Model"/>
+  <owl:Class rdf:about="#system">
+    <rdfs:subClassOf rdf:resource="&mod;#model"/>
     <rdfs:comment> System is a set of interacting or interdependent entities, real or abstract, forming an integrated whole.
     </rdfs:comment>
   </owl:Class>
   
-  <owl:Class rdf:about="#Chang">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  <owl:Class rdf:about="#chang">
+    <rdfs:subClassOf rdf:resource="#systemphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Displac">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#displac">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Disrupt">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#disrupt">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Disturb">
-    <rdfs:subClassOf rdf:resource="#Variat" />
+  <owl:Class rdf:about="#disturb">
+    <rdfs:subClassOf rdf:resource="#variat" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Exchang">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#exchang">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flow">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#flow">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interact">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#interact">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
     <rdfs:comment>process that multiple substances are in contact and have some consequence</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interrupt">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#interrupt">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SystemStateChang">
-    <rdfs:subClassOf rdf:resource="#Chang"/>
+  <owl:Class rdf:about="#systemstatechang">
+    <rdfs:subClassOf rdf:resource="#chang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Demand">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena"/>
+  <owl:Class rdf:about="#demand">
+    <rdfs:subClassOf rdf:resource="#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SystemPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#systemphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drift">
-    <rdfs:subClassOf rdf:resource="#Trend" />
+  <owl:Class rdf:about="#drift">
+    <rdfs:subClassOf rdf:resource="#trend" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Shift">
-    <rdfs:subClassOf rdf:resource="#Trend" />
+  <owl:Class rdf:about="#shift">
+    <rdfs:subClassOf rdf:resource="#trend" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Trend">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  <owl:Class rdf:about="#trend">
+    <rdfs:subClassOf rdf:resource="#systemphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Lag">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  <owl:Class rdf:about="#lag">
+    <rdfs:subClassOf rdf:resource="#systemphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Stress">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena"/>
+  <owl:Class rdf:about="#stress">
+    <rdfs:subClassOf rdf:resource="#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Convers">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#conver">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
 <!-- System growth -->
-  <owl:Class rdf:about="#Return">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#return">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Comeback">
-    <rdfs:subClassOf rdf:resource="#Return"/>
+  <owl:Class rdf:about="#comeback">
+    <rdfs:subClassOf rdf:resource="#return"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Accumul">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  <owl:Class rdf:about="#accumul">
+    <rdfs:subClassOf rdf:resource="#systemphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Deposit">
-    <rdfs:subClassOf rdf:resource="#Accumul" />
+  <owl:Class rdf:about="#deposit">
+    <rdfs:subClassOf rdf:resource="#accumul" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Extension">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#extension">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inundat">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#inundat">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Growth">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#growth">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Increas">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
-    <owl:equivalentClass rdf:resource="#Rise"/>
+  <owl:Class rdf:about="#increa">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
+    <owl:equivalentClass rdf:resource="#rise"/>
   </owl:Class>
-  <owl:Class rdf:about="#Rise"/>
+  <owl:Class rdf:about="#rise"/>
   
-  <owl:Class rdf:about="#Replenish">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#replenish">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Collect">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#collect">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
 <!-- System loss -->
-  <owl:Class rdf:about="#Remov">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#remov">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Loss">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#loss">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Destruct">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#destruct">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decreas">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
-    <owl:equivalentClass rdf:resource="#Drop"/>
-    <owl:equivalentClass rdf:resource="#Fall"/>
-    <owl:equivalentClass rdf:resource="#Declin"/>
-    <owl:equivalentClass rdf:resource="#Reduct"/>
+  <owl:Class rdf:about="#decrea">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
+    <owl:equivalentClass rdf:resource="#drop"/>
+    <owl:equivalentClass rdf:resource="#fall"/>
+    <owl:equivalentClass rdf:resource="#declin"/>
+    <owl:equivalentClass rdf:resource="#reduct"/>
   </owl:Class>
-  <owl:Class rdf:about="#Drop"/>
-  <owl:Class rdf:about="#Fall"/>
-  <owl:Class rdf:about="#Declin"/>
-  <owl:Class rdf:about="#Reduct"/>
+  <owl:Class rdf:about="#drop"/>
+  <owl:Class rdf:about="#fall"/>
+  <owl:Class rdf:about="#declin"/>
+  <owl:Class rdf:about="#reduct"/>
   
-  <owl:Class rdf:about="#Halt">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
-  </owl:Class>
-  
-  <owl:Class rdf:about="#Retreat">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#halt">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Oscillat">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#retreat">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Perturb">
-    <rdfs:subClassOf rdf:resource="#Variat" />
+  <owl:Class rdf:about="#oscillat">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#perturb">
+    <rdfs:subClassOf rdf:resource="#variat" />
     <rdfs:comment xml:lang="en">Any departure introduced into an assumed steady state of a system.   The magnitude is often assumed to be small so that product terms in the dependent variables may be neglected.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vacil">
-    <rdfs:subClassOf rdf:resource="#Oscillat" />
+  <owl:Class rdf:about="#vacil">
+    <rdfs:subClassOf rdf:resource="#oscillat" />
     <rdfs:comment xml:lang="en">Oscillation, usually of a small amplitude, about a reference state.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Variabl">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#variabl">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Variat">
-    <rdfs:subClassOf rdf:resource="#SystemStateChang"/>
+  <owl:Class rdf:about="#variat">
+    <rdfs:subClassOf rdf:resource="#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Recycl">
-    <rdfs:subClassOf rdf:resource="#SystemPhenomena" />
+  <owl:Class rdf:about="#recycl">
+    <rdfs:subClassOf rdf:resource="#systemphenomena" />
   </owl:Class>
 
 </rdf:RDF>

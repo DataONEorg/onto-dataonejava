@@ -41,76 +41,76 @@
   </owl:Ontology>
   
 <!-- Multi-dimensional properties -->
-  <owl:Class rdf:about="#RadarCrossSect">
-    <rdfs:subClassOf rdf:resource="#CrossSect"/>
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
+  <owl:Class rdf:about="#radarcrosssect">
+    <rdfs:subClassOf rdf:resource="#crosssect"/>
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
     <rdfs:comment xml:lang="en">Radar cross section (RCS) describes the extent to which an object reflects an incident electromagnetic wave. It is a measure of the strength of the radar signal backscattered from a target object for a given incident wave power..</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CrossSect">
-    <rdfs:subClassOf rdf:resource="#Area"/>
-    <owl:equivalentClass rdf:resource="#CrossSectionalArea"/>
+  <owl:Class rdf:about="#crosssect">
+    <rdfs:subClassOf rdf:resource="#area"/>
+    <owl:equivalentClass rdf:resource="#crosssectionalarea"/>
   </owl:Class>
-  <owl:Class rdf:about="#CrossSectionalArea"/>
+  <owl:Class rdf:about="#crosssectionalarea"/>
 
-  <owl:Class rdf:about="#Area">
-    <rdfs:subClassOf rdf:resource="&dist;#SpatialMeasur"/>
+  <owl:Class rdf:about="#area">
+    <rdfs:subClassOf rdf:resource="&dist;#spatialmeasur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
         <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#metersquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Footprint">
-    <rdfs:subClassOf rdf:resource="#Area"/>
+  <owl:Class rdf:about="#footprint">
+    <rdfs:subClassOf rdf:resource="#area"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonFootprint">
-    <rdfs:subClassOf rdf:resource="#Footprint"/>
+  <owl:Class rdf:about="#carbonfootprint">
+    <rdfs:subClassOf rdf:resource="#footprint"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Volum">
-    <rdfs:subClassOf rdf:resource="&dist;#SpatialMeasur"/>
+  <owl:Class rdf:about="#volum">
+    <rdfs:subClassOf rdf:resource="&dist;#spatialmeasur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
         <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterCub"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#metercub"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   
-  <owl:Class rdf:about="#Capac">
-    <rdfs:subClassOf rdf:resource="#Volum"/>
+  <owl:Class rdf:about="#capac">
+    <rdfs:subClassOf rdf:resource="#volum"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Resolut">
-    <rdfs:subClassOf rdf:resource="#AngularExt"/>
+  <owl:Class rdf:about="#resolut">
+    <rdfs:subClassOf rdf:resource="#angularext"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#FieldOfView">
-    <rdfs:subClassOf rdf:resource="#AngularExt"/>
+  <owl:Class rdf:about="#fieldofview">
+    <rdfs:subClassOf rdf:resource="#angularext"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AngularExt">
-    <rdfs:subClassOf rdf:resource="&dist;#SpatialMeasur"/>
+  <owl:Class rdf:about="#angularext">
+    <rdfs:subClassOf rdf:resource="&dist;#spatialmeasur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#radian"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

@@ -71,135 +71,135 @@
   </owl:Ontology>
 
 <!-- Object Properties -->
-  <owl:ObjectProperty rdf:about="#greaterVerticalExtentThan">
-    <rdfs:subPropertyOf rdf:resource="#largerThan"/>
+  <owl:ObjectProperty rdf:about="#greaterverticalextentthan">
+    <rdfs:subPropertyOf rdf:resource="#largerthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#fartherThan">
-    <rdfs:domain rdf:resource="&dist;#Distanc"/>
-    <rdfs:range rdf:resource="&dist;#Distanc"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterThan"/>
+  <owl:ObjectProperty rdf:about="#fartherthan">
+    <rdfs:domain rdf:resource="&dist;#distanc"/>
+    <rdfs:range rdf:resource="&dist;#distanc"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#largerThan">
-    <rdfs:domain rdf:resource="&dist;#Size"/>
-    <rdfs:range rdf:resource="&dist;#Size"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterThan"/>
+  <owl:ObjectProperty rdf:about="#largerthan">
+    <rdfs:domain rdf:resource="&dist;#size"/>
+    <rdfs:range rdf:resource="&dist;#size"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#largerScaleThan">
-    <rdfs:subPropertyOf rdf:resource="#largerThan"/>
-    <rdfs:domain rdf:resource="&ordi;#SpatialScal"/>
-    <rdfs:range rdf:resource="&ordi;#SpatialScal"/>
+  <owl:ObjectProperty rdf:about="#largerscalethan">
+    <rdfs:subPropertyOf rdf:resource="#largerthan"/>
+    <rdfs:domain rdf:resource="&ordi;#spatialsc"/>
+    <rdfs:range rdf:resource="&ordi;#spatialsc"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#upperPartOf">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#upperpartof">
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#adjacentTo">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
-    <owl:equivalentProperty rdf:resource="#isAdjacentTo"/>
+  <owl:ObjectProperty rdf:about="#adjacentto">
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
+    <owl:equivalentProperty rdf:resource="#isadjacentto"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isAdjacentTo"/>
+  <owl:ObjectProperty rdf:about="#isadjacentto"/>
 
-  <owl:ObjectProperty rdf:about="#hasBoundari">
-<!--    <rdfs:range rdf:resource="#Boundari"/> -->
-  </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="#hasOuterBoundari">
-    <rdfs:subPropertyOf rdf:resource="#hasBoundari"/>
+  <owl:ObjectProperty rdf:about="#hasboundari">
+<!--    <rdfs:range rdf:resource="#boundari"/> -->
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLowerBoundari">
-    <rdfs:subPropertyOf rdf:resource="#hasBoundari"/>
+  <owl:ObjectProperty rdf:about="#hasouterboundari">
+    <rdfs:subPropertyOf rdf:resource="#hasboundari"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasUpperBoundari">
-    <rdfs:subPropertyOf rdf:resource="#hasBoundari"/>
+  <owl:ObjectProperty rdf:about="#haslowerboundari">
+    <rdfs:subPropertyOf rdf:resource="#hasboundari"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasCommon2DBorderWith">
-    <rdfs:subPropertyOf rdf:resource="#hasBoundari"/>
+  <owl:ObjectProperty rdf:about="#hasupperboundari">
+    <rdfs:subPropertyOf rdf:resource="#hasboundari"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hascommon2dborderwith">
+    <rdfs:subPropertyOf rdf:resource="#hasboundari"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#insid">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterThan"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#greaterthan"/>
     <owl:equivalentProperty rdf:resource="#interior"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#interior"/>
 
   <owl:ObjectProperty rdf:about="#outsid">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#lessThan"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#lessthan"/>
     <owl:equivalentProperty rdf:resource="#exterior"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#exterior"/>
 
   <owl:ObjectProperty rdf:about="#nonoverlap">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#overlap">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <owl:equivalentProperty rdf:resource="#overlap"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#overlap"/>
 
-  <owl:ObjectProperty rdf:about="#separatedFrom">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#separatedfrom">
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#spatialRel">
+  <owl:ObjectProperty rdf:about="#spatialrel">
     <rdfs:subPropertyOf rdf:resource="&mrela;#relat"/>
-    <rdfs:domain rdf:resource="&geom;#GeometricalObject"/>
-    <rdfs:range rdf:resource="&geom;#GeometricalObject"/>
+    <rdfs:domain rdf:resource="&geom;#geometricalobject"/>
+    <rdfs:range rdf:resource="&geom;#geometricalobject"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#spatialSubset">
-    <rdfs:subPropertyOf rdf:resource="&mrela;#subsetOf"/>
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#spatialsubset">
+    <rdfs:subPropertyOf rdf:resource="&mrela;#subsetof"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#spatialSuperset">
-    <rdfs:subPropertyOf rdf:resource="&mrela;#supersetOf"/>
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#spatialsuperset">
+    <rdfs:subPropertyOf rdf:resource="&mrela;#supersetof"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#surroundedBi">
-    <rdfs:subPropertyOf rdf:resource="#spatialSuperset"/>
+  <owl:ObjectProperty rdf:about="#surroundedbi">
+    <rdfs:subPropertyOf rdf:resource="#spatialsuperset"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#below">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <owl:inverseOf rdf:resource="#abov"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#abov">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#across">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#east">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <owl:inverseOf rdf:resource="#west"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#north">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <owl:inverseOf rdf:resource="#south"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#south">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#west">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#under">
@@ -207,184 +207,184 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#near">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#orthogonalTo">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#orthogonalto">
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <rdf:type rdf:resource="&owl;SymmetricProperty"/>
-    <rdfs:domain rdf:resource="&dir;#Direct"/>
-    <rdfs:range rdf:resource="&dir;#Direct"/>
-    <owl:equivalentProperty rdf:resource="#perpendicularTo"/>
+    <rdfs:domain rdf:resource="&dir;#direct"/>
+    <rdfs:range rdf:resource="&dir;#direct"/>
+    <owl:equivalentProperty rdf:resource="#perpendicularto"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#perpendicularTo"/>
+  <owl:ObjectProperty rdf:about="#perpendicularto"/>
 
-  <owl:ObjectProperty rdf:about="#oppositeTo">
-    <rdfs:subPropertyOf rdf:resource="#spatialRel"/>
+  <owl:ObjectProperty rdf:about="#oppositeto">
+    <rdfs:subPropertyOf rdf:resource="#spatialrel"/>
     <rdf:type rdf:resource="&owl;SymmetricProperty"/>
-    <rdfs:domain rdf:resource="&dir;#Direct"/>
-    <rdfs:range rdf:resource="&dir;#Direct"/>
+    <rdfs:domain rdf:resource="&dir;#direct"/>
+    <rdfs:range rdf:resource="&dir;#direct"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpatialExt">
-    <rdfs:range rdf:resource="&spac;#SpatialExt"/>
+  <owl:ObjectProperty rdf:about="#hasspatialext">
+    <rdfs:range rdf:resource="&spac;#spatialext"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpatialConfigur">
-    <rdfs:range rdf:resource="&spac;#Configur"/>
+  <owl:ObjectProperty rdf:about="#hasspatialconfigur">
+    <rdfs:range rdf:resource="&spac;#configur"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpatialDistribut">
-    <rdfs:range rdf:resource="&spac;#SpatialDistribut"/>
+  <owl:ObjectProperty rdf:about="#hasspatialdistribut">
+    <rdfs:range rdf:resource="&spac;#spatialdistribut"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpatialScal">
-    <rdfs:subPropertyOf rdf:resource="&mrela;#hasScal"/>
-    <rdfs:range rdf:resource="&ordi;#SpatialScal"/>
+  <owl:ObjectProperty rdf:about="#hasspatialsc">
+    <rdfs:subPropertyOf rdf:resource="&mrela;#hasscal"/>
+    <rdfs:range rdf:resource="&ordi;#spatialsc"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasGeometricalObject">
-    <rdfs:range rdf:resource="&obj;#GeometricalObject"/>
+  <owl:ObjectProperty rdf:about="#hasgeometricalobject">
+    <rdfs:range rdf:resource="&obj;#geometricalobject"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasVertic">
-    <rdfs:domain rdf:resource="&obj;#Polygon"/>
+  <owl:ObjectProperty rdf:about="#hasvert">
+    <rdfs:domain rdf:resource="&obj;#polygon"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#clusterOf">
-    <rdfs:domain rdf:resource="&obj;#Cluster"/>
+  <owl:ObjectProperty rdf:about="#clusterof">
+    <rdfs:domain rdf:resource="&obj;#cluster"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAxi">
-    <rdfs:range rdf:resource="&dir;#Axis"/>
+  <owl:ObjectProperty rdf:about="#hasaxi">
+    <rdfs:range rdf:resource="&dir;#axis"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDirect">
-    <rdfs:range rdf:resource="&dir;#Direct"/>
+  <owl:ObjectProperty rdf:about="#hasdirect">
+    <rdfs:range rdf:resource="&dir;#direct"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasNorm">
-    <rdfs:range rdf:resource="&dir;#Direct"/>
+  <owl:ObjectProperty rdf:about="#hasnorm">
+    <rdfs:range rdf:resource="&dir;#direct"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLength">
-    <rdfs:range rdf:resource="&dist;#Length"/>
+  <owl:ObjectProperty rdf:about="#haslength">
+    <rdfs:range rdf:resource="&dist;#length"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#diamet">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#radius">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasWavelength">
-    <rdfs:domain rdf:resource="&wave;#Wave"/>
-    <rdfs:range rdf:resource="&dist;#Wavelength"/>
+  <owl:ObjectProperty rdf:about="#haswavelength">
+    <rdfs:domain rdf:resource="&wave;#wave"/>
+    <rdfs:range rdf:resource="&dist;#wavelength"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasHeight">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
-    <rdfs:range rdf:resource="&heig;#Height"/>
+  <owl:ObjectProperty rdf:about="#hasheight">
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
+    <rdfs:range rdf:resource="&heig;#height"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasReferenceHeight">
-    <rdfs:subPropertyOf rdf:resource="#hasHeight"/>
+  <owl:ObjectProperty rdf:about="#hasreferenceheight">
+    <rdfs:subPropertyOf rdf:resource="#hasheight"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasGreaterVerticalExtentThan">
+  <owl:ObjectProperty rdf:about="#hasgreaterverticalextentthan">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDepth">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
-    <rdfs:range rdf:resource="&heig;#Depth"/>
+  <owl:ObjectProperty rdf:about="#hasdepth">
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
+    <rdfs:range rdf:resource="&heig;#depth"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasReferenceDepth">
-    <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
+  <owl:ObjectProperty rdf:about="#hasreferencedepth">
+    <rdfs:subPropertyOf rdf:resource="#hasdepth"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasMaximumDepth">
-    <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#hasMaximum"/>
+  <owl:ObjectProperty rdf:about="#hasmaximumdepth">
+    <rdfs:subPropertyOf rdf:resource="#hasdepth"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#hasmaximum"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageDepth">
-    <rdfs:subPropertyOf rdf:resource="#hasDepth"/>
-    <rdfs:subPropertyOf rdf:resource="&mrela;#hasAverag"/>
+  <owl:ObjectProperty rdf:about="#hasaveragedepth">
+    <rdfs:subPropertyOf rdf:resource="#hasdepth"/>
+    <rdfs:subPropertyOf rdf:resource="&mrela;#hasaverag"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLoc">
-    <rdfs:range rdf:resource="&loca;#Locat"/>
+  <owl:ObjectProperty rdf:about="#hasloc">
+    <rdfs:range rdf:resource="&loca;#locat"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasCent">
-    <rdfs:subPropertyOf rdf:resource="#hasLoc"/>
-    <rdfs:range rdf:resource="&loca;#Center"/>
+  <owl:ObjectProperty rdf:about="#hascent">
+    <rdfs:subPropertyOf rdf:resource="#hasloc"/>
+    <rdfs:range rdf:resource="&loca;#center"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasArea">
+  <owl:ObjectProperty rdf:about="#hasarea">
     <rdfs:domain rdf:resource="&obj;#GeometricalObject_2D"/>
-    <rdfs:range rdf:resource="&mult;#Area"/>
+    <rdfs:range rdf:resource="&mult;#area"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasVolum">
+  <owl:ObjectProperty rdf:about="#hasvolum">
     <rdfs:domain rdf:resource="&obj3d;#GeometricalObject_3D"/>
-    <rdfs:range rdf:resource="&mult;#Volum"/>
+    <rdfs:range rdf:resource="&mult;#volum"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#originatesFrom">
-    <rdfs:subPropertyOf rdf:resource="&rela;#hasRealm"/>
+  <owl:ObjectProperty rdf:about="#originatesfrom">
+    <rdfs:subPropertyOf rdf:resource="&rela;#hasrealm"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLatitudeBand">
-    <rdfs:range rdf:resource="&reg;#LatitudeBand"/>
+  <owl:ObjectProperty rdf:about="#haslatitudeband">
+    <rdfs:range rdf:resource="&reg;#latitudeband"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLatitudeLin">
-    <rdfs:range rdf:resource="&reg;#LatitudeLin"/>
+  <owl:ObjectProperty rdf:about="#haslatitudelin">
+    <rdfs:range rdf:resource="&reg;#latitudelin"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#inNH">
+  <owl:ObjectProperty rdf:about="#innh">
     <rdfs:subPropertyOf rdf:resource="&srela;#insid" />
-    <rdfs:range rdf:resource="&reg;#NorthernHemispher"/>
+    <rdfs:range rdf:resource="&reg;#northernhemisph"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#inSH">
+  <owl:ObjectProperty rdf:about="#insh">
     <rdfs:subPropertyOf rdf:resource="&srela;#insid" />
-    <rdfs:range rdf:resource="&reg;#SouthernHemispher"/>
+    <rdfs:range rdf:resource="&reg;#southernhemisph"/>
   </owl:ObjectProperty>
 
 <!-- Ellipsoid -->
-  <owl:ObjectProperty rdf:about="#semiMajorAxi">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+  <owl:ObjectProperty rdf:about="#semimajoraxi">
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#semiMinorAxi">
-    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+  <owl:ObjectProperty rdf:about="#semiminoraxi">
+    <rdfs:subPropertyOf rdf:resource="#haslength"/>
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:about="#datum">
-    <rdfs:domain rdf:resource="&obj3d;#ReferenceEllipsoid"/>
+    <rdfs:domain rdf:resource="&obj3d;#referenceellipsoid"/>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="#flatten">
-    <rdfs:domain rdf:resource="&obj;#Ellips"/>
+    <rdfs:domain rdf:resource="&obj;#ellip"/>
     <rdfs:range rdf:resource="&xsd;double"/>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="#oblat">
-    <rdfs:domain rdf:resource="&obj;#Ellips"/>
+    <rdfs:domain rdf:resource="&obj;#ellip"/>
     <rdfs:range rdf:resource="&xsd;double"/>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="#eccentr">
-    <rdfs:domain rdf:resource="&obj;#Ellips"/>
+    <rdfs:domain rdf:resource="&obj;#ellip"/>
     <rdfs:range rdf:resource="&xsd;double"/>
   </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpatialProject">
+  <owl:ObjectProperty rdf:about="#hasspatialproject">
   </owl:ObjectProperty>
 
 </rdf:RDF>

@@ -56,18 +56,18 @@
   </owl:Ontology>
 
 <!-- Scales -->
-  <dist:DistanceRange_km rdf:about="#EarthAtmosphereSynopticScal">
+  <dist:DistanceRange_km rdf:about="#earthatmospheresynopticsc">
     <mrela:hasLowerBound rdf:datatype="&xsd;double">1000</mrela:hasLowerBound>
     <mrela:hasUpperBound rdf:datatype="&xsd;double">2500</mrela:hasUpperBound>
   </dist:DistanceRange_km>
 
-  <dist:DistanceRange_km rdf:about="#EarthAtmosphereMesoscal">
+  <dist:DistanceRange_km rdf:about="#earthatmospheremesosc">
     <mrela:hasLowerBound rdf:datatype="&xsd;double">100</mrela:hasLowerBound>
     <mrela:hasUpperBound rdf:datatype="&xsd;double">1000</mrela:hasUpperBound>
   </dist:DistanceRange_km>
 
 <!-- Individuals -->
-  <atmo:Troposphere rdf:about="#EarthTropospher">
+  <atmo:Troposphere rdf:about="#earthtroposph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -77,7 +77,7 @@
      </srela:hasReferenceHeight>
   </atmo:Troposphere>
 
-  <atmo:Stratosphere rdf:about="#EarthStratospher">
+  <atmo:Stratosphere rdf:about="#earthstratosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -87,7 +87,7 @@
      </srela:hasReferenceHeight>
   </atmo:Stratosphere>
 
-  <atmo:Mesosphere rdf:about="#EarthMesospher">
+  <atmo:Mesosphere rdf:about="#earthmesosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -97,7 +97,7 @@
      </srela:hasReferenceHeight>
   </atmo:Mesosphere>
 
-  <atmo:Thermosphere rdf:about="#EarthThermospher">
+  <atmo:Thermosphere rdf:about="#earththermosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -107,7 +107,7 @@
      </srela:hasReferenceHeight>
   </atmo:Thermosphere>
 
-  <planet:Atmosphere rdf:about="#EarthAtmospher">
+  <planet:Atmosphere rdf:about="#earthatmosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -118,7 +118,7 @@
   </planet:Atmosphere>
 
 <!-- Heliosphere -->
-  <heli:Ionosphere rdf:about="#EarthIonospher">
+  <heli:Ionosphere rdf:about="#earthionosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -128,7 +128,7 @@
      </srela:hasReferenceHeight>
   </heli:Ionosphere>
 
-  <heli:DLayer rdf:about="#EarthDLay">
+  <heli:DLayer rdf:about="#earthdlay">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -138,7 +138,7 @@
      </srela:hasReferenceHeight>
   </heli:DLayer>
 
-  <heli:ELayer rdf:about="#EarthELay">
+  <heli:ELayer rdf:about="#earthelay">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -148,7 +148,7 @@
      </srela:hasReferenceHeight>
   </heli:ELayer>
 
-  <heli:FLayer rdf:about="#EarthFLay">
+  <heli:FLayer rdf:about="#earthflay">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -158,7 +158,7 @@
      </srela:hasReferenceHeight>
   </heli:FLayer>
 
-  <heli:Exosphere rdf:about="#EarthExospher">
+  <heli:Exosphere rdf:about="#earthexosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceHeight>
        <ht:HeightRange_km>
@@ -208,7 +208,7 @@
   </ocean:AbyssopelagicZone>
 
 <!-- Solid Earth -->
-  <geol:Core rdf:about="#EarthCor">
+  <geol:Core rdf:about="#earthcor">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -218,7 +218,7 @@
     </srela:hasReferenceDepth>
   </geol:Core>
 
-  <geol:UpperMantle rdf:about="#EarthUpperMantl">
+  <geol:UpperMantle rdf:about="#earthuppermantl">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -228,7 +228,7 @@
      </srela:hasReferenceDepth>
   </geol:UpperMantle>
 
-  <planet:Geosphere rdf:about="#EarthGeospher">
+  <planet:Geosphere rdf:about="#earthgeosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -238,7 +238,7 @@
      </srela:hasReferenceDepth>
   </planet:Geosphere>
 
-  <geol:Lithosphere rdf:about="#EarthLithospher">
+  <geol:Lithosphere rdf:about="#earthlithosph">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -248,7 +248,7 @@
      </srela:hasReferenceDepth>
   </geol:Lithosphere>
 
-  <geol:Crust rdf:about="#EarthCrust">
+  <geol:Crust rdf:about="#earthcrust">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -258,7 +258,7 @@
      </srela:hasReferenceDepth>
   </geol:Crust>
 
-  <geol:Crust rdf:about="#EarthCrust">
+  <geol:Crust rdf:about="#earthcrust">
     <prela:hasAstronomicalBody rdf:resource="&planet;Earth"/>
     <srela:hasReferenceDepth>
        <ht:DepthRange_km>
@@ -268,9 +268,9 @@
      </srela:hasReferenceDepth>
   </geol:Crust>
 
-  <emf:GeomagneticField rdf:about="#InternationalGeomagneticReferenceField">
-    <owl:sameAs rdf:resource="#IGRF"/>
+  <emf:GeomagneticField rdf:about="#internationalgeomagneticreferencefield">
+    <owl:sameAs rdf:resource="#igrf"/>
   </emf:GeomagneticField>
-  <emf:GeomagneticField rdf:about="#IGRF"/>
+  <emf:GeomagneticField rdf:about="#igrf"/>
 
 </rdf:RDF>

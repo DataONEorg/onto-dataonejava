@@ -40,133 +40,133 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#Cone">
-    <rdfs:subClassOf rdf:resource="#Plume" />
+  <owl:Class rdf:about="#cone">
+    <rdfs:subClassOf rdf:resource="#plume" />
   </owl:Class>
 
-  <owl:Class rdf:about="#ConvectivePlum">
+  <owl:Class rdf:about="#convectiveplum">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Convect" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#convect" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#Plume" />
+    <rdfs:subClassOf rdf:resource="#plume" />
     <rdfs:comment xml:lang="en">A buoyant jet stream in which the buoyancy is supplied steadily from a point source; the buoyant region is continuous.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fan">
-    <rdfs:subClassOf rdf:resource="#Plume" />
+  <owl:Class rdf:about="#fan">
+    <rdfs:subClassOf rdf:resource="#plume" />
     <rdfs:comment xml:lang="en">A pattern of smokestack plume dispersion in a statically stable atmosphere, in which the plume spreads out in the horizontal like an oriental fan and meanders about at a fixed height with little vertical spread.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#HemisphericTransportOfAirPollut">
-    <rdfs:subClassOf rdf:resource="#Transport"/>
-    <owl:equivalentClass rdf:resource="#HTAP" />
+  <owl:Class rdf:about="#hemispherictransportofairpollut">
+    <rdfs:subClassOf rdf:resource="#transport"/>
+    <owl:equivalentClass rdf:resource="#htap" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&imp;#AirPollut" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&imp;#airpollut" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#HTAP"/>
+  <owl:Class rdf:about="#htap"/>
 
-  <owl:Class rdf:about="#Loft">
-    <rdfs:subClassOf rdf:resource="#Convect" />
+  <owl:Class rdf:about="#loft">
+    <rdfs:subClassOf rdf:resource="#convect" />
     <rdfs:comment xml:lang="en">The phenomenon where the upper part of a smoke plume diffuses more rapidly upward than the bottom part diffuses downward. This generally occurs when the boundary layer near the ground is more stable than it is aloft. Compare coning, fanning, looping.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LongRangeTransport">
-    <rdfs:subClassOf rdf:resource="#Transport" />
+  <owl:Class rdf:about="#longrangetransport">
+    <rdfs:subClassOf rdf:resource="#transport" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Plume">
-    <rdfs:subClassOf rdf:resource="&chem;#SuspendedSubst"/>
+  <owl:Class rdf:about="#plume">
+    <rdfs:subClassOf rdf:resource="&chem;#suspendedsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Fluid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#fluid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Buoyant jet in which the buoyancy is supplied from a point source; the buoyant region is continuous. 2. A mostly horizontal (sometimes initially vertical) stream of pollutant that is being blown downwind from a smokestack.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Puff">
-    <rdfs:subClassOf rdf:resource="#Plume" />
+  <owl:Class rdf:about="#puff">
+    <rdfs:subClassOf rdf:resource="#plume" />
   </owl:Class>
 
-  <owl:Class rdf:about="#StackEffect">
-    <rdfs:subClassOf rdf:resource="#Convect" />
+  <owl:Class rdf:about="#stackeffect">
+    <rdfs:subClassOf rdf:resource="#convect" />
     <rdfs:comment xml:lang="en">An effect due to heat sources within a local exhaust enclosure (stack) producing convective air currents with vertical velocities proportional to the rate of heat transferred to the surrounding air and to the height of rise of the heated air.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Uptake">
-    <rdfs:subClassOf rdf:resource="#Transport"/>
+  <owl:Class rdf:about="#uptake">
+    <rdfs:subClassOf rdf:resource="#transport"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WestEastTransport">
-    <rdfs:subClassOf rdf:resource="#Transport" />
+  <owl:Class rdf:about="#westeasttransport">
+    <rdfs:subClassOf rdf:resource="#transport" />
     <rdfs:comment xml:lang="en">The eastward flux of mass, momentum, heat, moisture or any other property of a fluid by mean motion or by correlation with the eastward component of motion, that is, eddy flux.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Buoyanc">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#buoyanc">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:comment xml:lang="en">That property of an object that enables it to float on the surface of a liquid, or ascend through and remain freely suspended in a compressible fluid such as the atmosphere.</rdfs:comment>
   </owl:Class> 
 
-  <owl:Class rdf:about="#Convect">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#convect">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:comment xml:lang="en">In general, mass motions within a fluid resulting in transport and mixing of the properties of that fluid.  Convection, along with conduction and radiation, is a principal means of energy transfer.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Deposit">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#deposit">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:comment xml:lang="en">Phenomena by which traces gases or particles are transferred from atmosphere to a surface.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SlantWiseConvect">
-    <rdfs:subClassOf rdf:resource="#Convect" />
+  <owl:Class rdf:about="#slantwiseconvect">
+    <rdfs:subClassOf rdf:resource="#convect" />
     <rdfs:comment xml:lang="en">A form of convection driven by a combination of gravitational and centrifugal forces.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transport">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena" />
+  <owl:Class rdf:about="#transport">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Advection">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena" />
+  <owl:Class rdf:about="#advection">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Fluid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#fluid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Transport" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#transport" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>The process of transport solely by the mass motion (velocity field); also, the rate of change of the value of the advected property at a given point.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#BolusAdvect">
-    <rdfs:subClassOf rdf:resource="#Advection"/>
+  <owl:Class rdf:about="#bolusadvect">
+    <rdfs:subClassOf rdf:resource="#advection"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VorticityAdvect">
-    <rdfs:subClassOf rdf:resource="#Advection" />
+  <owl:Class rdf:about="#vorticityadvect">
+    <rdfs:subClassOf rdf:resource="#advection" />
     <rdfs:comment xml:lang="en">Advection of vorticity by the total wind or force.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CounterGradientFlux">
-    <rdfs:subClassOf rdf:resource="&quan;#Flux" />
+  <owl:Class rdf:about="#countergradientflux">
+    <rdfs:subClassOf rdf:resource="&quan;#flux" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Surg">
-    <rdfs:subClassOf rdf:resource="&quan;#Flux" />
+  <owl:Class rdf:about="#surg">
+    <rdfs:subClassOf rdf:resource="&quan;#flux" />
   </owl:Class>
 
 </rdf:RDF>

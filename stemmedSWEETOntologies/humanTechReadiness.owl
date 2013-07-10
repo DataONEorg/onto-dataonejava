@@ -38,34 +38,34 @@
     <owl:imports rdf:resource = "http://sweet.jpl.nasa.gov/2.3/humanResearch.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Technolog">
+  <owl:Class rdf:about="#technolog">
     <rdfs:subClassOf rdf:resource="&equi;Infrastructure"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TechnologyReadi">
+  <owl:Class rdf:about="#technologyreadi">
     <rdfs:subClassOf rdf:resource="&repr;Knowledge"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;readinessOf" />
-        <owl:allValuesFrom rdf:resource="#Technolog" />
+        <owl:allValuesFrom rdf:resource="#technolog" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TechnologyReadinessLevel">
+  <owl:Class rdf:about="#technologyreadinesslevel">
     <rdfs:subClassOf rdf:resource="&repr;OrdinalScale"/>
-    <owl:equivalentClass rdf:resource="#TRL"/>
+    <owl:equivalentClass rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;measureOf" />
-        <owl:allValuesFrom rdf:resource="#TechnologyReadi" />
+        <owl:allValuesFrom rdf:resource="#technologyreadi" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#TRL"/>
+  <owl:Class rdf:about="#trl"/>
 
-  <owl:Class rdf:about="#TRL1">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl1">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -80,8 +80,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL2">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl2">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -96,8 +96,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL3">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl3">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -112,8 +112,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL4">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl4">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -128,8 +128,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL5">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl5">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -144,8 +144,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL6">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl6">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -160,8 +160,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL7">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl7">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -176,8 +176,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL8">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl8">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />
@@ -192,8 +192,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TRL9">
-    <rdfs:subClassOf rdf:resource="#TRL"/>
+  <owl:Class rdf:about="#trl9">
+    <rdfs:subClassOf rdf:resource="#trl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&hrela;hasTRL" />

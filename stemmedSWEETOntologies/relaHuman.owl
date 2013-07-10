@@ -45,51 +45,51 @@
   </owl:Ontology>
 
 <!-- human -->
-  <owl:DatatypeProperty rdf:about="#hasTRL">
+  <owl:DatatypeProperty rdf:about="#hastrl">
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:about="#produc">
-    <rdfs:subPropertyOf rdf:resource="#hasHumanAct"/>
-    <rdfs:range rdf:resource="&indu;#Product"/>
+    <rdfs:subPropertyOf rdf:resource="#hashumanact"/>
+    <rdfs:range rdf:resource="&indu;#product"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#readinessOf">
-    <rdfs:range rdf:resource="&equi;#Infrastructur"/>
+  <owl:ObjectProperty rdf:about="#readinessof">
+    <rdfs:range rdf:resource="&equi;#infrastructur"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#successIn">
-    <rdfs:range rdf:resource="&rese;#Research" />
+  <owl:ObjectProperty rdf:about="#successin">
+    <rdfs:range rdf:resource="&rese;#research" />
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#studyOf">
-    <rdfs:domain rdf:resource="&know;#KnowledgeDomain"/>
+  <owl:ObjectProperty rdf:about="#studyof">
+    <rdfs:domain rdf:resource="&know;#knowledgedomain"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasJurisdict">
-    <rdfs:subPropertyOf rdf:resource="#hasHumanAct"/>
-    <rdfs:range rdf:resource="&juri;#Jurisdict"/>
+  <owl:ObjectProperty rdf:about="#hasjurisdict">
+    <rdfs:subPropertyOf rdf:resource="#hashumanact"/>
+    <rdfs:range rdf:resource="&juri;#jurisdict"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAttribut">
-    <rdfs:subPropertyOf rdf:resource="#hasHumanAct"/>
-    <rdfs:range rdf:resource="&deci;#Attribut" />
+  <owl:ObjectProperty rdf:about="#hasattribut">
+    <rdfs:subPropertyOf rdf:resource="#hashumanact"/>
+    <rdfs:range rdf:resource="&deci;#attribut" />
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDecisionMak">
-    <rdfs:subPropertyOf rdf:resource="#hasHumanAct"/>
-    <rdfs:range rdf:resource="&deci;#DecisionMak" />
+  <owl:ObjectProperty rdf:about="#hasdecisionmak">
+    <rdfs:subPropertyOf rdf:resource="#hashumanact"/>
+    <rdfs:range rdf:resource="&deci;#decisionmak" />
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasObject">
-    <rdfs:subPropertyOf rdf:resource="#hasHumanAct"/>
-    <rdfs:range rdf:resource="&deci;#Objectiv" />
+  <owl:ObjectProperty rdf:about="#hasobject">
+    <rdfs:subPropertyOf rdf:resource="#hashumanact"/>
+    <rdfs:range rdf:resource="&deci;#objectiv" />
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLandUs">
-    <rdfs:range rdf:resource="&comm;#LandUs"/>
+  <owl:ObjectProperty rdf:about="#haslandu">
+    <rdfs:range rdf:resource="&comm;#landu"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasHumanAct"/>
+  <owl:ObjectProperty rdf:about="#hashumanact"/>
 
 </rdf:RDF>

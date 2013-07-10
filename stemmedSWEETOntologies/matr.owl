@@ -34,176 +34,176 @@
   </owl:Ontology>
 
 <!-- Substances -->
-  <owl:Class rdf:about="#Substanc"/>
+  <owl:Class rdf:about="#substanc"/>
 
-  <owl:Class rdf:about="#Chemic">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
-    <owl:equivalentClass rdf:resource="#ChemicalSubst"/>
+  <owl:Class rdf:about="#chemic">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
+    <owl:equivalentClass rdf:resource="#chemicalsubst"/>
     <rdfs:comment xml:lang="en">Chemical substance, in chemistry, are material objects that can undergo various transformations related to artificial or natural phenomena [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#ChemicalSubst"/>
+  <owl:Class rdf:about="#chemicalsubst"/>
 
-  <owl:Class rdf:about="#Inorgan">
-    <rdfs:subClassOf rdf:resource="#ChemicalSubst"/>
-    <owl:equivalentClass rdf:resource="#InorganicSubst"/>
+  <owl:Class rdf:about="#inorgan">
+    <rdfs:subClassOf rdf:resource="#chemicalsubst"/>
+    <owl:equivalentClass rdf:resource="#inorganicsubst"/>
   </owl:Class>
-  <owl:Class rdf:about="#InorganicSubst"/>
+  <owl:Class rdf:about="#inorganicsubst"/>
 
-  <owl:Class rdf:about="#Medium">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
+  <owl:Class rdf:about="#medium">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mixtur">
-    <rdfs:subClassOf rdf:resource="#ChemicalSubst"/>
-    <owl:equivalentClass rdf:resource="#MixedChemicalSubst"/>
+  <owl:Class rdf:about="#mixtur">
+    <rdfs:subClassOf rdf:resource="#chemicalsubst"/>
+    <owl:equivalentClass rdf:resource="#mixedchemicalsubst"/>
     <rdfs:comment xml:lang="en">In chemistry, a mixture is when two or more different substances are mixed together but not combined chemically. The molecules of two or more different substances are mixed in the form of solutions, suspensions, and colloids. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MixedChemicalSubst"/>
+  <owl:Class rdf:about="#mixedchemicalsubst"/>
 
-  <owl:Class rdf:about="#Solut">
-    <rdfs:subClassOf rdf:resource="#Mixtur"/>
+  <owl:Class rdf:about="#solut">
+    <rdfs:subClassOf rdf:resource="#mixtur"/>
     <rdfs:comment xml:lang="en">In chemistry, a solution is a homogeneous mixture composed of two or more substances. In such a mixture, a solute is dissolved in another substance, known as a solvent. All solutions are characterized by interactions between the solvent phase and solute molecules or ions that result in a net decrease in free energy. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolidSubst">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
+  <owl:Class rdf:about="#solidsubst">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Solid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TraceSubst">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
+  <owl:Class rdf:about="#tracesubst">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRol" />
-        <owl:hasValue rdf:resource="&role;#Trace" />
+        <owl:onProperty rdf:resource="&rela;#hasrol" />
+        <owl:hasValue rdf:resource="&role;#trace" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TraceGa">
-    <rdfs:subClassOf rdf:resource="#TraceSubst"/>
+  <owl:Class rdf:about="#tracega">
+    <rdfs:subClassOf rdf:resource="#tracesubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SuspendedSubst">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
+  <owl:Class rdf:about="#suspendedsubst">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Suspend" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#suspend" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NeutralGa">
-    <rdfs:subClassOf rdf:resource="#ChemicalSubst"/>
+  <owl:Class rdf:about="#neutralga">
+    <rdfs:subClassOf rdf:resource="#chemicalsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Neutral" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#neutral" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SuspendedGa">
-    <rdfs:subClassOf rdf:resource="#SuspendedSubst"/>
+  <owl:Class rdf:about="#suspendedga">
+    <rdfs:subClassOf rdf:resource="#suspendedsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SuspendedSolid">
-    <rdfs:subClassOf rdf:resource="#SolidSubst"/>
-    <rdfs:subClassOf rdf:resource="#SuspendedSubst"/>
+  <owl:Class rdf:about="#suspendedsolid">
+    <rdfs:subClassOf rdf:resource="#solidsubst"/>
+    <rdfs:subClassOf rdf:resource="#suspendedsubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DissolvedSolid">
-    <rdfs:subClassOf rdf:resource="#DissolvedSubst"/>
-    <rdfs:subClassOf rdf:resource="#SolidSubst"/>
+  <owl:Class rdf:about="#dissolvedsolid">
+    <rdfs:subClassOf rdf:resource="#dissolvedsubst"/>
+    <rdfs:subClassOf rdf:resource="#solidsubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Air">
-    <rdfs:subClassOf rdf:resource="#Mixtur"/>
+  <owl:Class rdf:about="#air">
+    <rdfs:subClassOf rdf:resource="#mixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GreenhouseGa">
-    <rdfs:subClassOf rdf:resource="#ChemicalSubst"/>
+  <owl:Class rdf:about="#greenhousega">
+    <rdfs:subClassOf rdf:resource="#chemicalsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
 <!--
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&res;#hasEffect" />
-        <owl:allValuesFrom rdf:resource="#GreenhouseEffect" />
+        <owl:onProperty rdf:resource="&res;#haseffect" />
+        <owl:allValuesFrom rdf:resource="#greenhouseeffect" />
       </owl:Restriction>
     </rdfs:subClassOf>
 -->
   </owl:Class>
 
 <!-- Dissolved substanes -->
-  <owl:Class rdf:about="#BiodegradableDissolvedOrganicCarbon">
-    <rdfs:subClassOf rdf:resource="#DissolvedOrganicCarbon"/>
-    <owl:equivalentClass rdf:resource="#BDOC"/>
+  <owl:Class rdf:about="#biodegradabledissolvedorganiccarbon">
+    <rdfs:subClassOf rdf:resource="#dissolvedorganiccarbon"/>
+    <owl:equivalentClass rdf:resource="#bdoc"/>
   </owl:Class>
-  <owl:Class rdf:about="#BDOC"/>
+  <owl:Class rdf:about="#bdoc"/>
 
-  <owl:Class rdf:about="#DissolvedGa">
-    <rdfs:subClassOf rdf:resource="#DissolvedSubst"/>
+  <owl:Class rdf:about="#dissolvedga">
+    <rdfs:subClassOf rdf:resource="#dissolvedsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DissolvedSubst">
-    <rdfs:subClassOf rdf:resource="#Substanc"/>
+  <owl:Class rdf:about="#dissolvedsubst">
+    <rdfs:subClassOf rdf:resource="#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Dissolv" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#dissolv" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DissolvedOxygen">
-    <rdfs:subClassOf rdf:resource="#DissolvedSubst"/>
-    <owl:equivalentClass rdf:resource="#DO"/>
+  <owl:Class rdf:about="#dissolvedoxygen">
+    <rdfs:subClassOf rdf:resource="#dissolvedsubst"/>
+    <owl:equivalentClass rdf:resource="#do"/>
   </owl:Class>
-  <owl:Class rdf:about="#DO"/>
+  <owl:Class rdf:about="#do"/>
 
-  <owl:Class rdf:about="#DissolvedOrganicCarbon">
-    <rdfs:subClassOf rdf:resource="#DissolvedSubst"/>
-    <owl:equivalentClass rdf:resource="#DOC"/>
+  <owl:Class rdf:about="#dissolvedorganiccarbon">
+    <rdfs:subClassOf rdf:resource="#dissolvedsubst"/>
+    <owl:equivalentClass rdf:resource="#doc"/>
   </owl:Class>
-  <owl:Class rdf:about="#DOC"/>
+  <owl:Class rdf:about="#doc"/>
 
-  <owl:Class rdf:about="#OrganicLoad">
-    <rdfs:subClassOf rdf:resource="#DissolvedSubst"/>
+  <owl:Class rdf:about="#organicload">
+    <rdfs:subClassOf rdf:resource="#dissolvedsubst"/>
   </owl:Class>
 
 </rdf:RDF>

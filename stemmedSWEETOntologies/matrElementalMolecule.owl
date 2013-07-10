@@ -30,175 +30,175 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/matr.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Allotrop">
+  <owl:Class rdf:about="#allotrop">
     <rdfs:subClassOf rdf:resource="&chem;Chemical"/>
   </owl:Class>
 
 <!-- Instances -->
-  <allo:Allotrope rdf:about="#Br2">
+  <allo:Allotrope rdf:about="#br2">
     <crela:hasSubstance rdf:resource="&elem;Br"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C2">
+  <allo:Allotrope rdf:about="#c2">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C3">
+  <allo:Allotrope rdf:about="#c3">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">3</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C4">
+  <allo:Allotrope rdf:about="#c4">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">4</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C5">
+  <allo:Allotrope rdf:about="#c5">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">5</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C6">
+  <allo:Allotrope rdf:about="#c6">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">6</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C7">
+  <allo:Allotrope rdf:about="#c7">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">7</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C8">
+  <allo:Allotrope rdf:about="#c8">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">8</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C10">
+  <allo:Allotrope rdf:about="#c10">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">10</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#C12">
+  <allo:Allotrope rdf:about="#c12">
     <crela:hasSubstance rdf:resource="&elem;C"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">12</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Cx">
+  <allo:Allotrope rdf:about="#cx">
     <crela:hasSubstance rdf:resource="&elem;C"/>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Cl2">
+  <allo:Allotrope rdf:about="#cl2">
     <crela:hasSubstance rdf:resource="&elem;Cl"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Cl4">
+  <allo:Allotrope rdf:about="#cl4">
     <crela:hasSubstance rdf:resource="&elem;Cl"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">4</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#F2">
+  <allo:Allotrope rdf:about="#f2">
     <crela:hasSubstance rdf:resource="&elem;F"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#F3">
+  <allo:Allotrope rdf:about="#f3">
     <crela:hasSubstance rdf:resource="&elem;F"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">3</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#F4">
+  <allo:Allotrope rdf:about="#f4">
     <crela:hasSubstance rdf:resource="&elem;F"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">4</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Fe2">
+  <allo:Allotrope rdf:about="#fe2">
     <crela:hasSubstance rdf:resource="&elem;Fe"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Fe3">
+  <allo:Allotrope rdf:about="#fe3">
     <crela:hasSubstance rdf:resource="&elem;Fe"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">3</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Hx">
+  <allo:Allotrope rdf:about="#hx">
     <crela:hasSubstance rdf:resource="&elem;H"/>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H2">
+  <allo:Allotrope rdf:about="#h2">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H3">
+  <allo:Allotrope rdf:about="#h3">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">3</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H4">
+  <allo:Allotrope rdf:about="#h4">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">4</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H6">
+  <allo:Allotrope rdf:about="#h6">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">6</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H8">
+  <allo:Allotrope rdf:about="#h8">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">8</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H10">
+  <allo:Allotrope rdf:about="#h10">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">10</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H12">
+  <allo:Allotrope rdf:about="#h12">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">12</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#H16">
+  <allo:Allotrope rdf:about="#h16">
     <crela:hasSubstance rdf:resource="&elem;H"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">16</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#N2">
+  <allo:Allotrope rdf:about="#n2">
     <crela:hasSubstance rdf:resource="&elem;N"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#O2">
+  <allo:Allotrope rdf:about="#o2">
     <crela:hasSubstance rdf:resource="&elem;O"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">2</crela:hasAtoms>
-    <owl:sameAs rdf:resource="#MolecularOxygen"/>
+    <owl:sameAs rdf:resource="#molecularoxygen"/>
   </allo:Allotrope>
-  <allo:Allotrope rdf:about="#MolecularOxygen"/>
+  <allo:Allotrope rdf:about="#molecularoxygen"/>
 
-  <allo:Allotrope rdf:about="#O3">
+  <allo:Allotrope rdf:about="#o3">
     <crela:hasSubstance rdf:resource="&elem;O"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">3</crela:hasAtoms>
-    <owl:sameAs rdf:resource="#Ozone"/>
+    <owl:sameAs rdf:resource="#ozone"/>
     <rdfs:comment xml:lang="en">A nearly colorless gas, it is a very strong absorber of ultraviolet radiation, and the presence of the ozone layer in the upper atmosphere provides an ozone shield that prevents dangerous radiation from reaching the earth's surface.</rdfs:comment>
   </allo:Allotrope>
-  <allo:Allotrope rdf:about="#Ozone"/>
+  <allo:Allotrope rdf:about="#ozone"/>
 
-  <allo:Allotrope rdf:about="#O4">
+  <allo:Allotrope rdf:about="#o4">
     <crela:hasSubstance rdf:resource="&elem;O"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">4</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#O5">
+  <allo:Allotrope rdf:about="#o5">
     <crela:hasSubstance rdf:resource="&elem;O"/>
     <crela:hasAtoms rdf:datatype="&xsd;integer">5</crela:hasAtoms>
   </allo:Allotrope>
 
-  <allo:Allotrope rdf:about="#Ox">
+  <allo:Allotrope rdf:about="#ox">
     <crela:hasSubstance rdf:resource="&elem;O"/>
   </allo:Allotrope>
 

@@ -59,110 +59,110 @@
 
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#CompositeProcess">
-    <rdfs:subClassOf rdf:resource="&his;#Genesi"/>
+  <owl:Class rdf:about="#compositeprocess">
+    <rdfs:subClassOf rdf:resource="&his;#genesi"/>
   </owl:Class>
 
   <owl:Class rdf:ID="WilsonCycle">
-    <rdfs:subClassOf rdf:resource="#RockCycl"/>
+    <rdfs:subClassOf rdf:resource="#rockcycl"/>
     <rdfs:comment xml:lang="en">The Wilson cycle (a plate tectonics based rock cycle) was developed by J. Tuzo Wilson during the 1960s and 1970s. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Metamorph">
-    <rdfs:subClassOf rdf:resource="#RockCycleProcess"/>
+  <owl:Class rdf:about="#metamorph">
+    <rdfs:subClassOf rdf:resource="#rockcycleprocess"/>
     <rdfs:comment xml:lang="en">One of 3 processes in the Rock Cycle. When sedimentary (and/or) igneous layers are folded, bent or twisted by heat and pressure due to motions of tectonic plates or intrusions by magma, the rocky material is transformed into other rock called metamorphic rock. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RockCycl">
-    <rdfs:subClassOf rdf:resource="&graph;#Cycl"/>
-    <rdfs:subClassOf rdf:resource="&geol;#GeologicalPhenomena"/>
-    <owl:equivalentClass rdf:resource="#RockCycleProcess"/>
+  <owl:Class rdf:about="#rockcycl">
+    <rdfs:subClassOf rdf:resource="&graph;#cycl"/>
+    <rdfs:subClassOf rdf:resource="&geol;#geologicalphenomena"/>
+    <owl:equivalentClass rdf:resource="#rockcycleprocess"/>
     <rdfs:comment xml:lang="en">The rock cycle is a fundamental concept that describes the dynamic transitions through geologic time among the three main rock types: sedimentary, metamorphic, and igneous. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#RockCycleProcess"/>
+  <owl:Class rdf:about="#rockcycleprocess"/>
 
-  <owl:Class rdf:about="#Sedimentari">
-    <rdfs:subClassOf rdf:resource="#RockCycleProcess"/>
+  <owl:Class rdf:about="#sedimentari">
+    <rdfs:subClassOf rdf:resource="#rockcycleprocess"/>
     <rdfs:comment xml:lang="en">One of 3 processes in the Rock Cycle. When wind or water deposit fine grained material on the surface, it creates sheets. Over thousands of years, the composition can change subtly or distinctly and the result is differing compositions of layered deposits. As the overlying layers compact the soil underneath the soil is converted to rock by the process of lithification. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#StratigraphicSequ">
-    <rdfs:subClassOf rdf:resource="&his;#Histori"/>
+  <owl:Class rdf:about="#stratigraphicsequ">
+    <rdfs:subClassOf rdf:resource="&his;#histori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Unconform">
-    <rdfs:subClassOf rdf:resource="&his;#Histori"/>
+  <owl:Class rdf:about="#unconform">
+    <rdfs:subClassOf rdf:resource="&his;#histori"/>
     <rdfs:comment xml:lang="en">A substantial break or gap in the geologic record where a rock unit is overlain by another that is not next in stratigraphic sucession, such as an interruption in continuity of a depositional sequence of sedimentary rocks or a break between eroded igneous rocks and younger sedimentary strata. It results from a change that caused deposition to cease for a considerable time, and it normally implies uplift and erosion with loss of the previous formed record.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#IntraplateProcess">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicPhenomena"/>
+  <owl:Class rdf:about="#intraplateprocess">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orogeni">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicPhenomena"/>
+  <owl:Class rdf:about="#orogeni">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicphenomena"/>
     <rdfs:comment xml:lang="en">Orogeny refers to natural mountain building, and may be studied as (a) a tectonic structural event, (b) as a geographical event, and (c) a chronological event. Orogenic events (a) cause distinctive structural phenomena and related tectonic activity, (b) affect certain regions of rocks and crust, and (c) happen within a specific period of time. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orogenesi">
-    <rdfs:subClassOf rdf:resource="#GeologicalPhenomena"/>
+  <owl:Class rdf:about="#orogenesi">
+    <rdfs:subClassOf rdf:resource="#geologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrogenicCollaps">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicPhenomena"/>
+  <owl:Class rdf:about="#orogeniccollap">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&oror;#Orogen"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&oror;#orogen"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&ign;#AnorogenicIgneousRock"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:allValuesFrom rdf:resource="&ign;#anorogenicigneousrock"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&basin;#SuccessorBasin"/>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
+        <owl:allValuesFrom rdf:resource="&basin;#successorbasin"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   <rdfs:comment> The process in which mountains begin to collapse under their own weight and spread out laterally.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Igneous">
-    <rdfs:subClassOf rdf:resource="#RockCycleProcess"/>
+  <owl:Class rdf:about="#igneous">
+    <rdfs:subClassOf rdf:resource="#rockcycleprocess"/>
     <rdfs:comment xml:lang="en">One of 3 processes in the Rock Cycle. Igneous refers to the process whereby hot material from the mantle is squeezed upward toward the earth's surface. If it has not reached the surface then the material is described as an intrusive structure and the rocks it creates are called Intrusive Rock. If it extrudes from the surface the material is described as a volcano and the rock it creates is known as Extrusive Rock. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeologicalPhenomena">
-    <rdfs:subClassOf rdf:resource="&planp;#PlanetaryPhenomena"/>
-    <owl:equivalentClass rdf:resource="#GeospherePhenomena"/>
+  <owl:Class rdf:about="#geologicalphenomena">
+    <rdfs:subClassOf rdf:resource="&planp;#planetaryphenomena"/>
+    <owl:equivalentClass rdf:resource="#geospherephenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&geolr;#SolidEarth"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&geolr;#solidearth"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#GeospherePhenomena"/>
+  <owl:Class rdf:about="#geospherephenomena"/>
 
- <owl:Class rdf:about="#Differenti">
-    <rdfs:subClassOf rdf:resource="#GeologicalPhenomena"/>
+ <owl:Class rdf:about="#differenti">
+    <rdfs:subClassOf rdf:resource="#geologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Paleomagnet">
-    <rdfs:subClassOf rdf:resource="#GeologicalPhenomena"/>
+  <owl:Class rdf:about="#paleomagnet">
+    <rdfs:subClassOf rdf:resource="#geologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fluvial">
-    <rdfs:subClassOf rdf:resource="#GeologicalPhenomena"/>
+  <owl:Class rdf:about="#fluvial">
+    <rdfs:subClassOf rdf:resource="#geologicalphenomena"/>
     <rdfs:comment xml:lang="en">Fluvial is used in geography and earth science to refer to the processes associated with rivers and streams and the deposits and landforms created by them [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pedogenesi">
-    <rdfs:subClassOf rdf:resource="&his;#Genesi"/>
+  <owl:Class rdf:about="#pedogenesi">
+    <rdfs:subClassOf rdf:resource="&his;#genesi"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -34,138 +34,138 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/prop.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#BiologicalRol">
+  <owl:Class rdf:about="#biologicalrol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
 <!-- Values -->
-  <brole:BiologicalRole rdf:about="#Contamin">
+  <brole:BiologicalRole rdf:about="#contamin">
   </brole:BiologicalRole>
 
-  <owl:Class rdf:about="#Consum">
-    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  <owl:Class rdf:about="#consum">
+    <rdfs:subClassOf rdf:resource="#biologicalrol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Produc">
-    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  <owl:Class rdf:about="#produc">
+    <rdfs:subClassOf rdf:resource="#biologicalrol"/>
   </owl:Class>
 
-  <brole:BiologicalRole rdf:about="#Decompos">
+  <brole:BiologicalRole rdf:about="#decompo">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Host">
+  <brole:BiologicalRole rdf:about="#host">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Heterotroph">
+  <brole:BiologicalRole rdf:about="#heterotroph">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Nutrient">
+  <brole:BiologicalRole rdf:about="#nutrient">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Macronutri">
+  <brole:BiologicalRole rdf:about="#macronutri">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Micronutri">
-    <owl:differentFrom rdf:resource="#Macronutri"/>
+  <brole:BiologicalRole rdf:about="#micronutri">
+    <owl:differentFrom rdf:resource="#macronutri"/>
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Enzyme">
+  <brole:BiologicalRole rdf:about="#enzyme">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Carcinogen">
+  <brole:BiologicalRole rdf:about="#carcinogen">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Toxin">
-    <owl:sameAs rdf:resource="#Toxic"/>
+  <brole:BiologicalRole rdf:about="#toxin">
+    <owl:sameAs rdf:resource="#toxic"/>
   </brole:BiologicalRole>
-  <brole:BiologicalRole rdf:about="#Toxic"/>
+  <brole:BiologicalRole rdf:about="#toxic"/>
 
-  <brole:BiologicalRole rdf:about="#Poision">
+  <brole:BiologicalRole rdf:about="#poision">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Forag">
+  <brole:BiologicalRole rdf:about="#forag">
     <rdf:type rdf:resource="&biol;Biomass"/>
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Pollut">
+  <brole:BiologicalRole rdf:about="#pollut">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Biomark">
+  <brole:BiologicalRole rdf:about="#biomark">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Pest">
+  <brole:BiologicalRole rdf:about="#pest">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Defoil">
+  <brole:BiologicalRole rdf:about="#defoil">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Pesticid">
-    <screla:kills rdf:resource="#Pest"/>
+  <brole:BiologicalRole rdf:about="#pesticid">
+    <screla:kills rdf:resource="#pest"/>
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#Insecticid">
+  <brole:BiologicalRole rdf:about="#insecticid">
   </brole:BiologicalRole>
 
-  <brole:BiologicalRole rdf:about="#ToxicAirContamin">
-    <owl:sameAs rdf:resource="#TAC"/>
+  <brole:BiologicalRole rdf:about="#toxicaircontamin">
+    <owl:sameAs rdf:resource="#tac"/>
   </brole:BiologicalRole>
-  <brole:BiologicalRole rdf:about="#TAC"/>
+  <brole:BiologicalRole rdf:about="#tac"/>
 
-  <owl:Class rdf:about="#Habitat">
-    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  <owl:Class rdf:about="#habitat">
+    <rdfs:subClassOf rdf:resource="#biologicalrol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Autotroph">
-    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
+  <owl:Class rdf:about="#autotroph">
+    <rdfs:subClassOf rdf:resource="#biologicalrol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chemoautotroph">
-    <rdfs:subClassOf rdf:resource="#Autotroph"/>
+  <owl:Class rdf:about="#chemoautotroph">
+    <rdfs:subClassOf rdf:resource="#autotroph"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chemoheterotroph">
-    <rdfs:subClassOf rdf:resource="#Heterotroph"/>
+  <owl:Class rdf:about="#chemoheterotroph">
+    <rdfs:subClassOf rdf:resource="#heterotroph"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Heterotroph">
-    <rdfs:subClassOf rdf:resource="#BiologicalRol"/>
-    <owl:disjointWith rdf:resource="#Autotroph" />
+  <owl:Class rdf:about="#heterotroph">
+    <rdfs:subClassOf rdf:resource="#biologicalrol"/>
+    <owl:disjointWith rdf:resource="#autotroph" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Photoautotroph">
-    <rdfs:subClassOf rdf:resource="#Autotroph"/>
+  <owl:Class rdf:about="#photoautotroph">
+    <rdfs:subClassOf rdf:resource="#autotroph"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photoheterotroph">
-    <rdfs:subClassOf rdf:resource="#Heterotroph"/>
+  <owl:Class rdf:about="#photoheterotroph">
+    <rdfs:subClassOf rdf:resource="#heterotroph"/>
   </owl:Class>
 
-  <brole:BiologicalRole rdf:about="#TopOfFoodChain">
+  <brole:BiologicalRole rdf:about="#topoffoodchain">
      <screla:hasTrophicLevel rdf:datatype="&xsd;integer">5</screla:hasTrophicLevel>
   </brole:BiologicalRole>
 
-  <brole:Habitat rdf:about="#FeedingHabitat">
+  <brole:Habitat rdf:about="#feedinghabitat">
   </brole:Habitat>
 
-  <brole:Habitat rdf:about="#Nurseri">
+  <brole:Habitat rdf:about="#nurseri">
   </brole:Habitat>
 
-  <brole:Habitat rdf:about="#SpawningGround">
+  <brole:Habitat rdf:about="#spawningground">
   </brole:Habitat>
 
-  <brole:Producer rdf:about="#PrimaryProduc">
+  <brole:Producer rdf:about="#primaryproduc">
      <screla:hasTrophicLevel rdf:datatype="&xsd;integer">1</screla:hasTrophicLevel>
   </brole:Producer>
 
-  <brole:Consumer rdf:about="#PrimaryConsum">
+  <brole:Consumer rdf:about="#primaryconsum">
      <screla:hasTrophicLevel rdf:datatype="&xsd;integer">2</screla:hasTrophicLevel>
   </brole:Consumer>
 
-  <brole:Consumer rdf:about="#SecondaryConsum">
+  <brole:Consumer rdf:about="#secondaryconsum">
      <screla:hasTrophicLevel rdf:datatype="&xsd;integer">3</screla:hasTrophicLevel>
   </brole:Consumer>
 
-  <brole:Consumer rdf:about="#TertiaryConsum">
+  <brole:Consumer rdf:about="#tertiaryconsum">
      <screla:hasTrophicLevel rdf:datatype="&xsd;integer">4</screla:hasTrophicLevel>
   </brole:Consumer>
 

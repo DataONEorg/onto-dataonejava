@@ -15,7 +15,7 @@
     <owl:imports rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl"/>
   </owl:Ontology>
   <owl:Class rdf:ID="MLSOmetadataService">
-    <rdfs:subClassOf rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#MetadataServic"/>
+    <rdfs:subClassOf rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#metadataserv"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Class that defines the possible metadata queries specific to the MLSO data archive.</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

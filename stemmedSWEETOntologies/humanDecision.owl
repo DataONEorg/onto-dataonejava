@@ -37,149 +37,149 @@
      <owl:imports rdf:resource="&graph;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Allocat">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#allocat">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Attribut">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#attribut">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BeliefNetwork">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#beliefnetwork">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Choic">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#choic">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ControlStrategi">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#controlstrategi">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConsumerBehavior">
-    <rdfs:subClassOf rdf:resource="&human;#SocialBehavior"/>
+  <owl:Class rdf:about="#consumerbehavior">
+    <rdfs:subClassOf rdf:resource="&human;#socialbehavior"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Criteria">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#criteria">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decis">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#deci">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DecisionAct">
-    <rdfs:subClassOf rdf:resource="&human;#HumanAct"/>
+  <owl:Class rdf:about="#decisionact">
+    <rdfs:subClassOf rdf:resource="&human;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DecisionMak">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
-    <rdfs:subClassOf rdf:resource="&prop;#Role"/>
+  <owl:Class rdf:about="#decisionmak">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
+    <rdfs:subClassOf rdf:resource="&prop;#role"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DecisionSupportSystem">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
-    <owl:equivalentClass rdf:resource="#DSS"/>
+  <owl:Class rdf:about="#decisionsupportsystem">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
+    <owl:equivalentClass rdf:resource="#dss"/>
   </owl:Class>
-  <owl:Class rdf:about="#DSS"/>
+  <owl:Class rdf:about="#dss"/>
 
-  <owl:Class rdf:about="#DecisionTre">
-    <rdfs:subClassOf rdf:resource="&graph;#Tree" />
-    <rdfs:subClassOf rdf:resource="#DecisionAct" />
-  </owl:Class>
-
-  <owl:Class rdf:about="#EnvironmentalControlObject">
-    <rdfs:subClassOf rdf:resource="#ControlStrategi"/>
-    <rdfs:subClassOf rdf:resource="#Objectiv"/>
+  <owl:Class rdf:about="#decisiontr">
+    <rdfs:subClassOf rdf:resource="&graph;#tree" />
+    <rdfs:subClassOf rdf:resource="#decisionact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Evaluat">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#environmentalcontrolobject">
+    <rdfs:subClassOf rdf:resource="#controlstrategi"/>
+    <rdfs:subClassOf rdf:resource="#objectiv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroupConsensus">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#evaluat">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LocationAlloc">
-    <rdfs:subClassOf rdf:resource="#Allocat"/>
+  <owl:Class rdf:about="#groupconsensus">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#locationalloc">
+    <rdfs:subClassOf rdf:resource="#allocat"/>
     <rdfs:comment xml:lang="en">Spatial allocation is primarily concerned with designating what kinds of activities can or will be done where on the landscape. Land-use zoning is a typical example of a spatial allocation problem in which the landscape is divided up into a set of multiple alternative uses such as industrial, commercial, residential, etc. Allocation to a particular use usually depends on intrinsic properties of the individual parcels as well as adjacency constraints.</rdfs:comment>
 
   </owl:Class>
 
-  <owl:Class rdf:about="#MultipleDecisionMak">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#multipledecisionmak">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasDecisionMak"/>
+        <owl:onProperty rdf:resource="&hrela;#hasdecisionmak"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Multiattribut">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#multiattribut">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasAttribut"/>
+        <owl:onProperty rdf:resource="&hrela;#hasattribut"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Multiobject">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#multiobject">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasObject"/>
+        <owl:onProperty rdf:resource="&hrela;#hasobject"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Objectiv">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#objectiv">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Optimiz">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
-    <rdfs:subClassOf rdf:resource="&oper;#OperationOnFunct"/>
-    <owl:equivalentClass rdf:resource="#Optimiz"/>
+  <owl:Class rdf:about="#optimiz">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
+    <rdfs:subClassOf rdf:resource="&oper;#operationonfunct"/>
+    <owl:equivalentClass rdf:resource="#optimiz"/>
   </owl:Class>
-  <owl:Class rdf:about="#Optimiz"/>
+  <owl:Class rdf:about="#optimiz"/>
 
-  <owl:Class rdf:about="#Prefer">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Rank">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#prefer">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ResourceAlloc">
-    <rdfs:subClassOf rdf:resource="#Allocat"/>
+  <owl:Class rdf:about="#rank">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#resourcealloc">
+    <rdfs:subClassOf rdf:resource="#allocat"/>
     <rdfs:comment xml:lang="en">Resource allocation has two meanings. One meaning refers to allocating a resource such as forest land to two or more designated uses. For example, forest land units could be allocated to timber production, recreation, etc. The second meaning is in the sense of allocating management resources. This second meaning is concerned with allocating time, materials, personnel, budget to landscape elements to accomplish meanegement objectives such as protection, restoration, timber production, etc.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scenario">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#scenario">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Screen">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#screen">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolutionStrategi">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#solutionstrategi">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Valuat">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#valuat">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Weight">
-    <rdfs:subClassOf rdf:resource="#DecisionAct"/>
+  <owl:Class rdf:about="#weight">
+    <rdfs:subClassOf rdf:resource="#decisionact"/>
   </owl:Class>
 
 </rdf:RDF>

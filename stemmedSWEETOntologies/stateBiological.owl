@@ -38,104 +38,104 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/state.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#BiologicalSt">
+  <owl:Class rdf:about="#biologicalst">
     <rdfs:subClassOf rdf:resource="&state;State"/>
   </owl:Class>
 
-  <bstate:BiologicalState rdf:about="#Dead">
+  <bstate:BiologicalState rdf:about="#dead">
     <rdf:type rdf:resource="&state;BinaryState"/>
-    <owl:sameAs rdf:resource="#Deceas"/>
+    <owl:sameAs rdf:resource="#decea"/>
   </bstate:BiologicalState>
-  <bstate:BiologicalState rdf:about="#Deceas"/>
+  <bstate:BiologicalState rdf:about="#decea"/>
 
-  <bstate:BiologicalState rdf:about="#Live">
+  <bstate:BiologicalState rdf:about="#live">
     <rdf:type rdf:resource="&state;BinaryState"/>
-    <owl:sameAs rdf:resource="#Live"/>
-    <owl:sameAs rdf:resource="#Alive"/>
-    <owl:differentFrom rdf:resource="#Dead"/>
-    <owl:differentFrom rdf:resource="#Nonliv"/>
+    <owl:sameAs rdf:resource="#live"/>
+    <owl:sameAs rdf:resource="#alive"/>
+    <owl:differentFrom rdf:resource="#dead"/>
+    <owl:differentFrom rdf:resource="#nonliv"/>
   </bstate:BiologicalState>
-  <bstate:BiologicalState rdf:about="#Live"/>
-  <bstate:BiologicalState rdf:about="#Alive"/>
+  <bstate:BiologicalState rdf:about="#live"/>
+  <bstate:BiologicalState rdf:about="#alive"/>
 
-  <bstate:BiologicalState rdf:about="#Nonliv">
+  <bstate:BiologicalState rdf:about="#nonliv">
     <rdf:type rdf:resource="&state;BinaryState"/>
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Decompos">
+  <bstate:BiologicalState rdf:about="#decompo">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Diseas">
+  <bstate:BiologicalState rdf:about="#disea">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Fertil">
+  <bstate:BiologicalState rdf:about="#fertil">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Assimil">
+  <bstate:BiologicalState rdf:about="#assimil">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#NutrientRich">
+  <bstate:BiologicalState rdf:about="#nutrientrich">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Healthi">
+  <bstate:BiologicalState rdf:about="#healthi">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Decidu">
+  <bstate:BiologicalState rdf:about="#decidu">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Anadrom">
+  <bstate:BiologicalState rdf:about="#anadrom">
     <screla:spawn rdf:resource="&dir;Upstream"/>
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Catadrom">
+  <bstate:BiologicalState rdf:about="#catadrom">
     <screla:spawn rdf:resource="&dir;Downstream"/>
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Migrat">
+  <bstate:BiologicalState rdf:about="#migrat">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Pollin">
+  <bstate:BiologicalState rdf:about="#pollin">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Anthropogen">
+  <bstate:BiologicalState rdf:about="#anthropogen">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Biogen">
-    <owl:differentFrom rdf:resource="#Anthropogen" />
+  <bstate:BiologicalState rdf:about="#biogen">
+    <owl:differentFrom rdf:resource="#anthropogen" />
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Biotic">
+  <bstate:BiologicalState rdf:about="#biotic">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Abiotic">
-    <owl:differentFrom rdf:resource="#Biotic" />
+  <bstate:BiologicalState rdf:about="#abiotic">
+    <owl:differentFrom rdf:resource="#biotic" />
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Arabl">
+  <bstate:BiologicalState rdf:about="#arabl">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Biodegrad">
+  <bstate:BiologicalState rdf:about="#biodegrad">
   </bstate:BiologicalState>
 
-  <bstate:BiologicalState rdf:about="#Divers">
+  <bstate:BiologicalState rdf:about="#diver">
   </bstate:BiologicalState>
 
 <!-- Ages -->
-  <ordi:Age rdf:about="#Adult">
-    <trela:olderThan rdf:resource="#Child"/>
+  <ordi:Age rdf:about="#adult">
+    <trela:olderThan rdf:resource="#child"/>
   </ordi:Age>
 
-  <ordi:Age rdf:about="#Child">
+  <ordi:Age rdf:about="#child">
   </ordi:Age>
 
   <ordi:Age rdf:about="#youth">
   </ordi:Age>
 
-  <ordi:Age rdf:about="#Elder">
+  <ordi:Age rdf:about="#elder">
     <trela:olderThan rdf:resource="#youth"/>
   </ordi:Age>
 
-  <ordi:Age rdf:about="#OldGrowth">
+  <ordi:Age rdf:about="#oldgrowth">
   </ordi:Age>
 
 </rdf:RDF>

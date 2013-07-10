@@ -33,7 +33,7 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/propOrdinal.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#AClass">
+  <owl:Class rdf:about="#aclass">
     <rdfs:subClassOf rdf:resource="&ordi;FlareClass"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -49,7 +49,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#BClass">
+  <owl:Class rdf:about="#bclass">
     <rdfs:subClassOf rdf:resource="&ordi;FlareClass"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -65,7 +65,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CClass">
+  <owl:Class rdf:about="#cclass">
     <rdfs:subClassOf rdf:resource="&ordi;FlareClass"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -81,7 +81,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MClass">
+  <owl:Class rdf:about="#mclass">
     <rdfs:subClassOf rdf:resource="&ordi;FlareClass"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -97,7 +97,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#XClass">
+  <owl:Class rdf:about="#xclass">
     <rdfs:subClassOf rdf:resource="&ordi;FlareClass"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -107,7 +107,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <rad:AClass rdf:about="#A1Class">
+  <rad:AClass rdf:about="#a1class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-8</mrela:hasLowerBound>
@@ -116,7 +116,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A2Class">
+  <rad:AClass rdf:about="#a2class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-8</mrela:hasLowerBound>
@@ -125,7 +125,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A3Class">
+  <rad:AClass rdf:about="#a3class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-8</mrela:hasLowerBound>
@@ -134,7 +134,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A4Class">
+  <rad:AClass rdf:about="#a4class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-8</mrela:hasLowerBound>
@@ -143,7 +143,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A5Class">
+  <rad:AClass rdf:about="#a5class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5.E-8</mrela:hasLowerBound>
@@ -152,7 +152,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A6Class">
+  <rad:AClass rdf:about="#a6class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">6.E-8</mrela:hasLowerBound>
@@ -161,7 +161,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A7Class">
+  <rad:AClass rdf:about="#a7class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">7.E-8</mrela:hasLowerBound>
@@ -170,7 +170,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A8Class">
+  <rad:AClass rdf:about="#a8class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8.E-8</mrela:hasLowerBound>
@@ -179,7 +179,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:AClass rdf:about="#A9Class">
+  <rad:AClass rdf:about="#a9class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">9.E-8</mrela:hasLowerBound>
@@ -188,7 +188,7 @@
      </prela:hasEnergyFlux>
   </rad:AClass>
 
-  <rad:BClass rdf:about="#B1Class">
+  <rad:BClass rdf:about="#b1class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-7</mrela:hasLowerBound>
@@ -197,7 +197,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B2Class">
+  <rad:BClass rdf:about="#b2class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-7</mrela:hasLowerBound>
@@ -206,7 +206,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B3Class">
+  <rad:BClass rdf:about="#b3class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-7</mrela:hasLowerBound>
@@ -215,7 +215,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B4Class">
+  <rad:BClass rdf:about="#b4class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-7</mrela:hasLowerBound>
@@ -224,7 +224,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B5Class">
+  <rad:BClass rdf:about="#b5class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5.E-7</mrela:hasLowerBound>
@@ -233,7 +233,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B6Class">
+  <rad:BClass rdf:about="#b6class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">6.E-7</mrela:hasLowerBound>
@@ -242,7 +242,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B7Class">
+  <rad:BClass rdf:about="#b7class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">7.E-7</mrela:hasLowerBound>
@@ -251,7 +251,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B8Class">
+  <rad:BClass rdf:about="#b8class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8.E-7</mrela:hasLowerBound>
@@ -260,7 +260,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:BClass rdf:about="#B9Class">
+  <rad:BClass rdf:about="#b9class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">9.E-7</mrela:hasLowerBound>
@@ -269,7 +269,7 @@
      </prela:hasEnergyFlux>
   </rad:BClass>
 
-  <rad:CClass rdf:about="#C1Class">
+  <rad:CClass rdf:about="#c1class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-6</mrela:hasLowerBound>
@@ -278,7 +278,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C2Class">
+  <rad:CClass rdf:about="#c2class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-6</mrela:hasLowerBound>
@@ -287,7 +287,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C3Class">
+  <rad:CClass rdf:about="#c3class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-6</mrela:hasLowerBound>
@@ -296,7 +296,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C4Class">
+  <rad:CClass rdf:about="#c4class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-6</mrela:hasLowerBound>
@@ -305,7 +305,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C5Class">
+  <rad:CClass rdf:about="#c5class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5.E-6</mrela:hasLowerBound>
@@ -314,7 +314,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C6Class">
+  <rad:CClass rdf:about="#c6class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">6.E-6</mrela:hasLowerBound>
@@ -323,7 +323,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C7Class">
+  <rad:CClass rdf:about="#c7class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">7.E-6</mrela:hasLowerBound>
@@ -332,7 +332,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C8Class">
+  <rad:CClass rdf:about="#c8class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8.E-6</mrela:hasLowerBound>
@@ -341,7 +341,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:CClass rdf:about="#C9Class">
+  <rad:CClass rdf:about="#c9class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">9.E-6</mrela:hasLowerBound>
@@ -350,7 +350,7 @@
      </prela:hasEnergyFlux>
   </rad:CClass>
 
-  <rad:MClass rdf:about="#M1Class">
+  <rad:MClass rdf:about="#m1class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-5</mrela:hasLowerBound>
@@ -359,7 +359,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M2Class">
+  <rad:MClass rdf:about="#m2class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-5</mrela:hasLowerBound>
@@ -368,7 +368,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M3Class">
+  <rad:MClass rdf:about="#m3class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-5</mrela:hasLowerBound>
@@ -377,7 +377,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M4Class">
+  <rad:MClass rdf:about="#m4class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-5</mrela:hasLowerBound>
@@ -386,7 +386,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M5Class">
+  <rad:MClass rdf:about="#m5class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5.E-5</mrela:hasLowerBound>
@@ -395,7 +395,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M6Class">
+  <rad:MClass rdf:about="#m6class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">6.E-5</mrela:hasLowerBound>
@@ -404,7 +404,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M7Class">
+  <rad:MClass rdf:about="#m7class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">7.E-5</mrela:hasLowerBound>
@@ -413,7 +413,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M8Class">
+  <rad:MClass rdf:about="#m8class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8.E-5</mrela:hasLowerBound>
@@ -422,7 +422,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:MClass rdf:about="#M9Class">
+  <rad:MClass rdf:about="#m9class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">9.E-5</mrela:hasLowerBound>
@@ -431,7 +431,7 @@
      </prela:hasEnergyFlux>
   </rad:MClass>
 
-  <rad:XClass rdf:about="#X1Class">
+  <rad:XClass rdf:about="#x1class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-4</mrela:hasLowerBound>
@@ -440,7 +440,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X2Class">
+  <rad:XClass rdf:about="#x2class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-4</mrela:hasLowerBound>
@@ -449,7 +449,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X3Class">
+  <rad:XClass rdf:about="#x3class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-4</mrela:hasLowerBound>
@@ -458,7 +458,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X4Class">
+  <rad:XClass rdf:about="#x4class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-4</mrela:hasLowerBound>
@@ -467,7 +467,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X5Class">
+  <rad:XClass rdf:about="#x5class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">5.E-4</mrela:hasLowerBound>
@@ -476,7 +476,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X6Class">
+  <rad:XClass rdf:about="#x6class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">6.E-4</mrela:hasLowerBound>
@@ -485,7 +485,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X7Class">
+  <rad:XClass rdf:about="#x7class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">7.E-4</mrela:hasLowerBound>
@@ -494,7 +494,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X8Class">
+  <rad:XClass rdf:about="#x8class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">8.E-4</mrela:hasLowerBound>
@@ -503,7 +503,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X9Class">
+  <rad:XClass rdf:about="#x9class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">9.E-4</mrela:hasLowerBound>
@@ -512,7 +512,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X10Class">
+  <rad:XClass rdf:about="#x10class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.E-3</mrela:hasLowerBound>
@@ -521,7 +521,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X11Class">
+  <rad:XClass rdf:about="#x11class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.1E-3</mrela:hasLowerBound>
@@ -530,7 +530,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X12Class">
+  <rad:XClass rdf:about="#x12class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.2E-3</mrela:hasLowerBound>
@@ -539,7 +539,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X13Class">
+  <rad:XClass rdf:about="#x13class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.3E-3</mrela:hasLowerBound>
@@ -548,7 +548,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X14Class">
+  <rad:XClass rdf:about="#x14class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.4E-3</mrela:hasLowerBound>
@@ -557,7 +557,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X15Class">
+  <rad:XClass rdf:about="#x15class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.5E-3</mrela:hasLowerBound>
@@ -566,7 +566,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X16Class">
+  <rad:XClass rdf:about="#x16class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.6E-3</mrela:hasLowerBound>
@@ -575,7 +575,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X17Class">
+  <rad:XClass rdf:about="#x17class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.7E-3</mrela:hasLowerBound>
@@ -584,7 +584,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X18Class">
+  <rad:XClass rdf:about="#x18class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.8E-3</mrela:hasLowerBound>
@@ -593,7 +593,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X19Class">
+  <rad:XClass rdf:about="#x19class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">1.9E-3</mrela:hasLowerBound>
@@ -602,7 +602,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X20Class">
+  <rad:XClass rdf:about="#x20class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.E-3</mrela:hasLowerBound>
@@ -611,7 +611,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X21Class">
+  <rad:XClass rdf:about="#x21class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.1E-3</mrela:hasLowerBound>
@@ -620,7 +620,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X22Class">
+  <rad:XClass rdf:about="#x22class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.2E-3</mrela:hasLowerBound>
@@ -629,7 +629,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X23Class">
+  <rad:XClass rdf:about="#x23class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.3E-3</mrela:hasLowerBound>
@@ -638,7 +638,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X24Class">
+  <rad:XClass rdf:about="#x24class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.4E-3</mrela:hasLowerBound>
@@ -647,7 +647,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X25Class">
+  <rad:XClass rdf:about="#x25class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.5E-3</mrela:hasLowerBound>
@@ -656,7 +656,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X26Class">
+  <rad:XClass rdf:about="#x26class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.6E-3</mrela:hasLowerBound>
@@ -665,7 +665,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X27Class">
+  <rad:XClass rdf:about="#x27class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.7E-3</mrela:hasLowerBound>
@@ -674,7 +674,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X28Class">
+  <rad:XClass rdf:about="#x28class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.8E-3</mrela:hasLowerBound>
@@ -683,7 +683,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X29Class">
+  <rad:XClass rdf:about="#x29class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">2.9E-3</mrela:hasLowerBound>
@@ -692,7 +692,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X30Class">
+  <rad:XClass rdf:about="#x30class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.E-3</mrela:hasLowerBound>
@@ -701,7 +701,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X31Class">
+  <rad:XClass rdf:about="#x31class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.1E-3</mrela:hasLowerBound>
@@ -710,7 +710,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X32Class">
+  <rad:XClass rdf:about="#x32class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.2E-3</mrela:hasLowerBound>
@@ -719,7 +719,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X33Class">
+  <rad:XClass rdf:about="#x33class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.3E-3</mrela:hasLowerBound>
@@ -728,7 +728,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X34Class">
+  <rad:XClass rdf:about="#x34class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.4E-3</mrela:hasLowerBound>
@@ -737,7 +737,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X35Class">
+  <rad:XClass rdf:about="#x35class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.5E-3</mrela:hasLowerBound>
@@ -746,7 +746,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X36Class">
+  <rad:XClass rdf:about="#x36class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.6E-3</mrela:hasLowerBound>
@@ -755,7 +755,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X37Class">
+  <rad:XClass rdf:about="#x37class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.7E-3</mrela:hasLowerBound>
@@ -764,7 +764,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X38Class">
+  <rad:XClass rdf:about="#x38class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.8E-3</mrela:hasLowerBound>
@@ -773,7 +773,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X39Class">
+  <rad:XClass rdf:about="#x39class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">3.9E-3</mrela:hasLowerBound>
@@ -782,7 +782,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X40Class">
+  <rad:XClass rdf:about="#x40class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.E-3</mrela:hasLowerBound>
@@ -791,7 +791,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X41Class">
+  <rad:XClass rdf:about="#x41class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.1E-3</mrela:hasLowerBound>
@@ -800,7 +800,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X42Class">
+  <rad:XClass rdf:about="#x42class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.2E-3</mrela:hasLowerBound>
@@ -818,7 +818,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X44Class">
+  <rad:XClass rdf:about="#x44class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.4E-3</mrela:hasLowerBound>
@@ -827,7 +827,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X45Class">
+  <rad:XClass rdf:about="#x45class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.5E-3</mrela:hasLowerBound>
@@ -836,7 +836,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X46Class">
+  <rad:XClass rdf:about="#x46class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.6E-3</mrela:hasLowerBound>
@@ -845,7 +845,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X47Class">
+  <rad:XClass rdf:about="#x47class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.7E-3</mrela:hasLowerBound>
@@ -854,7 +854,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X48Class">
+  <rad:XClass rdf:about="#x48class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.8E-3</mrela:hasLowerBound>
@@ -863,7 +863,7 @@
      </prela:hasEnergyFlux>
   </rad:XClass>
 
-  <rad:XClass rdf:about="#X49Class">
+  <rad:XClass rdf:about="#x49class">
      <prela:hasEnergyFlux> 
        <flux:EnergyFlux_Wm2>
          <mrela:hasLowerBound rdf:datatype="&xsd;double">4.9E-3</mrela:hasLowerBound>

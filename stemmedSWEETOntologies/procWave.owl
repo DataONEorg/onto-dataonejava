@@ -30,143 +30,143 @@
      <owl:imports rdf:resource="&wavep;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#WaveProcess">
-    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
+  <owl:Class rdf:about="#waveprocess">
+    <rdfs:subClassOf rdf:resource="&proc;#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MediumWaveInteractionProcess">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#mediumwaveinteractionprocess">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Attenuat">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
-    <owl:equivalentClass rdf:resource="#Extinction"/>
+  <owl:Class rdf:about="#attenuat">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
+    <owl:equivalentClass rdf:resource="#extinction"/>
   </owl:Class>
-  <owl:Class rdf:about="#Extinction"/>
+  <owl:Class rdf:about="#extinction"/>
 
-  <owl:Class rdf:about="#Dispers">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Dissip">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#disper">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Excitat">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#dissip">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interfer">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#excitat">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Polar">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#interfer">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reflect">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#polar">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Refract">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#reflect">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#refract">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
     <rdfs:comment xml:lang="en">A change of direction and possibly amplitude of an electromagnetic, acoustic, or any other wave propagating in a material medium, homogeneous on the scale of the wavelength, as a consequence of spatial variation in the properties of the medium.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scatter">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#scatter">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
     <rdfs:comment xml:lang="en">In a broad sense, the process by which matter is excited to radiate by an external source of electromagnetic radiation, as distinguished from emission of radiation by matter, which occurs even in the absence of such a source.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MieScatt">
-    <rdfs:subClassOf rdf:resource="#Scatter" />
+  <owl:Class rdf:about="#miescatt">
+    <rdfs:subClassOf rdf:resource="#scatter" />
     <rdfs:comment>scattering of waves (photons) that reverse the direction of propagation</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RayleighScatt">
-    <rdfs:subClassOf rdf:resource="#Scatter" />
+  <owl:Class rdf:about="#rayleighscatt">
+    <rdfs:subClassOf rdf:resource="#scatter" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Transmiss">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#transmiss">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Absorption">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#absorption">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
     <rdfs:label>Absorption</rdfs:label>
     <rdfs:comment>The process in which incident radiant energy is retained by a substance.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Backscatt">
-    <rdfs:subClassOf rdf:resource="#Scatter" />
+  <owl:Class rdf:about="#backscatt">
+    <rdfs:subClassOf rdf:resource="#scatter" />
     <rdfs:comment>scattering of waves (photons) that reverse the direction of propagation</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Damp">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#damp">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Emission">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#emission">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaveDrag">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#wavedrag">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Propag">
-    <rdfs:subClassOf rdf:resource="#WaveProcess"/>
+  <owl:Class rdf:about="#propag">
+    <rdfs:subClassOf rdf:resource="#waveprocess"/>
     <rdfs:comment xml:lang="en">Wave propagation is any of the ways in which waves travel through a medium (waveguide). With respect to the direction of the oscillation relative to the propagation direction, we can distinguish between longitudinal wave and transverse waves. Another useful parameter for describing the propagation is the wave velocity that mostly depends on some kind of density of the medium. For electromagnetic waves, propagation may occur in a vacuum as well as in a material medium.</rdfs:comment>
-    <owl:equivalentClass rdf:resource="#WavePropag"/>
+    <owl:equivalentClass rdf:resource="#wavepropag"/>
   </owl:Class>
-  <owl:Class rdf:about="#WavePropag"/>
+  <owl:Class rdf:about="#wavepropag"/>
 
-  <owl:Class rdf:about="#LineOfSightPropag">
-    <rdfs:subClassOf rdf:resource="#WavePropag"/>
+  <owl:Class rdf:about="#lineofsightpropag">
+    <rdfs:subClassOf rdf:resource="#wavepropag"/>
     <rdfs:comment xml:lang="en">Line-of-sight propagation refers to electromagnetic radiation or electromagnetic waves travelling in a straight line. The rays or waves are deviated or reflected by obstructions and cannot travel over the horizon or behind obstacles. Beyond that, material disperses the rays respectively the energy of the waves.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AcousticBackScatt">
-    <rdfs:subClassOf rdf:resource="#Backscatt" />
+  <owl:Class rdf:about="#acousticbackscatt">
+    <rdfs:subClassOf rdf:resource="#backscatt" />
     <rdfs:comment>Scattering of sound or ultrasound in the direction of the source.</rdfs:comment>
     <rdfs:label>Acoustic Backscattering</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Echo">
-    <rdfs:subClassOf rdf:resource="#Reflect" />
+  <owl:Class rdf:about="#echo">
+    <rdfs:subClassOf rdf:resource="#reflect" />
     <rdfs:comment xml:lang="en">In radar, a general term for the appearance, on a radar display, of the radio signal scattered or reflected from a target. The characteristics of a radar echo are determined by 1) the waveform, frequency, and power of the incident wave; 2) the range and velocity of the target with respect to the radar; and 3) the size, shape, and composition of the target.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LineEmiss">
-    <rdfs:subClassOf rdf:resource="#Emission"/>
+  <owl:Class rdf:about="#lineemiss">
+    <rdfs:subClassOf rdf:resource="#emission"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectromagneticRadi">
-    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
-    <rdfs:subClassOf rdf:resource="&wavep;#Wave"/>
-    <owl:equivalentClass rdf:resource="#ElectromagneticWav"/>
+  <owl:Class rdf:about="#electromagneticradi">
+    <rdfs:subClassOf rdf:resource="&proc;#physicalprocess"/>
+    <rdfs:subClassOf rdf:resource="&wavep;#wave"/>
+    <owl:equivalentClass rdf:resource="#electromagneticwav"/>
   </owl:Class>
-  <owl:Class rdf:about="#ElectromagneticWav"/>
+  <owl:Class rdf:about="#electromagneticwav"/>
 
 <!-- Diffraction -->
-  <owl:Class rdf:about="#Diffract">
-    <rdfs:subClassOf rdf:resource="#MediumWaveInteractionProcess"/>
+  <owl:Class rdf:about="#diffract">
+    <rdfs:subClassOf rdf:resource="#mediumwaveinteractionprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FraunhoferDiffract">
-    <rdfs:subClassOf rdf:resource="#Diffract"/>
+  <owl:Class rdf:about="#fraunhoferdiffract">
+    <rdfs:subClassOf rdf:resource="#diffract"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FresnelDiffract">
-    <rdfs:subClassOf rdf:resource="#Diffract"/>
+  <owl:Class rdf:about="#fresneldiffract">
+    <rdfs:subClassOf rdf:resource="#diffract"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BraggDiffract">
-    <rdfs:subClassOf rdf:resource="#Diffract"/>
+  <owl:Class rdf:about="#braggdiffract">
+    <rdfs:subClassOf rdf:resource="#diffract"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SchaeferBergmannDiffract">
-    <rdfs:subClassOf rdf:resource="#Diffract"/>
+  <owl:Class rdf:about="#schaeferbergmanndiffract">
+    <rdfs:subClassOf rdf:resource="#diffract"/>
   </owl:Class>
 
 </rdf:RDF>

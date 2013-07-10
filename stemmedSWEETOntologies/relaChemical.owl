@@ -31,86 +31,86 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/rela.owl"/>
   </owl:Ontology>
 
-  <owl:DatatypeProperty rdf:about="#hasBaseNeutron">
+  <owl:DatatypeProperty rdf:about="#hasbaseneutron">
     <rdfs:domain rdf:resource="&matr;Chemical"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
 
-  <owl:DatatypeProperty rdf:about="#hasProton">
+  <owl:DatatypeProperty rdf:about="#hasproton">
     <rdfs:range rdf:resource="&xsd;integer"/>
-    <owl:equivalentProperty rdf:resource="#atomicNumb"/>
+    <owl:equivalentProperty rdf:resource="#atomicnumb"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#atomicNumb"/>
+  <owl:DatatypeProperty rdf:about="#atomicnumb"/>
 
-  <owl:ObjectProperty rdf:about="#hasChem">
-    <owl:equivalentProperty rdf:resource="#hasSubst"/>
-    <owl:equivalentProperty rdf:resource="#hasMateri"/>
+  <owl:ObjectProperty rdf:about="#haschem">
+    <owl:equivalentProperty rdf:resource="#hassubst"/>
+    <owl:equivalentProperty rdf:resource="#hasmateri"/>
     <rdfs:range rdf:resource="&matr;Chemical"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasSubst"/>
-  <owl:ObjectProperty rdf:about="#hasMateri"/>
+  <owl:ObjectProperty rdf:about="#hassubst"/>
+  <owl:ObjectProperty rdf:about="#hasmateri"/>
 
   <owl:ObjectProperty rdf:about="#hasChemical_1">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasChemical_2">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasChemical_3">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasChemical_4">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasChemical_5">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#hasChemical_6">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasPrimarySubst">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+  <owl:ObjectProperty rdf:about="#hasprimarysubst">
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasMedium">
-    <rdfs:subPropertyOf rdf:resource="#hasSubst"/>
+  <owl:ObjectProperty rdf:about="#hasmedium">
+    <rdfs:subPropertyOf rdf:resource="#hassubst"/>
     <rdfs:range rdf:resource="&matr;Medium"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#atomicMass">
+  <owl:ObjectProperty rdf:about="#atomicmass">
     <rdfs:domain rdf:resource="&matr;ChemicalSubstance"/>
-    <owl:equivalentProperty rdf:resource="#atomicWeight"/>
+    <owl:equivalentProperty rdf:resource="#atomicweight"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#atomicWeight"/>
+  <owl:ObjectProperty rdf:about="#atomicweight"/>
 
-  <owl:DatatypeProperty rdf:about="#hasAtom">
+  <owl:DatatypeProperty rdf:about="#hasatom">
     <rdfs:domain rdf:resource="&matr;Chemical"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
 
-  <owl:DatatypeProperty rdf:about="#hasNeutron">
+  <owl:DatatypeProperty rdf:about="#hasneutron">
     <rdfs:domain rdf:resource="&matr;Chemical"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:about="#hasChemicalRol">
+  <owl:ObjectProperty rdf:about="#haschemicalrol">
     <rdfs:subPropertyOf rdf:resource="&rela;hasRole"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasChemicalProcess">
+  <owl:ObjectProperty rdf:about="#haschemicalprocess">
     <rdfs:subPropertyOf rdf:resource="&rela;hasProcess"/>
     <rdfs:range rdf:resource="&proc;ChemicalProcess"/>
-    <owl:equivalentProperty rdf:resource="#hasChemicalReact"/>
+    <owl:equivalentProperty rdf:resource="#haschemicalreact"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasChemicalReact"/>
+  <owl:ObjectProperty rdf:about="#haschemicalreact"/>
 
-  <owl:ObjectProperty rdf:about="#hasReactionProduct">
+  <owl:ObjectProperty rdf:about="#hasreactionproduct">
     <rdfs:domain rdf:resource="&proc;ChemicalProcess"/>
   </owl:ObjectProperty>
 

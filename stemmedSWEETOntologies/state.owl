@@ -23,10 +23,10 @@
   </owl:Ontology>
   
 <!-- States -->
-  <owl:Class rdf:about="#State" />
+  <owl:Class rdf:about="#state" />
 
-  <owl:Class rdf:about="#BinarySt">
-    <rdfs:subClassOf rdf:resource="#State"/>
+  <owl:Class rdf:about="#binaryst">
+    <rdfs:subClassOf rdf:resource="#state"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -51,91 +51,91 @@
   </owl:Ontology>
 
 <!-- Scientific -->
-  <owl:Class rdf:about="#Invariant">
-    <rdfs:subClassOf rdf:resource="&func;#Function"/>
+  <owl:Class rdf:about="#invariant">
+    <rdfs:subClassOf rdf:resource="&func;#function"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isopleth">
-    <rdfs:subClassOf rdf:resource="#Invariant" />
+  <owl:Class rdf:about="#isopleth">
+    <rdfs:subClassOf rdf:resource="#invariant" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Isentrop">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isentrop">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&ener;#Entropi"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&ener;#entropi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isobar">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isobar">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&pres;#Pressur"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&pres;#pressur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isochor">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isochor">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&spac;#Volum"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&spac;#volum"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isohalin">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isohalin">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&chem;#Salin"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&chem;#salin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isoter">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isoter">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&mass;#Densiti"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&mass;#densiti"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Isotherm">
-    <rdfs:subClassOf rdf:resource="#Isopleth"/>
+  <owl:Class rdf:about="#isotherm">
+    <rdfs:subClassOf rdf:resource="#isopleth"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&temp;#Temperatur"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&temp;#temperatur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThicknessLin">
-    <rdfs:subClassOf rdf:resource="#Isopleth" />
+  <owl:Class rdf:about="#thicknesslin">
+    <rdfs:subClassOf rdf:resource="#isopleth" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant" />
-        <owl:allValuesFrom rdf:resource="&thic;#Thick" />
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu" />
+        <owl:allValuesFrom rdf:resource="&thic;#thick" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A line drawn through all geographic points at which the thickness of a given atmospheric layer is the same; an isopleth of thickness.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AdiabaticInvari">
-    <rdfs:subClassOf rdf:resource="#Invariant"/>
+  <owl:Class rdf:about="#adiabaticinvari">
+    <rdfs:subClassOf rdf:resource="#invariant"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasConstantQuant"/>
-        <owl:allValuesFrom rdf:resource="&ener;#Entropi"/>
+        <owl:onProperty rdf:resource="&prela;#hasconstantqu"/>
+        <owl:allValuesFrom rdf:resource="&ener;#entropi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

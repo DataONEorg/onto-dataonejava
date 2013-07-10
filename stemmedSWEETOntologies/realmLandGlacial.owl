@@ -25,75 +25,75 @@
      <owl:imports rdf:resource="&land;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#GlacialLandform">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+  <owl:Class rdf:about="#glaciallandform">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Arete">
-    <rdfs:subClassOf rdf:resource="#GlacialPlain"/>
+  <owl:Class rdf:about="#arete">
+    <rdfs:subClassOf rdf:resource="#glacialplain"/>
     <rdfs:comment xml:lang="en">A thin, almost knife-like, ridge of rock which is typically formed when two glaciers erode parallel U-shaped valleys.</rdfs:comment> 
   </owl:Class>
 
-  <owl:Class rdf:about="#Cirqu">
-    <rdfs:subClassOf rdf:resource="#GlacialPlain"/>
+  <owl:Class rdf:about="#cirqu">
+    <rdfs:subClassOf rdf:resource="#glacialplain"/>
     <rdfs:comment xml:lang="en">An amphitheatre-like valley head, formed at the head of a valley glacier by erosion.</rdfs:comment> 
   </owl:Class>
 
-  <owl:Class rdf:about="#Esker">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#esker">
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
     <rdfs:comment xml:lang="en">A long winding ridge of stratified sand and gravel, examples of which occur in glaciated and formerly glaciated regions.</rdfs:comment> 
   </owl:Class>
 
-  <owl:Class rdf:about="#GlacialPlain">
-    <rdfs:subClassOf rdf:resource="&land;#Plain"/>
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#glacialplain">
+    <rdfs:subClassOf rdf:resource="&land;#plain"/>
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GlacialOutwashPlain">
-    <rdfs:subClassOf rdf:resource="#GlacialPlain"/>
+  <owl:Class rdf:about="#glacialoutwashplain">
+    <rdfs:subClassOf rdf:resource="#glacialplain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Kame">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#kame">
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
     <rdfs:comment xml:lang="en">An irregularly shaped hill or mound composed of sand, gravel and till that accumulates in a depresson on a retreating glacier, and is then deposited with further melting.[Wikipedia]</rdfs:comment> 
   </owl:Class>
 
-  <owl:Class rdf:about="#Morain">
-    <rdfs:subClassOf rdf:resource="#GlacialPlain"/>
-    <owl:equivalentClass rdf:resource="#GlacialMorain"/>
+  <owl:Class rdf:about="#morain">
+    <rdfs:subClassOf rdf:resource="#glacialplain"/>
+    <owl:equivalentClass rdf:resource="#glacialmorain"/>
     <rdfs:comment xml:lang="en">Any glacially formed accumulation of unconsolidated glacial debris (soil and rock) which can occur in currently glaciated and formerly glaciated regions.</rdfs:comment> 
   </owl:Class>
-  <owl:Class rdf:about="#GlacialMorain"/>
+  <owl:Class rdf:about="#glacialmorain"/>
 
-  <owl:Class rdf:about="#OutwashFan">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#outwashfan">
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
     <rdfs:comment xml:lang="en">A fan-shaped body of sediments deposited by braided streams from a melting glacier. Sediment locked within the ice of the glacier gets transported by the streams of meltwater and deposits on the outwash plain at the terminus of the glacier.</rdfs:comment> 
   </owl:Class>
 
   <owl:Class rdf:ID="RockGlacier">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
     <rdfs:comment xml:lang="en">Rock glaciers are distinctive geomorphological landforms of blocky detritus which may extend outward and downslope from talus cones or from glaciers or the terminal moraines of glaciers. [Wikipedia]</rdfs:comment>
   </owl:Class>
   
-  <owl:Class rdf:about="#Sandur">
-    <rdfs:subClassOf rdf:resource="#GlacialOutwashPlain"/>
+  <owl:Class rdf:about="#sandur">
+    <rdfs:subClassOf rdf:resource="#glacialoutwashplain"/>
     <rdfs:comment xml:lang="en">A glacial outwash plain formed of sediments deposited by meltwater at the terminus of a glacier.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TillPlain">
-    <rdfs:subClassOf rdf:resource="#GlacialPlain"/>
-    <owl:equivalentClass rdf:resource="#Till"/>
+  <owl:Class rdf:about="#tillplain">
+    <rdfs:subClassOf rdf:resource="#glacialplain"/>
+    <owl:equivalentClass rdf:resource="#till"/>
     <rdfs:comment xml:lang="en">An extensive flat plain of glacial till that forms when a sheet of ice becomes detached from the main body of a glacier and melts in place depositing the sediments it carried.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Till"/>
+  <owl:Class rdf:about="#till"/>
 
-  <owl:Class rdf:about="#Thermokarst">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#thermokarst">
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
     <rdfs:comment xml:lang="en">A land surface characterised by very irregular surfaces of marshy hollows and small hummocks formed as ice-rich permafrost thaws.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#UShapedValley">
-    <rdfs:subClassOf rdf:resource="#GlacialLandform"/>
+  <owl:Class rdf:about="#ushapedvalley">
+    <rdfs:subClassOf rdf:resource="#glaciallandform"/>
   </owl:Class>
 
 </rdf:RDF>

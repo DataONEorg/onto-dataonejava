@@ -31,18 +31,18 @@
      <owl:imports rdf:resource="&cate;"/>
   </owl:Ontology>
   
-  <owl:Class rdf:about="#BinaryProperti">
-    <rdfs:subClassOf rdf:resource="&prop;#Properti"/>
-    <rdfs:subClassOf rdf:resource="&func;#BinaryFunct"/>
+  <owl:Class rdf:about="#binaryproperti">
+    <rdfs:subClassOf rdf:resource="&prop;#properti"/>
+    <rdfs:subClassOf rdf:resource="&func;#binaryfunct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Free">
-    <rdfs:subClassOf rdf:resource="#BinaryProperti"/>
+  <owl:Class rdf:about="#free">
+    <rdfs:subClassOf rdf:resource="#binaryproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Polar">
-    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti"/>
-    <rdfs:subClassOf rdf:resource="#BinaryProperti"/>
+  <owl:Class rdf:about="#polar">
+    <rdfs:subClassOf rdf:resource="&prop;#chemicalproperti"/>
+    <rdfs:subClassOf rdf:resource="#binaryproperti"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -33,91 +33,91 @@
      <owl:imports rdf:resource="&mass;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Conduct">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#conduct">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalConduct">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="#Conduct"/>
+  <owl:Class rdf:about="#thermalconduct">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="#conduct"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterPerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermeterperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PedersenConduct">
-    <rdfs:subClassOf rdf:resource="#ElectricalConduct"/>
+  <owl:Class rdf:about="#pedersenconduct">
+    <rdfs:subClassOf rdf:resource="#electricalconduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HallConduct">
-    <rdfs:subClassOf rdf:resource="#ElectricalConduct"/>
+  <owl:Class rdf:about="#hallconduct">
+    <rdfs:subClassOf rdf:resource="#electricalconduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectricalConduct">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticQuant"/>
-    <rdfs:subClassOf rdf:resource="#Conduct"/>
+  <owl:Class rdf:about="#electricalconduct">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticqu"/>
+    <rdfs:subClassOf rdf:resource="#conduct"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#siemensPerMet"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#siemenspermet"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Conduct">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticQuant"/>
+  <owl:Class rdf:about="#conduct">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#siemen"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificConduct">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#specificconduct">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#siemensPerKilogram"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#siemensperkilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Resist">
-    <rdfs:subClassOf rdf:resource="#Impedanc"/>
+  <owl:Class rdf:about="#resist">
+    <rdfs:subClassOf rdf:resource="#impedanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Resist">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#resist">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#ohmMet"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#ohmmet"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Impedanc">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#impedanc">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#ohm"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HydraulicConduct">
-    <rdfs:subClassOf rdf:resource="#Conduct"/>
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
+  <owl:Class rdf:about="#hydraulicconduct">
+    <rdfs:subClassOf rdf:resource="#conduct"/>
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

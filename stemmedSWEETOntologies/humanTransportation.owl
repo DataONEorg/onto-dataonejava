@@ -40,124 +40,124 @@
      <owl:imports rdf:resource="&equi;"/>   
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Evacuat">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#evacuat">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transit">
-    <rdfs:subClassOf rdf:resource="#Transport"/>
+  <owl:Class rdf:about="#transit">
+    <rdfs:subClassOf rdf:resource="#transport"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transport">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#transport">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transport">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#transport">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroundTransport">
-    <rdfs:subClassOf rdf:resource="#Transport"/>
+  <owl:Class rdf:about="#groundtransport">
+    <rdfs:subClassOf rdf:resource="#transport"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTransport">
-    <rdfs:subClassOf rdf:resource="#Transport"/>
+  <owl:Class rdf:about="#airtransport">
+    <rdfs:subClassOf rdf:resource="#transport"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Arrival">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#arrival">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasEndTim" />
+        <owl:onProperty rdf:resource="&trela;#hasendtim" />
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Departur">
+  <owl:Class rdf:about="#departur">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasStartTim" />
+        <owl:onProperty rdf:resource="&trela;#hasstarttim" />
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
 <!-- Human activities / phenomena -->
-  <owl:Class rdf:about="#Aviation">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct" />
+  <owl:Class rdf:about="#aviation">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#CivilAvi">
-    <rdfs:subClassOf rdf:resource="#Aviation"/>
+  <owl:Class rdf:about="#civilavi">
+    <rdfs:subClassOf rdf:resource="#aviation"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasJurisdict" />
-        <owl:allValuesFrom rdf:resource="&jur;#Civil" />
+        <owl:onProperty rdf:resource="&hrela;#hasjurisdict" />
+        <owl:allValuesFrom rdf:resource="&jur;#civil" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MilitaryAvi">
-    <rdfs:subClassOf rdf:resource="#Aviation"/>
+  <owl:Class rdf:about="#militaryavi">
+    <rdfs:subClassOf rdf:resource="#aviation"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasJurisdict" />
-        <owl:allValuesFrom rdf:resource="&jur;#Militari" />
+        <owl:onProperty rdf:resource="&hrela;#hasjurisdict" />
+        <owl:allValuesFrom rdf:resource="&jur;#militari" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTraff">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#airtraff">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTrafficControl">
-    <rdfs:subClassOf rdf:resource="&comm;#Manag"/>
+  <owl:Class rdf:about="#airtrafficcontrol">
+    <rdfs:subClassOf rdf:resource="&comm;#manag"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#hasHumanAct" />
-        <owl:allValuesFrom rdf:resource="#AirTraff" />
+        <owl:onProperty rdf:resource="&hrela;#hashumanact" />
+        <owl:allValuesFrom rdf:resource="#airtraff" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flight">
-    <rdfs:subClassOf rdf:resource="#AirTransport"/>
+  <owl:Class rdf:about="#flight">
+    <rdfs:subClassOf rdf:resource="#airtransport"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Land">
-    <rdfs:subClassOf rdf:resource="#Arrival"/>
+  <owl:Class rdf:about="#land">
+    <rdfs:subClassOf rdf:resource="#arrival"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Takeoff">
-    <rdfs:subClassOf rdf:resource="#Departur"/>
+  <owl:Class rdf:about="#takeoff">
+    <rdfs:subClassOf rdf:resource="#departur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Liftoff">
-    <rdfs:subClassOf rdf:resource="#Departur"/>
+  <owl:Class rdf:about="#liftoff">
+    <rdfs:subClassOf rdf:resource="#departur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ascent">
-    <rdfs:subClassOf rdf:resource="#Departur"/>
+  <owl:Class rdf:about="#ascent">
+    <rdfs:subClassOf rdf:resource="#departur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Descent">
-    <rdfs:subClassOf rdf:resource="#Arrival"/>
+  <owl:Class rdf:about="#descent">
+    <rdfs:subClassOf rdf:resource="#arrival"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceProgram">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#spaceprogram">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceTravel">
-    <rdfs:subClassOf rdf:resource="#SpaceProgram"/>
+  <owl:Class rdf:about="#spacetravel">
+    <rdfs:subClassOf rdf:resource="#spaceprogram"/>
   </owl:Class>
 
-  <jur2:FederalGoverningBody rdf:about="#FAA">
-    <owl:sameAs rdf:resource="#FederalAviationAdministr" />
+  <jur2:FederalGoverningBody rdf:about="#faa">
+    <owl:sameAs rdf:resource="#federalaviationadministr" />
   </jur2:FederalGoverningBody>
-  <jur2:FederalGoverningBody rdf:about="#FederalAviationAdministr"/>
+  <jur2:FederalGoverningBody rdf:about="#federalaviationadministr"/>
 
 </rdf:RDF>

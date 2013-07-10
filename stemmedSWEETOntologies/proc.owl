@@ -21,14 +21,14 @@
      <rdfs:label>SWEET Ontology</rdfs:label>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Process"/>
+  <owl:Class rdf:about="#process"/>
 
-  <owl:Class rdf:about="#Interact">
-    <rdfs:subClassOf rdf:resource="#Process"/>
+  <owl:Class rdf:about="#interact">
+    <rdfs:subClassOf rdf:resource="#process"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Forc">
-    <rdfs:subClassOf rdf:resource="#Process"/>
+  <owl:Class rdf:about="#forc">
+    <rdfs:subClassOf rdf:resource="#process"/>
   </owl:Class>
 
 </rdf:RDF>

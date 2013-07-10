@@ -29,79 +29,79 @@
     <owl:imports rdf:resource = "&res;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#DataClean">
-    <rdfs:subClassOf rdf:resource="#Verif"/>
+  <owl:Class rdf:about="#dataclean">
+    <rdfs:subClassOf rdf:resource="#verif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mask">
-    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
-    <owl:equivalentClass rdf:resource="#BinaryMask"/>
+  <owl:Class rdf:about="#mask">
+    <rdfs:subClassOf rdf:resource="&serv;#dataserv"/>
+    <owl:equivalentClass rdf:resource="#binarymask"/>
   </owl:Class>
-  <owl:Class rdf:about="#BinaryMask"/>
+  <owl:Class rdf:about="#binarymask"/>
 
-  <owl:Class rdf:about="#Acceptanc">
-    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#PixelScreen">
-    <rdfs:subClassOf rdf:resource="#QualityScreen"/>
+  <owl:Class rdf:about="#acceptanc">
+    <rdfs:subClassOf rdf:resource="&serv;#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#QualityScreen">
-    <rdfs:subClassOf rdf:resource="#Verif"/>
+  <owl:Class rdf:about="#pixelscreen">
+    <rdfs:subClassOf rdf:resource="#qualityscreen"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Valid">
-    <rdfs:subClassOf rdf:resource="#Verif"/>
+  <owl:Class rdf:about="#qualityscreen">
+    <rdfs:subClassOf rdf:resource="#verif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Verifi">
-    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
-    <owl:equivalentClass rdf:resource="#Verif"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Verif" />
-
-  <owl:Class rdf:about="#Calibr">
-    <rdfs:subClassOf rdf:resource="#Verif"/>
-    <owl:equivalentClass rdf:resource="#Calibr"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Calibr"/>
-
-  <owl:Class rdf:about="#Intercalibr">
-    <rdfs:subClassOf rdf:resource="#Calibr"/>
+  <owl:Class rdf:about="#valid">
+    <rdfs:subClassOf rdf:resource="#verif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ValidationEvid">
-    <rdfs:subClassOf rdf:resource="#Valid"/>
-    <rdfs:subClassOf rdf:resource="&res;#Evidenc"/>
+  <owl:Class rdf:about="#verifi">
+    <rdfs:subClassOf rdf:resource="&serv;#dataserv"/>
+    <owl:equivalentClass rdf:resource="#verif"/>
+  </owl:Class>
+  <owl:Class rdf:about="#verif" />
+
+  <owl:Class rdf:about="#calibr">
+    <rdfs:subClassOf rdf:resource="#verif"/>
+    <owl:equivalentClass rdf:resource="#calibr"/>
+  </owl:Class>
+  <owl:Class rdf:about="#calibr"/>
+
+  <owl:Class rdf:about="#intercalibr">
+    <rdfs:subClassOf rdf:resource="#calibr"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SecurityMethod">
-    <rdfs:subClassOf rdf:resource="#Verif"/>
+  <owl:Class rdf:about="#validationevid">
+    <rdfs:subClassOf rdf:resource="#valid"/>
+    <rdfs:subClassOf rdf:resource="&res;#evidenc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Signatur">
-    <rdfs:subClassOf rdf:resource="#ValidationEvid"/>
+  <owl:Class rdf:about="#securitymethod">
+    <rdfs:subClassOf rdf:resource="#verif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Certif">
-    <rdfs:subClassOf rdf:resource="#ValidationEvid"/>
+  <owl:Class rdf:about="#signatur">
+    <rdfs:subClassOf rdf:resource="#validationevid"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Copyright">
-    <rdfs:subClassOf rdf:resource="#ValidationEvid"/>
+  <owl:Class rdf:about="#certif">
+    <rdfs:subClassOf rdf:resource="#validationevid"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Key">
-    <rdfs:subClassOf rdf:resource="#SecurityMethod"/>
+  <owl:Class rdf:about="#copyright">
+    <rdfs:subClassOf rdf:resource="#validationevid"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Encode">
-    <rdfs:subClassOf rdf:resource="#SecurityMethod"/>
+  <owl:Class rdf:about="#key">
+    <rdfs:subClassOf rdf:resource="#securitymethod"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Encryption">
-    <rdfs:subClassOf rdf:resource="#SecurityMethod"/>
+  <owl:Class rdf:about="#encode">
+    <rdfs:subClassOf rdf:resource="#securitymethod"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#encryption">
+    <rdfs:subClassOf rdf:resource="#securitymethod"/>
   </owl:Class>
 
 </rdf:RDF>

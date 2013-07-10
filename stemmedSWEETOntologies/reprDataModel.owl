@@ -52,143 +52,143 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Array">
-    <rdfs:subClassOf rdf:resource="#DataStructur"/>
+  <owl:Class rdf:about="#array">
+    <rdfs:subClassOf rdf:resource="#datastructur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cell">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#cell">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Charact">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#charact">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Column">
-    <rdfs:subClassOf rdf:resource="&repr;#Dimens"/>
+  <owl:Class rdf:about="#column">
+    <rdfs:subClassOf rdf:resource="&repr;#dimen"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DataModel">
-    <rdfs:subClassOf rdf:resource="&mod;#Model" />
+  <owl:Class rdf:about="#datamodel">
+    <rdfs:subClassOf rdf:resource="&mod;#model" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#representationOf" />
-        <owl:allValuesFrom rdf:resource="&data;#Data" />
+        <owl:onProperty rdf:resource="&mrela;#representationof" />
+        <owl:allValuesFrom rdf:resource="&data;#data" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DataStructur">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent" />
+  <owl:Class rdf:about="#datastructur">
+    <rdfs:subClassOf rdf:resource="&repr;#repres" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Delimit">
-    <rdfs:subClassOf rdf:resource="#Charact"/>
+  <owl:Class rdf:about="#delimit">
+    <rdfs:subClassOf rdf:resource="#charact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Field">
-    <rdfs:subClassOf rdf:resource="#DataModel" />
+  <owl:Class rdf:about="#field">
+    <rdfs:subClassOf rdf:resource="#datamodel" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Grid">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
-    <rdfs:subClassOf rdf:resource="#Raster"/>
+  <owl:Class rdf:about="#grid">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
+    <rdfs:subClassOf rdf:resource="#raster"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasGeometricalObject" />
-        <owl:someValuesFrom rdf:resource="&obj;#Rectangl" />
+        <owl:onProperty rdf:resource="&srela;#hasgeometricalobject" />
+        <owl:someValuesFrom rdf:resource="&obj;#rectangl" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Increment">
-    <rdfs:subClassOf rdf:resource="&repr;#Scale"/>
+  <owl:Class rdf:about="#increment">
+    <rdfs:subClassOf rdf:resource="&repr;#scale"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Point">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#point">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasGeometricalObject" />
-        <owl:allValuesFrom rdf:resource="&obj;#Point" />
+        <owl:onProperty rdf:resource="&srela;#hasgeometricalobject" />
+        <owl:allValuesFrom rdf:resource="&obj;#point" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Raster">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#raster">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ReducedGrid">
-    <rdfs:subClassOf rdf:resource="#Grid"/>
+  <owl:Class rdf:about="#reducedgrid">
+    <rdfs:subClassOf rdf:resource="#grid"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Resolut">
-    <rdfs:subClassOf rdf:resource="#Increment"/>
+  <owl:Class rdf:about="#resolut">
+    <rdfs:subClassOf rdf:resource="#increment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpatialRepresent">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent" />
+  <owl:Class rdf:about="#spatialrepres">
+    <rdfs:subClassOf rdf:resource="&repr;#repres" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#representationOf" />
-        <owl:allValuesFrom rdf:resource="&space;#Space" />
+        <owl:onProperty rdf:resource="&mrela;#representationof" />
+        <owl:allValuesFrom rdf:resource="&space;#space" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Row">
-    <rdfs:subClassOf rdf:resource="&repr;#Dimens"/>
+  <owl:Class rdf:about="#row">
+    <rdfs:subClassOf rdf:resource="&repr;#dimen"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Structur">
-    <rdfs:subClassOf rdf:resource="#DataStructur"/>
+  <owl:Class rdf:about="#structur">
+    <rdfs:subClassOf rdf:resource="#datastructur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Swath">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#swath">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
   </owl:Class>
 
   <owl:Class rdf:about="#Swath_2D">
-    <rdfs:subClassOf rdf:resource="#Swath"/>
+    <rdfs:subClassOf rdf:resource="#swath"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasGeometricalObject" />
+        <owl:onProperty rdf:resource="&srela;#hasgeometricalobject" />
         <owl:allValuesFrom rdf:resource="&obj;#GeometricalObject_2D" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#Swath_3D">
-    <rdfs:subClassOf rdf:resource="#Swath"/>
+    <rdfs:subClassOf rdf:resource="#swath"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasGeometricalObject" />
+        <owl:onProperty rdf:resource="&srela;#hasgeometricalobject" />
         <owl:allValuesFrom rdf:resource="&obj3d;#GeometricalObject_3D" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemporalRepresent">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent" />
+  <owl:Class rdf:about="#temporalrepres">
+    <rdfs:subClassOf rdf:resource="&repr;#repres" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#representationOf" />
-        <owl:allValuesFrom rdf:resource="&time;#Time" />
+        <owl:onProperty rdf:resource="&mrela;#representationof" />
+        <owl:allValuesFrom rdf:resource="&time;#time" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trajectori">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#trajectori">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vector">
-    <rdfs:subClassOf rdf:resource="#DataModel"/>
+  <owl:Class rdf:about="#vector">
+    <rdfs:subClassOf rdf:resource="#datamodel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Paramet">
-    <rdfs:subClassOf rdf:resource="&repr;#Dimens"/>
+  <owl:Class rdf:about="#paramet">
+    <rdfs:subClassOf rdf:resource="&repr;#dimen"/>
   </owl:Class>
 
 </rdf:RDF>

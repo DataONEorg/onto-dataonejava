@@ -40,152 +40,152 @@
      <owl:imports rdf:resource="&rela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Alluvial">
-    <rdfs:subClassOf rdf:resource="&geom;#SedimentForm"/>
+  <owl:Class rdf:about="#alluvial">
+    <rdfs:subClassOf rdf:resource="&geom;#sedimentform"/>
     <rdfs:comment xml:lang="en">The process of depositing soil or sediments by a river or other running water. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#AlluvialFan">
-    <rdfs:subClassOf rdf:resource="#PiedmontSlop"/>
+ <owl:Class rdf:about="#alluvialfan">
+    <rdfs:subClassOf rdf:resource="#piedmontslop"/>
   </owl:Class>
 
- <owl:Class rdf:about="#AlluvialPlain">
-    <rdfs:subClassOf rdf:resource="#FluvialPlain"/>
-    <rdfs:subClassOf rdf:resource="#PiedmontSlop"/>
+ <owl:Class rdf:about="#alluvialplain">
+    <rdfs:subClassOf rdf:resource="#fluvialplain"/>
+    <rdfs:subClassOf rdf:resource="#piedmontslop"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Bajada">
-    <rdfs:subClassOf rdf:resource="#PiedmontSlop"/>
+ <owl:Class rdf:about="#bajada">
+    <rdfs:subClassOf rdf:resource="#piedmontslop"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bedform">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#bedform">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Canyon">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#canyon">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
     <rdfs:comment xml:lang="en">A canyon, or gorge, is a deep valley between cliffs often carved from the landscape by a river. Most canyons were formed by a process of long-time erosion from a plateau level. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Catchment">
-    <rdfs:subClassOf rdf:resource="#Watersh"/>
+  <owl:Class rdf:about="#catchment">
+    <rdfs:subClassOf rdf:resource="#watersh"/>
     <rdfs:comment xml:lang="en">A catchment, or drainage basin, is an extent of land where water from precipitation drains into a body of water [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cave">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
-    <rdfs:subClassOf rdf:resource="&obj3d;#Caviti"/>
+  <owl:Class rdf:about="#cave">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
+    <rdfs:subClassOf rdf:resource="&obj3d;#caviti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;#contain" />
-        <owl:someValuesFrom rdf:resource="#Tunnel" />
+        <owl:someValuesFrom rdf:resource="#tunnel" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DryLak">
-    <owl:equivalentClass rdf:resource="#Playa"/>
+  <owl:Class rdf:about="#drylak">
+    <owl:equivalentClass rdf:resource="#playa"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluvialLandform">
-    <rdfs:subClassOf rdf:resource="&land;#Landform" />
+  <owl:Class rdf:about="#fluviallandform">
+    <rdfs:subClassOf rdf:resource="&land;#landform" />
   </owl:Class>
 
-  <owl:Class rdf:about="#FloodPlain">
-    <rdfs:subClassOf rdf:resource="#FluvialPlain"/>
+  <owl:Class rdf:about="#floodplain">
+    <rdfs:subClassOf rdf:resource="#fluvialplain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluvialPlain">
-    <rdfs:subClassOf rdf:resource="&land;#Plain"/>
+  <owl:Class rdf:about="#fluvialplain">
+    <rdfs:subClassOf rdf:resource="&land;#plain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gorg">
-    <rdfs:subClassOf rdf:resource="#Canyon" />
+  <owl:Class rdf:about="#gorg">
+    <rdfs:subClassOf rdf:resource="#canyon" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Gulley">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#gulley">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#KarstLandform">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+  <owl:Class rdf:about="#karstlandform">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&geom;#Karst" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&geom;#karst" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Karst topography is a landscape shaped by the dissolution of a layer or layers of soluble bedrock, usually carbonate rock such as limestone or dolomite. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LacustrinePlain">
-    <rdfs:subClassOf rdf:resource="#FluvialPlain"/>
+  <owl:Class rdf:about="#lacustrineplain">
+    <rdfs:subClassOf rdf:resource="#fluvialplain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PiedmontSlop">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#piedmontslop">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Playa">
-    <rdfs:subClassOf rdf:resource="#FluvialPlain"/>
+ <owl:Class rdf:about="#playa">
+    <rdfs:subClassOf rdf:resource="#fluvialplain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rippl">
-    <rdfs:subClassOf rdf:resource="#Bedform"/>
+  <owl:Class rdf:about="#rippl">
+    <rdfs:subClassOf rdf:resource="#bedform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RiverB">
-    <rdfs:subClassOf rdf:resource="#Bedform"/>
+  <owl:Class rdf:about="#riverb">
+    <rdfs:subClassOf rdf:resource="#bedform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sabkha">
-    <rdfs:subClassOf rdf:resource="#SaltFlat" />
+  <owl:Class rdf:about="#sabkha">
+    <rdfs:subClassOf rdf:resource="#saltflat" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SaltFlat">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform" />
+  <owl:Class rdf:about="#saltflat">
+    <rdfs:subClassOf rdf:resource="#fluviallandform" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SaltLak">
-    <owl:equivalentClass rdf:resource="#Playa"/>
+  <owl:Class rdf:about="#saltlak">
+    <owl:equivalentClass rdf:resource="#playa"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ScrollPlain">
-    <rdfs:subClassOf rdf:resource="#FluvialPlain"/>
+  <owl:Class rdf:about="#scrollplain">
+    <rdfs:subClassOf rdf:resource="#fluvialplain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trench">
-    <rdfs:subClassOf rdf:resource="#Canyon"/>
+  <owl:Class rdf:about="#trench">
+    <rdfs:subClassOf rdf:resource="#canyon"/>
     <rdfs:comment xml:lang="en">A trench is a type of excavation or depression in the ground. Trenches are generally defined by being deeper than they are wide (as opposed to a wider gully or ditch), and by being narrow compared to their length (as opposed to a simple hole). Trenches are a natural feature in many landscapes. Some are created by rivers in flow (which may have long since fallen dry), others are features created by geological movement, such as oceanic trenches. The latter form is relatively deep, linear and narrow, and is formed by plate subduction. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tunnel">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
-    <rdfs:subClassOf rdf:resource="&obj3d;#Tube"/>
+  <owl:Class rdf:about="#tunnel">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
+    <rdfs:subClassOf rdf:resource="&obj3d;#tube"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Turbidit">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#turbidit">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Valley">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform" />
+  <owl:Class rdf:about="#valley">
+    <rdfs:subClassOf rdf:resource="#fluviallandform" />
     <rdfs:comment xml:lang="en">A valley (also called a vale, dale, glen or strath and near or in Appalachia, a draw) is a depression with predominant extent in one direction. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wall">
-    <rdfs:subClassOf rdf:resource="#FluvialLandform"/>
+  <owl:Class rdf:about="#wall">
+    <rdfs:subClassOf rdf:resource="#fluviallandform"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Wash">
-    <rdfs:subClassOf rdf:resource="#PiedmontSlop"/>
+ <owl:Class rdf:about="#wash">
+    <rdfs:subClassOf rdf:resource="#piedmontslop"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Watersh">
-    <rdfs:subClassOf rdf:resource="&land;#LandRegion" />
-    <owl:equivalentClass rdf:resource="#DrainageBasin"/>
+  <owl:Class rdf:about="#watersh">
+    <rdfs:subClassOf rdf:resource="&land;#landregion" />
+    <owl:equivalentClass rdf:resource="#drainagebasin"/>
     <rdfs:comment xml:lang="en">A watershed refers to a divide that separates one drainage area from another drainage area. However, in the US and Canada, the term is often used to mean a drainage basin or catchment area itself. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#DrainageBasin"/>
+  <owl:Class rdf:about="#drainagebasin"/>
 
 </rdf:RDF>

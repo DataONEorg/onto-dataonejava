@@ -43,173 +43,173 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#DipSeparationSens">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#dipseparationsen">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:comment xml:lang="en">A fault along which there is some separation parallel to the dip of the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DipSlip">
-    <rdfs:subClassOf rdf:resource="#DipSeparationSens"/>
+  <owl:Class rdf:about="#dipslip">
+    <rdfs:subClassOf rdf:resource="#dipseparationsen"/>
     <rdfs:comment xml:lang="en">The net slip of the fault lies in the dip direction of the fault
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Extraction">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#extraction">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:comment xml:lang="en">A fault whose two sides have approached each other substantially in the direction perpendicular to the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Heav">
-    <rdfs:subClassOf rdf:resource="&sys;#Displac"/>
+  <owl:Class rdf:about="#heav">
+    <rdfs:subClassOf rdf:resource="&sys;#displac"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Horizont"/>
-        <owl:onProperty rdf:resource="&srela;#hasDirect"/>
+        <owl:allValuesFrom rdf:resource="#horizont"/>
+        <owl:onProperty rdf:resource="&srela;#hasdirect"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Horizont">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#horizont">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:comment xml:lang="en">The fault is horizontal
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixedExtract">
-    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  <owl:Class rdf:about="#mixedextract">
+    <rdfs:subClassOf rdf:resource="#extraction"/>
     <rdfs:comment xml:lang="en">An extraction fault with some displacement within the fault plane.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ObliqueSlip">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#obliqueslip">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&sdir;#Obliqu"/>
-        <owl:onProperty rdf:resource="&srela;#hasDirect"/>
+        <owl:hasValue rdf:resource="&sdir;#obliqu"/>
+        <owl:onProperty rdf:resource="&srela;#hasdirect"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The net slip of the fault lies between the strike and dip directions of the fault; the slip vector rakes between 10 and 80 degrees in the plane of the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PureExtract">
-    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  <owl:Class rdf:about="#pureextract">
+    <rdfs:subClassOf rdf:resource="#extraction"/>
     <rdfs:comment xml:lang="en">An extraction fault with no discernible displacement within the fault plane.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scissor">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#scissor">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:comment xml:lang="en">A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with reverse offset in the opposite direction.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sens">
-    <rdfs:subClassOf rdf:resource="&dir;#Direct"/>
+  <owl:Class rdf:about="#sen">
+    <rdfs:subClassOf rdf:resource="&dir;#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Slip">
-    <rdfs:subClassOf rdf:resource="&proc;#Motion"/>
+  <owl:Class rdf:about="#slip">
+    <rdfs:subClassOf rdf:resource="&proc;#motion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StrikeSeparationSens">
-    <rdfs:subClassOf rdf:resource="#Slip"/>
+  <owl:Class rdf:about="#strikeseparationsen">
+    <rdfs:subClassOf rdf:resource="#slip"/>
     <rdfs:comment xml:lang="en">A fault along which there is some separation parallel to the strike of the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#StrikeSlip">
-    <rdfs:subClassOf rdf:resource="#StrikeSeparationSens"/>
+  <owl:Class rdf:about="#strikeslip">
+    <rdfs:subClassOf rdf:resource="#strikeseparationsen"/>
     <rdfs:comment xml:lang="en">The net slip of the fault (slip vector) is parallel to the strike of the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Throw">
-    <rdfs:subClassOf rdf:resource="&sys;#Displac"/>
+  <owl:Class rdf:about="#throw">
+    <rdfs:subClassOf rdf:resource="&sys;#displac"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&sdir;#Vertic"/>
-        <owl:onProperty rdf:resource="&srela;#hasDirect"/>
+        <owl:hasValue rdf:resource="&sdir;#vertic"/>
+        <owl:onProperty rdf:resource="&srela;#hasdirect"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transcurr">
-    <rdfs:subClassOf rdf:resource="#StrikeSlip"/>
+  <owl:Class rdf:about="#transcurr">
+    <rdfs:subClassOf rdf:resource="#strikeslip"/>
     <rdfs:comment xml:lang="en">A large scale strike-slip fault in which the fault surface is steeply inclined.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transform">
-    <rdfs:subClassOf rdf:resource="#StrikeSlip"/>
+  <owl:Class rdf:about="#transform">
+    <rdfs:subClassOf rdf:resource="#strikeslip"/>
     <rdfs:comment xml:lang="en">A variety of strike-slip fault along which the displacement suddenly stops or changes form; typically associated with mid-ocean ridges.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transpression">
-    <rdfs:subClassOf rdf:resource="#ObliqueSlip"/>
+  <owl:Class rdf:about="#transpress">
+    <rdfs:subClassOf rdf:resource="#obliqueslip"/>
     <rdfs:comment xml:lang="en">A fault along which strike-slip deformation is accompanied by a component of shortening transverse to the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transtension">
-    <rdfs:subClassOf rdf:resource="#ObliqueSlip"/>
+  <owl:Class rdf:about="#transtens">
+    <rdfs:subClassOf rdf:resource="#obliqueslip"/>
     <rdfs:comment xml:lang="en">A fault along which strike-slip deformation is accompanied by a component of extension transverse to the fault.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wrench">
-    <rdfs:subClassOf rdf:resource="#StrikeSlip"/>
+  <owl:Class rdf:about="#wrench">
+    <rdfs:subClassOf rdf:resource="#strikeslip"/>
     <rdfs:comment xml:lang="en">A strike slip fault in which the faut plane is more or less vertical.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Detach">
-    <rdfs:subClassOf rdf:resource="#Normal"/>
+  <owl:Class rdf:about="#detach">
+    <rdfs:subClassOf rdf:resource="#normal"/>
     <rdfs:comment>A regional-scale low-angle normal fault.
 A regional-scale low-angle normal fault.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dextral">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#dextral">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>Right-lateral separation sense; in plan view, the side opposite the observer appears displaced to the right.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#GenericDecol">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#genericdecol">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#NoMovementSens">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#nomovementsen">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>The fault-parallel displacement is effectively zero, as in an extraction fault.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Normal">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#normal">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>The hanging wall appears to have moved down relative to the footwall; dip of fault usually 45-90 degrees. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sinistr">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#sinistr">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>Left-lateral separation sense; in plan view, the side opposite the observer appears displaced to the right.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Revers">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#rever">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>The hanging wall appears to have moved down relative to the footwall; dip of fault usually greater than 45 degrees.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thrust">
-    <rdfs:subClassOf rdf:resource="&tec;#TectonicProcess"/>
+  <owl:Class rdf:about="#thrust">
+    <rdfs:subClassOf rdf:resource="&tec;#tectonicprocess"/>
     <rdfs:comment>Reverse fault with dip typically less than 45 degrees; horizontal compression, rather than vertical displacement is characteristic.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThrustDecol">
-    <rdfs:subClassOf rdf:resource="#Thrust"/>
+  <owl:Class rdf:about="#thrustdecol">
+    <rdfs:subClassOf rdf:resource="#thrust"/>
     <rdfs:comment>A regional-scale low-angle thrust fault.</rdfs:comment>
   </owl:Class>
 

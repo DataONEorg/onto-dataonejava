@@ -48,143 +48,143 @@
      <owl:imports rdf:resource="&oper;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#AngularMomentum">
-    <rdfs:subClassOf rdf:resource="&dyna;#Momentum"/>
+  <owl:Class rdf:about="#angularmomentum">
+    <rdfs:subClassOf rdf:resource="&dyna;#momentum"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#kilogramRadianPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#kilogramradianpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In physics, the angular momentum of an object rotating about some reference point is the measure of the extent to which the object will continue to rotate about that point unless acted upon by an external torque. In particular, if a point mass rotates about an axis, then the angular momentum with respect to a point on the axis is related to the mass of the object, the velocity and the distance of the mass to the axis. While the motion associated with linear momentum has no absolute frame of reference, the rotation associated with angular momentum is sometimes spoken of as being measured relative to the fixed stars.</rdfs:comment> 
   </owl:Class>
 
-  <owl:Class rdf:about="#MomentOfInertia">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#momentofinertia">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spin">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
+  <owl:Class rdf:about="#spin">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Torqu">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#VectorQuant" />
+  <owl:Class rdf:about="#torqu">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#vectorqu" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#newtonMet"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#newtonmet"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Enstrophi">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#enstrophi">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PotentialVort">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#potentialvort">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ErtelPotentialVort">
-    <rdfs:subClassOf rdf:resource="#PotentialVort"/>
+  <owl:Class rdf:about="#ertelpotentialvort">
+    <rdfs:subClassOf rdf:resource="#potentialvort"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perKilogramMeterSquaredPerSecondKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#perkilogrammetersquaredpersecondkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RelativeVort">
-    <rdfs:subClassOf rdf:resource="#Vortic"/>
+  <owl:Class rdf:about="#relativevort">
+    <rdfs:subClassOf rdf:resource="#vortic"/>
     <rdfs:comment xml:lang="en">The vorticity as measured in a system of coordinates fixed on the earth's surface.  Usually, only the vertical component of the vorticity is meant.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AbsoluteVort">
-    <rdfs:subClassOf rdf:resource="#Vortic"/>
+  <owl:Class rdf:about="#absolutevort">
+    <rdfs:subClassOf rdf:resource="#vortic"/>
     <rdfs:label>Absolute Vorticity</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vortic">
-    <rdfs:subClassOf rdf:resource="&oper;#VectorFieldOper"/>
+  <owl:Class rdf:about="#vortic">
+    <rdfs:subClassOf rdf:resource="&oper;#vectorfieldop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#persecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Helic">
-    <rdfs:subClassOf rdf:resource="&oper;#VectorFieldOper"/>
+  <owl:Class rdf:about="#helic">
+    <rdfs:subClassOf rdf:resource="&oper;#vectorfieldop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerSecondSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterpersecondsquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AngularVeloc">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#VectorQuant" />
+  <owl:Class rdf:about="#angularveloc">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#vectorqu" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#radianPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#radianpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AngularAcceler">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#VectorQuant" />
+  <owl:Class rdf:about="#angularaccel">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#vectorqu" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#radianPerSecondSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#radianpersecondsquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PotentialVort">
-    <rdfs:subClassOf rdf:resource="&prop;#AngularMotionProperti" />
+  <owl:Class rdf:about="#potentialvort">
+    <rdfs:subClassOf rdf:resource="&prop;#angularmotionproperti" />
     <rdfs:comment xml:lang="en">The vertically averaged vorticity of a layer divided by layer thickness.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Circul">
-    <rdfs:subClassOf rdf:resource="&oper;#LineIntegr"/>
+  <owl:Class rdf:about="#circul">
+    <rdfs:subClassOf rdf:resource="&oper;#lineintegr"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#VectorField"/>
-        <owl:onProperty rdf:resource="&mrela;#hasInput"/>
+        <owl:allValuesFrom rdf:resource="&func;#vectorfield"/>
+        <owl:onProperty rdf:resource="&mrela;#hasinput"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Curl">
-    <rdfs:subClassOf rdf:resource="&oper;#VectorFieldOper"/>
+  <owl:Class rdf:about="#curl">
+    <rdfs:subClassOf rdf:resource="&oper;#vectorfieldop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#VectorField"/>
-        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+        <owl:allValuesFrom rdf:resource="&func;#vectorfield"/>
+        <owl:onProperty rdf:resource="&mrela;#hasoutput"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gyrofrequ">
-    <rdfs:subClassOf rdf:resource="&freq;#Frequenc"/>
-    <owl:equivalentClass rdf:resource="#CyclotronFrequ"/>
+  <owl:Class rdf:about="#gyrofrequ">
+    <rdfs:subClassOf rdf:resource="&freq;#frequenc"/>
+    <owl:equivalentClass rdf:resource="#cyclotronfrequ"/>
   </owl:Class>
-  <owl:Class rdf:about="#CyclotronFrequ"/>
+  <owl:Class rdf:about="#cyclotronfrequ"/>
 
-  <owl:Class rdf:about="#CoriolisParamet">
-    <rdfs:subClassOf rdf:resource="&freq;#Frequenc"/>
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalConst"/>
+  <owl:Class rdf:about="#coriolisparamet">
+    <rdfs:subClassOf rdf:resource="&freq;#frequenc"/>
+    <rdfs:subClassOf rdf:resource="&quan;#physicalconst"/>
   </owl:Class>
 
 </rdf:RDF>

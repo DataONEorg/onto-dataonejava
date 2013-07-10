@@ -55,147 +55,147 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#Asteroseismolog">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#asteroseismolog">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalPhenomena">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#coronalphenomena">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&srealm;#Corona" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&srealm;#corona" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalHol">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
+  <owl:Class rdf:about="#coronalhol">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalDim">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
+  <owl:Class rdf:about="#coronaldim">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalJet">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
+  <owl:Class rdf:about="#coronaljet">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalLoop">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
+  <owl:Class rdf:about="#coronalloop">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoronalMassEject">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
-    <owl:equivalentClass rdf:resource="#CME"/>
+  <owl:Class rdf:about="#coronalmasseject">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
+    <owl:equivalentClass rdf:resource="#cme"/>
     <rdfs:comment>A coronal mass ejection (CME) is an ejection of material from the solar corona, usually observed with a white-light coronagraph. The ejected material is a plasma consisting primarily of electrons and protons (in addition to small quantities of heavier elements such as helium, oxygen, and iron), plus the entrained coronal magnetic field. </rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#CME"/>
+  <owl:Class rdf:about="#cme"/>
 
-  <owl:Class rdf:about="#CoronalRain">
-    <rdfs:subClassOf rdf:resource="#CoronalPhenomena"/>
+  <owl:Class rdf:about="#coronalrain">
+    <rdfs:subClassOf rdf:resource="#coronalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarWind">
-     <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#stellarwind">
+     <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Filament">
-     <rdfs:subClassOf rdf:resource="#Promin"/>
+  <owl:Class rdf:about="#filament">
+     <rdfs:subClassOf rdf:resource="#promin"/>
     <rdfs:comment>If a solar prominence occurs on the disc of the sun it appears darker than its background (due to the lower temperature of the plasma). These are referred to as solar filaments. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flare">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#flare">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
     <rdfs:comment>A flare is a violent explosion in the atmosphere of a star. Flares take place in the corona and chromosphere, heating plasma to tens of millions of kelvins and accelerating electrons, protons and heavier ions to near the speed of light. They produce electromagnetic radiation across the electromagnetic spectrum at all wavelengths from long-wave radio to the shortest wavelength gamma rays  Most flares occur in active regions around sunspots, where intense magnetic fields emerge from the surface into the corona. Flares are powered by the sudden (timescales of minutes to tens of minutes) release of magnetic energy stored in the corona. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Granul">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
-    <owl:equivalentClass rdf:resource="#Granul"/>
+  <owl:Class rdf:about="#granul">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
+    <owl:equivalentClass rdf:resource="#granul"/>
     <rdfs:comment>Granules on the photosphere are caused by convection currents (thermal columns, Bénard cells) of plasma within the Sconvective zone.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Granul"/>
+  <owl:Class rdf:about="#granul"/>
 
-  <owl:Class rdf:about="#Supergranul">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
-    <owl:disjointWith rdf:resource="#Granul"/>
+  <owl:Class rdf:about="#supergranul">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
+    <owl:disjointWith rdf:resource="#granul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Helioseismolog">
-    <rdfs:subClassOf rdf:resource="#Asteroseismolog"/>
+  <owl:Class rdf:about="#helioseismolog">
+    <rdfs:subClassOf rdf:resource="#asteroseismolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Promin">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#promin">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
     <rdfs:comment>A solar prominence is a large bright feature extending outwards from the sun's surface, often in a loop configuration. Prominences are anchored to the solar surface in the photosphere, and extend outwards into the solar corona. While the corona consists of extremely hot ionized gases, known as plasma, which do not emit much visible light, prominences contain much cooler plasma, similar in composition to that of the chromosphere. A prominence forms over timescales of about a day, and stable prominences may persist in the corona for several months. Some prominences break apart and give rise to coronal mass ejections</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spicul">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
-    <rdfs:subClassOf rdf:resource="&fluid;#Jet"/>
+  <owl:Class rdf:about="#spicul">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
+    <rdfs:subClassOf rdf:resource="&fluid;#jet"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#stellarphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:someValuesFrom rdf:resource="&srealm;#StellarRealm" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:someValuesFrom rdf:resource="&srealm;#stellarrealm" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TerminationShock">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#terminationshock">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Plage">
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#plage">
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarFus">
-    <rdfs:subClassOf rdf:resource="&cproc;#NuclearFus"/>
+  <owl:Class rdf:about="#stellarfus">
+    <rdfs:subClassOf rdf:resource="&cproc;#nuclearfus"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasReactionProduct" />
-        <owl:someValuesFrom rdf:resource="&part;#Neutrino" />
+        <owl:onProperty rdf:resource="&crela;#hasreactionproduct" />
+        <owl:someValuesFrom rdf:resource="&part;#neutrino" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarAct">
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#solaract">
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarPhenomena">
-    <rdfs:subClassOf rdf:resource="#StellarPhenomena"/>
+  <owl:Class rdf:about="#solarphenomena">
+    <rdfs:subClassOf rdf:resource="#stellarphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasAstronomicalBodi" />
-        <owl:hasValue rdf:resource="#Sun" />
+        <owl:onProperty rdf:resource="&prela;#hasastronomicalbodi" />
+        <owl:hasValue rdf:resource="#sun" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sunspot">
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#sunspot">
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PMode">
-    <rdfs:subClassOf rdf:resource="&wave;#AcousticWav" />
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#pmode">
+    <rdfs:subClassOf rdf:resource="&wave;#acousticwav" />
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GMode">
-    <rdfs:subClassOf rdf:resource="&wave;#GravityWav" />
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#gmode">
+    <rdfs:subClassOf rdf:resource="&wave;#gravitywav" />
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FMode">
-    <rdfs:subClassOf rdf:resource="&wave;#SurfaceWav" />
-    <rdfs:subClassOf rdf:resource="&wave;#GravityWav" />
-    <rdfs:subClassOf rdf:resource="#SolarPhenomena"/>
+  <owl:Class rdf:about="#fmode">
+    <rdfs:subClassOf rdf:resource="&wave;#surfacewav" />
+    <rdfs:subClassOf rdf:resource="&wave;#gravitywav" />
+    <rdfs:subClassOf rdf:resource="#solarphenomena"/>
   </owl:Class>
 
   <astro2:Star rdf:ID="Sun"/>

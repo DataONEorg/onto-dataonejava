@@ -1,0 +1,366 @@
+GEOPHYSICAL RESEARCH LETTERS, VOL. 30, NO. 11, 1577, doi:10.1029/2003GL017135, 2003
+Generation of recent massive water floods at Cerberus Fossae, Mars by
+dike emplacement, cryospheric cracking, and confined aquifer
+groundwater release
+James W. Head
+Department of Geological Sciences, Brown University, Providence, Rhode Island, USA
+Lionel Wilson and Karl L. Mitchell
+Planetary Science Research Group, Lancaster University, Lancaster, United Kingdom
+Received 14 February 2003; revised 1 April 2003; accepted 14 April 2003; published 10 June 2003.
+[1 ] Previous studies noted the close association of
+geologically very recent lava flows and fluvial channels
+emanating from Cerberus Fossae. To assess these
+relationships, we outline a model of magmatic dike
+emplacement that involves 1) surface fractures and
+localized volcanic eruptions, 2) attendant cryospheric
+cracking to fracture the surface and release pressurized
+groundwater confined beneath the cryosphere, 3) effusion of
+water along a segment of the fracture to form Athabasca
+Valles, and 4) heating of the regions adjacent to the dike to
+cause melting and subsequent subsidence of the surface,
+forming late-stage pits and depressions. Previous estimates of
+the aqueous discharge were $1 – 2 Â 106 m3 s À1. Our models
+show that this flux could be readily accommodated by flow
+through adjacent dike-related cryospheric fractures at water
+rise speeds of $60 m/s. The required aquifer permeability,
+however, is far larger than commonly encountered over
+similar depths and scales on Earth. This suggests that water
+may be transported in the subsurface by mechanism more
+efficient than porous flow, and/or that the previously
+INDEX
+proposed volume flux values are overestimates.
+TERMS: 1823 Hydrology: Frozen ground; 1821 Hydrology: Floods;
+6225 Planetology: Solar System Objects: Mars; 5480 Planetology:
+Solid Surface Planets: Volcanism (8450). Citation: Head, J. W., L.
+Wilson, and K. L. Mitchell, Generation of recent massive water
+floods at Cerberus Fossae, Mars by dike emplacement, cryospheric
+cracking, and confined aquifer groundwater release, Geophys. Res.
+Lett., 30(11), 1577, doi:10.1029/2003GL017135, 2003.
+1. Introduction
+[2] The Cerberus Plains of Mars have long attracted
+attention as a site of geologically recent volcanic and fluvial
+activity [e.g., Plescia, 1993]. Berman and Hartmann [2002]
+conclude that fluvial channels (Figure 1) associated with
+Athabasca Valles [Burr and McEwen, 2002] give a model
+age of fluvial activity of less than 20 Myr. Burr et al.
+[2002a, 2002b] concluded that water carving the fluvial
+channels of Athabasca Valles emanated from Cerberus
+Fossae, that flow rates (assuming bank-full flow) were
+1 – 2 Â 106 m3 sÀ1, and that water must have collected in
+the subsurface in a liquid state (groundwater) in order to
+flow at their estimated discharge rates. Due to the lack of
+broad collapse in the vicinity of the source region, they
+Copyright 2003 by the American Geophysical Union.
+0094-8276/03/2003GL017135
+31
+inferred the source of this groundwater to be at least several
+kilometers deep, and concluded that it was released along
+extensional faults due to flexural loading.
+[3] In this contribution we address the fundamental issues
+raised by earlier works concerning 1) the role of regional
+tectonic forces versus dike emplacement processes, and 2)
+the mechanisms of lateral and vertical transport of subsur-
+face water to the surface to form Athabasca Valles and
+Cerberus Fossae. We conclude that dike emplacement
+processes can explain the vast majority of features observed.
+2. Dike Emplacement and Cryospheric Cracking
+[4] The propagation of magma-filled cracks (dikes) from
+magma source regions often culminates in the dike reaching
+the surface to cause eruption of magma and the production
+of lava flows (Figure 2a). Commonly, however, dikes or
+portions of dikes approach the surface but do not reach it,
+setting up an extensional near-surface stress field that can
+produce surface fractures and graben (Figures 2a and 2b).
+[5] Long graben systems are evidence for giant lateral
+dike swarms radiating from major volcanic centers, with the
+upper tips of the dikes being trapped at shallow depths by
+the combined effects of magma density and regional stress
+field. Wilson and Head [2002] summarized work by Rubin
+[1992] to show that if the formation of a graben is induced
+by dike injection, the mean width of the dike, Wd, is
+approximated by (1.25 Y) and the depth to the dike top,
+Zd, is approximated by (0.29 B), where B is the width and
+Y is the depth of the fracture/graben. Analysis of the
+topography of the fractures and graben at Cerberus Fossae
+(Figure 2b) using MOLA data and shadow measurements
+yield estimates of the dike width of $150– 250 meters and
+depth to the top of the dike of $50– 225 meters, if the
+structures are caused entirely by extension due to dike
+intrusion. Thus, dike emplacement is a reasonable process
+for producing near-surface stress fields and fractures capa-
+ble of cracking the cryosphere and providing conduits for
+subsurface groundwater to reach the surface.
+[6 ] Evidence for this scenario comes from MOC
+images and MOLA altimetry, which show lines of can-
+didate volcanic spatter vents along the strike of the fossae
+and spatter-fed lava flows emerging from these vents
+(Figure 2a), fractures and narrow flat-floored graben
+along the same strike (Figure 2b), and collapsed linear
+segments with ridges on their floors interpreted to be the
+tops of dikes (Figure 2c).
+- 1
+31 - 2
+HEAD ET AL.: GENERATION OF RECENT MASSIVE WATER FLOODS AT CERBERUS FOSSAE
+where W has been substituted for (2 Á) using the above
+continuity relationship. The dynamics of water with density
+r = 1000 kg mÀ3 rising turbulently through the fissure under
+a pressure gradient dP/dz in excess of the static weight of
+the water leads to
+V 1⁄4 1⁄2ðW dP=dzÞ=ð fw rÞ1=2
+ð2Þ
+where fw is the wall friction coefficient. Using (2) to
+eliminate V from (1) gives
+W 1⁄4 ð2fs DÞ= lnf1 þ 1⁄2ð fs dP=dzÞ=ð fw rg sin aÞg:
+ð3Þ
+The friction factors fw and fs must be obtained recursively
+using the formulae for fully turbulent flow [Schlichting,
+Figure 1. MOLA topography showing the Athabasca
+Valles source along Cerberus Fossae and the channel carved
+by the water outflow. One degree equals $ 60 km.
+[7] The topography in the Athabasca Valles source area
+(Figure 1) [Burr et al., 2002b] shows that the water eroding
+the channels emerges from a pair of fractures closely
+aligned with one another along a strike of $N65°W and
+totaling $30 –40 km in length. Surrounding the sources is a
+broad shallow depression, $50 m deep, $10– 20 km wide
+and $30 km along strike. The fissures strike approximately
+at right angles to the $0.07° regional slope, and the
+depression extends uphill for $4 km. We infer that the high
+speed of the water emerging from the fracture caused water
+to flow uphill for this distance before spreading sideways
+and back downhill around the ends of the active fractures,
+eroding the depression in the process.
+[8] Let the vertical rise speed of the water in the fracture of
+width W be V. Also let the initial speed of the water flowing
+away from the fracture be U and its initial depth be Á. Water
+rises in a fountain over the fracture and descends again to feed
+a flow on both sides of the fracture. Conservation of energy
+implies U = V, and continuity requires (2 V Á) = (V W ) so that
+Á = (0.5 W ). Water can be considered incompressible over
+the small range of pressure changes involved, and so in
+flowing uphill against the regional slope until it comes to rest
+after the distance D = $4 km, it trades decrements in its
+kinetic energy (V dV ) against increments in its potential
+energy (g sin a dX ) and work done against basal friction
+([(fsV 2)/(2 Á)] dX ), where X is distance measured along the
+ground surface, g = 3.74 m sÀ2 is the acceleration due to
+gravity, sin a = sin 0.07° = 1.2 Â 10À3, and fs is the basal
+friction factor. Equating these components and integrating
+ÂÀ
+Á
+ÃÉ
+È
+W 1⁄4 ð2fs DÞ= ln 1 þ fs V 2 =ðWg sin aÞ
+ð1Þ
+Figure 2. MOC and THEMIS images, and sketch maps
+showing key relationships in the Cerberus Fossae system. a)
+Fissure with associated rough spatter-like material and
+adjacent spatter-fed flows. The large depression along strike
+to the southeast cuts and thus postdates the fracture and
+flows. MOC image MO201973. b) Relationships between
+fractures and graben interpreted to be the product of near-
+surface dike emplacement, and subsequent collapse attrib-
+uted to late-stage melting adjacent to the dike followed by
+subsidence and collapse. THEMIS image VO1355006. c)
+Ridge on the floor interpreted to be the surface manifesta-
+tion of the top of the dike, exposed by subsidence and
+drainage (see Figure 3c). MOC image MO201973.
+HEAD ET AL.: GENERATION OF RECENT MASSIVE WATER FLOODS AT CERBERUS FOSSAE
+1968], f À1/2 = 2.28 + 4 log10(2 W/E) and fsÀ1/2 = 2.28 + 4
+w
+log10(W/E), where E is the scale height of surface roughness,
+here taken as 1 mm. To estimate dP/dz we assume that the
+aquifer feeding the fracture extends for a depth Z = $5 km
+from the bottom of a trapping cryosphere of thickness C =
+3 km [Clifford, 1993]. The water in the aquifer is pressurized
+by the water table of the topographically higher Elysium
+Rise and the Elysium Mons complex to the northwest,
+which we assume extends to a height S = $5 km (one quarter
+the height of the volcano) above the level of the breakout
+point. Then dP/dz is $r g {[(S + C + Z)/(C + Z)] À 1} =
+$2338 Pa mÀ1. Solving the above two equations we find
+W = $2.8 m and V = $44 m sÀ1. The corresponding
+friction factors are fs = 0.0039 and fw = 0.0033. The height of
+the water fountain over the source fracture would have been
+[V2/(2 g)] = $260 m, and the total water flux from the $30–
+40 km long fracture would have been $4.4 Â 106 m3 sÀ1,
+comparable to the range $1– 2 Â 106 m3 sÀ1 estimated by
+Burr et al. [2002a]. The implied $28 m fracture would be
+almost impossible to detect using current image data.
+[9] Previous workers have noted that along many seg-
+ments of Cerberus Fossae both lava flows and water floods
+end abruptly at fossae margins (Figure 2a), strongly suggest-
+ing that the present margins postdate lava and water flow.
+Also, Burr et al. [2002b] and Berman and Hartmann [2002]
+propose that some fractures postdate (cut) the lava flows
+emanating from the fissures, suggesting that the fossae and
+fractures are largely due to later regional tectonic stresses,
+rather than dike emplacement and associated processes.
+[10] In the dike emplacement scenario, however, these
+features and structures are a natural consequence of the
+associated processes following dike emplacement, cryo-
+spheric cracking, and water flooding. Thus, we interpret
+the large steep-walled depressions along the strike of
+Cerberus Fossae (Figures 2a and 2b) to be due to late-stage
+melting of the ice-saturated cryosphere adjacent to the dike,
+drainage, and subsequent collapse of the fracture and the
+floor of the graben to enlarge the trough and destroy
+evidence of the initial vent (Figures 3b and 3c). Heat
+conducted from the dike would melt ice out to about half
+the dike width on either side, i.e. the melting zone width
+would be double the dike width. If ice occupies pore space
+amounting to 25% of the volume of the crustal rocks, then
+to cause the 300– 400 m subsidence observed it would be
+necessary to remove the ice from a $2400 – 3200 m vertical
+extent of crustal rock, assuming that only half of the pore
+space was compacted during ice removal. This vertical
+distance is sufficiently close to estimates of the cryosphere
+thickness that we regard this as a viable mechanism.
+[11] The steps in our model are illustrated in Figure 3.
+First, the crust in the Cerberus Fossae/Elysium Planitia area
+consists of a lava flow substrate overlying a megaregolith,
+which in turn overlies fractured crustal bedrock. The upper
+part of this column ($3 km) is predicted to be water-ice
+saturated cryosphere [e.g., Clifford, 1993]. Underlying this
+is a pressurized groundwater-saturated zone. Emplacement
+of a dike to the shallow subsurface (Figure 3a) cracks the
+cryosphere, causing magma to rise to the surface in a few
+places, creating local surface eruptions, curtains of fire and
+spatter-fed flows. Concurrently, the crack to the surface
+provides a path for groundwater in the pressurized water-
+saturated zone. Water courses to the surface mainly along
+31 - 3
+Figure 3. Sequence of events in the model.
+two $15– 20 km long portions of the crack (Figure 1),
+creates fountains and ponds which extend $4 km upslope
+from the cracks, and drain around the ends of the active
+crack segments to carve the channels of Athabasca Valles
+(Figure 3a). At the same time, the dike intruding into the
+ice-saturated cryosphere is losing heat conductively into
+the surrounding substrate, causing melting of the ice
+(Figure 3b). This causes drainage of material adjacent
+to the dike and collapse of the overlying substrate to
+produce the irregular troughs (Figure 3c), destroying the
+details of the fracture and near-vent lava and water flow
+textures (Figures 2a and 2b). Thus, in our model, this
+process is simply a consequence of the terminal phases of
+the dike emplacement event rather than being due to later
+tectonic activity as suggested by Burr et al. [2002a, 2002b]
+and Berman and Hartmann [2002].
+31 - 4
+HEAD ET AL.: GENERATION OF RECENT MASSIVE WATER FLOODS AT CERBERUS FOSSAE
+[12] We can relate the discharge up the vertical crack fed
+by the aquifer to the aquifer properties using Darcy’s law.
+The water volume flux per unit area (i.e. the Darcy
+velocity), ui, is given by
+ui 1⁄4 ðk=hÞð dP=dxÞ
+ð4Þ
+where k is the intrinsic permeability of the aquifer medium, h
+is the dynamic viscosity of water, $1.5 Â 10À3 Pa s, and
+dP/dx is the lateral pressure gradient (e.g., Carr [1979]) in
+the aquifer. The main source of the pressure gradient is the
+5 km water head in the Elysium Rise complex 700 km
+away, so that dP/dx = [r g (5 km/700 km)] = $27 Pa mÀ1.
+The common rock types in the source area are geologically
+recent basaltic lava flow units that are underlain by
+megaregolith grading down into fractured bedrock which
+may have a high permeability [Clifford, 1993]. To illustrate
+a likely maximum estimate of the available water flux we
+assume that the aquifer has properties similar to that of
+porous gravel, with k up to $10À7 m2 [Turcotte and
+Schubert, 2002]. Then ui = 1.8 mm sÀ1. The total discharge
+from the aquifer into the vertical crack is this velocity
+multiplied by the inferred 30– 40 km total horizontal crack
+length and the assumed 5 km vertical extent of the aquifer,
+i.e. $3 Â 105 m3 sÀ1. This value is nearly an order of
+magnitude smaller than the estimate by Burr et al. [2002a,
+2002b] despite the fact that we are using maximum estimates.
+[13] If the fissure length were greater than our estimated
+30 – 40 km total length, this would influence the flux.
+However, even doubling the fissure length would still result
+in a shortfall by a factor of $2. To obtain a flux of 106 m3 sÀ1
+(the lower end of the range estimated by Burr et al. [2002a,
+2002b]) into the $35 km horizontal length of active fracture
+from an aquifer assumed to be 5 km thick, the Darcy velocity
+(i.e. the water volume flux per unit area) would have to be
+$10 mm sÀ1, implying an aquifer permeability of $5.6 Â
+10À7 m2, which is several times larger than the largest
+permeability commonly encountered on Earth, $10À7 m2.
+In fact, typical permeabilities on Earth for regional scale
+Darcy flow are $10À14 m2 [Clifford, 1993], several orders of
+magnitude smaller. An alternative explanation is that water is
+not flowing by porous flow, but via some other mechanism
+such as a large-scale, horizontally-interconnected fracture
+system. Another possible explanation is that the volume flux
+estimates by Burr et al. [2002a, 2002b] are too large. In their
+original estimates, Burr et al. [2002a] used MOLA topog-
+raphy of the channel, Manning’s equation modified for
+martian gravity, and assumed bankfull flow, acknowledging
+that the estimate may thus be ‘‘erroneously large’’. The
+assumption that the presently-observed channels were
+bank-full would overestimate the flux if any channel floor
+erosion had taken place during the flood event.
+3. Conclusions
+[14] In our model, dike emplacement produces 1) sur-
+face fractures and localized volcanic eruptions, 2) atten-
+dant cryospheric cracking to fracture the surface and
+release pressurized groundwater confined beneath the
+cryosphere, 3) effusion of water along an observed 30–
+40 km-long segment of the fracture to form Athabasca
+Valles, and 4) heating of the regions adjacent to the dike
+to cause melting and subsequent subsidence of the surface,
+forming the observed late-stage pits and linear depres-
+sions. Although it is plausible that most or all of the key
+observed features occurred in a single intrusive and
+eruptive phase, it is highly likely that multiple intrusive
+phases would have occurred in this environment, as is
+typical on the Earth [e.g., Rubin, 1992]; such repeated
+events often lead to locally complex stratigraphic relation-
+ships (e.g., Figure 3c).
+[15] Our model shows that previously estimated aqueous
+discharge fluxes for Athabasca Valles fluvial channels ($1 –
+2 Â 106 m3 s À1) can be readily accommodated by flow
+through a dike-related cryospheric fracture $2 m wide, at
+water rise speeds of $60 m/s. However, these values require
+aquifer permeability that is far larger than commonly
+encountered on Earth, suggesting that subsurface mecha-
+nisms more efficient than porous flow may be involved,
+and/or that the previously proposed volume flux values are
+overestimates.
+[16] Acknowledgments. We thank Hugh Tuffen for useful discus-
+sions during the course of this research. This research was supported by
+NASA Grants NAG5-12474 and NAG5-12254 to JWH and PPARC grant
+PPA/G/S/2000/00521 to LW and KLM.
+References
+Berman, D. C., and W. K. Hartmann, Recent fluvial, volcanic and tectonic
+activity on the Cerberus Plains of Mars, Icarus, 159, 1 – 17, 2002.
+Burr, D. M., and A. S. McEwen, Recent extreme floods on Mars, in The
+Extremes of the Extremes: Extraordinary Floods, edited by A. Snorrason,
+H. P. Finnsdottir, and M. Moss, Pub. No. 271, IAHS Press, Wallingford,
+Oxfordshire, UK, 2002.
+Burr, D. M., A. S. McEwen, and S. E. Sakimoto, Recent aqueous floods from
+the Cerberus Fossae, Mars, Geophys. Res., 29, 10.1029/2001GL013345,
+2002a.
+Burr, D. M., J. A. Grier, A. S. McEwen, and L. P. Keszthelyi, Repeated
+aqueous flooding from the Cerberus Fossae: Evidence for very recently
+extant, deep groundwater on Mars, Icarus, 159, 53 – 73, 2002b.
+Carr, M. H., Formation of Martian flood features by release of water from
+confined aquifers, J. Geophys. Res., 84, 2995 – 3007, 1979.
+Clifford, S. M., A model for the hydrologic and climate behavior of water
+on Mars, J. Geophys. Res., 98, 10,973 – 11,016, 1993.
+Plescia, J. B., An assessment of volatile release from recent volcanism in
+Elysium, Mars, Icarus, 104, 20 – 32, 1993.
+Rubin, A. M., Dike-induced faulting and graben subsidence in volcanic rift
+zones, J. Geophys. Res., 97, 1839 – 1858, 1992.
+Schlichting, H., Boundary Layer Theory, McGraw-Hill, New York, 747 pp.,
+1968.
+Turcotte, D. L., and G. Schubert, Geodynamics, Cambridge, p. 275, 2002.
+Wilson, L., and J. W. Head, Tharsis-radial graben systems as the surface
+manifestation of plume-related dike intrusion complexes: Models and
+implications, J. Geophys. Res., 107(E8), 10.1029/2001JE001593, 2002.
+ÀÀÀÀÀÀÀÀÀÀÀ
+ÀÀÀÀÀÀÀÀÀÀÀ
+J. W. Head, Department of Geological Sciences, Brown University,
+Providence, RI 02912, USA. ( james_head_III@brown.edu)
+L. Wilson and K. L. Mitchell, Planetary Science Research Group,
+Lancaster University, Lancaster LA1 4YQ, U.K.

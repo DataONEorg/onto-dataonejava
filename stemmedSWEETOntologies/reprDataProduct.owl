@@ -36,107 +36,107 @@
     <owl:imports rdf:resource = "&func;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Data">
-    <rdfs:subClassOf rdf:resource="&res;#Realiz"/>
+  <owl:Class rdf:about="#data">
+    <rdfs:subClassOf rdf:resource="&res;#realiz"/>
   </owl:Class>
 
 <!-- Products -->
-  <owl:Class rdf:about="#DataProduct">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
+  <owl:Class rdf:about="#dataproduct">
+    <rdfs:subClassOf rdf:resource="#collect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Layer">
-    <rdfs:subClassOf rdf:resource="#DataProduct"/>
+  <owl:Class rdf:about="#layer">
+    <rdfs:subClassOf rdf:resource="#dataproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dataset">
-    <rdfs:subClassOf rdf:resource="#DataProduct" />
+  <owl:Class rdf:about="#dataset">
+    <rdfs:subClassOf rdf:resource="#dataproduct" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Ensembl">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
+  <owl:Class rdf:about="#ensembl">
+    <rdfs:subClassOf rdf:resource="#collect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FillValu">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
+  <owl:Class rdf:about="#fillvalu">
+    <rdfs:subClassOf rdf:resource="#valu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Image">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#image">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Profil">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
-    <rdfs:subClassOf rdf:resource="&func;#Profil"/>
+  <owl:Class rdf:about="#profil">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
+    <rdfs:subClassOf rdf:resource="&func;#profil"/>
   </owl:Class>
 
 <!-- Collections -->
-  <owl:Class rdf:about="#ClimateDataRecord">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
-    <owl:equivalentClass rdf:resource="#CDR" />
+  <owl:Class rdf:about="#climatedatarecord">
+    <rdfs:subClassOf rdf:resource="#collect"/>
+    <owl:equivalentClass rdf:resource="#cdr" />
   </owl:Class>
-  <owl:Class rdf:about="#CDR"/>
+  <owl:Class rdf:about="#cdr"/>
 
-  <owl:Class rdf:about="#Collect">
-    <rdfs:subClassOf rdf:resource="&prod;#Data"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Granul">
-    <rdfs:subClassOf rdf:resource="&prod;#Data"/>
+  <owl:Class rdf:about="#collect">
+    <rdfs:subClassOf rdf:resource="&prod;#data"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EarthScienceDataRecord">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
-    <owl:equivalentClass rdf:resource="#ESDR" />
+  <owl:Class rdf:about="#granul">
+    <rdfs:subClassOf rdf:resource="&prod;#data"/>
   </owl:Class>
-  <owl:Class rdf:about="#ESDR"/>
+
+  <owl:Class rdf:about="#earthsciencedatarecord">
+    <rdfs:subClassOf rdf:resource="#collect"/>
+    <owl:equivalentClass rdf:resource="#esdr" />
+  </owl:Class>
+  <owl:Class rdf:about="#esdr"/>
 
 <!-- Values -->
-  <owl:Class rdf:about="#MissingValu">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
+  <owl:Class rdf:about="#missingvalu">
+    <rdfs:subClassOf rdf:resource="#valu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Offset">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
+  <owl:Class rdf:about="#offset">
+    <rdfs:subClassOf rdf:resource="#valu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Valu">
-    <rdfs:subClassOf rdf:resource="#Data"/>
+  <owl:Class rdf:about="#valu">
+    <rdfs:subClassOf rdf:resource="#data"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Data">
-    <rdfs:subClassOf rdf:resource="&res;#Realiz"/>
+  <owl:Class rdf:about="#data">
+    <rdfs:subClassOf rdf:resource="&res;#realiz"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MaximumValid">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
+  <owl:Class rdf:about="#maximumvalid">
+    <rdfs:subClassOf rdf:resource="#valu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MinimumValid">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
+  <owl:Class rdf:about="#minimumvalid">
+    <rdfs:subClassOf rdf:resource="#valu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ScaleFactor">
-    <rdfs:subClassOf rdf:resource="#Valu"/>
-    <owl:equivalentClass rdf:resource="#Scale"/>
+  <owl:Class rdf:about="#scalefactor">
+    <rdfs:subClassOf rdf:resource="#valu"/>
+    <owl:equivalentClass rdf:resource="#scale"/>
   </owl:Class>
-  <owl:Class rdf:about="#Scale"/>
+  <owl:Class rdf:about="#scale"/>
 
 <!-- Stewardship -->
-  <owl:Class rdf:about="#Archive">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
-    <owl:equivalentClass rdf:resource="#Archive"/>
+  <owl:Class rdf:about="#archive">
+    <rdfs:subClassOf rdf:resource="#collect"/>
+    <owl:equivalentClass rdf:resource="#archive"/>
   </owl:Class>
-  <owl:Class rdf:about="#Archive"/>
+  <owl:Class rdf:about="#archive"/>
 
-  <owl:Class rdf:about="#Curat">
-    <rdfs:subClassOf rdf:resource="#Collect"/>
-    <owl:equivalentClass rdf:resource="#Curat"/>
+  <owl:Class rdf:about="#curat">
+    <rdfs:subClassOf rdf:resource="#collect"/>
+    <owl:equivalentClass rdf:resource="#curat"/>
   </owl:Class>
-  <owl:Class rdf:about="#Curat"/>
+  <owl:Class rdf:about="#curat"/>
 
-  <owl:Class rdf:about="#Version">
-    <rdfs:subClassOf rdf:resource="&solu;#Iterat" />
+  <owl:Class rdf:about="#version">
+    <rdfs:subClassOf rdf:resource="&solu;#iterat" />
   </owl:Class>
 
 </rdf:RDF>

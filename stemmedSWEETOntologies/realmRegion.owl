@@ -46,7 +46,7 @@
   </owl:Ontology>
 
 <!-- Regions -->
-  <sreg:LatitudeLine rdf:about="#Equator">
+  <sreg:LatitudeLine rdf:about="#equator">
      <srela:hasLatitudeLine> 
        <sreg:LatitudeLine>
          <screla:hasNumericValue rdf:datatype="&xsd;double">0.</screla:hasNumericValue>
@@ -54,15 +54,15 @@
      </srela:hasLatitudeLine>
   </sreg:LatitudeLine>
 
-  <sreg:LatitudeBand rdf:about="#Extratrop">
-    <owl:differentFrom rdf:resource="#Tropic"/>
-    <owl:differentFrom rdf:resource="#Subtrop"/>
+  <sreg:LatitudeBand rdf:about="#extratrop">
+    <owl:differentFrom rdf:resource="#tropic"/>
+    <owl:differentFrom rdf:resource="#subtrop"/>
   </sreg:LatitudeBand>
   
-  <sreg:LatitudeBand rdf:about="#LowLatitud">
-    <owl:sameAs rdf:resource="#Tropic"/>
-    <owl:sameAs rdf:resource="#Tropic"/>
-    <owl:sameAs rdf:resource="#LowLatitud"/>
+  <sreg:LatitudeBand rdf:about="#lowlatitud">
+    <owl:sameAs rdf:resource="#tropic"/>
+    <owl:sameAs rdf:resource="#tropic"/>
+    <owl:sameAs rdf:resource="#lowlatitud"/>
      <srela:hasLatitudeBand> 
        <sreg:LatitudeBand>
          <mrela:hasLowerBound rdf:datatype="&xsd;integer">-25</mrela:hasLowerBound>
@@ -70,11 +70,11 @@
        </sreg:LatitudeBand>
      </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
-  <sreg:LatitudeBand rdf:about="#Tropic"/>
-  <sreg:LatitudeBand rdf:about="#Tropic"/>
-  <sreg:LatitudeBand rdf:about="#LowLatitud"/>
+  <sreg:LatitudeBand rdf:about="#tropic"/>
+  <sreg:LatitudeBand rdf:about="#tropic"/>
+  <sreg:LatitudeBand rdf:about="#lowlatitud"/>
 
-  <sreg:LatitudeBand rdf:about="#MidLatitud">
+  <sreg:LatitudeBand rdf:about="#midlatitud">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-55</mrela:hasLowerBound>
@@ -89,7 +89,7 @@
     </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
 
-  <sreg:LatitudeLine rdf:about="#Pole">
+  <sreg:LatitudeLine rdf:about="#pole">
     <srela:hasLatitudeLine> 
           <sreg:SouthLatitudeLine>
             <screla:hasNumericValue rdf:datatype="&xsd;double">-90.</screla:hasNumericValue>
@@ -102,7 +102,7 @@
     </srela:hasLatitudeLine>
   </sreg:LatitudeLine>
 
-  <sreg:LatitudeBand rdf:about="#Subtrop">
+  <sreg:LatitudeBand rdf:about="#subtrop">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-40</mrela:hasLowerBound>
@@ -115,11 +115,11 @@
            <mrela:hasUpperBound rdf:datatype="&xsd;integer">40</mrela:hasUpperBound>
          </sreg:NorthLatitudeBand>
     </srela:hasLatitudeBand>
-    <owl:sameAs rdf:resource="#Subtrop"/>
+    <owl:sameAs rdf:resource="#subtrop"/>
   </sreg:LatitudeBand>
-  <sreg:LatitudeBand rdf:about="#Subtrop"/>
+  <sreg:LatitudeBand rdf:about="#subtrop"/>
 
-  <sreg:LatitudeBand rdf:about="#HighLatitud">
+  <sreg:LatitudeBand rdf:about="#highlatitud">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-90</mrela:hasLowerBound>
@@ -134,7 +134,7 @@
     </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
 
-  <sreg:LatitudeBand rdf:about="#Equatori">
+  <sreg:LatitudeBand rdf:about="#equatori">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-20</mrela:hasLowerBound>
@@ -143,7 +143,7 @@
     </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
 
-  <sreg:LatitudeBand rdf:about="#Global">
+  <sreg:LatitudeBand rdf:about="#global">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-90</mrela:hasLowerBound>
@@ -152,7 +152,7 @@
     </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
 
-  <sreg:LatitudeBand rdf:about="#Polar">
+  <sreg:LatitudeBand rdf:about="#polar">
     <srela:hasLatitudeBand> 
          <sreg:SouthLatitudeBand>
            <mrela:hasLowerBound rdf:datatype="&xsd;integer">-90</mrela:hasLowerBound>
@@ -167,7 +167,7 @@
     </srela:hasLatitudeBand>
   </sreg:LatitudeBand>
 
-  <owl:Class rdf:about="#LatitudeBand">
+  <owl:Class rdf:about="#latitudeband">
     <rdfs:subClassOf rdf:resource="&spac;Region" />
     <rdfs:subClassOf rdf:resource="&quan;PhysicalQuantity" />
     <rdfs:subClassOf>
@@ -178,8 +178,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SouthLatitudeBand">
-    <rdfs:subClassOf rdf:resource="#LatitudeBand" />
+  <owl:Class rdf:about="#southlatitudeband">
+    <rdfs:subClassOf rdf:resource="#latitudeband" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
@@ -188,8 +188,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NorthLatitudeBand">
-    <rdfs:subClassOf rdf:resource="#LatitudeBand" />
+  <owl:Class rdf:about="#northlatitudeband">
+    <rdfs:subClassOf rdf:resource="#latitudeband" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
@@ -198,7 +198,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#LatitudeLin">
+  <owl:Class rdf:about="#latitudelin">
     <rdfs:subClassOf rdf:resource="&spac;Region" />
     <rdfs:subClassOf rdf:resource="&quan;PhysicalQuantity" />
     <rdfs:subClassOf>
@@ -209,16 +209,16 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NorthLatitudeLin">
-    <rdfs:subClassOf rdf:resource="#LatitudeLin" />
+  <owl:Class rdf:about="#northlatitudelin">
+    <rdfs:subClassOf rdf:resource="#latitudelin" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SouthLatitudeLin">
-    <rdfs:subClassOf rdf:resource="#LatitudeLin" />
+  <owl:Class rdf:about="#southlatitudelin">
+    <rdfs:subClassOf rdf:resource="#latitudelin" />
   </owl:Class>
 
-  <owl:Class rdf:about="#NorthernHemispher">
-    <rdfs:subClassOf rdf:resource="#NorthLatitudeBand" />
+  <owl:Class rdf:about="#northernhemisph">
+    <rdfs:subClassOf rdf:resource="#northlatitudeband" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">90</owl:hasValue>
@@ -227,8 +227,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SouthernHemispher">
-    <rdfs:subClassOf rdf:resource="#SouthLatitudeBand" />
+  <owl:Class rdf:about="#southernhemisph">
+    <rdfs:subClassOf rdf:resource="#southlatitudeband" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">-90</owl:hasValue>
@@ -237,12 +237,12 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Boreali">
-    <rdfs:subClassOf rdf:resource="#NorthLatitudeBand" />
+  <owl:Class rdf:about="#boreali">
+    <rdfs:subClassOf rdf:resource="#northlatitudeband" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Austral">
-    <rdfs:subClassOf rdf:resource="#SouthLatitudeBand" />
+  <owl:Class rdf:about="#austral">
+    <rdfs:subClassOf rdf:resource="#southlatitudeband" />
   </owl:Class>
 
 </rdf:RDF>

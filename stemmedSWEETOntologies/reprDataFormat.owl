@@ -31,93 +31,93 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#File">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#file">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Header">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
-<!-- <rdfs:subClassOf rdf:resource="&data;#Metadata"/> -->
+  <owl:Class rdf:about="#header">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
+<!-- <rdfs:subClassOf rdf:resource="&data;#metadata"/> -->
   </owl:Class>
 
 <!-- byte ordering -->
-  <owl:Class rdf:about="#ByteOrd">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#byteord">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <form:ByteOrder rdf:about="#BigEndian">
+  <form:ByteOrder rdf:about="#bigendian">
   </form:ByteOrder>
 
-  <form:ByteOrder rdf:about="#LittleEndian">
+  <form:ByteOrder rdf:about="#littleendian">
   </form:ByteOrder>
 
-  <form:ByteOrder rdf:about="#MiddleEndian">
+  <form:ByteOrder rdf:about="#middleendian">
   </form:ByteOrder>
 
-  <form:ByteOrder rdf:about="#NetworkEndian">
+  <form:ByteOrder rdf:about="#networkendian">
   </form:ByteOrder>
 
 <!-- Data formats -->
-  <owl:Class rdf:about="#Format">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#format">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SelfDescribingFormat">
-    <rdfs:subClassOf rdf:resource="#Format"/>
+  <owl:Class rdf:about="#selfdescribingformat">
+    <rdfs:subClassOf rdf:resource="#format"/>
   </owl:Class>
 
-  <form:Format rdf:about="#ARFF">
+  <form:Format rdf:about="#arff">
   </form:Format>
 
-  <form:Format rdf:about="#ASCII">
+  <form:Format rdf:about="#ascii">
   </form:Format> 
 
-  <form:Format rdf:about="#Binari">
+  <form:Format rdf:about="#binari">
   </form:Format>
 
-  <form:Format rdf:about="#GeoTIFF">
+  <form:Format rdf:about="#geotiff">
   </form:Format>
 
-  <form:Format rdf:about="#GRIB">
+  <form:Format rdf:about="#grib">
   </form:Format>
 
-  <form:Format rdf:about="#GRIB1">
+  <form:Format rdf:about="#grib1">
   </form:Format>
 
-  <form:Format rdf:about="#GRIB2">
+  <form:Format rdf:about="#grib2">
   </form:Format>
 
-  <form:SelfDescribingFormat rdf:about="#FITS">
+  <form:SelfDescribingFormat rdf:about="#fits">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#HDF">
+  <form:SelfDescribingFormat rdf:about="#hdf">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#HDF4">
+  <form:SelfDescribingFormat rdf:about="#hdf4">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#HDF5">
+  <form:SelfDescribingFormat rdf:about="#hdf5">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#HDFEOS">
-    <mrela2:basedOn rdf:resource="#HDF4"/>
+  <form:SelfDescribingFormat rdf:about="#hdfeos">
+    <mrela2:basedOn rdf:resource="#hdf4"/>
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#HDFEOS2">
-    <mrela2:basedOn rdf:resource="#HDF5"/>
+  <form:SelfDescribingFormat rdf:about="#hdfeos2">
+    <mrela2:basedOn rdf:resource="#hdf5"/>
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#NetCDF">
+  <form:SelfDescribingFormat rdf:about="#netcdf">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#NetCDF3">
+  <form:SelfDescribingFormat rdf:about="#netcdf3">
   </form:SelfDescribingFormat>
 
-  <form:SelfDescribingFormat rdf:about="#NetCDF4">
+  <form:SelfDescribingFormat rdf:about="#netcdf4">
     <rdfs:comment xml:lang="en">Shares data model with HDF5.</rdfs:comment>
   </form:SelfDescribingFormat>
 
-  <form:Format rdf:about="#Xls">
+  <form:Format rdf:about="#xls">
   </form:Format> 
 
 </rdf:RDF>

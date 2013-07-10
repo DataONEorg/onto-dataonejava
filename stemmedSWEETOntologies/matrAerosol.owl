@@ -48,30 +48,30 @@
      <owl:imports rdf:resource="&pstate;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Aerosol">
-    <rdfs:subClassOf rdf:resource="&chem;#SuspendedSubstance"/>
+  <owl:Class rdf:about="#aerosol">
+    <rdfs:subClassOf rdf:resource="&chem;#suspendedsubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalAerosol">
-    <rdfs:subClassOf rdf:resource="#Aerosol" />
+  <owl:Class rdf:about="#continentalaerosol">
+    <rdfs:subClassOf rdf:resource="#aerosol" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&land;#Land" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&land;#land" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Aerosol having its origin over the continents with industrial, urban, agricultural, forest, and desert sources, with potential for high concentrations of hygroscopic aerosol.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FugitiveDust">
-    <rdfs:subClassOf rdf:resource="#Dust"/>
+  <owl:Class rdf:about="#fugitivedust">
+    <rdfs:subClassOf rdf:resource="#dust"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PM1">
-    <rdfs:subClassOf rdf:resource="#Particulate"/>
+  <owl:Class rdf:about="#pm1">
+    <rdfs:subClassOf rdf:resource="#particul"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#diameter"/>
+        <owl:onProperty rdf:resource="&srela;#diamet"/>
         <owl:hasValue>
           <xten2:SizeRange_micron>
             <mrela2:hasUpperBound rdf:datatype="&xsd;double">1</mrela2:hasUpperBound>
@@ -81,11 +81,11 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PM2point5">
-    <rdfs:subClassOf rdf:resource="#Particulate"/>
+  <owl:Class rdf:about="#pm2point5">
+    <rdfs:subClassOf rdf:resource="#particul"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#diameter"/>
+        <owl:onProperty rdf:resource="&srela;#diamet"/>
         <owl:hasValue>
           <xten2:SizeRange_micron>
             <mrela2:hasUpperBound rdf:datatype="&xsd;double">2.5</mrela2:hasUpperBound>
@@ -95,11 +95,11 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PM10">
-    <rdfs:subClassOf rdf:resource="#Particulate"/>
+  <owl:Class rdf:about="#pm10">
+    <rdfs:subClassOf rdf:resource="#particul"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#diameter"/>
+        <owl:onProperty rdf:resource="&srela;#diamet"/>
         <owl:hasValue>
           <xten2:SizeRange_micron>
             <mrela2:hasUpperBound rdf:datatype="&xsd;double">10</mrela2:hasUpperBound>
@@ -109,57 +109,57 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Particulate">
-    <rdfs:subClassOf rdf:resource="&chem;#SuspendedSubstance"/>
+  <owl:Class rdf:about="#particul">
+    <rdfs:subClassOf rdf:resource="&chem;#suspendedsubst"/>
     <rdfs:comment xml:lang="en">The term for solid or liquid particles found in a gas.   Some particles are large or dark enough to be seen as soot or smoke.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pollen">
-    <rdfs:subClassOf rdf:resource="#Particulate"/>
+  <owl:Class rdf:about="#pollen">
+    <rdfs:subClassOf rdf:resource="#particul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Smoke">
-    <rdfs:subClassOf rdf:resource="&chem;#SuspendedSubstance"/>
+  <owl:Class rdf:about="#smoke">
+    <rdfs:subClassOf rdf:resource="&chem;#suspendedsubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spray">
-    <rdfs:subClassOf rdf:resource="#Aerosol"/>
+  <owl:Class rdf:about="#spray">
+    <rdfs:subClassOf rdf:resource="#aerosol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Soot">
-    <rdfs:subClassOf rdf:resource="#Particulate"/>
-    <owl:equivalentClass rdf:resource="#BlackCarbon" />
+  <owl:Class rdf:about="#soot">
+    <rdfs:subClassOf rdf:resource="#particul"/>
+    <owl:equivalentClass rdf:resource="#blackcarbon" />
   </owl:Class>
-  <owl:Class rdf:about="#BlackCarbon"/>
+  <owl:Class rdf:about="#blackcarbon"/>
 
-  <owl:Class rdf:about="#Ash">
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+  <owl:Class rdf:about="#ash">
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
    <rdfs:comment>Fine particles of pulverized rock.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dust">
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+  <owl:Class rdf:about="#dust">
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CondensationNuclei">
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+  <owl:Class rdf:about="#condensationnuclei">
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&solid;#Coalescence"/>
-        <owl:onProperty rdf:resource="&rela;#hasRole"/>
+        <owl:allValuesFrom rdf:resource="&solid;#coalesc"/>
+        <owl:onProperty rdf:resource="&rela;#hasrol"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CloudCondensationNuclei">
-    <rdfs:subClassOf rdf:resource="#CondensationNuclei"/>
-    <owl:equivalentClass rdf:resource="#CCN" />
+  <owl:Class rdf:about="#cloudcondensationnuclei">
+    <rdfs:subClassOf rdf:resource="#condensationnuclei"/>
+    <owl:equivalentClass rdf:resource="#ccn" />
   </owl:Class>
-  <owl:Class rdf:about="#CCN"/>
+  <owl:Class rdf:about="#ccn"/>
 
-  <owl:Class rdf:about="#Grain">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+  <owl:Class rdf:about="#grain">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
   </owl:Class>
 
 </rdf:RDF>

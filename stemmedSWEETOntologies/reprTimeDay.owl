@@ -30,65 +30,65 @@
   </owl:Ontology>
 
 <!-- Diurnal definitions -->
-  <owl:Class rdf:about="#Noon">
+  <owl:Class rdf:about="#noon">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Day">
+  <owl:Class rdf:about="#day">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Daytim">
+  <owl:Class rdf:about="#daytim">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Midnight">
+  <owl:Class rdf:about="#midnight">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Nighttim">
+  <owl:Class rdf:about="#nighttim">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
-    <owl:equivalentClass rdf:resource="#Nocturn"/>
+    <owl:equivalentClass rdf:resource="#nocturn"/>
   </owl:Class>
-  <owl:Class rdf:about="#Nocturn"/>
+  <owl:Class rdf:about="#nocturn"/>
 
-  <owl:Class rdf:about="#Evene">
-    <rdfs:subClassOf rdf:resource="#Nighttim"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Morn">
-    <rdfs:subClassOf rdf:resource="#Daytim"/>
+  <owl:Class rdf:about="#evene">
+    <rdfs:subClassOf rdf:resource="#nighttim"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sunset">
+  <owl:Class rdf:about="#morn">
+    <rdfs:subClassOf rdf:resource="#daytim"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#sunset">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#Evene"/>
+        <owl:someValuesFrom rdf:resource="#evene"/>
         <owl:onProperty rdf:resource="&trela;startOf"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sunris">
+  <owl:Class rdf:about="#sunri">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#Morn"/>
+        <owl:someValuesFrom rdf:resource="#morn"/>
         <owl:onProperty rdf:resource="&trela;startOf"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dawn">
-    <rdfs:subClassOf rdf:resource="#Twilight"/>
+  <owl:Class rdf:about="#dawn">
+    <rdfs:subClassOf rdf:resource="#twilight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dusk">
-    <rdfs:subClassOf rdf:resource="#Twilight"/>
+  <owl:Class rdf:about="#dusk">
+    <rdfs:subClassOf rdf:resource="#twilight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Twilight">
+  <owl:Class rdf:about="#twilight">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
   </owl:Class>
 

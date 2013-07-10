@@ -59,281 +59,281 @@
     <owl:imports rdf:resource = "&anal;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#DataSt">
-    <rdfs:subClassOf rdf:resource="&sstate;#SystemSt" />
+  <owl:Class rdf:about="#datast">
+    <rdfs:subClassOf rdf:resource="&sstate;#systemst" />
   </owl:Class>
 
 <!-- Values -->
-  <owl:Class rdf:about="#Archive">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#archive">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&prod;#Archive"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&prod;#archive"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bin">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#bin">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&redu;#Bin"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&redu;#bin"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cluster">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#cluster">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Cluster"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#cluster"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Calibr">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#calibr">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&vali;#Calibr"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&vali;#calibr"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Georeferenc">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#georeferenc">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Georeferenc"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&geos;#georeferenc"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Grid">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#grid">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Grid"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&geos;#grid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interpol">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#interpol">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Interpol"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#interpol"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Level1">
-    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
-    <owl:equivalentClass rdf:resource="#L1" />
+  <owl:Class rdf:about="#level1">
+    <rdfs:subClassOf rdf:resource="&ordi;#processinglevel"/>
+    <owl:equivalentClass rdf:resource="#l1" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Geoloc"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&geos;#geoloc"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#L1" />
+  <owl:Class rdf:about="#l1" />
 
-  <owl:Class rdf:about="#Level2">
-    <owl:equivalentClass rdf:resource="#L2" />
-    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+  <owl:Class rdf:about="#level2">
+    <owl:equivalentClass rdf:resource="#l2" />
+    <rdfs:subClassOf rdf:resource="&ordi;#processinglevel"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&smod;#Parameter"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&smod;#paramet"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prrela;#hasDataModel" />
-        <owl:allValuesFrom rdf:resource="&mod;#Swath" />
+        <owl:onProperty rdf:resource="&prrela;#hasdatamodel" />
+        <owl:allValuesFrom rdf:resource="&mod;#swath" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#L2" />
+  <owl:Class rdf:about="#l2" />
 
-  <owl:Class rdf:about="#Level3">
-    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+  <owl:Class rdf:about="#level3">
+    <rdfs:subClassOf rdf:resource="&ordi;#processinglevel"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Grid"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&geos;#grid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prrela;#hasDataModel"/>
-        <owl:allValuesFrom rdf:resource="&mod;#Grid"/>
+        <owl:onProperty rdf:resource="&prrela;#hasdatamodel"/>
+        <owl:allValuesFrom rdf:resource="&mod;#grid"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#L3"/>
+    <owl:equivalentClass rdf:resource="#l3"/>
   </owl:Class>
-  <owl:Class rdf:about="#L3" />
+  <owl:Class rdf:about="#l3" />
 
-  <owl:Class rdf:about="#Level4">
-    <rdfs:subClassOf rdf:resource="&ordi;#ProcessingLevel"/>
+  <owl:Class rdf:about="#level4">
+    <rdfs:subClassOf rdf:resource="&ordi;#processinglevel"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Assimil"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#assimil"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#L4"/>
+    <owl:equivalentClass rdf:resource="#l4"/>
   </owl:Class>
-  <owl:Class rdf:about="#L4" />
+  <owl:Class rdf:about="#l4" />
 
-  <owl:Class rdf:about="#Mine">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#mine">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&redu;#Mine"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Normal">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&redu;#Normal"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&redu;#mine"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parameter">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#normal">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Parameter"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&redu;#normal"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Plot">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#paramet">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Plot"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#paramet"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Process">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Reanalyz">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#plot">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Reanalysi"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#plot"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reconstruct">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#process">
+    <rdfs:subClassOf rdf:resource="#datast"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#reanalyz">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&prov;#Reconstruct"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#reanalysi"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reformat">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#reconstruct">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&serv;#Reformat"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&prov;#reconstruct"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Regrid">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#reformat">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Regrid"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&serv;#reformat"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scale">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#regrid">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&prod;#Scale"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&geos;#regrid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Subset">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#scale">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&redu;#Subset"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&prod;#scale"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Train">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#subset">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&anal;#Train"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&redu;#subset"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Valid">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#train">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&vali;#Valid"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&anal;#train"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Verif">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#valid">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&vali;#Verif"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&vali;#valid"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Map">
-    <rdfs:subClassOf rdf:resource="#DataSt"/>
+  <owl:Class rdf:about="#verif">
+    <rdfs:subClassOf rdf:resource="#datast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geos;#Map"/>
-        <owl:onProperty rdf:resource="&prrela;#hadProcess"/>
+        <owl:someValuesFrom rdf:resource="&vali;#verif"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#map">
+    <rdfs:subClassOf rdf:resource="#datast"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&geos;#map"/>
+        <owl:onProperty rdf:resource="&prrela;#hadprocess"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

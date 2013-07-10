@@ -28,91 +28,91 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/prop.owl"/>  
   </owl:Ontology>
 
-  <owl:Class rdf:about="#RepresentativeRol">
+  <owl:Class rdf:about="#representativerol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
     <rdfs:subClassOf rdf:resource="&ordi;OrdinalProperty"/>
   </owl:Class>
 
 <!-- Representative Roles -->
-  <repr:RepresentativeRole rdf:about="#Actual">
+  <repr:RepresentativeRole rdf:about="#actual">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Anomal">
-    <owl:sameAs rdf:resource="#Anomali"/>
+  <repr:RepresentativeRole rdf:about="#anomal">
+    <owl:sameAs rdf:resource="#anomali"/>
   </repr:RepresentativeRole>
-  <repr:RepresentativeRole rdf:about="#Anomali"/>
+  <repr:RepresentativeRole rdf:about="#anomali"/>
 
-  <repr:RepresentativeRole rdf:about="#Archetyp">
-  </repr:RepresentativeRole>
-
-  <repr:RepresentativeRole rdf:about="#Atypic">
-    <owl:differentFrom rdf:resource="#Typic"/>
+  <repr:RepresentativeRole rdf:about="#archetyp">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Baselin">
+  <repr:RepresentativeRole rdf:about="#atypic">
+    <owl:differentFrom rdf:resource="#typic"/>
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Canon">
+  <repr:RepresentativeRole rdf:about="#baselin">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Defin">
+  <repr:RepresentativeRole rdf:about="#canon">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Exotic">
+  <repr:RepresentativeRole rdf:about="#defin">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Expect">
+  <repr:RepresentativeRole rdf:about="#exotic">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Indicat">
+  <repr:RepresentativeRole rdf:about="#expect">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Instanc">
+  <repr:RepresentativeRole rdf:about="#indicat">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Noisi">
+  <repr:RepresentativeRole rdf:about="#instanc">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Outlier">
-    <owl:differentFrom rdf:resource="#Repres"/>
+  <repr:RepresentativeRole rdf:about="#noisi">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Precious">
+  <repr:RepresentativeRole rdf:about="#outlier">
+    <owl:differentFrom rdf:resource="#repr"/>
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Proxi">
+  <repr:RepresentativeRole rdf:about="#precious">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Refer">
+  <repr:RepresentativeRole rdf:about="#proxi">
   </repr:RepresentativeRole>
 
-  <repr:RepresRole rdf:about="#Repres">
+  <repr:RepresentativeRole rdf:about="#refer">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Robust">
+  <repr:reprRole rdf:about="#repr">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Sampl">
+  <repr:RepresentativeRole rdf:about="#robust">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#SemiPreci">
+  <repr:RepresentativeRole rdf:about="#sampl">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Typic">
+  <repr:RepresentativeRole rdf:about="#semipreci">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Target">
+  <repr:RepresentativeRole rdf:about="#typic">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Unexpect">
-    <owl:differentFrom rdf:resource="#Expect"/>
+  <repr:RepresentativeRole rdf:about="#target">
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Unrepres">
-    <owl:differentFrom rdf:resource="#Repres"/>
+  <repr:RepresentativeRole rdf:about="#unexpect">
+    <owl:differentFrom rdf:resource="#expect"/>
   </repr:RepresentativeRole>
 
-  <repr:RepresentativeRole rdf:about="#Uniqu">
+  <repr:RepresentativeRole rdf:about="#unrepr">
+    <owl:differentFrom rdf:resource="#repr"/>
+  </repr:RepresentativeRole>
+
+  <repr:RepresentativeRole rdf:about="#uniqu">
   </repr:RepresentativeRole>
 
 </rdf:RDF>

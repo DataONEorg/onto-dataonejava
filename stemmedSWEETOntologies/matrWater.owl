@@ -70,38 +70,38 @@
      <owl:imports rdf:resource="&xten;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#LiquidWat">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#liquidwat">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#Liquid"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&pstate;#liquid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterVapor">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#watervapor">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#Gas"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&pstate;#gas"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#Steam"/>
+    <owl:equivalentClass rdf:resource="#steam"/>
   </owl:Class>
-  <owl:Class rdf:about="#Steam"/>
+  <owl:Class rdf:about="#steam"/>
 
-  <owl:Class rdf:about="#Dew">
-    <rdfs:subClassOf rdf:resource="#LiquidWat"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Drop">
-    <rdfs:subClassOf rdf:resource="#LiquidWat"/>
+  <owl:Class rdf:about="#dew">
+    <rdfs:subClassOf rdf:resource="#liquidwat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CloudDrop">
-    <rdfs:subClassOf rdf:resource="#Drop"/>
+  <owl:Class rdf:about="#drop">
+    <rdfs:subClassOf rdf:resource="#liquidwat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#clouddrop">
+    <rdfs:subClassOf rdf:resource="#drop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#diamet"/>
@@ -115,8 +115,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RainDrop">
-    <rdfs:subClassOf rdf:resource="#Drop"/>
+  <owl:Class rdf:about="#raindrop">
+    <rdfs:subClassOf rdf:resource="#drop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#diamet"/>
@@ -129,8 +129,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DrizzleDrop">
-    <rdfs:subClassOf rdf:resource="#Drop"/>
+  <owl:Class rdf:about="#drizzledrop">
+    <rdfs:subClassOf rdf:resource="#drop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#diamet"/>
@@ -143,189 +143,189 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Groundwat">
-    <rdfs:subClassOf rdf:resource="#LiquidWat"/>
+  <owl:Class rdf:about="#groundwat">
+    <rdfs:subClassOf rdf:resource="#liquidwat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#below"/>
-        <owl:allValuesFrom rdf:resource="&realm;#PlanetarySurfac"/>
+        <owl:allValuesFrom rdf:resource="&realm;#planetarysurfac"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rainwat">
-    <rdfs:subClassOf rdf:resource="#LiquidWat"/>
+  <owl:Class rdf:about="#rainwat">
+    <rdfs:subClassOf rdf:resource="#liquidwat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prrela;#hasSourc"/>
-        <owl:allValuesFrom rdf:resource="&prec;#Rainfal"/>
+        <owl:onProperty rdf:resource="&prrela;#hassourc"/>
+        <owl:allValuesFrom rdf:resource="&prec;#rainfal"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterSubst">
-    <rdfs:subClassOf rdf:resource="&chem;#Substanc"/>
+  <owl:Class rdf:about="#watersubst">
+    <rdfs:subClassOf rdf:resource="&chem;#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&comp;#Water"/>
-        <owl:onProperty rdf:resource="&crela;#hasChem"/>
+        <owl:hasValue rdf:resource="&comp;#water"/>
+        <owl:onProperty rdf:resource="&crela;#haschem"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
 <!-- Water Mixtures -->
-  <owl:Class rdf:about="#FreshWat">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#freshwat">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydrat">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#hydrat">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BrackishWat">
-    <rdfs:subClassOf rdf:resource="#SaltWat"/>
+  <owl:Class rdf:about="#brackishwat">
+    <rdfs:subClassOf rdf:resource="#saltwat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&cstate;#Brackish"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&cstate;#brackish"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Brackish water is water that has more salinity than fresh water, but not as much as seawater. It may result from mixing of seawater with fresh water, as in estuaries, or it may occur in brackish fossil aquifers.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Brine">
-    <rdfs:subClassOf rdf:resource="#SaltWat"/>
-    <owl:disjointWith rdf:resource="#SalineWat"/>
+  <owl:Class rdf:about="#brine">
+    <rdfs:subClassOf rdf:resource="#saltwat"/>
+    <owl:disjointWith rdf:resource="#salinewat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DrinkingWat">
-    <rdfs:subClassOf rdf:resource="#WaterMixtur"/>
-    <rdfs:subClassOf rdf:resource="&human;#HumanNe"/>
+  <owl:Class rdf:about="#drinkingwat">
+    <rdfs:subClassOf rdf:resource="#watermixtur"/>
+    <rdfs:subClassOf rdf:resource="&human;#humann"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SalineWat">
-    <rdfs:subClassOf rdf:resource="#SaltWat"/>
+  <owl:Class rdf:about="#salinewat">
+    <rdfs:subClassOf rdf:resource="#saltwat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SaltWat">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
-    <owl:disjointWith rdf:resource="#FreshWat"/>
+  <owl:Class rdf:about="#saltwat">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
+    <owl:disjointWith rdf:resource="#freshwat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&cstate;#Salin"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&cstate;#salin"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaWat">
-    <rdfs:subClassOf rdf:resource="#SaltWat"/>
+  <owl:Class rdf:about="#seawat">
+    <rdfs:subClassOf rdf:resource="#saltwat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterMixtur">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixtur"/>
+  <owl:Class rdf:about="#watermixtur">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&comp;#H2O"/>
+        <owl:hasValue rdf:resource="&comp;#h2o"/>
         <owl:onProperty rdf:resource="&crela;#hasChemical_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Effluent">
-    <rdfs:subClassOf rdf:resource="#WaterMixtur"/>
+  <owl:Class rdf:about="#effluent">
+    <rdfs:subClassOf rdf:resource="#watermixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wastewat">
-    <rdfs:subClassOf rdf:resource="#Effluent"/>
+  <owl:Class rdf:about="#wastewat">
+    <rdfs:subClassOf rdf:resource="#effluent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GrayWat">
-    <rdfs:subClassOf rdf:resource="#WaterMixtur"/>
+  <owl:Class rdf:about="#graywat">
+    <rdfs:subClassOf rdf:resource="#watermixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sewag">
-    <rdfs:subClassOf rdf:resource="#Effluent"/>
+  <owl:Class rdf:about="#sewag">
+    <rdfs:subClassOf rdf:resource="#effluent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BlackWat">
-    <rdfs:subClassOf rdf:resource="#WaterMixtur"/>
+  <owl:Class rdf:about="#blackwat">
+    <rdfs:subClassOf rdf:resource="#watermixtur"/>
   </owl:Class>
 
 <!-- Forms of ice -->
-  <owl:Class rdf:about="#Ice">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#ice">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#Solid"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&pstate;#solid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Frost">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#frost">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#Frozen"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&pstate;#frozen"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Snow">
-    <rdfs:subClassOf rdf:resource="#WaterSubst"/>
+  <owl:Class rdf:about="#snow">
+    <rdfs:subClassOf rdf:resource="#watersubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#Solid"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&pstate;#solid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DepthHoar">
-    <rdfs:subClassOf rdf:resource="#IceCryst"/>
+  <owl:Class rdf:about="#depthhoar">
+    <rdfs:subClassOf rdf:resource="#icecryst"/>
     <rdfs:comment xml:lang="en">Depth hoares are large crystals occurring at the base of a snowpack that form due to the fact that a snow crystal can grow over time as moisture freezes onto the crystal from vapor that is rising in the snowpack.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Firn">
-    <rdfs:subClassOf rdf:resource="#IceCryst"/>
+  <owl:Class rdf:about="#firn">
+    <rdfs:subClassOf rdf:resource="#icecryst"/>
     <rdfs:comment xml:lang="en">Firn is partially-compacted névé, a type of snow that has been left over from past seasons and has been recrystallized into a substance denser than névé. It is ice that is at an intermediate stage between snow and glacial ice. Firn has the appearance of wet sugar, but has a hardness that makes it extremely resistant to shovelling. It generally has a density greater than 550 kg/m³ and is often found underneath the snow that accumulates at the head of a glacier.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#GranularIc">
-    <rdfs:subClassOf rdf:resource="#Ice"/>
+  <owl:Class rdf:about="#granularic">
+    <rdfs:subClassOf rdf:resource="#ice"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HoarCryst">
-    <rdfs:subClassOf rdf:resource="#IceCryst"/>
+  <owl:Class rdf:about="#hoarcryst">
+    <rdfs:subClassOf rdf:resource="#icecryst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IceCryst">
-    <rdfs:subClassOf rdf:resource="#Ice"/>
+  <owl:Class rdf:about="#icecryst">
+    <rdfs:subClassOf rdf:resource="#ice"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&sstate;#Crystal"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&sstate;#crystal"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#IceParticl">
-    <owl:equivalentClass rdf:resource="#IceCryst" />
+  <owl:Class rdf:about="#iceparticl">
+    <owl:equivalentClass rdf:resource="#icecryst" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Rime">
-    <rdfs:subClassOf rdf:resource="#Ice" />
+  <owl:Class rdf:about="#rime">
+    <rdfs:subClassOf rdf:resource="#ice" />
     <rdfs:comment xml:lang="en">A white or milky and opaque granular deposit of ice formed by the rapid freezing of supercooled water drops as they impinge upon an exposed object.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowFaci">
-    <rdfs:subClassOf rdf:resource="#IceCryst"/>
+  <owl:Class rdf:about="#snowfaci">
+    <rdfs:subClassOf rdf:resource="#icecryst"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowGrain">
-    <rdfs:subClassOf rdf:resource="#Snow"/>
+  <owl:Class rdf:about="#snowgrain">
+    <rdfs:subClassOf rdf:resource="#snow"/>
   </owl:Class>
 
 </rdf:RDF>

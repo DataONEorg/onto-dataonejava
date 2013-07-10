@@ -1,0 +1,1075 @@
+Phagosomal Rupture by Mycobacterium tuberculosis
+Results in Toxicity and Host Cell Death
+Roxane Simeone1., Alexandre Bobard2., Juliane Lippmann2, Wilbert Bitter3, Laleh Majlessi4,5, Roland
+Brosch1"*, Jost Enninga2"*
+1 Institut Pasteur, Unit for Integrated Mycobacterial Pathogenomics, Paris, France, 2 Institut Pasteur, Research Group ‘‘Dynamics of Host-Pathogen Interactions’’, Paris,
+ ́
+ ́gulation Immunitaire et Vaccinologie, Paris,
+France, 3 VU University, Molecular and Medical Microbiology, Amsterdam, The Netherlands, 4 Institut Pasteur, Unite de Re
+France, 5 INSERM U1041, Paris, France
+Abstract
+Survival within macrophages is a central feature of Mycobacterium tuberculosis pathogenesis. Despite significant advances in
+identifying new immunological parameters associated with mycobacterial disease, some basic questions on the intracellular
+fate of the causative agent of human tuberculosis in antigen-presenting cells are still under debate. To get novel insights
+into this matter, we used a single-cell fluorescence resonance energy transfer (FRET)-based method to investigate the
+potential cytosolic access of M. tuberculosis and the resulting cellular consequences in an unbiased, quantitative way.
+Analysis of thousands of THP-1 macrophages infected with selected wild-type or mutant strains of the M. tuberculosis
+complex unambiguously showed that M. tuberculosis induced a change in the FRET signal after 3 to 4 days of infection,
+indicating phagolysosomal rupture and cytosolic access. These effects were not seen for the strains M. tuberculosisDRD1 or
+BCG, both lacking the ESX-1 secreted protein ESAT-6, which reportedly shows membrane-lysing properties.
+Complementation of these strains with the ESX-1 secretion system of M. tuberculosis restored the ability to cause
+phagolysosomal rupture. In addition, control experiments with the fish pathogen Mycobacterium marinum showed
+phagolysosomal translocation only for ESX-1 intact strains, further validating our experimental approach. Most importantly,
+for M. tuberculosis as well as for M. marinum we observed that phagolysosomal rupture was followed by necrotic cell death
+of the infected macrophages, whereas ESX-1 deletion- or truncation-mutants that remained enclosed within
+phagolysosomal compartments did not induce such cytotoxicity. Hence, we provide a novel mechanism how ESX-1
+competent, virulent M. tuberculosis and M. marinum strains induce host cell death and thereby escape innate host defenses
+and favor their spread to new cells. In this respect, our results also open new research directions in relation with the
+extracellular localization of M. tuberculosis inside necrotic lesions that can now be tackled from a completely new
+perspective.
+Citation: Simeone R, Bobard A, Lippmann J, Bitter W, Majlessi L, et al. (2012) Phagosomal Rupture by Mycobacterium tuberculosis Results in Toxicity and Host Cell
+Death. PLoS Pathog 8(2): e1002507. doi:10.1371/journal.ppat.1002507
+Editor: Sabine Ehrt, Weill Medical College of Cornell University, United States of America
+Received August 3, 2011; Accepted December 12, 2011; Published February 2, 2012
+Copyright: ß 2012 Simeone et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+Funding: This work was supported by the Institut Pasteur PTR372 (to R.B.), the European Community’s Seventh Framework Program under grant agreements
+nu201762 (to L.M., W.B. and R.B.) and nu241745 (to R.B.), a European Research Council Starting Grant Award nu 261166 (to J.E.), and a grant nu ANR-09-MIEN-020-01
+from the Agence Nationale pour la Recherche (to J.E.). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of
+the manuscript.
+Competing Interests: The authors have declared that no competing interests exist.
+* E-mail: roland.brosch@pasteur.fr (RB); jost.enninga@pasteur.fr (JE)
+. These authors contributed equally to this work.
+" These authors are joint senior authors on this work.
+particularity is thought to be linked to the capacity of the bacterium
+to persist and replicate within macrophages [4,5]. However, as has
+been recently reported by cryo-immunogold electron microscopy,
+other cellular mechanisms that involve translocation of M.
+tuberculosis from the phagosome into the cytosol of the infected host
+cell might play crucial roles at later time points of the infection
+process [6]. In the same study it was shown that the attenuated
+Mycobacterium bovis Bacille de Calmette et Guerin vaccine (BCG),
+ ́
+lacking the 6kD Early Secretory Antigenic Target ESAT-6 (EsxA)
+and its 10kD Culture Filtrate Protein partner CFP-10 (EsxB) due to
+the deletion of the region of difference RD1 [7,8] remained within
+the phagolysosomal compartment, similar to an M. tuberculosis CFP-
+10 transposon mutant, which was not detected within the host
+cytoplasm [6].
+Introduction
+The intracellular localization of bacterial pathogens has impor-
+tant consequences for the sensing by the host and the induced host
+immune responses. Hence, numerous studies have investigated the
+intracellular niche of the microbes. Particularly, phagolysosome
+fusion is a central cellular mechanism used by host cells to cope with
+infection. Intracellular pathogens like Mycobacterium tuberculosis are
+known to avoid lysosomal fusion through the manipulation of host
+signal transduction pathways [1]. Following phagocytosis by a host
+macrophage and/or dendritic cell, M. tuberculosis typically resides in
+a phagosomal compartment that maintains many characteristics of
+an early endosome. The maturation towards an acidified phago-
+lysosome is blocked or retarded by M. tuberculosis [2,3]. This
+PLoS Pathogens | www.plospathogens.org
+1
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+Author Summary Results
+Mycobacterium tuberculosis is one of the most life- Mycobacterial strains express and display beta-lactamase
+threatening pathogens of all time. Despite the develop- activity
+ment of vaccines and antibiotics, this pathogen is still a 
+major public health problem. Also the HIV epidemic has an 
+important impact on the rise of M. tuberculosis infections 
+since immunodeficient people are highly susceptible. 
+Commonly, M. tuberculosis has been thought to reside in 
+a membrane-bound compartment within its host cells 
+during the entire infection cycle from invasion to cell 
+death. Using a fluorescence-based method, we provide 
+evidence that M. tuberculosis is able to rupture its 
+membrane-bound compartment and gain access to the 
+host cytosol, where it can elicit cell death. Furthermore, we 
+show that this effect is dependent on a functional type VII 
+secretion system named ESX-1. Most importantly, we were 
+able to track the dynamics of infection to understand the 
+consequences of M. tuberculosis phagosomal rupture. This 
+revealed that phagosomal rupture results in cell toxicity 
+and host cell death involving necrosis. Together, our data 
+provide a new angle in the worldwide fight against M. 
+tuberculosis and could lead to new approaches in the 
+development of innovative treatments. 
+The aim of our study was to analyze the capacity of selected
+mycobacteria to reach the cytosol during macrophage infection via
+a robust, sensitive and quantitative approach at the single cell
+level. For this, we had to adapt our FRET based reporter that was
+previously used to monitor the intracellular localization of
+Salmonella and Shigella species [11] (Figure S1) to the slowly
+growing mycobacteria. In the host cell, membrane permeable
+CCF-4-AM molecules diffuse freely across the cellular plasma
+membrane, are subsequently trapped in the cytosol and excluded
+from endosomes and other organelles by anion conversion into
+CCF-4 upon cytosolic esterase action. The use of this cytosolic
+probe relies on the bacterial expression and exposure of beta-
+lactamase. Cleavage of CCF-4 by beta-lactamase-expressing
+bacteria leads to a switch of the FRET signal from 535 nm
+(green) to 450 nm (blue) upon 405 nm excitation. As mycobacteria
+are naturally resistant to beta-lactam antibiotics, such as
+ampicillin, due to the constitutive expression of endogenous
+beta-lactamases [21], we assumed that this activity could be
+exploited by our assay. To ascertain that the selected mycobac-
+terial strains showed the expected beta-lactamase activity, we first
+demonstrated their capacity to cleave the colorimetric beta-
+lactamase substrate nitrocefin (data not shown), and then
+evaluated their cleavage of the CCF-4 probe in vitro by fluorimetry.
+As shown in Table 1 and Figures S2A–C (in Supporting
+Information), all tested strains displayed the necessary enzymatic
+activity allowing us to follow the intracellular behavior of each
+strain in real-time during the process of infection of human
+macrophages. We decided to use the THP-1 human cell line as a
+host cell model because upon addition of phorbol-myristate-
+acetate (PMA) it differentiates from a cell with the characteristics
+of monocytes to one with characteristics of macrophages.
+Therefore, this cell line depicts a high state of differentiation.
+Our experimental protocol started with the infection of THP-1
+The translocation-model of van der Wel and colleagues
+has the potential to explain a series of observations in conflict
+with the often-repeated concept of M. tuberculosis remaining
+enclosed in endosomal compartments that resist maturation and
+acidification. Especially, it reconciled the MHC class I presen-
+tation of M. tuberculosis antigens, and the increased CD8
+responses during M. tuberculosis infection [9]. Nevertheless the
+proposed model of phagosomal escape of M. tuberculosis has
+remained controversial due to the complexity to interpret the
+results entirely based on ultrastructural observations. Hence, it
+still awaits broad acceptance by the scientific community through
+independent studies and alternative experimental techniques
+[6,10].
+This situation prompted us to investigate the potential
+phagosomal escape of M. tuberculosis and closely related mycobac-
+teria by the means of a recently developed fluorescence
+microscopy approach that proved to be a powerful tool to
+investigate the rupture of host endocytic vacuolar membranes
+during the cell invasion by Gram-negative pathogens [11,12]. This
+assay requires the loading of host cells with a chemical probe that
+is trapped within the host cytoplasm and sensitive to fluorescence
+resonance energy transfer (FRET) measurements [13,14], and a
+beta-lactamase activity present on the cell surface of bacteria.
+FRET image analysis of single infected cells can be performed in
+live or in fixed cells, and the intracellular localization of the
+bacterial pathogen can be quantified with high precision via
+automated image analysis tools.
+We took advantage of the BlaC mediated intrinsic resistance of
+M. tuberculosis, BCG, Mycobacterium marinum and BlaS of Mycobac-
+terium smegmatis to beta-lactam antibiotics [15–17] that worked in
+conjunction with our FRET assay. Proteome analyses have
+identified BlaC as a membrane-associated protein [18] containing
+a lipobox motif in its signal sequence that predicts membrane-
+anchored cell envelope localization [19,20]. This feature allowed
+us to follow the cytosolic contact of selected mycobacteria over a
+given time course, to monitor its consequences and to link
+phagosomal rupture with the pathogenic potential of the tested
+bacterial species.
+PLoS Pathogens | www.plospathogens.org
+Table 1. M. marinum, M. smegmatis, M. tuberculosis and BCG
+display beta-lactamase activity as shown by their ability to
+cleave the CCF-4 substrate in vitro.
+CCF-4 fluorimetric test
+450/535 nm Ratio Fold Increase
+CCF-4 1+/20.2
+CCF-4+BCG 2.5+/20.5
+CCF-4+M.tuberculosis 3.5+/20.6
+CCF-4+M.smegmatis 11.4+/22.1
+CCF-4+M.marinum 12.4+/23.5
+CCF-4+BCG::pYUB412 4.7+/21.9
+CCF-4+BCG::RD1 3.1+/20.7
+CCF-4+BCG::RD1-ESAT-6D84-95 2.4+/20.2
+CCF-4+M.tuberculosisDRD1 3.5+/21.1
+CCF-4+M.tuberculosisDRD1::RD1 2.7+/20.6
+The table summarizes the data obtained from the emission spectra measured
+by fluorimetry in Figure S1. The ratios reflect the intensity of the 450 nm
+emission peak divided by the intensity of the 535 nm emission peak upon
+405 nm excitation.
+Standard deviation was calculated based on 2 independent experiments.
+doi:10.1371/journal.ppat.1002507.t001
+2
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+observed at rather early time points (2 h, 5 h and 20 h) (Figures
+S3A–F). In the case of M. smegmatis infection, the ratios remained
+low highlighting its phagolysosomal localization.
+cells by mycobacteria. Then, upon loading of cells with CCF-4 it
+was possible to discriminate exclusive phagosomal location or host
+cytosol access by the change of the FRET signal. Finally, using
+automated microscopy and dedicated image analysis algorithms,
+quantification was achieved on hundreds to thousands of cells for
+dozens of conditions in parallel.
+Cytosolic contact of M. marinum is dependent on ESAT-
+6/CFP-10 secretion
+We decided to take a closer look at the molecular requirements
+for phagolysosomal rupture of M. marinum by using a M. marinum M
+strain variant that was reported to be impaired for the secretion of
+ESAT-6 and CFP-10 and has been named M. marinum MVU [22]
+(Figure S4A). As shown in Figures 1A and S3A-F, this strain did not
+induce a FRET shift within the infected macrophages, suggesting
+that it was unable to reach the cytosol of the macrophage. This
+effect was very strong as determined by automated image
+quantification of 216 randomly imaged cells after 48 h of infection
+(Figure 1C); not even a single infected macrophage of the inspected
+cells showed an increase in the cytoplasmic 450/535 nm emission
+ratio during the course of infection for early (Figure S2A) or late
+(Figure 1A) time points, although the MOIs were the same as for the
+ESAT-6 secretion-intact M. marinum M strain. In agreement with
+previously published data [23,24] our results indicate that the
+cytosolic translocation phenotype of M. marinum is dependent on
+intact ESAT-6 secretion. This necessity is corroborated by
+quantitative analyses depicted in Figures 1C, S2D–F (ratio
+distribution was stalled at 1 throughout infection).
+M. marinum gains rapid access to the cytosol of
+macrophages
+At first, we compared the translocation capacities of M. marinum
+with M. smegmatis to evaluate the adaptability of our assay to
+mycobacteria. THP-1 cells were infected by M. smegmatis (at 37uC)
+or M. marinum expressing DsRed (at 30uC) at a multiplicity of
+infection (MOI) of 1 (Figure 1). As shown in Figure 1A, the M.
+marinum DsRed induced the switch of the FRET signal from
+535 nm to 450 nm, indicating rupture of the phagosome and
+contact with the cytosol after 24 h to 48 h of infection. Strikingly,
+after 48 h of infection, virtually all the infected cells turned blue,
+and only the uninfected cells remained green. On the contrary,
+infection of the THP-1 cells with M. smegmatis did not result in a
+switch of the fluorescent FRET signal showing that the bacteria
+remained trapped within intact phagolysosomes. These results
+were corroborated by quantitative analysis (Figure 1B), via a
+dedicated algorithm segmenting individual host cells and measur-
+ing both fluorescent channels [11]. While low fluorescent ratios
+(around the value of 1) indicated the presence of membrane-
+enclosed bacteria, high ratios (above 1) showed the presence of
+cytosolic bacteria. Indeed, after 24 h of infection with M. marinum
+DsRed, ratios went up to 3 and even reached 5 after 48h. It is
+noteworthy that for M. marinum similar effects were already
+Wild-type M. tuberculosis but not the attenuated BCG
+vaccine induces phagolysosomal rupture
+We then studied the cytosolic access of the virulent M. tuberculosis
+H37Rv reference strain and the BCG vaccine strain. Unlike M.
+Figure 1. M. marinum is able to rupture the phagosome of THP-1 cells unlike an ESAT-6/CFP-10 secretion-deficient strain. THP-1 cells
+were infected with M. marinum expressing DsRed, M. smegmatis or M. marinum MVU at a MOI of 1 for the indicated time and then loaded with CCF-4
+molecule for 2 h. After PFA fixation, cells were imaged by fluorescence widefield microscope Nikon Ti with 20X objective (A). Picture acquisition was
+done randomly and automatically for each condition on 36 fields to follow the FRET signals and the fluorescent bacteria. Data represented in panels B
+and C were obtained via specialized algorithms using the Metamorph software. The plots are representative of 3 independent experiments.
+doi:10.1371/journal.ppat.1002507.g001
+PLoS Pathogens | www.plospathogens.org
+3
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+with the cytosol starting from day 3 onwards (Figure 2D). It is of
+note that in some cells with no apparently visible red bacteria a
+FRET switch was measured due to the automated focusing on the
+equatorial plane of the inspected cells during image acquisition.
+Quantification of the imaging data revealed a gradual increase of
+the 450/535 nm ratios over the observed time course for M.
+tuberculosis to reach 2.5 (Figure 2D), whereas ratios remained at a
+ratio of 1 for BCG (Figure 2C) until the end of infection at day 10.
+Our data obtained with BCG are very similar to the data obtained
+with uninfected or paraformaldhyde (PFA)-killed bacteria (Figures
+S5A–D). As in the experiments with M. marinum and M. smegmatis
+marinum, these tubercle bacilli display a very long infection cycle in
+macrophages that can last up to 1 or 2 weeks depending on the
+MOI. THP-1 cells were infected with BCG DsRed or M.
+tuberculosis DsRed at 37uC at an MOI of 1 for a 10 day time
+course. As shown in Figure 2A, BCG was unable to induce a
+FRET switch indicating that it remained in a membrane-enclosed
+compartment for the whole course of the experiment, and the
+same was found for the BCG::pYUB412 vector control strain (data
+not shown). In contrast, M. tuberculosis was progressively found
+within macrophages displaying a FRET signal switch from
+535 nm to 450 nm, indicating phagosomal rupture and contact
+Figure 2. Unlike the attenuated BCG vaccine, virulent M. tuberculosis is able to induce phagosomal rupture in THP-1 macrophages.
+THP-1 cells were infected with BCG DsRed (A,C) or M. tuberculosis DsRed (B,D) at a MOI of 1 for the indicated time and then loaded with CCF-4
+molecule for 2 h. After PFA fixation, cells were imaged using a fluorescence widefield microscope (Nikon Ti) with an 40X objective (A, B). Picture
+acquisition was achieved randomly and automatically for each condition on 49 fields in duplicates and further 450/535 nm intensity ratio
+measurements shown in panels C and D were obtained through analysis by a specialized algorithm using the Metamorph software. The plots are
+representative of 3 independent experiments.
+doi:10.1371/journal.ppat.1002507.g002
+PLoS Pathogens | www.plospathogens.org
+4
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+all acquired images were randomly chosen by the computer
+driving the microscope, and subsequently were automatically
+analyzed by our analytical pipeline. Taken together, our results
+suggest that M. tuberculosis is indeed able to enter into the cytosol
+during macrophage infection of multiple days, while BCG does
+not manifest this faculty, even after prolongated infection. M.
+tuberculosis thus shows a delayed but otherwise similar intracellular
+behavior as M. marinum, whose faculty to translocate into the
+cytosol of host cells is well established [23–25].
+fluorescent marker WGA, we observed that upon infection with
+M. tuberculosis or BCG::RD1 the number of THP-1 cells decreased
+progressively from day 4 to day 10, which was much less
+pronounced for macrophages infected with mycobacterial strains
+that did not cause phagosomal rupture (Figure 4A). Live/Dead
+Pacific Blue staining in combination with FLICA poly-caspase
+staining and flow cytometry of THP-1 cells at day 7, when strain-
+specific differences were most pronounced (Figure 4A), confirmed
+that rupture-proficient strains caused more extensive host cell
+death. Only 2–4% of the cells infected with M. tuberculosis, M.
+tuberculosisDRD1::RD1 and BCG::RD1 were found viable, i.e.
+without any apoptosis or necrosis marker compared to 10–20%
+viable cells in non-infected cultures or those infected with M.
+tuberculosisDRD1, BCG or BCG::RD1-ESAT-6D84–95 (Figure 4B).
+Similar results were obtained when BCG and M. tuberculosis were
+tested with necrosis marker 7-AAD at day 5 by flow cytometry
+(Figure S6). Hence, our data support the hypothesis that
+cytotoxicity is linked with access to the host cytosol. Inversely,
+cytotoxicity was profoundly attenuated when the strains carried
+genetic lesions that prevented disruption of the macrophage
+phagolysosome.
+To exclude that cell death alone leads to a FRET signal switch,
+we induced cell death in the THP-1 cells in multiple ways and
+found that no FRET change occurred under these conditions
+(Figures S7A, B,). We also investigated the capacity of mycobac-
+terial strains to gain access to the cytosol upon chemical induction
+of host cell necrosis. For this purpose THP-1 macrophages were
+infected with BCG at a MOI of 1 prior to induction of necrosis by
+high concanavalin A concentration (100 mg/ml) for 24 h or 48 h
+(Figure 5). As shown in Figure 5A, concanavalin A did elicit
+necrosis as seen by propidium iodide nuclei staining. Nevertheless,
+induction of necrosis did not lead to contact of BCG with the host
+cytosol, as suggested by the absence of a FRET signal change
+during the course of the experiment (Figures 5A–C). Similarly, the
+concanavalin A induced necrosis conditions did not change the
+faculty of M. tuberculosis and BCG::RD1 to cause FRET switches
+only at later timepoints of infection. Samples taken at an early time
+point (24 h) exclusively showed low 450/535 nm ratios (Figures
+S8A–B) and the same was true for comparable infection conditions
+when red fluorescent M. tuberculosis and BCG strains were imaged
+(Figure S9).
+Together, our data suggest that phagosomal rupture induced by
+mycobacterial pathogens and induction of cytotoxicity are two
+cellular events that are intimately linked. From the observed
+timescale and the performed functional assays, the sequence of
+events can be deduced suggesting that cytosolic contact of M.
+tuberculosis precedes and triggers host cellular death. We propose
+that these observations are highly relevant for a better under-
+standing of the underlying mechanisms responsible for the
+pathogenicity of M. tuberculosis as a human pathogen.
+M. tuberculosis ESX-1 deletion mutant resides in
+phagosomes
+Based on results from previous reports and our results with the
+M. marinum ESAT-6/CFP-10 secretion null mutant (MVU), we
+decided to also test an M. tuberculosis ESX-1deletion mutant (M.
+tuberculosisDRD1) [26], which lacks a functional ESX-1 secretion
+system (Figure S4B). In the observed time course using an MOI of
+1, we obtained similar results as for BCG, depicted by the absence
+of a FRET ratio switch to higher values (Figures 3A, D). This
+means that the ESX-1 deletion mutant bacteria reside in the
+phagosome until the end of our experimental time course at day
+10, emphasizing that ESX-1 effectors represent secreted key
+factors that allow M. tuberculosis to gain access to the host cytosol.
+We also complemented M. tuberculosisDRD1 with the genomic
+region encompassing the ESX-1 cluster of M. tuberculosis (M.
+tuberculosisDRD1::RD1; Figure S4B) and obtained similar results as
+for the M. tuberculosis strain in the FRET analysis (data not shown).
+ESAT-6-secreting BCG::RD1 gains access to the cytosol in
+macrophages
+In order to further investigate whether the involvement of the
+ESAT-6 and the ESX-1 secretion system is crucial to trigger the
+vacuolar rupture of mycobacteria, we tested recombinant
+BCG::RD1, a BCG strain that expresses and secretes ESAT-6
+and CFP-10 due to the integration of a 32 kb genomic region
+encompassing the ESX-1 cluster of M. tuberculosis (Figure S4B)
+[27,28]. In a time course experiment at a MOI of 1, this
+recombinant strain showed a similar phenotype as the one
+observed during M. tuberculosis infection. Quantitative analyses
+showed that a gradual increase of the number of infected cells with
+higher FRET ratios gradually increased starting from day 3 after
+infection (Figures 3B, 3E). This demonstrates that the ESX-1-
+complemented BCG::RD1 strain progressively gained access to
+the host-cell cytosol. In contrast, the use of the BCG::RD1-ESAT-
+6D84–95 strain that expresses and secretes truncated ESAT-6
+(Figure S4B), showed no switch of the FRET ratio to higher values
+throughout the time course, indicating the absence of bacteria in
+the cytosol during the measured infection period (Figures 3C, 3F).
+These findings indicate that the cytosolic contact observed upon
+complementation of BCG with ESX-1 did not occur when 12
+amino-acids were deleted from the secreted ESAT-6 molecule,
+emphasizing the importance of ESAT-6 and its C-terminal region
+as an effector involved in phagosomal rupture.
+Discussion
+Taking advantage of recently developed tools that allow the
+quantitative analysis of vacuolar rupture and cytosolic entry of
+beta-lactamase exposing bacteria, we provide unbiased evidence
+that M. marinum and M. tuberculosis gain access to the cytosol of
+infected THP-1 macrophages. These findings help to clarify the
+long-standing controversy of phagosomal escape of mycobacteria.
+While studies in the eighties and early nineties [29–31] showed
+some evidence of M. tuberculosis in the cytosol using traditional
+electron microscopy, these results remained to be confirmed by
+other research groups due to the lack of reliable techniques. This
+situation resulted in the paradigm of M. tuberculosis residing
+Phagosomal rupture is followed by host cell death
+As depicted in Figures 2D and 3E, we observed that upon
+infection with M. tuberculosis strains that cause phagosomal rupture,
+the total number of THP-1 cells diminished extensively over the
+time course of the experiment, suggesting that mycobacteria-
+induced phagosomal rupture and cytosolic contact leads to host
+cell death. Strikingly, we observed this phenomenon also for M.
+marinum, which induced cell death within 48 h (Data not shown).
+Furthermore, by staining THP-1 cells by the plasma membrane
+PLoS Pathogens | www.plospathogens.org
+5
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+Figure 3. Analysis of ESX-1 deletion-, truncation- and complementation-mutants highlights the link between phagosomal rupture
+and functional ESX-1 secretion. THP-1 cells were infected with M. tuberculosisDRD1 (A,D), BCG::RD1 (B,E) or BCG::RD1-ESAT-6D84–95 (C,F) at a
+MOI of 1 for the indicated time and then loaded with CCF-4 molecule for 2 h. After PFA fixation, cells were imaged using a fluorescence widefield
+microscope (Nikon Ti) equipped with a 40X objective (A,B,C). Picture acquisition was achieved randomly and automatically for each condition on 49
+fields in duplicates and further 450/535 nm intensity ratio measurement (D,E,F) was obtained through analysis by a specialized algorithm using the
+Metamorph software. The plots are representative of 3 independent experiments.
+doi:10.1371/journal.ppat.1002507.g003
+PLoS Pathogens | www.plospathogens.org
+6
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+Figure 4. Evolution of cell numbers during the time course of infection with different M. tuberculosis complex members. THP-1 cells
+were infected with M. tuberculosis PFA killed, BCG, BCG::RD1, M. tuberculosis or M. tuberculosisDRD1 at a MOI of 1 for the indicated time. Arrows
+indicate the decrease of the number of cells with virulent strains. After PFA fixation, cells were stained by incubation with WGA (wheat germ
+agglutinin) and imaged using a Nikon Ti widefield microscope. Pictures represent a mosaic of 49 individual images from 96 well plates acquired with
+a 20X objective (A). Cytofluorometry analysis of THP-1 cells infected with various wild-type and recombinant M. tuberculosis and BCG strains at day 7
+post-infection. THP-1 cells were stained with FLICA Poly-Caspases SR-VAD-FMK (apoptosis) and Live/Dead Pacific Blue (necrosis) (B).
+doi:10.1371/journal.ppat.1002507.g004
+PLoS Pathogens | www.plospathogens.org
+7
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+Figure 5. Necrosis induction does not lead to the release of mycobacteria from the phagolysosome to the cytosol. THP-1 cells were
+infected with BCG at a MOI of 1 for 2 days before necrosis induction using 100 mg/ml concanavalin A for 24 h or 48 h. After CCF-4 loading for 2 h,
+cells were incubated 5 minutes in the presence of 2 mg/ml propidium iodide (PI) and then subjected to PFA fixation. Cells were imaged using
+fluorescence widefield Nikon Ti microscope with 40X objective (A). Picture acquisition was achieved randomly and automatically for each condition
+on 49 fields and further 450/535 nm intensity ratio measurements (B,C) were obtained through analysis by a specialized algorithm using the
+Metamorph software. The plots were representative of 2 independent experiments.
+doi:10.1371/journal.ppat.1002507.g005
+PLoS Pathogens | www.plospathogens.org
+8
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+generally within endomembrane compartments along the endo-
+cytic route avoiding maturation and acidification of its niche.
+Although the model of exclusive phagosomal containment is in
+agreement with the fact that M. tuberculosis induces strong CD4+ T-
+cell responses, which is a typical feature of MHC II class
+presentation of peptides from phagocytosed pathogens [32], M.
+tuberculosis also elicits pronounced CD8+ T-cell responses [9]. The
+latter require proteasome-degraded cytosolic proteins to be
+presented via MHC I class molecules. Furthermore, M. tuberculosis
+infection also triggers type I interferon responses [33], and NLRP3
+inflammasome activation, where ESAT-6 has been proposed to
+facilitate the diffusion of immunomodulatory PAMPS (Pathogens-
+Associated Molecular Patterns) to the cytosol resulting in enhanced
+caspase 1 activation [34]. Thus, immunological data clearly
+suggest that mycobacterial constituents appear and are processed
+within the cell host cytoplasm during infection.
+A plausible way to interpret these findings takes into account
+that intracellular mycobacterial pathogens rupture the phagoso-
+mal membrane and translocate to the cytosol at some stages of the
+infection and thereby initiate the cytosolic recognition pathways.
+Evidence for such mycobacterial translocation was reported for M.
+marinum, which behaved similar to Shigella flexneri forming actin
+comet tails inside the host cytoplasm [25]. More recently, potential
+phagosomal escape of M. marinum was also linked to the formation
+of the ejectosome [35], and/or the trapping of the pathogens
+within septin cages [36].
+For M. tuberculosis novel ways of sample preparation under cryo-
+conditions and immuno-gold staining were employed to investi-
+gate the intracellular pathogen localization challenging the
+common view of the exclusive phagosomal localization of M.
+tuberculosis [6]. However, the subject has remained controversial,
+and the study of phagosomal rupture using independent
+techniques is of major scientific interest [10]. In this respect, our
+fluorescence microscopy-based approach for live and fixed
+samples bring new quantitative insight into this phenomenon
+using an alternative simple, specific and sensitive experimental
+approach. Our data provide evidence that phagosomal rupture
+and contact with the host cytoplasm occurs at a species time course
+during the infection process.
+This observation is even more significant as such rupture was
+never observed for the different mutant strains impaired for
+ESAT-6 and CFP-10 secretion (Figures 2A, 3A), thereby
+demonstrating that the observed effects did not occur at random,
+but in a biologically relevant fashion. Strikingly, BCG devoid of
+the ESX-1 secretion system due to deletion of the RD1 region [7]
+was unable to induce a change in the 450/535 nm ratio, whereas
+the ESX-1 complemented BCG::RD1 strain under the same
+experimental conditions clearly induced a change in the ratio from
+green to blue, indicating cytosolic contact (Figures 3B, 3E). These
+results extend previous reports on the potential involvement of the
+ESX-1 system showing that the ESX-1 system is a central
+component required for phagosomal rupture. Belonging to the
+recently described type VII secretion systems [37,38], ESX-1 is
+one of the five ESX systems in M. tuberculosis, designated ESX-1 to
+ESX-5, that is well known for its involvement in virulence and
+specific immune responses [39]. Indeed, M. tuberculosis, M. bovis
+and/or M. marinum mutants lacking an intact ESX-1 secretion
+system or its substrates have been shown to be attenuated in
+cultured macrophages and animal models of infection, thereby
+exhibiting defects in cell to cell spread, altered cytokine profiles
+[23,26,40–42] or phagosome maturation arrest [43]. Furthermore,
+it has been suggested that ESAT-6 secreted by M. marinum could
+play a direct role in producing pores in membranes of the vacuoles
+containing mycobacteria, facilitating the escape of M. marinum
+PLoS Pathogens | www.plospathogens.org
+from the vacuole to the cytosol and cell to cell spread [44]. Similar
+observations were made with purified ESAT-6 from M. tuberculosis
+that destabilized and lysed artificial lipid bilayers and liposomes
+[26,45].
+A more distantly related ESX-1 system is also present in M.
+smegmatis, where it is thought to serve as a putative conjugation
+system [46]. As M. smegmatis is an avirulent, saprophytic and fast-
+growing mycobacterium that did not show any phagosomal
+translocation in our assay, it is possible that ESAT-6 and CFP-10
+from M. smegmatis, which share only 60–70% amino acid identities
+with their homologues from M. tuberculosis might not fulfill the
+same function(s) and/or might miss potential interaction partners.
+Inspection of available genome data showed that M. smegmatis is
+not the only non-pathogenic fast-growing mycobacterium carrying
+an orthologous ESX-1 system. Other species, such as Mycobacterium
+vanbaalenii (GenBank: CP000511), Mycobacterium gilvum (CP000656),
+Mycobacterium sp. JLS (GenBank: CP000580), Mycobacterium sp.
+KMS (GenBank: CP000518) and Mycobacterium sp. MCS (Gen-
+Bank: CP000384) also encode ESX-1 systems that resemble ESX-
+1 in M. tuberculosis in gene content and gene order. In contrast,
+these fast-growing mycobacterial species lack orthologs of the
+EspACD locus that in M. tuberculosis is involved in the regulation of
+ESX-1 mediated virulence [47–50]. As the EspACD locus is
+present in M. marinum, M. leprae, and M. tuberculosis, which have all
+been described as translocation-proficient mycobacteria [6,24,25],
+it might well be that phagosomal rupture requires interaction of
+ESX-1 and EspACD proteins. The CCF-4 based experimental
+approach presented here will be helpful to investigate this question
+in the near future.
+We show that mycobacterial phagosomal rupture precedes host
+cell death (Figures 4, 5, S8 and S9). Using necrosis markers, like
+propidium iodide we found that infected host cells harboring
+cytoplasmic bacteria tested positive for necrosis within one to two
+days upon FRET signal switch, however cells appeared as ‘‘empty
+bags’’ at the very late time points complicating the interpretation
+of the results. Flow cytometry confirmed that most of M. tuberculosis
+and BCG::RD1 infected cells stained positively for necrosis and/or
+apoptosis markers, whereas this effect was substantially reduced for
+infection with M. tuberculosisDRD1 and BCG (Figures 4B, S6).
+Triggering cell death in infected macrophages is in agreement with
+studies suggesting the role of the ESX-1 system during this event
+[24,26,51]. Independent studies have investigated the different
+mechanisms of host cell death that may have an impact on
+triggering the immune response [52]. Depending on the individual
+cell cycle of each of the involved bacteria, it might be sufficient if
+only a few bacteria become cytosolic to induce the initiation of cell
+death supporting the hypothesis of Fortune and Rubin on
+phagosomal escape of M. tuberculosis, who suggested that the
+cytosol might only be a brief stop on the way to escape from the
+intracellular environment altogether [10]. Importantly, in many
+hosts, large numbers of bacteria have been found to be
+extracellular, such as those found in necrotic caseous lesions.
+Thus, the paradigm of intracellular growth might represent only a
+part of the life cycle of the infectious organisms [10]. Such a
+scenario would also explain why only a certain percentage of
+bacteria was previously found in the cytosol by EM and other
+techniques due to the experimental procedures.
+In conclusion, our presented data on the ESX-1-dependent
+potential of M. marinum, BCG::RD1 and M. tuberculosis to change
+the FRET signal in an ESX-1-dependent manner is in excellent
+agreement with previous studies that have suggested an involve-
+ment of ESAT-6 in membrane and/or cell lysis. The similarities
+with the FRET changes caused by IpaB-secreting Shigella flexneri
+[11,53] suggest that these mycobacterial strains also gain cytosolic
+9
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+Before use, cells were washed twice with fresh medium. M.
+tuberculosis and BCG strains were grown to mid-log phase in 7H9
+containing albumin dextrose catalase (ADC, Difco) medium at
+37uC. Cultures were harvested, washed, resuspended in PBS and
+gently sonicated to avoid clumping. The concentration of each
+strain was determined by OD600 measurement. Then PMA-
+differentiated THP-1 cells were infected with M. tuberculosis and
+BCG suspensions at a MOI of 1:1 in RPMI medium during for
+2 h at 37uC with 5% CO2. After 2 h, the medium was removed
+and cells were washed 3 times to remove extracellular bacteria
+before the addition of fresh medium. Time course measurements
+evaluating phagosomal rupture were done at days 3, 4, 5, 6, 7 and
+10.
+M. marinum strains were grown to mid-log phase in 7H9
+containing ADC at 30uC. Cultures were harvested, washed,
+resuspended in PBS and then filtered though a syringe. The
+concentration of each strain was determined by OD600
+measurement. Then PMA-differentiated THP-1 cells were infect-
+ed with M. marinum suspensions at an MOI of 1:1 in EM medium
+(120 mM NaCl, 7 mM KCl, 1.8 mM CaCl2, 0.8 mM MgCl2,
+5 mM glucose and 25 mM Hepes at pH 7.3) for 2 h at 30uC.
+After 2 h, the medium was removed and cells were washed 3 times
+to remove extracellular bacteria before the addition of fresh EM
+medium containing Hepes and 10% FBS. Time course measure-
+ments to monitor the M. mariunum phagosomal rupture were done
+at day 0, 1 and 2 to monitor the M. mariunum phagosomal rupture.
+access via rupture and disassembly of phagosomal membranes, but
+at later stages of infection. However, taking into consideration that
+the reported ESX-1-dependent type I interferon response to
+infection with M. tuberculosis occurs already 24 h post infection
+[33], it is plausible that rupture of the phagosomal membrane is
+preceded and/or initiated by pore-forming activity of ESAT-6,
+which might allow small signalling molecules such as cyclic
+diadenosine monophosphate (c-di-AMP) [54] or other PAMPs to
+translocate prior to the escape of entire bacteria and thereby
+trigger an early cytosolic host response. In any case, the ESX-1
+mediated access to the cytosol seems to represent a major switch
+for many cellular parameters and the resulting immune responses
+[39,55], which are thus substantially different between BCG and
+M. tuberculosis. Hence, infection experiments using BCG as a model
+organism might have the disadvantage of potentially missing out
+on this part of cellular responses that are linked to the cytosolic
+access of the bacteria. The BCG::RD1 strain seems to represent a
+good compromise, as it is much less virulent than M. tuberculosis,
+but due to the access to the cytosol still elicits ESAT-6 specific
+immune responses similar in quality and quantity to M. tuberculosis
+[9]. This finding seems also to be an important feature for the
+enhanced protective efficacy of BCG::RD1 or other ESX-1
+complemented vaccine strains relative to BCG alone [27,56]. In
+a more practical sense, our findings have direct relevance for the
+design of new vaccines and the potential development of new
+therapeutic intervention strategies that might target the ESX-1
+secretion system. It is clear from our study that a more effective
+vaccine strain should have the capacity to access to the cytosol of
+target cells in order to induce the series of immunologic responses
+ordinary BCG is unable to induce. A potential combination of the
+properties of BCG and M. marinum might represent one novel
+route to explore. Finally, the presented CCF-4 assay might also
+represent a powerful new system that can be automated for cell-
+based screening of larger compound libraries [57] in order to
+identify molecules that can block phagosomal rupture and thereby
+a whole series of events that are linked to the pathogenicity of one
+of the most deadly pathogens of mankind.
+Shigella flexneri and Salmonella typhimurium infection
+Ampicilline-resistant bacteria were incubated overnight at 37uC
+with shaking, diluted 1/100 in BTCS (for Shigella M90T-AfaI) or
+LB broth (for Salmonella typhimurium), and incubated in the same
+conditions for 2,25 h. The cultures were washed with PBS.
+Salmonella typhimurium and Shigella flexneri were incubated with
+0.1 mg/ml beta-lactamase (Sigma) or 0.1 mg/ml Atto594 beta-
+lactamase, respectively, for 10 min. After PBS washing, cultures
+were diluted in 10% FBS-containing DMEM/F12 (Gibco) and
+added to the cells at a MOI of 100 at 37uC.
+Materials and Methods
+Labelling of soluble beta-lactamase
+Labelling of beta-lactamase (Sigma) was obtained using Atto594
+protein labelling kit (Fluka).
+Bacterial strains, growth conditions
+Wildtype and mutant strains of M. tuberculosis (H37Rv), M. bovis
+BCG Pasteur 1173P2, M. marinum MVU, M. marinum M Dsred and
+M. smegmatis (mc2 155) were grown in 7H9 liquid medium (Difco)
+supplemented with albumin-dextrose-catalase (ADC, Difco) or on
+solid Middlebrook 7H11 medium (Difco) supplemented with oleic
+acid-albumin-dextrose-catalase (OADC). With the exception of M.
+marinum, which was grown at 30uC, all other strains were
+cultivated at 37uC. M. tuberculosis or M. marinum heat killed strains
+were obtained by heating the sample at 95uC for 30 min. PFA-
+fixed M. tuberculosis or M. marinum bacteria were obtained after
+incubation with PFA 4% for 30 min. If required, the media were
+supplemented with 20 mg/ml of kanamycin or 50 mg/ml of
+hygromycin. Shigella flexneri (M90T-AfaI) was grown in BTCS
+and Salmonella typhimurium was grown in LB broth.
+CCF-4 assay to monitor mycobacterial vacuolar rupture
+At the successive stages of the time course measurements, a mix
+containing 50 mM CCF-4 substrate (Invitrogen) in EM containing
+2.5 mM probenicid was added for 2 h at RT in the dark. Cells
+were washed with PBS containing 2.5 mM probenicid before fixing
+with PFA 4% for 30 min at RT in the dark. Cells were washed
+before performing directly fluorescence imaging or additional
+cellular staining.
+Fluorescent tools and fluorescence imaging
+The necrotic marker propidium iodide (Fluka) was used just
+before fixation for 5 minutes at 2 mg/ml in PBS in the dark. The
+cell membrane marker WGA 647 (Invitrogen) was used after
+fixation at 2 mg/ml in PBS in the dark for 30 min. Samples were
+imaged using an automated inverted fluorescent widefield
+microscope Nikon Ti with 20X or 40X objective driven by
+Metamorph. Picture acquisition was achieved randomly and
+automatically for all measurements of this study on 36 to 49 fields
+per condition. Samples were excited at 405 nm, and emission was
+followed to determine the 450/535 nm intensity ratio. Automated
+image analysis including cell segmentation and quantification was
+Mycobacterial infections
+The human pro-monocytic cell line THP-1 was maintained in
+RPMI 1640 glutamax and 10% heat-inactivated fetal bovine
+serum (FBS) at 37uC under an atmosphere containing 5% CO2.
+For differentiation into macrophages, cells were plated into 96-well
+Greiner plates that work for fluorescence microscopy (3x104 cells/
+well) and treated with 20 ng/ml of PMA (Sigma) for 72 h or were
+seeded into 24-well plates for flow cytometry (5x105 cells/well).
+PLoS Pathogens | www.plospathogens.org
+10
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+achieved using dedicated journals written for Metamorph [11].
+The used Metamorph journals are available upon request.
+Induction of cell death
+Staurosporine (Sigma), cycloheximide (Sigma) and TNF-a (RD
+systems) were used for inducing apoptosis whereas concanavalin A
+(Sigma) and H2O2 (Sigma) were used for inducing necrosis.
+Flow cytometry analysis
+Two different flow cytometry assays were performed to evaluate
+cell death caused by different M. tuberculosis and BCG strains at
+later timepoints of infection. THP-1 cells were labeled with FLICA
+Poly-Caspases (SR-VAD-FMK) marker (Immunochemistry Tech-
+nologies), which detects apoptotic cells, and LIVE/DEAD Pacific
+Blue Fixable Dead Cell Stain Kit (Invitrogen), which detects
+necrotic cells, according to the manufacturer recommendations.
+The stained cells were fixed overnight with 4% PFA and
+cytometric data were acquired on a Cyan system, using the
+Summit software (Beckman Coulter, Villepinte, France). Data
+were analyzed with FlowJo software (Tree Star, OR, USA). A
+parallel experiment was performed for BCG and M. tuberculosis
+strains using 7-AAD staining (BD-Pharmingen) according to the
+manufacturer’s recommendations. The stained cells were fixed
+overnight with 4% PFA and analyzed using a FACS ARIA III flow
+cytometer and FlowJo software (Tree Star, OR, USA).
+Supporting Information
+Time course of CCF-4 FRET signals in THP-1
+macrophages treated with soluble Atto594-lactamase,
+infected by M90T-AfaI Shigella flexneri or DsRed-
+Salmonella typhimurium. THP-1 cells were incubated with
+Atto594-lactamase 100 mg/ml (A,B), infected by Atto594-lacta-
+mase loaded Shigella flexneri (C,D) or infected with DsRed-Salmonella
+typhimurium (E,F) for the indicated time and then loaded with the
+CCF-4 molecule for 2 h. After PFA fixation, cells were imaged on
+a fluorescence widefield microscope (Nikon Ti) with a 40X
+objective (A,C,E). Picture acquisition was achieved randomly and
+automatically for each condition on 49 fields in duplicates and
+further 450/535 nm intensity ratio measurements (B,D,F) were
+obtained through analysis by specialized algorithms on Meta-
+morph software. The plots were representative of 3 independent
+experiments.
+(TIF)
+Figure S1
+Biochemical analysis
+M. tuberculosis strains or M. bovis BCG strains were grown in
+liquid medium, at pH 7 for 7 days and 4 days for M. marinum
+strains. Cultures were harvested by centrifugation. The superna-
+tant was recovered after filtration through 0.22 mm pore size filters
+(Millipore) and protease inhibitors were added (Complete EDTA
+Free; Roche Diagnostics GmbH, Mannheim, Germany). The cell
+pellet was washed twice and resuspended in PBS. Cells were
+ruptured by shaking with 106-mm acid washed-glass beads (Sigma)
+for 8 min at speed 30 in a Mill Mixer (MM300; Retsch GmbH,
+Haan, Germany). The whole cell lysate consisting of the
+supernatant fraction recovered after filtration and debris were
+removed by centrifugation at 17000 g for 30 min. Total protein
+concentrations were determined by using Nanodrop. Samples
+were subjected to NuPAGE Novex Bis-Tris pre-cast gel (12%)
+(Invitrogen) before blotting on iBlot Gel Transfer Stacks Mini
+Nitrocellulose (Invitrogen) with iBlot Dry Blotting System.
+Immunoblotting was performed with mouse monoclonal anti-
+ESAT6 antibody (Hyb 76-8, Antibodyshop) and mouse monoclo-
+nal anti-GroEL2 antibody as lysis control as described [58].
+Antibodies against GroEL2 were received as part of National
+Institutes of Health, National Institute of Allergy and Infectious
+Diseases contract entitled ‘‘Tuberculosis Vaccine Testing and
+Research Materials,’’ awarded to Colorado State University.
+Figure S2 Different mycobacteria strains are able to
+cleave the CCF-4 probe in vitro. M. marinum, M. smegmatis (A),
+BCG, M. tuberculosis (B), BCG::RD1, BCG::RD1-ESAT-6D84-95,
+BCG::pYUB412, M. tuberculosisDRD1 and M. tuberculosis
+DRD1::RD1 (C) were put in contact with CCF-4 for 12 h at
+37uC. Then, emission spectra from 425 to 550 nm were obtained
+upon 405 nm excitation. Soluble lactamase 1 mg/ml was used as
+a positive control (A). Standard deviation was calculated based on
+2 independent experiments
+(TIF)
+Figure S3 Cytosolic access of M. marinum depends on
+secretion of ESAT-6/CFP-10 effectors at early time
+points of infection. THP-1 cells were infected with M. marinum
+heat killed, M. marinum or M. marinum MVU at a MOI of 1 for 2 h
+(A,D), 5 h (B,E) or 20 h (C,F). Cells were then loaded with the
+CCF-4 molecule for 2 h. After PFA fixation, cells were imaged on
+a fluorescence widefield microscope (Nikon Ti) with a 40X
+objective (A,B,C). Picture acquisition was achieved randomly and
+automatically for each condition on 36 fields and further 450/
+535 nm intensity ratio measurements (D,E,F) were obtained
+through analysis by specialized algorithm on Metamorph software.
+Experiments were repeated 3 times with similar results.
+(TIF)
+Determination of beta-lactamase activity in vitro
+Beta-lactamase activity was assayed spectrophotometrically with
+100 mM nitrocefin (Calbiochem) in 0.1 M sodium phosphate
+buffer at 37uC. Hydrolysis was monitored at 486 nm using a UV
+spectrophotometer. The molecular extinction coefficient of
+hydrolyzed nitrocefin at 486 nm is 20500 M21cm21. The rate
+of nitrocefin hydrolysis by each protein was expressed as
+micrograms of nitrocefin hydrolysed per minute per microgram
+of protein.
+Fluorimetric assays were performed in 1 ml PBS containing
+50 mg/ml porcine esterase liver extracts (Sigma) and 100 nM
+CCF-4-AM liveblazer (Invitrogen). The esterase was added to
+cleave off the –AM ester moieties yielding fluorescent CCF-4.
+Bacteria were washed with PBS and added to the mixture for 12 h
+at 37uC in the dark. Soluble lactamase 1 mg/ml was used as a
+positive control. Fluorescence intensity measurements were then
+performed using PTI Quantamaster fluorimeter in 1ml quartz
+cuvettes.
+PLoS Pathogens | www.plospathogens.org
+Figure S4 In vitro expression and secretion of ESAT-6 in
+different mycobacterial strains. Cell pellets and superna-
+tants were subjected to SDS-PAGE and tested by Western blotting
+using a monoclonal anti-ESAT6 antibody or an anti-Groel2
+antibody as lysis control. M. marinum MVU, M. marinum M DsRed;
+M. tuberculosis H37Rv (A), BCG::pYUB, BCG::RD1, BCG::RD1-
+ESAT-6D84-95, M. tuberculosis H37Rv, M. tuberculosisDRD1, M.
+tuberculosisDRD1::RD1 (B).
+(TIF)
+Figure S5 Time course of CCF-4 FRET signals in
+uninfected and PFA killed M. tuberculosis treated
+THP-1 cells. THP-1 cells were infected with M. tuberculosis
+DsRed PFA killed (A,C) or not infected (B,D) at a MOI of 1 for the
+indicated time and then loaded with the CCF-4 molecule for 2 h.
+After PFA fixation, cells were imaged on a fluorescence widefield
+microscope (Nikon Ti) with a 40X objective (A,B). Picture
+11
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+acquisition was achieved randomly and automatically for each
+condition on 49 fields and further 450/535 nm intensity ratio
+measurements (C,D) were obtained through analysis by specialized
+algorithms on Metamorph software. The plots were representative
+of 3 independent experiments.
+(TIF)
+non infected (control) or infected with BCG, BCG::RD1, M.
+tuberculosis or M. tuberculosisDRD1 at a MOI of 1 for 2 h. Then,
+necrosis was induced using 100 mg/ml concanavalin A for 24 h.
+Cells were then loaded with CCF-4 molecule for 2 h. After PFA
+fixation, cells are imaged by fluorescent widefield microscope
+Nikon Ti with 40X objective (A). Picture acquisition was achieved
+randomly for each condition on 49 fields and further 450/535 nm
+intensity ratio measurement (B) was obtained through analysis by a
+specialized algorithm on Metamorph software.
+(TIF)
+Evaluation of cell death in THP-1 cells by
+cytofluorometry. Cytofluorometry analysis of THP-1 cells
+infected with wild-type M. tuberculosis and BCG strains at day 5
+post-infection. THP-1 cells were stained with 7-AAD (BD
+Pharmingen) (necrosis).
+(TIF)
+Figure S6
+Figure S9 Necrosis induction in BCG or M. tuberculosis
+infected cells does not result in bacterial contact with
+host cytoplasm. THP-1 cells were non infected (control) or
+infected with BCG DsRed or M. tuberculosis DsRed at a MOI of 1
+for 2 h. Then, necrosis was induced using 100 mg/ml concanav-
+alin A for 24 h. Cells were then loaded with CCF-4 molecule for
+2 h. After PFA fixation, cells were imaged by fluorescence
+widefield microscope Nikon Ti with 40X objective.
+(TIF)
+Apoptosis and necrosis do not influence the
+cleavage of the CCF-4 probe in THP-1 macrophages.
+THP-1 cells were subjected to different treatments for 18 h in
+order to induce either apoptosis or necrosis. Apoptosis was
+induced using 4 mM staurosporine, 5 mg/ml cycloheximide or
+200 ng/ml TNF-a. Necrosis was induced using 0.1% H2O2,
+100 mg/ml concanavalin A or cycloheximide/TNF-a combina-
+tion. Cells were then loaded with the CCF-4 probe for 2 h. After
+PFA fixation, cells were imaged on a fluorescence widefield
+microscope (Nikon Ti) with a 40X objective (A). Picture
+acquisition was achieved randomly and automatically for each
+condition on 49 fields and further 450/535 nm intensity ratio
+measurements (B) were obtained through analysis by specialized
+algorithms on Metamorph software
+(TIF)
+Figure S7
+Acknowledgments
+We would like to thank Alexandre Pawlik for help with the figure layout.
+Author Contributions
+Conceived and designed the experiments: RS AB LM RB JE. Performed
+the experiments: RS AB JL LM. Analyzed the data: RS AB JL LM RB JE.
+Contributed reagents/materials/analysis tools: WB. Wrote the paper: RS
+AB RB JE. There are no other additional contributions.
+" These authors are joint senior authors on this work.
+Figure S8 Necrosis induction does not influence the
+subcellular localization of mycobacteria. THP-1 cells were
+References
+1. Kumar D, Rao KV (2011) Regulation between survival, persistence, and
+elimination of intracellular mycobacteria: a nested equilibrium of delicate
+balances. Microbes Infect 13: 121–133.
+2. Koul A, Herget T, Klebl B, Ullrich A (2004) Interplay between mycobacteria
+and host signalling pathways. Nat Rev Microbiol 2: 189–202.
+3. Ehrt S, Schnappinger D (2009) Mycobacterial survival strategies in the
+phagosome: defence against host stresses. Cell Microbiol 11: 1170–1178.
+4. Vergne I, Chua J, Singh SB, Deretic V (2004) Cell biology of Mycobacterium
+tuberculosis phagosome. Annu Rev Cell Dev Biol 20: 367–394.
+5. Russell DG (2003) Phagosomes, fatty acids and tuberculosis. Nat Cell Biol 5:
+776–778.
+6. van der Wel N, Hava D, Houben D, Fluitsma D, van Zon M, et al. (2007) M.
+tuberculosis and M. leprae translocate from the phagolysosome to the cytosol in
+myeloid cells. Cell 129: 1287–1298.
+7. Mahairas GG, Sabo PJ, Hickey MJ, Singh DC, Stover CK (1996) Molecular
+analysis of genetic differences between Mycobacterium bovis BCG and virulent M.
+bovis. J Bacteriol 178: 1274–1282.
+8. Brosch R, Gordon SV, Garnier T, Eiglmeier K, Frigui W, et al. (2007) Genome
+plasticity of BCG and impact on vaccine efficacy. Proc Natl Acad Sci U S A 104:
+5596–5601.
+9. Majlessi L, Brodin P, Brosch R, Rojas MJ, Khun H, et al. (2005) Influence of
+ESAT-6 secretion system 1 (RD1) of Mycobacterium tuberculosis on the interaction
+between mycobacteria and the host immune system. J Immunol 174:
+3570–3579.
+10. Fortune SM, Rubin EJ (2007) The complex relationship between mycobacteria
+and macrophages: it’s not all bliss. Cell Host Microbe 2: 5–6.
+11. Ray K, Bobard A, Danckaert A, Paz-Haftel I, Clair C, et al. (2010) Tracking the
+dynamic interplay between bacterial and host factors during pathogen-induced
+vacuole rupture in real time. Cell Microbiol 12: 545–556.
+12. Nothelfer K, Dias Rodrigues C, Bobard A, Phalipon A, Enninga J (2011)
+Monitoring Shigella flexneri vacuolar escape by flow cytometry. Virulence 2:
+54–57.
+13. Charpentier X, Oswald E (2004) Identification of the secretion and translocation
+domain of the enteropathogenic and enterohemorrhagic Escherichia coli effector
+Cif, using TEM-1 beta-lactamase as a new fluorescence-based reporter.
+J Bacteriol 186: 5486–5495.
+14. Mills E, Baruch K, Charpentier X, Kobi S, Rosenshine I (2008) Real-time
+analysis of effector translocation by the type III secretion system of
+enteropathogenic Escherichia coli. Cell Host Microbe 3: 104–113.
+15. Iland CN (1946) The effect of penicillin on the tubercle bacillus. J Pathol
+Bacteriol 58: 495–500.
+PLoS Pathogens | www.plospathogens.org
+16. Voladri RK, Lakey DL, Hennigan SH, Menzies BE, Edwards KM, et al.
+(1998) Recombinant expression and characterization of the major beta-
+lactamase of Mycobacterium tuberculosis. Antimicrob Agents Chemother 42:
+1375–1381.
+17. Utrup LJ, Moore TD, Actor P, Poupard JA (1995) Susceptibilities of
+nontuberculosis mycobacterial species to amoxicillin-clavulanic acid alone and
+in combination with antimycobacterial agents. Antimicrob Agents Chemother
+39: 1454–1457.
+18. Malen H, Pathak S, Softeland T, de Souza GA, Wiker HG (2010) Definition of
+novel cell envelope associated proteins in Triton X-114 extracts of Mycobacterium
+tuberculosis H37Rv. BMC Microbiol 10: 132.
+19. Sutcliffe IC, Harrington DJ (2004) Lipoproteins of Mycobacterium tuberculosis: an
+abundant and functionally diverse class of cell envelope components. FEMS
+Microbiol Rev 28: 645–659.
+20. McDonough JA, McCann JR, Tekippe EM, Silverman JS, Rigel NW, et al.
+(2008) Identification of functional Tat signal sequences in Mycobacterium
+tuberculosis proteins. J Bacteriol 190: 6428–6438.
+21. Flores AR, Parsons LM, Pavelka MS, Jr. (2005) Genetic analysis of the beta-
+lactamases of Mycobacterium tuberculosis and Mycobacterium smegmatis and suscepti-
+bility to beta-lactam antibiotics. Microbiology 151: 521–532.
+22. Abdallah AM, Verboom T, Weerdenburg EM, Gey van Pittius NC,
+Mahasha PW, et al. (2009) PPE and PE_PGRS proteins of Mycobacterium
+marinum are transported via the type VII secretion system ESX-5. Mol Microbiol
+73: 329–340.
+23. Gao LY, Guo S, McLaughlin B, Morisaki H, Engel JN, et al. (2004) A
+mycobacterial virulence gene cluster extending RD1 is required for cytolysis,
+bacterial spreading and ESAT-6 secretion. Mol Microbiol 53: 1677–1693.
+24. Abdallah AM, Bestebroer J, Savage ND, de Punder K, van Zon M, et al. (2011)
+Mycobacterial secretion systems ESX-1 and ESX-5 play distinct roles in host cell
+death and inflammasome activation. J Immunol 187: 4744–4753.
+25. Stamm LM, Morisaki JH, Gao LY, Jeng RL, McDonald KL, et al. (2003)
+Mycobacterium marinum escapes from phagosomes and is propelled by actin-based
+motility. J Exp Med 198: 1361–1368.
+26. Hsu T, Hingley-Wilson SM, Chen B, Chen M, Dai AZ, et al. (2003) The
+primary mechanism of attenuation of bacillus Calmette-Guerin is a loss of
+secreted lytic function required for invasion of lung interstitial tissue. Proc Natl
+Acad Sci U S A 100: 12420–12425.
+27. Pym AS, Brodin P, Majlessi L, Brosch R, Demangel C, et al. (2003)
+Recombinant BCG exporting ESAT-6 confers enhanced protection against
+tuberculosis. Nat Med 9: 533–539.
+12
+February 2012 | Volume 8 | Issue 2 | e1002507
+Mtb Phagosomal Rupture Induces Host Cell Death
+28. Brodin P, Majlessi L, Marsollier L, de Jonge MI, Bottai D, et al. (2006)
+Dissection of ESAT-6 system 1 of Mycobacterium tuberculosis and impact on
+immunogenicity and virulence. Infect Immun 74: 88–98.
+29. Leake ES, Myrvik QN, Wright MJ (1984) Phagosomal membranes of
+Mycobacterium bovis BCG-immune alveolar macrophages are resistant to
+disruption by Mycobacterium tuberculosis H37Rv. Infect Immun 45: 443–446.
+30. Myrvik QN, Leake ES, Wright MJ (1984) Disruption of phagosomal membranes
+of normal alveolar macrophages by the H37Rv strain of Mycobacterium tuberculosis.
+A correlate of virulence. Am Rev Respir Dis 129: 322–328.
+31. McDonough KA, Kress Y, Bloom BR (1993) Pathogenesis of tuberculosis:
+interaction of Mycobacterium tuberculosis with macrophages. Infect Immun 61:
+2763–2773.
+32. Kaufmann SH (2001) How can immunology contribute to the control of
+tuberculosis? Nat Rev Immunol 1: 20–30.
+33. Stanley SA, Johndrow JE, Manzanillo P, Cox JS (2007) The Type I IFN
+Response to Infection with Mycobacterium tuberculosis Requires ESX-1-Mediated
+Secretion and Contributes to Pathogenesis. J Immunol 178: 3143–3152.
+34. Mishra BB, Moura-Alves P, Sonawane A, Hacohen N, Griffiths G, et al. (2010)
+Mycobacterium tuberculosis protein ESAT-6 is a potent activator of the NLRP3/
+ASC inflammasome. Cell Microbiol 12: 1046–1063.
+35. Hagedorn M, Rohde KH, Russell DG, Soldati T (2009) Infection by tubercular
+mycobacteria is spread by nonlytic ejection from their amoeba hosts. Science
+323: 1729–1733.
+36. Mostowy S, Bonazzi M, Hamon MA, Tham TN, Mallet A, et al. (2010)
+Entrapment of intracytosolic bacteria by septin cage-like structures. Cell Host
+Microbe 8: 433–444.
+37. Abdallah A, Gey van Pittius N, Champion P, Cox J, Luirink J, et al. (2007) Type
+VII secretion–mycobacteria show the way. Nat Rev Microbiol 5: 883–891.
+38. Bitter W, Houben EN, Bottai D, Brodin P, Brown EJ, et al. (2009) Systematic
+genetic nomenclature for type VII secretion systems. PLoS Pathog 5: e1000507.
+39. Simeone R, Bottai D, Brosch R (2009) ESX/type VII secretion systems and their
+role in host-pathogen interaction. Curr Opin Microbiol 12: 4–10.
+40. Stanley SA, Raghavan S, Hwang WW, Cox JS (2003) Acute infection and
+macrophage subversion by Mycobacterium tuberculosis require a specialized
+secretion system. Proc Natl Acad Sci U S A 100: 13001–13006.
+41. Guinn KI, Hickey MJ, Mathur SK, Zakel KL, Grotzke JE, et al. (2004)
+Individual RD1-region genes are required for export of ESAT-6/CFP-10 and
+for virulence of Mycobacterium tuberculosis. Mol Microbiol 51: 359–370.
+42. Volkman HE, Clay H, Beery D, Chang JC, Sherman DR, et al. (2004)
+Tuberculous granuloma formation is enhanced by a mycobacterium virulence
+determinant. PLoS Biol 2: e367.
+43. Tan T, Lee WL, Alexander DC, Grinstein S, Liu J (2006) The ESAT-6/CFP-10
+secretion system of Mycobacterium marinum modulates phagosome maturation. Cell
+Microbiol 8: 1417–1429.
+44. Smith J, Manoranjan J, Pan M, Bohsali A, Xu J, et al. (2008) Evidence for pore
+formation in host cell membranes by ESX-1-secreted ESAT-6 and its role in
+Mycobacterium marinum escape from the vacuole. Infect Immun 76: 5478–5487.
+PLoS Pathogens | www.plospathogens.org
+45. de Jonge MI, Pehau-Arnaudet G, Fretz MM, Romain F, Bottai D, et al. (2007)
+ESAT-6 from Mycobacterium tuberculosis dissociates from its putative chaperone
+CFP-10 under acidic conditions and exhibits membrane-lysing activity.
+J Bacteriol 189: 6028–6034.
+46. Coros A, Callahan B, Battaglioli E, Derbyshire KM (2008) The specialized
+secretory apparatus ESX-1 is essential for DNA transfer in Mycobacterium
+smegmatis. Mol Microbiol 69: 794–808.
+47. Frigui W, Bottai D, Majlessi L, Monot M, Josselin E, et al. (2008) Control of M.
+tuberculosis ESAT-6 secretion and specific T cell recognition by PhoP. PLoS
+Pathog 4: e33.
+48. Garces A, Atmakuri K, Chase MR, Woodworth JS, Krastins B, et al. (2010)
+EspA acts as a critical mediator of ESX1-dependent virulence in Mycobacterium
+tuberculosis by affecting bacterial cell wall integrity. PLoS Pathog 6: e1000957.
+49. Rosenberg OS, Dovey C, Tempesta M, Robbins RA, Finer-Moore JS, et al.
+(2011) EspR, a key regulator of Mycobacterium tuberculosis virulence, adopts a
+unique dimeric structure among helix-turn-helix proteins. Proc Natl Acad
+Sci U S A 108: 13450–13455.
+50. Blasco B, Stenta M, Alonso-Sarduy L, Dietler G, Peraro MD, et al. (2011)
+Atypical DNA recognition mechanism used by the EspR virulence regulator of
+Mycobacterium tuberculosis. Mol Microbiol 82: 251–264.
+51. Kaku T, Kawamura I, Uchiyama R, Kurenuma T, Mitsuyama M (2007) RD1
+region in mycobacterial genome is involved in the induction of necrosis in
+infected RAW264 cells via mitochondrial membrane damage and ATP
+depletion. FEMS Microbiol Lett 274: 189–195.
+52. Behar SM, Divangahi M, Remold HG (2010) Evasion of innate immunity by
+Mycobacterium tuberculosis: is death an exit strategy? Nat Rev Microbiol 8:
+668–674.
+53. Ray K, Marteyn B, Sansonetti PJ, Tang CM (2009) Life on the inside: the
+intracellular lifestyle of cytosolic bacteria. Nat Rev Microbiol 7: 333–340.
+54. Woodward JJ, Iavarone AT, Portnoy DA (2010) c-di-AMP secreted by
+intracellular Listeria monocytogenes activates a host type I interferon response.
+Science 328: 1703–1705.
+55. Gordon SV, Bottai D, Simeone R, Stinear TP, Brosch R (2009) Pathogenicity in
+the tubercle bacillus: molecular and evolutionary determinants. Bioessays 31:
+378–388.
+56. Brodin P, Majlessi L, Brosch R, Smith D, Bancroft G, et al. (2004) Enhanced
+protection against tuberculosis by vaccination with recombinant Mycobacterium
+microti vaccine that induces T cell immunity against region of difference 1
+antigens. J Infect Dis 190: 115–122.
+57. Christophe T, Jackson M, Jeon HK, Fenistein D, Contreras-Dominguez M,
+et al. (2009) High content screening identifies decaprenyl-phosphoribose 29
+epimerase as a target for intracellular antimycobacterial inhibitors. PLoS Pathog
+5: e1000645.
+58. Bottai D, Majlessi L, Simeone R, Frigui W, Laurent C, et al. (2011) ESAT-6
+secretion-independent impact of ESX-1 genes espF and espG1 on virulence of
+Mycobacterium tuberculosis. J Infect Dis 203: 1155–1164.
+13
+February 2012 | Volume 8 | Issue 2 | e1002507

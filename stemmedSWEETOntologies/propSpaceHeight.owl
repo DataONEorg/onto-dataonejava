@@ -44,175 +44,175 @@
      <owl:imports rdf:resource="&space;"/>
   </owl:Ontology>
   
-  <owl:Class rdf:about="#HeightRang">
-    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+  <owl:Class rdf:about="#heightrang">
+    <rdfs:subClassOf rdf:resource="&quan;#intervalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
-        <owl:someValuesFrom rdf:resource="#Height"/>
+        <owl:onProperty rdf:resource="&screla;#rangeof"/>
+        <owl:someValuesFrom rdf:resource="#height"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#HeightRange_km">
-    <rdfs:subClassOf rdf:resource="#HeightRang"/>
+    <rdfs:subClassOf rdf:resource="#heightrang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#kilomet"/>
-        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
 <!-- Height -->
-  <owl:Class rdf:about="#Altitud">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#altitud">
+    <rdfs:subClassOf rdf:resource="#height"/>
     <rdfs:label>Altitude</rdfs:label>
     <rdfs:comment>A measure (or condition) of height, especially of great height, as a mountain top or aircraft flight level.</rdfs:comment>
     <rdfs:comment>The vertical distance above mean sea level of the ground at the meteorological station.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SignificantHeight">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#significantheight">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BarometricAltitud">
-    <rdfs:subClassOf rdf:resource="#Altitud"/>
+  <owl:Class rdf:about="#barometricaltitud">
+    <rdfs:subClassOf rdf:resource="#altitud"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeopotentialHeight">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#geopotentialheight">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ceil">
-    <rdfs:subClassOf rdf:resource="#VerticalExt"/>
+  <owl:Class rdf:about="#ceil">
+    <rdfs:subClassOf rdf:resource="#verticalext"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EstimatedCeil">
-    <rdfs:subClassOf rdf:resource="#Ceil" />
+  <owl:Class rdf:about="#estimatedceil">
+    <rdfs:subClassOf rdf:resource="#ceil" />
     <rdfs:comment xml:lang="en">After U.S.weather observing practice, the ceiling classification applied to a ceiling height that is determined in any of the following ways: 1) by means of a convective-cloud height diagram or dewpoint formula; 2) from the known heights of unobscured portions of natural landmarks, or objects more than one and one-half nautical miles from any runway of the airport; 3) on the basis of observational experience, provided the sky is not obscured by surface-based hydrometeors or lithometeors, and other guides are lacking or considered unreliable; or 4) determined by ceilometer or ceiling light when the penetration of the light beam is in excess of normal for the particular height and type of layer, or when the elevation angle of the clinometer or ceilometer-detector scanner exceeds 84?.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ScaleHeight">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#scaleheight">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixingHeight">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#mixingheight">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Crest">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#crest">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#UpperLevel">
-    <rdfs:subClassOf rdf:resource="#Level"/>
+  <owl:Class rdf:about="#upperlevel">
+    <rdfs:subClassOf rdf:resource="#level"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Level">
-    <rdfs:subClassOf rdf:resource="#VerticalExt"/>
+  <owl:Class rdf:about="#level">
+    <rdfs:subClassOf rdf:resource="#verticalext"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VerticalExt">
-    <rdfs:subClassOf rdf:resource="&space;#SpatialExt"/>
+  <owl:Class rdf:about="#verticalext">
+    <rdfs:subClassOf rdf:resource="&space;#spatialext"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Elevat">
-    <rdfs:subClassOf rdf:resource="#Height"/>
-    <owl:equivalentClass rdf:resource="#Altitud"/>
+  <owl:Class rdf:about="#elevat">
+    <rdfs:subClassOf rdf:resource="#height"/>
+    <owl:equivalentClass rdf:resource="#altitud"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Freeboard">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#freeboard">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Height">
-    <rdfs:subClassOf rdf:resource="#VerticalExt"/>
-    <rdfs:subClassOf rdf:resource="&xten;#Distanc"/>
+  <owl:Class rdf:about="#height">
+    <rdfs:subClassOf rdf:resource="#verticalext"/>
+    <rdfs:subClassOf rdf:resource="&xten;#distanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FlightLevel">
-    <rdfs:subClassOf rdf:resource="#Altitud" />
+  <owl:Class rdf:about="#flightlevel">
+    <rdfs:subClassOf rdf:resource="#altitud" />
     <rdfs:comment xml:lang="en">In aviation, a Flight Level (FL) is a standard nominal altitude of an aircraft, referenced to a world-wide fixed pressure datum of 1013.25 hPa or the equivalent setting, 29.921 inHg (the average sea-level pressure). It is not necessarily the same as the aircraft's true altitude above mean sea level.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Topographi">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#topographi">
+    <rdfs:subClassOf rdf:resource="#height"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TopographicPromin">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#topographicpromin">
+    <rdfs:subClassOf rdf:resource="#height"/>
     <rdfs:comment>In topography, prominence, also known as autonomous height, relative height or shoulder drop (in America) or prime factor (in Europe), is a concept used in the categorization of hills and mountains, also known as peaks. It is a measure of the independent stature of a summit.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DynamicTopographi">
-    <rdfs:subClassOf rdf:resource="#Topographi"/>
+  <owl:Class rdf:about="#dynamictopographi">
+    <rdfs:subClassOf rdf:resource="#topographi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaStat">
-    <rdfs:subClassOf rdf:resource="#Height"/>
+  <owl:Class rdf:about="#seastat">
+    <rdfs:subClassOf rdf:resource="#height"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&realm;#Ocean"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&realm;#ocean"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Geoid">
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetarySurfaceLevel"/>
+  <owl:Class rdf:about="#geoid">
+    <rdfs:subClassOf rdf:resource="&realm;#planetarysurfacelevel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaLevel">
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetarySurfaceLevel"/>
+  <owl:Class rdf:about="#sealevel">
+    <rdfs:subClassOf rdf:resource="&realm;#planetarysurfacelevel"/>
   </owl:Class>
 
 <!-- Depth -->
-  <owl:Class rdf:about="#DepthRang">
-    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+  <owl:Class rdf:about="#depthrang">
+    <rdfs:subClassOf rdf:resource="&quan;#intervalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
-        <owl:someValuesFrom rdf:resource="#Depth"/>
+        <owl:onProperty rdf:resource="&screla;#rangeof"/>
+        <owl:someValuesFrom rdf:resource="#depth"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#DepthRange_km">
-    <rdfs:subClassOf rdf:resource="#DepthRang"/>
+    <rdfs:subClassOf rdf:resource="#depthrang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#kilomet"/>
-        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Depth">
-    <rdfs:subClassOf rdf:resource="#VerticalExt"/>
-    <rdfs:subClassOf rdf:resource="&xten;#Distanc"/>
+  <owl:Class rdf:about="#depth">
+    <rdfs:subClassOf rdf:resource="#verticalext"/>
+    <rdfs:subClassOf rdf:resource="&xten;#distanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bathymetri">
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetarySurfaceLevel"/>
+  <owl:Class rdf:about="#bathymetri">
+    <rdfs:subClassOf rdf:resource="&realm;#planetarysurfacelevel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DampingDepth">
-    <rdfs:subClassOf rdf:resource="#Depth"/>
+  <owl:Class rdf:about="#dampingdepth">
+    <rdfs:subClassOf rdf:resource="#depth"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drawdown">
-    <rdfs:subClassOf rdf:resource="#Depth"/>
+  <owl:Class rdf:about="#drawdown">
+    <rdfs:subClassOf rdf:resource="#depth"/>
   </owl:Class>
 
 
-  <owl:Class rdf:about="#SkinDepth">
-   <rdfs:subClassOf rdf:resource="#Depth"/>
+  <owl:Class rdf:about="#skindepth">
+   <rdfs:subClassOf rdf:resource="#depth"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SecchiDepth">
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
-    <rdfs:subClassOf rdf:resource="#Depth"/>
+  <owl:Class rdf:about="#secchidepth">
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
+    <rdfs:subClassOf rdf:resource="#depth"/>
     <rdfs:comment xml:lang="en">The Secchi disk is a device used to measure water transparency in open waters of lakes, bays, and the ocean. A pattern is drawn or painted onto a card or acrylic, mounted on a pole or line, and lowered slowly in the water. The depth at which the pattern on the disk is no longer visible is taken as a measure of the transparency of the water. This measure is known as the Secchi depth and is related to water turbidity.</rdfs:comment>
   </owl:Class>
 

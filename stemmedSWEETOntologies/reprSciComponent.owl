@@ -26,87 +26,87 @@
   </owl:Ontology>
 
 <!-- Components -->
-  <owl:Class rdf:about="#Resourc">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#resourc">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sourc">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#sourc">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sink">
-    <rdfs:subClassOf rdf:resource="#Reservoir"/>
+  <owl:Class rdf:about="#sink">
+    <rdfs:subClassOf rdf:resource="#reservoir"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reservoir">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
-    <owl:equivalentClass rdf:resource="#Storag"/>
+  <owl:Class rdf:about="#reservoir">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
+    <owl:equivalentClass rdf:resource="#storag"/>
   </owl:Class>
-  <owl:Class rdf:about="#Storag"/>
+  <owl:Class rdf:about="#storag"/>
 
-  <owl:Class rdf:about="#Compon">
-    <rdfs:subClassOf rdf:resource="&repr;#Dimens"/>
-    <owl:equivalentClass rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#compon">
+    <rdfs:subClassOf rdf:resource="&repr;#dimen"/>
+    <owl:equivalentClass rdf:resource="#systemcompon"/>
   </owl:Class>
-  <owl:Class rdf:about="#SystemCompon"/>
+  <owl:Class rdf:about="#systemcompon"/>
 
-  <owl:Class rdf:about="#Environ">
-    <rdfs:subClassOf rdf:resource="#SystemCompon" />
-  </owl:Class>
-
-  <owl:Class rdf:about="#External">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#environ">
+    <rdfs:subClassOf rdf:resource="#systemcompon" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Input">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#external">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Output">
-    <rdfs:subClassOf rdf:resource="#SystemCompon"/>
+  <owl:Class rdf:about="#input">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
   </owl:Class>
 
-  <comp:Component rdf:about="#Direct">
+  <owl:Class rdf:about="#output">
+    <rdfs:subClassOf rdf:resource="#systemcompon"/>
+  </owl:Class>
+
+  <comp:Component rdf:about="#direct">
   </comp:Component>
 
-  <comp:Component rdf:about="#Indirect">
-    <owl:differentFrom rdf:resource="#Direct"/>
+  <comp:Component rdf:about="#indirect">
+    <owl:differentFrom rdf:resource="#direct"/>
   </comp:Component>
 
-  <comp:Component rdf:about="#Gross">
+  <comp:Component rdf:about="#gross">
   </comp:Component>
 
-  <comp:Component rdf:about="#Net">
+  <comp:Component rdf:about="#net">
   </comp:Component>
 
-  <comp:Component rdf:about="#Sensibl">
+  <comp:Component rdf:about="#sensibl">
   </comp:Component>
 
-  <comp:Component rdf:about="#Internal">
-    <owl:differentFrom rdf:resource="#External" />
+  <comp:Component rdf:about="#internal">
+    <owl:differentFrom rdf:resource="#external" />
   </comp:Component>
 
-  <comp:Component rdf:about="#External">
+  <comp:Component rdf:about="#external">
   </comp:Component>
 
-  <comp:Component rdf:about="#Implicit">
-    <owl:differentFrom rdf:resource="#Explicit" />
+  <comp:Component rdf:about="#implicit">
+    <owl:differentFrom rdf:resource="#explicit" />
   </comp:Component>
 
-  <comp:Component rdf:about="#Explicit">
+  <comp:Component rdf:about="#explicit">
   </comp:Component>
 
-  <comp:Component rdf:about="#Background">
+  <comp:Component rdf:about="#background">
   </comp:Component>
 
-  <comp:Component rdf:about="#Connat">
+  <comp:Component rdf:about="#connat">
   </comp:Component>
 
-  <comp:Component rdf:about="#Segment">
+  <comp:Component rdf:about="#segment">
   </comp:Component>
 
-  <comp:Component rdf:about="#Ambient">
-    <owl:sameAs rdf:resource="#Background" />
+  <comp:Component rdf:about="#ambient">
+    <owl:sameAs rdf:resource="#background" />
   </comp:Component>
 
 </rdf:RDF>

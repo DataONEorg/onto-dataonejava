@@ -36,66 +36,66 @@
      <owl:imports rdf:resource="&screla;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Count">
-    <rdfs:subClassOf rdf:resource="&math;#Discret"/>
+  <owl:Class rdf:about="#count">
+    <rdfs:subClassOf rdf:resource="&math;#discret"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NumberDens">
-    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+  <owl:Class rdf:about="#numberden">
+    <rdfs:subClassOf rdf:resource="&quan;#quantiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perMeterCub"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#permetercub"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fluenc">
-    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+  <owl:Class rdf:about="#fluenc">
+    <rdfs:subClassOf rdf:resource="&quan;#quantiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perMeterSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#permetersquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SunspotNumb">
-    <rdfs:subClassOf rdf:resource="#Count"/>
+  <owl:Class rdf:about="#sunspotnumb">
+    <rdfs:subClassOf rdf:resource="#count"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#measureOf" />
-        <owl:allValuesFrom rdf:resource="&star;#SolarAct"/>
+        <owl:onProperty rdf:resource="&screla;#measureof" />
+        <owl:allValuesFrom rdf:resource="&star;#solaract"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnergyLevel">
-    <rdfs:subClassOf rdf:resource="#Count"/>
+  <owl:Class rdf:about="#energylevel">
+    <rdfs:subClassOf rdf:resource="#count"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Popul">
-    <rdfs:subClassOf rdf:resource="#Count"/>
+  <owl:Class rdf:about="#popul">
+    <rdfs:subClassOf rdf:resource="#count"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarryingCapac">
-    <rdfs:subClassOf rdf:resource="#Popul"/>
+  <owl:Class rdf:about="#carryingcapac">
+    <rdfs:subClassOf rdf:resource="#popul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NeutralNumberDens">
-    <rdfs:subClassOf rdf:resource="#NumberDens"/>
+  <owl:Class rdf:about="#neutralnumberden">
+    <rdfs:subClassOf rdf:resource="#numberden"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtomicNeutralNumberDens">
-    <rdfs:subClassOf rdf:resource="#NeutralNumberDens"/>
+  <owl:Class rdf:about="#atomicneutralnumberden">
+    <rdfs:subClassOf rdf:resource="#neutralnumberden"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TotalElectronCont">
-    <rdfs:subClassOf rdf:resource="#NumberDens"/>
+  <owl:Class rdf:about="#totalelectroncont">
+    <rdfs:subClassOf rdf:resource="#numberden"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MolecularNeutralNumberDens">
-    <rdfs:subClassOf rdf:resource="#NeutralNumberDens"/>
+  <owl:Class rdf:about="#molecularneutralnumberden">
+    <rdfs:subClassOf rdf:resource="#neutralnumberden"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -55,15 +55,15 @@
   </owl:Ontology>
 
 <!-- provenance -->
-  <owl:ObjectProperty rdf:about="#hasSourc">
+  <owl:ObjectProperty rdf:about="#hassourc">
     <rdfs:range rdf:resource="&comp;Source" />
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasGenesi">
+  <owl:ObjectProperty rdf:about="#hasgenesi">
     <rdfs:range rdf:resource="&prov;Genesis"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#genesisOf">
+  <owl:ObjectProperty rdf:about="#genesisof">
     <rdfs:domain rdf:resource="&prov;Genesis"/>
   </owl:ObjectProperty>
 
@@ -72,42 +72,42 @@
     <rdfs:range rdf:resource="&prov;Artifact"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasControlledBi">
+  <owl:ObjectProperty rdf:about="#wascontrolledbi">
     <rdfs:domain rdf:resource="&proc;Process"/>
     <rdfs:range rdf:resource="&prov;Artifact"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasDerivedFrom">
+  <owl:ObjectProperty rdf:about="#wasderivedfrom">
     <rdfs:domain rdf:resource="&prov;Artifact"/>
     <rdfs:range rdf:resource="&prov;Artifact"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasGeneratedAt">
+  <owl:ObjectProperty rdf:about="#wasgeneratedat">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasGeneratedBi">
+  <owl:ObjectProperty rdf:about="#wasgeneratedbi">
     <rdfs:domain rdf:resource="&prov;Artifact"/>
     <rdfs:range rdf:resource="&proc;Process"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasOperatedBi">
+  <owl:ObjectProperty rdf:about="#wasoperatedbi">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasTriggeredBi">
+  <owl:ObjectProperty rdf:about="#wastriggeredbi">
     <rdfs:domain rdf:resource="&proc;Process"/>
     <rdfs:range rdf:resource="&proc;Process"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasPerformedAt">
+  <owl:ObjectProperty rdf:about="#wasperformedat">
     <rdfs:domain rdf:resource="&proc;Process"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasPerformedBi">
+  <owl:ObjectProperty rdf:about="#wasperformedbi">
     <rdfs:domain rdf:resource="&proc;Process"/>
     <rdfs:range rdf:resource="&prov;Agent"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#wasEncodedBi">
+  <owl:ObjectProperty rdf:about="#wasencodedbi">
     <rdfs:domain rdf:resource="&prov;Artifact"/>
     <rdfs:range rdf:resource="&prov;Artifact"/>
   </owl:ObjectProperty>
@@ -115,24 +115,24 @@
   <owl:ObjectProperty rdf:about="#conclus">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasRul">
+  <owl:ObjectProperty rdf:about="#hasrul">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasConclus">
+  <owl:ObjectProperty rdf:about="#hasconclus">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasInferenceRul">
+  <owl:ObjectProperty rdf:about="#hasinferencerul">
     <rdfs:range rdf:resource="&prov;InferenceRule"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasVariableMap">
+  <owl:ObjectProperty rdf:about="#hasvariablemap">
     <rdfs:range rdf:resource="&prov;VariableMapping"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hadProcess">
+  <owl:ObjectProperty rdf:about="#hadprocess">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#fillValu">
+  <owl:ObjectProperty rdf:about="#fillvalu">
     <rdfs:range rdf:resource="&prod;FillValue"/>
   </owl:ObjectProperty>
 
@@ -140,20 +140,20 @@
 
   <owl:ObjectProperty rdf:about="#transpar"/>
 
-  <owl:ObjectProperty rdf:about="#hasDataModel">
+  <owl:ObjectProperty rdf:about="#hasdatamodel">
     <rdfs:subPropertyOf rdf:resource="&mrela;representationOf"/>
     <rdfs:range rdf:resource="&data;DataModel"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDataServic">
+  <owl:ObjectProperty rdf:about="#hasdataserv">
     <rdfs:range rdf:resource="&serv;DataService"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#reductionIn">
+  <owl:ObjectProperty rdf:about="#reductionin">
     <rdfs:range rdf:resource="&prop;Property"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasProcessingLevel">
+  <owl:ObjectProperty rdf:about="#hasprocessinglevel">
     <rdfs:range rdf:resource="&ordi;ProcessingLevel"/>
   </owl:ObjectProperty>
 

@@ -50,214 +50,214 @@
      <owl:imports rdf:resource="&seis;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Radianc">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
+  <owl:Class rdf:about="#radianc">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterSquaredPerSteradian"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermetersquaredpersteradian"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A radiometric term for the rate at which radiant energy in a set of directions confined to a unit solid angle around a particular direction is transferred across unit area of a surface (real or imaginary) projected onto this direction.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpectralRadi">
-    <rdfs:subClassOf rdf:resource="#Radianc" />
+  <owl:Class rdf:about="#spectralradi">
+    <rdfs:subClassOf rdf:resource="#radianc" />
     <rdfs:comment xml:lang="en">The radiance per unit wavelength or wavenumber interval.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lumin">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
+  <owl:Class rdf:about="#lumin">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#candelaPerMeterSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#candelapermetersquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bright">
-    <rdfs:subClassOf rdf:resource="#Lumin"/>
+  <owl:Class rdf:about="#bright">
+    <rdfs:subClassOf rdf:resource="#lumin"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterSquaredPerSteradianPerWavelength"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermetersquaredpersteradianperwavelength"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#SpecificIntens"/>
+    <owl:equivalentClass rdf:resource="#specificinten"/>
   </owl:Class>
-  <owl:Class rdf:about="#SpecificIntens"/>
+  <owl:Class rdf:about="#specificinten"/>
 
-  <owl:Class rdf:about="#LuminousIntens">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
+  <owl:Class rdf:about="#luminousinten">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#candela"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
 <!-- Flux Density -->
-  <owl:Class rdf:about="#FluxDens">
-    <rdfs:subClassOf rdf:resource="&quan;#Flux" />
-    <owl:equivalentClass rdf:resource="#Intensiti"/>
+  <owl:Class rdf:about="#fluxden">
+    <rdfs:subClassOf rdf:resource="&quan;#flux" />
+    <owl:equivalentClass rdf:resource="#intensiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermetersquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#Intensiti"/>
+  <owl:Class rdf:about="#intensiti"/>
 
-  <owl:Class rdf:about="#Insolat">
-    <rdfs:subClassOf rdf:resource="#SolarRadi"/>
+  <owl:Class rdf:about="#insolat">
+    <rdfs:subClassOf rdf:resource="#solarradi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AbsorbedSolarRadi">
-    <rdfs:subClassOf rdf:resource="#SolarRadi"/>
+  <owl:Class rdf:about="#absorbedsolarradi">
+    <rdfs:subClassOf rdf:resource="#solarradi"/>
     <rdfs:comment>Solar radiation absorbed by the atmosphere's constituent gases, suspended material, clouds, or by the earth's surface.</rdfs:comment>
     <rdfs:label>Absorbed Solar Radiation</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarRadi">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
+  <owl:Class rdf:about="#solarradi">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
     <rdfs:comment xml:lang="en">The total electromagnetic radiation emitted by the sun.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Irradianc">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
-    <rdfs:subClassOf rdf:resource="#FluxDens"/>
+  <owl:Class rdf:about="#irradianc">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
+    <rdfs:subClassOf rdf:resource="#fluxden"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PoyntingVector">
-    <rdfs:subClassOf rdf:resource="#FluxDens" />
+  <owl:Class rdf:about="#poyntingvector">
+    <rdfs:subClassOf rdf:resource="#fluxden" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiativeForc">
-    <rdfs:subClassOf rdf:resource="#FluxDens"/>
-    <rdfs:subClassOf rdf:resource="#RadiantFlux" />
+  <owl:Class rdf:about="#radiativeforc">
+    <rdfs:subClassOf rdf:resource="#fluxden"/>
+    <rdfs:subClassOf rdf:resource="#radiantflux" />
     <rdfs:comment xml:lang="en">In radiation, the net flux of radiation into or out of a system.  As a consequence of radiative forcing there must be some change to the nonradiative energy states of the system.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiativeFlux">
-    <rdfs:subClassOf rdf:resource="#RadiativeForc"/>
-    <rdfs:subClassOf rdf:resource="#EnergyFlux"/>
+  <owl:Class rdf:about="#radiativeflux">
+    <rdfs:subClassOf rdf:resource="#radiativeforc"/>
+    <rdfs:subClassOf rdf:resource="#energyflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiantFlux">
-    <rdfs:subClassOf rdf:resource="#RadiativeForc"/>
+  <owl:Class rdf:about="#radiantflux">
+    <rdfs:subClassOf rdf:resource="#radiativeforc"/>
     <rdfs:comment xml:lang="en">Radiant energy per unit time passing some specified area from one side.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CloudForc">
-    <rdfs:subClassOf rdf:resource="#RadiativeForc"/>
+  <owl:Class rdf:about="#cloudforc">
+    <rdfs:subClassOf rdf:resource="#radiativeforc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarFlux">
-    <rdfs:subClassOf rdf:resource="#RadiativeFlux"/>
+  <owl:Class rdf:about="#solarflux">
+    <rdfs:subClassOf rdf:resource="#radiativeflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarForc">
-    <rdfs:subClassOf rdf:resource="#RadiativeForc"/>
+  <owl:Class rdf:about="#solarforc">
+    <rdfs:subClassOf rdf:resource="#radiativeforc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BulkHeatFlux">
-    <rdfs:subClassOf rdf:resource="#ThermalFlux" />
+  <owl:Class rdf:about="#bulkheatflux">
+    <rdfs:subClassOf rdf:resource="#thermalflux" />
     <rdfs:comment>>Heat flux averaged over a layer of air, such as the boundary layer; heat-flux divergence or difference between the top and bottom of a layer.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalFlux">
-    <rdfs:subClassOf rdf:resource="#EnergyFlux"/>
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <owl:equivalentClass rdf:resource="#HeatFlux"/>
-    <owl:equivalentClass rdf:resource="#HeatFlow"/>
+  <owl:Class rdf:about="#thermalflux">
+    <rdfs:subClassOf rdf:resource="#energyflux"/>
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <owl:equivalentClass rdf:resource="#heatflux"/>
+    <owl:equivalentClass rdf:resource="#heatflow"/>
   </owl:Class>
-  <owl:Class rdf:about="#HeatFlux"/>
-  <owl:Class rdf:about="#HeatFlow"/>
+  <owl:Class rdf:about="#heatflux"/>
+  <owl:Class rdf:about="#heatflow"/>
 
-  <owl:Class rdf:about="#EnergyFlux">
-    <rdfs:subClassOf rdf:resource="&quan;#Flux"/>
+  <owl:Class rdf:about="#energyflux">
+    <rdfs:subClassOf rdf:resource="&quan;#flux"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#transportOf"/>
-        <owl:someValuesFrom rdf:resource="&energy;#Energi" />
+        <owl:onProperty rdf:resource="&prela;#transportof"/>
+        <owl:someValuesFrom rdf:resource="&energy;#energi" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#EnergyFlux_Wm2">
-    <rdfs:subClassOf rdf:resource="#EnergyFlux"/>
+    <rdfs:subClassOf rdf:resource="#energyflux"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermetersquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#LuminousFlux">
-    <rdfs:subClassOf rdf:resource="#EnergyFlux"/>
+  <owl:Class rdf:about="#luminousflux">
+    <rdfs:subClassOf rdf:resource="#energyflux"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#lumen"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Illumin">
-    <rdfs:subClassOf rdf:resource="#EnergyFlux"/>
+  <owl:Class rdf:about="#illumin">
+    <rdfs:subClassOf rdf:resource="#energyflux"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#lux"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TerrestrialRadi">
-    <rdfs:subClassOf rdf:resource="#RadiativeFlux" />
+  <owl:Class rdf:about="#terrestrialradi">
+    <rdfs:subClassOf rdf:resource="#radiativeflux" />
     <rdfs:comment xml:lang="en">Longwave radiation originating by thermal emission from a planetary surface and/or its atmosphere</rdfs:comment>
   </owl:Class>
 
-  <eflux:RadiativeFlux rdf:about="#SolarConst">
-    <rdf:type rdf:resource="&quan;#PhysicalConst"/>
-    <screla2:hasSource rdf:resource="&star;#Sun"/>
+  <eflux:RadiativeFlux rdf:about="#solarconst">
+    <rdf:type rdf:resource="&quan;#physicalconst"/>
+    <screla2:hasSource rdf:resource="&star;#sun"/>
   </eflux:RadiativeFlux>
 
-  <owl:Class rdf:about="#Opaciti">
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
-    <owl:equivalentClass rdf:resource="#AbsorptionCoeffici" />
+  <owl:Class rdf:about="#opaciti">
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
+    <owl:equivalentClass rdf:resource="#absorptioncoeffici" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterSquaredPerKilogram"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#metersquaredperkilogram"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>The extinction coefficient for a particular substance is a measure of how well it scatters and absorbs electromagnetic radiation (EM waves). If the EM wave can pass through very easily, the material has a low extinction coefficient. Conversely, if the radiation hardly penetrates the material, but rather quickly becomes extinct within it, the extinction coefficient is high.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#AbsorptionCoeffici"/>
+  <owl:Class rdf:about="#absorptioncoeffici"/>
 
-  <owl:Class rdf:about="#EarthquakeScal">
-    <rdfs:subClassOf rdf:resource="&repr;#LogarithmicScal"/>
+  <owl:Class rdf:about="#earthquakesc">
+    <rdfs:subClassOf rdf:resource="&repr;#logarithmicsc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&seis;#Earthquak"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&seis;#earthquak"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasUnit" />
+        <owl:onProperty rdf:resource="&screla;#hasunit" />
         <owl:hasValue rdf:resource="&units;#db"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RichterScal">
-    <rdfs:subClassOf rdf:resource="#EarthquakeScal" />
+  <owl:Class rdf:about="#richtersc">
+    <rdfs:subClassOf rdf:resource="#earthquakesc" />
   </owl:Class>
 
 </rdf:RDF>

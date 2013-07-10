@@ -37,61 +37,61 @@
      <owl:imports rdf:resource="&rela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Center">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#center">
+    <rdfs:subClassOf rdf:resource="#locat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ControlPoint">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#controlpoint">
+    <rdfs:subClassOf rdf:resource="#locat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Epicent">
-    <rdfs:subClassOf rdf:resource="#Center"/>
+  <owl:Class rdf:about="#epicent">
+    <rdfs:subClassOf rdf:resource="#center"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Focus">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
-    <owl:equivalentClass rdf:resource="#Focii"/>
+  <owl:Class rdf:about="#focus">
+    <rdfs:subClassOf rdf:resource="#locat"/>
+    <owl:equivalentClass rdf:resource="#focii"/>
   </owl:Class>
-  <owl:Class rdf:about="#Focii"/>
+  <owl:Class rdf:about="#focii"/>
 
-  <owl:Class rdf:about="#Locat">
-    <rdfs:subClassOf rdf:resource="&obj;#Point"/>
-    <rdfs:subClassOf rdf:resource="&space;#SpatialProperti"/>
+  <owl:Class rdf:about="#locat">
+    <rdfs:subClassOf rdf:resource="&obj;#point"/>
+    <rdfs:subClassOf rdf:resource="&space;#spatialproperti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasCoordin"/>
+        <owl:onProperty rdf:resource="&mrela;#hascoordin"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#Posit"/>
+    <owl:equivalentClass rdf:resource="#posit"/>
   </owl:Class>
-  <owl:Class rdf:about="#Posit"/>
+  <owl:Class rdf:about="#posit"/>
 
-  <owl:Class rdf:about="#CenterOfMass">
-    <rdfs:subClassOf rdf:resource="#Center"/>
+  <owl:Class rdf:about="#centerofmass">
+    <rdfs:subClassOf rdf:resource="#center"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LagrangianPoint">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#lagrangianpoint">
+    <rdfs:subClassOf rdf:resource="#locat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&sstate;#Equilibrium"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&sstate;#equilibrium"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MirrorPoint">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#mirrorpoint">
+    <rdfs:subClassOf rdf:resource="#locat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SubsolarPoint">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#subsolarpoint">
+    <rdfs:subClassOf rdf:resource="#locat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Nadir">
-    <rdfs:subClassOf rdf:resource="#Locat"/>
+  <owl:Class rdf:about="#nadir">
+    <rdfs:subClassOf rdf:resource="#locat"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -1,0 +1,1273 @@
+AC~UmeraIl. Vol. 32, No. II, pp. 1963-1975. !984
+Printed in Great Britain. All rights resewed
+DEFORMATION
+~l-6Mo/84
+83.00 + 0.00
+Copyright Q 1984 Pergamon PESS Ltd
+AND ENERGY ABSORPTION
+FOR CELLULAR SOLIDS
+DIAGRAMS
+S. K. MAITI’t,
+L. J. GIBSON* and M. F. ASHBY’
+‘Cambridge University, Engineering Department, Trumpington Street, Cambridge CB2 IPZ. England and
+*Department of Civil Engineering, University of British Columbia, Vancouver B.C., Canada
+(Receiued 23 May 1984)
+Abstract-The mechanical properties of 3 types of cellular solids (flexible, plastic and brittle) have been
+measured as a function of density. The results are compared with models for the stiffness, strength and
+densification; and constitutive laws are developed. Data and models for each type of cellular solid are
+combined to develop mechun&n-mode mq~ which summarise the properties in a single diagram; this
+understanding, in turn, allows the construction of energy ubsorpfion diagrams for classes of foams. Natural
+cellular materials fit the same pattern; maps are presented, as an example, for wood. The maps help in
+design and in the selection of the optimal foam for a given load-bearing or energy-absorbing application.
+R&nrm&Nous avons mesun les proprietes mecaniques de trois types de solides cellulaires (flexible,
+plastique et fragile) en fonction de la densiti. Nous comparons les rCsultats avec des mod&s de la raideur,
+de le resistance et de la densification; nous prisentons des lois constitutives. Nous combinons les r&sultats
+et les modlrles pour chaque type de sohde cellulaire afin de developper des cartes m&anismc-mode qui
+r&sument les proprietes en un diagramme unique; ceci permet P son tour de construire des diagrammes
+dabsorption d’energie pour des classes d’&cume. Les materiaux cellulaires naturels v&rifient les m&nes
+diagrammes; nous pr&sentons ainsi, par exemple, les diagrammes pour le bois. Ces cartes aident a
+concevoir et a choisir l%cume optimale pour une application don&e de support de charge ou d’absorption
+d’tnergie.
+Zusammenfaaumg-Die
+mechanischen Eigenschaften von drei Typen xellartiger Fe&&per (flexibler,
+plastischer und sproder Typ) wurden in Abhiihgigkcit von der Dichte gemessen. Die Ergebnisse we&n
+mit Modellen fib die Stein&it, die Festigkeit und die Verdichtung verghchen; Grundgesetze werden
+entwickelt. Ergebnisse und Modelle werden ftir jeden zellartigen FestkBrper so kombiniert, dat3 die
+Eigenschaften jeweils in einem einxigen Diagramm dargestellt werden kann. Daraus lassen sich wiederum
+Energieabsorptionsdiagramme fiir Klassen von Schiiumen konstruieren. Nattirliche zellartige Materialien
+fiigen sich ein; LB. wird ein Diagramm Wr Holx vorgelegt. Diese Diagrammkarten helfen bei dem Design
+und der Auswahl des optimalen Sehaumes fiir eine gegebene Anwendung in Belastung oder Ener-
+gieabsorption.
+1. INTRODUCTION
+Polymeric foams have certain characteristic mechan-
+ical properties. Elastomeric or flexible foams, in
+simple compression, are linear-elastic to a strain of
+about 5%. Then the cell walls buckle and the foam
+collapses at a nearly constant stress (giving a non-
+linear elastic deformation) until the cell walls touch
+and the stress-strain curve rises steeply. Rigid poly-
+men and metals, when foamed, have a similar
+stress-strain curve, but for a different reason. Like
+flexible foams, they are linear-elastic to a strain of
+roughly 5%. Then they suffer plastic collapse, com-
+pressing plastically at a nearly constant stress until
+the cell walls touch, and the stress-strain curve rises
+steeply. Brittle foams, too, show an initial linear-
+elastic regime. But when the stress is reached at which
+cell walls fracture, the stress-strain curve becomes
+irregular (though roughly horizontal) and the foam
+crushes at (roughly) constant load.
+ton leave from I.T.T., Bombay,
+India.
+Figure 1 shows, schematically, the structure of
+cellular solids. Some have open cells: the solid
+material is distributed as little beams which form the
+cell edges. Others have closed ceils: the solid is
+distributed as little plates which form the cell faces.
+The mechanical properties reflect, to some extent, this
+distribution. In practice, most man-made foams (even
+those with closed cells faces) behave as if they had
+open cells because surface tension draws much of the
+solid material into the cell-edges during manufacture.
+For this reason, we discuss open-cell foams in detail,
+but treat closed cell foams only in passing.
+The mechanical properties of a cellular solid can be
+related to the mechanics of bending, buckling, plastic
+collapse and brittle fracture of its cell walls. Each part
+of the stress-strain curve can be modelled [l-4]. The
+models give equations for Young’s modulus E*, the
+elastic buckling stress af, the plastic collapse stress
+as, the crushing strength uf, and terminal rise in
+strength, in terms of the density and properties of the
+material of which the foam is made.
+1963
+MAITI
+1964
+cr t/l.: DEFORMATION
+AND
+ENERGY
+All the
+ABSORPTION
+curves show three regions: a
+pluteau where the stress is
+almost independent of strain; and (for all but the
+brittle foams) a final region of densification in which
+the stress-strain curve rises steeply. Young’s modulus
+E* of the rigid foams was measured by using clip
+gauges. The density p of each foam was measured by
+conventional methods. Mean values of p, E* and of
+the plateau stress u* are listed in Table 3.
+stress-strain
+lineur elustic region; a
+c-
+1
+(01
+Fig.
+I.
+(b)
+showing dimensions.
+Schematic of cellular material,
+long
+2.2. wooa!s
+This paper seeks to test and extend these models,
+(checking them against data from literature and new
+data, described below), to derive constitutive laws for
+design with cellular solids, and to develop diagrams
+which summarise the overall mechanical response of
+each type. Symbols are defined in Table 1.
+2.
+EXPERIMENTAL
+RESULTS
+2.1. Foamed plastics and ceramics
+We also tested a number of woods, chosen to give
+a range of relative densities between 0.05 and 0.5.
+Samples
+of
+well-seasoned
+woods,
+roughly
+20mm x 20 mm x 40 mm, were cut with the long
+direction parallel to a radius of the trunk and parallel
+to the axis of the trunk. The samples were stored for
+10 days to reach equilibrium moisture content
+(roughly 12%) and tested in compresssion at 18°C
+and a strain rate close to 10m3/s. Results are shown
+in Figs 7 and 8.
+We tested samples of commercial flexible foams (a
+polyethylene and a polyurethane), samples of a
+commercial rigid foam (a polymethacrylimid) and
+an experimental batch of a brittle ceramic foam
+(mullite). The materials, their origins and the proper-
+ties of the cell walls are listed in Table 2. Their
+structures are shown in Fig. 2.
+Compression tests were carried out on blocks of
+foam of a convenient size (the size depending on the
+stiffness), at a temperature of 18°C and a strain-rate
+of roughly 2 x 10-‘/s. Results are shown in Figs 3-6.
+The axes are the nominal stress (the load P divided
+by the initial section A&
+QC-
+Table 1. Symbols and units
+applied compressive stress (N/m3
+nominal compressive strain ( - )
+strain at lincarslastic limit ( - )
+strain at boundary between plateau and densification
+(-)
+initial density of cellular solid (kg/m’)
+density after compressive strain e (kg/m’)
+density of cell wall material (kg/m’)
+relative density ( - )
+Young’s modulus of cellular solid (N/m*)
+Young’s modulus of cell-wall material (N/m’)
+elastic collapse or plateau stress of elastomeric foam
+(N/m’)
+plastic collapse or plateau stress of plastic foam (N/m3
+yield strength of cell-wall material (N/m*)
+crushing stress of brittle foam (N/m3
+modulus of rupture of cell-wall material (N/m2)
+cell wall thickness (m)
+cell size or cell wall length (m)
+length of cell walls which are about to buckle at strain
+s (m)
+length of uncollapsed cell walls which buckle first (m)
+P
+A0
+and the nominal compressive strain
+b-h
+s=ho
+second moment of area of cell wall or edge (m’,
+force acting on a all waU (N)
+Euler buckling load for cell wall (N)
+fully plastic moment of cell wall (Nm)
+moment which will just fracture cell wall (Nm)
+dimensionless constants ( - )
+initial height of sample (m)
+height a&r strain e (m)
+load (N)
+energy absorbed per unit volume (J/m’)
+where h is the height of the sample after a strain s,
+and ho is the original height. When foams are com-
+pressed beyond a strain of a few percent there is
+almost no lateral spreading, so the nominal and true
+stresses are, for all practical purposes, identical. The
+nominal compressive strain is, of course, limited to
+the range &I.
+Table 2. Foam materials and the cell-wall orooerties
+Material
+Flexible polyethylene
+Flexible polyurethane
+Polymcthylacrylamid
+Brittle mullite
+woods
+(radial compression)
+woods
+(axial compression)
+Density range
+(kg/m?
+(k$n’)
+(M?a) (I&a) 29-360 1200 700 - 
+            14-52 1100 4s - 
+            34-186 1200 3600 360 
+            100-320 3200 3600 - 
+(M?a)
+-
+103-787 1500 10,000 135 -
+103-764 1500 35,000 135 -
+7
+4
+Source of materials
+“Frclen”
+“Dunlopillo”, Dunlop Ltd. G.B.
+“Rohaccll”, Rohm GmbH. W. Germany
+Morgan Thermic Ltd. G.B.
+> Commercial suppliers of
+seasoned woods
+MAITI er al.: DEFORMATION
+(a)
+AND ENERGY ABSORPTION
+1965
+(b)
+Fig. 2. Microstructures of the four types of foam: (a) polyethylene p/p,= 0.115; (b) polyurethane
+p/p, = 0.029; (c) ~tymethacrylimid p/p,= 0.103; mu&te pjp, = 0.062.
+(d)
+NOMINAL
+STRAJN
+CE
+NOMINAL
+Fig. 3. Compressive stress-strain curves for flexible poly-
+ethylene foams.
+NOMINAL
+STRAIN
+STRAIN
+E
+Fig. 5. Compressive stress-strain curves for rigid (plastic)
+polymethacrylimid foams.
+E
+Fig. 4. Compressive stress-strain curves for flexible poly-
+urethane foams.
+Fig. 6. Compressive stress-strain curve for a birttle mullite
+foam.
+1966
+MAITI
+er ~1.: DEFORMATION
+Samote
+Uasmneric
+a (ketm?
+AND
+ENERGY
+E’IMPat
+fwms
+Dualop
+F&Al
+14.4
+32.4
+51.7
+29.4
+69.2
+120.0
+138
+360
+DI
+D14
+Dt7
+F30
+:;0
+F175
+F2SO
+0.062
+0.057
+0.275
+t.10
+3.82
+4.58
+23.45
+St.6
+70.4
+124
+160
+185.7
+:t
+71
+110
+170
+190
+280
+320
+Radial
+103
+124
+403
+443
+520
+615
+711
+-_-
+737
+FOR THE MECHANICAL
+0.4
+0.8
+:*:
+s:2
+6.0
+8-50
+6-22
+2-8
+25-44
+E
+woods
+B&a
+Balsa
+Willow
+Pine
+Willow
+Mahogany
+Beech
+Bee&
+0.3
+2.56
+20.8
+28.1
+56.9
+129.7
+198.7
+258.9
+43
+73.4
+93.2
+194
+280
+432
+34
+:::4
+Compt-.
+Tension
+Roba&
+0.002
+0.0025
+0.005
+0.04
+0.054
+Plastic
+Jii
+3. MODELS
+ABSORPTION
+Axiai
+103
+124
+355
+-
+385
+-
+733
+-_.
+764
+PROPERTIES
+When a cellular material is compressed, the cell
+walls deform. The deformation modes (bending,
+buckling, plastic .collapse and fracture) are known
+from studies of model cells [2]. Two-dimensional
+models (shown in insets of subsequent figures) can be
+analysed aautrately [2]. With this knowledge, a kind
+‘of dimensional analysis of Zdimensional
+cellular
+solids [l, 3, 41 becomes possible. This analysis, sum-
+marised briefly below, involves, in each case, a single
+geometric constant which must be determined by
+Radial
+31
+79
+198
+647
+321
+610
+1160
+1569
+experiment.
+constant.
+0.02-0.1s
+0.035-0.16
+0.072-0.21
+0.093-0.16
+Axial
+420
+258
+1270
+-
+2203
+-
+7393
+7500
+Rod&d
+0.80
+I .20
+3.70
+6.50
+8.25
+-
+-
+-
+Axial
+8.0
+1.0
+22.0
+-
+22.5
+-
+50.0
+50.0
+The data
+are analysed
+to give this
+When a foam is loaded, the cell walls at first bend
+[l, 2, 5-71 as shown in the inset of Fig. 9. A force F,
+applied as shown, causes the non-vertical beams to
+deflect by an amount, 8, which can be calculated from
+elastic beam theory
+6
+C, FI’
+=E,I
+(3)
+._._-.--
+I
+#
+OO
+NOMINAL
+STRAIN
+E
+Fig. 7. Compressive stress-strain curves for woods in the
+radial direction (~r~ndicuiar
+to the gram).
+I
+I
+0.2
+NOMIN:;
+I
+-1
+STdii
+E
+0.8
+Fig. 8. Compressive stress-strain curves for woods in the
+axial direction (parallel to the grain).
+MAITI
+et al.: DEFORMATION
+AND
+ENERGY
+1967
+ABSORPTION
+we believe, some limited plasticity occurs even under
+small loads. Section 3.3, below, explains the power
+of ‘R.)
+Poissons ratios v have been measured for cellular
+solids [I, 31. In the linear-elastic regime, v x j,
+although in the plateau regime it is almost zero.
+3.2. Elaslic buckling
+Flexible foams show extensive non-linear elasticity.
+It is caused by the elastic buckling of the cell walls
+[8, 181, as shown in the inset of Fig. 10, and it is this
+that gives the plateau of the stress-strain curve for
+elastomeric foams.
+The critical load at which a column of length I,
+Young’s modulus IZ, and second moment of area I
+buckles, is given by Euler’s formula:
+If this load is reached for a layer of cells spanning the
+section, they buckle, initiating the elastic collapse of
+the foam. For the 3-dimensional open-cell foam of
+Fig. 1 the stress uf at which this occurs is propor-
+tional to F,/l’. Using the facts that I a I’ and
+p/p* a (r/f)2 we obtain the elastic collapse, or pla-
+teau, stress
+Fig. 9. The relative Young’s modulus, E*/E,,
+against relative density. p/p,.
+4
+plotted
+E,-
+-c,
+0
+2
+p
+PI’
+Here C, is a factor which depends on cell-wall
+geometry.
+A similar deflection
+occurs in a
+3-dimensional cellular solid, like those shown in Fig.
+1. Considering the open-cell foam, the force F is
+proportional to aI2 where u is the remote stress; and
+the strain E is proportional
+to S/l. The second
+moment of area, I, of a cell edge &&h section l2 is t4
+so that the modulus E* of the foam is
+The dimensions of the open cells are related to the
+relative density of the foam p/p, by
+PIP* cc r 2112
+(5)
+giving
+E+
+-=
+ES
+c,
+p *
+0 P*
+(6)
+where C, is a constant. The shear modulus scales in
+a similar way, because shear deformation in a foam
+also causes simple bending of the cell walls. [For
+closed cells, I a It’ and p/p, a t/f giving instead
+E*I4 = (Pl~,)‘.l
+Data are compared with equation (6) in Fig. 9. The
+full line is a plot of equation (6) with C, = I. It gives
+a good description of a wide range of materials and
+densities. (We find that plastic foams deviate system-
+atically towards the line E*/i?, = (p/~,)‘~, because,
+Fig. 10. The relative elastic collapse stress, nf/E,
+against relative density, p/p,
+plotted
+MAITf et
+1968
+at.:
+DEFORMATION AND ENERGY ABSORPTION
+It is valid for relative densities below 0.3. At higher
+densities, the cell walls are too short and stocky to
+buckle; instead they yield or crush.
+Data for 6:: for elastomeric foams are compared
+with equation (8) in Fig, 10. They are well fitted by
+the equation with C, = 0.05.
+3.3. Plmic
+cdapse
+If the cell-wall material yields plastically, as do
+metals and many polymers, then the foam as a whole
+shows a plateau caused by plastic collapse. It occurs
+when the moment on the inclined cell walls exceeds
+the fully plastic moment, creating plastic hinges
+[2,3,19,20] as shown in the inset of Fig. 1I. For a
+beam of square section of side t, the fully plastic
+moment is
+MP =fu/.
+(9)
+The moment is proportional to Fi, and (as before) the
+force F is proportional to tr12. Combining these
+results with equation (5) we find the plastic collapse,
+or plateau, stress us to be
+4
+---c,
+=Y
+0
+-
+P
+PI
+312
+w
+.
+Data for the plateau-stress of plastic foams are
+plotted in Fig. 11. They are well fitted by equation
+(IO) with C, s 0.3 for relative densities less than 0.3
+(1); at higher densities the cell edges are too short and
+stocky to bend plastically; instead, they shear.
+YIELD
+STRENGTH
+RELATIVE
+3.4. Brittle cr~hjng
+Brittle foams (ceramics, and certain rigid polymers)
+collapse by yet other mechanisms: brittle crushing in
+compression [23], brittle fracture in tension [24,25].
+Let tbe modulus of rupture (the maximum surface or
+skin stress at the instant of fracture) for the cell-wall
+material be c,. Then a cell wall will fail as shown in
+the inset to Fig. 12 when the moment acting on it
+exceeds
+A!f,=~cr/t?
+The moment due to F is proportional to Fl, and the
+stress to F/l’. Combi~ng these with equation (5)
+gives the crushing strength UT of the foam
+01)
+The limited experimental data, shown in Fig. 12,
+are consistent with C, = 0.65 but are insufficient to
+give much more confidence in equation (11). But
+observations, reviewed elsewhere [4], suggest that the
+model has the correct physical basis, and we shall
+employ it in subsequent sections.
+3.5. Demification and the shape of the stress-strain
+curve
+The plateau ends when the folding cell walls begin
+to touch. During elastic buckling or plastic collapse,
+the foam compresses axially with almost no lateral
+spreading (v RI 0). Then simple geometry gives the
+1
+DENSITY
+p/p:
+Fig. II. The relative plastic collapse stress, uaur, plotted
+against relative density, p/p,.
+RELATIVE
+DENSlTY
+P/P,
+Fig. 12, The relative crushing strength, ~;/a,, plotted
+against relative density, p/p,, for brittle foams.
+MAITI et al.: DEFORMATION AND ENERGY
+relative density p(.s)/p, after a nominal compressive
+strain s as
+ABSORPTION
+1969
+the argument of Section 3.3, the strength of a plastic
+foam follows
+(12)
+where p/p,, is the initial relative density. Densification
+is complete, and the stress-strain curve becomes
+almost vertical, when p(&)/p,= 1, when the strain is
+(13)
+s/= 1 -P/P,.
+We find experimentally that the end of the plateau
+corresponds to p(~)/p,~ x 0.33 (the solid occupies f of
+the total volume) when the strain is
+a.7 1 - 3 (P/P,).
+=
+(14)
+Consider now the shape of the stress-strain curve
+for flexible foams. In any sample of the foam, there
+is a distribution of cell edge-lengths and angles. The
+plateau starts when a layer of cells (those with
+longest, or most favourably oriented, edges) buckle
+[equation (711.A small increase in stress is needed to
+cause more cell edges (those which are slightly
+shorter) to buckle. We postulate that the length of the
+edges which are about to buckle after a strain E, I(s),
+is given by
+l(E)=l
+HYl
+O 1-
+(15)
+(P/P,)“’
+phe value I(s) ranges from lo at the start of defor-
+mation to zero when full density is reached.] Using
+equation (12) we obtain
+&)
+_I
+-0
+[I
+-(f&J'7
+1- (P/PY
+(16)
+.
+The argument of Section 3.2 can now be repeated.
+The force F on the cell wall is related to lo throughout
+the test by F = a ii. Collapse of cells with edge length
+I(E) [given by equation (16)] occurs when this force
+exceeds the buckling load given by equation (7).
+Combining these equations gives
+This reduces to equation (10) at small strains, but
+becomes infinite (approximating E,) as the foam is
+compressed to the solid density [equation (13)].
+These two results give an approximate description
+of the stress-strain curves for flexible and for rigid-
+plastic foams, in the fields of plastic collapse and
+densification. They are combined with the equations
+for linear-elasticity, in the next sections, to construct
+deformation-mode
+maps and energy-absorption
+diagrams.
+4. CONSTRUCTION OF DEFORMATION-MODE
+MAPS
+We have seen that when an elastomeric foam is
+compressed, it first deforms in a linear-elastic way;
+then its cells buckle to give non-linear elasticity; and,
+finally, the cells collapse completely and the stress
+rises rapidly as their faces and edges are forced
+together. A plastic foam behaves in a somewhat
+similar way, except that linear elasticity is now fol-
+lowed by plastic collapse, and the ultimate forcing
+together of the cell walls. With brittle foams,
+progressive crushing can again lead to a plateau
+which ends when the material is completely crushed.
+We have seen, too, that each of these processes can
+be modelled adequately by using classical beam the-
+ory to analyse the deformation of cell walls. The
+analysis relates foam properties to the relative density
+(p/p,) and to the properties of the material of which
+the foam is made. The relations, summa&d in Table
+4, suggest a normalisation which brings the properties
+of foams with the same relative densities into coin-
+cidence. Then the properties of an entire family of
+foams can be shown as a deformation mode map (4).
+of which Figs 13-16 are examples. The map has axes
+of norrnalised compressive stress a/E,, and the com-
+pressive strain E. It shows the jeluk in which each
+mode of deformation (linear elasticity, non-linear
+elasticity, plastic collapse and so forth) is dominant.
+Superimposed on the fields are stress-strain contours
+for constant (initial) relative density.
+4.1. Elastomeric foams
+which reduces to our original equation (8) at small
+strains, but becomes infinite (approximating E,) at
+the strain given by equation (13).
+A similar analysis can be made for plastic foams.
+We postulate that the length of the beams which are
+about to bend plastically decreases as strain proceeds
+(because the long ones bend first). If the length at a
+strain E is given (as before) by equation (16), then by
+Figures 13 and 14 show mechanism-mode maps for
+elastomeric foams. Figure 13 shows the experimental
+stress-strain curves for polymeric foams; Fig. 14 is
+based on the theory alone. Mechanism field bound-
+aries (heavy lines) are shown on both figures. They
+were constructed as follows.
+The linear-elastic regime ends when elastic buck-
+ling begins. Using equations (6) and (8), and the fact
+that 0 = EC in the linear-elastic region, we obtain the
+MAITI e!al.:
+DEFORMATION
+1970
+AND ENERGY
+ABSORPTION
+Table 4. Equation for stiffness and strength of cellular solids
+Equation
+--_.--
+Property
+..-_..
+._~ ~.
+Young’s modulus
+_..~_ Equation ~_.
+.____~_.
+__
+E’
+-=
+E,
+p’
+-
+0 P,
+.._.
+No.
+(6)
+l
+Plateau stress,
+flexible foams
+_
+0$ = 0.05 !I
+I
+0 P,
+*
+(8)
+Plateau stress, (10)
+plastic foams 
+Approximate plateau (11)
+stress, brittle foams 
+2
+Stress-strain
+response,
+flexible foam
+* _;;$,..}
+~=o.os(~-{
+I
+(17)
+:=0.3
+,
+()1
+;
+COMPRESSIVE STRAIN
+Fig. 13. A deformation-mode map for flexible foams. It
+shows the data of Figs 3 and 4, nonnalised. The construc-
+tion of the field boundaries is described in the text.
+lP
+I-
+II3
+’
+6)
+[( )I;
+,- 
+Stress-strain response,
+plastic foam
+P
+,
+; &
+i
+111
+(18)
+COMPRESSIVE STRAIN E
+Fig. 15. A deformation-mode map for plastic foams. It
+shows the data of Fig. 5, normal&d. The construction of
+the field boundaries is described in the text.
+ELASTOMERIC FOP
+COMPRESSIVE STRAIN E
+Fig. 14. A deformation-mode map for flexible foams, con-
+structed entirely from the equations developed in the text.
+COMPRESSIVE STRAIN, E
+Fig. 16. A deformation-mode map for plastic foams, con-
+structed entirely from the equations developed in the text.
+MAITI
+strain corresponding
+elastic field
+er al.: DEFORMATION
+to the boundary
+of the linear-
+&= c, = 0.05
+At relative densities above about 0.3 the cell walls
+become so stocky that they can no longer buckle
+elastically. The field boundary thus bends until it is
+tangent
+to the linear-elastic
+loading line for
+p/p, = 0.3.
+Once elastic buckling starts, the stress is related to
+the strain by equation (17). We define the transition
+from buckling to densification as the line at which the
+relative density has reached f. Then, from equations
+(14) and (17) the equation of the transition is
+{ l-
++9xlo-r(I-s)~
+I
+(yy
+(19)
+It is plotted as a heavy line, sloping down from left
+to right on the figures.
+Figure 14 shows a theoretical map. The contours
+are stress-strain curves for foams of relative density
+between 0.01 and 0.4. They show a linear elastic
+regime [equation (a)] and a plateau corresponding
+to elastic buckling; they start to bend upwards
+when densification starts [equation (1711; and they
+approach a limiting slope of E, when densification is
+complete [equation (13)]. Within the field of elastic
+buckling the material exists in two states at almost the
+same stress (the linear-elastic state and the densified
+state); it is like the p-V response of an ideal gas (or
+the temperature-entropy
+diagram for steam) in which
+gas and liquid stat4 can co-exist. The material
+deforms by the formation of densified bands which
+thicken, at constant stress, as the strain is increased,
+until the entire material has reached the dense state.
+The figure describes the overall response of all
+isotropic, flexible foams in compression. In tension,
+flexible foams are roughly linear-elastic to rupture.
+4.2. Rigid plastic foams
+Plastic foams, like the elastic ones, show three
+plastic collapse and
+regions: linear elasticity,
+densification-though
+now the strain beyond the
+linear-elastic regime is not recoverable. Figures I5
+and 16 are a pair of maps, one showing our
+experimental stress-strain curves for plastic foams,
+the other, based on the theory alone. Mechanism
+field-boundaries
+are superimposed on the stress-
+strain curves.
+The boundary of the linear-elastic field (heavy line)
+is obtained from the equation for linear elasticity
+[equation (6)] and that for plastic collapse [equation
+(IO)]; its equation is
+;=
+I
+cw
+0.3? ‘$.
+*>
+(
+In constructing the map we have taken q,,/fi, to be
+0. IO (a fairly typical value). Next to the linear-elastic
+field is the field of plastic collapse. As before, two
+states of strain co-exist at almost the same stress. so
+AND
+ENERGY
+ABSORPTION
+1971
+that complete collapse of part of the structure can
+occur while the rest is still elastic; the bands of dense
+material broaden with increasing strain. We define
+the transition from collapse to densification as the
+line at which the relative density has reached f. Then,
+from equation (14) and equation (18) the equation of
+the transition line is
+;=0.19~(1
+I
+I
+-&)3’2 { I - (!q”}.
+(21)
+It is plotted as a heavy line sloping down from left to
+right on Figs 15 and 16.
+Figure 16 shows a theoretical map for plastic
+foams with rrJ.E, = 0.10. It shows fields of elastic
+deformation,
+plastic collapse and densification.
+Superimposed on the fields are stress-strain curves
+for foams with densities form 0.01 to 0.4.
+The figure shows the overall response of isotropic,
+plastic foams in compression. It is less general than
+the map for elastomeric foams because it must be
+constructed for a particular value of u,/E,. But the
+equations show that the boundaries are not very
+sensitive to its value, and, for a given material, the
+diagram shows the behaviour for all densities.
+The behaviour of plastic foams in tension resem-
+bles that in compression, truncated by fracture.
+4.3. Brittle foams
+Rigid foams show linear-elastic behaviour to frac-
+ture. In compression, the foam crushes at constant
+stress [equation (1 I)], and since the crushing equation
+has the same form as that for plastic collapse, the
+behaviour will resemble that of Figs I5 and 16. If the
+foam is contained, it will densify at the strain given
+approximately by equation (18), with by/E, replaced
+by e,lE.<.
+In tension, linear elastic behaviour is truncated by
+fast, brittle fracture. The fracture mechanics of foams
+[28] need not concern us here.
+4.4. wooa!r
+These ideas can be applied, in an approximate way,
+to the compressive deformation of wood. Woods are
+cellular solids, composed of mixed polymers (cellu-
+lose, lignin, hemicellulose), and with a relative density
+ranging from less than 0.05 (balsas) to almost I
+(lignum vitae). Compressed across the grain, wood
+behaves like a rigid-plastic foam. Stress-strain curves
+for the woods we tested are shown in Fig. 17, plotted
+on axes of a/E., and E (data in Tables 2 and 3).
+The field boundaries of Fig. 17 were constructed as
+follows. In radial compression, Young’s modulus for
+woods is found to follow the same law as elastic
+foams (29)
+0
+E* = 10 c
+P,
+2
+GN/m2.
+1972
+MAITI ef ~1.: DEFORMATION AND ENERGY ABSORPTION
+Then the equation of the line separating elastic and
+collapse behaviour is
+E = 0.004.
+When woods are compressed axially, they collapse by
+a process which involves the kinking (301 or fracture
+[29,30] of the cell walls. This occurs at essentially
+co~~~hrnfstress until a critical state is reached, when
+the stress-strain
+curve bends sharply upwards.
+Experimentally, we find that the bend upwards
+occurs at a strain E, corresponding to a density of
+roughly 0.5
+&,=l-2
+COMPRESSIVE
+Combining
+boundary
+STRAIN, E
+Compressive collapse in the radial direction equation
+(29) starts at the stress
+(23)
+Thus the equation of the boundary separating elastic
+from collapse behaviour is
+E = 0.014.
+(24)
+Using the method given in Section 3.5, the
+stress-strain beyond yield is described approximately
+by
+J
+and the boundary between collapse and densification,
+where the relative density reaches i, is given by
+; = 0.005 (1 - e)2 [ 1 - (F)J.
+I
+x lo-‘(1 -&).
+(29)
+It is plotted as a heavy line on Fig. 18. The figure
+summarises the compressive behaviour of woods in
+the axial direction. Both diagrams allow, by inter-
+polation, or the use of the equations, the approximate
+prediction of the stress-strain curve for woods of
+other densities.
+5. CONSTRUCTION OF ENERGY-ABSORPTION
+DlAGRAMS
+The commonest use of foams is in packaging. The
+aim is to absorb energy (usually the kinetic energy)
+of the packaged object when it is dropped, or is
+accelerated or decelerated in some other way, while
+at the same time keeping the force on the object
+below the limit which will cause damage. In selecting
+a material for the package, we need to know the
+energy that can be absorbed without the stress
+exceeding a critical value. We show below that there
+is an optimum foam density for a given package. If
+k! 15#
+(26)
+and the collapse stress u*, too, varies linearly with
+density [29,30]
+u* = 150 f MN/m2.
+0 ‘I
+1’
+(27) gives the field
+(25)
+The field boundaries divide the behaviour into 3
+regimes and give a diagram which summarises the
+properties of all woods in radial compression.
+Compression along the grain is more complicated.
+In this direction, the wood has properties inter-
+mediate between those of a rigid-plastic and a brittle
+cellular solid (compare the stress-strain curves of Fig.
+8 with those of Figs 5 and 6). In axial compression,
+Young’s modulus varies linearly with density [29,30]
+E z 35
+this with equation
+c*
+F=2
+I
+Fig. 17. A deformation-mode map for woods, tested in the
+radial direction (across the grain).
+p.
+0 PS
+(27)
+0
+0
+025
+0.50
+COMPRESSIVE
+1.0
+0.7s
+STRAIN
+E
+Fig. 18. A deformation-mode map for woods tested in the
+. . .. . _ .
+.
+. I
+axial dlrectlon (along tne gram).
+MAlTI er d.: DEFORMATION AND ENERGY ABSORPTION
+Fig. 19. An energy-absorption diagram for elastomeric
+foams, constructed from the equations given in the text. The
+broken line divides the diagram into an accessible and an
+inaoxssible region.
+the density is too low, the foam “bottoms out” (with
+a sharp increase in stress) before enough energy has
+been absorbed. If it is too dense, the stress exceeds the
+critical value before enough energy has been
+absorbed.
+Figure 19 shows, inset, part of a stress-strain curve
+for a foam. It is linear-elastic to ~0, and thereafter
+follows the stress-strain
+Q(E) curve described
+approximately by equation (17) or (18). The area, up
+to the strain E*, where the stress is u, (shaded on
+Fig. 19) is
+w=
+rg
+u ds +
+I0
+stress u/E.= lo-’ is p/p, = 0.1. Choosing the right
+density is important: it can easily give a factor of 10
+greater absorption of energy than a wrongly-chosen
+foam.
+Figures 21 and 22 show energy diagrams for a
+plastic foam with u,/E, = 0. I. Such diagrams are less
+general than those for elastic foams, because uJE,
+must be specified; but a single diagram still describes
+all foams made of a given material (polystyrene, for
+example). Here, too, there is an optimum foam
+density for a given energy absorption and peak stress.
+The diagram allows it to be chosen.
+The figures show that, for a given material (and
+thus E,), there is a maximum energy which can be
+absorbed for a given peak stress. The envelope shown
+as a broken line on Figs 19 and 21 divides the
+diagram into an accessible region (below the line) and
+an inaccessible one (above). For elastomeric foams,
+the equation of the line is approximately
+/ _\7m
+W/E,=O.ll
+;
+.
+0 I
+It anulies to all elastic foams. For the plastic foam
+with _ u,,/I$ = 0.1, the equation
+of the line is
+approximately
+W/E,=O.O5
+u
+0
+E
+2p
+.
+*
+(32)
+The equations apply from p/p, = 0.01 to p/p, = 0.3.
+6. CONCLUSIONS AND APPLICATIONS
+6.1. Conclusions
+When a cellular solid with a relative density below
+0.30 is compressed, it shows a stress-strain curve with
+three parts: a linear-elastic part, a long plateau, and
+a regime of final densification. The properties of an
+entire class of such solids can be summa&d
+as a
+ti
+U(E) de
+sm
+or
+W lE*r
+-=--so+
+E, 2 4
+1973
+*’U(E)
+-de
+s ro E,
+(30)
+This equation was integrated using equation (I 7) for
+u(s) for elastic foams and equation (18) for plastic
+foams, to give Figs I9 and 2 1. Similar diagrams can,
+of course, be constructed directly from the experi-
+mental stress-strain curves (such as those shown in
+Figs 34) by measuring the area W/E, up to the strain
+E+ corresponding to the stress u/E,. Such diagrams
+are shown, for comparison, in Figs 20 and 22.
+The energy diagram, calculated for elastic foams
+(Fig. 19) shows the normalised energy absorbed per
+unit volume for foam, W/E,, plotted against the peak
+stress u/E,, for a range of densities p/p,. Norma&d
+in this way, the diagram describes all elastic foams,
+If the critical damage stress is selected, then the
+diagram gives the foam density which will absorb the
+greatest amount of energy without this stress being
+exceeded. The lower the peak stress, the lower is the
+optimum foam density. As an example, using Fig. 19
+or 20. the optimum foam density for a critical damage
+10-Z
+[ELASTIC
+FOAMS
+Fig. 20. An energy-absorption diagram for elastomeric
+foams, constructed by measuring the areas under the
+stress-strain curves of Figs 3 and 4. It is directly comparable
+with Fig. 19.
+MAlTI
+1974
+CI 01.: DEFORMATION
+AND
+ENERGY
+diagrams
+show that there is an optimum
+given
+application.
+for
+ABSORPTION
+a
+packaging
+or
+foam density
+energy-absorbing
+4.2. Design with cellular solia!v
+Fig. 21. An energy-absorption diagram for plastic foams,
+constructed from the equations given in the text, with
+uJE, = 0.1. The broken line divides the diagram into an
+accessible and an inaccessible region.
+deformation-mode map, which shows how each of
+the three parts changes as the relative density
+changes. The method can be applied to man-made
+foams (Figs 13-16) and to natural materials, such as
+woods (Figs 17 and 18), to give diagrams which
+summarise the stress-strain response of each class of
+material.
+The mechanical properties of cellular solids can be
+modelled with precision. The models lead to consti-
+tutive laws (stress-strain relations) which have been
+thoroughly tested in simple compression. They are
+summa&d in Table 4. The constitutive laws can be
+used to construct deformation-mode maps, and can
+be integrated to construct energy-absorption
+dia-
+grams. These diagrams (Figs 19-22) show how the
+energy absorbed, per unit volume of foam, depends
+on the density of the foam and on the stress. The
+The equations derived in the text, and summarised
+in Table 4, provide the basic information for design
+with foams in load-bearing applications. The tests
+described above ail involved simple compression.
+Under multiaxial loads, the behaviour is more com-
+plicated. At small strains (s < 5x), while the material
+is linear-elastic, it behaves like any other elastic solid
+[I, 31with Young’s modulus E* given by equation (6)
+and Poisson’s ratio v = f. But once the plateau-stress
+has been reached, the behaviour changes: the exten-
+sive deformation at nearly constant stress involves a
+large volume change, but almost no lateral strain
+[l, 3,26,271 so that v x 0. The the material fails
+under a multiaxial state of stress when the maximum
+principal stress (not the octahedral shear stress)
+reaches the critical value of u* [equation (8) for
+flexible foams, equation (10) for plastic foams]. Be-
+cause of this, the indentation hardness of plastic
+foams is equal to 0,: (not 36; as in dense solids) and
+the force needed to compress a foam is the same
+whether it is free at its edges or constrained there [15].
+Once densification starts, of course, the properties
+revert towards those of conventional solids.
+The deformation mode map for a class of foams
+provides a compact summary of the mechanical
+response of the class. In particular, the maps give a
+rational way of selecting the material and density
+which will give a desired stress-strain response.
+Similarly, the energy-absorption diagram for a class
+of foam summarises the energy absorbing capacity of
+all members of the class. The diagrams identify the
+optimum foam material and density for a given
+packaging, padding or cushioning application.
+Acknowledgements-We wish to thank Professor K. E.
+Easterling and Dr C. R. Calladine for many helpful dis-
+cussions. We particularly wish to thank Mr John Godlonton
+for technical assistance and Trish Shepherd for typing the
+manuscript.
+REFERENCES
+‘::;-l
+s
+Fig. 22. An energy-absorption
+diagram for poly-
+methacrylimid foams, constructed by measuring the areas
+under the stress-strain curves of Fig. 5. It is directly
+comparable with Fig. 21.
+1. L. J. Gibson, Ph.D. Thesis, Engineering Department,
+Cambridge University (1981).
+2. L. J. Gibson, M. F. Ashby, G. S. Schajer and C. I.
+Robertson, Proc. R. Sot. Land. A382, 25 (1982).
+3. L. J. Gibson and M. F. Ashby, Proc. R. Sot. L.ond.
+A382, 43 (1982).
+4. M. F. Ashby, Metall. Trans. 14A, 1755 (1983).
+5. M. R. Pate1 and I. Finnie, J. Mater. 5, 909 (1970).
+6. W. L. Ko, J. Cell. Plastics1. 45 (1965).
+7. G. Menges and F. Knipschild. Polymer Engng Sci. 15,
+623 ( 1975).
+8. A. N. Gent and A. G. Thomas, J. appl. Polymer Sci. 1,
+107 (1959).
+9. J. M. Lederman, J. appl. Polymer Sci. 15, 693 (1971).
+10. S. Baxter and T. T. Jones, Plastics Polymers 40, 69
+(1972).
+MAITI et a/.: DEFORMATION
+P. J. Phillios and N. R. Wate~an, Polymer Engng Sri.
+4, 67 (1972).
+12. D. R. Moore, The Use ojGk.ss in Engineering, Design
+Council Guide 05. Oxford Univ. Press (1980).
+13. R, Chan and M.. Nakamura, J. Cell ~/as& 5, 112
+( 1969).
+14. C. A. Brighton and A. E. Meazey, Expanded polyvinyl
+chloride, in Expanded Plastics-Trends in Performance
+Re~r~iremenls, Micro Symposium, Q.M.C. Industrial
+Research Ltd, London (1973).
+IS. M. %ilsea, K. L. Johnson and M. F. Ashby, Inr. J.
+Mech. Sci. 17, 457 (1975).
+16. J. B. Walsh, W. F. Brace and A. W. England, J. Am.
+Ceram. Sot. 4% 605 (1965).
+17. Foamglass Dara Sheets, Pittsburgh-Corning
+Inc.
+(1982).
+18. A. M. Gent and A. G. Thomas, Rubber Chem. Technof.
+36, 597 (I 963).
+Il.
+AND ENERGY ABSORPTION
+1975
+19. P. H. Thornton and C. L. Ma=, Meta& Trans. 6.4.
+-
+1253 (1975).
+20. P. H. Thornton and C. L. Magee, MetaD. Trans. 6A,
+1801 (1975).
+21. R. K.‘Tra&er, J. CM. PM. 3, 405 (1967).
+22. V. A. Matonis, Sot. Pkwt. Engng J., p. 1024 (1964).
+23. K. C. Rusch, J. appl. Polym. Sci. 14, 1263 (1970).
+24. A. McIntyre and G. E. Anderton, Polymer 20, 247
+(1979).
+25. C. W. Fowlkes, Int. 1. Fract. 10, 99 (1974).
+26. M. C. Shaw and T. Sata. In:. J. Mech. Sci. 8,469 (1966).
+27. J. A. Rinde, J. a@. Polym. Sci. 14, 1913 (1970).
+28. S. K. Maiti, M. F. Ashby and L. J. Gibson, Scripta
+metall. 18, (3) (I 984).
+29. K. E. Easterling, R. Harrysson, L. J. Gibson and M. F.
+Ashby, Proc. R. Sot. Land. A383, 31 (1982).
+30. J. M. Dinwoodie, Timber: its Nafure and Behaviour.
+Van Nostrand, New York (1981).

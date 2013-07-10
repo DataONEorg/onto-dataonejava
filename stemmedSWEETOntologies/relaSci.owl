@@ -60,83 +60,83 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/realmGeolBasin.owl"/>
   </owl:Ontology>
 
-  <owl:ObjectProperty rdf:about="#hasEffect">
+  <owl:ObjectProperty rdf:about="#haseffect">
     <owl:equivalentProperty rdf:resource="#caus"/>
     <owl:equivalentProperty rdf:resource="#impact"/>
-    <owl:inverseOf rdf:resource="#hasCaus"/>
+    <owl:inverseOf rdf:resource="#hascaus"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#caus"/>
   <owl:ObjectProperty rdf:about="#impact"/>
 
-  <owl:ObjectProperty rdf:about="#hasCaus">
-    <owl:equivalentProperty rdf:resource="#dueTo"/>
-    <owl:equivalentProperty rdf:resource="#causedBi"/>
-    <owl:equivalentProperty rdf:resource="#impactedBi"/>
+  <owl:ObjectProperty rdf:about="#hascaus">
+    <owl:equivalentProperty rdf:resource="#dueto"/>
+    <owl:equivalentProperty rdf:resource="#causedbi"/>
+    <owl:equivalentProperty rdf:resource="#impactedbi"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#dueTo"/>
-  <owl:ObjectProperty rdf:about="#causedBi"/>
-  <owl:ObjectProperty rdf:about="#impactedBi"/>
+  <owl:ObjectProperty rdf:about="#dueto"/>
+  <owl:ObjectProperty rdf:about="#causedbi"/>
+  <owl:ObjectProperty rdf:about="#impactedbi"/>
 
-  <owl:ObjectProperty rdf:about="#hasImpact">
+  <owl:ObjectProperty rdf:about="#hasimpact">
     <rdfs:range rdf:resource="&ordi;Impact"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasImpactOn">
+  <owl:ObjectProperty rdf:about="#hasimpacton">
     <rdfs:domain rdf:resource="&ordi;Impact"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#relatedTo">
+  <owl:ObjectProperty rdf:about="#relatedto">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#moreExtensiveThan">
+  <owl:ObjectProperty rdf:about="#moreextensivethan">
     <rdfs:domain rdf:resource="&ordi;Qualifier"/>
     <rdfs:range rdf:resource="&ordi;Qualifier"/>
     <rdfs:subPropertyOf rdf:resource="&mrela;greaterThan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#greaterRoleThan">
+  <owl:ObjectProperty rdf:about="#greaterrolethan">
     <rdfs:domain rdf:resource="&prop;Role"/>
     <rdfs:range rdf:resource="&prop;Role"/>
     <rdfs:subPropertyOf rdf:resource="&mrela;greaterThan"/>
   </owl:ObjectProperty>
 
-  <owl:TransitiveProperty rdf:about="#moreActiveThan">
+  <owl:TransitiveProperty rdf:about="#moreactivethan">
     <rdfs:domain rdf:resource="&ordi;ActivityLevel"/>
     <rdfs:range rdf:resource="&ordi;ActivityLevel"/>
     <rdfs:subPropertyOf rdf:resource="&mrela;greaterThan"/>
   </owl:TransitiveProperty>
 
-  <owl:ObjectProperty rdf:about="#hasCompon">
+  <owl:ObjectProperty rdf:about="#hascompon">
     <rdfs:range rdf:resource="&repr;Component"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#componentOf">
-    <owl:inverseOf rdf:resource="#hasCompon"/>
+  <owl:ObjectProperty rdf:about="#componentof">
+    <owl:inverseOf rdf:resource="#hascompon"/>
   </owl:ObjectProperty>
 
 <!-- Geological -->
-  <owl:ObjectProperty rdf:about="#hasGeologicProvinc">
+  <owl:ObjectProperty rdf:about="#hasgeologicprovinc">
     <rdfs:range rdf:resource="&geol;GeologicProvince"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasGeomorphologicalTyp">
+  <owl:ObjectProperty rdf:about="#hasgeomorphologicaltyp">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasBasin">
+  <owl:ObjectProperty rdf:about="#hasbasin">
     <rdfs:range rdf:resource="&basin;Basin"/>
   </owl:ObjectProperty>
 
-  <owl:DatatypeProperty rdf:about="#hasMagnitud">
+  <owl:DatatypeProperty rdf:about="#hasmagnitud">
     <rdfs:domain rdf:resource="&seis;Earthquake"/>
   </owl:DatatypeProperty>
 
-  <owl:ObjectProperty rdf:about="#hasRock">
+  <owl:ObjectProperty rdf:about="#hasrock">
     <rdfs:subPropertyOf rdf:resource="&crela;hasSubstance"/>
     <rdfs:range rdf:resource="&rock;Rock"/>
   </owl:ObjectProperty>
 
 <!-- Biological -->
-  <owl:DatatypeProperty rdf:about="#hasTrophicLevel">
+  <owl:DatatypeProperty rdf:about="#hastrophiclevel">
     <rdfs:domain rdf:resource="&biol;Species"/>
   </owl:DatatypeProperty>
 
@@ -144,7 +144,7 @@
     <rdfs:domain rdf:resource="&biol;Species"/>
    </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSpeci">
+  <owl:ObjectProperty rdf:about="#hasspeci">
     <rdfs:range rdf:resource="&biol;Species"/>
    </owl:ObjectProperty>
 
@@ -153,10 +153,10 @@
   </owl:ObjectProperty>
 
 <!-- system -->
-  <owl:ObjectProperty rdf:about="#decreas">
+  <owl:ObjectProperty rdf:about="#decrea">
     <rdfs:domain rdf:resource="&sys;Decrease"/>
-    <owl:equivalentProperty rdf:resource="#decreaseIn"/>
-    <owl:equivalentProperty rdf:resource="#decreas"/>
+    <owl:equivalentProperty rdf:resource="#decreasein"/>
+    <owl:equivalentProperty rdf:resource="#decrea"/>
     <owl:equivalentProperty rdf:resource="#declin"/>
     <owl:equivalentProperty rdf:resource="#declin"/>
     <owl:equivalentProperty rdf:resource="#drop"/>
@@ -167,8 +167,8 @@
     <owl:equivalentProperty rdf:resource="#reduc"/>
     <owl:equivalentProperty rdf:resource="#reduct"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#decreaseIn"/>
-  <owl:ObjectProperty rdf:about="#decreas"/>
+  <owl:ObjectProperty rdf:about="#decreasein"/>
+  <owl:ObjectProperty rdf:about="#decrea"/>
   <owl:ObjectProperty rdf:about="#declin"/>
   <owl:ObjectProperty rdf:about="#declin"/>
   <owl:ObjectProperty rdf:about="#drop"/>
@@ -179,30 +179,30 @@
   <owl:ObjectProperty rdf:about="#reduc"/>
   <owl:ObjectProperty rdf:about="#reduct"/>
 
-  <owl:ObjectProperty rdf:about="#increas">
+  <owl:ObjectProperty rdf:about="#increa">
     <rdfs:domain rdf:resource="&sys;Increase"/>
-    <owl:equivalentProperty rdf:resource="#increaseIn"/>
-    <owl:equivalentProperty rdf:resource="#increas"/>
-    <owl:equivalentProperty rdf:resource="#rais"/>
+    <owl:equivalentProperty rdf:resource="#increasein"/>
+    <owl:equivalentProperty rdf:resource="#increa"/>
+    <owl:equivalentProperty rdf:resource="#rai"/>
     <owl:equivalentProperty rdf:resource="#rise"/>
     <owl:equivalentProperty rdf:resource="#rise"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#increas"/>
-  <owl:ObjectProperty rdf:about="#increaseIn"/>
-  <owl:ObjectProperty rdf:about="#rais"/>
+  <owl:ObjectProperty rdf:about="#increa"/>
+  <owl:ObjectProperty rdf:about="#increasein"/>
+  <owl:ObjectProperty rdf:about="#rai"/>
   <owl:ObjectProperty rdf:about="#rise"/>
   <owl:ObjectProperty rdf:about="#rise"/>
 
-  <owl:ObjectProperty rdf:about="#rangeOf">
+  <owl:ObjectProperty rdf:about="#rangeof">
     <rdfs:range rdf:resource="&quan;Quantity"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasLowerQuant">
+  <owl:ObjectProperty rdf:about="#haslowerqu">
     <rdfs:domain rdf:resource="&math;Interval"/>
     <rdfs:range rdf:resource="&quan;Quantity"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasUpperQuant">
+  <owl:ObjectProperty rdf:about="#hasupperqu">
     <rdfs:domain rdf:resource="&math;Interval"/>
     <rdfs:range rdf:resource="&quan;Quantity"/>
   </owl:ObjectProperty>
@@ -222,7 +222,7 @@
     <rdfs:range rdf:resource="&units;Unit"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDefaultUnit">
+  <owl:ObjectProperty rdf:about="#hasdefaultunit">
     <rdfs:domain rdf:resource="&quan;Quantity"/>
     <rdfs:range rdf:resource="&units;Unit"/>
   </owl:ObjectProperty>
@@ -230,25 +230,25 @@
   <owl:ObjectProperty rdf:about="#measur">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasSourc">
+  <owl:ObjectProperty rdf:about="#hassourc">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#measuredBi">
+  <owl:ObjectProperty rdf:about="#measuredbi">
     <owl:inverseOf rdf:resource="#measur"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#measureOf">
+  <owl:ObjectProperty rdf:about="#measureof">
     <rdfs:domain rdf:resource="&prop;Property"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#containsMateri">
+  <owl:ObjectProperty rdf:about="#containsmateri">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasQuant">
+  <owl:ObjectProperty rdf:about="#hasquant">
     <rdfs:range rdf:resource="&quan;Quantity"/>
   </owl:ObjectProperty>
 
-   <owl:DatatypeProperty rdf:about="#hasSymbol">
+   <owl:DatatypeProperty rdf:about="#hassymbol">
      <rdfs:domain rdf:resource="&quan;Quantity"/>
    </owl:DatatypeProperty>
  

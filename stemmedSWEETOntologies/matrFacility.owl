@@ -28,121 +28,121 @@
      <owl:imports rdf:resource="&hum;"/>   
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Base">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#base">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Build">
-    <rdfs:subClassOf rdf:resource="#Structur"/>
+  <owl:Class rdf:about="#build">
+    <rdfs:subClassOf rdf:resource="#structur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CulturalFeatur">
-    <rdfs:subClassOf rdf:resource="#Structur"/>
+  <owl:Class rdf:about="#culturalfeatur">
+    <rdfs:subClassOf rdf:resource="#structur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dome">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#dome">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Facil">
-    <rdfs:subClassOf rdf:resource="#Structur"/>
+  <owl:Class rdf:about="#facil">
+    <rdfs:subClassOf rdf:resource="#structur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Habitat">
-    <rdfs:subClassOf rdf:resource="#Build"/>
+  <owl:Class rdf:about="#habitat">
+    <rdfs:subClassOf rdf:resource="#build"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Platform">
-    <rdfs:subClassOf rdf:resource="#Structur"/>
+  <owl:Class rdf:about="#platform">
+    <rdfs:subClassOf rdf:resource="#structur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Station">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#station">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Structur">
-    <rdfs:subClassOf rdf:resource="&infr;#Infrastructur"/>
+  <owl:Class rdf:about="#structur">
+    <rdfs:subClassOf rdf:resource="&infr;#infrastructur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MeteorologicalFacil">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#meteorologicalfacil">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Meteost">
-    <rdfs:subClassOf rdf:resource="#MeteorologicalFacil"/>
+  <owl:Class rdf:about="#meteost">
+    <rdfs:subClassOf rdf:resource="#meteorologicalfacil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CommunicationFacil">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#communicationfacil">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TransportationFacil">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#transportationfacil">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
 <!-- Farm -->
-  <owl:Class rdf:about="#AgriculturalProductionFacil">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#agriculturalproductionfacil">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Farm">
-    <rdfs:subClassOf rdf:resource="#AgriculturalProductionFacil"/>
+  <owl:Class rdf:about="#farm">
+    <rdfs:subClassOf rdf:resource="#agriculturalproductionfacil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fisheri">
-    <rdfs:subClassOf rdf:resource="#AgriculturalProductionFacil"/>
+  <owl:Class rdf:about="#fisheri">
+    <rdfs:subClassOf rdf:resource="#agriculturalproductionfacil"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#Plantat">
-    <rdfs:subClassOf rdf:resource="#Farm"/>
+   <owl:Class rdf:about="#plantat">
+    <rdfs:subClassOf rdf:resource="#farm"/>
    </owl:Class>
 
 <!-- Airport -->
-  <owl:Class rdf:about="#Airport">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#airport">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#AirportFacil">
-    <rdfs:subClassOf rdf:resource="#Facil" />
+  <owl:Class rdf:about="#airportfacil">
+    <rdfs:subClassOf rdf:resource="#facil" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hum;#hasHumanAct" />
-        <owl:allValuesFrom rdf:resource="&tran;#AirTraff" />
+        <owl:onProperty rdf:resource="&hum;#hashumanact" />
+        <owl:allValuesFrom rdf:resource="&tran;#airtraff" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTrafficControlCent">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#airtrafficcontrolc">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTrafficControlEnRouteCent">
-    <rdfs:subClassOf rdf:resource="#AirTrafficControlCent" />
+  <owl:Class rdf:about="#airtrafficcontrolenroutec">
+    <rdfs:subClassOf rdf:resource="#airtrafficcontrolc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTrafficControlRadarRoom">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#airtrafficcontrolradarroom">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTrafficControlTow">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#airtrafficcontroltow">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTransitway">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#airtransitway">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Runway">
-    <rdfs:subClassOf rdf:resource="#AirportFacil" />
+  <owl:Class rdf:about="#runway">
+    <rdfs:subClassOf rdf:resource="#airportfacil" />
   </owl:Class>
 
 <!-- Undergraound -->
-  <owl:Class rdf:about="#Mine">
-    <rdfs:subClassOf rdf:resource="#MiningFacil"/>
+  <owl:Class rdf:about="#mine">
+    <rdfs:subClassOf rdf:resource="#miningfacil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MiningFacil">
-    <rdfs:subClassOf rdf:resource="#Facil"/>
+  <owl:Class rdf:about="#miningfacil">
+    <rdfs:subClassOf rdf:resource="#facil"/>
   </owl:Class>
 
 </rdf:RDF>

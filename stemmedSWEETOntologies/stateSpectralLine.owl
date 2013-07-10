@@ -40,7 +40,7 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <ordi:SpectralLine rdf:about="#LymanAlpha">
+  <ordi:SpectralLine rdf:about="#lymanalpha">
      <crela:hasSubstance rdf:resource="&elem;H"/>
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -49,7 +49,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#He304">
+  <ordi:SpectralLine rdf:about="#he304">
      <crela:hasSubstance rdf:resource="&elem;He"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -58,7 +58,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#CaK">
+  <ordi:SpectralLine rdf:about="#cak">
      <crela:hasSubstance rdf:resource="&elem;Ca"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -67,7 +67,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#Hbeta">
+  <ordi:SpectralLine rdf:about="#hbeta">
      <crela:hasSubstance rdf:resource="&elem;H"/>
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -76,7 +76,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#NaD1">
+  <ordi:SpectralLine rdf:about="#nad1">
      <crela:hasSubstance rdf:resource="&elem;Na"/>
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -85,7 +85,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#NaD2">
+  <ordi:SpectralLine rdf:about="#nad2">
      <crela:hasSubstance rdf:resource="&elem;Na"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -94,7 +94,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#Halpha">
+  <ordi:SpectralLine rdf:about="#halpha">
      <crela:hasSubstance rdf:resource="&elem;H"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -103,7 +103,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#NI6768">
+  <ordi:SpectralLine rdf:about="#ni6768">
      <crela:hasSubstance rdf:resource="&elem;N"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -112,7 +112,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#K7699">
+  <ordi:SpectralLine rdf:about="#k7699">
      <crela:hasSubstance rdf:resource="&elem;K"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -121,7 +121,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#He1083">
+  <ordi:SpectralLine rdf:about="#he1083">
      <crela:hasSubstance rdf:resource="&elem;He"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_nm>
@@ -130,7 +130,7 @@
      </srela:hasWavelength>
   </ordi:SpectralLine>
 
-  <ordi:SpectralLine rdf:about="#H1">
+  <ordi:SpectralLine rdf:about="#h1">
      <crela:hasSubstance rdf:resource="&elem;H"/> 
      <srela:hasWavelength> 
        <waves:Wavelength_cm>

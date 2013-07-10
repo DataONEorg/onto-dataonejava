@@ -36,35 +36,35 @@
      <owl:imports rdf:resource="&phen;"/>
   </owl:Ontology>
 
-  <owl:ObjectProperty rdf:about="#hasRealm">
-    <rdfs:range rdf:resource="&realm;#Realm"/>
+  <owl:ObjectProperty rdf:about="#hasrealm">
+    <rdfs:range rdf:resource="&realm;#realm"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#partOf">
+  <owl:ObjectProperty rdf:about="#partof">
     <rdf:type rdf:resource="&owl;TransitiveProperty"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="#contain">
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasProperti">
-    <rdfs:range rdf:resource="&prop;#Properti"/>
+  <owl:ObjectProperty rdf:about="#hasproperti">
+    <rdfs:range rdf:resource="&prop;#properti"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasRol">
-    <rdfs:range rdf:resource="&prop;#Role"/>
+  <owl:ObjectProperty rdf:about="#hasrol">
+    <rdfs:range rdf:resource="&prop;#role"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasStat">
-    <rdfs:range rdf:resource="&state;#State"/>
+  <owl:ObjectProperty rdf:about="#hasstat">
+    <rdfs:range rdf:resource="&state;#state"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasProcess">
-    <rdfs:range rdf:resource="&proc;#Process"/>
+  <owl:ObjectProperty rdf:about="#hasprocess">
+    <rdfs:range rdf:resource="&proc;#process"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasPhenomena">
-    <rdfs:range rdf:resource="&phen;#Phenomena"/>
+  <owl:ObjectProperty rdf:about="#hasphenomena">
+    <rdfs:range rdf:resource="&phen;#phenomena"/>
   </owl:ObjectProperty>
 
 </rdf:RDF>

@@ -44,90 +44,90 @@
      <owl:imports rdf:resource="&res;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#StatisticalSampl">
-    <rdfs:subClassOf rdf:resource="&res;#Sampl"/>
+  <owl:Class rdf:about="#statisticalsampl">
+    <rdfs:subClassOf rdf:resource="&res;#sampl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&sstate;#Random"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&sstate;#random"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Regress">
-    <rdfs:subClassOf rdf:resource="#StatisticalOper"/>
+  <owl:Class rdf:about="#regress">
+    <rdfs:subClassOf rdf:resource="#statisticalop"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sampl">
-    <rdfs:subClassOf rdf:resource="#StatisticalOper"/>
+  <owl:Class rdf:about="#sampl">
+    <rdfs:subClassOf rdf:resource="#statisticalop"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StatisticalInfer">
-    <rdfs:subClassOf rdf:resource="#StatisticalOper"/>
+  <owl:Class rdf:about="#statisticalinf">
+    <rdfs:subClassOf rdf:resource="#statisticalop"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Statist">
-    <rdfs:subClassOf rdf:resource="&math;#NumericalEnt"/>
+  <owl:Class rdf:about="#statist">
+    <rdfs:subClassOf rdf:resource="&math;#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#tTest">
-    <rdfs:subClassOf rdf:resource="#HypothesisTest"/>
+  <owl:Class rdf:about="#ttest">
+    <rdfs:subClassOf rdf:resource="#hypothesistest"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeneralLinearModel">
-    <rdfs:subClassOf rdf:resource="#Regress"/>
+  <owl:Class rdf:about="#generallinearmodel">
+    <rdfs:subClassOf rdf:resource="#regress"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GoodnessOfFit">
-    <rdfs:subClassOf rdf:resource="#Statist"/>
+  <owl:Class rdf:about="#goodnessoffit">
+    <rdfs:subClassOf rdf:resource="#statist"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HypothesisTest">
-    <rdfs:subClassOf rdf:resource="#StatisticalInfer"/>
+  <owl:Class rdf:about="#hypothesistest">
+    <rdfs:subClassOf rdf:resource="#statisticalinf"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ZTest">
-    <rdfs:subClassOf rdf:resource="#HypothesisTest"/>
+  <owl:Class rdf:about="#ztest">
+    <rdfs:subClassOf rdf:resource="#hypothesistest"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#Normal"/>
-        <owl:onProperty rdf:resource="&mrela;#hasStatisticalDistribut"/>
+        <owl:allValuesFrom rdf:resource="&func;#normal"/>
+        <owl:onProperty rdf:resource="&mrela;#hasstatisticaldistribut"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AnalysisOfVari">
-    <rdfs:subClassOf rdf:resource="#HypothesisTest"/>
-    <owl:equivalentClass rdf:resource="#ANOVA"/>
+  <owl:Class rdf:about="#analysisofvari">
+    <rdfs:subClassOf rdf:resource="#hypothesistest"/>
+    <owl:equivalentClass rdf:resource="#anova"/>
   </owl:Class>
-  <owl:Class rdf:about="#ANOVA"/>
+  <owl:Class rdf:about="#anova"/>
 
-  <owl:Class rdf:about="#ChiSquareTest">
-    <rdfs:subClassOf rdf:resource="#HypothesisTest"/>
+  <owl:Class rdf:about="#chisquaretest">
+    <rdfs:subClassOf rdf:resource="#hypothesistest"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#ChiSquar"/>
-        <owl:onProperty rdf:resource="&mrela;#hasStatisticalDistribut"/>
+        <owl:allValuesFrom rdf:resource="&func;#chisquar"/>
+        <owl:onProperty rdf:resource="&mrela;#hasstatisticaldistribut"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrdinaryLeastSquar">
-    <rdfs:subClassOf rdf:resource="#Regress"/>
-    <owl:equivalentClass rdf:resource="#OLS"/>
+  <owl:Class rdf:about="#ordinaryleastsquar">
+    <rdfs:subClassOf rdf:resource="#regress"/>
+    <owl:equivalentClass rdf:resource="#ols"/>
   </owl:Class>
-  <owl:Class rdf:about="#OLS"/>
+  <owl:Class rdf:about="#ols"/>
 
-  <owl:Class rdf:about="#SampleStatist">
-    <rdfs:subClassOf rdf:resource="#Statist"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#StatisticalOper">
-    <rdfs:subClassOf rdf:resource="&oper;#Operat"/>
+  <owl:Class rdf:about="#samplestatist">
+    <rdfs:subClassOf rdf:resource="#statist"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StatisticalDistribut">
-    <rdfs:subClassOf rdf:resource="&func;#DistributionFunct"/>
+  <owl:Class rdf:about="#statisticalop">
+    <rdfs:subClassOf rdf:resource="&oper;#operat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#statisticaldistribut">
+    <rdfs:subClassOf rdf:resource="&func;#distributionfunct"/>
   </owl:Class>
 
 </rdf:RDF>

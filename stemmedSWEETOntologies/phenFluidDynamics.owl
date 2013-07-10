@@ -46,183 +46,183 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#Overturn">
-    <rdfs:subClassOf rdf:resource="#Circul"/>
+  <owl:Class rdf:about="#overturn">
+    <rdfs:subClassOf rdf:resource="#circul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Recircul">
-    <rdfs:subClassOf rdf:resource="#Circul"/>
+  <owl:Class rdf:about="#recircul">
+    <rdfs:subClassOf rdf:resource="#circul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Circul">
-    <rdfs:subClassOf rdf:resource="#Flow"/>
+  <owl:Class rdf:about="#circul">
+    <rdfs:subClassOf rdf:resource="#flow"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flow">
-    <rdfs:subClassOf rdf:resource="#FluidPhenomena"/>
-    <rdfs:subClassOf rdf:resource="&proc;#Motion"/>
+  <owl:Class rdf:about="#flow">
+    <rdfs:subClassOf rdf:resource="#fluidphenomena"/>
+    <rdfs:subClassOf rdf:resource="&proc;#motion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Jet">
-    <rdfs:subClassOf rdf:resource="#Flow"/>
+  <owl:Class rdf:about="#jet">
+    <rdfs:subClassOf rdf:resource="#flow"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&pres;#Pressur"/>
-        <owl:onProperty rdf:resource="&screla;#hasQuant"/>
+        <owl:allValuesFrom rdf:resource="&pres;#pressur"/>
+        <owl:onProperty rdf:resource="&screla;#hasquant"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluidPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#fluidphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Fluid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#fluid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Eddi">
-    <rdfs:subClassOf rdf:resource="#FluidPhenomena"/>
+  <owl:Class rdf:about="#eddi">
+    <rdfs:subClassOf rdf:resource="#fluidphenomena"/>
   <rdfs:comment>In fluid dynamics, an eddy is the swirling of a fluid and the reverse current created when the fluid flows past an obstacle. The moving fluid creates a space devoid of downstream-flowing water on the downstream side of the object. Fluid behind the obstacle flows into the void creating a swirl of fluid on each edge of the obstacle, followed by a short reverse flow of fluid behind the obstacle flowing upstream, toward the back of the obstacle. This phenomenon is most visible behind large emergent rocks in swift-flowing rivers.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LaminarFlow">
-    <rdfs:subClassOf rdf:resource="#Flow"/>
+  <owl:Class rdf:about="#laminarflow">
+    <rdfs:subClassOf rdf:resource="#flow"/>
     <rdfs:comment xml:lang="en">(Also called sheet flow, streamline flow.) A flow regime in which fluid motion is smooth and orderly, and in which adjacent layers or laminas slip past each other with little mixing between them. Exchange of material across laminar layers occurs by molecular diffusion, a process about 106 times less effective than turbulence. Laminar flow can be easily predicted as velocity increases at a steady rate from a boundary. This contrasts with the chaotic and random nature of turbulent flow. Laminar flow is not a common occurrence in the statically neutral and unstable atmosphere and is confined to a very thin layer (1 mm) adjacent to very smooth surfaces such as snow and ice. However, in strongly statically stable regions such as the the nocturnal boundary layer, the Richardson number can be large enough that turbulence is suppressed, and the flow is laminar over a layer many tens of meters thick.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ViscousFlow">
-    <rdfs:subClassOf rdf:resource="#Flow"/>
+  <owl:Class rdf:about="#viscousflow">
+    <rdfs:subClassOf rdf:resource="#flow"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StationaryEddi">
-    <rdfs:subClassOf rdf:resource="#Eddi" />
+  <owl:Class rdf:about="#stationaryeddi">
+    <rdfs:subClassOf rdf:resource="#eddi" />
     <rdfs:comment xml:lang="en">In studies of the general circulation, the eddies are the departures of a field from the zonal mean of that field; the stationary eddies are the time-averaged, or time-invariant, component of the eddy field.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vortex">
+  <owl:Class rdf:about="#vortex">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasProcess" />
-        <owl:allValuesFrom rdf:resource="&proc;#Rotat" />
+        <owl:onProperty rdf:resource="&rela;#hasprocess" />
+        <owl:allValuesFrom rdf:resource="&proc;#rotat" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#Flow" />
+    <rdfs:subClassOf rdf:resource="#flow" />
     <rdfs:comment xml:lang="en">More often the term refers to a flow with closed streamlines or to the idealized case in which all vorticity is concentrated in a vortex filament.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PointVortex">
-    <rdfs:subClassOf rdf:resource="#Vortex" />
+  <owl:Class rdf:about="#pointvortex">
+    <rdfs:subClassOf rdf:resource="#vortex" />
     <rdfs:comment xml:lang="en">A straight line vortex, the flow of which can be modeled in two dimensions, with a point concentration of vorticity surrounded by irrotational flow.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#BoundaryLay">
-    <rdfs:subClassOf rdf:resource="&geom;#Region" />
+  <owl:Class rdf:about="#boundarylay">
+    <rdfs:subClassOf rdf:resource="&geom;#region" />
   </owl:Class>
 
-  <owl:Class rdf:about="#LaminarBoundaryLay">
-    <rdfs:subClassOf rdf:resource="#BoundaryLay" />
+  <owl:Class rdf:about="#laminarboundarylay">
+    <rdfs:subClassOf rdf:resource="#boundarylay" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#LaminarFlow" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#laminarflow" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An interfacial region in which flow is smooth and nonturbulent. Above a surface, a laminar layer will develop and fluid velocity will increase with distance from the surface, but not indefinitely. At some point, flow will become turbulent, with the laminar sublayer separating the turbulent layer from the surface. In the real world, most laminar boundary layers are extremely thin (order of 1 mm), but can be of biological importance, for example, next to plant leaves or as invertebrate refuges in streams.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LaminarSublay">
-    <rdfs:subClassOf rdf:resource="#LaminarBoundaryLay" />
+  <owl:Class rdf:about="#laminarsublay">
+    <rdfs:subClassOf rdf:resource="#laminarboundarylay" />
     <rdfs:comment xml:lang="en">A layer in which the fluid undergoes smooth, nonturbulent flow. It is found between any surface and a turbulent layer above. See laminar boundary layer, laminar flow.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CapillaryAct">
-    <rdfs:subClassOf rdf:resource="#FluidPhenomena"/>
-    <owl:equivalentClass rdf:resource="#Capillari"/>
+  <owl:Class rdf:about="#capillaryact">
+    <rdfs:subClassOf rdf:resource="#fluidphenomena"/>
+    <owl:equivalentClass rdf:resource="#capillari"/>
   </owl:Class> 
-  <owl:Class rdf:about="#Capillari"/>
+  <owl:Class rdf:about="#capillari"/>
 
 <!-- Pressure cells -->
-  <owl:Class rdf:about="#Anticyclon">
-    <rdfs:subClassOf rdf:resource="#Cell"/>
+  <owl:Class rdf:about="#anticyclon">
+    <rdfs:subClassOf rdf:resource="#cell"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:someValuesFrom rdf:resource="#HighPressur" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:someValuesFrom rdf:resource="#highpressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An atmospheric anticyclonic circulation, a closed circulation. The wind in an anticyclone is in the clockwise direction in the Northern Hemisphere and counterclockwise in the Southern Hemisphere.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Depress">
-    <rdfs:subClassOf rdf:resource="#LowPressur" />
-    <rdfs:subClassOf rdf:resource="&geom;#Depress" />
+  <owl:Class rdf:about="#depress">
+    <rdfs:subClassOf rdf:resource="#lowpressur" />
+    <rdfs:subClassOf rdf:resource="&geom;#depress" />
   </owl:Class>
 
-  <owl:Class rdf:about="#HighPressur">
-    <rdfs:subClassOf rdf:resource="&pres;#Pressur" />
-    <owl:equivalentClass rdf:resource="#Ridg" />
+  <owl:Class rdf:about="#highpressur">
+    <rdfs:subClassOf rdf:resource="&pres;#pressur" />
+    <owl:equivalentClass rdf:resource="#ridg" />
     <rdfs:label>High Pressure</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#Ridg"/>
+  <owl:Class rdf:about="#ridg"/>
 
-  <owl:Class rdf:about="#LowPressur">
-    <rdfs:subClassOf rdf:resource="&pres;#Pressur" />
+  <owl:Class rdf:about="#lowpressur">
+    <rdfs:subClassOf rdf:resource="&pres;#pressur" />
     <rdfs:label>Low Pressure</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ridg">
-    <rdfs:subClassOf rdf:resource="&geom;#Ridg" />
+  <owl:Class rdf:about="#ridg">
+    <rdfs:subClassOf rdf:resource="&geom;#ridg" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:someValuesFrom rdf:resource="#HighPressur" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:someValuesFrom rdf:resource="#highpressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In meteorology, an elongated area of relatively low atmospheric pressure; the opposite of a ridge.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="&geom;#Ridg" />
+    <rdfs:subClassOf rdf:resource="&geom;#ridg" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Trough">
-    <rdfs:subClassOf rdf:resource="&geom;#Trough" />
+  <owl:Class rdf:about="#trough">
+    <rdfs:subClassOf rdf:resource="&geom;#trough" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:someValuesFrom rdf:resource="#LowPressur" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:someValuesFrom rdf:resource="#lowpressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In meteorology, an elongated area of relatively low atmospheric pressure; the opposite of a ridge.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cyclon">
-    <rdfs:subClassOf rdf:resource="#LowPressur" />
+  <owl:Class rdf:about="#cyclon">
+    <rdfs:subClassOf rdf:resource="#lowpressur" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Cell">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena" />
+  <owl:Class rdf:about="#cell">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasProcess" />
-        <owl:someValuesFrom rdf:resource="&proc;#Rotat" />
+        <owl:onProperty rdf:resource="&rela;#hasprocess" />
+        <owl:someValuesFrom rdf:resource="&proc;#rotat" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In radar usage, a local maximum in radar reflectivity that undergoes a life cycle of growth and decay. The rising portion of the reflectivity maximum is indicative of updraft, and the later descending portion is indicative of a precipitation downdraft. Cells in ordinary convective storms last from 20 to 30 min, but often form longer-lasting multicell convective storms. Cells in supercell storms are more steady and last considerably longer. See also thunderstorm cell.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CellClust">
-    <rdfs:subClassOf rdf:resource="&geom;#Cluster"/>
+  <owl:Class rdf:about="#cellclust">
+    <rdfs:subClassOf rdf:resource="&geom;#cluster"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Cell"/>
-        <owl:onProperty rdf:resource="&srela;#clusterOf"/>
+        <owl:allValuesFrom rdf:resource="#cell"/>
+        <owl:onProperty rdf:resource="&srela;#clusterof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gyre">
-    <rdfs:subClassOf rdf:resource="#Cell"/>
+  <owl:Class rdf:about="#gyre">
+    <rdfs:subClassOf rdf:resource="#cell"/>
   </owl:Class>
 
 </rdf:RDF>

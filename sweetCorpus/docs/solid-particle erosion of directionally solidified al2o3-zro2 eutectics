@@ -1,0 +1,813 @@
+Wear 268 (2010) 571–578
+Contents lists available at ScienceDirect
+Wear
+journal homepage: www.elsevier.com/locate/wear
+Solid-particle erosion of directionally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutecticsଝ
+ ̃
+K.C. Goretta a , J.I. Pena b , V.M. Orera b , Nan Chen c , D. Singh c , J.L. Routbort c,∗
+a
+Asian Office of Aerospace Research and Development, Tokyo 106-0032, Japan
+Instituto de Ciencia de Materiales de Aragon, CSIC-Universidad de Zaragoza, Zaragoza E-50018, Spain
+c
+Argonne National Laboratory, Argonne, IL 60439-4838, USA
+b
+a r t i c l e
+i n f o
+Article history:
+Received 16 October 2008
+Received in revised form 13 August 2009
+Accepted 12 October 2009
+Available online 21 October 2009
+Keywords:
+Eutectic ceramic
+Directional solidification
+Erosion
+Mechanical properties
+a b s t r a c t
+Resistance to solid-particle erosion was studied by measuring individual damage sites in directionally
+solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics that contained three concentrations of Y2 O3 (0.5, 3, and 9% in
+the ZrO2 phase). For comparison, polycrystalline Al2 O3 , sapphire, and polycrystalline and single-crystal
+tetragonally stabilized ZrO2 were also studied. All specimens were impacted at normal incidence by
+angular 63 and 143 ␮m SiC particles traveling at 100 m/s. The eutectics containing 3% and 9 mol.% Y2 O3
+generally exhibited the smallest damage zones and the ZrO2 specimens exhibited by far the largest
+damage zones. Examination of damage features and comparison with basic mechanical properties and
+models for erosion of brittle materials led to conclusions that the eutectics were resistant to erosion
+because of the presence of large compressive residual stresses in their Al2 O3 phases and that the ZrO2
+materials were susceptible to erosive damage because transformation toughening was ineffective in
+reducing propagation of lateral cracks that emanated from the damage sites.
+Published by Elsevier B.V.
+1. Introduction
+Directionally solidified eutectic ceramics (DSECs) exhibit a wide
+range of useful properties. They are being considered for use in
+applications such as advanced gas turbines, substrates for thin
+films, and bioengineered systems [1–3]. Much is known about
+processing and microstructural development of eutectic ceram-
+ics [1–17]. Well-made oxide eutectics exhibit excellent mechanical
+properties to near their melting points [10,15], and many thorough
+studies of their mechanical properties have been published ([1] and
+references therein).
+We are especially interested in the fundamentals of direction-
+ally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics because of the wide
+range of microstructures and the many mechanical properties that
+have been reported. Elastic modulus, hardness, fracture strength,
+fracture toughness, creep, resistance to sliding wear, and residual
+stresses have all been studied in materials for which microstruc-
+ଝ The submitted manuscript has been created by the University of Chicago as
+Operator of Argonne National Laboratory (‘Argonne’) under Contract No. DE-AC02-
+06CH11357 with the U.S. Department of Energy. The U.S. Government retains for
+itself, and others acting on its behalf, a paid-up, nonexclusive, irrevocable worldwide
+license in said article to reproduce, prepare derivative works, distribute copies to the
+public, and perform publicly and display publicly, by or on behalf of the Government.
+∗ Corresponding author at: Argonne National Laboratory, Energy Systems Divi-
+sion, 9700 South Cass Avenue, Argonne, IL 60439-4838, USA. Tel.: +1 630 252 5065;
+fax: +1 630 252 4798.
+E-mail address: routbort@anl.gov (J.L. Routbort).
+0043-1648/$ – see front matter. Published by Elsevier B.V.
+doi:10.1016/j.wear.2009.10.003
+ture has been characterized well [1,14,17–26]. Given the excellent
+resistances of these eutectics to sliding wear [23], one might also
+expect good resistance to wear by solid-particle erosion.
+We have studied solid-particle erosion of ceramics, compos-
+ites, and brittle materials for many years [27–35]. We report here
+on measurements of the resistances of three directionally solidi-
+fied Al2 O3 –ZrO2 (Y2 O3 ) eutectics to erosion by sharp SiC abrasives.
+These studies were conducted to determine the basic mecha-
+nisms of material removal and whether the eutectics are resistant
+to erosion. For comparison, sapphire, polycrystalline Al2 O3 , and
+single-crystal and polycrystalline Y2 O3 -stabilized ZrO2 specimens
+were also tested.
+2. Background
+Solid-particle erosion is usually measured as mass or volume
+of target lost per mass or volume of erodent particles impacting
+the surface [27–38]. Consistent results and good fits to models
+of erosion of brittle materials have been obtained when the ero-
+dent particles are significantly harder than the targets they impact
+[39–41]. The precision of a determination for erosion rate is depen-
+dent on variables such as the area of the surface being eroded,
+the mass of erodent used, and the number of materials-loss tests
+conducted.
+Because only comparatively small rods of directionally solidified
+Al2 O3 –ZrO2 (Y2 O3 ) eutectics could be obtained, we decided to study
+erosion by examination of individual impact sites. Careful measure-
+ments of the sizes of damage zones, coupled with direct observation
+572
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+by scanning electron microscopy, can yield many useful insights.
+This approach has been used, for example, to study impact damage
+in soda-lime glass and polycrystalline alumina [42,43].
+Impact of brittle materials by solid particles has been shown to
+lead to formation of radial and lateral cracks that emanate from an
+elastic-plastic impact site [36–38,42,44–48]. The models contend
+[36–38,44–48] and experiments have confirmed [27,29,32–36,42]
+that for impact by hard particles, lateral cracks are indeed respon-
+sible for material loss in many brittle materials. For normal impact
+pressure P, the lateral cracks that form have length cL , where
+cL = A
+F(E/H)3/4
+1/2
+P 5/8 ,
+Kc H 1/4
+(1)
+and A is a constant, F is a geometric factor, E is the target elastic mod-
+ulus, H is the target hardness, and Kc is the critical stress-intensity
+factor of the target [47].
+For normal impact pressure P, the radial cracks that form have
+length cR , where
+cR =
+2/3
+F ∗ (E/H)1/2
+P 2/3 ,
+Kc H 1/4
+(2)
+and F* is a geometric factor and the other terms are as defined in
+Eq. (1) [46]. Radial crack lengths are generally significant relative
+to those of lateral cracks, but they do not contribute significantly
+to materials-loss by erosion because they do not enclose a volume
+of material.
+This model will form the basis of our analysis of single-impact
+damage sites in our specimens. It can be extended to predict mate-
+rial loss by impact from a great many non-interacting particles of
+approximately uniform size. Other researchers have also developed
+models for impact by sharp particles arriving at normal incidence.
+They agree broadly, but not in the fine details. Evans et al. devel-
+oped a dynamic impact model [36], in which erosion rate W defined
+as eroded volume per volume of erodent striking the target can be
+expressed as
+W ∝ V 3.2 R3.7
+0.25
+−1.3 −0.25
+Kc
+H
+,
+(3)
+where V is the velocity of the impacting particle, R is the particle
+radius, is the particle density, and Kc and H of the target are as
+defined in Eq. (1).
+The quasi-static model of Wiederhorn and coworkers for erosion
+of brittle solids predicts
+W ∝ V 2.4 R3.7
+1.2
+−1.3 0.11
+Kc
+H
+,
+(4)
+where all terms are as defined previously [44,45].
+Ritter et al. model the problem by defining the volume X of
+material removed per impact event:
+−1
+X = E 1.25 Kc H −1.4 U 1.2 ,
+(5)
+where is a constant, E is the target elastic modulus, U is the kinetic
+energy of the impacting particle, and Kc and H are as in the previous
+equations [48].
+These models indicate that tough, hard targets are most resis-
+tant to erosion, with toughness being the more-dominant materials
+property in determining steady-state erosion rate. Eqs. (1)–(5) pro-
+vide a quantitative basis for comparing impact damage to the
+properties of the target material.
+3. Experimental details
+3.1. Materials
+Three sets of directionally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutec-
+tic rods were studied; they contained 0.5, 3, or 9 mol.% Y2 O3
+Fig. 1. SEM photomicrographs of microstructures of (a) Al2 O3 ceramic and (b) 3-TZY
+ceramic.
+in the ZrO2 phase. These rods will be designated 0.5Y, 3Y, and
+9Y. The ZrO2 phase was primarily monoclinic in the 0.5Y rod,
+tetragonal in the 3Y rod, and cubic in the 9Y rod [49]. The rods
+were grown at a solidification rate of 10 mm/h. Details of their
+processing and resulting microstructures can be found in Refs.
+[14,18,49]. The microstructures consisted of a homogeneous dis-
+persion of elongated zirconia particles (degenerated lamellae with
+a width-to-length ratio of approximately 0.35), with interlamellar
+spacing of approximately 2 ␮m embedded in a continuous sapphire
+matrix.
+The diameters of the Al2 O3 –ZrO2 (Y2 O3 ) rods were all
+2.2–2.3 mm. The crystallography of these samples is described in
+Ref. [14] and can be defined by interpenetrating bicrystals, for
+which alumina grew preferentially with the c-axis parallel to the
+growth direction and the various zirconia phases on average grew
+perpendicular to the {0 0 1} or {0 1 1} planes.
+For comparison, the erosion characteristics of various Al2 O3 and
+ZrO2 specimens were also studied. Sapphire and polycrystalline
+specimens and single-crystal and polycrystalline ZrO2 /3 mol% Y2 O3
+(3-TZY) specimens were obtained from our archives. The Al2 O3
+was a silica-bonded specimen with a microstructure that featured
+a bimodal grain-size distribution of angular grains approximately
+7 and 45 ␮m in average diameter. The polycrystalline 3-TZY spec-
+imen consisted of fine, equiaxed grains approximately 0.7 ␮m in
+diameter (Fig. 1).
+A summary of the expected mechanical properties for the vari-
+ous targets is shown in Table 1. Vickers hardness (Hv) values were
+measured with a Buehler MicroMet 5103 Tester (Lake Bluff, IL). For
+all measurements, the load was 1 kg and the time of indentation
+was 10 s. Elastic modulus (E) and fracture toughness (KIC ) values
+were taken from the literature.
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+573
+Table 1
+Specimens tested for resistance to solid-particle erosion; hardness data were mea-
+sured in this work and other data are averaged over the references cited, with KIC
+measured with single-edge notched beams, except where noted.
+Specimen
+Alumina
+Sapphire (0 0 0 1)
+Sapphire longitudinal
+3-TZY ceramic
+3-TZY crystal (0 0 1)
+0.5Y transverse
+0.5Y longitudinal
+0.5Y average
+3Y transverse
+3Y longitudinal
+3Y average
+9Y transverse
+9Y longitudinal
+9Y average
+E (GPa)
+Hv (GPa)
+KIC (MPa m0.5 )
+386 13.7 4
+456 17.0 4.5
+361 11.4 ≈2.5
+≈220 12.7 ≈11
+  ≈230 13.6 10.6
+– 11.8 –
+  – 11.4 –
+a
+–
+–
+≈370
+–
+–
+343
+a a
+14.6 4.8b
+15.9 4.4b
+– –
+  15.3 7.8
+  16.1 –
+  – ≈5b
+References
+[50,51]
+[2,18,52,53]
+[18,52]
+[55–58]
+[18,54,55]
+–
+–
+[1]
+[21]
+[21]
+[2]
+[18]
+[18]
+[18]
+a
+Values expected to be below those of 3Y and 9Y because of absence of transfor-
+mation toughening and presence of many significant microcracks [1].
+b
+Values obtained by indentation testing.
+Fig. 2. Schematic diagram of impact site, with radial cracks emanating from two
+points of the indentation (shaded region) and lateral cracks emerging from two
+sides; dimensions a, b, and depth h of the indentation define the size of the zone.
+3.2. Experiments
+Surfaces of all specimens were polished with 1 ␮m diamond grit
+so that Vickers microhardness or impact damage could be stud-
+ied. The erosion experiments were conducted in a slinger-type
+apparatus that has been described [59]. The pressure of the test
+chamber was reduced to 40 Pa, and thus aerodynamic effects were
+minimized. Particle feed rates were sufficiently low to minimize
+particle–particle interactions and total feeds were small enough to
+minimize overlapping of impact sites. The erodent particles were
+angular SiC abrasives (Crystalon 37, Norton Co., Worcester, MA,
+USA) of nominal diameter 63 or 143 ␮m. This erodent was selected
+because it has been used in many of our other studies of brittle
+Fig. 3. Impact by 143 ␮m SiC: (a) of polycrystalline Al2 O3 for which some material loss and radial and emergent lateral cracks were observed by SEM and (b) significant
+indentation was observed by profilometry; of sapphire, for which (c) and (d) the basic patterns of material removal and indentation were similar.
+574
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+materials [32] and because it is harder than any of the target ceram-
+ics [39–41,60]. For erosion of brittle materials, a sufficiently hard
+erodent will produce indentation types of damage. As an erodent
+approaches the hardness of its target, the indentation mechanism
+will not operate [60]. The choice of SiC as the erodent thus has
+advantages of producing a type of damage for which models are
+available and for which data can be compared with those of many
+other studies. It has the disadvantage of limiting application of the
+data and analyses to real-world erosion problems, for which softer
+erodents, such as silica, are often encountered.
+The impact velocity was 100 m/s and the impact angle was 90◦ . A
+velocity of 100 m/s was chosen not for any specific application, but
+rather because it has been used in many previous erosion studies
+and thus direct comparisons with other data sets can be made.
+The eroded surfaces were examined by scanning electron
+microscopy (SEM) in a Hitachi S-4700-II (Tokyo, Japan) field-
+emission microscope. Surfaces were coated with a thin layer of
+carbon prior to being examined. Damage sites were also examined
+with a MicroXAM interferometric surface profiler (ADE Phase Shift,
+Tucson, AZ). The dimensions of the damage sites were taken as
+the maximum areal extent of plastic indentation and extension of
+cracks, and the maximum depth h of the indentation (Fig. 2). Radial
+cracks (R) emanating beneath the impact zone were not measured,
+nor need they be because these cracks do not contribute to material
+removal [36–38,44–48].
+4. Results
+The first set of measurements focused on SEM of individual
+impact sites and the second set on their depths determined by pro-
+filometry. The range of response to erosive impact was surprisingly
+wide. The data are compiled in Table 2. The error bars reflect stan-
+dard deviations. Individual measurements were estimated to be
+accurate to within a few percent. Given the large standard devia-
+tions, this additional source of uncertainty is negligible. Only SEM
+of the specimens impacted by 143 ␮m SiC is shown. This choice was
+made simply because the larger sites were easier to image well.
+Table 2
+Dimensions of impact damage sites in targets for impact at 100 m/s by 63- or 143-␮m
+SiC particles at normal incidence.
+Specimen
+63 ␮m SiC
+Alumina
+Sapphire (0 0 0 1)
+Sapphire longitudinal
+3-TZY ceramic
+3-TZY crystal (0 0 1)
+0.5Y transverse
+0.5Y longitudinal
+3Y transverse
+3Y longitudinal
+9Y transverse
+9Y longitudinal
+143 ␮m SiC
+Alumina
+Sapphire (0 0 0 1)
+Sapphire longitudinal
+3-TZY ceramic
+3-TZY crystal (0 0 1)
+0.5Y transverse
+0.5Y longitudinal
+3Y transverse
+3Y longitudinal
+9Y transverse
+9Y longitudinal
+a (␮m)
+b (␮m)
+± 8 6
+ ± 4 7
+  ± 5 13
+   ± 9 24
+    ± 7 32
+     ± 4 25
+22 ± 5 36 ± ± 
+15 ± 4 37 ± ± 
+11 ± 4 40 ± ± 
+14 ± 3 49 ± ± 
+        179 ± 
+        76 ± 
+15
+12
+18
+34
+47
+45
+± 3
+ ± 3
+  ± 4
+   ± 8
+    ± 6
+     ± 8
+6 ± 3
+5 ± 2
+5 ± 1
+6 ± 1
+16 17 ± 7
+13 18 ± 10
+7 30 ± 6
+13 35 ± 7
+60 131 ± 41
+10 50 ± 17
+11 30 ± 11
+21 23 ± 13
+10 19 ± 5
+18 27 ± 15
+a
+a
+a
+51
+42
+35
+49
+a
+h (␮m)
+5.0 ± 0.8
+2.3 ± 0.6
+1.8 ± 0.7
+4.4 ± 1.6
+4.4 ± 1.3
+1.5 ± 0.6
+1.3 ± 0.4
+1.4 ± 0.5
+1.6 ± 0.5
+2.2 ± 0.4
+1.8 ± 0.8
+5.4 ± 0.5
+3.0 ± 0.3
+2.8 ± 0.8
+4.9 ± 0.7
+5 ± 1
+3.3 ± 0.9
+2.5 ± 0.5
+2.0 ± 0.6
+2.0 ± 0.6
+2.4 ± 0.7
+2.8 ± 1.4
+a
+Measurements could not be made reliably because of extended radial-type
+cracks.
+Fig. 4. (a) SEM photomicrograph of damage from impact by 143 ␮m SiC on polycrys-
+talline 3-TZY; (b) surface profilometry scan of damage by 63 ␮m SiC on single-crystal
+3-TZY, for which material loss by significant propagation of lateral cracks is evident
+(arrows).
+The polycrystalline Al2 O3 specimen exhibited a pattern that has
+been seen by others [29,61,62]. Plastic indentation and material
+removal by formation of a combination of what appeared to be
+wholesale removal of grains and propagation of lateral cracks were
+observed (Fig. 3a). There was significant scatter in the sizes of the
+damage zones. The damage zones were deep, often flat-bottomed,
+and their depths exhibited comparatively little scatter (Table 2;
+Fig. 3b). The damage zones in the sapphire specimens were quali-
+tatively similar, but the damage areas were generally smaller and
+the depths more shallow (Table 2; Fig. 3c and d).
+The damage zones in the polycrystalline 3-TZY specimen were
+larger than in the Al2 O3 or sapphire specimens. In particular, the lat-
+eral cracks extended further and produced more material removal.
+Lateral cracking was especially pronounced in the single-crystal
+3-TZY specimen (Fig. 4).
+The DSECs exhibited similar microstructures, but those of the
+3Y and 9Y specimens were more uniform. Impact damage in the
+0.5Y DSEC could be measured only partially. SEM images and sur-
+face profilometry were obtained for transverse cross sections, for
+which damage zones were characterized by indentation, along with
+limited cracking (Fig. 5a–c). Longitudinal section exhibited many
+very long cracks that appeared to extend from impact damage sites
+(Fig. 5d). These cracks were so long that they could not be measured
+reliably.
+The damage zones in the 3Y and 9Y DSECs were essentially iden-
+tical (Figs. 6 and 7). Indentation sites all exhibited debris and clear
+evidence of indentation, but only limited cracking.
+5. Discussion
+Examination of Eqs. (1)–(5) indicates damage zone size
+should decrease with increasing toughness. Scattergood and
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+575
+Fig. 5. Impact by 143 ␮m SiC on 0.5Y DSEC: SEM photomicrographs of (a) transverse and (b) longitudinal sections for which indentation and cracking are observed; (c)
+indentation and (d) indentation and extended radial cracking revealed by profilometry.
+coworkers have measured erosion rates for many ceramics
+([27,30,39,42,61,63–65] and references therein). They modeled
+effects of materials properties of both the erodent particles and
+the target on erosion rate. They concluded that for a given ero-
+dent particle, erosion rate was determined primarily by the fracture
+toughness of the target [66], with the toughest targets being as
+expected most resistant to erosive damage.
+The data taken here do not obviously follow a trend of higher
+fracture toughness resulting in greater resistance to erosion. More
+information is needed. Considerations of individual damage pat-
+terns, often by comparing directly two different ceramic materials,
+can allow one to extract useful insights into the erosion resistances
+of the ceramics measured here.
+For the three types of Al2 O3 specimens, the best resistance to
+erosive damage was exhibited by the basal plane sapphire. Sap-
+phire and Al2 O3 have previously been shown to be comparatively
+resistant to solid-particle erosion [67,68], with short-crack-length
+fracture toughness dominating its erosion resistance. Sapphire’s
+hardness is highest in the basal plane [69] and, as shown in Table 1,
+this plane’s fracture resistance is superior to that of coarse-grained
+Al2 O3 or non-basal plane sapphire [69–74]. For these specimens, as
+expected, damage zone size scaled with basic mechanical proper-
+ties.
+The damage zones for the polycrystalline Al2 O3 were unexpect-
+edly deep, and they were approximately independent of erodent
+size. Examination by SEM and surface profilometry suggested that
+the damage depth was often determined by removal of a grain of
+material rather than by plastic indentation. Silica-bonded Al2 O3 has
+comparatively weak grain boundaries and such a mechanism for
+material loss—grain-boundary fracture and removal of grain—has
+been observed previously [27]. This mechanism would explain both
+the measured depths and independence of depth on size of erodent
+particle.
+The polycrystalline 3-TZY specimens possessed by far the lowest
+elastic modulus values and the highest fracture toughness val-
+ues. One would expect them to be the most resistant to erosive
+damage. Instead, they were the least resistant. Comparatively poor
+resistance to solid-particle erosion has been observed before for
+tetragonally stabilized zirconias [65,66]. The explanation we offer
+for this fact emerges from the details of its toughening mechanism.
+Stress fields at cracks result in transformation of tetragonal
+to monoclinic zirconia. The resulting volumetric expansion places
+closing tractions along the crack, reducing the driving force for
+propagation and increasing fracture toughness. Fig. 8 , adapted from
+Marshall et al. [47], shows an ideal impact damage zone. Below an
+indentation is found a plastically deformed zone (PZ), from which
+extend radials cracks (R) and lateral cracks (L). A residual force Pr
+driven by the radially expanding plastic zone determines the crack-
+driving force. Examination of this model damage zone indicates
+the effects of transformation toughening should be different for
+propagation of radial cracks than for propagation of lateral cracks.
+Transformation toughening should be quite effective in limiting the
+576
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+Fig. 7. Impact by 143 ␮m SiC on 9Y DSEC: (a) transverse and (b) longitudinal sec-
+tions, for which the eutectic microstructure, indentation, and limited cracking are
+observed by SEM.
+Fig. 6. Impact by 143 ␮m SiC on 3Y DSEC: SEM photomicrographs of (a) transverse
+and (b) longitudinal sections, for which the eutectic microstructure, indentation,
+and (c) limited cracking are observed; indentation revealed by profilometry.
+extension of radial cracks. Volumetric expansion along the crack
+should indeed exert crack-closing tractions. The results obtained in
+this study meet this expectation: no evidence of significant exten-
+sion of lateral cracks was observed.
+For extension of lateral cracks, the region designated at V in
+Fig. 8 must be considered. The dimensions of this volume may
+be quite wide, but the depth is shallow. In our specimens, the
+depths were typically 2–3 ␮m. For a volume expansion caused by
+phase transformation, there is no overlying volume of material to
+constrain the expansion toward the surface direction. For a poly-
+crystalline specimen, transformation would result in volumetric
+expansions along the three axes of the individual lattice directions
+of crystals that would be randomly oriented. Some crack deflec-
+tion or microcracking could occur to dissipate some of the fracture
+energy. For the single-crystal, resistance to propagation of lateral
+cracks should be much worse. Rather than creating a closing trac-
+tion along the crack wake, the volumetric expansion caused by
+transformation to the monoclinic phase should act as a wedge,
+driving a lateral crack further. These cracks should propagate quite
+freely in the zirconia specimens, especially in the single-crystal
+specimen, as they do indeed appear to do.
+This qualitative description of why 3-TZY specimens are highly
+susceptible to erosive damage in the form of propagation of lateral
+cracks can be tested. Breder et al. have done so quite elegantly [75].
+They prepared a series of Al2 O3 specimens that contained 10% zir-
+conia. Three different treatments were applied, resulting in three
+different fractions of tetragonal zirconia near the surface. They then
+measured erosion rates and fracture strengths after erosion test-
+ing. Erosion rates are determined by propagation of lateral cracks.
+Reduction in strength is determined by extent of radial cracking.
+They found erosion rate to be independent of fraction of tetragonal
+zirconia, but strength to be proportional to fraction of tetragonal
+zirconia. Transformation toughening reduced radial crack propa-
+gation, but not lateral crack propagation.
+Fig. 8. Schematic diagram of impact site in a ceramic: a plastic zone (PZ) is present
+beneath the indentation and radial cracks (R) and lateral cracks (L) extend from the
+zone; the volume of material V is what would be removed by propagation of a
+lateral crack.
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+The 3Y and 9Y DSEC specimens were highly resistant to erosive
+damage, but the 0.5Y DSEC was not. In fact, very little propagation
+of lateral cracks could be observed for the 3Y and 9Y specimens.
+Each of the three specimens possessed a lamellar microstructure.
+Ceramics such as thermal barrier coatings and fiber composites also
+exhibit lamellar microstructures. Solid-particle erosion studies of
+such materials have revealed effects of such microstructures on
+erosion rate [76–80], but they do not provide an explanation of why
+the 3Y and 9Y specimens would be so resistant to erosive damage.
+The starkest differences between 0.5Y and 3Y/9Y direction-
+ally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics were their room-
+temperature residual stress states. The residual stresses in the
+Al2 O3 phase were, in both the transverse and longitudinal direc-
+tions, highly tensile for the 0.5Y specimen, but highly compressive
+for the 3Y and 9Y specimens (see Fig. 5.3 in Ref. [1]). In fact the
+longitudinal residual stress for the 0.5Y specimen has been shown
+to exceed 1 GPa [1]. The extreme crack propagation in the longi-
+tudinal direction that was observed in these studies is no doubt
+due primarily to the residual stress states. In contrast, compressive
+stress of approximately 400 MPa in both directions for the 3Y and 9Y
+specimens should be quite effective in resisting crack propagation
+[81,82].
+A more-subtle difference among the DSECs was observed in
+comparing the results for impact by 63 and 143 ␮m SiC particles.
+The 3Y and 9Y specimens were the most resistant to damage when
+impacted by the smaller particles, but were approximately equal in
+resistance to basal plane sapphire when impacted by the larger par-
+ticles. The trends appeared to be significant statistically (Table 2).
+We offer no firm explanation, but two possible reasons can be
+offered. It is possible that with larger crack-driving force, the effects
+of residual stresses were partially overcome. It is also possible that
+the larger kinetic energy of 143 ␮m particles induced more local
+heating, which could have relaxed the residual stresses. Significant
+local heating leading to discernible melting has been reported for
+low-ductility target materials [83,84]. We saw no evidence of such
+heating in any of the specimens, but effects of heating cannot be
+ruled out.
+Three sets of experiments to test the explanations offered here
+can be envisioned. Two should be comparatively easy, one more
+difficult.
+(1) If DSECs are resistant to erosive damage because of resid-
+ual stresses rather than some other property related to their
+complex microstructures [24], then similar DSECs that do
+not contain significant residual stresses can be tested. We
+have obtained data for steady-state erosion of a series of
+Al2 O3 –yttrium aluminum garnet DSECs [85]. These DSECs were
+in fact no more erosion resistant than were their constituent
+ceramics.
+(2) Steady-state erosion data should be obtained for direction-
+ally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics. It may well be that
+repeated impact will reduce the resistance to erosion, through
+some combination of heating and interaction of many cracks.
+(3) Erosion of directionally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics
+could be measured as a function of temperature [81]. Many of
+the mechanical properties of Al2 O3 , sapphire, and direction-
+ally solidified Al2 O3 –ZrO2 (Y2 O3 ) eutectics are comparatively
+insensitive to temperature, to at least 1000 ◦ C [1,72–74]. Resid-
+ual stresses do, however, relax. We do not have the capability
+to measure erosion as a function of temperature, but others do.
+This work revealed clear trends in erosive damage and plausible
+explanations can be offered for each of them. Proof awaits gathering
+additional data.
+577
+6. Conclusions
+Resistance to damage from sharp SiC particles impacting a tar-
+get at 100 m/s was studied for directionally solidified Al2 O3 –ZrO2
+(Y2 O3 ) eutectics that contained three concentrations of Y2 O3 (0.5,
+3, and 9% in the ZrO2 phase) and for these related target ceramics:
+polycrystalline Al2 O3 , sapphire, and polycrystalline and single-
+crystal tetragonally stabilized ZrO2 . Damage zones consisted of
+combinations of plastic indentation and cracking. Their sizes were
+measured by SEM and surface profilometry. The Al2 O3 and sap-
+phire specimens were much more resistant to damage than were
+the ZrO2 specimens. The ZrO2 exhibited by far the largest damage
+zones because of significant extension of lateral cracks. The eutec-
+tics containing 3 and 9% Y generally exhibited minimal cracking
+and generally the smallest damage zones. Comparison with basic
+mechanical properties and models for erosion of brittle materials
+suggested that the ZrO2 materials were susceptible to erosive dam-
+age because transformation toughening was ineffective in reducing
+propagation of lateral cracks that emanated from the damage sites.
+Erosion and fracture studies by Breder et al. [75] support this con-
+clusion. The eutectics that contained 3 and 9% Y were concluded to
+be resistant to erosion because of the presence of large compressive
+residual stresses in their Al2 O3 phases. This explanation is plausi-
+ble, but remains unproven. Experiments to test its validity and the
+inherent resistances to erosion of the eutectics were suggested.
+Acknowledgments
+Financial support was provided by the Air Force Office of Sci-
+entific Research; the Spanish Ministry of Science and Technology,
+through Projects MAT2006-13005-C03-1; and the U.S. Depart-
+ment of Energy, under Contract DE-AC02-06CH11357 at Argonne
+National Laboratory, managed by the UChicago, LLC. The electron
+microscopy was performed in the Electron Microscopy Collabora-
+tive Research Center at Argonne National Laboratory.
+References
+[1] J. Llorca, V.M. Orera, Prog. Mater. Sci. 51 (2006) 711.
+[2] K. Hirano, J. Eur. Ceram. Soc. 25 (2005) 1191.
+[3] J. Santiso, V. Laukhin, G. Garcia, A. Figueras, L.I. Balcells, J. Fontcuberta, J.I. Pena,
+R.I. Merino, V.M. Orera, Thin Solid Films 405 (2002) 87.
+[4] R.L. Ashbrook, J. Am. Ceram. Soc. 60 (1977) 428.
+[5] W.J. Minford, R.C. Bradt, V.S. Stubican, J. Am. Ceram. Soc. 62 (1979) 154.
+[6] V.S. Stubican, R.C. Bradt, Ann. Rev. Mater. Sci. 11 (1981) 267.
+[7] T. Mah, T.A. Parthasarathy, L.E. Matson, Ceram. Eng. Sci. Proc. 11 (9–10) (1990)
+1617.
+[8] A. Revcolevschi, G. Dhalenne, D. Michel, Mater. Sci. Forum 29 (1988) 173.
+[9] Y. Waku, H. Ohtsubo, N. Nakagawa, Y. Kohtoku, J. Mater. Sci. 31 (1996) 4663.
+[10] Y. Waku, N. Nakagawa, T. Wakamoto, H. Ohtsubo, K. Shimizu, Y. Kohtoku,
+Nature 389 (1997) 49.
+[11] H. Yasuda, I. Ohnaka, Y. Mizutani, Y. Waku, Sci. Technol. Adv. Mater. 2 (2001)
+67.
+[12] V.M. Orera, R.I. Merino, J.A. Pardo, A. Larrea, J.I. Pena, C. Gonzalez, P. Poza, J.Y.
+Pastor, J. Llorca, Acta Mater. 48 (2000) 4683.
+[13] A. Larrea, G.F. de la Fuente, R.I. Merino, V.M. Orera, J. Eur. Ceram. Soc. 22 (2002)
+191.
+[14] J.I. Pena, R.I. Merino, N.R. Harlan, A. Larrea, G.F. de la Fuente, V.M. Orera, J. Eur.
+Ceram. Soc. 22 (2002) 2595.
+[15] A. Sayir, S.C. Farmer, P.O. Dickerson, A.M. Yun, Mater. Res. Soc. Symp. Proc. 365
+(1993) 21.
+[16] J.M. Calderon-Moreno, M. Yoshimura, J. Eur. Ceram. Soc. 25 (2005) 1369.
+[17] P.B. Oliete, J.I. Pena, A. Larrea, V.M. Orera, J. Llorca, J.Y. Pastor, A. Martín, J.
+Segurado, Adv. Mater. 19 (2007) 2313.
+[18] J.Y. Pastor, P. Poza, J. Llorca, J.I. Pena, R.I. Merino, V.M. Orera, Mater. Sci. Eng.
+A308 (2001) 241.
+[19] S.C. Farmer, A. Sayir, Eng. Fract. Mech. 69 (2002) 1015.
+[20] J. Llorca, J.Y. Pastor, P. Poza, J.I. Pena, I. De Francisco, A. Larrea, V.M. Orera, J. Am.
+Ceram. Soc. 87 (2004) 633.
+[21] A. Larrea, V.M. Orera, R.I. Merino, J.I. Pena, J. Eur. Ceram. Soc. 25 (2005) 1419.
+[22] A.A. Argon, J. Yi, A. Sayir, Mater. Sci. Eng. A319–321 (2001) 838.
+[23] A. Sayir, S.C. Farmer, Acta Mater. 48 (2000) 4691.
+[24] K. Miyoshi, S.C. Farmer, A. Sayir, Tribol. Int. 38 (2005) 974.
+578
+K.C. Goretta et al. / Wear 268 (2010) 571–578
+[25] V.M. Orera, R. Cemborain, R.I. Merino, J.I. Pena, A. Larrea, Acta Mater. 50 (2002)
+4677.
+[26] J.A. Pardo, R. Merino, V.M. Orera, J.I. Pena, C. Gonzalez, J.Y. Pastor, J. Llorca, J.
+Am. Ceram. Soc. 83 (2000) 2745.
+[27] J.L. Routbort, R.O. Scattergood, Key Eng. Mater. 71 (1992) 23.
+[28] W. Wu, K.C. Goretta, J.L. Routbort, Mater. Sci. Eng. A151 (1992) 85.
+[29] P. Strzepa, E.J. Zamirowski, J.B. Kupperman, K.C. Goretta, J.L. Routbort, J. Mater.
+Sci. 28 (1993) 5917.
+[30] C.T. Morrison, J.L. Routbort, R.O. Scattergood, R. Warren, Wear 160 (1993) 345.
+[31] K.C. Goretta, A.C. Thompson, J.L. Routbort, Mater. Sci. Eng. A161 (1993) L7.
+[32] J.L. Routbort, J. Nondestr. Eval. 15 (1996) 107.
+[33] M. Jiang, K.C. Goretta, D. Singh, J.L. Routbort, J.J. Schuldies, Ceram. Eng. Sci. Proc.
+18 (3) (1997) 239.
+[34] K.C. Goretta, F. Gutierrez-Mora, N. Chen, J.L. Routbort, T.S. Orlova, B.I. Smirnov,
+A.R. de Arellano-Lopez, Wear 256 (2004) 233.
+[35] J. Martinez-Fernandez, A.R. de Arellano-Lopez, F.M. Varela-Feria, T.S. Orlova,
+K.C. Goretta, F. Gutierrez-Mora, N. Chen, J.L. Routbort, J. Eur. Ceram. Soc. 24
+(2004) 861.
+[36] A.G. Evans, M.E. Gulden, M. Rosenblatt, Proc. R. Soc. Lond. Ser. A 361 (1978)
+343.
+[37] A.G. Evans, in: R.C. Bradt, D.P.H. Hasselman, F.F. Lange (Eds.), Fracture Mechan-
+ics of Ceramics, vol. 3, Plenum, New York, 1978, p. 303.
+[38] A.W. Ruff, S.M. Wiederhorn, in: C.M. Preece (Ed.), Treatise on Materials Science
+and Technology, Academic Press, New York, 1979, p. 69.
+[39] S. Srinivasan, R.O. Scattergood, Wear 128 (1988) 139.
+[40] P.H. Shipway, I.M. Hutchings, Wear 149 (1991) 85.
+[41] J.L. Routbort, C.Y. Chu, J.M. Roberts, J.P. Singh, W. Wu, K.C. Goretta, in: A.V.
+Levy (Ed.), Proceedings of Corrosion–Erosion–Wear of Materials at Elevated
+Temperatures, Nat. Assoc. Corr. Eng., Houston, TX, 1991, pp. 31–41.
+[42] S. Srinivasan, R.O. Scattergood, J. Mater. Sci. 22 (1987) 3463.
+[43] J. Zhou, S. Bahadur, Wear 162–164 (1993) 285.
+[44] S.M. Wiederhorn, B.R. Lawn, J. Am. Ceram. Soc. 62 (1979) 66.
+[45] S.M. Wiederhorn, B.J. Hockey, J. Mater. Sci. 18 (1980) 766.
+[46] B.R. Lawn, A.G. Evans, D.B. Marshall, J. Am. Ceram. Soc. 63 (1980) 574.
+[47] D.B. Marshall, B.R. Lawn, A.G. Evans, J. Am. Ceram. Soc. 65 (1982) 561.
+[48] J.E. Ritter, P. Strzepa, K. Jakus, L. Rosenfeld, K.J. Buckman, J. Am. Ceram. Soc. 67
+(1984) 769.
+[49] N.R. Harlan, R.I. Merino, J.I. Pena, A. Larrea, V.M. Orera, C. González, P. Poza, J.
+Llorca, J. Am. Ceram. Soc. 85 (2002) 2025.
+[50] R. Morrell, Handbook of Properties of Technical and Engineering Ceramics, vol.
+2, Her Majesty’s Stationery Office, London, 1987, p. 13.
+[51]
+[52]
+[53]
+[54]
+[55]
+[56]
+[57]
+[58]
+[59]
+[60]
+[61]
+[62]
+[63]
+[64]
+[65]
+[66]
+[67]
+[68]
+[69]
+[70]
+[71]
+[72]
+[73]
+[74]
+[75]
+[76]
+[77]
+[78]
+[79]
+[80]
+[81]
+[82]
+[83]
+[84]
+[85]
+B. Mussler, M.V. Swain, N. Claussen, J. Am. Ceram. Soc. 65 (1982) 566.
+J.B. Wachtman Jr., D.G. Lam Jr., J. Am. Ceram. Soc. 42 (1959) 254.
+M. Iwasa, T. Ueno, Zairyo 30 (1981) 1001.
+R.P. Ingel, D. Lewis, B.A. Bender, R.W. Rice, Adv. Ceram. 12 (1984) 408.
+G.A. Gogotsi, E.E. Lomonova, V.G. Pejchev, J. Eur. Ceram. Soc. 11 (1993) 123.
+E.C. Subbarao, in: A.H. Heuer, L.W. Hobbs (Eds.), Science and Technology of
+Zirconia, vol. 3, Am. Ceram. Soc., Westerville, OH, 1981, p. 1.
+T.E. Fischer, M.P. Anderson, S. Jahanmir, J. Am. Ceram. Soc. 72 (1989) 252.
+J. Wang, W.M. Rainforth, T. Wadsworth, R. Stevens, J. Eur. Ceram. Soc. 10 (1992)
+21.
+T.H. Kosel, R.O. Scattergood, A.P.L. Turner, in: K.C. Ludema, W.A. Glaeser, S.K.
+Rhee (Eds.), Wear of Materials, Am. Soc. Mech. Eng., New York, 1979, p. 192.
+P.H. Shipway, I.M. Hutchings, Wear 193 (1996) 105.
+L. Murugesh, R.O. Scattergood, J. Mater. Sci. 26 (1991) 1573.
+K.R. Gopi, R. Nagarajan, S.S. Rao, S. Mandal, Wear 264 (2008) 211.
+C.T. Morrison, J.L. Routbort, R.O. Scattergood, Wear 105 (1985) 19.
+M.T. Sykes, R.O. Scattergood, J.L. Routbort, Composites 18 (1987) 153.
+S. Srinivasan, R.O. Scattergood, G. Pfeiffer, R.G. Sparks, M.A. Paisler, J. Am. Ceram.
+Soc. 73 (1990) 1421.
+L. Murugesh, S. Srinivasan, R.O. Scattergood, J. Mater. Eng. 13 (1991) 55.
+R.H. Telling, J.E. Field, Wear 233–235 (1999) 666.
+B.A. Latella, B.H. O’Connor, J. Mater. Sci. 35 (2000) 3505.
+H.M. Chan, B.R. Lawn, J. Am. Ceram. Soc. 71 (1988) 29.
+L.N. Brewer, M.U. Guruz, V.P. Dravid, Acta Mater. 52 (2004) 3781.
+P.F. Becher, J. Am. Ceram. Soc. 59 (1976) 59.
+S.A. Newcomb, R.E. Tressler, J. Am. Ceram. Soc. 77 (1994) 3030.
+A. Azhdari, S. Nemat-Nasser, J. Rome, Int. J. Fract. 94 (1998) 251.
+J.J. Quispe-Cancapa, A.R. de Arellano-Lopez, J. Martinez-Fernandez, A. Sayir, J.
+Eur. Ceram. Soc. 25 (2005) 1259.
+K. Breder, G. De Portu, J.E. Ritter, D.D. Fabbriche, J. Am. Ceram. Soc. 71 (1988)
+770.
+J.R. Nicholls, M.J. Deakin, R.S. Rickerby, Wear 233–235 (1999) 352.
+B.Z. Janos, E. Lugscheider, P. Remer, Surf. Coat. Technol. 113 (1999) 287.
+C.-J. Li, G.J. Yang, A. Ohmori, Wear 260 (2006) 1166.
+K.L. Powell, J.A. Yeomans, P.A. Smith, Acta Mater. 45 (1997) 321.
+V. Heuer, G. Walter, I.M. Hutchings, Wear 233–235 (1999) 257.
+D.J. Green, J. Non-Cryst. Solids 316 (2003) 35.
+M.B. Abrams, D.J. Green, S.J. Glass, J. Non-Cryst. Solids 321 (2003) 10.
+C.S. Yust, R.S. Crouse, Wear 51 (1978) 193.
+K.C. Goretta, J.L. Routbort, A. Mayer, R.B. Schwarz, J. Mater. Res. 2 (1987) 818.
+K.C. Goretta, unpublished results.

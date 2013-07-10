@@ -52,7 +52,7 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSci.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#WindScal">
+  <owl:Class rdf:about="#windscal">
     <rdfs:subClassOf rdf:resource="&repr;OrdinalScale"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -62,8 +62,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TornadoScal">
-    <rdfs:subClassOf rdf:resource="#WindScal"/>
+  <owl:Class rdf:about="#tornadosc">
+    <rdfs:subClassOf rdf:resource="#windscal"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasPhenomena" />
@@ -72,8 +72,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HurricaneScal">
-    <rdfs:subClassOf rdf:resource="#WindScal"/>
+  <owl:Class rdf:about="#hurricanesc">
+    <rdfs:subClassOf rdf:resource="#windscal"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasPhenomena" />
@@ -82,198 +82,198 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#BeaufortScal">
-    <rdfs:subClassOf rdf:resource="#WindScal" />
+  <owl:Class rdf:about="#beaufortsc">
+    <rdfs:subClassOf rdf:resource="#windscal" />
   </owl:Class>
 
-  <owl:Class rdf:about="#FujitaPearsonScal">
-    <rdfs:subClassOf rdf:resource="#TornadoScal" />
+  <owl:Class rdf:about="#fujitapearsonsc">
+    <rdfs:subClassOf rdf:resource="#tornadosc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#EnhancedFujitaScal">
-    <rdfs:subClassOf rdf:resource="#TornadoScal" />
+  <owl:Class rdf:about="#enhancedfujitasc">
+    <rdfs:subClassOf rdf:resource="#tornadosc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SaffirSimpsonScal">
-    <rdfs:subClassOf rdf:resource="#HurricaneScal" />
+  <owl:Class rdf:about="#saffirsimpsonsc">
+    <rdfs:subClassOf rdf:resource="#hurricanesc" />
   </owl:Class>
 
 <!-- Values -->
-  <scale:BeaufortScale rdf:about="#Beaufort0">
+  <scale:BeaufortScale rdf:about="#beaufort0">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">0</mrela:hasIntegerValue>
      <prela:hasSpeed rdf:resource="&pstate;Calm"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">0.0</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">0.3</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort1">
+  <scale:BeaufortScale rdf:about="#beaufort1">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">1</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">0.3</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">1.5</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort2">
+  <scale:BeaufortScale rdf:about="#beaufort2">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">2</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">1.6</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">3.4</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort3">
+  <scale:BeaufortScale rdf:about="#beaufort3">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">3</mrela:hasIntegerValue>
     <prela:hasSpeed rdf:resource="&pstate;Gentle"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">3.5</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">5.4</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort4">
+  <scale:BeaufortScale rdf:about="#beaufort4">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">4</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">5.5</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">7.9</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort5">
+  <scale:BeaufortScale rdf:about="#beaufort5">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">5</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">8.0</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">10.7</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort6">
+  <scale:BeaufortScale rdf:about="#beaufort6">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">6</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">10.8</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">13.8</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort7">
+  <scale:BeaufortScale rdf:about="#beaufort7">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">7</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">13.9</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">17.1</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort8">
+  <scale:BeaufortScale rdf:about="#beaufort8">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">8</mrela:hasIntegerValue>
      <prela:hasSpeed rdf:resource="&pstate;Gale"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">17.2</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">20.7</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort9">
+  <scale:BeaufortScale rdf:about="#beaufort9">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">9</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">20.8</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">24.4</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort10">
+  <scale:BeaufortScale rdf:about="#beaufort10">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">10</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">24.5</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">28.4</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort11">
+  <scale:BeaufortScale rdf:about="#beaufort11">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">11</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">28.5</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">32.6</mrela:hasUpperBound>
   </scale:BeaufortScale>
 
-  <scale:BeaufortScale rdf:about="#Beaufort12">
+  <scale:BeaufortScale rdf:about="#beaufort12">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">12</mrela:hasIntegerValue>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">32.7</mrela:hasLowerBound>
   </scale:BeaufortScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F0">
+  <scale:FujitaPearsonScale rdf:about="#f0">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">0</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Light"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">18</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">32</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F1">
+  <scale:FujitaPearsonScale rdf:about="#f1">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">1</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Moderate"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">32</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">50</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F2">
+  <scale:FujitaPearsonScale rdf:about="#f2">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">2</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Significant"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">50</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">70</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F3">
+  <scale:FujitaPearsonScale rdf:about="#f3">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">0</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Severe"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">70</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">92</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F4">
+  <scale:FujitaPearsonScale rdf:about="#f4">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">4</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Devastating"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">92</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">116</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:FujitaPearsonScale rdf:about="#F5">
+  <scale:FujitaPearsonScale rdf:about="#f5">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">5</mrela:hasIntegerValue>
     <screla:hasImpact rdf:resource="&impa;Incredible"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">116</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">142</mrela:hasUpperBound>
   </scale:FujitaPearsonScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF0">
+  <scale:EnhancedFujitaScale rdf:about="#ef0">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">0</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF1">
+  <scale:EnhancedFujitaScale rdf:about="#ef1">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">1</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF2">
+  <scale:EnhancedFujitaScale rdf:about="#ef2">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">2</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF3">
+  <scale:EnhancedFujitaScale rdf:about="#ef3">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">3</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF4">
+  <scale:EnhancedFujitaScale rdf:about="#ef4">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">4</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:EnhancedFujitaScale rdf:about="#EF5">
+  <scale:EnhancedFujitaScale rdf:about="#ef5">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">5</mrela:hasIntegerValue>
   </scale:EnhancedFujitaScale>
 
-  <scale:SaffirSimpsonScale rdf:about="#Category1">
+  <scale:SaffirSimpsonScale rdf:about="#category1">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">1</mrela:hasIntegerValue>
      <screla:hasImpact rdf:resource="&impa;Minimal"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">33</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">42</mrela:hasUpperBound>
   </scale:SaffirSimpsonScale>
 
-  <scale:SaffirSimpsonScale rdf:about="#Category2">
+  <scale:SaffirSimpsonScale rdf:about="#category2">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">2</mrela:hasIntegerValue>
      <screla:hasImpact rdf:resource="&impa;Moderate"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">43</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">49</mrela:hasUpperBound>
   </scale:SaffirSimpsonScale>
 
-  <scale:SaffirSimpsonScale rdf:about="#Category3">
+  <scale:SaffirSimpsonScale rdf:about="#category3">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">3</mrela:hasIntegerValue>
      <screla:hasImpact rdf:resource="&impa;Extensive"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">50</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">58</mrela:hasUpperBound>
   </scale:SaffirSimpsonScale>
 
-  <scale:SaffirSimpsonScale rdf:about="#Category4">
+  <scale:SaffirSimpsonScale rdf:about="#category4">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">4</mrela:hasIntegerValue>
      <screla:hasImpact rdf:resource="&impa;Extreme"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">59</mrela:hasLowerBound>
      <mrela:hasUpperBound rdf:datatype="&xsd;double">69</mrela:hasUpperBound>
   </scale:SaffirSimpsonScale>
 
-  <scale:SaffirSimpsonScale rdf:about="#Category5">
+  <scale:SaffirSimpsonScale rdf:about="#category5">
      <mrela:hasIntegerValue rdf:datatype="&xsd;integer">5</mrela:hasIntegerValue>
      <screla:hasImpact rdf:resource="&impa;Catastrophic"/>
      <mrela:hasLowerBound rdf:datatype="&xsd;double">70</mrela:hasLowerBound>

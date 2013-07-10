@@ -30,172 +30,172 @@
      <owl:imports rdf:resource="&graph;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#BiologicalAct">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#biologicalact">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BiologicalPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#biologicalphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Birth">
-    <rdfs:subClassOf rdf:resource="#VitalAct"/>
+  <owl:Class rdf:about="#birth">
+    <rdfs:subClassOf rdf:resource="#vitalact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chemosynthesi">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#chemosynthesi">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Consumpt">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#consumpt">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Death">
-    <rdfs:subClassOf rdf:resource="#VitalAct"/>
+  <owl:Class rdf:about="#death">
+    <rdfs:subClassOf rdf:resource="#vitalact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decomposit">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#decomposit">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Denitrif">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#denitrif">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Excretion">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#excretion">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Exposur">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#exposur">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Feed">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#feed">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Graze">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#graze">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inhalat">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#inhalat">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mainten">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#mainten">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photosynthesi">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#photosynthesi">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pollin">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#pollin">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
     <rdfs:comment>Pollination is an important step in the reproduction of seed plants: the transfer of pollen grains (male gametes) to the plant carpel, the structure that contains the ovule (female gamete). The receptive part of the carpel is called a stigma in the flowers of angiosperms and a micropyle in gymnosperms. The study of pollination brings together many disciplines, such as botany, horticulture, entomology, and ecology. Pollination is important in horticulture because most plant fruits will not develop if the ovules are not fertilized. The pollination process as interaction between flower and vector was first addressed in the 18th century by Christian Konrad Sprengel.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Respir">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#respir">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Surviv">
-    <rdfs:subClassOf rdf:resource="#VitalAct"/>
+  <owl:Class rdf:about="#surviv">
+    <rdfs:subClassOf rdf:resource="#vitalact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transpir">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#transpir">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VitalAct">
-    <rdfs:subClassOf rdf:resource="#BiologicalAct"/>
+  <owl:Class rdf:about="#vitalact">
+    <rdfs:subClassOf rdf:resource="#biologicalact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wast">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#wast">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hear">
-    <rdfs:subClassOf rdf:resource="#Sens"/>
+  <owl:Class rdf:about="#hear">
+    <rdfs:subClassOf rdf:resource="#sen"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sens">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#sen">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vision">
-    <rdfs:subClassOf rdf:resource="#Sens"/>
+  <owl:Class rdf:about="#vision">
+    <rdfs:subClassOf rdf:resource="#sen"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Breath">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#breath">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Forag">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#forag">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spawn">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#spawn">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
 <!-- Phenomena: Health -->
-  <owl:Class rdf:about="#BirthDefect">
-    <rdfs:subClassOf rdf:resource="#Diseas"/>
+  <owl:Class rdf:about="#birthdefect">
+    <rdfs:subClassOf rdf:resource="#disea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bronciti">
-    <rdfs:subClassOf rdf:resource="#Diseas"/>
+  <owl:Class rdf:about="#bronciti">
+    <rdfs:subClassOf rdf:resource="#disea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cancer">
-    <rdfs:subClassOf rdf:resource="#Diseas"/>
+  <owl:Class rdf:about="#cancer">
+    <rdfs:subClassOf rdf:resource="#disea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CardiovascularDiseas">
-    <rdfs:subClassOf rdf:resource="#Diseas"/>
+  <owl:Class rdf:about="#cardiovasculardisea">
+    <rdfs:subClassOf rdf:resource="#disea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Diseas">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#disea">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Epidem">
-    <rdfs:subClassOf rdf:resource="#Diseas"/>
+  <owl:Class rdf:about="#epidem">
+    <rdfs:subClassOf rdf:resource="#disea"/>
     <rdfs:comment xml:lang="en">In epidemiology, an epidemic is a classification of a disease that appears as new cases in a given human population, during a given period, at a rate that substantially exceeds what is expected based on recent experience (the number of new cases in the population during a specified period of time is called the incidence rate).</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlantStress">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#plantstress">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OcularMelanoma">
-    <rdfs:subClassOf rdf:resource="#Cancer"/>
+  <owl:Class rdf:about="#ocularmelanoma">
+    <rdfs:subClassOf rdf:resource="#cancer"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fertil">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#fertil">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Health">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#health">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Assimil">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#assimil">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Nurs">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
+  <owl:Class rdf:about="#nur">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Uptake">
-    <rdfs:subClassOf rdf:resource="#Assimil"/>
+  <owl:Class rdf:about="#uptake">
+    <rdfs:subClassOf rdf:resource="#assimil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MetabolicPathway">
-    <rdfs:subClassOf rdf:resource="#BiologicalPhenomena"/>
-    <rdfs:subClassOf rdf:resource="&graph;#Path"/>
+  <owl:Class rdf:about="#metabolicpathway">
+    <rdfs:subClassOf rdf:resource="#biologicalphenomena"/>
+    <rdfs:subClassOf rdf:resource="&graph;#path"/>
   </owl:Class>
 
 </rdf:RDF>

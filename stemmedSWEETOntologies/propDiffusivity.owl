@@ -45,86 +45,86 @@
      <owl:imports rdf:resource="&screla;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Transmiss">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
+  <owl:Class rdf:about="#transmiss">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DiffusivityQuant">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#diffusivityqu">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterSquaredPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#metersquaredpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Diffus">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
+  <owl:Class rdf:about="#diffus">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EddyDiffus">
-    <rdfs:subClassOf rdf:resource="#Diffus" />
+  <owl:Class rdf:about="#eddydiffus">
+    <rdfs:subClassOf rdf:resource="#diffus" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&wave;#Eddi" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&wave;#eddi" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The exchange coefficient for the diffusion of a conservative property by eddies in a turbulent flow.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#KinematicViscos">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
+  <owl:Class rdf:about="#kinematicvisco">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&proc;#ViscousForc"/>
-        <owl:onProperty rdf:resource="&screla;#measureOf"/>
+        <owl:allValuesFrom rdf:resource="&proc;#viscousforc"/>
+        <owl:onProperty rdf:resource="&screla;#measureof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalDiffus">
-    <rdfs:subClassOf rdf:resource="#Diffus" />
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+  <owl:Class rdf:about="#thermaldiffus">
+    <rdfs:subClassOf rdf:resource="#diffus" />
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MeridionalOvertuningStreamfunct">
-    <rdfs:subClassOf rdf:resource="#Streamfunct"/>
+  <owl:Class rdf:about="#meridionalovertuningstreamfunct">
+    <rdfs:subClassOf rdf:resource="#streamfunct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Streamfunct">
-    <rdfs:subClassOf rdf:resource="&func;#VectorQuant"/>
+  <owl:Class rdf:about="#streamfunct">
+    <rdfs:subClassOf rdf:resource="&func;#vectorqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterCubedPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#metercubedpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#VelocityPotenti">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
-    <rdfs:subClassOf rdf:resource="&func;#VectorQuant"/>
+  <owl:Class rdf:about="#velocitypotenti">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
+    <rdfs:subClassOf rdf:resource="&func;#vectorqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Diffluenc">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
+  <owl:Class rdf:about="#diffluenc">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&rate;#Diverg" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&rate;#diverg" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The rate at which adjacent flow diverges along an axis oriented normal to the flow at the point in question; the opposite of confluence.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Confluenc">
-    <rdfs:subClassOf rdf:resource="#DiffusivityQuant"/>
+  <owl:Class rdf:about="#confluenc">
+    <rdfs:subClassOf rdf:resource="#diffusivityqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&rate;#Converg" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&rate;#converg" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The rate at which adjacent flow is converging along an axis oriented normal to the flow at the point in question.</rdfs:comment>

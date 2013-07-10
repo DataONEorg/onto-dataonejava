@@ -61,235 +61,235 @@ owl:versionInfo="2.3">
      <owl:imports rdf:resource="&sys;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Contamin">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#contamin">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalImpact">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#environmentalimpact">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:hasValue rdf:resource="&impa;#Hazard" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:hasValue rdf:resource="&impa;#hazard" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Extinction">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
-    <owl:equivalentClass rdf:resource="#SpeciesExtinct"/>
+  <owl:Class rdf:about="#extinction">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
+    <owl:equivalentClass rdf:resource="#speciesextinct"/>
   </owl:Class>
-  <owl:Class rdf:about="#SpeciesExtinct"/>
+  <owl:Class rdf:about="#speciesextinct"/>
 
-  <owl:Class rdf:about="#HabitatConvers">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#habitatconv">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&brole;#Habitat" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&brole;#habitat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HabitatFragment">
-    <rdfs:subClassOf rdf:resource="#HabitatConvers" />
+  <owl:Class rdf:about="#habitatfrag">
+    <rdfs:subClassOf rdf:resource="#habitatconv" />
     <rdfs:comment xml:lang="en">Habitat fragmentation is a process of environmental change important in evolution and conservation biology. As the name implies, it describes the emergence of discontinuities (fragmentation) in an organism's preferred environment (habitat). Habitat fragmentation can be caused by geological processes that slowly alter the layout of the physical environment or by human activity such as land conversion, which can alter the environment on a much faster time scale. The former is suspected of being one of the major causes of speciation. The latter is causative in extinctions of many species. Habitat fragmentation is frequently caused by humans when native vegetation is cleared for human activities such as agriculture, rural development or urbanization. Habitats which were once continuous become divided into separate fragments. After intensive clearing, the separate fragments tend to be very small islands isolated from each other by crop land, pasture, pavement, or even barren land. The latter is often the result of slash and burn farming in tropical forests. The term habitat fragmentation can be considered to include six discrete processes: Reduction in the total area of the habitat, increase in the amount of edge, decrease in the amount of interior habitat, isolation of one habitat fragment from other areas of habitat, breaking up of one patch of habitat into several smaller patches, and Decrease in the average size of each patch of habitat.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#InvasiveSpeci">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#invasivespeci">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#MassExtinctionEv">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
-    <rdfs:subClassOf rdf:resource="&phen;#ExtremeEv"/>
+  <owl:Class rdf:about="#massextinctionev">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
+    <rdfs:subClassOf rdf:resource="&phen;#extremeev"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:someValuesFrom rdf:resource="#Extinction" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:someValuesFrom rdf:resource="#extinction" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pollut">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact"/>
+  <owl:Class rdf:about="#pollut">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RangeChang">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#rangechang">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Toxic">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#toxic">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#NoisePollut">
-    <rdfs:subClassOf rdf:resource="#Pollut"/>
+  <owl:Class rdf:about="#noisepollut">
+    <rdfs:subClassOf rdf:resource="#pollut"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&noise;#Nois" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&noise;#noi" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NutrientLoad">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#nutrientload">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
 <!-- Land impacts -->
-  <owl:Class rdf:about="#Aridif">
-    <rdfs:subClassOf rdf:resource="#LandEnvironmentalImpact" />
+  <owl:Class rdf:about="#aridif">
+    <rdfs:subClassOf rdf:resource="#landenvironmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Deforest">
-    <rdfs:subClassOf rdf:resource="#LandEnvironmentalImpact" />
+  <owl:Class rdf:about="#deforest">
+    <rdfs:subClassOf rdf:resource="#landenvironmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Desertif">
-    <rdfs:subClassOf rdf:resource="#LandEnvironmentalImpact" />
+  <owl:Class rdf:about="#desertif">
+    <rdfs:subClassOf rdf:resource="#landenvironmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#LandDegrad">
-    <rdfs:subClassOf rdf:resource="#LandEnvironmentalImpact" />
+  <owl:Class rdf:about="#landdegrad">
+    <rdfs:subClassOf rdf:resource="#landenvironmentalimpact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#LandEnvironmentalImpact">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#landenvironmentalimpact">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&realm;#Land" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&realm;#land" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SoilLoss">
-    <rdfs:subClassOf rdf:resource="#LandEnvironmentalImpact"/>
+  <owl:Class rdf:about="#soilloss">
+    <rdfs:subClassOf rdf:resource="#landenvironmentalimpact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#decreas" />
-        <owl:someValuesFrom rdf:resource="&sed;#Soil" />
+        <owl:onProperty rdf:resource="&screla;#decrea" />
+        <owl:someValuesFrom rdf:resource="&sed;#soil" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
 <!-- Water env impacts -->
-  <owl:Class rdf:about="#AlgalBloom">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact"/>
+  <owl:Class rdf:about="#algalbloom">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoralBleach">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact"/>
+  <owl:Class rdf:about="#coralbleach">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeadZon">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact"/>
+  <owl:Class rdf:about="#deadzon">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaLevelRis">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact"/>
+  <owl:Class rdf:about="#sealevelri">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&surf;#SeaLevel"/>
+        <owl:allValuesFrom rdf:resource="&surf;#sealevel"/>
         <owl:onProperty rdf:resource="&screla;#rise"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanAcidif">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact"/>
+  <owl:Class rdf:about="#oceanacidif">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&cstate;#Acid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&cstate;#acid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanEnvironmentalImpact">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#oceanenvironmentalimpact">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&realm;#Ocean" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&realm;#ocean" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Eutroph">
-    <rdfs:subClassOf rdf:resource="#OceanEnvironmentalImpact" />
+  <owl:Class rdf:about="#eutroph">
+    <rdfs:subClassOf rdf:resource="#oceanenvironmentalimpact" />
   </owl:Class>
 
 
-  <owl:Class rdf:about="#SaltWaterIntrus">
-    <rdfs:subClassOf rdf:resource="#WaterPollut"/>
+  <owl:Class rdf:about="#saltwaterintrus">
+    <rdfs:subClassOf rdf:resource="#waterpollut"/>
     <rdfs:comment xml:lang="en">The movement of salt water into fresh water aquifers.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Upcone">
-    <rdfs:subClassOf rdf:resource="#SaltWaterIntrus" />
+  <owl:Class rdf:about="#upcone">
+    <rdfs:subClassOf rdf:resource="#saltwaterintrus" />
     <rdfs:comment xml:lang="en">Process by which saline water underlying freshwater in an aquifer rises upward into the freshwater zone as a result of pumping water from the freshwater zone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterPollut">
-    <rdfs:subClassOf rdf:resource="#Pollut"/>
+  <owl:Class rdf:about="#waterpollut">
+    <rdfs:subClassOf rdf:resource="#pollut"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&realm;#Hydrospher" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&realm;#hydrosph" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterQu">
-    <rdfs:subClassOf rdf:resource="#WaterPollut" />
+  <owl:Class rdf:about="#waterqu">
+    <rdfs:subClassOf rdf:resource="#waterpollut" />
   </owl:Class>
 
-  <owl:Class rdf:about="#OilSpil">
-    <rdfs:subClassOf rdf:resource="#Spill"/>
+  <owl:Class rdf:about="#oilspil">
+    <rdfs:subClassOf rdf:resource="#spill"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spill">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalImpact" />
+  <owl:Class rdf:about="#spill">
+    <rdfs:subClassOf rdf:resource="#environmentalimpact" />
   </owl:Class>
 
 <!-- Air pollution -->
-  <owl:Class rdf:about="#AirPollut">
-    <rdfs:subClassOf rdf:resource="#Pollut"/>
+  <owl:Class rdf:about="#airpollut">
+    <rdfs:subClassOf rdf:resource="#pollut"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpactOn" />
-        <owl:someValuesFrom rdf:resource="&realm;#Atmospher" />
+        <owl:onProperty rdf:resource="&screla;#hasimpacton" />
+        <owl:someValuesFrom rdf:resource="&realm;#atmospher" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>The presence of substances in the atmosphere, particularly those that do not occur naturally</rdfs:comment>
     <rdfs:label>Air Pollution</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirQual">
-    <rdfs:subClassOf rdf:resource="#AirPollut"/>
+  <owl:Class rdf:about="#airqual">
+    <rdfs:subClassOf rdf:resource="#airpollut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IndoorAirQu">
-    <rdfs:subClassOf rdf:resource="#AirQual"/>
+  <owl:Class rdf:about="#indoorairqu">
+    <rdfs:subClassOf rdf:resource="#airqual"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OzoneHol">
-    <rdfs:subClassOf rdf:resource="#AirPollut" />
+  <owl:Class rdf:about="#ozonehol">
+    <rdfs:subClassOf rdf:resource="#airpollut" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#decreas" />
-        <owl:hasValue rdf:resource="&allo;#Ozone" />
+        <owl:onProperty rdf:resource="&screla;#decrea" />
+        <owl:hasValue rdf:resource="&allo;#ozone" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#OzoneDeplet"/>
+    <owl:equivalentClass rdf:resource="#ozonedeplet"/>
   </owl:Class>
-  <owl:Class rdf:about="#OzoneDeplet"/>
+  <owl:Class rdf:about="#ozonedeplet"/>
 
-  <owl:Class rdf:about="#PhotochemicalAirPollut">
-    <rdfs:subClassOf rdf:resource="#AirPollut" />
+  <owl:Class rdf:about="#photochemicalairpollut">
+    <rdfs:subClassOf rdf:resource="#airpollut" />
     <rdfs:comment xml:lang="en">Type of air pollution, such as Los Angeles smog, associated with the buildup of oxidation products formed from the degradation of hydrocarbons, etc.</rdfs:comment>
   </owl:Class>
 

@@ -46,105 +46,105 @@
   </owl:Ontology>
 
 <!-- Realms -->
- <owl:Class rdf:about="#AbyssalPlain">
-    <rdfs:subClassOf rdf:resource="&land;#Plain"/>
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+ <owl:Class rdf:about="#abyssalplain">
+    <rdfs:subClassOf rdf:resource="&land;#plain"/>
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
- <owl:Class rdf:about="#AbyssalHil">
-    <rdfs:subClassOf rdf:resource="&orog;#Hill"/>
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+ <owl:Class rdf:about="#abyssalhil">
+    <rdfs:subClassOf rdf:resource="&orog;#hill"/>
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
- <owl:Class rdf:about="#AlgalFlat">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+ <owl:Class rdf:about="#algalflat">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ColdSeep">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
-    <rdfs:subClassOf rdf:resource="&fail;#Fissur"/>
+  <owl:Class rdf:about="#coldseep">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
+    <rdfs:subClassOf rdf:resource="&fail;#fissur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalRis">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+  <owl:Class rdf:about="#continentalri">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalShelf">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+  <owl:Class rdf:about="#continentalshelf">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalSlop">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+  <owl:Class rdf:about="#continentalslop">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeepOceanBasin">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
+  <owl:Class rdf:about="#deepoceanbasin">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeepSeaTrench">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
-    <rdfs:subClassOf rdf:resource="&fluv;#Trench"/>
-    <owl:equivalentClass rdf:resource="#AbyssalTrench"/>
+  <owl:Class rdf:about="#deepseatrench">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
+    <rdfs:subClassOf rdf:resource="&fluv;#trench"/>
+    <owl:equivalentClass rdf:resource="#abyssaltrench"/>
   </owl:Class>
-  <owl:Class rdf:about="#AbyssalTrench"/>
+  <owl:Class rdf:about="#abyssaltrench"/>
 
-  <owl:Class rdf:about="#Guyot">
-    <rdfs:subClassOf rdf:resource="#Seamount"/>
+  <owl:Class rdf:about="#guyot">
+    <rdfs:subClassOf rdf:resource="#seamount"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HydrothermalV">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
-    <rdfs:subClassOf rdf:resource="&volc;#Geyser"/>
+  <owl:Class rdf:about="#hydrothermalv">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
+    <rdfs:subClassOf rdf:resource="&volc;#geyser"/>
     <rdfs:comment xml:lang="en">A hydrothermal vent is a fissure in a planet's surface from which geothermally heated water issues. Hydrothermal vents are commonly found near volcanically active places, areas where tectonic plates are moving apart, ocean basins, and hotspots.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MidOceanRidg">
-    <rdfs:subClassOf rdf:resource="#OceanRidg"/>
+  <owl:Class rdf:about="#midoceanridg">
+    <rdfs:subClassOf rdf:resource="#oceanridg"/>
     <rdfs:comment xml:lang="en">A mid-ocean ridge or mid-oceanic ridge is an underwater mountain range, formed by plate tectonics. This uplifting of the ocean floor occurs when convection currents rise in the mantle beneath the oceanic crust and create magma where two tectonic plates meet at a divergent boundary. The mid-ocean ridges of the world are connected and form a single global mid-oceanic ridge system that is part of every ocean, making the mid-oceanic ridge system the longest mountain range in the world. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanRidg">
-    <rdfs:subClassOf rdf:resource="#SeaFloor"/>
-    <rdfs:subClassOf rdf:resource="&orog;#Ridg"/>
+  <owl:Class rdf:about="#oceanridg">
+    <rdfs:subClassOf rdf:resource="#seafloor"/>
+    <rdfs:subClassOf rdf:resource="&orog;#ridg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanicPlateau">
-    <rdfs:subClassOf rdf:resource="#OceanRidg"/>
+  <owl:Class rdf:about="#oceanicplateau">
+    <rdfs:subClassOf rdf:resource="#oceanridg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Seamount">
-    <rdfs:subClassOf rdf:resource="&orog;#Mountain"/>
+  <owl:Class rdf:about="#seamount">
+    <rdfs:subClassOf rdf:resource="&orog;#mountain"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="#SeaFloor" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="#seafloor" />
       </owl:Restriction>
     </rdfs:subClassOf>
 <rdfs:comment xml:lang="en">A seamount is a mountain rising from the ocean seafloor that does not reach to the water's surface (sea level), and thus is not an island. These are typically formed from extinct volcanoes, that rise abruptly and are usually found rising from a seafloor of 1,000 - 4,000 meters depth. They are defined by oceanographers as independent features that rise to at least 1,000 meters above the seafloor. The peaks are often found hundreds to thousands of meters below the surface, and are therefore considered to be within the deep sea.[1] An estimated 30,000 seamounts occur across the globe, with only a few having been studied. However, some seamounts are also unusual.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reef">
-    <rdfs:subClassOf rdf:resource="#OceanRidg"/>
+  <owl:Class rdf:about="#reef">
+    <rdfs:subClassOf rdf:resource="#oceanridg"/>
     <rdfs:comment xml:lang="en">In nautical terminology, a reef is a rock, sandbar, or other feature lying beneath the surface of the water yet shallow enough to be a hazard to ships. Many reefs result from abiotic processes—deposition of sand, wave erosion planning down rock outcrops, and other natural processes—but the best-known reefs are the coral reefs of tropical waters developed through biotic processes dominated by corals and calcareous algae </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SubmarineCanyon">
-    <rdfs:subClassOf rdf:resource="&fluv;#Canyon"/>
+  <owl:Class rdf:about="#submarinecanyon">
+    <rdfs:subClassOf rdf:resource="&fluv;#canyon"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="#SeaFloor" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="#seafloor" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A submarine canyon is a steep-sided valley on the sea floor of the continental slope. Many submarine canyons are found as extensions to large rivers; however there are many that have no such association. Canyons cutting the continental slopes have been found at depths greater than 2 km below sea level. They are formed by powerful turbidity currents, volcanic and earthquake activity. Many submarine canyons continue as submarine channels across continental rise areas and may extend for hundreds of kilometers.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaFloor">
-    <rdfs:subClassOf rdf:resource="&body;#WaterBodyBoundari"/>
-    <owl:equivalentClass rdf:resource="#Seab"/>
-    <owl:equivalentClass rdf:resource="#OceanFloor"/>
+  <owl:Class rdf:about="#seafloor">
+    <rdfs:subClassOf rdf:resource="&body;#waterbodyboundari"/>
+    <owl:equivalentClass rdf:resource="#seab"/>
+    <owl:equivalentClass rdf:resource="#oceanfloor"/>
   </owl:Class>
-  <owl:Class rdf:about="#Seab"/>
-  <owl:Class rdf:about="#OceanFloor"/>
+  <owl:Class rdf:about="#seab"/>
+  <owl:Class rdf:about="#oceanfloor"/>
 
 </rdf:RDF>

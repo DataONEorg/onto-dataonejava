@@ -31,292 +31,292 @@
   </owl:Ontology>
 
 <!-- Physical Processes -->
-  <owl:Class rdf:about="#PhysicalProcess">
-    <rdfs:subClassOf rdf:resource="&proc;#Process"/>
+  <owl:Class rdf:about="#physicalprocess">
+    <rdfs:subClassOf rdf:resource="&proc;#process"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pressur">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#pressur">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tension">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#tension">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Abrasion">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#abrasion">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Agitat">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#agitat">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Clog">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#clog">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Congeal">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#congeal">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Consolid">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#consolid">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fall">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#fall">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Floccul">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#floccul">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flush">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#flush">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orientat">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#orientat">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Quench">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#quench">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Shelter">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#shelter">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Smash">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#smash">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wash">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#wash">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
 <!-- Conduction -->
-  <owl:Class rdf:about="#Insulat">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#insulat">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Conduct">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#conduct">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
     <rdfs:comment xml:lang="en">Transport of energy (charge) solely as a consequence of random motions of individual molecules (ions, electrons) not moving together in coherent groups.</rdfs:comment>
   </owl:Class>
 
 <!-- Radiative -->
-  <owl:Class rdf:about="#Radiat">
-    <rdfs:subClassOf rdf:resource="#RadiativeTransf" />
+  <owl:Class rdf:about="#radiat">
+    <rdfs:subClassOf rdf:resource="#radiativetransf" />
   </owl:Class>
 
-  <owl:Class rdf:about="#IonizingRadi">
-    <rdfs:subClassOf rdf:resource="#Radiat" />
+  <owl:Class rdf:about="#ionizingradi">
+    <rdfs:subClassOf rdf:resource="#radiat" />
   </owl:Class>
 
-  <owl:Class rdf:about="#NonIonizingRadi">
-    <rdfs:subClassOf rdf:resource="#Radiat" />
-    <owl:disjointWith rdf:resource="#IonizingRadi"/>
+  <owl:Class rdf:about="#nonionizingradi">
+    <rdfs:subClassOf rdf:resource="#radiat" />
+    <owl:disjointWith rdf:resource="#ionizingradi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiativeTransf">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#radiativetransf">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
 <!-- Volumetric -->
-  <owl:Class rdf:about="#Contract">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
-    <owl:disjointWith rdf:resource="#Expansion" />
+  <owl:Class rdf:about="#contract">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
+    <owl:disjointWith rdf:resource="#expansion" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Compress">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#compress">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decompress">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
-    <owl:disjointWith rdf:resource="#Compress"/>
+  <owl:Class rdf:about="#decompress">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
+    <owl:disjointWith rdf:resource="#compress"/>
   </owl:Class>
  
-  <owl:Class rdf:about="#Rareif">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
-    <owl:disjointWith rdf:resource="#Compress"/>
+  <owl:Class rdf:about="#rareif">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
+    <owl:disjointWith rdf:resource="#compress"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Shorten">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#shorten">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Shrink">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#shrink">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Expansion">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
-    <owl:equivalentClass rdf:resource="#Expand"/>
+  <owl:Class rdf:about="#expansion">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
+    <owl:equivalentClass rdf:resource="#expand"/>
   </owl:Class>
-  <owl:Class rdf:about="#Expand"/>
+  <owl:Class rdf:about="#expand"/>
 
-  <owl:Class rdf:about="#Nucleosynthesi">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
-    <rdfs:subClassOf rdf:resource="&his;#Genesi"/>
+  <owl:Class rdf:about="#nucleosynthesi">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
+    <rdfs:subClassOf rdf:resource="&his;#genesi"/>
   </owl:Class>
 
 <!-- Thermodynamic -->
-  <owl:Class rdf:about="#Heat">
-    <rdfs:subClassOf rdf:resource="#ThermalProcess"/>
+  <owl:Class rdf:about="#heat">
+    <rdfs:subClassOf rdf:resource="#thermalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Burn">
-    <rdfs:subClassOf rdf:resource="#ThermalProcess"/>
+  <owl:Class rdf:about="#burn">
+    <rdfs:subClassOf rdf:resource="#thermalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalProcess">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#thermalprocess">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cool">
-    <rdfs:subClassOf rdf:resource="#ThermalProcess"/>
-    <owl:disjointWith rdf:resource="#Heat"/>
+  <owl:Class rdf:about="#cool">
+    <rdfs:subClassOf rdf:resource="#thermalprocess"/>
+    <owl:disjointWith rdf:resource="#heat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Quench">
-    <rdfs:subClassOf rdf:resource="#Cool"/>
+  <owl:Class rdf:about="#quench">
+    <rdfs:subClassOf rdf:resource="#cool"/>
   </owl:Class>
 
 <!-- Gravitational -->
-  <owl:Class rdf:about="#Graviti">
-    <owl:equivalentClass rdf:resource="#GravityForc"/>
-    <owl:equivalentClass rdf:resource="#GravitationalForc"/>
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#graviti">
+    <owl:equivalentClass rdf:resource="#gravityforc"/>
+    <owl:equivalentClass rdf:resource="#gravitationalforc"/>
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
-  <owl:Class rdf:about="#GravityForc"/>
-  <owl:Class rdf:about="#GravitationalForc"/>
+  <owl:Class rdf:about="#gravityforc"/>
+  <owl:Class rdf:about="#gravitationalforc"/>
 
 <!-- Motion -->
-  <owl:Class rdf:about="#Motion">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#motion">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Deflect">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#deflect">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Translat">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#translat">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Meander">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#meander">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Friction">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
+  <owl:Class rdf:about="#friction">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ViscousForc">
-    <rdfs:subClassOf rdf:resource="#Friction"/>
+  <owl:Class rdf:about="#viscousforc">
+    <rdfs:subClassOf rdf:resource="#friction"/>
     <rdfs:comment xml:lang="en">The transport of mass motion momentum solely by the random motions of individual molecules not moving together in coherent groups.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Collis">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#colli">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trap">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#trap">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Bombard">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#bombard">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Funnel">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#funnel">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Migrat">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#migrat">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Sink">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#sink">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Sputter">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#sputter">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
 <!-- Rotational Process -->
-  <owl:Class rdf:about="#Rotat">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#rotat">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#DifferentialRot">
-    <rdfs:subClassOf rdf:resource="#Rotat" />
+  <owl:Class rdf:about="#differentialrot">
+    <rdfs:subClassOf rdf:resource="#rotat" />
   </owl:Class>
 
-  <owl:Class rdf:about="#CoriolisForc">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
-    <rdfs:subClassOf rdf:resource="#Deflect" />
-    <owl:equivalentClass rdf:resource="#CoriolisEffect"/>
+  <owl:Class rdf:about="#coriolisforc">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
+    <rdfs:subClassOf rdf:resource="#deflect" />
+    <owl:equivalentClass rdf:resource="#corioliseffect"/>
   </owl:Class>
-  <owl:Class rdf:about="#CoriolisEffect"/>
+  <owl:Class rdf:about="#corioliseffect"/>
 
-  <owl:Class rdf:about="#Precess">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
-  </owl:Class>
-
-  <owl:Class rdf:about="#Revolut">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess" />
+  <owl:Class rdf:about="#precess">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#CentrifugalForc">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc" />
+  <owl:Class rdf:about="#revolut">
+    <rdfs:subClassOf rdf:resource="#physicalprocess" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#centrifugalforc">
+    <rdfs:subClassOf rdf:resource="&proc;#forc" />
     <rdfs:label>Centrifugal Force</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#CentripetalForc">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc" />
+  <owl:Class rdf:about="#centripetalforc">
+    <rdfs:subClassOf rdf:resource="&proc;#forc" />
     <rdfs:label>Centripetal Force</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orbit">
-    <rdfs:subClassOf rdf:resource="&geom;#Path" />
+  <owl:Class rdf:about="#orbit">
+    <rdfs:subClassOf rdf:resource="&geom;#path" />
   </owl:Class>
 
-  <owl:Class rdf:about="#GyroOrbit">
-    <rdfs:subClassOf rdf:resource="#Orbit"/>
+  <owl:Class rdf:about="#gyroorbit">
+    <rdfs:subClassOf rdf:resource="#orbit"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrbitalMot">
-    <rdfs:subClassOf rdf:resource="#Orbit" />
+  <owl:Class rdf:about="#orbitalmot">
+    <rdfs:subClassOf rdf:resource="#orbit" />
     <rdfs:comment xml:lang="en">In hydrodynamics, the motion of a fluid particle induced by the passage of a progressive gravity wave.</rdfs:comment>
   </owl:Class>
 
 <!-- Elec/Mag -->
-  <owl:Class rdf:about="#Dynamo">
-    <rdfs:subClassOf rdf:resource="#ElectromagneticProcess" />
+  <owl:Class rdf:about="#dynamo">
+    <rdfs:subClassOf rdf:resource="#electromagneticprocess" />
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectromagneticProcess">
-    <rdfs:subClassOf rdf:resource="#PhysicalProcess"/>
+  <owl:Class rdf:about="#electromagneticprocess">
+    <rdfs:subClassOf rdf:resource="#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectromagneticInduct">
-    <rdfs:subClassOf rdf:resource="#ElectromagneticProcess" />
-    <owl:equivalentClass rdf:resource="#Induction"/>
+  <owl:Class rdf:about="#electromagneticinduct">
+    <rdfs:subClassOf rdf:resource="#electromagneticprocess" />
+    <owl:equivalentClass rdf:resource="#induction"/>
   </owl:Class>
-  <owl:Class rdf:about="#Induction"/>
+  <owl:Class rdf:about="#induction"/>
 
-  <owl:Class rdf:about="#Current">
-    <rdfs:subClassOf rdf:resource="#ElectromagneticProcess" />
-    <owl:equivalentClass rdf:resource="#ElectricCurr"/>
+  <owl:Class rdf:about="#current">
+    <rdfs:subClassOf rdf:resource="#electromagneticprocess" />
+    <owl:equivalentClass rdf:resource="#electriccurr"/>
   </owl:Class>
-  <owl:Class rdf:about="#ElectricCurr"/>
+  <owl:Class rdf:about="#electriccurr"/>
 
-  <owl:Class rdf:about="#Magnet">
-    <rdfs:subClassOf rdf:resource="#ElectromagneticProcess" />
+  <owl:Class rdf:about="#magnet">
+    <rdfs:subClassOf rdf:resource="#electromagneticprocess" />
   </owl:Class>
 
 </rdf:RDF>

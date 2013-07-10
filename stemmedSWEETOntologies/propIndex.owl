@@ -66,51 +66,51 @@
      <owl:imports rdf:resource="&root;relaSci.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Index">
+  <owl:Class rdf:about="#index">
     <rdfs:subClassOf rdf:resource="&prop;Property"/>
   </owl:Class>
 
 <!-- Properties -->
-  <owl:Class rdf:about="#AirQualityIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
+  <owl:Class rdf:about="#airqualityindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BenthicIndex">
-    <rdfs:subClassOf rdf:resource="#IBI"/>
-    <owl:equivalentClass rdf:resource="#BenthicIndexOfBiologicalIntegr"/>
-    <owl:equivalentClass rdf:resource="#BIBI"/>
+  <owl:Class rdf:about="#benthicindex">
+    <rdfs:subClassOf rdf:resource="#ibi"/>
+    <owl:equivalentClass rdf:resource="#benthicindexofbiologicalintegr"/>
+    <owl:equivalentClass rdf:resource="#bibi"/>
   </owl:Class>
-  <owl:Class rdf:about="#BenthicIndexOfBiologicalIntegr"/>
-  <owl:Class rdf:about="#BIBI"/>
+  <owl:Class rdf:about="#benthicindexofbiologicalintegr"/>
+  <owl:Class rdf:about="#bibi"/>
 
-  <owl:Class rdf:about="#CoefficientOfHaz">
-    <rdfs:subClassOf rdf:resource="#AirQualityIndex"/>
-    <owl:equivalentClass rdf:resource="#COH"/>
+  <owl:Class rdf:about="#coefficientofhaz">
+    <rdfs:subClassOf rdf:resource="#airqualityindex"/>
+    <owl:equivalentClass rdf:resource="#coh"/>
   </owl:Class>
-  <owl:Class rdf:about="#COH"/>
+  <owl:Class rdf:about="#coh"/>
 
-  <owl:Class rdf:about="#EnvironmentalIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#EnvironmentalPerformanceIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
-    <owl:equivalentClass rdf:resource="#EPI"/>
-  </owl:Class>
-  <owl:Class rdf:about="#EPI"/>
-
-  <owl:Class rdf:about="#EnvironmentalSustainabilityIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
-    <owl:equivalentClass rdf:resource="#ESI"/>
-  </owl:Class>
-  <owl:Class rdf:about="#ESI"/>
-
-  <owl:Class rdf:about="#FireWeatherIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
+  <owl:Class rdf:about="#environmentalindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalInd">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#environmentalperformanceindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
+    <owl:equivalentClass rdf:resource="#epi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#epi"/>
+
+  <owl:Class rdf:about="#environmentalsustainabilityindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
+    <owl:equivalentClass rdf:resource="#esi"/>
+  </owl:Class>
+  <owl:Class rdf:about="#esi"/>
+
+  <owl:Class rdf:about="#fireweatherindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#environmentalind">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&role;Indicator"/>
@@ -119,97 +119,97 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ForestFireDangerIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
+  <owl:Class rdf:about="#forestfiredangerindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IndexOfBiologicalIntegr">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex" />
-    <owl:equivalentClass rdf:resource="#IBI"/>
-    <owl:equivalentClass rdf:resource="#IndexOfBioticIntegr"/>
+  <owl:Class rdf:about="#indexofbiologicalintegr">
+    <rdfs:subClassOf rdf:resource="#environmentalindex" />
+    <owl:equivalentClass rdf:resource="#ibi"/>
+    <owl:equivalentClass rdf:resource="#indexofbioticintegr"/>
   </owl:Class>
-  <owl:Class rdf:about="#IBI"/>
-  <owl:Class rdf:about="#IndexOfBioticIntegr"/>
+  <owl:Class rdf:about="#ibi"/>
+  <owl:Class rdf:about="#indexofbioticintegr"/>
 
-  <owl:Class rdf:about="#NaturalResourceManagementIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
-    <owl:equivalentClass rdf:resource="#NRMI"/>
+  <owl:Class rdf:about="#naturalresourcemanagementindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
+    <owl:equivalentClass rdf:resource="#nrmi"/>
   </owl:Class>
-  <owl:Class rdf:about="#NRMI"/>
+  <owl:Class rdf:about="#nrmi"/>
 
-  <owl:Class rdf:about="#RingelmannChart">
-    <rdfs:subClassOf rdf:resource="#AirQualityIndex"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#UVIndex">
-    <rdfs:subClassOf rdf:resource="#AirQualityIndex"/>
+  <owl:Class rdf:about="#ringelmannchart">
+    <rdfs:subClassOf rdf:resource="#airqualityindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterQualityIndex">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalIndex"/>
+  <owl:Class rdf:about="#uvindex">
+    <rdfs:subClassOf rdf:resource="#airqualityindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BlockingIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#waterqualityindex">
+    <rdfs:subClassOf rdf:resource="#environmentalindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HealthIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#blockingindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#healthindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf rdf:resource="&prop;BiologicalProperty"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VitalStatist">
-    <rdfs:subClassOf rdf:resource="#HealthIndex"/>
+  <owl:Class rdf:about="#vitalstatist">
+    <rdfs:subClassOf rdf:resource="#healthindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PhysiologicalParamet">
-    <rdfs:subClassOf rdf:resource="#HealthIndex"/>
+  <owl:Class rdf:about="#physiologicalparamet">
+    <rdfs:subClassOf rdf:resource="#healthindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PsychologicalParamet">
-    <rdfs:subClassOf rdf:resource="#HealthIndex"/>
+  <owl:Class rdf:about="#psychologicalparamet">
+    <rdfs:subClassOf rdf:resource="#healthindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ShallowConvectionParamet">
+  <owl:Class rdf:about="#shallowconvectionparamet">
     <rdfs:subClassOf rdf:resource="&trans;Transport"/>
     <rdfs:subClassOf rdf:resource="&quan;PhysicalConstant"/>
     <rdfs:comment xml:lang="en">The representation in a numerical model of the turbulent transports of heat and moisture by nonprecipitating cumulus clouds with cloud tops below 3000 m above the surface.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CirculationIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#circulationindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StorageCoeffici">
+  <owl:Class rdf:about="#storagecoeffici">
     <rdfs:subClassOf rdf:resource="&prop;HydrogeologicalProperty"/>
-    <owl:equivalentClass rdf:resource="#Storat"/>
+    <owl:equivalentClass rdf:resource="#storat"/>
     <rdfs:comment xml:lang="en">The volume of water an aquifer releases from or takes into storage per unit surface area of the aquifer per unit change in head (virtually equal to the specific yield in an unconfined aquifer).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Storat"/>
+  <owl:Class rdf:about="#storat"/>
 
-  <owl:Class rdf:about="#IndexDefinedByDiffer">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#indexdefinedbydiff">
+    <rdfs:subClassOf rdf:resource="#index"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ZonalIndex">
-    <rdfs:subClassOf rdf:resource="#IndexDefinedByDiffer"/>
+  <owl:Class rdf:about="#zonalindex">
+    <rdfs:subClassOf rdf:resource="#indexdefinedbydiff"/>
     <rdfs:comment xml:lang="en">A measure of strength of the middle-latitude westerlies, usually expressed as the horizontal pressure difference between 35 and 55N latitude, or as the corresponding geostrophic wind.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Virul">
-      <rdfs:subClassOf rdf:resource="#HealthIndex"/>
+  <owl:Class rdf:about="#virul">
+      <rdfs:subClassOf rdf:resource="#healthindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ComputationalComplex">
+  <owl:Class rdf:about="#computationalcomplex">
     <rdfs:subClassOf rdf:resource="&prop;Metric"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AdaptiveCapac">
+  <owl:Class rdf:about="#adaptivecapac">
     <rdfs:subClassOf rdf:resource="&prop;Metric"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BoydenIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#boydenindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;measureOf" />
@@ -219,7 +219,7 @@
     <rdfs:comment>A measure of the mean thermodynamic stability in a layer beneath 700 mb.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Turbid">
+  <owl:Class rdf:about="#turbid">
     <rdfs:subClassOf rdf:resource="&quan;RadiationMediumInteractionQuantity"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -232,45 +232,45 @@
   </owl:Class>
 
 <!-- Solar indices -->
-  <owl:Class rdf:about="#GeomagneticIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#geomagneticindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;measureOf" />
-        <owl:allValuesFrom rdf:resource="#GeomagneticForc" />
+        <owl:allValuesFrom rdf:resource="#geomagneticforc" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AkasofuEpsilon">
-    <owl:equivalentClass rdf:resource="#GeomagneticIndex"/>
+  <owl:Class rdf:about="#akasofuepsilon">
+    <owl:equivalentClass rdf:resource="#geomagneticindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeophysicalIndex">
-    <owl:equivalentClass rdf:resource="#GeomagneticIndex"/>
+  <owl:Class rdf:about="#geophysicalindex">
+    <owl:equivalentClass rdf:resource="#geomagneticindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Kp">
-    <rdfs:subClassOf rdf:resource="#GeomagneticIndex"/>
+  <owl:Class rdf:about="#kp">
+    <rdfs:subClassOf rdf:resource="#geomagneticindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AuroralBoundaryIndex">
-    <rdfs:subClassOf rdf:resource="#GeomagneticIndex"/>
+  <owl:Class rdf:about="#auroralboundaryindex">
+    <rdfs:subClassOf rdf:resource="#geomagneticindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeomagneticForc">
+  <owl:Class rdf:about="#geomagneticforc">
     <rdfs:subClassOf rdf:resource="&proc;Force"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarCapIndex">
-    <rdfs:subClassOf rdf:resource="#GeomagneticIndex"/>
-    <owl:equivalentClass rdf:resource="#PC"/>
+  <owl:Class rdf:about="#polarcapindex">
+    <rdfs:subClassOf rdf:resource="#geomagneticindex"/>
+    <owl:equivalentClass rdf:resource="#pc"/>
   </owl:Class>
-  <owl:Class rdf:about="#PC"/>
+  <owl:Class rdf:about="#pc"/>
 
 <!-- Climate indices -->
-  <owl:Class rdf:about="#NorthAtlanticOscillationIndex">
-    <rdfs:subClassOf rdf:resource="#IndexDefinedByDiffer"/>
+  <owl:Class rdf:about="#northatlanticoscillationindex">
+    <rdfs:subClassOf rdf:resource="#indexdefinedbydiff"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="&osc;NAO"/>
@@ -279,8 +279,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NorthPacificOscillationIndex">
-    <rdfs:subClassOf rdf:resource="#IndexDefinedByDiffer"/>
+  <owl:Class rdf:about="#northpacificoscillationindex">
+    <rdfs:subClassOf rdf:resource="#indexdefinedbydiff"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="&osc;PDO"/>
@@ -289,12 +289,12 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CropMoistureIndex">
-      <rdfs:subClassOf rdf:resource="#HealthIndex"/>
+  <owl:Class rdf:about="#cropmoistureindex">
+      <rdfs:subClassOf rdf:resource="#healthindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydropattern">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#hydropattern">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="&realm;Hydrosphere"/>
@@ -304,8 +304,8 @@
     <rdfs:comment>The full range of hydrologic parameters, which include the depth of water, duration of inundation, and the timing and distribution of freshwater flow.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ClimateInd">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalInd"/>
+  <owl:Class rdf:about="#climateind">
+    <rdfs:subClassOf rdf:resource="#environmentalind"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="&clim;Climate"/>
@@ -314,29 +314,29 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CommonSenseClimateIndex">
-    <rdfs:subClassOf rdf:resource="#ClimateInd"/>
+  <owl:Class rdf:about="#commonsenseclimateindex">
+    <rdfs:subClassOf rdf:resource="#climateind"/>
     <rdfs:comment>The Common Sense Climate Index is a simple measure of the degree (if any) to which practical climate change is occurring. The index is a composite of several everyday climate indicators. It is expected to have positive values when warming occurs and negative values for cooling. If the Index reaches and consistently maintains a value of 1 or more, the climate change should be noticeable to most people who have lived at that location for a few decades.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PalmerDroughtSeverityIndex">
-    <rdfs:subClassOf rdf:resource="#DroughtIndex"/>
-    <owl:equivalentClass rdf:resource="#PDSI"/>
-    <owl:equivalentClass rdf:resource="#PalmerDroughtIndex"/>
-    <owl:equivalentClass rdf:resource="#PDI"/>
+  <owl:Class rdf:about="#palmerdroughtseverityindex">
+    <rdfs:subClassOf rdf:resource="#droughtindex"/>
+    <owl:equivalentClass rdf:resource="#pdsi"/>
+    <owl:equivalentClass rdf:resource="#palmerdroughtindex"/>
+    <owl:equivalentClass rdf:resource="#pdi"/>
   </owl:Class>
-  <owl:Class rdf:about="#PDSI"/>
-  <owl:Class rdf:about="#PalmerDroughtIndex"/>
-  <owl:Class rdf:about="#PDI"/>
+  <owl:Class rdf:about="#pdsi"/>
+  <owl:Class rdf:about="#palmerdroughtindex"/>
+  <owl:Class rdf:about="#pdi"/>
 
-  <owl:Class rdf:about="#PalmerHydrologicalDroughtIndex">
-    <rdfs:subClassOf rdf:resource="#DroughtIndex"/>
-    <owl:equivalentClass rdf:resource="#PHDI"/>
+  <owl:Class rdf:about="#palmerhydrologicaldroughtindex">
+    <rdfs:subClassOf rdf:resource="#droughtindex"/>
+    <owl:equivalentClass rdf:resource="#phdi"/>
   </owl:Class>
-  <owl:Class rdf:about="#PHDI"/>
+  <owl:Class rdf:about="#phdi"/>
 
-  <owl:Class rdf:about="#DroughtIndex">
-    <rdfs:subClassOf rdf:resource="#ClimateInd"/>
+  <owl:Class rdf:about="#droughtindex">
+    <rdfs:subClassOf rdf:resource="#climateind"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="&clim;Drought"/>
@@ -345,18 +345,18 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#StandardizedPrecipitationIndex">
-    <rdfs:subClassOf rdf:resource="#DroughtIndex"/>
+  <owl:Class rdf:about="#standardizedprecipitationindex">
+    <rdfs:subClassOf rdf:resource="#droughtindex"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SurfaceMoistureIndex">
-    <rdfs:subClassOf rdf:resource="#DroughtIndex"/>
-    <owl:equivalentClass rdf:resource="#SMI"/>
+  <owl:Class rdf:about="#surfacemoistureindex">
+    <rdfs:subClassOf rdf:resource="#droughtindex"/>
+    <owl:equivalentClass rdf:resource="#smi"/>
   </owl:Class>
-  <owl:Class rdf:about="#SMI"/>
+  <owl:Class rdf:about="#smi"/>
 
-  <owl:Class rdf:about="#KaplanSSTIndex">
-    <rdfs:subClassOf rdf:resource="#Index"/>
+  <owl:Class rdf:about="#kaplansstindex">
+    <rdfs:subClassOf rdf:resource="#index"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;measureOf" />

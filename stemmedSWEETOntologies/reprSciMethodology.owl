@@ -26,87 +26,87 @@
      <owl:imports rdf:resource="&res;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ResearchExplor">
-    <rdfs:subClassOf rdf:resource="&res;#Research"/>
+  <owl:Class rdf:about="#researchexplor">
+    <rdfs:subClassOf rdf:resource="&res;#research"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Altimetri">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#altimetri">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonD">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#carbond">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Interferometri">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#interferometri">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#IsotopeAnalysi">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#isotopeanalysi">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Methodolog">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct" />
+  <owl:Class rdf:about="#methodolog">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Photometri">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#photometri">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Polarimetri">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#polarimetri">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RadioactiveD">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#radioactived">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Spectroscopi">
-    <rdfs:subClassOf rdf:resource="#Methodolog" />
+  <owl:Class rdf:about="#spectroscopi">
+    <rdfs:subClassOf rdf:resource="#methodolog" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RetrievalApproach">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#retrievalapproach">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Image">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#image">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photographi">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#photographi">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AerialPhotographi">
-    <rdfs:subClassOf rdf:resource="#Photographi"/>
+  <owl:Class rdf:about="#aerialphotographi">
+    <rdfs:subClassOf rdf:resource="#photographi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RemoteSens">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#remotesen">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tomographi">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#tomographi">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#XRayDiffract">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#xraydiffract">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Optic">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#optic">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
     <rdfs:comment>Optics is a branch of physics that describes the behavior and properties of light and the interaction of light with matter. Optics explains optical phenomena</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Engineer">
-    <rdfs:subClassOf rdf:resource="#ResearchExplor"/>
+  <owl:Class rdf:about="#engineer">
+    <rdfs:subClassOf rdf:resource="#researchexplor"/>
   </owl:Class>
 
-  <meth:RetrievalApproach rdf:about="#Passiv">
+  <meth:RetrievalApproach rdf:about="#passiv">
   </meth:RetrievalApproach>
 
-  <meth:RetrievalApproach rdf:about="#Active">
+  <meth:RetrievalApproach rdf:about="#active">
   </meth:RetrievalApproach>
 
 </rdf:RDF>

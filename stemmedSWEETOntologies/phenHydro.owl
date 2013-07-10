@@ -59,158 +59,158 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#HydrospherePhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#PlanetaryPhenomena"/>
+  <owl:Class rdf:about="#hydrospherephenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#planetaryphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&planet;#Hydrosphere" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&planet;#hydrospher" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drainage">
-    <rdfs:subClassOf rdf:resource="&sys;#Removal" />
+  <owl:Class rdf:about="#drainag">
+    <rdfs:subClassOf rdf:resource="&sys;#remov" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Discharge">
-    <rdfs:subClassOf rdf:resource="#WaterFlow"/>
+  <owl:Class rdf:about="#discharg">
+    <rdfs:subClassOf rdf:resource="#waterflow"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BaseFlow">
-    <rdfs:subClassOf rdf:resource="#Streamflow"/>
+  <owl:Class rdf:about="#baseflow">
+    <rdfs:subClassOf rdf:resource="#streamflow"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FlashFlood">
-    <rdfs:subClassOf rdf:resource="#Flood"/>
-    <rdfs:subClassOf rdf:resource="&phen;#ExtremeEvent"/>
+  <owl:Class rdf:about="#flashflood">
+    <rdfs:subClassOf rdf:resource="#flood"/>
+    <rdfs:subClassOf rdf:resource="&phen;#extremeev"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowCover">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
+  <owl:Class rdf:about="#snowcov">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flood">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
-    <rdfs:subClassOf rdf:resource="&sys;#Inundation"/>
+  <owl:Class rdf:about="#flood">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
+    <rdfs:subClassOf rdf:resource="&sys;#inundat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:hasValue rdf:resource="&impa;#Hazard" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:hasValue rdf:resource="&impa;#hazard" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drain">
-    <rdfs:subClassOf rdf:resource="#WaterFlow" />
+  <owl:Class rdf:about="#drain">
+    <rdfs:subClassOf rdf:resource="#waterflow" />
   </owl:Class>
 
-  <owl:Class rdf:about="#OpenChannelFlow">
-    <rdfs:subClassOf rdf:resource="#WaterFlow" />
+  <owl:Class rdf:about="#openchannelflow">
+    <rdfs:subClassOf rdf:resource="#waterflow" />
     <rdfs:comment xml:lang="en">Flow of a fluid with its surface exposed to the atmosphere.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Outflow">
-    <rdfs:subClassOf rdf:resource="#WaterFlow"/>
+  <owl:Class rdf:about="#outflow">
+    <rdfs:subClassOf rdf:resource="#waterflow"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OverlandFlow">
-    <rdfs:subClassOf rdf:resource="#Runoff" />
+  <owl:Class rdf:about="#overlandflow">
+    <rdfs:subClassOf rdf:resource="#runoff" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Runoff">
-    <rdfs:subClassOf rdf:resource="#WaterFlow"/>
+  <owl:Class rdf:about="#runoff">
+    <rdfs:subClassOf rdf:resource="#waterflow"/>
     <rdfs:comment>Runoff is a term used to describe the flow of water, from rain, snowmelt, or other sources, over the land surface, and is a major component of the water cycle. Runoff that occurs on surfaces before reaching a channel is also called a nonpoint source. If a nonpoint source contains man-made contaminants, the runoff is called nonpoint source pollution. A land area which produces runoff draining to a common point is called a watershed. When runoff flows along the ground, it can pick up soil contaminants such as petroleum, pesticides (in particular herbicides and insecticides), or fertilizers that become discharge or nonpoint source pollution.</rdfs:comment>  
   </owl:Class>
 
-  <owl:Class rdf:about="#Snowslide">
-    <rdfs:subClassOf rdf:resource="&geom;#Avalanche"/>
+  <owl:Class rdf:about="#snowslid">
+    <rdfs:subClassOf rdf:resource="&geom;#avalanch"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Streamflow">
-    <rdfs:subClassOf rdf:resource="#WaterFlow"/>
+  <owl:Class rdf:about="#streamflow">
+    <rdfs:subClassOf rdf:resource="#waterflow"/>
     <rdfs:comment>Streamflow, or channel runoff, is the flow of water in streams, rivers, and other channels, and is a major element of the water cycle. It is one component of the runoff of water from the land to waterbodies, the other component being surface runoff. Water flowing in channels comes from surface runoff from adjacent hillslopes, from groundwater flow out of the ground, and from water discharged from pipes. The discharge of water flowing in a channel is measured using stream gauges or can be estimated by the Manning equation. The record of flow over time is called a hydrograph. Flooding occurs when the volume of water exceeds the capacity of the channel.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#StreamDischarge">
-    <rdfs:subClassOf rdf:resource="#Discharge"/>
+  <owl:Class rdf:about="#streamdischarg">
+    <rdfs:subClassOf rdf:resource="#discharg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Torrent">
-    <rdfs:subClassOf rdf:resource="#Discharge"/>
+  <owl:Class rdf:about="#torrent">
+    <rdfs:subClassOf rdf:resource="#discharg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Debouche">
-    <rdfs:subClassOf rdf:resource="#StreamDischarge"/>
+  <owl:Class rdf:about="#debouch">
+    <rdfs:subClassOf rdf:resource="#streamdischarg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterFlow">
-    <rdfs:subClassOf rdf:resource="&fluid;#Flow"/>
+  <owl:Class rdf:about="#waterflow">
+    <rdfs:subClassOf rdf:resource="&fluid;#flow"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubstance" />
-        <owl:hasValue rdf:resource="&comp;#Water" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:hasValue rdf:resource="&comp;#water" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HydrothermalAlteration">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
+  <owl:Class rdf:about="#hydrothermalalter">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroundwaterStorage">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
-    <rdfs:subClassOf rdf:resource="&com;#Storage"/>
+  <owl:Class rdf:about="#groundwaterstorag">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
+    <rdfs:subClassOf rdf:resource="&com;#storag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Infiltration">
-    <rdfs:subClassOf rdf:resource="#LandWaterCirculation"/>
+  <owl:Class rdf:about="#infiltrat">
+    <rdfs:subClassOf rdf:resource="#landwatercircul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Intrusion">
-    <rdfs:subClassOf rdf:resource="#LandWaterCirculation"/>
+  <owl:Class rdf:about="#intrusion">
+    <rdfs:subClassOf rdf:resource="#landwatercircul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandWaterCirculation">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
+  <owl:Class rdf:about="#landwatercircul">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&realm;#UndergroundWater"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&realm;#undergroundwat"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&trans;#Transport"/>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:allValuesFrom rdf:resource="&trans;#transport"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadionucleiRetardation">
-    <rdfs:subClassOf rdf:resource="#HydrospherePhenomena"/>
+  <owl:Class rdf:about="#radionucleiretard">
+    <rdfs:subClassOf rdf:resource="#hydrospherephenomena"/>
     <rdfs:comment xml:lang="en">The process or processes that cause the time required for a given radionuclide to move between two locations to be greater than the groundwater travel time, because of physical and chemical interactions between the radionuclide and the geohydrologic unit through which the radionuclide travels.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Recharge">
-    <rdfs:subClassOf rdf:resource="&trans;#Transport"/>
+  <owl:Class rdf:about="#recharg">
+    <rdfs:subClassOf rdf:resource="&trans;#transport"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&realm;#Aquifer"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&realm;#aquifer"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeepPercolation">
-    <rdfs:subClassOf rdf:resource="#Percolation"/>
+  <owl:Class rdf:about="#deeppercol">
+    <rdfs:subClassOf rdf:resource="#percol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Percolation">
-    <rdfs:subClassOf rdf:resource="&trans;#Transport"/>
-    <owl:equivalentClass rdf:resource="#Percolate"/>
+  <owl:Class rdf:about="#percol">
+    <rdfs:subClassOf rdf:resource="&trans;#transport"/>
+    <owl:equivalentClass rdf:resource="#percol"/>
     <rdfs:comment xml:lang="en">Percolation concerns the movement and filtering of fluids through porous materials.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Percolate"/>
+  <owl:Class rdf:about="#percol"/>
 
 </rdf:RDF>

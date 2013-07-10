@@ -32,58 +32,58 @@
   </owl:Ontology>
   
 <!-- Ordinal Properties -->
-  <ordi:MineralAssessment rdf:about="#Recover"/>
+  <ordi:MineralAssessment rdf:about="#recov"/>
 
-  <ordi:MineralAssessment rdf:about="#Paramargin"/>
+  <ordi:MineralAssessment rdf:about="#paramargin"/>
 
-  <ordi:MineralAssessment rdf:about="#Submargin"/>
+  <ordi:MineralAssessment rdf:about="#submargin"/>
 
 <!-- Qualifiers -->
-  <ordi:Qualifier rdf:about="#Acute">
+  <ordi:Qualifier rdf:about="#acute">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Almost">
+  <ordi:Qualifier rdf:about="#almost">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Extreme">
-    <screla:moreExtensiveThan rdf:resource="#Veri"/>
+  <ordi:Qualifier rdf:about="#extreme">
+    <screla:moreExtensiveThan rdf:resource="#veri"/>
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Middl">
-    <owl:sameAs rdf:resource="#Medium"/>
-    <owl:sameAs rdf:resource="#Intermedi"/>
+  <ordi:Qualifier rdf:about="#middl">
+    <owl:sameAs rdf:resource="#medium"/>
+    <owl:sameAs rdf:resource="#intermedi"/>
   </ordi:Qualifier>
-  <ordi:Qualifier rdf:about="#Medium"/>
-  <ordi:Qualifier rdf:about="#Intermedi"/>
+  <ordi:Qualifier rdf:about="#medium"/>
+  <ordi:Qualifier rdf:about="#intermedi"/>
 
-  <ordi:Qualifier rdf:about="#Optimal">
-    <screla:moreExtensiveThan rdf:resource="#Slight"/>
-  </ordi:Qualifier>
-
-  <ordi:Qualifier rdf:about="#Semi">
+  <ordi:Qualifier rdf:about="#optimal">
+    <screla:moreExtensiveThan rdf:resource="#slight"/>
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Slight">
-    <owl:sameAs rdf:resource="#Slight"/>
-  </ordi:Qualifier>
-  <ordi:Qualifier rdf:about="#Slight"/>
-
-  <ordi:Qualifier rdf:about="#Suboptim">
+  <ordi:Qualifier rdf:about="#semi">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Total">
+  <ordi:Qualifier rdf:about="#slight">
+    <owl:sameAs rdf:resource="#slight"/>
+  </ordi:Qualifier>
+  <ordi:Qualifier rdf:about="#slight"/>
+
+  <ordi:Qualifier rdf:about="#suboptim">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Transit">
+  <ordi:Qualifier rdf:about="#total">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Well">
+  <ordi:Qualifier rdf:about="#transit">
   </ordi:Qualifier>
 
-  <ordi:Qualifier rdf:about="#Ultra">
+  <ordi:Qualifier rdf:about="#well">
+  </ordi:Qualifier>
+
+  <ordi:Qualifier rdf:about="#ultra">
   </ordi:Qualifier>
   
-  <ordi:Qualifier rdf:about="#Veri">
+  <ordi:Qualifier rdf:about="#veri">
   </ordi:Qualifier>
 
 </rdf:RDF>

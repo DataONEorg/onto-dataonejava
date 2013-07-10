@@ -39,20 +39,20 @@
      <owl:imports rdf:resource="&root;rela.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#LandPreserv">
-    <rdfs:subClassOf rdf:resource="#LandManag"/>
+  <owl:Class rdf:about="#landpreserv">
+    <rdfs:subClassOf rdf:resource="#landmanag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Protect">
-    <rdfs:subClassOf rdf:resource="#Sustain"/>
+  <owl:Class rdf:about="#protect">
+    <rdfs:subClassOf rdf:resource="#sustain"/>
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Conserv">
+  <owl:Class rdf:about="#conserv">
     <rdfs:subClassOf rdf:resource="&com;Management"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandManag">
+  <owl:Class rdf:about="#landmanag">
     <rdfs:subClassOf rdf:resource="&com;Management"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -62,22 +62,22 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandTenur">
-    <rdfs:subClassOf rdf:resource="#LandManag"/>
+  <owl:Class rdf:about="#landtenur">
+    <rdfs:subClassOf rdf:resource="#landmanag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HabitatManag">
-    <rdfs:subClassOf rdf:resource="#LandManag"/>
+  <owl:Class rdf:about="#habitatmanag">
+    <rdfs:subClassOf rdf:resource="#landmanag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Stewardship">
+  <owl:Class rdf:about="#stewardship">
     <rdfs:subClassOf rdf:resource="&com;Management"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sustain">
+  <owl:Class rdf:about="#sustain">
     <rdfs:subClassOf rdf:resource="&human;HumanActivity"/>
-    <owl:equivalentClass rdf:resource="#Sustain"/>
+    <owl:equivalentClass rdf:resource="#sustain"/>
   </owl:Class>
-  <owl:Class rdf:about="#Sustain"/>
+  <owl:Class rdf:about="#sustain"/>
 
 </rdf:RDF>

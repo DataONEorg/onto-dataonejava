@@ -1,0 +1,1306 @@
+GLOBAL PLANETARY
+AND
+CHANGE
+ELSEVIER
+Global and Planetary Change 9 (1994) 17-28
+Surface energy balance and katabatic flow over glacier
+and tundra during GIMEX-91
+Peter G. Duynkerke, Michiel R. van den Broeke
+Utrecht University, Institute for Marine and Atmospheric Research Utrecht, Utrecht, The Netherlands
+(Received September 14, 1992;revised and accepted January 14, 1993)
+Abstract
+The energy balance observed in the summer of 1991 during the Greenland Ice Margin EXperiment (GIMEX-91)
+is described. Several masts were erected along a transect perpendicular to the ice edge; from a point 90 km up the
+ice cap, through the ablation zone, down to a point 5.8 km within the tundra zone.
+The diurnal variation of the friction velocity, sensible heat flux and latent heat flux, both on a single day (22 July)
+and averaged over the complete observational period are discussed. The mean daily values of the sensible heat flux
+(positive upwards) over the ice were negative (about - 3 0 W/m2), as the ice was melting during most of the
+observational period. On average the latent heat flux was positive, which moistened the boundary layer air flowing
+down the ice cap.
+Up the ice cap, more than about 20 km from the ice edge, the energy balance is driven by the net radiation which
+causes higher fluxes during the day than during the night. The smaller (more negative) sensible heat fluxes during
+the night accelerate the katabatic flow; this leads to a wind maximum late at night or early in the morning. This
+diurnal cycle in energy balance is very similar to that observed on the slopes of Antarctica.
+At the ice edge, the large difference between the radiative and thermal properties of the ice and the tundra
+exerts a strong thermal forcing on the katabatic flow, analogous to the land-sea breeze circulation. During day-time
+the thermal wind accelerates the katabatic flow, which leads to an enhancement of the turbulent exchange rate and
+turbulent fluxes.
+I. Introduction
+The Greenland Ice Margin E X p e r i m e n t
+( G I M E X ) was carried out in the S0ndre
+Str0mfjord area 67°N 50°W, in southwestern
+Greenland during the summers of 1990 and 1991.
+A major goal was to study the relation between
+the meteorological conditions and the mass bal-
+ance of the Greenland ice sheet. In this paper we
+will concentrate on the determination of the tur-
+bulent fluxes, both above the ice and the tundra.
+The diurnal variation of the friction velocity, sen-
+sible heat flux and latent heat flux, both on a
+single day and averaged over the complete obser-
+vational period are discussed.
+In the past, only a few micro meteorological
+studies have been performed on the Greenland
+ice sheet. The most extensive ones were those
+made by Ambach and collaborators during the
+E G I G expedition of 1957 and 1966 (Ambach,
+1977a,b) and the ETH-expeditions during 1991
+and 1992 (Ohmura et al., 1991; Ohmura et al.,
+1992). The unique set up during G I M E X was that
+masts were erected from a point 90 km up the ice
+0921-8181/94/$07.00 © 1994 Elsevier Science B.V. All rights reserved
+SSDI 0921-8181(94)E0060-C
+18
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+I I
+70W 
+cap, right through the melting zone, down to a
+point 5.8 km inside the tundra area. This set up
+provided us with the opportunity to study the
+energy balance along a transect perpendicular to
+the ice edge.
+The large difference in the radiation and the
+thermal characteristics of the ice sheet and the
+tundra (Ohmura, 1982) has some important influ-
+ences on the dynamics of the katabatic flow,
+especially during summer. Here, we are mainly
+interested in the turbulent exchange of heat and
+moisture between the surface and the atmo-
+sphere. We will concentrate particularly on the
+difference in turbulent fluxes over ice and tundra,
+and examine their interaction with the katabatic
+flow (see also Van den Broeke et al., 1993).
+60
+I
+I I I
+40 30 20
+80N
+70N
+60N
+50
+10W
+2. Experimental site and set up
+GIMEX-91 (Greenland Ice Margin EXperi-
+ment, 1991) was carried out at 67°05'N, 50°14'W
+(see Fig. 1 for location of the base camp) at the
+boundary line between tundra and ice cap, which
+runs from north to south. Several meteorological
+masts were placed along a line perpendicular to
+the ice edge, from 5.8 km down the tundra to 90
+km up the ice cap. In this p a p e r we will take the
+x-axis from west to east and the y-axis from south
+to north, the origin of the co-ordinate system
+being the base camp. The ice front is then at
+about x = 400 m, for an overview of the experi-
+mental set up and site numbers see the bottom
+part of Fig. 1. The locations of the different sites
+are also indicated in Table 1.
+In the present study measurements from seven
+different sites along the transect perpendicular to
+the ice edge were used. The most westerly site on
+the transect is Sendre Str0mfjord weather sta-
+tion. The most easterly site is the boundary layer
+research unit of the Free University of Amster-
+dam. Between these two sites meteorological
+masts were erected by Utrecht University as indi-
+cated in Table 1. At the base camp vertical
+soundings were performed with a tethered bal-
+loon, up to 1000 m above ground level, sampling
+every 10 seconds wind speed, wind direction tem-
+perature, relative humidity and pressure. The to-
+toodro
+,*,_______~
+-2(I k m 
+I 
+site :
+height:
+Dk01 2 6 kill 7 . 3 k i n "~8 8 k m 90kin
+t | I I
+    t 
+SS camp silo 4 ~ile S site ~, sile 9
+50tla 149m 341 III 51!)111 [1)281n 1519nl
+Fig. 1. Top: surface pressure m a p at 1200 U T C 22 July
+1991.The location of the radiosonde stations Narssarssuaq
+(04270) and Egedesminde (04220) and the base camp are also
+indicated on the map. Bottom: location of the sites along the
+G I M E X transect, including the heights above sea level.
+tal measuring period for the GIMEX-91 expedi-
+tion was 52 days: 10 June until 31 July. We used
+the data for the period 10 J u n e - 3 1 July at site 4,
+10 J u n e - 3 0 July at site 5, 10 J u n e - 2 4 July at site
+6 and for the period 5 July-24 July 1991 at site 9.
+Table 1
+The location of S0ndre Str0mfjord (SS) and the sites at which
+the masts were erected. The heights at the masts, used in this
+paper, at which the wind speed (Ivl), temperature (T) and
+relative humidity ( R H ) are measured
+Site x [km] Height[m] Ivl T RH
+SS -20 50 10 2 2
+3 0 149 
+Base camp 0 149 
+4 2.6 341 
+5 7.3 519 
+6 38.8 1028 
+9 90.0 1519 
+2, 4.9 2, 4.9
+0.5, 6 0.5,6
+2, 6 
+2, 6 
+2, 8 
+4.9
+0.5,6
+2, 6
+2, 6
+4, 8
+2, 8
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+stable. Duynkerke (1991) used the data of Nieuw-
+stadt (1984) to obtain
+3. Determination of the fluxes
+In this section a theoretical description will be
+given of the relations used to determine the sen-
+sible and latent heat flux in the atmospheric
+surface layer (section 3.1 and 3.3) and the heat
+flux into the soil (section 3.2).
+3.1. Flux-profile relations
+In the atmospheric surface layer the profiles of
+mean wind (v = (u, v)), potential temperature (0)
+and specific humidity (q) are related to the corre-
+sponding fluxes by the so-called flux-profile rela-
+tionships:
+Kz
+--,
+u
+3v
+-~z
+=
+=
+Kz 30
+O, 3z
+trz 3q
+q , az
+~bm( Z / L ), with u 2
+(1.a)
++
+chh( z / L ), with u,O , = - w ' O ' (1.b)
+49h(z/L ), with u , q , (1.c)
+= -w'q'
+2
+L =
+K{g/To}(O, + 0.62T0q , )
+(1.0)
+in which K is the von K~irmfin constant, z the
+height above the surface, L the Monin-Obukhov
+length scale, g the gravitational acceleration, u ,
+the friction velocity, 0 , a temperature scale, q , a
+humidity scale and 4~m.h are the dimensionless
+stability functions for momentum (m) and heat
+(h). As usual, the dimensionless stability func-
+tions for heat and moisture are taken equal.
+For the dimensionless stability functions (~" =
+z / L ) we use under unstable conditions (Dyer,
+1974; H6gstr6m, 1987; Duynkerke, 1991)
+~.L(~) = (1 - - ~ m f f ) - 1 / 4
+~bh(~") = (1 -- yh~') - ' / e
+19
+(2)
+with Ym = 20 and Yh = 15.
+Under stable conditions there is much greater
+uncertainty about the functional relations (Eq.
+l a - d ) , especially when the conditions are very
+(~m(~') = 1 + fl,n~'(l q - [ ~ m ~ / a ) a - I
+qSh(S = 1 +/3h~r(1 + flhff/a)"-'
+r)
+with /3m = 5, ]3h = 7.5 and a = 0.8
+(3)
+For ( << 1 the dimensionless functions (Eq. 3)
+are very similar to those proposed by H6gstr6m
+(1987), who used tim = 4.8 and /3h = 7.8. In the
+surface layer the fluxes, and therefore also u , ,
+0 , and q , , are constant with height. Therefore
+the flux-profile relationships can be integrated
+analytically between two heights, i.e. z~ and z 2
+(Dyer, 1974). One can then calculate the fluxes
+from measurements of wind speed, temperature
+and specific humidity at two heights. Note that in
+general the wind speed, temperature and specific
+humidity do not have to be measured at the same
+heights. For instance, at the base camp we mea-
+sured the wind speed at only one height (4.9 m).
+At this location we therefore applied the inte-
+grated flux-profile relationship for the wind be-
+tween the estimated roughness length (z0, where
+the wind speed is zero) and a height of 4.9 m.
+3.2. Soil heat-flux
+The soil heat-flux at the base camp was not
+measured directly. It is evaluated from the tem-
+perature measured at a depth of 2 and 5 cm in
+the soil. The temperature diffusion in the soil is
+governed by the following equation
+pscsOTs/Ot = OG( z ) /Oz
+(4)
+in which p~ is the soil density, G is the specific
+heat capacity of the soil, Ts is the temperature in
+the soil and G(z) is the soil heat flux (positive
+downwards) given by
+G( z )
+=
+soLIOz
+(5)
+where ,~ is the thermal conductivity of the soil.
+At the location where the soil temperatures are
+measured the soil consists mainly of a mixture of
+clay and sand. The area around S0ndre
+Str0mfjord is very dry, with an annual precipita-
+tion of about 250 mm. Typically, after a few days
+without any rainfall the soil dries out very quickly.
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+20
+where A stands for the difference between the
+two measuring heights. We will apply this Bowen
+ratio method at the base camp, where we have
+measurements of relative humidity and tempera-
+ture at 2 and 4.9 m, and compare these with
+fluxes obtained with the flux-profile method de-
+scribed in section 3.a.
+For sand and clay which contain very little mois-
+ture the thermal conductivity is typically 0.6-0.7
+W / ( m K) (Van Wijk and De Vries, 1963). With
+Eq.(5) and the use of the temperature measured
+between 2 and 5 cm depth we can calculate the
+soil heat-flux at the surface (G(0)) from
+G(0) = 20(Ts(0.02 ) - Ts(0.05))
+(6)
+3.3. Bowen ratio method
+4. Experimental results
+The sensible ( H ) and latent heat flux (LE)
+into the atmosphere cannot occur unless there is
+some form of energy available at the earth-atmo-
+sphere surface. The Bowen ratio m e t h o d
+(Brutsaert, 1982) makes use of the energy budget
+at the surface
+O = H + L E + G(O)
+The measuring period of GIMEX-91 was from
+10 June to 31 July. In this chapter we will first
+present the synoptic situation (section 4.1) and
+katabatic flow at the ice masts (section 4.2) on a
+nearly cloud-free day. On that day, 22 July, the
+meteorological situation was representative for a
+typical summer day. In section 4.3 the energy
+balance over the tundra (section 4.3.1) and ice
+cap (section 4.3.2) will be discussed separately. In
+section 4.3.2 we will discuss the energy balance
+averaged over the complete period, and its diur-
+nal variation. Finally in section 4.4 we will discuss
+the boundary layer structure at the ice edge as
+observed from the soundings made with the teth-
+ered balloon.
+(7)
+where Q is the net radiation (positive towards the
+surface). From the measurements of Q and the
+evaluation of the soil heat flux into the soil (G(0))
+we can calculate the sum of sensible and latent
+heat-flux.
+In the Bowen ratio method it is assumed that
+the exchange coefficients for heat and moisture
+are the same. As a result the Bowen ratio B
+( = H / L E ) can be written as CpOO/az (/v
+aq/az)-1, which we can approximate as
+B
+cpAO
+=
+-
+4.1. Synoptic situation
+Fig. 1 shows the synoptic pressure chart at
+1200 UTC 22 July 1991. Because of the low
+(8)
+-
+I Aq
+a,
+5000
+,,,,I,,
+....
+,I,,,,'
+I ....
+I ....
+I,,i,.. ~
+b.
+i , , , , i
+. . . .
+~
+. . . .
+i
+. . . .
+J
+. . . .
+J
+. . . .
+i
+. . . .
+J
+4000
+.,/7
+3000
+q
+2000
+i
+1000
+Oj,
+0
+j
+5
+,J ....
+10
+~ ....
+15
+Ig/kg]
+i ....
+20
+or
+J ....
+25
+IC]
+,,,i
+i ....
+30
+35
+....
+5
+F ....
+10
+I"' . . . . . . . . . . .
+15
+Iglkgl
+20
+or
+25
+I ....
+30
+35
+ICI
+Fig. 2. Profiles of specific humidity q (g/kg) and potential temperature 0 (°C) as a function of height for the radiosonde station
+04220 (a) and 04270 (b): 0000 (full line), 1200 (short dashed line) and 2400 UTC (long dashed line) 22 July 1991. In (a) the thick line
+is a linear fit to the three observed potential temperature profiles.
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+density of meteorological ground and radiosonde
+stations over Greenland and the surrounding seas,
+synoptic weather systems are not well resolved in
+this region. On 22 July a high pressure system
+was centred over eastern Greenland, resulting in
+a southerly flow, almost parallel to the boundary
+line between ice and tundra at our measuring
+location.
+Potential temperature and specific humidity
+profiles as a function of height from radiosonde
+ascents at Egedesminde (04220) and Narssarssuaq
+(04270) are displayed in Fig. 2a,b. The location of
+the two radiosonde stations is indicated in Fig. 1.
+The radiosonde data are not suitable for resolv-
+ing the detailed boundary layer structure. How-
+ever, the radiosonde data are very useful for
+obtaining the wind and thermodynamic structure
+above the boundary layer. A linear fit to the
+soundings at Egedesminde (04220) gives an in-
+crease in potential temperature of about 5 K / k m
+with height, starting from a value of 284.5 K at
+the surface, which is shown as the thick line in
+Fig. 2a. Whereas the linear fit gives that the
+specific humidity decreases on average by about
+0.9 g/(kg km), starting from a value of 4.5 g / k g
+at the surface.
+4.2. Wind and thermodynamics at the ice masts
+Let us assume a reference atmosphere for
+which the thermodynamic properties are only a
+function of height: po(Z), Oo(Z) and qo(Z), in
+which z is the height above sea level. Moreover
+the reference atmosphere is motionless. In that
+case the two dominant mechanisms which deter-
+mine the flow at the ice edge are: the diurnal
+variation of the temperature above the tundra
+and the energetics of the katabatic wind above
+the ice cap.
+Firstly, consider the influence of the tundra on
+the local circulation. With a typical albedo of 0.2
+for the tundra there is a large diurnal variation of
+the net radiation at the surface. During the sum-
+mer the tundra is typically dry, which gives rise to
+large Bowen ratios (about 4 during day-time).
+The net result is that the boundary layer is
+strongly heated during day-time and cooled dur-
+ing night-time (Fig. 3a). Applying the hydrostatic
+21
+equation from a certain height downwards we
+find that the pressure is smaller, than the refer-
+ence value po(Z) in the boundary layer during
+day-time and larger during night-time. During
+day-time the pressure perturbation will be larger
+due to the greater depth of the boundary layer.
+This diurnal variation in pressure will lead to a
+flow analogous to the land-sea breeze circulation
+(Pearson et al., 1983; Ogawa et al., 1986). The
+flow at the ice edge will thus be accelerated
+during day-time and decelerated during night
+time.
+Secondly, above the ice cap the albedo (about
+0.4-0.85) is much larger than above land. Over
+the ice cap the diurnal variation in the net radia-
+tion is therefore much smaller. Moreover, in the
+ablation area melting occurs which gives rise to
+much smaller variations in the (surface) tempera-
+ture (see for instance the temporal evolution of
+the temperature at the sites 4 and 5 in Fig. 3a).
+Higher up the ice cap the temperature will always
+remain below zero; as a result the diurnal varia-
+tion in the temperature will be larger (Wendler et
+al., 1988). This increase in the diurnal variation of
+the temperature can already be seen at site 9 in
+Fig. 3a. Over the ice cap the boundary layer air is
+typically cooled by the transport of sensible heat
+towards the surface. This means that the actual
+temperature is lower than the reference tempera-
+ture (To(z)), which causes a decrease in pressure,
+as a result of the sloping surface: this leads to the
+so-called katabatic flow. The strength of the kata-
+batic flow is determined mainly by the inversion
+strength and the slope of the surface.
+The boundary line between tundra and ice
+edge runs almost from north to south. Therefore
+the flow field can be assumed to be nearly two-di-
+mensional (x,z), i.e. the gradients of all the vari-
+ables with respect to y are set to zero. In that
+case the equations for the potential temperature
+(0) and specific humidity(q) reduce to
+~0
+Ot
+O0
+--
+H - - - - W
+3x
+~0 0~"0' Ou'O'
+3z Oz 3x
+OF
+pCp 0z
+(9a)
+Ùq
+--=
+3t
+Oq
+--U----W
+Ox
+Oq 3w'q' 3u'q'
+3z 3z 3x
+(9b)
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+22
+a.
+20
+|
+'
+'
+'
+i
+,
+,
+,
+,
+,
+i
+L
+,
+,
+i
+,
+,
+,
+i
+,
+,
+,
+_>--,. >-t-.,
+-5 - f
+..v"
+o
+-.
+4
+8
+,
+.
+.
+i
+4
+0
+4
+8
+12
+16
+local time [hr]
+20
+.. i
+-'--v- . ~ _ . ~_< - - . -~.
+N 5
+-~_
+,
+,
+.
+i
+.
+,
+8
+,
+#
+/4.
+~.~
+i
+,
+,
+12
+..
+,
+/ ~ /
+.
+]
+16
+.
+,
+i
+20
+,
+r
+,
+F
+24
+24
+local time
+[hr]
+Fig. 4. The c o m p o n e n t of the wind speed perpendicular to the
+ice edge at the various sites for 22 July.
+b.
+55[
+r
+amp
+4.5
+302
+j , , r ~ • ~ ~,
+..,'
+in which F is the net radiation (positive upwards)
+and the terms with the overbar represent the
+vertical and horizontal turbulent fluxes of heat
+and moisture.
+_
+F = Fs~ - Fs~ + FLt -- FL~
+'.,.
+-
+[
+2.0
+,
+,
+4
+0
+. . . . . . .
+8
+, ,
+12
+'
+~ '
+16
+'
+'
+~ '
+20
+- ~
+24
+local rune [hrl
+C.
+20 ] ' ' '
+I ....
+~,,
+I ..........
+t
+2 13oo
+~
+.
+.
+io~
+. J ~
+L_ -
+5.0+----,
+-2()
+I
+.~.---
+,
+~
+-oioo
+,
+,
+0
+, ~
+,,
+20
+~,,,
+40
+X [kin]
+f,,,
+6°
+~,,'
+80
+I
+100
+Fig. 3. The diurnal variation of the potential t e m p e r a t u r e (a)
+and specific humidity (b) at Sendre Stromfjord (SS) and the
+various sites. The potential t e m p e r a t u r e at 0100, 0400, 1000
+and 1300 LT 22 July 1991 together with the observed back-
+ground potential t e m p e r a t u r e at surface height (thick line) as
+a function of the horizontal distance is shown in (c).
+(10)
+where the subscripts S and L stand for shortwave
+and longwave, respectively. Close to the surface
+the vertical velocity becomes very small and as a
+result the vertical advection term will be small.
+Also the gradient of the turbulent flux in the
+x-direction will be rather small. Therefore the
+main terms in the potential temperature and spe-
+cific humidity budget will be the horizontal ad-
+vection term and the gradient of the turbulent
+transport term in the z-direction. From Fig. 3b it
+is clear that the specific humidity increases as the
+air flows down the ice cap (Fig. 4) and goes on
+increasing down the tundra. Apparently, evapora-
+tion takes place both above the ice cap and the
+tundra. Because at site 4 and the base camp there
+is hardly any change in the specific humidity with
+time there will probably be a close balance be-
+tween horizontal advection and the vertical gradi-
+ent of the turbulent moisture flux.
+The potential temperature on the other hand
+decreases as the air flows down the ice cap.
+Which can be clearly seen from Fig. 3c where the
+potential temperature along the x-direction is
+shown at 0100, 0400, 1000 and 1300 LT. More-
+over, from the linear fit in potential temperature
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+of the radiosonde soundings at Egedesminde
+(shown as thick line in Fig. 2a), a background
+potential temperature at surface height along the
+ice cap was calculated. This background potential
+temperature is shown as a heavy line in Fig. 3c. It
+is clear that the air in the katabatic layer is colder
+than the background potential temperature, caus-
+ing the air to flow down slope. We conclude that
+the air above the ice cap is cooled due to turbu-
+lent mixing. At sites 4 and 5, where there is only a
+small diurnal variation in potential temperature
+in time, the horizontal advection and the vertical
+gradient of the turbulent heat flux are probably
+almost in balance.
+In Fig. 4 the x-component (u) of the wind is
+shown as a function of time at sites 4, 5, 6, base
+camp and 9. The wind speed far on the ice cap
+(site 6 and 9) shows little diurnal variation, the
+highest wind speeds being recorded during the
+night and early morning. As the air flows down
+the ice cap the wind speed increases slightly,
+probably due to the increase in the slope of the
+ice cap. During day-time there is a clear increase
+in the u-velocity, due to the enhanced pressure
+gradient as a result of the heating of the tundra.
+At site 4 retardation of the flow is observed
+during night-time due to the cooling of the
+boundary layer over the tundra.
+It is clear from the discussion above that the
+flow near the boundary line between tundra and
+ice cap is influenced by the difference in the
+energy balance of the tundra and the ice surface.
+Therefore in the following two sections we will
+discuss the energy balance above the ice cap
+(4.3.2) and tundra (4.3.1) separately.
+23
+and the base camp on 22 July 1991 in Fig. 3a. At
+the base camp the temperature is measured at a
+height of 0.15, 2 and 4.9 m and the soil tempera-
+tures at a depth of 2, 5, 9.5, 18, 27 and 41 cm in
+the soil. For 22 July 1991 the air and some of the
+soil temperatures are shown in Fig. 5 as a func-
+tion of time. The soil temperatures were read-out
+manually at selected times, represented by the
+symbols in Fig. 5. The soil temperature at 41 cm
+depth is nearly constant during the day, whereas
+the air temperature close to the surface under-
+goes a large diurnal variation. The air tempera-
+ture shows that the stratification in the surface
+layer is stable during night-time and unstable
+during day-time.
+From the soil temperatures measured at a
+depth of 2 and 5 cm we have evaluated the soil
+heat flux as described in section 3b. From the
+difference between the net radiation and soil
+heat flux we have evaluated, with the Bowen ratio
+method, the sensible (H) and latent heat flux
+(LE), the results of which are shown in Fig. 6a.
+During day-time the Bowen ratio method is fairly
+accurate because the soil heat flux is smaller than
+the net radiation. Around noon the soil heat flux
+becomes as large as 100 W / m 2. This makes that
+an error of about 50% in the soil heat flux can
+give an error of up to 50 W / m 2 in the sensible
+and latent heat flux (De Bruin and Holtslag,
+1982). The sensible heat flux reaches values up to
+2015.! i 1 i J i
+~ i
+i i B i i ,
+Li i
+i i
+4.3. Surface energy balance
+10.
+4.3.1. Above the tundra
+Over the tundra the diurnal variation in the
+net radiation is larger than over the ice cap, due
+to the smaller albedo. During the summer the
+tundra is relatively dry, which means that most
+energy is released into the atmosphere as sensible
+heat (typical day-time values of the Bowen ratio
+are about 4). The diurnal variation in the temper-
+ature above the tundra is therefore large, see for
+example the temperature at S0ndre Stromfjord
+• 
+  • 
+... .......... .'"
+0
+'
+'
+'
+t
+4
+'
+Ts( 095
+Ts(.18)
+Ts(.41)
+'112' ' '116'
+'
+8 '
+210' '
+24
+local time [hr]
+Fig. 5. The air temperature at a height of 4.9 (full line), 2
+(long dashed) and 0.15 m (short dashed) and the soil tempera-
+tures (Ts) at a depth of 5 (diamonds), 9.5 (triangles), 18
+(squares) and 41 cm (circles) at the base camp for 22 July.
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+24
+b.
+a.
+-¢v.
+ry
+0
+4
+8
+12
+16
+local dme [hrl
+20
+24
+0
+4
+8
+12
+16
+20
+24
+local time [hr]
+Fig. 6. (a) The diurnal variation of the measured 10-min. average (full line) and hourly average (diamonds) net radiation (Q),
+(squares), the soil heat flux (G) evaluated from the 2 and 5 cm soil temperature and the latent (triangles) and sensible (circles) heat
+flux evaluated with the Bowen ratio method for 22 July. (b) T h e diurnal variation of the sensible (full line) and latent (dashed line)
+heat flux from the profile method (full lines) and the Bowen ratio method (symbols as in a) at the base camp for 22 July.
+300 W / m 2 giving rise to very strong convection
+over the tundra.
+We have evaluated the fluxes from the profile
+method (section 3.1) as well. For this method the
+temperature and relative humidity at 2 and 4.9 m,
+the wind speed at 4.9 m and the roughness length
+for momentum (the height at which the wind
+speed is zero, z 0 -- 0.2 m) are used. The sensible
+and latent heat flux calculated with the profile
+method are compared with the values from the
+Bowen ratio method in Fig. 6b. During daytime
+the profile method and Bowen ratio method yield
+very similar results, showing the strong convec-
+tion over the tundra. The difference between
+both methods are quite acceptable taking into
+account the large terrain inhomogeneities so close
+to the ice edge.
+and the friction velocity (Fig. 9) over the com-
+plete observational period. This due to the fact
+that the katabatic flow is very dominantly present
+on the Greenland ice sheet. The average diurnal
+variation over the complete period has the advan-
+tage that it shows less hourly fluctuations, be-
+cause as a result of the averaging these fluctua-
+tions have been smoothed out. The daily averages
+of the average diurnal variations are summarised
+in Table 2.
+Far above the ice cap (site 9) the diurnal
+variation is mainly forced by the (local) net radia-
+ii ..........
+0].
+4.3.2. Above the ice
+We have calculated the friction velocity (u .),
+sensible heat flux ( H ) and latent heat flux ( L E )
+above the ice cap using the profile method. This
+method is applied at sites 4, 5, 6 and 9 using the
+wind speed, temperature and relative humidity
+measurements at the heights summarised in Table
+1. The diurnal variation of the fluxes on 22 July
+1991 are shown in Fig. 7. It follows that the
+diurnal variation on a single day is very similar to
+the average diurnal variation of the fluxes (Fig. 8)
+,
+......
+\
+/i
+AI
+".~
+~
+-8° 1
+- 1 0 0
+!
+0
+!
+,
+,
+,',,,
+4
+, ' '
+8
+~ ' , ' ' '
+12
+16
+~ ....
+20
+-
+24
+local time [hi]
+Fig. 7. The latent heat flux (thick line) and sensible heat flux
+(thin lines) at the various sites (numbers) as a function of local
+time for 22 July.
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+6 0 t , , , l i , , l
+-60-
+/
+-80
+, , I , , , I , , , I , , , ]
+.,-~
+'
+~-
+~
+0
+,
+,
+~ , , , ' ' '
+4
+8
+, ' ' '
+12
+local
+,
+16
+time
+'
+'
+'
+20
+]
+24
+[hr]
+Fig. 8. The latent heat flux (thick line) and sensible heat flux
+(thin lines) averaged over the observational period at the
+various sites (numbers) as a function of local time.
+tion; this leads to larger fluxes during day-time
+and smaller fluxes during night-time. This energy
+balance results in a maximum temperature during
+day-time and a minimum during night-time (Fig.
+3a). As a result the temperature deficit of the
+katabatic layer, compared to that of the overlying
+atmosphere, is large during night-time and small
+during day-time. The diurnal variation in the
+temperature deficit results in high wind speeds
+during the night and low wind speeds during the
+day, which is reflected in the variation of the
+friction velocity with time. This diurnal variation
+in wind speed, temperature and fluxes is similar
+0 5
+~
+'
+'
+I
+,
+,
+,
+L
+,
+L
+,
+I
+~
+,
+,
+I
+,
+,
+~
+I
+,
+~
+25
+to that observed by Wendler et al. (1988) on the
+slopes of Antarctica.
+Further down the ice cap, at site 6, the friction
+velocity (Fig. 9) is nearly independent of time, as
+is the wind speed. This is probably due to the
+thermally forced wind which the tundra imposes
+on the flow close to the ice edge. Due to the
+thermally forced wind the katabatic flow is accel-
+erated during the day and decelerated during the
+night. The combined effect of the katabatic and
+thermal forcing is that the friction velocity is
+nearly independent of time. The sensible heat
+flux at site 6 shows nearly the same variation with
+time as at site 9.
+Close to the ice edge, at sites 5 and 4, the
+thermal wind effect dominates the flow, imposing
+an acceleration during the day and a deceleration
+during the night. These effects are clearly re-
+flected in the friction velocity observed at sites 5
+and 4. The increase in the wind speed during
+day-time can also be seen clearly from the en-
+hancement of the fluxes during the day.
+The average fluxes over the entire period are
+given in Table 2. For the friction velocity, sensible
+heat flux and latent heat flux also the standard
+deviation is given in Table 2. This value is ob-
+tained by calculating first the standard deviation
+at a certain hour over the complete period and
+from these hourly values the daily average is
+taken. For reference also the mean energy bal-
+ance at CAMP IV EGIG (Ambach, 1977a) and
+Carrefour station (Ambach, 1977b) are given in
+Tables 3 and 4, respectively. The net radiation at
+site 4 is 120 W / m 2, which means that about 20%
+0 4
+7'".
+=
+=
+9
+..
+.
+_
+02-
+011
+4
+Table 2
+The average friction velocity ( u . ) , sensible heat flux ( H ) ,
+latent heat flux ( L E ) and net radiation (Q) for the period 10
+J u n e - 3 1 July at site 4, 10 J u n e - 3 0 July at site 5, 10 J u n e - 2 4
+July at site 6, and for the period of 5 July-24 July 1991 at site
+9. For the friction velocity, sensible heat flux and latent heat
+flux also the standard deviation is given
+Site 
+0 0 ]
+,
+0
+,
+,
+~
+4
+,
+,
+,
+~
+8
+,
+'
+'
+~ ' ' '
+12
+~
+16
+'
+'
+'
+~
+20
+'
+'
+u. zo H LE Q
+[m/s] [cm] [ W / m 2] [ W / m 2] [ W / m 2]
+4 0.21_+0.10 0.08 -34_+19 11_+9 120
+5 0.26 _+0.09 0.4 - 14 +- 20 
+6 0.45-+0.13 4 -44+_34 
+9 0.30_+0.14 0.8 -30+_20 
+'
+24
+local time [hi']
+Fig. 9. The friction velocity ( u . ) averaged over the observa-
+tional period at the various sites above the ice as a function of
+local time.
+29+_23
+22.5
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+26
+Table 3
+Mean energy balance for the ablation zone at Camp IV
+EGIG, Greenland (69°40'05 ", 49°37'58"W, 1013 m): sensible
+heat flux ( H ) , latent heat flux (LS), net longwave radiation
+(QL) and net radiation (Q) in May (26-31), June, July and
+August (1-7) 1959 (Ambach, 1977a)
+H LS Q (W/m20 ( W / m 2) 31.5 62.6 -
+                         19.0 75.5 -
+                         10.0 95.9 -
+                         30.2 52.6 -
+'
+'
+i
+I
+May
+June
+July
+August
+31.2
+26.6
+28.9
+30.5
+i
+i
+I
+h i. / j /
+~'
+f:,
+..... 
+600.
+i~
+/
+09,,
+....... 
+I,
+0637
+O,,(z.)
+' "
+22
+45
+45
+49
+of the energy for melting is provided by the
+sensible heat flux. At site 9 all three terms, net
+radiation, sensible and latent heat flux, are im-
+portant in the energy balance. The calculated
+sensible heat flux indicates that there is a trans-
+port of heat from the air in the katabatic layer
+towards the ice, whereas the calculated latent
+heat flux indicates that moisture is added to the
+katabatic layer as a result of evaporation. This is
+in agreement with the decrease in potential tem-
+perature (Fig. 3a) and increase in specific humid-
+ity (Fig. 3b) as the air flows down the ice cap.
+From the wind profiles we have also calculated
+the roughness length for momentum. The average
+values [in fact In (z0m)is averaged] over the whole
+period are given in Table 2. Going from site 9 to
+site 4 the surface changes from a very smooth
+s n o w / i c e surface, through a hilly landscape, to
+ice with deep crevasses at the ice-edge. As a
+result one would expect an increase in roughness
+length from site 9 to 4. The calculations indicate
+Table 4
+Mean energy balance for Carrefour station, Greenland
+(69°49'25"N, 47°25'57"W, 1850 m): sensible heat flux (H),
+latent heat flux (LS), net longwave radiation (QL) and net
+radiation (Q) in May (20-31), June and July (1-28) 1967
+(Ambach, 1977b)
+u. H LS Q QL
+(m/s) 
+May
+June
+July
+,
+--1537
+0 ".'*.". ~ ."T..
+280
+282
+284
+Month
+I
+( W / m 2)
+- 
+- 
+- 
+- 
+I
+QL
+( W / m 2) 
+Month
+i
+1000
+( W / m 2) ( W / m 2) ( W / m 2) ( W / m 2)
+0.28 - 18.1 10.6 - 3.4 - 59
+0.26 - 13.1 12.0 6.5 -40
+0.29 - 15.9 13.7 11.3 - 46
+286
+O [K]
+, . . , . . .
+288
+290
+292
+Fig. I0. The potential temperature as a function of height at
+the base camp at 0637, 0944, 1234 and 1537 LT 22 July 1991.
+The tbick line is the linear fit to the radiosonde profiles at
+Egedesminde (discussed in section 4.a) which is also shown in
+Fig. 2a.
+a roughness length in the range of several cen-
+timetres to less than one millimetre.
+4.4. Boundary layer structure at the ice edge
+The tethered balloon data were taken up to a
+height of about 1000 m at the base camp. Fig. 10
+shows the potential temperature. The potential
+temperature reveals a very stable lapse rate in the
+lower 100 m, whereas above 100 m the lapse rate
+becomes less stable. The potential temperature at
+screen level at S~ndre Str~mfjord reaches a maxi-
+mum of 292.5 K during the day. Therefore above
+the tundra a convective boundary layer develops,
+having a height of about 1500 m. The stable lapse
+rate in the lower 100 m of the tethered balloon
+data is due to the katabatic flow down the ice
+cap. This air is typically cold and is heated as the
+air flows over the tundra. This can be seen from
+the heat fluxes at the base camp which show a
+very unstable potential temperature profile in the
+lower metres of the atmosphere. The balloon
+data show a very stable layer from 15 m upwards,
+which indicates that this unstable layer is still
+very shallow and that the katabatic flow at the
+balloon site is therefore hardly influenced by the
+tundra.
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+5. Conclusions
+During summer, in the melting zone of the
+Greenland ice sheet, the boundary layer is usually
+stably stratified. Interesting aspects of this stably
+stratified boundary layer are the horizontal ho-
+mogeneity and the moderate to high wind speeds.
+The latter means that the turbulent exchange
+rates are relatively large for a stable boundary
+layer.
+In the melting zone of the ice sheet a down-
+ward sensible heat flux of approximately 32 W / m 2
+is observed, which compares favourably with the
+data collected at Camp IV EGIG (Ambach,
+1977a), at an altitude of 1013 m, presented in
+Table 3. The latent heat flux (Table 2) and spe-
+cific humidity (Fig. 3b) show that evaporation
+takes place throughout the melting zone. More-
+over, the values of the latent heat flux indicate
+that evaporation increases higher up the ice cap
+up to the equilibrium line.
+At the ice edge (site 4) the sensible heat flux
+makes up about 20% of the total energy available
+for melting the ice, 80% is provided by the net
+radiation. At site 9, 90 km up the ice cap, all
+three terms: sensible heat flux, latent heat flux
+and net radiation are important in the energy
+balance.
+At site 9 the diurnal variation in wind speed,
+temperature and fluxes is similar to that observed
+on the slopes of Antarctica (Wendler et al., 1988).
+The energy balance is driven by the net radiation
+which causes higher fluxes during day-time than
+during night-time (Fig. 8). At the ice edge (sites 4
+and 5) the katabatic flow is modified by the
+thermal wind effect induced by the tundra (Van
+den Broeke et al., 1994). The combined effect of
+the katabatic and thermal forcing is that the
+turbulent exchange is enhanced during the day.
+In summary, the large difference between the
+radiative and thermal characteristics of the tun-
+dra and the adjacent ice leads to a large differ-
+ence in energy balance. During summer, this cre-
+ates a strong thermally forced wind at the ice
+edge, which modifies the regular katabatic flow.
+The flow induced by this thermal forcing, signifi-
+cantly influences the diurnal variation of the en-
+ergy balance over a strip about 20 km wide along
+27
+the ice edge. Further research needs to be done
+to find out how this thermal forcing affects the
+local circulation.
+6. Acknowledgements
+Our thanks go to the members of the GIMEX
+teams, without whose help these measurements
+could never have been made. Generous logistic
+support was provided by the staff of the Weather
+Service in S#ndre Str#mfjord. The observations
+from site 9 were kindly supplied by Hans Vugts
+and Edwin Henneken from the Free University
+of Amsterdam.
+Financial support for this work was obtained
+from the Dutch National Research Programme
+on Global Air Pollution and Climate Change
+(contract 276/91-NOP), from the Commission of
+the European Communities (contract EPOC-
+CT90-0015), and from the Netherlands Organisa-
+tion for Scientific Research (Werkgemeenschap
+CO2-Problematiek).
+7. References
+Ambach, W., 1977a. Untersuchungen zum Energieumsatz in
+der Ablationszone des Gr6nl~indischen Inlandeises: Nach-
+trag. In: Expedition Glaciologique Internationale au
+Groenland, 4, No. 5. Bianco Lunos, Klabenhavn, pp. 63.
+Ambach, W., 1977b. Untersuchungen zum Energieumsatz in
+der Akkumulationszone des Gr6nl~indischen Inlandeises:
+Nachtrag. In: Expedition Glaciologique Internationale au
+Groenland, 4, No. 7, Bianco Lunos, Kobenhavn, pp. 44.
+Brutsaert, W., 1982. Evaporation into the Atmosphere. Rei-
+del, Dordrecht, 299 pp.
+De Bruin, H.A.R. and Holtslag, A.A.M., 1982. A simple
+parameterization of the surface fluxes of sensible and
+latent heat during daytime compared with the Penman-
+Monteith concept. J. Appl. Meteorol., 21: 1610-1621.
+Duynkerke, P.G., 1991. Radiation fog: a comparison of model
+simulation with detailed observations. Mon. Weather Rev.,
+119: 324-341.
+Dyer, A.J., 1974. A review of flux-profile relationships.
+Boundary-Layer Meteorol., 7: 363-372.
+H6gstr6m, U., 1987. Non-dimensional wind and temperature
+profiles in the atmospheric surface layer: A re-evaluation.
+Boundary-Layer Meteorol., 42: 55-78.
+Ogawa, Y., Ohara, T., Wakamatsu, S., Diosey, P.G. and Uno,
+I., 1986. Observation of lake breeze penetration and sub-
+sequent development of the thermal internal boundary
+28
+P.G. Duynkerke, M.R. van den Broeke / Global and Planetary Change 9 (1994) 17-28
+layer for the Nanticoke II shoreline diffusion experiment.
+Boundary-Layer Meteorol., 35: 207-230.
+Ohmura, A., 1982. Climate and energy balance on the Arctic
+tundra. J. Climatol., 2: 65-84.
+Ohmura, A. et al., 1991. Energy and mass balance during the
+melt season at the equilibrium line altitude, Paaktisoq,
+Greenland Ice Sheet. ETH Greenland Exped. Progr. Rep.,
+1, Dep. Geogr. ETH, Ziirich, 108 pp.
+Ohmura, A. et al., 1992. Energy and mass balance during the
+melt season at the equilibrium line altitude, Paaktisoq,
+Greenland Ice Sheet. ETH Greenland Exped. Progr. Rep.,
+2, Dep. Geogr. ETH, Ziirich, 94 pp.
+Nieuwstadt, F.T.M., 1984. The turbulent structure of the
+stable, nocturnal boundary layer. J. Atmos. Sci., 41: 2202-
+2216.
+Pearson, R.A., Carboni, G. and Brusasca, G., 1983. The sea
+breeze with mean flow. Q.J.R. Meteorol. Soc., 109: 809-
+830.
+Van den Broeke, M.R., Duynkerke, P.G. and Oerlemans, J.,
+1994. The observed katabatic flow at the edge of the
+Greenland ice sheet during GIMEX-91. Global Planet.
+Change, 9: 3-15.
+Van Wijk, W.R. and De Vries, D.A., 1963. Periodic tempera-
+ture variations in a homogeneous soil. In: W.R. Van Wijk
+(Editor), Physics of Plant Environment. North Holland,
+Amsterdam, pp. 102-143.
+Wendler, G., Ishikawa, N. and Kodamo, Y., 1988. The heat
+balance of the icy slope of Ad61ie land, eastern Antarctica.
+J. Appl. Meteorol., 27: 52-65.

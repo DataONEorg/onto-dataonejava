@@ -30,41 +30,41 @@
      <owl:imports rdf:resource="&human;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Alloy">
-    <rdfs:subClassOf rdf:resource="&chem;#Solut"/>
+  <owl:Class rdf:about="#alloy">
+    <rdfs:subClassOf rdf:resource="&chem;#solut"/>
     <rdfs:comment xml:lang="en">An alloy is a partial or complete solid solution of one or more elements in a metallic matrix. Complete solid solution alloys give single solid phase microstructure, while partial solutions give two or more phases that may be homogeneous in distribution depending on thermal (heat treatment) history. Alloys usually have different properties from those of the component elements. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Colloid">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixtur"/>
+  <owl:Class rdf:about="#colloid">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cement">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixtur"/>
+  <owl:Class rdf:about="#cement">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IndustrialProduct">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#industrialproduct">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Product">
-    <rdfs:subClassOf rdf:resource="&infr;#MaterialTh"/>
+  <owl:Class rdf:about="#product">
+    <rdfs:subClassOf rdf:resource="&infr;#materialth"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Slurri">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixtur"/>
+  <owl:Class rdf:about="#slurri">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Suppli">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#suppli">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
   <owl:Class rdf:about="#yield">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ForestProduct">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#forestproduct">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
 </rdf:RDF>

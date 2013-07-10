@@ -34,90 +34,90 @@
   </owl:Ontology>
 
 <!-- Capacities -->
-  <owl:Class rdf:about="#Capac">
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#capac">
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificHeat">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="#Capac"/>
+  <owl:Class rdf:about="#specificheat">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="#capac"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#joulePerKilogramPerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#jouleperkilogramperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#SpecificHeatCapac"/>
+    <owl:equivalentClass rdf:resource="#specificheatcapac"/>
   </owl:Class>
-  <owl:Class rdf:about="#SpecificHeatCapac"/>
+  <owl:Class rdf:about="#specificheatcapac"/>
 
-  <owl:Class rdf:about="#HeatCapac">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="#Capac"/>
+  <owl:Class rdf:about="#heatcapac">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="#capac"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#joulePerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#MolarHeatCapac">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="#Capac"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#joulePerMolePerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#jouleperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#VolumetricHeatCapac">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="#Capac"/>
+  <owl:Class rdf:about="#molarheatcapac">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="#capac"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#joulePerMeterCubedPerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#joulepermoleperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#volumetricheatcapac">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="#capac"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&units;#joulepermetercubedperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf> 
   </owl:Class>
 
-  <owl:Class rdf:about="#LinearThermalExpans">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+  <owl:Class rdf:about="#linearthermalexpan">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterperkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoefficientOfThermalExpans">
-    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+  <owl:Class rdf:about="#coefficientofthermalexpan">
+    <rdfs:subClassOf rdf:resource="&mass;#materialproperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perKelvin"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#perkelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#ThermalExpansionCoeffici"/>
+    <owl:equivalentClass rdf:resource="#thermalexpansioncoeffici"/>
   </owl:Class>
-  <owl:Class rdf:about="#ThermalExpansionCoeffici"/>
+  <owl:Class rdf:about="#thermalexpansioncoeffici"/>
 
-  <owl:Class rdf:about="#VolumetricThermalExpans">
-    <rdfs:subClassOf rdf:resource="#CoefficientOfThermalExpans"/>
+  <owl:Class rdf:about="#volumetricthermalexpan">
+    <rdfs:subClassOf rdf:resource="#coefficientofthermalexpan"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoefficientOfHeatTransf">
-    <rdfs:subClassOf rdf:resource="&mass;#MaterialProperti"/>
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+  <owl:Class rdf:about="#coefficientofheattransf">
+    <rdfs:subClassOf rdf:resource="&mass;#materialproperti"/>
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
-        <owl:hasValue rdf:resource="&units;#wattPerMeterSquaredPerKelvin"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
+        <owl:hasValue rdf:resource="&units;#wattpermetersquaredperkelvin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

@@ -46,122 +46,122 @@
      <owl:imports rdf:resource="&units;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Direct">
+  <owl:Class rdf:about="#direct">
     <rdfs:subClassOf rdf:resource="&math;#Vector_3D"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#AngularDirect">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#angulardirect">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Attitud">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#attitud">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Axis">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#axis">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Azimuth">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#azimuth">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AzimuthalDirect">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#azimuthaldirect">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bear">
-    <owl:equivalentClass rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#bear">
+    <owl:equivalentClass rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HorizontalDirect">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#horizontaldirect">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Incidenc">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#incidenc">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inclinat">
-    <owl:equivalentClass rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#inclinat">
+    <owl:equivalentClass rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orientat">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#orientat">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarDirect">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#polardirect">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolidAngl">
-    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+  <owl:Class rdf:about="#solidangl">
+    <rdfs:subClassOf rdf:resource="&quan;#quantiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#steradian"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&obj3d;#Cone"/>
-        <owl:onProperty rdf:resource="&srela;#hasGeometricalObject"/>
+        <owl:allValuesFrom rdf:resource="&obj3d;#cone"/>
+        <owl:onProperty rdf:resource="&srela;#hasgeometricalobject"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   
-  <owl:Class rdf:about="#Tilt">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#tilt">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VerticalDirect">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#verticaldirect">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Angle">
-    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+  <owl:Class rdf:about="#angle">
+    <rdfs:subClassOf rdf:resource="&quan;#quantiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#radian"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasDirect"/>
+        <owl:onProperty rdf:resource="&srela;#hasdirect"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Income">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
-    <owl:equivalentClass rdf:resource="#Inward"/>
+  <owl:Class rdf:about="#income">
+    <rdfs:subClassOf rdf:resource="#direct"/>
+    <owl:equivalentClass rdf:resource="#inward"/>
   </owl:Class>
-  <owl:Class rdf:about="#Inward"/>
+  <owl:Class rdf:about="#inward"/>
   
-  <owl:Class rdf:about="#Later">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#later">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Outgo">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
-    <owl:equivalentClass rdf:resource="#Outward"/>
+  <owl:Class rdf:about="#outgo">
+    <rdfs:subClassOf rdf:resource="#direct"/>
+    <owl:equivalentClass rdf:resource="#outward"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Income"/>
-        <owl:onProperty rdf:resource="&srela;#oppositeTo"/>
+        <owl:allValuesFrom rdf:resource="#income"/>
+        <owl:onProperty rdf:resource="&srela;#oppositeto"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#Outward"/>
+  <owl:Class rdf:about="#outward"/>
   
-  <owl:Class rdf:about="#Radial">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#radial">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Zenith">
-    <rdfs:subClassOf rdf:resource="#Direct"/>
+  <owl:Class rdf:about="#zenith">
+    <rdfs:subClassOf rdf:resource="#direct"/>
   </owl:Class>
 
 </rdf:RDF>

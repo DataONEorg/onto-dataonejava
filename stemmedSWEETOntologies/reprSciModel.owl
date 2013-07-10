@@ -35,111 +35,111 @@
      <owl:imports rdf:resource="&atmo;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#BoussinesqApproxim">
-    <rdfs:subClassOf rdf:resource="#PhysicalApproxim" />
+  <owl:Class rdf:about="#boussinesqapproxim">
+    <rdfs:subClassOf rdf:resource="#physicalapproxim" />
     <rdfs:comment xml:lang="en">An approximation to the dynamical equations of motion whereby density is assumed to be constant except in the buoyancy term of the vertical velocity equation.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluxCorrect">
-    <rdfs:subClassOf rdf:resource="#PhysicalApproxim" />
+  <owl:Class rdf:about="#fluxcorrect">
+    <rdfs:subClassOf rdf:resource="#physicalapproxim" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RigidLidApproxim">
-    <rdfs:subClassOf rdf:resource="#PhysicalApproxim" />
+  <owl:Class rdf:about="#rigidlidapproxim">
+    <rdfs:subClassOf rdf:resource="#physicalapproxim" />
   </owl:Class>
 
-  <owl:Class rdf:about="#EnsembleForecast">
-    <rdfs:subClassOf rdf:resource="#Forecast" />
+  <owl:Class rdf:about="#ensembleforecast">
+    <rdfs:subClassOf rdf:resource="#forecast" />
     <rdfs:comment xml:lang="en">A set of different forecasts all valid at the same forecast time(s).</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Forecast">
-    <rdfs:subClassOf rdf:resource="#Predict"/>
+  <owl:Class rdf:about="#forecast">
+    <rdfs:subClassOf rdf:resource="#predict"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hypothesi">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#hypothesi">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixingSchem">
-    <rdfs:subClassOf rdf:resource="#Parameter"/>
+  <owl:Class rdf:about="#mixingschem">
+    <rdfs:subClassOf rdf:resource="#paramet"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Model">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
-    <owl:equivalentClass rdf:resource="#ScientificModel"/>
+  <owl:Class rdf:about="#model">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
+    <owl:equivalentClass rdf:resource="#scientificmodel"/>
   </owl:Class>
-  <owl:Class rdf:about="#ScientificModel"/>
+  <owl:Class rdf:about="#scientificmodel"/>
 
-  <owl:Class rdf:about="#FiniteEl">
-    <rdfs:subClassOf rdf:resource="#Model"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#SpectralEl">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#finiteel">
+    <rdfs:subClassOf rdf:resource="#model"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spectral">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#spectralel">
+    <rdfs:subClassOf rdf:resource="#model"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parameter">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#spectral">
+    <rdfs:subClassOf rdf:resource="#model"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parcel">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#paramet">
+    <rdfs:subClassOf rdf:resource="#model"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#parcel">
+    <rdfs:subClassOf rdf:resource="#model"/>
     <rdfs:comment xml:lang="en">An imaginary volume of fluid to which may be assigned various thermodynamic and kinematic quantities.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PhysicalApproxim">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#physicalapproxim">
+    <rdfs:subClassOf rdf:resource="#model"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Predict">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
-    <owl:equivalentClass rdf:resource="#Predict"/>
+  <owl:Class rdf:about="#predict">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
+    <owl:equivalentClass rdf:resource="#predict"/>
   </owl:Class>
-  <owl:Class rdf:about="#Predict"/>
+  <owl:Class rdf:about="#predict"/>
 
-  <owl:Class rdf:about="#Theori">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
-    <owl:equivalentClass rdf:resource="#Theoret"/>
+  <owl:Class rdf:about="#theori">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
+    <owl:equivalentClass rdf:resource="#theoret"/>
   </owl:Class>
-  <owl:Class rdf:about="#Theoret"/>
+  <owl:Class rdf:about="#theoret"/>
 
-  <owl:Class rdf:about="#ReactionPathModel">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#reactionpathmodel">
+    <rdfs:subClassOf rdf:resource="#model"/>
     <rdfs:comment xml:lang="en">A simulation approach to studying the chemical evolution of a (natural) system.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ClimateModel">
-    <rdfs:subClassOf rdf:resource="#Model"/>
+  <owl:Class rdf:about="#climatemodel">
+    <rdfs:subClassOf rdf:resource="#model"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeneralCirculationModel">
-    <rdfs:subClassOf rdf:resource="#Model"/>
-    <owl:equivalentClass rdf:resource="#GCM"/>
+  <owl:Class rdf:about="#generalcirculationmodel">
+    <rdfs:subClassOf rdf:resource="#model"/>
+    <owl:equivalentClass rdf:resource="#gcm"/>
   </owl:Class>
-  <owl:Class rdf:about="#GCM"/>
+  <owl:Class rdf:about="#gcm"/>
 
-  <owl:Class rdf:about="#WeatherForecast">
-    <rdfs:subClassOf rdf:resource="#Forecast"/>
+  <owl:Class rdf:about="#weatherforecast">
+    <rdfs:subClassOf rdf:resource="#forecast"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
-        <owl:allValuesFrom rdf:resource="&atmo;#Weather"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
+        <owl:allValuesFrom rdf:resource="&atmo;#weather"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ExtendedForecast">
-    <rdfs:subClassOf rdf:resource="#WeatherForecast" />
+  <owl:Class rdf:about="#extendedforecast">
+    <rdfs:subClassOf rdf:resource="#weatherforecast" />
     <rdfs:comment xml:lang="en">A forecast of weather conditions for a period extending beyond three or more days from the day of issuance.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Estimat">
-    <rdfs:subClassOf rdf:resource="#Predict"/>
+  <owl:Class rdf:about="#estimat">
+    <rdfs:subClassOf rdf:resource="#predict"/>
   </owl:Class>
 
 </rdf:RDF>

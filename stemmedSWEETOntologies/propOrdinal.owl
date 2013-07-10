@@ -40,98 +40,98 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/relaSci.owl"/>
   </owl:Ontology>
   
-  <owl:Class rdf:about="#Impact">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#impact">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trust">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
-    <owl:equivalentClass rdf:resource="#Belief"/>
+  <owl:Class rdf:about="#trust">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
+    <owl:equivalentClass rdf:resource="#belief"/>
   </owl:Class>
-  <owl:Class rdf:about="#Belief"/>
+  <owl:Class rdf:about="#belief"/>
 
-  <owl:Class rdf:about="#SpectralLin">
+  <owl:Class rdf:about="#spectrallin">
     <rdfs:subClassOf rdf:resource="&prop;PhysicalProperty"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrdinalProperti">
+  <owl:Class rdf:about="#ordinalproperti">
     <rdfs:subClassOf rdf:resource="&prop;Property"/>
     <rdfs:subClassOf rdf:resource="&repr;OrdinalScale"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gradat">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#gradat">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Qualiti">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#qualiti">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Qualifi">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#qualifi">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Condit">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#condit">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Level">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#level">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TrophicLevel">
-    <rdfs:subClassOf rdf:resource="#Level"/>
+  <owl:Class rdf:about="#trophiclevel">
+    <rdfs:subClassOf rdf:resource="#level"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MineralAssess">
-    <rdfs:subClassOf rdf:resource="#Level"/>
+  <owl:Class rdf:about="#mineralassess">
+    <rdfs:subClassOf rdf:resource="#level"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EducationalLevel">
-    <rdfs:subClassOf rdf:resource="#Level"/>
+  <owl:Class rdf:about="#educationallevel">
+    <rdfs:subClassOf rdf:resource="#level"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Color">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#color">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pigment">
-    <rdfs:subClassOf rdf:resource="#Color"/>
+  <owl:Class rdf:about="#pigment">
+    <rdfs:subClassOf rdf:resource="#color"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Streak">
-    <rdfs:subClassOf rdf:resource="#Color"/>
+  <owl:Class rdf:about="#streak">
+    <rdfs:subClassOf rdf:resource="#color"/>
    <rdfs:comment>Color of the powder of a substance.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Luster">
-    <rdfs:subClassOf rdf:resource="#Color"/>
+  <owl:Class rdf:about="#luster">
+    <rdfs:subClassOf rdf:resource="#color"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Visibl">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#visibl">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#ActivityLevel">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#activitylevel">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
     <rdfs:subClassOf rdf:resource="&prop;SystemProperty"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpatialScal">
+  <owl:Class rdf:about="#spatialsc">
     <rdfs:subClassOf rdf:resource="&repr;OrdinalScale" />
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectromagneticSpectrum">
-    <rdfs:subClassOf rdf:resource="#SpectralBand"/>
+  <owl:Class rdf:about="#electromagneticspectrum">
+    <rdfs:subClassOf rdf:resource="#spectralband"/>
     <rdfs:comment xml:lang="en">The electromagnetic (EM) spectrum is the range of all possible electromagnetic radiation. The electromagnetic spectrum (usually just spectrum) of an object is the characteristic distribution of electromagnetic radiation from that object.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpectralBand">
+  <owl:Class rdf:about="#spectralband">
     <rdfs:subClassOf rdf:resource="&prop;PhysicalProperty"/>
     <rdfs:subClassOf rdf:resource="&math;Interval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FlareClass">
+  <owl:Class rdf:about="#flareclass">
     <rdfs:subClassOf rdf:resource="&prop;PhysicalProperty"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -141,16 +141,16 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Age">
+  <owl:Class rdf:about="#age">
     <rdfs:subClassOf rdf:resource="&time;Time"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#TemperatureRang">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#temperaturerang">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ProcessingLevel">
-    <rdfs:subClassOf rdf:resource="#OrdinalProperti"/>
+  <owl:Class rdf:about="#processinglevel">
+    <rdfs:subClassOf rdf:resource="#ordinalproperti"/>
   </owl:Class>
 
 </rdf:RDF>

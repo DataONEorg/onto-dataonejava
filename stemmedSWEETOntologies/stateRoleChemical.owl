@@ -28,92 +28,92 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/stateRole.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ChemicalRol">
+  <owl:Class rdf:about="#chemicalrol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
-  <crole:ChemicalRole rdf:about="#Abrasiv">
+  <crole:ChemicalRole rdf:about="#abrasiv">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Binder">
+  <crole:ChemicalRole rdf:about="#binder">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Catalyst">
+  <crole:ChemicalRole rdf:about="#catalyst">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Corros">
+  <crole:ChemicalRole rdf:about="#corro">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Inhibitor">
+  <crole:ChemicalRole rdf:about="#inhibitor">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Oxidiz">
+  <crole:ChemicalRole rdf:about="#oxidiz">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Product">
+  <crole:ChemicalRole rdf:about="#product">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Reactant">
+  <crole:ChemicalRole rdf:about="#reactant">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Reagent">
+  <crole:ChemicalRole rdf:about="#reagent">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Solut">
+  <crole:ChemicalRole rdf:about="#solut">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Solvent">
+  <crole:ChemicalRole rdf:about="#solvent">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Acidifi">
+  <crole:ChemicalRole rdf:about="#acidifi">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Burn">
+  <crole:ChemicalRole rdf:about="#burn">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Calcifi">
+  <crole:ChemicalRole rdf:about="#calcifi">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Crystal">
+  <crole:ChemicalRole rdf:about="#crystal">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Dega">
+  <crole:ChemicalRole rdf:about="#dega">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Dehydr">
+  <crole:ChemicalRole rdf:about="#dehydr">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Desalin">
+  <crole:ChemicalRole rdf:about="#desalin">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Dilut">
+  <crole:ChemicalRole rdf:about="#dilut">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Dissolv">
+  <crole:ChemicalRole rdf:about="#dissolv">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Enrich">
+  <crole:ChemicalRole rdf:about="#enrich">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Fix">
+  <crole:ChemicalRole rdf:about="#fix">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Hydrat">
+  <crole:ChemicalRole rdf:about="#hydrat">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Neutral">
+  <crole:ChemicalRole rdf:about="#neutral">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Outga">
+  <crole:ChemicalRole rdf:about="#outga">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Photodissoci">
+  <crole:ChemicalRole rdf:about="#photodissoci">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Recrystal">
+  <crole:ChemicalRole rdf:about="#recryst">
   </crole:ChemicalRole>
 
-  <crole:ChemicalRole rdf:about="#Reduc">
+  <crole:ChemicalRole rdf:about="#reduc">
   </crole:ChemicalRole>
 
 </rdf:RDF>

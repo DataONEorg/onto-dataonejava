@@ -32,12 +32,12 @@
      <owl:imports rdf:resource="&phen;"/>     
   </owl:Ontology>
 
-  <owl:Class rdf:about="#OceanPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#PlanetaryPhenomena"/>
+  <owl:Class rdf:about="#oceanphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#planetaryphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&realm;#Ocean"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&realm;#ocean"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

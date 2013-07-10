@@ -50,73 +50,73 @@
   </owl:Ontology>
 
 <!-- Aeolian -->
-  <owl:Class rdf:about="#Aeolian">
-    <rdfs:subClassOf rdf:resource="&geomor;#Weather"/>
-    <owl:equivalentClass rdf:resource="#Eolian"/>
+  <owl:Class rdf:about="#aeolian">
+    <rdfs:subClassOf rdf:resource="&geomor;#weather"/>
+    <owl:equivalentClass rdf:resource="#eolian"/>
     <rdfs:comment xml:lang="en">Aeolian (or Eolian or Æolian) processes pertain to the activity of the winds and more specifically, to the winds' ability to shape the surface of the Earth and other planets. Winds may erode, transport, and deposit materials, and are effective agents in regions with sparse vegetation and a large supply of unconsolidated sediments. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Eolian"/>
+  <owl:Class rdf:about="#eolian"/>
 
-  <owl:Class rdf:about="#AeolianLandform">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+  <owl:Class rdf:about="#aeolianlandform">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Eolian" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#eolian" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Barchan">
-    <rdfs:subClassOf rdf:resource="#Dune"/>
+  <owl:Class rdf:about="#barchan">
+    <rdfs:subClassOf rdf:resource="#dune"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Desert">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+ <owl:Class rdf:about="#desert">
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
     <rdfs:comment xml:lang="en">A desert is a landscape form or region that receives very little precipitation.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dune">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+  <owl:Class rdf:about="#dune">
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:allValuesFrom rdf:resource="&sed;#Sand" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:allValuesFrom rdf:resource="&sed;#sand" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#SandDun"/>
+    <owl:equivalentClass rdf:resource="#sanddun"/>
    <rdfs:comment xml:lang="en">A dune is a hill of sand built by eolian processes. Dunes are subject to different forms and sizes based on their interaction with the wind. Most kinds of dune are longer on the windward side where the sand is pushed up the dune, and a shorter slip face in the lee of the wind. The valley or trough between dunes is called a slack. A dune field is an area covered by extensive sand dunes. Large dune fields are known as ergs </rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SandDun"/>
+  <owl:Class rdf:about="#sanddun"/>
 
-  <owl:Class rdf:about="#Erg">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+  <owl:Class rdf:about="#erg">
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
   </owl:Class>
 
- <owl:Class rdf:about="#HighDesert">
-    <rdfs:subClassOf rdf:resource="#Desert"/>
+ <owl:Class rdf:about="#highdesert">
+    <rdfs:subClassOf rdf:resource="#desert"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialExt" />
-        <owl:allValuesFrom rdf:resource="&ht;#Elevat" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialext" />
+        <owl:allValuesFrom rdf:resource="&ht;#elevat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Seif">
-    <rdfs:subClassOf rdf:resource="#Dune"/>
+  <owl:Class rdf:about="#seif">
+    <rdfs:subClassOf rdf:resource="#dune"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Slack">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+  <owl:Class rdf:about="#slack">
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SlipFac">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+  <owl:Class rdf:about="#slipfac">
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
   </owl:Class>
 
   <owl:Class rdf:about="#yardang">
-    <rdfs:subClassOf rdf:resource="#AeolianLandform"/>
+    <rdfs:subClassOf rdf:resource="#aeolianlandform"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -36,155 +36,155 @@
   </owl:Ontology>
 
 <!-- Structural Models -->
-  <owl:Class rdf:about="#Arc">
-    <rdfs:subClassOf rdf:resource="#StructuralCompon" />
+  <owl:Class rdf:about="#arc">
+    <rdfs:subClassOf rdf:resource="#structuralcompon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasOrderedVertexPair"/>
+        <owl:onProperty rdf:resource="&mrela;#hasorderedvertexpair"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cycl">
-    <rdfs:subClassOf rdf:resource="#Path" />
-    <rdfs:subClassOf rdf:resource="&geom;#Path" />
-    <owl:equivalentClass rdf:resource="#Circuit"/>
+  <owl:Class rdf:about="#cycl">
+    <rdfs:subClassOf rdf:resource="#path" />
+    <rdfs:subClassOf rdf:resource="&geom;#path" />
+    <owl:equivalentClass rdf:resource="#circuit"/>
   </owl:Class>
-  <owl:Class rdf:about="#Circuit"/>
+  <owl:Class rdf:about="#circuit"/>
 
-  <owl:Class rdf:about="#Edge">
-    <rdfs:subClassOf rdf:resource="#StructuralCompon" />
+  <owl:Class rdf:about="#edge">
+    <rdfs:subClassOf rdf:resource="#structuralcompon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasUnorderedVertexPair"/>
+        <owl:onProperty rdf:resource="&mrela;#hasunorderedvertexpair"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Loop">
-    <rdfs:subClassOf rdf:resource="#Edge" />
+  <owl:Class rdf:about="#loop">
+    <rdfs:subClassOf rdf:resource="#edge" />
   </owl:Class>
 
-  <owl:Class rdf:about="#WeightedEdg">
-    <rdfs:subClassOf rdf:resource="#Edge" />
+  <owl:Class rdf:about="#weightededg">
+    <rdfs:subClassOf rdf:resource="#edge" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasWeight"/>
+        <owl:onProperty rdf:resource="&mrela;#hasweight"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Network">
-    <rdfs:subClassOf rdf:resource="#Graph" />
+  <owl:Class rdf:about="#network">
+    <rdfs:subClassOf rdf:resource="#graph" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasWeightedEdg"/>
+        <owl:onProperty rdf:resource="&mrela;#hasweightededg"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Graph">
-    <rdfs:subClassOf rdf:resource="#StructuralModel" />
+  <owl:Class rdf:about="#graph">
+    <rdfs:subClassOf rdf:resource="#structuralmodel" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasVertex"/>
+        <owl:onProperty rdf:resource="&mrela;#hasvertex"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasEdg"/>
+        <owl:onProperty rdf:resource="&mrela;#hasedg"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Path">
-    <rdfs:subClassOf rdf:resource="&math;#Array" />
+  <owl:Class rdf:about="#path">
+    <rdfs:subClassOf rdf:resource="&math;#array" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
-        <owl:allValuesFrom rdf:resource="#Edge"/>
+        <owl:onProperty rdf:resource="&mrela;#eachelementhastyp"/>
+        <owl:allValuesFrom rdf:resource="#edge"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DirectedGraph">
-    <rdfs:subClassOf rdf:resource="#Graph" />
+  <owl:Class rdf:about="#directedgraph">
+    <rdfs:subClassOf rdf:resource="#graph" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasArc"/>
+        <owl:onProperty rdf:resource="&mrela;#hasarc"/>
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#Digraph"/>
+    <owl:equivalentClass rdf:resource="#digraph"/>
   </owl:Class>
-  <owl:Class rdf:about="#Digraph"/>
+  <owl:Class rdf:about="#digraph"/>
  
-  <owl:Class rdf:about="#UndirectedGraph">
-    <rdfs:subClassOf rdf:resource="#Graph" />
-    <owl:disjointWith rdf:resource="#DirectedGraph" />
+  <owl:Class rdf:about="#undirectedgraph">
+    <rdfs:subClassOf rdf:resource="#graph" />
+    <owl:disjointWith rdf:resource="#directedgraph" />
   </owl:Class>
  
-  <owl:Class rdf:about="#LeafNod">
-    <rdfs:subClassOf rdf:resource="#Node" />
+  <owl:Class rdf:about="#leafnod">
+    <rdfs:subClassOf rdf:resource="#node" />
   </owl:Class>
 
-  <owl:Class rdf:about="#StructuralModel">
-    <rdfs:subClassOf rdf:resource="&mod;#Model" />
+  <owl:Class rdf:about="#structuralmodel">
+    <rdfs:subClassOf rdf:resource="&mod;#model" />
   </owl:Class>
 
-  <owl:Class rdf:about="#StructuralCompon">
-    <rdfs:subClassOf rdf:resource="#StructuralModel" />
+  <owl:Class rdf:about="#structuralcompon">
+    <rdfs:subClassOf rdf:resource="#structuralmodel" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Vertex">
-    <rdfs:subClassOf rdf:resource="#StructuralCompon" />
-    <rdfs:subClassOf rdf:resource="&math;#Point" />
-    <owl:equivalentClass rdf:resource="#Vertic"/>
-    <owl:equivalentClass rdf:resource="#Node"/>
+  <owl:Class rdf:about="#vertex">
+    <rdfs:subClassOf rdf:resource="#structuralcompon" />
+    <rdfs:subClassOf rdf:resource="&math;#point" />
+    <owl:equivalentClass rdf:resource="#vertic"/>
+    <owl:equivalentClass rdf:resource="#node"/>
   </owl:Class>
-  <owl:Class rdf:about="#Vertic"/>
-  <owl:Class rdf:about="#Node"/>
+  <owl:Class rdf:about="#vertic"/>
+  <owl:Class rdf:about="#node"/>
 
-  <owl:Class rdf:about="#IsolatedVertex">
-    <rdfs:subClassOf rdf:resource="#Vertex" />
+  <owl:Class rdf:about="#isolatedvertex">
+    <rdfs:subClassOf rdf:resource="#vertex" />
   </owl:Class>
 
-  <owl:Class rdf:about="#OrderedVertexPair">
-    <rdfs:subClassOf rdf:resource="&math;#OrderedPair" />
+  <owl:Class rdf:about="#orderedvertexpair">
+    <rdfs:subClassOf rdf:resource="&math;#orderedpair" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
-        <owl:allValuesFrom rdf:resource="#Vertex"/>
+        <owl:onProperty rdf:resource="&mrela;#eachelementhastyp"/>
+        <owl:allValuesFrom rdf:resource="#vertex"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#UnorderedVertexPair">
-    <rdfs:subClassOf rdf:resource="&math;#UnorderedPair" />
+  <owl:Class rdf:about="#unorderedvertexpair">
+    <rdfs:subClassOf rdf:resource="&math;#unorderedpair" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
-        <owl:allValuesFrom rdf:resource="#Vertex"/>
+        <owl:onProperty rdf:resource="&mrela;#eachelementhastyp"/>
+        <owl:allValuesFrom rdf:resource="#vertex"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tree">
-    <rdfs:subClassOf rdf:resource="#Graph" />
+  <owl:Class rdf:about="#tree">
+    <rdfs:subClassOf rdf:resource="#graph" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Forest">
-    <rdfs:subClassOf rdf:resource="#Graph" />
+  <owl:Class rdf:about="#forest">
+    <rdfs:subClassOf rdf:resource="#graph" />
   </owl:Class>
 
-  <owl:Class rdf:about="#ConnectedGraph">
-    <rdfs:subClassOf rdf:resource="#Graph" />
+  <owl:Class rdf:about="#connectedgraph">
+    <rdfs:subClassOf rdf:resource="#graph" />
   </owl:Class>
 
 </rdf:RDF>

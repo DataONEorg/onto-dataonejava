@@ -51,66 +51,66 @@
      <owl:imports rdf:resource="&cstate;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#AcidFog">
-    <rdfs:subClassOf rdf:resource="&fog;#Fog" />
+  <owl:Class rdf:about="#acidfog">
+    <rdfs:subClassOf rdf:resource="&fog;#fog" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:hasValue rdf:resource="&cstate;#Acid" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:hasValue rdf:resource="&cstate;#acid" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#AcidHaz" />
+    <owl:equivalentClass rdf:resource="#acidhaz" />
     <rdfs:comment>Occurrence of fog or haze in which considerable amounts of acidic material have been taken up from the gas phase, resulting in pH values less than approximately 3 in the liquid phase.</rdfs:comment>
     <rdfs:label>Acid Fog</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#AcidHaz"/>
+  <owl:Class rdf:about="#acidhaz"/>
 
-  <owl:Class rdf:about="#AcidRain">
-    <rdfs:subClassOf rdf:resource="#WetDeposit"/>
+  <owl:Class rdf:about="#acidrain">
+    <rdfs:subClassOf rdf:resource="#wetdeposit"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&cstate;#Acid"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:hasValue rdf:resource="&cstate;#acid"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A popular expression for the deposition by rainfall of various airborne pollutants (especially SO2 and NO2) that have harmful effects on vegetation, soils, buildings and other external structures.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixedLayerV">
-    <rdfs:subClassOf rdf:resource="&sys;#Remov" />
+  <owl:Class rdf:about="#mixedlayerv">
+    <rdfs:subClassOf rdf:resource="&sys;#remov" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&boun;#MixedLay" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&boun;#mixedlay" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Removal of pollutants out of the top of the atmospheric boundary layer through the mixed-layer capping inversion. Normally pollutants cannot escape through the capping inversion. However, penetrating cumulus clouds, thunderstorms, mountain circulations, and frontal circulations can force polluted air through the inversion to vent pollutants into the free atmosphere.</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#NucleationScaveng">
-    <rdfs:subClassOf rdf:resource="#ScavengingByPrecipit"/>
+ <owl:Class rdf:about="#nucleationscaveng">
+    <rdfs:subClassOf rdf:resource="#scavengingbyprecipit"/>
     <rdfs:comment xml:lang="en">Water vapor that removes particulate matter from the atmosphere</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#Rainout">
-    <rdfs:subClassOf rdf:resource="#ScavengingByPrecipit"/>
-    <owl:equivalentClass rdf:resource="#Washout" />
+ <owl:Class rdf:about="#rainout">
+    <rdfs:subClassOf rdf:resource="#scavengingbyprecipit"/>
+    <owl:equivalentClass rdf:resource="#washout" />
   </owl:Class>
- <owl:Class rdf:about="#Washout"/>
+ <owl:Class rdf:about="#washout"/>
 
- <owl:Class rdf:about="#ScavengingByPrecipit">
-    <rdfs:subClassOf rdf:resource="#WetDeposit"/>
+ <owl:Class rdf:about="#scavengingbyprecipit">
+    <rdfs:subClassOf rdf:resource="#wetdeposit"/>
     <rdfs:comment xml:lang="en">Removal of pollutants from the air by either rain or snow.  Rainout (or snowout), which is the in-cloud capture of particulates as condensation nuclei, is one form of scavenging.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#WetDeposit">
+  <owl:Class rdf:about="#wetdeposit">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&phen;#Precipit" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&phen;#precipit" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="&planet;#AtmosphereLandExchang" />
+    <rdfs:subClassOf rdf:resource="&planet;#atmospherelandexchang" />
     <rdfs:comment xml:lang="en">The removal of atmospheric gases or particles through their incorporation into hydrometeors, which are then lost by precipitation.</rdfs:comment>
   </owl:Class>
 

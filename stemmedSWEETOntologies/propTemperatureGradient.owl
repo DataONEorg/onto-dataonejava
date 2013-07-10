@@ -50,93 +50,93 @@
      <owl:imports rdf:resource="&thermo;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#DryAdiabaticLapseR">
-    <rdfs:subClassOf rdf:resource="#LapseR"/>
+  <owl:Class rdf:about="#dryadiabaticlapser">
+    <rdfs:subClassOf rdf:resource="#lapser"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&tstate;#DryAdiabat" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&tstate;#dryadiabat" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A process lapse rate of temperature, the rate of decrease of temperature with height of a parcel of dry air lifted by a reversible adiabatic process through an atmosphere in hydrostatic equilibrium.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalLapseR">
-    <rdfs:subClassOf rdf:resource="#LapseR"/>
+  <owl:Class rdf:about="#environmentallapser">
+    <rdfs:subClassOf rdf:resource="#lapser"/>
     <rdfs:comment xml:lang="en">The rate of decrease of temperature with elevation</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LapseR">
-    <rdfs:subClassOf rdf:resource="#TemperatureHeightDeriv"/>
+  <owl:Class rdf:about="#lapser">
+    <rdfs:subClassOf rdf:resource="#temperatureheightderiv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalProfil">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
-    <rdfs:subClassOf rdf:resource="&func;#Profil"/>
+  <owl:Class rdf:about="#thermalprofil">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
+    <rdfs:subClassOf rdf:resource="&func;#profil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemperatureGradi">
-    <rdfs:subClassOf rdf:resource="&quan;#ThermodynamicQuant"/>
+  <owl:Class rdf:about="#temperaturegradi">
+    <rdfs:subClassOf rdf:resource="&quan;#thermodynamicqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&thermo;#Temperatur"/>
-        <owl:onProperty rdf:resource="&mrela;#hasGradi"/>
+        <owl:allValuesFrom rdf:resource="&thermo;#temperatur"/>
+        <owl:onProperty rdf:resource="&mrela;#hasgradi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#kelvinPerMet"/>
-        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+        <owl:hasValue rdf:resource="&units;#kelvinpermet"/>
+        <owl:onProperty rdf:resource="&screla;#hasunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#ThermalGradi"/>
+    <owl:equivalentClass rdf:resource="#thermalgradi"/>
     <rdfs:comment xml:lang="en">The derivative of temperature.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#ThermalGradi"/>
+  <owl:Class rdf:about="#thermalgradi"/>
 
-  <owl:Class rdf:about="#TemperatureHeightDeriv">
-    <rdfs:subClassOf rdf:resource="#TemperatureGradi"/>
+  <owl:Class rdf:about="#temperatureheightderiv">
+    <rdfs:subClassOf rdf:resource="#temperaturegradi"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&ht;#Height"/>
-        <owl:onProperty rdf:resource="&mrela;#derivativeWithRespectTo"/>
+        <owl:allValuesFrom rdf:resource="&ht;#height"/>
+        <owl:onProperty rdf:resource="&mrela;#derivativewithrespectto"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The derivative of temperature with respect to height.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemperatureDepthDeriv">
-    <rdfs:subClassOf rdf:resource="#TemperatureGradi"/>
+  <owl:Class rdf:about="#temperaturedepthderiv">
+    <rdfs:subClassOf rdf:resource="#temperaturegradi"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&ht;#Depth"/>
-        <owl:onProperty rdf:resource="&mrela;#derivativeWithRespectTo"/>
+        <owl:allValuesFrom rdf:resource="&ht;#depth"/>
+        <owl:onProperty rdf:resource="&mrela;#derivativewithrespectto"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The derivative of temperature with respect to depth.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AutoConvectiveLapseR">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalLapseR" />
+  <owl:Class rdf:about="#autoconvectivelapser">
+    <rdfs:subClassOf rdf:resource="#environmentallapser" />
     <rdfs:comment xml:lang="en">The environmental lapse rate of temperature in an atmosphere in which the density is constant with height (homogeneous atmosphere), equal to g/R, where g is the acceleration of gravity and R the gas constant.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemperatureGradientRang">
-    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+  <owl:Class rdf:about="#temperaturegradientrang">
+    <rdfs:subClassOf rdf:resource="&quan;#intervalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
-        <owl:someValuesFrom rdf:resource="#TemperatureGradi"/>
+        <owl:onProperty rdf:resource="&screla;#rangeof"/>
+        <owl:someValuesFrom rdf:resource="#temperaturegradi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <tgrad:TemperatureGradientRange rdf:about="#PositiveSlop">
+  <tgrad:TemperatureGradientRange rdf:about="#positiveslop">
     <mrela2:hasLowerBound rdf:datatype="&xsd;double">0</mrela2:hasLowerBound>
   </tgrad:TemperatureGradientRange>
 
-  <tgrad:TemperatureGradientRange rdf:about="#NegativeSlop">
+  <tgrad:TemperatureGradientRange rdf:about="#negativeslop">
     <mrela2:hasUpperBound rdf:datatype="&xsd;double">0</mrela2:hasUpperBound>
   </tgrad:TemperatureGradientRange>
 

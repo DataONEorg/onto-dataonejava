@@ -33,149 +33,149 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Abatement">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#abatement">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirTreatmentProcess">
-    <rdfs:subClassOf rdf:resource="#Treatment"/>
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#airtreatmentprocess">
+    <rdfs:subClassOf rdf:resource="#treatment"/>
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BestAvailablControlTechnolog">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
-    <owl:equivalentClass rdf:resource="#BACT"/>
+  <owl:Class rdf:about="#bestavailablcontroltechnolog">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
+    <owl:equivalentClass rdf:resource="#bact"/>
   </owl:Class>
-  <owl:Class rdf:about="#BACT"/>
+  <owl:Class rdf:about="#bact"/>
 
-  <owl:Class rdf:about="#Biosequestr">
-    <rdfs:subClassOf rdf:resource="#CarbonSequestr"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#CapAndTrad">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#biosequestr">
+    <rdfs:subClassOf rdf:resource="#carbonsequestr"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonSequestr">
-    <rdfs:subClassOf rdf:resource="#Sequest"/>
+  <owl:Class rdf:about="#capandtrad">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonOffset">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#carbonsequestr">
+    <rdfs:subClassOf rdf:resource="#sequest"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CloudSeed">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#carbonoffset">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Complianc">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#cloudse">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Distil">
-    <rdfs:subClassOf rdf:resource="#WaterTreatmentProcess"/>
+  <owl:Class rdf:about="#complianc">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DryScrub">
-    <rdfs:subClassOf rdf:resource="#Scrub"/>
+  <owl:Class rdf:about="#distil">
+    <rdfs:subClassOf rdf:resource="#watertreatmentprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalControlStrategi">
+  <owl:Class rdf:about="#dryscrub">
+    <rdfs:subClassOf rdf:resource="#scrub"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#environmentalcontrolstrategi">
     <rdfs:subClassOf rdf:resource="&dec;ControlStrategy"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Floccul">
-    <rdfs:subClassOf rdf:resource="#WaterTreatmentProcess"/>
+  <owl:Class rdf:about="#floccul">
+    <rdfs:subClassOf rdf:resource="#watertreatmentprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MaximumAchievableControlTechnolog">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
-    <owl:equivalentClass rdf:resource="#MACT"/>
+  <owl:Class rdf:about="#maximumachievablecontroltechnolog">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
+    <owl:equivalentClass rdf:resource="#mact"/>
   </owl:Class>
-  <owl:Class rdf:about="#MACT"/>
+  <owl:Class rdf:about="#mact"/>
 
-  <owl:Class rdf:about="#Pretreat">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#pretreat">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PrimaryTreat">
-    <rdfs:subClassOf rdf:resource="#WaterTreatmentProcess"/>
+  <owl:Class rdf:about="#primarytreat">
+    <rdfs:subClassOf rdf:resource="#watertreatmentprocess"/>
     <rdfs:comment xml:lang="en">In wastewater treatment, a combination of step processes, usually physical in nature, that are designed to remove floating and settleable solids. Examples of process steps are screening and sedimentation.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Remedi">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#remedi">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scrub">
-    <rdfs:subClassOf rdf:resource="#AirTreatmentProcess"/>
+  <owl:Class rdf:about="#scrub">
+    <rdfs:subClassOf rdf:resource="#airtreatmentprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SecondaryTreat">
-    <rdfs:subClassOf rdf:resource="#WaterTreatmentProcess"/>
+  <owl:Class rdf:about="#secondarytreat">
+    <rdfs:subClassOf rdf:resource="#watertreatmentprocess"/>
     <rdfs:comment xml:lang="en">In wastewater treatment, a combination of step processes, usually biochemical in nature, that are designed to remove primarily organic material. Examples of process steps are aeration and trickling filters.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sequest">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#sequest">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StateImplementationPlan">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#stateimplementationplan">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TertiaryTreat">
-    <rdfs:subClassOf rdf:resource="#WaterTreatmentProcess"/>
+  <owl:Class rdf:about="#tertiarytreat">
+    <rdfs:subClassOf rdf:resource="#watertreatmentprocess"/>
     <rdfs:comment xml:lang="en">Post-secondary treatment of wastewater designed to improve the quality of the water to the point where it can be put to a particular beneficial use. Generally, tertiary treatment steps remove nutrients (e.g., nitrogen and phosphorus) which are poorly removed by secondary treatment. Commonly used steps include coagulation and clarification.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Treatment">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#treatment">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterManag">
+  <owl:Class rdf:about="#watermanag">
     <rdfs:subClassOf rdf:resource="&com;Management"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WastewaterTreat">
-    <rdfs:subClassOf rdf:resource="#Treatment"/>
+  <owl:Class rdf:about="#wastewatertreat">
+    <rdfs:subClassOf rdf:resource="#treatment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterTreatmentProcess">
-    <rdfs:subClassOf rdf:resource="#Treatment"/>
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#watertreatmentprocess">
+    <rdfs:subClassOf rdf:resource="#treatment"/>
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WetScrub">
-    <rdfs:subClassOf rdf:resource="#Scrub"/>
+  <owl:Class rdf:about="#wetscrub">
+    <rdfs:subClassOf rdf:resource="#scrub"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ControlledBurn">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#controlledburn">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Afforest">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#afforest">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reforest">
-    <rdfs:subClassOf rdf:resource="#Reveget"/>
+  <owl:Class rdf:about="#reforest">
+    <rdfs:subClassOf rdf:resource="#reveget"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Restor">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#restor">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reveget">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#reveget">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reclam">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#reclam">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WellInject">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalControlStrategi"/>
+  <owl:Class rdf:about="#wellinject">
+    <rdfs:subClassOf rdf:resource="#environmentalcontrolstrategi"/>
   <rdfs:comment xml:lang="en">The subsurface emplacement of "fluids" through a bored, drilled, or driven "well", or through a dug well, where the depth of the dug well is greater than the largest surface dimension.</rdfs:comment>
   </owl:Class>
 

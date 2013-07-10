@@ -37,69 +37,69 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#BallLightn">
-    <rdfs:subClassOf rdf:resource="#Lightn" />
+  <owl:Class rdf:about="#balllightn">
+    <rdfs:subClassOf rdf:resource="#lightn" />
     <rdfs:comment xml:lang="en">A rare and randomly occurring bright ball of light observed floating or moving through the atmosphere close to the ground.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#BeadedLightn">
-    <rdfs:subClassOf rdf:resource="#Lightn" />
+  <owl:Class rdf:about="#beadedlightn">
+    <rdfs:subClassOf rdf:resource="#lightn" />
     <rdfs:comment xml:lang="en">A particular aspect of a normal lightning flash occasionally seen when the observer happens to view end-on a number of segments of the irregular channel (zigzag lightning) and hence receives an impression of higher luminosity at a series of locations along the channel.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#BlueJet">
-    <rdfs:subClassOf rdf:resource="#Lightn" />
+  <owl:Class rdf:about="#bluejet">
+    <rdfs:subClassOf rdf:resource="#lightn" />
     <rdfs:comment xml:lang="en">Weakly luminous upward propagating discharges, blue in color, emanating from the tops of thunderstorms.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#JunctionStream">
+  <owl:Class rdf:about="#junctionstream">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&precip;#Thunderstorm" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&precip;#thunderstorm" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Lightn" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#lightn" />
      </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#Lightn" />
+    <rdfs:subClassOf rdf:resource="#lightn" />
     <rdfs:comment xml:lang="en">The process by which negative charge centers at successively more distant locations in a thundercloud are tapped for discharge by successive strokes of cloud-to-ground lightning.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lightn">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#lightn">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&elec;#ElectricPotenti" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&elec;#electricpotenti" />
      </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Thunder" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#thunder" />
        </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Lightning is a transient, high-current electric discharge with pathlengths measured in kilometers. The most common source of lightning is the electric charge separated in ordinary thunderstorm clouds.   
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ReturnStrok">
-    <rdfs:subClassOf rdf:resource="#Lightn" />
+  <owl:Class rdf:about="#returnstrok">
+    <rdfs:subClassOf rdf:resource="#lightn" />
     <rdfs:comment xml:lang="en">The intense luminosity that propagates upward from earth to cloud base in the last phase of each lightning stroke of a cloud-to-ground discharge.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thunder">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena" />
+  <owl:Class rdf:about="#thunder">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&wave;#Sound" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&wave;#sound" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The sound emitted by rapidly expanding gases along the channel of a lightning discharge.

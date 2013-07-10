@@ -41,119 +41,119 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <freq:Frequency rdf:about="#Frequent">
-    <trela:moreFrequentThan rdf:resource="#Infrequent"/>
-    <trela:moreFrequentThan rdf:resource="#Rare"/>
+  <freq:Frequency rdf:about="#frequent">
+    <trela:moreFrequentThan rdf:resource="#infrequent"/>
+    <trela:moreFrequentThan rdf:resource="#rare"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Consist">
+  <freq:Frequency rdf:about="#consist">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Usual">
-    <trela:moreFrequentThan rdf:resource="#Unusual"/>
+  <freq:Frequency rdf:about="#usual">
+    <trela:moreFrequentThan rdf:resource="#unusual"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Unusual">
+  <freq:Frequency rdf:about="#unusual">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Episod">
+  <freq:Frequency rdf:about="#episod">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Erratic">
+  <freq:Frequency rdf:about="#erratic">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Infrequent">
+  <freq:Frequency rdf:about="#infrequent">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Rare">
+  <freq:Frequency rdf:about="#rare">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Spasmod">
+  <freq:Frequency rdf:about="#spasmod">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Steadi">
+  <freq:Frequency rdf:about="#steadi">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Accident">
+  <freq:Frequency rdf:about="#accident">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Common">
-    <trela:moreFrequentThan rdf:resource="#Rare"/>
+  <freq:Frequency rdf:about="#common">
+    <trela:moreFrequentThan rdf:resource="#rare"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Interrupt">
+  <freq:Frequency rdf:about="#interrupt">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Cyclic">
+  <freq:Frequency rdf:about="#cyclic">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Period">
+  <freq:Frequency rdf:about="#period">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Secular">
-    <owl:differentFrom rdf:resource="#Cyclic"/>
+  <freq:Frequency rdf:about="#secular">
+    <owl:differentFrom rdf:resource="#cyclic"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Uninterrupt">
-    <owl:differentFrom rdf:resource="#Interrupt"/>
+  <freq:Frequency rdf:about="#uninterrupt">
+    <owl:differentFrom rdf:resource="#interrupt"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Stationari">
+  <freq:Frequency rdf:about="#stationari">
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#NonStationari">
-    <owl:differentFrom rdf:resource="#Stationari"/>
+  <freq:Frequency rdf:about="#nonstationari">
+    <owl:differentFrom rdf:resource="#stationari"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Hour">
+  <freq:Frequency rdf:about="#hour">
     <trela:hasPeriod rdf:resource="&stime;1hour"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Diurnal">
+  <freq:Frequency rdf:about="#diurnal">
     <trela:hasPeriod rdf:resource="&stime;1day"/>
-    <owl:sameAs rdf:resource="#Daili"/>
+    <owl:sameAs rdf:resource="#daili"/>
   </freq:Frequency>
-  <freq:Frequency rdf:about="#Daili"/>
+  <freq:Frequency rdf:about="#daili"/>
 
-  <freq:Frequency rdf:about="#SemiDiurn">
+  <freq:Frequency rdf:about="#semidiurn">
     <trela:hasPeriod rdf:resource="&stime;12hour"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Pentad">
+  <freq:Frequency rdf:about="#pentad">
     <trela:hasPeriod rdf:resource="&stime;5day"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Week">
+  <freq:Frequency rdf:about="#week">
     <trela:hasPeriod rdf:resource="&stime;1week"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Biweek">
+  <freq:Frequency rdf:about="#biweek">
     <trela:hasPeriod rdf:resource="&stime;2week"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Month">
+  <freq:Frequency rdf:about="#month">
     <trela:hasPeriod rdf:resource="&stime;1month"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Season">
+  <freq:Frequency rdf:about="#season">
     <trela:hasPeriod rdf:resource="&stime;3month"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#SemiAnnu">
+  <freq:Frequency rdf:about="#semiannu">
     <trela:hasPeriod rdf:resource="&stime;6month"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Annual">
+  <freq:Frequency rdf:about="#annual">
     <trela:hasPeriod rdf:resource="&stime;1year"/>
     <owl:sameAs rdf:resource="#year"/>
   </freq:Frequency>
   <freq:Frequency rdf:about="#year"/>
 
-  <freq:Frequency rdf:about="#Biannual">
+  <freq:Frequency rdf:about="#biannual">
     <trela:hasPeriod rdf:resource="&stime;2year"/>
   </freq:Frequency>
 
-  <freq:Frequency rdf:about="#Decad">
+  <freq:Frequency rdf:about="#decad">
     <trela:hasPeriod rdf:resource="&stime;10year"/>
   </freq:Frequency>
 

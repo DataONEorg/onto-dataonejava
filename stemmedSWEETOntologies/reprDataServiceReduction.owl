@@ -39,62 +39,62 @@
   </owl:Ontology>
 
 <!-- Data reduction services -->
-  <owl:Class rdf:about="#DataReductionServic">
-    <rdfs:subClassOf rdf:resource="&serv;#DataServic"/>
+  <owl:Class rdf:about="#datareductionserv">
+    <rdfs:subClassOf rdf:resource="&serv;#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bin">
-    <rdfs:subClassOf rdf:resource="#DataReductionServic"/>
+  <owl:Class rdf:about="#bin">
+    <rdfs:subClassOf rdf:resource="#datareductionserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Subset">
-    <rdfs:subClassOf rdf:resource="#DataReductionServic"/>
+  <owl:Class rdf:about="#subset">
+    <rdfs:subClassOf rdf:resource="#datareductionserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ParameterSubset">
-    <rdfs:subClassOf rdf:resource="#Subset"/>
+  <owl:Class rdf:about="#parametersubset">
+    <rdfs:subClassOf rdf:resource="#subset"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&prop;#PhysicalProperti"/>
-        <owl:onProperty rdf:resource="&prrela;#reductionIn"/>
+        <owl:someValuesFrom rdf:resource="&prop;#physicalproperti"/>
+        <owl:onProperty rdf:resource="&prrela;#reductionin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpatialSubset">
-    <rdfs:subClassOf rdf:resource="#Subset"/>
+  <owl:Class rdf:about="#spatialsubset">
+    <rdfs:subClassOf rdf:resource="#subset"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&spac;#Space"/>
-        <owl:onProperty rdf:resource="&prrela;#reductionIn"/>
+        <owl:someValuesFrom rdf:resource="&spac;#space"/>
+        <owl:onProperty rdf:resource="&prrela;#reductionin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemporalSubset">
-    <rdfs:subClassOf rdf:resource="#Subset"/>
+  <owl:Class rdf:about="#temporalsubset">
+    <rdfs:subClassOf rdf:resource="#subset"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prrela;#reductionIn"/>
-        <owl:someValuesFrom rdf:resource="&time;#Time"/>
+        <owl:onProperty rdf:resource="&prrela;#reductionin"/>
+        <owl:someValuesFrom rdf:resource="&time;#time"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Normal">
-    <rdfs:subClassOf rdf:resource="#DataReductionServic"/>
-    <owl:equivalentClass rdf:resource="#Normal"/>
+  <owl:Class rdf:about="#normal">
+    <rdfs:subClassOf rdf:resource="#datareductionserv"/>
+    <owl:equivalentClass rdf:resource="#normal"/>
   </owl:Class>
-  <owl:Class rdf:about="#Normal"/>
+  <owl:Class rdf:about="#normal"/>
 
-  <owl:Class rdf:about="#Subsampl">
-    <rdfs:subClassOf rdf:resource="#DataReductionServic"/>
+  <owl:Class rdf:about="#subsampl">
+    <rdfs:subClassOf rdf:resource="#datareductionserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DataMin">
-    <rdfs:subClassOf rdf:resource="#Subset" />
-    <owl:equivalentClass rdf:resource="#Mine"/>
+  <owl:Class rdf:about="#datamin">
+    <rdfs:subClassOf rdf:resource="#subset" />
+    <owl:equivalentClass rdf:resource="#mine"/>
   </owl:Class>
-  <owl:Class rdf:about="#Mine"/>
+  <owl:Class rdf:about="#mine"/>
 
 </rdf:RDF>

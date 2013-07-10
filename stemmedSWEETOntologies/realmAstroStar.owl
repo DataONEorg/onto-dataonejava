@@ -43,67 +43,67 @@
      <owl:imports rdf:resource="&astro;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ActiveRegion">
-    <rdfs:subClassOf rdf:resource="#StellarRealm"/>
+  <owl:Class rdf:about="#activeregion">
+    <rdfs:subClassOf rdf:resource="#stellarrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chromospher">
-    <rdfs:subClassOf rdf:resource="#StellarAtmospher"/>
+  <owl:Class rdf:about="#chromosph">
+    <rdfs:subClassOf rdf:resource="#stellaratmosph"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Plasma"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#plasma"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Corona">
-    <rdfs:subClassOf rdf:resource="#StellarAtmospher"/>
+  <owl:Class rdf:about="#corona">
+    <rdfs:subClassOf rdf:resource="#stellaratmosph"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Plasma"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#plasma"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photospher">
-    <rdfs:subClassOf rdf:resource="#StellarAtmospher"/>
+  <owl:Class rdf:about="#photosph">
+    <rdfs:subClassOf rdf:resource="#stellaratmosph"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarAtmospher">
-    <rdfs:subClassOf rdf:resource="#StellarRealm"/>
+  <owl:Class rdf:about="#stellaratmosph">
+    <rdfs:subClassOf rdf:resource="#stellarrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarInterior">
-    <rdfs:subClassOf rdf:resource="#StellarRealm"/>
+  <owl:Class rdf:about="#stellarinterior">
+    <rdfs:subClassOf rdf:resource="#stellarrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConvectionZon">
-    <rdfs:subClassOf rdf:resource="#StellarInterior"/>
-    <owl:disjointWith rdf:resource="#StellarCor" />
+  <owl:Class rdf:about="#convectionzon">
+    <rdfs:subClassOf rdf:resource="#stellarinterior"/>
+    <owl:disjointWith rdf:resource="#stellarcor" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiativeZon">
-    <rdfs:subClassOf rdf:resource="#StellarInterior"/>
+  <owl:Class rdf:about="#radiativezon">
+    <rdfs:subClassOf rdf:resource="#stellarinterior"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarCor">
-    <rdfs:subClassOf rdf:resource="#StellarInterior"/>
+  <owl:Class rdf:about="#stellarcor">
+    <rdfs:subClassOf rdf:resource="#stellarinterior"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasChemicalReact"/>
-        <owl:someValuesFrom rdf:resource="&cproc;#NuclearFus"/>
+        <owl:onProperty rdf:resource="&crela;#haschemicalreact"/>
+        <owl:someValuesFrom rdf:resource="&cproc;#nuclearfus"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#StellarRealm">
-    <rdfs:subClassOf rdf:resource="&realm;#Realm"/>
+  <owl:Class rdf:about="#stellarrealm">
+    <rdfs:subClassOf rdf:resource="&realm;#realm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tacoclin">
-    <rdfs:subClassOf rdf:resource="#StellarInterior"/>
+  <owl:Class rdf:about="#tacoclin">
+    <rdfs:subClassOf rdf:resource="#stellarinterior"/>
   </owl:Class>
 
 </rdf:RDF>

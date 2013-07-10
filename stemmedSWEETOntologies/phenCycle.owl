@@ -51,149 +51,149 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#EarthOscil">
-    <rdfs:subClassOf rdf:resource="#PlanetaryOscil"/>
+  <owl:Class rdf:about="#earthoscil">
+    <rdfs:subClassOf rdf:resource="#planetaryoscil"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasAstronomicalBodi" />
-        <owl:hasValue rdf:resource="&planet;#Earth" />
+        <owl:onProperty rdf:resource="&prela;#hasastronomicalbodi" />
+        <owl:hasValue rdf:resource="&planet;#earth" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AntarcticOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#antarcticoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ArcticOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#arcticoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ChandlerWobbl">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#chandlerwobbl">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
 
-  <owl:Class rdf:about="#MaddenJulianOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#maddenjulianoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasFrequ"/>
-        <owl:hasValue rdf:resource="&sfreq;#Decad"/>
+        <owl:onProperty rdf:resource="&trela;#hasfrequ"/>
+        <owl:hasValue rdf:resource="&sfreq;#decad"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MilankovitchCycl">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#milankovitchcycl">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NorthAtlanticOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
-    <owl:equivalentClass rdf:resource="#NAO"/>
+  <owl:Class rdf:about="#northatlanticoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
+    <owl:equivalentClass rdf:resource="#nao"/>
   </owl:Class>
-  <owl:Class rdf:about="#NAO"/>
+  <owl:Class rdf:about="#nao"/>
 
-  <owl:Class rdf:about="#PacificDecadalOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
-    <owl:equivalentClass rdf:resource="#PDO"/>
+  <owl:Class rdf:about="#pacificdecadaloscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
+    <owl:equivalentClass rdf:resource="#pdo"/>
   </owl:Class>
-  <owl:Class rdf:about="#PDO"/>
+  <owl:Class rdf:about="#pdo"/>
 
-  <owl:Class rdf:about="#PacificNorthAmericanPattern">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#pacificnorthamericanpattern">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#QuasiBiennialOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#quasibiennialoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasFrequ"/>
-        <owl:hasValue rdf:resource="&sfreq;#Biannual"/>
+        <owl:onProperty rdf:resource="&trela;#hasfrequ"/>
+        <owl:hasValue rdf:resource="&sfreq;#biannual"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#QBO"/>
+    <owl:equivalentClass rdf:resource="#qbo"/>
   </owl:Class>
-  <owl:Class rdf:about="#QBO"/>
+  <owl:Class rdf:about="#qbo"/>
 
-  <owl:Class rdf:about="#SouthernOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
-    <owl:equivalentClass rdf:resource="#ENSO"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#PlanetaryOscil">
-    <rdfs:subClassOf rdf:resource="#GlobalCycl"/>
+  <owl:Class rdf:about="#southernoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
+    <owl:equivalentClass rdf:resource="#enso"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GlobalCycl">
-    <rdfs:subClassOf rdf:resource="&sys;#Oscillat"/>
+  <owl:Class rdf:about="#planetaryoscil">
+    <rdfs:subClassOf rdf:resource="#globalcycl"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#globalcycl">
+    <rdfs:subClassOf rdf:resource="&sys;#oscillat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&spac;#Global" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&spac;#global" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarWand">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#polarwand">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BodyTid">
-    <rdfs:subClassOf rdf:resource="#Tide"/>
+  <owl:Class rdf:about="#bodytid">
+    <rdfs:subClassOf rdf:resource="#tide"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PoleTid">
-    <rdfs:subClassOf rdf:resource="#Tide"/>
+  <owl:Class rdf:about="#poletid">
+    <rdfs:subClassOf rdf:resource="#tide"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tide">
-    <rdfs:subClassOf rdf:resource="#PlanetaryOscil"/>
+  <owl:Class rdf:about="#tide">
+    <rdfs:subClassOf rdf:resource="#planetaryoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IceAgeCycl">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#iceagecycl">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElNinoSouthernOscil">
-    <rdfs:subClassOf rdf:resource="#EarthOscil"/>
+  <owl:Class rdf:about="#elninosouthernoscil">
+    <rdfs:subClassOf rdf:resource="#earthoscil"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&planet;#Ocean" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&planet;#ocean" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#ENSO"/>
+    <owl:equivalentClass rdf:resource="#enso"/>
     <rdfs:comment xml:lang="en">A significant increase in sea surface temperature over the eastern and central equatorial Pacific that occurs at irregular intervals, generally ranging between two and seven years.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#ENSO"/>
+  <owl:Class rdf:about="#enso"/>
 
-  <owl:Class rdf:about="#SolarCycl">
-    <rdfs:subClassOf rdf:resource="#GlobalCycl"/>
+  <owl:Class rdf:about="#solarcycl">
+    <rdfs:subClassOf rdf:resource="#globalcycl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&star;#SolarAct" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&star;#solaract" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DiurnalCycl">
-    <rdfs:subClassOf rdf:resource="#GlobalCycl"/>
+  <owl:Class rdf:about="#diurnalcycl">
+    <rdfs:subClassOf rdf:resource="#globalcycl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasFrequ"/>
-        <owl:hasValue rdf:resource="&sfreq;#Daili"/>
+        <owl:onProperty rdf:resource="&trela;#hasfrequ"/>
+        <owl:hasValue rdf:resource="&sfreq;#daili"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AnnualCycl">
-    <rdfs:subClassOf rdf:resource="#GlobalCycl"/>
+  <owl:Class rdf:about="#annualcycl">
+    <rdfs:subClassOf rdf:resource="#globalcycl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasFrequ"/>
-        <owl:hasValue rdf:resource="&sfreq;#Annual"/>
+        <owl:onProperty rdf:resource="&trela;#hasfrequ"/>
+        <owl:hasValue rdf:resource="&sfreq;#annual"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

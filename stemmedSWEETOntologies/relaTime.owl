@@ -40,116 +40,116 @@
   </owl:Ontology>
 
   <owl:ObjectProperty rdf:ID="hasTime">
-    <rdfs:range rdf:resource="&time;#Time"/>
+    <rdfs:range rdf:resource="&time;#time"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasNHTime">
-    <rdfs:subPropertyOf rdf:resource="#hasTim"/>
-    <rdfs:subPropertyOf rdf:resource="&srela;#inNH"/>
+    <rdfs:subPropertyOf rdf:resource="#hastim"/>
+    <rdfs:subPropertyOf rdf:resource="&srela;#innh"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasSHTime">
-    <rdfs:subPropertyOf rdf:resource="#hasTim"/>
-    <rdfs:subPropertyOf rdf:resource="&srela;#inSH"/>
+    <rdfs:subPropertyOf rdf:resource="#hastim"/>
+    <rdfs:subPropertyOf rdf:resource="&srela;#insh"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasTimeReference">
-    <rdfs:range rdf:resource="&trep;#TimeRefer"/>
-    <owl:equivalentProperty rdf:resource="#hasTemporalRefer"/>
+    <rdfs:range rdf:resource="&trep;#timeref"/>
+    <owl:equivalentProperty rdf:resource="#hastemporalref"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="hasTemporalReference"/>
 
-  <owl:ObjectProperty rdf:about="#olderThan">
-    <rdfs:domain rdf:resource="&time;#Time"/>
-    <rdfs:range rdf:resource="&time;#Time"/>
-    <rdfs:subPropertyOf rdf:resource="&rela;#greaterThan"/>
+  <owl:ObjectProperty rdf:about="#olderthan">
+    <rdfs:domain rdf:resource="&time;#time"/>
+    <rdfs:range rdf:resource="&time;#time"/>
+    <rdfs:subPropertyOf rdf:resource="&rela;#greaterthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#youngerThan">
-    <owl:inverseOf rdf:resource="#olderThan"/>
+  <owl:ObjectProperty rdf:about="#youngerthan">
+    <owl:inverseOf rdf:resource="#olderthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#moreFrequentThan">
-    <rdfs:domain rdf:resource="&freq;#Frequenc"/>
-    <rdfs:range rdf:resource="&freq;#Frequenc"/>
-    <rdfs:subPropertyOf rdf:resource="&rela;#greaterThan"/>
+  <owl:ObjectProperty rdf:about="#morefrequentthan">
+    <rdfs:domain rdf:resource="&freq;#frequenc"/>
+    <rdfs:range rdf:resource="&freq;#frequenc"/>
+    <rdfs:subPropertyOf rdf:resource="&rela;#greaterthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#lessFrequentThan">
-    <owl:inverseOf rdf:resource="#moreFrequentThan"/>
+  <owl:ObjectProperty rdf:about="#lessfrequentthan">
+    <owl:inverseOf rdf:resource="#morefrequentthan"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#temporalPartOf">
-    <rdfs:domain rdf:resource="&time;#Time"/>
-    <rdfs:range rdf:resource="&time;#Time"/>
-    <rdfs:subPropertyOf rdf:resource="&rela;#subsetOf"/>
+  <owl:ObjectProperty rdf:about="#temporalpartof">
+    <rdfs:domain rdf:resource="&time;#time"/>
+    <rdfs:range rdf:resource="&time;#time"/>
+    <rdfs:subPropertyOf rdf:resource="&rela;#subsetof"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#startOf">
+  <owl:ObjectProperty rdf:about="#startof">
     <rdfs:subPropertyOf rdf:resource="&owlt;before"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#endOf">
+  <owl:ObjectProperty rdf:about="#endof">
     <rdfs:subPropertyOf rdf:resource="&owlt;after"/>
   </owl:ObjectProperty>
 
-  <owl:DatatypeProperty rdf:about="#dayOfyear">
+  <owl:DatatypeProperty rdf:about="#dayofyear">
   </owl:DatatypeProperty>
 
   <owl:ObjectProperty rdf:ID="hasPeriod">
-    <rdfs:range rdf:resource="&time;#Period"/>
+    <rdfs:range rdf:resource="&time;#period"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasDuration">
-    <rdfs:range rdf:resource="&time;#Durat"/>
+    <rdfs:range rdf:resource="&time;#durat"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasAverageDuration">
-    <rdfs:subPropertyOf rdf:resource="#hasDur"/>
+    <rdfs:subPropertyOf rdf:resource="#hasdur"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:ID="hasStartTime">
-    <rdfs:subPropertyOf rdf:resource="#hasTim"/>
-    <rdfs:range rdf:resource="&time;#StartTim"/>
+    <rdfs:subPropertyOf rdf:resource="#hastim"/>
+    <rdfs:range rdf:resource="&time;#starttim"/>
     <owl:equivalentProperty rdf:resource="#begin"/>
-    <owl:equivalentProperty rdf:resource="#hasBegin"/>
+    <owl:equivalentProperty rdf:resource="#hasbegin"/>
     <owl:equivalentProperty rdf:resource="#start"/>
-    <owl:equivalentProperty rdf:resource="#hasStart"/>
+    <owl:equivalentProperty rdf:resource="#hasstart"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#begin"/>
-  <owl:ObjectProperty rdf:about="#hasBegin"/>
+  <owl:ObjectProperty rdf:about="#hasbegin"/>
   <owl:ObjectProperty rdf:about="#start"/>
-  <owl:ObjectProperty rdf:about="#hasStart"/>
+  <owl:ObjectProperty rdf:about="#hasstart"/>
 
   <owl:ObjectProperty rdf:ID="hasEndTime">
-    <rdfs:subPropertyOf rdf:resource="#hasTim"/>
-    <rdfs:range rdf:resource="&time;#EndTime"/>
+    <rdfs:subPropertyOf rdf:resource="#hastim"/>
+    <rdfs:range rdf:resource="&time;#endtime"/>
     <owl:equivalentProperty rdf:resource="#end"/>
-    <owl:equivalentProperty rdf:resource="#hasEnd"/>
+    <owl:equivalentProperty rdf:resource="#hasend"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#end"/>
-  <owl:ObjectProperty rdf:about="#hasEnd"/>
+  <owl:ObjectProperty rdf:about="#hasend"/>
 
-  <owl:ObjectProperty rdf:about="#hasFrequ">
-    <rdfs:range rdf:resource="&freq;#Frequenc"/>
+  <owl:ObjectProperty rdf:about="#hasfrequ">
+    <rdfs:range rdf:resource="&freq;#frequenc"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#halfLif">
-    <rdfs:subPropertyOf rdf:resource="#hasDur"/>
+  <owl:ObjectProperty rdf:about="#halflif">
+    <rdfs:subPropertyOf rdf:resource="#hasdur"/>
   </owl:ObjectProperty>
 
 <!-- owl-time extensions -->
   <owl:ObjectProperty rdf:about="&owlt;after">
-    <rdfs:subPropertyOf rdf:resource="&rela;#greaterThan"/>
+    <rdfs:subPropertyOf rdf:resource="&rela;#greaterthan"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="&owlt;before">
-    <rdfs:subPropertyOf rdf:resource="&rela;#lessThan"/>
+    <rdfs:subPropertyOf rdf:resource="&rela;#lessthan"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="&owlt;hasBeginning">
-    <rdfs:subPropertyOf rdf:resource="#hasStartTim"/>
+    <rdfs:subPropertyOf rdf:resource="#hasstarttim"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="&owlt;hasEnd">
-    <rdfs:subPropertyOf rdf:resource="#hasEndTim"/>
+    <rdfs:subPropertyOf rdf:resource="#hasendtim"/>
   </owl:ObjectProperty>
 
 </rdf:RDF>

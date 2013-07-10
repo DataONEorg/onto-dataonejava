@@ -62,185 +62,185 @@
      <owl:imports rdf:resource="&water;"/>
   </owl:Ontology>
   
-  <owl:Class rdf:about="#EquivalentThick">
-    <rdfs:subClassOf rdf:resource="#Thick"/>
+  <owl:Class rdf:about="#equivalentthick">
+    <rdfs:subClassOf rdf:resource="#thick"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PressureThick">
-    <rdfs:subClassOf rdf:resource="#Thick"/>
+  <owl:Class rdf:about="#pressurethick">
+    <rdfs:subClassOf rdf:resource="#thick"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasProcess" />
-        <owl:allValuesFrom rdf:resource="&pres;#Pressur" />
+        <owl:onProperty rdf:resource="&rela;#hasprocess" />
+        <owl:allValuesFrom rdf:resource="&pres;#pressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thick">
-    <rdfs:subClassOf rdf:resource="&ht;#VerticalExt"/>
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#thick">
+    <rdfs:subClassOf rdf:resource="&ht;#verticalext"/>
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowWaterEquival">
-    <rdfs:subClassOf rdf:resource="#LiquidWaterEquival"/>
-    <owl:equivalentClass rdf:resource="#SWE" />
+  <owl:Class rdf:about="#snowwaterequiv">
+    <rdfs:subClassOf rdf:resource="#liquidwaterequiv"/>
+    <owl:equivalentClass rdf:resource="#swe" />
   </owl:Class>
-  <owl:Class rdf:about="#SWE"/>
+  <owl:Class rdf:about="#swe"/>
 
-  <owl:Class rdf:about="#LiquidWaterEquival">
-    <rdfs:subClassOf rdf:resource="#WaterCont"/>
-    <owl:equivalentClass rdf:resource="#LWE"/>
+  <owl:Class rdf:about="#liquidwaterequiv">
+    <rdfs:subClassOf rdf:resource="#watercont"/>
+    <owl:equivalentClass rdf:resource="#lwe"/>
   </owl:Class>
-  <owl:Class rdf:about="#LWE"/>
+  <owl:Class rdf:about="#lwe"/>
 
-  <owl:Class rdf:about="#PrecipitableWat">
-    <rdfs:subClassOf rdf:resource="#WaterCont"/>
+  <owl:Class rdf:about="#precipitablewat">
+    <rdfs:subClassOf rdf:resource="#watercont"/>
     <rdfs:comment xml:lang="en">The total atmospheric water vapor contained in a vertical column of unit cross-sectional area extending between any two specified levels.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Precipit">
-    <rdfs:subClassOf rdf:resource="#WaterCont"/>
+  <owl:Class rdf:about="#precipit">
+    <rdfs:subClassOf rdf:resource="#watercont"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PrecipitationRang">
-   <rdfs:subClassOf rdf:resource="&ht;#HeightRang"/>
-   <rdfs:subClassOf rdf:resource="#Precipit"/>
+  <owl:Class rdf:about="#precipitationrang">
+   <rdfs:subClassOf rdf:resource="&ht;#heightrang"/>
+   <rdfs:subClassOf rdf:resource="#precipit"/>
   </owl:Class>
 
   <owl:Class rdf:about="#PrecipitationRange_cm">
-   <rdfs:subClassOf rdf:resource="#PrecipitationRang"/>
+   <rdfs:subClassOf rdf:resource="#precipitationrang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasUnit" />
+        <owl:onProperty rdf:resource="&screla;#hasunit" />
         <owl:hasValue rdf:resource="&units;#centimet" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterCont">
-    <rdfs:subClassOf rdf:resource="#Thick"/>
+  <owl:Class rdf:about="#watercont">
+    <rdfs:subClassOf rdf:resource="#thick"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasChem" />
-        <owl:allValuesFrom rdf:resource="&water;#LiquidWat" />
+        <owl:onProperty rdf:resource="&crela;#haschem" />
+        <owl:allValuesFrom rdf:resource="&water;#liquidwat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowCov">
-    <rdfs:subClassOf rdf:resource="#Thick" />
+  <owl:Class rdf:about="#snowcov">
+    <rdfs:subClassOf rdf:resource="#thick" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:allValuesFrom rdf:resource="&water;#Snow" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:allValuesFrom rdf:resource="&water;#snow" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The depth of snow that has fallen.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Snowpack">
-    <rdfs:subClassOf rdf:resource="#SnowCov"/>
+  <owl:Class rdf:about="#snowpack">
+    <rdfs:subClassOf rdf:resource="#snowcov"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluidHead">
-    <rdfs:subClassOf rdf:resource="&prop;#FluidProperti"/>
-    <rdfs:subClassOf rdf:resource="#Thick"/>
+  <owl:Class rdf:about="#fluidhead">
+    <rdfs:subClassOf rdf:resource="&prop;#fluidproperti"/>
+    <rdfs:subClassOf rdf:resource="#thick"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HydraulicHead">
-    <rdfs:subClassOf rdf:resource="#FluidHead"/>
+  <owl:Class rdf:about="#hydraulichead">
+    <rdfs:subClassOf rdf:resource="#fluidhead"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&cstate;#Liquid"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&cstate;#liquid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#StaticHead">
-    <rdfs:subClassOf rdf:resource="#FluidHead"/>
+  <owl:Class rdf:about="#statichead">
+    <rdfs:subClassOf rdf:resource="#fluidhead"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TotalHead">
-    <rdfs:subClassOf rdf:resource="#FluidHead"/>
+  <owl:Class rdf:about="#totalhead">
+    <rdfs:subClassOf rdf:resource="#fluidhead"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GaugeHeight">
-    <rdfs:subClassOf rdf:resource="#WaterHeight"/>
+  <owl:Class rdf:about="#gaugeheight">
+    <rdfs:subClassOf rdf:resource="#waterheight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LakeStag">
-    <rdfs:subClassOf rdf:resource="#StageHeight"/>
+  <owl:Class rdf:about="#lakestag">
+    <rdfs:subClassOf rdf:resource="#stageheight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StageHeight">
-    <rdfs:subClassOf rdf:resource="#WaterHeight"/>
+  <owl:Class rdf:about="#stageheight">
+    <rdfs:subClassOf rdf:resource="#waterheight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StreamStag">
-    <rdfs:subClassOf rdf:resource="#StageHeight"/>
+  <owl:Class rdf:about="#streamstag">
+    <rdfs:subClassOf rdf:resource="#stageheight"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterHeight">
-    <rdfs:subClassOf rdf:resource="#Thick" />
+  <owl:Class rdf:about="#waterheight">
+    <rdfs:subClassOf rdf:resource="#thick" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:allValuesFrom rdf:resource="&water;#LiquidWat" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:allValuesFrom rdf:resource="&water;#liquidwat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Evapotranspir">
-    <rdfs:subClassOf rdf:resource="#Thick" />
+  <owl:Class rdf:about="#evapotranspir">
+    <rdfs:subClassOf rdf:resource="#thick" />
   </owl:Class>
 
-  <owl:Class rdf:about="#PotentialEvapotranspir">
-    <rdfs:subClassOf rdf:resource="#Evapotranspir"/>
+  <owl:Class rdf:about="#potentialevapotranspir">
+    <rdfs:subClassOf rdf:resource="#evapotranspir"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HalfPotentialEvapotranspir">
-    <rdfs:subClassOf rdf:resource="#Evapotranspir"/>
+  <owl:Class rdf:about="#halfpotentialevapotranspir">
+    <rdfs:subClassOf rdf:resource="#evapotranspir"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OpticalDepth">
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
-    <owl:equivalentClass rdf:resource="#OpticalThick"/>
+  <owl:Class rdf:about="#opticaldepth">
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
+    <owl:equivalentClass rdf:resource="#opticalthick"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#dimensionlessUnit"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#dimensionlessunit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The optical thickness measured vertically above some given altitude.  Optical depth is dimensionless and may be used to specify many different radiative characteristics of the atmosphere.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OpticalThick"/>
+  <owl:Class rdf:about="#opticalthick"/>
 
-  <owl:Class rdf:about="#AverageMonthlyPrecipit">
-    <rdfs:subClassOf rdf:resource="#Precipit"/>
-    <rdfs:subClassOf rdf:resource="&func;#MonthlyAverag"/>
+  <owl:Class rdf:about="#averagemonthlyprecipit">
+    <rdfs:subClassOf rdf:resource="#precipit"/>
+    <rdfs:subClassOf rdf:resource="&func;#monthlyaverag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AverageAnnualPrecipit">
-    <rdfs:subClassOf rdf:resource="#Precipit"/>
-    <rdfs:subClassOf rdf:resource="&func;#AnnualAverag"/>
+  <owl:Class rdf:about="#averageannualprecipit">
+    <rdfs:subClassOf rdf:resource="#precipit"/>
+    <rdfs:subClassOf rdf:resource="&func;#annualaverag"/>
   </owl:Class>
 
   <owl:Class rdf:ID="AverageDrySeasonPrecipitation">
-    <rdfs:subClassOf rdf:resource="#Precipit"/>
-    <rdfs:subClassOf rdf:resource="&func;#AnnualAverag"/>
+    <rdfs:subClassOf rdf:resource="#precipit"/>
+    <rdfs:subClassOf rdf:resource="&func;#annualaverag"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasTim"/>
-        <owl:someValuesFrom rdf:resource="&seas;#DrySeason"/>
+        <owl:onProperty rdf:resource="&trela;#hastim"/>
+        <owl:someValuesFrom rdf:resource="&seas;#dryseason"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <thic:PotentialEvapotranspiration rdf:about="#AnnualPotentialEvapotranspir">
+  <thic:PotentialEvapotranspiration rdf:about="#annualpotentialevapotranspir">
   </thic:PotentialEvapotranspiration>
 
-  <thic:HalfPotentialEvapotranspiration rdf:about="#AnnualHalfPotentialEvapotranspir">
+  <thic:HalfPotentialEvapotranspiration rdf:about="#annualhalfpotentialevapotranspir">
   </thic:HalfPotentialEvapotranspiration>
 
 </rdf:RDF>

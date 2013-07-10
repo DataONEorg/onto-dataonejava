@@ -39,88 +39,88 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/statePhysical.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ThermodynamicSt">
+  <owl:Class rdf:about="#thermodynamicst">
     <rdfs:subClassOf rdf:resource="&pstate;PhysicalState"/>
   </owl:Class>
 
 <!-- Values -->
-  <tstate:ThermodynamicState rdf:about="#Adiabat">
+  <tstate:ThermodynamicState rdf:about="#adiabat">
     <rdfs:comment>A process in which a system does not interact with its surroundings by virtue of a temperature difference between them.</rdfs:comment>
     <rdfs:label>Adiabatic Process</rdfs:label>
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#Diabat">
-    <owl:differentFrom rdf:resource="#Adiabat"/>
+  <tstate:ThermodynamicState rdf:about="#diabat">
+    <owl:differentFrom rdf:resource="#adiabat"/>
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#Isentrop">
+  <tstate:ThermodynamicState rdf:about="#isentrop">
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#Inversion">
+  <tstate:ThermodynamicState rdf:about="#inversion">
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#DryAdiabat">
-    <owl:sameAs rdf:resource="#DryAdiabat"/>
+  <tstate:ThermodynamicState rdf:about="#dryadiabat">
+    <owl:sameAs rdf:resource="#dryadiabat"/>
   </tstate:ThermodynamicState>
-  <tstate:ThermodynamicState rdf:about="#DryAdiabat"/>
+  <tstate:ThermodynamicState rdf:about="#dryadiabat"/>
 
-  <tstate:ThermodynamicState rdf:about="#Pseudoadiabat">
-    <mrela:approximates rdf:resource="#Adiabat"/>
+  <tstate:ThermodynamicState rdf:about="#pseudoadiabat">
+    <mrela:approximates rdf:resource="#adiabat"/>
     <rdfs:comment xml:lang="en">A moist-adiabatic process in which the liquid water that condenses is assumed to be removed as soon as it is formed, by idealized instantaneous precipitation.</rdfs:comment>
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#Superadiabat">
-    <owl:differentFrom rdf:resource="#Adiabat"/>
+  <tstate:ThermodynamicState rdf:about="#superadiabat">
+    <owl:differentFrom rdf:resource="#adiabat"/>
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#BlackBodi">
+  <tstate:ThermodynamicState rdf:about="#blackbodi">
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#Isotherm">
+  <tstate:ThermodynamicState rdf:about="#isotherm">
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#ThermodynamicEquilibrium">
+  <tstate:ThermodynamicState rdf:about="#thermodynamicequilibrium">
     <rdf:type rdf:resource="&sstate;EquilibriumState"/>
   </tstate:ThermodynamicState>
 
-  <tstate:ThermodynamicState rdf:about="#LocalThermodynamicEquilibrium">
+  <tstate:ThermodynamicState rdf:about="#localthermodynamicequilibrium">
     <rdf:type rdf:resource="&sstate;EquilibriumState"/>
-    <owl:sameAs rdf:resource="#LTE"/>
+    <owl:sameAs rdf:resource="#lte"/>
   </tstate:ThermodynamicState>
-  <tstate:ThermodynamicState rdf:about="#LTE"/>
+  <tstate:ThermodynamicState rdf:about="#lte"/>
 
-  <tstate:ThermodynamicState rdf:about="#MaximumEntropi">
+  <tstate:ThermodynamicState rdf:about="#maximumentropi">
     <rdf:type rdf:resource="&sstate;EquilibriumState"/>
   </tstate:ThermodynamicState>
 
 <!-- TemperatureRange states -->
-  <ordi:TemperatureRange rdf:about="#FreezingCold">
+  <ordi:TemperatureRange rdf:about="#freezingcold">
   </ordi:TemperatureRange>
 
-  <ordi:TemperatureRange rdf:about="#Cold">
+  <ordi:TemperatureRange rdf:about="#cold">
   </ordi:TemperatureRange>
 
-  <ordi:TemperatureRange rdf:about="#Cool">
-    <prela:warmerThan rdf:resource="#Cold"/>
-    <prela:warmerThan rdf:resource="#FreezingCold"/>
+  <ordi:TemperatureRange rdf:about="#cool">
+    <prela:warmerThan rdf:resource="#cold"/>
+    <prela:warmerThan rdf:resource="#freezingcold"/>
   </ordi:TemperatureRange>
 
-  <ordi:TemperatureRange rdf:about="#Lukewarm">
-    <prela:warmerThan rdf:resource="#Cool"/>
-    <owl:sameAs rdf:resource="#Tepid"/>
+  <ordi:TemperatureRange rdf:about="#lukewarm">
+    <prela:warmerThan rdf:resource="#cool"/>
+    <owl:sameAs rdf:resource="#tepid"/>
   </ordi:TemperatureRange>
-  <ordi:TemperatureRange rdf:about="#Tepid"/>
+  <ordi:TemperatureRange rdf:about="#tepid"/>
 
-  <ordi:TemperatureRange rdf:about="#Warm">
-    <prela:warmerThan rdf:resource="#Lukewarm"/>
-  </ordi:TemperatureRange>
-
-  <ordi:TemperatureRange rdf:about="#Hot">
-    <prela:warmerThan rdf:resource="#Warm"/>
+  <ordi:TemperatureRange rdf:about="#warm">
+    <prela:warmerThan rdf:resource="#lukewarm"/>
   </ordi:TemperatureRange>
 
-  <ordi:TemperatureRange rdf:about="#BoilingHot">
-    <prela:warmerThan rdf:resource="#Warm"/>
+  <ordi:TemperatureRange rdf:about="#hot">
+    <prela:warmerThan rdf:resource="#warm"/>
+  </ordi:TemperatureRange>
+
+  <ordi:TemperatureRange rdf:about="#boilinghot">
+    <prela:warmerThan rdf:resource="#warm"/>
   </ordi:TemperatureRange>
 
 </rdf:RDF>

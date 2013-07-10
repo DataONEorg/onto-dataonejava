@@ -50,112 +50,112 @@
   </owl:Ontology>
   
 
-  <owl:Class rdf:about="#Rate">
-    <rdfs:subClassOf rdf:resource="&oper;#PartialDeriv"/>
-    <owl:equivalentClass rdf:resource="#Tendenc"/>
+  <owl:Class rdf:about="#rate">
+    <rdfs:subClassOf rdf:resource="&oper;#partialderiv"/>
+    <owl:equivalentClass rdf:resource="#tendenc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#derivativeWithRespectTo"/>
-        <owl:allValuesFrom rdf:resource="&time;#Time"/>
+        <owl:onProperty rdf:resource="&mrela;#derivativewithrespectto"/>
+        <owl:allValuesFrom rdf:resource="&time;#time"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#persecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#Tendenc"/>
+  <owl:Class rdf:about="#tendenc"/>
 
-  <owl:Class rdf:about="#SpreadingR">
-    <rdfs:subClassOf rdf:resource="#Rate"/>
+  <owl:Class rdf:about="#spreadingr">
+    <rdfs:subClassOf rdf:resource="#rate"/>
     <rdfs:comment xml:lang="en">The spreading rate is a measure of how fast plate divergence is occurring. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cadenc">
-    <rdfs:subClassOf rdf:resource="#Frequenc" />
+  <owl:Class rdf:about="#cadenc">
+    <rdfs:subClassOf rdf:resource="#frequenc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Fertil">
-    <rdfs:subClassOf rdf:resource="#Rate"/>
+  <owl:Class rdf:about="#fertil">
+    <rdfs:subClassOf rdf:resource="#rate"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Frequenc">
-    <rdfs:subClassOf rdf:resource="#Rate"/>
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#frequenc">
+    <rdfs:subClassOf rdf:resource="#rate"/>
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#hertz"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The rate of recurrence of any periodic phenomenon, often associated with waves of all kinds. Without qualification frequency often means temporal frequency, the rate of recurrence of a time-varying function, but could mean spatial frequency, the rate of recurrence of a space-varying function. Spatial frequency is the reciprocal of the repeat distance (sometimes the wavelength). The dimensions of (temporal) frequency are inverse time. A common unit for frequency is cycle per second, formerly abbreviated cps, but superseded by hertz, abbreviated as Hz.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FrequencyBand">
-    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+  <owl:Class rdf:about="#frequencyband">
+    <rdfs:subClassOf rdf:resource="&quan;#intervalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
-        <owl:allValuesFrom rdf:resource="#Frequenc"/>
+        <owl:onProperty rdf:resource="&screla;#rangeof"/>
+        <owl:allValuesFrom rdf:resource="#frequenc"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#FrequencyBand_MHz">
-    <rdfs:subClassOf rdf:resource="#FrequencyBand"/>
+    <rdfs:subClassOf rdf:resource="#frequencyband"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#MHz"/>
-        <owl:onProperty rdf:resource="&screla;#hasUnit"/>
+        <owl:hasValue rdf:resource="&units;#mhz"/>
+        <owl:onProperty rdf:resource="&screla;#hasunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Incidenc">
-    <rdfs:subClassOf rdf:resource="#Frequenc"/>
+  <owl:Class rdf:about="#incidenc">
+    <rdfs:subClassOf rdf:resource="#frequenc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bandwidth">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#Frequenc" />
+  <owl:Class rdf:about="#bandwidth">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#frequenc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#BruntVaisalaFrequ">
-    <rdfs:subClassOf rdf:resource="#Frequenc" />
+  <owl:Class rdf:about="#bruntvaisalafrequ">
+    <rdfs:subClassOf rdf:resource="#frequenc" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#measureOf" />
-        <owl:allValuesFrom rdf:resource="&inst;#StaticSt" />
+        <owl:onProperty rdf:resource="&screla;#measureof" />
+        <owl:allValuesFrom rdf:resource="&inst;#staticst" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The frequency at which a displaced parcel will oscillate when displaced vertically within a statically stable environment.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Diverg">
-    <rdfs:subClassOf rdf:resource="&oper;#VectorFieldOper"/>
+  <owl:Class rdf:about="#diverg">
+    <rdfs:subClassOf rdf:resource="&oper;#vectorfieldop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#VectorField"/>
-        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+        <owl:allValuesFrom rdf:resource="&func;#vectorfield"/>
+        <owl:onProperty rdf:resource="&mrela;#hasoutput"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#ScalarField"/>
-        <owl:onProperty rdf:resource="&mrela;#hasInput"/>
+        <owl:allValuesFrom rdf:resource="&func;#scalarfield"/>
+        <owl:onProperty rdf:resource="&mrela;#hasinput"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The expansion or spreading out of a vector field; also, a precise measure thereof.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Converg">
-    <rdfs:subClassOf rdf:resource="&oper;#VectorFieldOper"/>
+  <owl:Class rdf:about="#converg">
+    <rdfs:subClassOf rdf:resource="&oper;#vectorfieldop"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&func;#VectorField"/>
-        <owl:onProperty rdf:resource="&mrela;#hasOutput"/>
+        <owl:allValuesFrom rdf:resource="&func;#vectorfield"/>
+        <owl:onProperty rdf:resource="&mrela;#hasoutput"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

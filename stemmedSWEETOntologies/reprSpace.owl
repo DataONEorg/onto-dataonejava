@@ -32,12 +32,12 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Space">
-    <rdfs:subClassOf rdf:resource="&repr;#Dimens"/>
+  <owl:Class rdf:about="#space">
+    <rdfs:subClassOf rdf:resource="&repr;#dimen"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;#meter"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">This concept is of space as an independent variable</rdfs:comment>

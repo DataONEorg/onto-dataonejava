@@ -29,109 +29,109 @@
   </owl:Ontology>
 
 <!-- 3D -->
-  <owl:Class rdf:about="#AirSpac">
+  <owl:Class rdf:about="#airspac">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Belt">
+  <owl:Class rdf:about="#belt">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bowl">
+  <owl:Class rdf:about="#bowl">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Caviti">
+  <owl:Class rdf:about="#caviti">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cone">
+  <owl:Class rdf:about="#cone">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Corkscrew">
+  <owl:Class rdf:about="#corkscrew">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cylind">
+  <owl:Class rdf:about="#cylind">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dipol">
+  <owl:Class rdf:about="#dipol">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dome">
+  <owl:Class rdf:about="#dome">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Envelop">
-    <rdfs:subClassOf rdf:resource="#Layer"/>
+  <owl:Class rdf:about="#envelop">
+    <rdfs:subClassOf rdf:resource="#layer"/>
   </owl:Class>
 
   <owl:Class rdf:about="#GeometricalObject_3D">
-    <rdfs:subClassOf rdf:resource="&obj;#GeometricalObject"/>
-    <rdfs:subClassOf rdf:resource="&repr;#3D"/>
+    <rdfs:subClassOf rdf:resource="&obj;#geometricalobject"/>
+    <rdfs:subClassOf rdf:resource="&repr;#3d"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hemispher">
+  <owl:Class rdf:about="#hemisph">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Layer">
+  <owl:Class rdf:about="#layer">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Polyhedron">
+  <owl:Class rdf:about="#polyhedron">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ring">
+  <owl:Class rdf:about="#ring">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Shell">
-    <rdfs:subClassOf rdf:resource="#Layer"/>
+  <owl:Class rdf:about="#shell">
+    <rdfs:subClassOf rdf:resource="#layer"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sphere">
+  <owl:Class rdf:about="#sphere">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spheroid">
+  <owl:Class rdf:about="#spheroid">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Strata">
-    <rdfs:subClassOf rdf:resource="#Layer"/>
+  <owl:Class rdf:about="#strata">
+    <rdfs:subClassOf rdf:resource="#layer"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Striation">
+  <owl:Class rdf:about="#striation">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Torus">
+  <owl:Class rdf:about="#torus">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tube">
+  <owl:Class rdf:about="#tube">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FluxTub">
-    <rdfs:subClassOf rdf:resource="#Tube"/>
+  <owl:Class rdf:about="#fluxtub">
+    <rdfs:subClassOf rdf:resource="#tube"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bodi">
+  <owl:Class rdf:about="#bodi">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Ellipsoid">
+  <owl:Class rdf:about="#ellipsoid">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_3D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ReferenceEllipsoid">
-    <rdfs:subClassOf rdf:resource="#Ellipsoid"/>
+  <owl:Class rdf:about="#referenceellipsoid">
+    <rdfs:subClassOf rdf:resource="#ellipsoid"/>
   </owl:Class>
 
 

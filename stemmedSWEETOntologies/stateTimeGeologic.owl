@@ -41,913 +41,913 @@
 
 <!-- Supereons -->
 
-  <gtime:Supereon rdf:about="#Precambrian">
-     <trela:hasEndTime rdf:resource="#542MyA" />
+  <gtime:Supereon rdf:about="#precambrian">
+     <trela:hasEndTime rdf:resource="#542mya" />
   </gtime:Supereon>
 
 <!-- Eons -->
 
-  <gtime:Eon rdf:about="#Phanerozo">
-     <trela:hasEndTime rdf:resource="#0MyA" />
-     <trela:hasStartTime rdf:resource="#542MyA" />
+  <gtime:Eon rdf:about="#phanerozo">
+     <trela:hasEndTime rdf:resource="#0mya" />
+     <trela:hasStartTime rdf:resource="#542mya" />
   </gtime:Eon>
-  <gtime:Eon rdf:about="#Proterozo">
-     <trela:hasEndTime rdf:resource="#542MyA" />
-     <trela:hasStartTime rdf:resource="#2500MyA" />
-     <trela:temporalPartOf rdf:resource="#Precambrian" />
+  <gtime:Eon rdf:about="#proterozo">
+     <trela:hasEndTime rdf:resource="#542mya" />
+     <trela:hasStartTime rdf:resource="#2500mya" />
+     <trela:temporalPartOf rdf:resource="#precambrian" />
   </gtime:Eon>
-  <gtime:Eon rdf:about="#Archean">
-     <trela:hasEndTime rdf:resource="#2500MyA" />
-     <trela:hasStartTime rdf:resource="#4000MyA" />
-     <trela:temporalPartOf rdf:resource="#Precambrian" />
+  <gtime:Eon rdf:about="#archean">
+     <trela:hasEndTime rdf:resource="#2500mya" />
+     <trela:hasStartTime rdf:resource="#4000mya" />
+     <trela:temporalPartOf rdf:resource="#precambrian" />
   </gtime:Eon>
-  <gtime:Eon rdf:about="#Hadean">
-     <trela:hasEndTime rdf:resource="#4000MyA" />
-     <trela:temporalPartOf rdf:resource="#Precambrian" />
+  <gtime:Eon rdf:about="#hadean">
+     <trela:hasEndTime rdf:resource="#4000mya" />
+     <trela:temporalPartOf rdf:resource="#precambrian" />
   </gtime:Eon>
 
 <!-- Eras -->
 
-  <gtime:Era rdf:about="#Cenozo">
-     <trela:hasEndTime rdf:resource="#0MyA" />
+  <gtime:Era rdf:about="#cenozo">
+     <trela:hasEndTime rdf:resource="#0mya" />
      <trela:hasStartTime rdf:resource="#65.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Phanerozo" />
+     <trela:temporalPartOf rdf:resource="#phanerozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Mesozo">
+  <gtime:Era rdf:about="#mesozo">
      <trela:hasEndTime rdf:resource="#65.5MYA" />
      <trela:hasStartTime rdf:resource="#251.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Phanerozo" />
+     <trela:temporalPartOf rdf:resource="#phanerozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Paleozo">
+  <gtime:Era rdf:about="#paleozo">
      <trela:hasEndTime rdf:resource="#251.0MYA" />
-     <trela:hasStartTime rdf:resource="#542MyA" />
-     <trela:temporalPartOf rdf:resource="#Phanerozo" />
+     <trela:hasStartTime rdf:resource="#542mya" />
+     <trela:temporalPartOf rdf:resource="#phanerozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Neoproterozo">
-     <trela:hasEndTime rdf:resource="#542MyA" />
-     <trela:hasStartTime rdf:resource="#1000MyA" />
-     <trela:temporalPartOf rdf:resource="#Proterozo" />
+  <gtime:Era rdf:about="#neoproterozo">
+     <trela:hasEndTime rdf:resource="#542mya" />
+     <trela:hasStartTime rdf:resource="#1000mya" />
+     <trela:temporalPartOf rdf:resource="#proterozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Mesoproterozo">
-     <trela:hasEndTime rdf:resource="#1000MyA" />
-     <trela:hasStartTime rdf:resource="#1600MyA" />
-     <trela:temporalPartOf rdf:resource="#Proterozo" />
+  <gtime:Era rdf:about="#mesoproterozo">
+     <trela:hasEndTime rdf:resource="#1000mya" />
+     <trela:hasStartTime rdf:resource="#1600mya" />
+     <trela:temporalPartOf rdf:resource="#proterozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Paleoproterozo">
-     <trela:hasEndTime rdf:resource="#1600MyA" />
-     <trela:hasStartTime rdf:resource="#2500MyA" />
-     <trela:temporalPartOf rdf:resource="#Proterozo" />
+  <gtime:Era rdf:about="#paleoproterozo">
+     <trela:hasEndTime rdf:resource="#1600mya" />
+     <trela:hasStartTime rdf:resource="#2500mya" />
+     <trela:temporalPartOf rdf:resource="#proterozo" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Neoarchean">
-     <trela:hasEndTime rdf:resource="#2500MyA" />
-     <trela:hasStartTime rdf:resource="#2800MyA" />
-     <trela:temporalPartOf rdf:resource="#Archean" />
+  <gtime:Era rdf:about="#neoarchean">
+     <trela:hasEndTime rdf:resource="#2500mya" />
+     <trela:hasStartTime rdf:resource="#2800mya" />
+     <trela:temporalPartOf rdf:resource="#archean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Mesoarchean">
-     <trela:hasEndTime rdf:resource="#2800MyA" />
-     <trela:hasStartTime rdf:resource="#3200MyA" />
-     <trela:temporalPartOf rdf:resource="#Archean" />
+  <gtime:Era rdf:about="#mesoarchean">
+     <trela:hasEndTime rdf:resource="#2800mya" />
+     <trela:hasStartTime rdf:resource="#3200mya" />
+     <trela:temporalPartOf rdf:resource="#archean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Paleoarchean">
-     <trela:hasEndTime rdf:resource="#3200MyA" />
-     <trela:hasStartTime rdf:resource="#3600MyA" />
-     <trela:temporalPartOf rdf:resource="#Archean" />
+  <gtime:Era rdf:about="#paleoarchean">
+     <trela:hasEndTime rdf:resource="#3200mya" />
+     <trela:hasStartTime rdf:resource="#3600mya" />
+     <trela:temporalPartOf rdf:resource="#archean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Eoarchean">
-     <trela:hasEndTime rdf:resource="#3600MyA" />
-     <trela:hasStartTime rdf:resource="#4000MyA" />
-     <trela:temporalPartOf rdf:resource="#Archean" />
+  <gtime:Era rdf:about="#eoarchean">
+     <trela:hasEndTime rdf:resource="#3600mya" />
+     <trela:hasStartTime rdf:resource="#4000mya" />
+     <trela:temporalPartOf rdf:resource="#archean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Nectarian">
-     <trela:temporalPartOf rdf:resource="#Hadean" />
+  <gtime:Era rdf:about="#nectarian">
+     <trela:temporalPartOf rdf:resource="#hadean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#LowerImbrian">
-     <trela:temporalPartOf rdf:resource="#Hadean" />
+  <gtime:Era rdf:about="#lowerimbrian">
+     <trela:temporalPartOf rdf:resource="#hadean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#BasinGroup">
-     <trela:temporalPartOf rdf:resource="#Hadean" />
+  <gtime:Era rdf:about="#basingroup">
+     <trela:temporalPartOf rdf:resource="#hadean" />
   </gtime:Era>
-  <gtime:Era rdf:about="#Cryptic">
-     <trela:temporalPartOf rdf:resource="#Hadean" />
+  <gtime:Era rdf:about="#cryptic">
+     <trela:temporalPartOf rdf:resource="#hadean" />
   </gtime:Era>
 
 
 <!-- Periods -->
 
-  <gtime:Period rdf:about="#Quaternari">
-     <trela:hasEndTime rdf:resource="#0MyA" />
+  <gtime:Period rdf:about="#quaternari">
+     <trela:hasEndTime rdf:resource="#0mya" />
      <trela:hasStartTime rdf:resource="#2.588MYA" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Neogen">
+  <gtime:Period rdf:about="#neogen">
      <trela:hasEndTime rdf:resource="#2.588MYA" />
      <trela:hasStartTime rdf:resource="#23.03MYA" />
-     <trela:temporalPartOf rdf:resource="#Cenozo" />
+     <trela:temporalPartOf rdf:resource="#cenozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Paleogen">
+  <gtime:Period rdf:about="#paleogen">
      <trela:hasEndTime rdf:resource="#23.03MYA" />
      <trela:hasStartTime rdf:resource="#65.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Cenozo" />
+     <trela:temporalPartOf rdf:resource="#cenozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Cretac">
+  <gtime:Period rdf:about="#cretac">
      <trela:hasEndTime rdf:resource="#65.5MYA" />
      <trela:hasStartTime rdf:resource="#145.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Mesozo" />
+     <trela:temporalPartOf rdf:resource="#mesozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Jurass">
+  <gtime:Period rdf:about="#jurass">
      <trela:hasEndTime rdf:resource="#145.5MYA" />
      <trela:hasStartTime rdf:resource="#199.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Mesozo" />
+     <trela:temporalPartOf rdf:resource="#mesozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Triassic">
+  <gtime:Period rdf:about="#triassic">
      <trela:hasEndTime rdf:resource="#199.6MYA" />
      <trela:hasStartTime rdf:resource="#251.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Mesozo" />
+     <trela:temporalPartOf rdf:resource="#mesozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Permian">
+  <gtime:Period rdf:about="#permian">
      <trela:hasEndTime rdf:resource="#251.0MYA" />
      <trela:hasStartTime rdf:resource="#299.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Pennsylvanian">
+  <gtime:Period rdf:about="#pennsylvanian">
      <trela:hasEndTime rdf:resource="#299.0MYA" />
      <trela:hasStartTime rdf:resource="#318.1MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Mississippian">
+  <gtime:Period rdf:about="#mississippian">
      <trela:hasEndTime rdf:resource="#318.1MYA" />
      <trela:hasStartTime rdf:resource="#359.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Carbonifer">
+  <gtime:Period rdf:about="#carbonif">
      <trela:hasEndTime rdf:resource="#299.0MYA" />
      <trela:hasStartTime rdf:resource="#359.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Devonian">
+  <gtime:Period rdf:about="#devonian">
      <trela:hasEndTime rdf:resource="#359.2MYA" />
      <trela:hasStartTime rdf:resource="#416.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Silurian">
+  <gtime:Period rdf:about="#silurian">
      <trela:hasEndTime rdf:resource="#416.0MYA" />
      <trela:hasStartTime rdf:resource="#443.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Ordovician">
+  <gtime:Period rdf:about="#ordovician">
      <trela:hasEndTime rdf:resource="#443.7MYA" />
      <trela:hasStartTime rdf:resource="#488.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Cambrian">
+  <gtime:Period rdf:about="#cambrian">
      <trela:hasEndTime rdf:resource="#488.3MYA" />
-     <trela:hasStartTime rdf:resource="#542MyA" />
-     <trela:temporalPartOf rdf:resource="#Paleozo" />
+     <trela:hasStartTime rdf:resource="#542mya" />
+     <trela:temporalPartOf rdf:resource="#paleozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Ediacaran">
-     <trela:hasEndTime rdf:resource="#542MyA" />
-     <trela:hasStartTime rdf:resource="#635MyA" />
-     <trela:temporalPartOf rdf:resource="#Neoproterozo" />
+  <gtime:Period rdf:about="#ediacaran">
+     <trela:hasEndTime rdf:resource="#542mya" />
+     <trela:hasStartTime rdf:resource="#635mya" />
+     <trela:temporalPartOf rdf:resource="#neoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Cryogenian">
-     <trela:hasEndTime rdf:resource="#635MyA" />
-     <trela:hasStartTime rdf:resource="#850MyA" />
-     <trela:temporalPartOf rdf:resource="#Neoproterozo" />
+  <gtime:Period rdf:about="#cryogenian">
+     <trela:hasEndTime rdf:resource="#635mya" />
+     <trela:hasStartTime rdf:resource="#850mya" />
+     <trela:temporalPartOf rdf:resource="#neoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Tonian">
-     <trela:hasEndTime rdf:resource="#850MyA" />
-     <trela:hasStartTime rdf:resource="#1000MyA" />
-     <trela:temporalPartOf rdf:resource="#Neoproterozo" />
+  <gtime:Period rdf:about="#tonian">
+     <trela:hasEndTime rdf:resource="#850mya" />
+     <trela:hasStartTime rdf:resource="#1000mya" />
+     <trela:temporalPartOf rdf:resource="#neoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Stenian">
-     <trela:hasEndTime rdf:resource="#1000MyA" />
-     <trela:hasStartTime rdf:resource="#1200MyA" />
-     <trela:temporalPartOf rdf:resource="#Mesoproterozo" />
+  <gtime:Period rdf:about="#stenian">
+     <trela:hasEndTime rdf:resource="#1000mya" />
+     <trela:hasStartTime rdf:resource="#1200mya" />
+     <trela:temporalPartOf rdf:resource="#mesoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Ectasian">
-     <trela:hasEndTime rdf:resource="#1200MyA" />
-     <trela:hasStartTime rdf:resource="#1400MyA" />
-     <trela:temporalPartOf rdf:resource="#Mesoproterozo" />
+  <gtime:Period rdf:about="#ectasian">
+     <trela:hasEndTime rdf:resource="#1200mya" />
+     <trela:hasStartTime rdf:resource="#1400mya" />
+     <trela:temporalPartOf rdf:resource="#mesoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Calymmian">
-     <trela:hasEndTime rdf:resource="#1400MyA" />
-     <trela:hasStartTime rdf:resource="#1600MyA" />
-     <trela:temporalPartOf rdf:resource="#Mesoproterozo" />
+  <gtime:Period rdf:about="#calymmian">
+     <trela:hasEndTime rdf:resource="#1400mya" />
+     <trela:hasStartTime rdf:resource="#1600mya" />
+     <trela:temporalPartOf rdf:resource="#mesoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Statherian">
-     <trela:hasEndTime rdf:resource="#1600MyA" />
-     <trela:hasStartTime rdf:resource="#1800MyA" />
-     <trela:temporalPartOf rdf:resource="#Paleoproterozo" />
+  <gtime:Period rdf:about="#statherian">
+     <trela:hasEndTime rdf:resource="#1600mya" />
+     <trela:hasStartTime rdf:resource="#1800mya" />
+     <trela:temporalPartOf rdf:resource="#paleoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Orosirian">
-     <trela:hasEndTime rdf:resource="#1800MyA" />
-     <trela:hasStartTime rdf:resource="#2050MyA" />
-     <trela:temporalPartOf rdf:resource="#Paleoproterozo" />
+  <gtime:Period rdf:about="#orosirian">
+     <trela:hasEndTime rdf:resource="#1800mya" />
+     <trela:hasStartTime rdf:resource="#2050mya" />
+     <trela:temporalPartOf rdf:resource="#paleoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Rhyacian">
-     <trela:hasEndTime rdf:resource="#2050MyA" />
-     <trela:hasStartTime rdf:resource="#2300MyA" />
-     <trela:temporalPartOf rdf:resource="#Paleoproterozo" />
+  <gtime:Period rdf:about="#rhyacian">
+     <trela:hasEndTime rdf:resource="#2050mya" />
+     <trela:hasStartTime rdf:resource="#2300mya" />
+     <trela:temporalPartOf rdf:resource="#paleoproterozo" />
   </gtime:Period>
-  <gtime:Period rdf:about="#Siderian">
-     <trela:hasEndTime rdf:resource="#2300MyA" />
-     <trela:hasStartTime rdf:resource="#2500MyA" />
-     <trela:temporalPartOf rdf:resource="#Paleoproterozo" />
+  <gtime:Period rdf:about="#siderian">
+     <trela:hasEndTime rdf:resource="#2300mya" />
+     <trela:hasStartTime rdf:resource="#2500mya" />
+     <trela:temporalPartOf rdf:resource="#paleoproterozo" />
   </gtime:Period>
 
 <!-- Epochs -->
 
-  <gtime:Epoch rdf:about="#Holocen">
-     <trela:hasEndTime rdf:resource="#0MyA" />
+  <gtime:Epoch rdf:about="#holocen">
+     <trela:hasEndTime rdf:resource="#0mya" />
      <trela:hasStartTime rdf:resource="#0.0117MYA" />
-     <trela:temporalPartOf rdf:resource="#Quaternari" />
+     <trela:temporalPartOf rdf:resource="#quaternari" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Pleistocen">
+  <gtime:Epoch rdf:about="#pleistocen">
      <trela:hasEndTime rdf:resource="#0.0117MYA" />
      <trela:hasStartTime rdf:resource="#2.588MYA" />
-     <trela:temporalPartOf rdf:resource="#Quaternari" />
+     <trela:temporalPartOf rdf:resource="#quaternari" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Pliocen">
+  <gtime:Epoch rdf:about="#pliocen">
      <trela:hasEndTime rdf:resource="#2.588MYA" />
      <trela:hasStartTime rdf:resource="#5.332MYA" />
-     <trela:temporalPartOf rdf:resource="#Neogen" />
+     <trela:temporalPartOf rdf:resource="#neogen" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Miocen">
+  <gtime:Epoch rdf:about="#miocen">
      <trela:hasEndTime rdf:resource="#5.332MYA" />
      <trela:hasStartTime rdf:resource="#23.03MYA" />
-     <trela:temporalPartOf rdf:resource="#Neogen" />
+     <trela:temporalPartOf rdf:resource="#neogen" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Oligocen">
+  <gtime:Epoch rdf:about="#oligocen">
      <trela:hasEndTime rdf:resource="#23.03MYA" />
      <trela:hasStartTime rdf:resource="#33.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleogen" />
+     <trela:temporalPartOf rdf:resource="#paleogen" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Eocen">
+  <gtime:Epoch rdf:about="#eocen">
      <trela:hasEndTime rdf:resource="#33.9MYA" />
      <trela:hasStartTime rdf:resource="#55.8MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleogen" />
+     <trela:temporalPartOf rdf:resource="#paleogen" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Paleocen">
+  <gtime:Epoch rdf:about="#paleocen">
      <trela:hasEndTime rdf:resource="#55.8MYA" />
      <trela:hasStartTime rdf:resource="#65.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleogen" />
+     <trela:temporalPartOf rdf:resource="#paleogen" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperCretac">
+  <gtime:Epoch rdf:about="#uppercretac">
      <trela:hasEndTime rdf:resource="#65.5MYA" />
      <trela:hasStartTime rdf:resource="#99.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Cretac" />
+     <trela:temporalPartOf rdf:resource="#cretac" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerCretac">
+  <gtime:Epoch rdf:about="#lowercretac">
      <trela:hasEndTime rdf:resource="#99.6MYA" />
      <trela:hasStartTime rdf:resource="#145.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Cretac" />
+     <trela:temporalPartOf rdf:resource="#cretac" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperJurass">
+  <gtime:Epoch rdf:about="#upperjurass">
      <trela:hasEndTime rdf:resource="#145.5MYA" />
      <trela:hasStartTime rdf:resource="#161.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Jurass" />
+     <trela:temporalPartOf rdf:resource="#jurass" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddleJurass">
+  <gtime:Epoch rdf:about="#middlejurass">
      <trela:hasEndTime rdf:resource="#161.2MYA" />
      <trela:hasStartTime rdf:resource="#175.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Jurass" />
+     <trela:temporalPartOf rdf:resource="#jurass" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerJurass">
+  <gtime:Epoch rdf:about="#lowerjurass">
      <trela:hasEndTime rdf:resource="#175.6MYA" />
      <trela:hasStartTime rdf:resource="#199.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Jurass" />
+     <trela:temporalPartOf rdf:resource="#jurass" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperTriass">
+  <gtime:Epoch rdf:about="#uppertriass">
      <trela:hasEndTime rdf:resource="#199.6MYA" />
      <trela:hasStartTime rdf:resource="#228.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Triassic" />
+     <trela:temporalPartOf rdf:resource="#triassic" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddleTriass">
+  <gtime:Epoch rdf:about="#middletriass">
      <trela:hasEndTime rdf:resource="#228.7MYA" />
      <trela:hasStartTime rdf:resource="#245.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Triassic" />
+     <trela:temporalPartOf rdf:resource="#triassic" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerTriass">
+  <gtime:Epoch rdf:about="#lowertriass">
      <trela:hasEndTime rdf:resource="#245.9MYA" />
      <trela:hasStartTime rdf:resource="#251.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Triassic" />
+     <trela:temporalPartOf rdf:resource="#triassic" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Lopingian">
+  <gtime:Epoch rdf:about="#lopingian">
      <trela:hasEndTime rdf:resource="#251.0MYA" />
      <trela:hasStartTime rdf:resource="#260.4MYA" />
-     <trela:temporalPartOf rdf:resource="#Permian" />
+     <trela:temporalPartOf rdf:resource="#permian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Guadalupian">
+  <gtime:Epoch rdf:about="#guadalupian">
      <trela:hasEndTime rdf:resource="#260.4MYA" />
      <trela:hasStartTime rdf:resource="#270.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Permian" />
+     <trela:temporalPartOf rdf:resource="#permian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Cisuralian">
+  <gtime:Epoch rdf:about="#cisuralian">
      <trela:hasEndTime rdf:resource="#270.6MYA" />
      <trela:hasStartTime rdf:resource="#299.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Permian" />
+     <trela:temporalPartOf rdf:resource="#permian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperPennsylvanian">
+  <gtime:Epoch rdf:about="#upperpennsylvanian">
      <trela:hasEndTime rdf:resource="#299.0MYA" />
      <trela:hasStartTime rdf:resource="#307.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Pennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#pennsylvanian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddlePennsylvanian">
+  <gtime:Epoch rdf:about="#middlepennsylvanian">
      <trela:hasEndTime rdf:resource="#307.2MYA" />
      <trela:hasStartTime rdf:resource="#311.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Pennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#pennsylvanian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerPennsylvanian">
+  <gtime:Epoch rdf:about="#lowerpennsylvanian">
      <trela:hasEndTime rdf:resource="#311.7MYA" />
      <trela:hasStartTime rdf:resource="#318.1MYA" />
-     <trela:temporalPartOf rdf:resource="#Pennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#pennsylvanian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperMississippian">
+  <gtime:Epoch rdf:about="#uppermississippian">
      <trela:hasEndTime rdf:resource="#318.1MYA" />
      <trela:hasStartTime rdf:resource="#328.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Mississippian" />
+     <trela:temporalPartOf rdf:resource="#mississippian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddleMississippian">
+  <gtime:Epoch rdf:about="#middlemississippian">
      <trela:hasEndTime rdf:resource="#328.3MYA" />
      <trela:hasStartTime rdf:resource="#345.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Mississippian" />
+     <trela:temporalPartOf rdf:resource="#mississippian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerMississippian">
+  <gtime:Epoch rdf:about="#lowermississippian">
      <trela:hasEndTime rdf:resource="#345.3MYA" />
      <trela:hasStartTime rdf:resource="#359.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Mississippian" />
+     <trela:temporalPartOf rdf:resource="#mississippian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperDevonian">
+  <gtime:Epoch rdf:about="#upperdevonian">
      <trela:hasEndTime rdf:resource="#359.2MYA" />
      <trela:hasStartTime rdf:resource="#385.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Devonian" />
+     <trela:temporalPartOf rdf:resource="#devonian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddleDevonian">
+  <gtime:Epoch rdf:about="#middledevonian">
      <trela:hasEndTime rdf:resource="#385.3MYA" />
      <trela:hasStartTime rdf:resource="#397.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Devonian" />
+     <trela:temporalPartOf rdf:resource="#devonian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerDevonian">
+  <gtime:Epoch rdf:about="#lowerdevonian">
      <trela:hasEndTime rdf:resource="#397.5MYA" />
      <trela:hasStartTime rdf:resource="#416.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Devonian" />
+     <trela:temporalPartOf rdf:resource="#devonian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Pridoli">
+  <gtime:Epoch rdf:about="#pridoli">
      <trela:hasEndTime rdf:resource="#416.0MYA" />
      <trela:hasStartTime rdf:resource="#418.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Silurian" />
+     <trela:temporalPartOf rdf:resource="#silurian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Ludlow">
+  <gtime:Epoch rdf:about="#ludlow">
      <trela:hasEndTime rdf:resource="#418.7MYA" />
      <trela:hasStartTime rdf:resource="#422.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Silurian" />
+     <trela:temporalPartOf rdf:resource="#silurian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Wenlock">
+  <gtime:Epoch rdf:about="#wenlock">
      <trela:hasEndTime rdf:resource="#422.9MYA" />
      <trela:hasStartTime rdf:resource="#428.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Silurian" />
+     <trela:temporalPartOf rdf:resource="#silurian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Llandoveri">
+  <gtime:Epoch rdf:about="#llandoveri">
      <trela:hasEndTime rdf:resource="#428.2MYA" />
      <trela:hasStartTime rdf:resource="#443.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Silurian" />
+     <trela:temporalPartOf rdf:resource="#silurian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#UpperOrdovician">
+  <gtime:Epoch rdf:about="#upperordovician">
      <trela:hasEndTime rdf:resource="#443.7MYA" />
      <trela:hasStartTime rdf:resource="#460.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Ordovician" />
+     <trela:temporalPartOf rdf:resource="#ordovician" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#MiddleOrdovician">
+  <gtime:Epoch rdf:about="#middleordovician">
      <trela:hasEndTime rdf:resource="#460.9MYA" />
      <trela:hasStartTime rdf:resource="#471.8MYA" />
-     <trela:temporalPartOf rdf:resource="#Ordovician" />
+     <trela:temporalPartOf rdf:resource="#ordovician" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#LowerOrdovician">
+  <gtime:Epoch rdf:about="#lowerordovician">
      <trela:hasEndTime rdf:resource="#471.8MYA" />
      <trela:hasStartTime rdf:resource="#488.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Ordovician" />
+     <trela:temporalPartOf rdf:resource="#ordovician" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Furongian">
+  <gtime:Epoch rdf:about="#furongian">
      <trela:hasEndTime rdf:resource="#488.3MYA" />
-     <trela:hasStartTime rdf:resource="#499MyA" />
-     <trela:temporalPartOf rdf:resource="#Cambrian" />
+     <trela:hasStartTime rdf:resource="#499mya" />
+     <trela:temporalPartOf rdf:resource="#cambrian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#CambrianSeries3">
-     <trela:hasEndTime rdf:resource="#499MyA" />
-     <trela:hasStartTime rdf:resource="#510MyA" />
-     <trela:temporalPartOf rdf:resource="#Cambrian" />
+  <gtime:Epoch rdf:about="#cambrianseries3">
+     <trela:hasEndTime rdf:resource="#499mya" />
+     <trela:hasStartTime rdf:resource="#510mya" />
+     <trela:temporalPartOf rdf:resource="#cambrian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#CambrianSeries2">
-     <trela:hasEndTime rdf:resource="#510MyA" />
-     <trela:hasStartTime rdf:resource="#521MyA" />
-     <trela:temporalPartOf rdf:resource="#Cambrian" />
+  <gtime:Epoch rdf:about="#cambrianseries2">
+     <trela:hasEndTime rdf:resource="#510mya" />
+     <trela:hasStartTime rdf:resource="#521mya" />
+     <trela:temporalPartOf rdf:resource="#cambrian" />
   </gtime:Epoch>
-  <gtime:Epoch rdf:about="#Terreneuvian">
-     <trela:hasEndTime rdf:resource="#521MyA" />
-     <trela:hasStartTime rdf:resource="#542MyA" />
-     <trela:temporalPartOf rdf:resource="#Cambrian" />
+  <gtime:Epoch rdf:about="#terreneuvian">
+     <trela:hasEndTime rdf:resource="#521mya" />
+     <trela:hasStartTime rdf:resource="#542mya" />
+     <trela:temporalPartOf rdf:resource="#cambrian" />
   </gtime:Epoch>
 
 
 <!-- Ages -->
-  <gtime:Age rdf:about="#UpperPleistocen">
+  <gtime:Age rdf:about="#upperpleistocen">
      <trela:hasEndTime rdf:resource="#0.0117MYA" />
      <trela:hasStartTime rdf:resource="#0.126MYA" />
-     <trela:temporalPartOf rdf:resource="#Pleistocen" />
+     <trela:temporalPartOf rdf:resource="#pleistocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Ionian">
+  <gtime:Age rdf:about="#ionian">
      <trela:hasEndTime rdf:resource="#0.126MYA" />
      <trela:hasStartTime rdf:resource="#0.781MYA" />
-     <trela:temporalPartOf rdf:resource="#Pleistocen" />
+     <trela:temporalPartOf rdf:resource="#pleistocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Calabrian">
+  <gtime:Age rdf:about="#calabrian">
      <trela:hasEndTime rdf:resource="#0.781MYA" />
      <trela:hasStartTime rdf:resource="#1.806MYA" />
-     <trela:temporalPartOf rdf:resource="#Pleistocen" />
+     <trela:temporalPartOf rdf:resource="#pleistocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Gelasian">
+  <gtime:Age rdf:about="#gelasian">
      <trela:hasEndTime rdf:resource="#1.806MYA" />
      <trela:hasStartTime rdf:resource="#2.588MYA" />
-     <trela:temporalPartOf rdf:resource="#Pleistocen" />
+     <trela:temporalPartOf rdf:resource="#pleistocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Piacenzian">
+  <gtime:Age rdf:about="#piacenzian">
      <trela:hasEndTime rdf:resource="#2.588MYA" />
      <trela:hasStartTime rdf:resource="#3.600MYA" />
-     <trela:temporalPartOf rdf:resource="#Pliocen" />
+     <trela:temporalPartOf rdf:resource="#pliocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Zanclean">
+  <gtime:Age rdf:about="#zanclean">
      <trela:hasEndTime rdf:resource="#3.600MYA" />
      <trela:hasStartTime rdf:resource="#5.332MYA" />
-     <trela:temporalPartOf rdf:resource="#Pliocen" />
+     <trela:temporalPartOf rdf:resource="#pliocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Messinian">
+  <gtime:Age rdf:about="#messinian">
      <trela:hasEndTime rdf:resource="#5.332MYA" />
      <trela:hasStartTime rdf:resource="#7.246MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Tortonian">
+  <gtime:Age rdf:about="#tortonian">
      <trela:hasEndTime rdf:resource="#7.246MYA" />
      <trela:hasStartTime rdf:resource="#11.608MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Serravallian">
+  <gtime:Age rdf:about="#serravallian">
      <trela:hasEndTime rdf:resource="#11.608MYA" />
      <trela:hasStartTime rdf:resource="#13.82MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Langhian">
+  <gtime:Age rdf:about="#langhian">
      <trela:hasEndTime rdf:resource="#13.82MYA" />
      <trela:hasStartTime rdf:resource="#15.97MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Burdigalian">
+  <gtime:Age rdf:about="#burdigalian">
      <trela:hasEndTime rdf:resource="#15.97MYA" />
      <trela:hasStartTime rdf:resource="#20.43MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Aquitanian">
+  <gtime:Age rdf:about="#aquitanian">
      <trela:hasEndTime rdf:resource="#20.43MYA" />
      <trela:hasStartTime rdf:resource="#23.03MYA" />
-     <trela:temporalPartOf rdf:resource="#Miocen" />
+     <trela:temporalPartOf rdf:resource="#miocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Chattian">
+  <gtime:Age rdf:about="#chattian">
      <trela:hasEndTime rdf:resource="#23.03MYA" />
      <trela:hasStartTime rdf:resource="#28.4MYA" />
-     <trela:temporalPartOf rdf:resource="#Oligocen" />
+     <trela:temporalPartOf rdf:resource="#oligocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Rupelian">
+  <gtime:Age rdf:about="#rupelian">
      <trela:hasEndTime rdf:resource="#28.4MYA" />
      <trela:hasStartTime rdf:resource="#33.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Oligocen" />
+     <trela:temporalPartOf rdf:resource="#oligocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Priabonian">
+  <gtime:Age rdf:about="#priabonian">
      <trela:hasEndTime rdf:resource="#33.9MYA" />
      <trela:hasStartTime rdf:resource="#37.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Eocen" />
+     <trela:temporalPartOf rdf:resource="#eocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Bartonian">
+  <gtime:Age rdf:about="#bartonian">
      <trela:hasEndTime rdf:resource="#37.2MYA" />
      <trela:hasStartTime rdf:resource="#40.4MYA" />
-     <trela:temporalPartOf rdf:resource="#Eocen" />
+     <trela:temporalPartOf rdf:resource="#eocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Lutetian">
+  <gtime:Age rdf:about="#lutetian">
      <trela:hasEndTime rdf:resource="#40.4MYA" />
      <trela:hasStartTime rdf:resource="#48.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Eocen" />
+     <trela:temporalPartOf rdf:resource="#eocen" />
   </gtime:Age>
   <gtime:Age rdf:about="#ypresian">
      <trela:hasEndTime rdf:resource="#48.6MYA" />
      <trela:hasStartTime rdf:resource="#55.8MYA" />
-     <trela:temporalPartOf rdf:resource="#Eocen" />
+     <trela:temporalPartOf rdf:resource="#eocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Thanetian">
+  <gtime:Age rdf:about="#thanetian">
      <trela:hasEndTime rdf:resource="#55.8MYA" />
      <trela:hasStartTime rdf:resource="#58.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleocen" />
+     <trela:temporalPartOf rdf:resource="#paleocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Selandian">
+  <gtime:Age rdf:about="#selandian">
      <trela:hasEndTime rdf:resource="#58.7MYA" />
      <trela:hasStartTime rdf:resource="#61.1MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleocen" />
+     <trela:temporalPartOf rdf:resource="#paleocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Danian">
+  <gtime:Age rdf:about="#danian">
      <trela:hasEndTime rdf:resource="#61.1MYA" />
      <trela:hasStartTime rdf:resource="#65.5MYA" />
-     <trela:temporalPartOf rdf:resource="#Paleocen" />
+     <trela:temporalPartOf rdf:resource="#paleocen" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Maastrichtian">
+  <gtime:Age rdf:about="#maastrichtian">
      <trela:hasEndTime rdf:resource="#65.5MYA" />
      <trela:hasStartTime rdf:resource="#70.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Campanian">
+  <gtime:Age rdf:about="#campanian">
      <trela:hasEndTime rdf:resource="#70.6MYA" />
      <trela:hasStartTime rdf:resource="#83.5MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Santonian">
+  <gtime:Age rdf:about="#santonian">
      <trela:hasEndTime rdf:resource="#83.5MYA" />
      <trela:hasStartTime rdf:resource="#85.8MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Coniacian">
+  <gtime:Age rdf:about="#coniacian">
      <trela:hasEndTime rdf:resource="#85.8MYA" />
      <trela:hasStartTime rdf:resource="#88.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Turonian">
+  <gtime:Age rdf:about="#turonian">
      <trela:hasEndTime rdf:resource="#88.6MYA" />
      <trela:hasStartTime rdf:resource="#93.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Cenomanian">
+  <gtime:Age rdf:about="#cenomanian">
      <trela:hasEndTime rdf:resource="#93.6MYA" />
      <trela:hasStartTime rdf:resource="#99.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperCretac" />
+     <trela:temporalPartOf rdf:resource="#uppercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Albian">
+  <gtime:Age rdf:about="#albian">
      <trela:hasEndTime rdf:resource="#99.6MYA" />
      <trela:hasStartTime rdf:resource="#112.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Aptian">
+  <gtime:Age rdf:about="#aptian">
      <trela:hasEndTime rdf:resource="#112.0MYA" />
      <trela:hasStartTime rdf:resource="#125.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Barremian">
+  <gtime:Age rdf:about="#barremian">
      <trela:hasEndTime rdf:resource="#125.0MYA" />
      <trela:hasStartTime rdf:resource="#130.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Hauterivian">
+  <gtime:Age rdf:about="#hauterivian">
      <trela:hasEndTime rdf:resource="#130.0MYA" />
      <trela:hasStartTime rdf:resource="#133.9MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Valanginian">
+  <gtime:Age rdf:about="#valanginian">
      <trela:hasEndTime rdf:resource="#133.9MYA" />
      <trela:hasStartTime rdf:resource="#140.2MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Berriasian">
+  <gtime:Age rdf:about="#berriasian">
      <trela:hasEndTime rdf:resource="#140.2MYA" />
      <trela:hasStartTime rdf:resource="#145.5MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerCretac" />
+     <trela:temporalPartOf rdf:resource="#lowercretac" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Tithonian">
+  <gtime:Age rdf:about="#tithonian">
      <trela:hasEndTime rdf:resource="#145.5MYA" />
      <trela:hasStartTime rdf:resource="#150.8MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperJurass" />
+     <trela:temporalPartOf rdf:resource="#upperjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Kimmeridgian">
+  <gtime:Age rdf:about="#kimmeridgian">
      <trela:hasEndTime rdf:resource="#150.8MYA" />
      <trela:hasStartTime rdf:resource="#155.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperJurass" />
+     <trela:temporalPartOf rdf:resource="#upperjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Oxfordian">
+  <gtime:Age rdf:about="#oxfordian">
      <trela:hasEndTime rdf:resource="#155.6MYA" />
      <trela:hasStartTime rdf:resource="#161.2MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperJurass" />
+     <trela:temporalPartOf rdf:resource="#upperjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Callovian">
+  <gtime:Age rdf:about="#callovian">
      <trela:hasEndTime rdf:resource="#161.2MYA" />
      <trela:hasStartTime rdf:resource="#164.7MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleJurass" />
+     <trela:temporalPartOf rdf:resource="#middlejurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Bathonian">
+  <gtime:Age rdf:about="#bathonian">
      <trela:hasEndTime rdf:resource="#164.7MYA" />
      <trela:hasStartTime rdf:resource="#167.7MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleJurass" />
+     <trela:temporalPartOf rdf:resource="#middlejurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Bajocian">
+  <gtime:Age rdf:about="#bajocian">
      <trela:hasEndTime rdf:resource="#167.7MYA" />
      <trela:hasStartTime rdf:resource="#171.6MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleJurass" />
+     <trela:temporalPartOf rdf:resource="#middlejurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Aalenian">
+  <gtime:Age rdf:about="#aalenian">
      <trela:hasEndTime rdf:resource="#171.6MYA" />
      <trela:hasStartTime rdf:resource="#175.6MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleJurass" />
+     <trela:temporalPartOf rdf:resource="#middlejurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Toarcian">
+  <gtime:Age rdf:about="#toarcian">
      <trela:hasEndTime rdf:resource="#175.6MYA" />
      <trela:hasStartTime rdf:resource="#183.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerJurass" />
+     <trela:temporalPartOf rdf:resource="#lowerjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Pliensbachian">
+  <gtime:Age rdf:about="#pliensbachian">
      <trela:hasEndTime rdf:resource="#183.0MYA" />
      <trela:hasStartTime rdf:resource="#189.6MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerJurass" />
+     <trela:temporalPartOf rdf:resource="#lowerjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Sinemurian">
+  <gtime:Age rdf:about="#sinemurian">
      <trela:hasEndTime rdf:resource="#189.6MYA" />
      <trela:hasStartTime rdf:resource="#196.5MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerJurass" />
+     <trela:temporalPartOf rdf:resource="#lowerjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Hettangian">
+  <gtime:Age rdf:about="#hettangian">
      <trela:hasEndTime rdf:resource="#196.5MYA" />
      <trela:hasStartTime rdf:resource="#199.6MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerJurass" />
+     <trela:temporalPartOf rdf:resource="#lowerjurass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Rhaetian">
+  <gtime:Age rdf:about="#rhaetian">
      <trela:hasEndTime rdf:resource="#199.6MYA" />
      <trela:hasStartTime rdf:resource="#203.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperTriass" />
+     <trela:temporalPartOf rdf:resource="#uppertriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Norian">
+  <gtime:Age rdf:about="#norian">
      <trela:hasEndTime rdf:resource="#203.6MYA" />
      <trela:hasStartTime rdf:resource="#216.5MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperTriass" />
+     <trela:temporalPartOf rdf:resource="#uppertriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Carnian">
+  <gtime:Age rdf:about="#carnian">
      <trela:hasEndTime rdf:resource="#216.5MYA" />
      <trela:hasStartTime rdf:resource="#228.7MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperTriass" />
+     <trela:temporalPartOf rdf:resource="#uppertriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Ladinian">
+  <gtime:Age rdf:about="#ladinian">
      <trela:hasEndTime rdf:resource="#228.7MYA" />
      <trela:hasStartTime rdf:resource="#237.0MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleTriass" />
+     <trela:temporalPartOf rdf:resource="#middletriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Anisian">
+  <gtime:Age rdf:about="#anisian">
      <trela:hasEndTime rdf:resource="#237.0MYA" />
      <trela:hasStartTime rdf:resource="#245.9MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleTriass" />
+     <trela:temporalPartOf rdf:resource="#middletriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Olenekian">
+  <gtime:Age rdf:about="#olenekian">
      <trela:hasEndTime rdf:resource="#245.9MYA" />
      <trela:hasStartTime rdf:resource="#249.5MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerTriass" />
+     <trela:temporalPartOf rdf:resource="#lowertriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Induan">
+  <gtime:Age rdf:about="#induan">
      <trela:hasEndTime rdf:resource="#249.5MYA" />
      <trela:hasStartTime rdf:resource="#251.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerTriass" />
+     <trela:temporalPartOf rdf:resource="#lowertriass" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Changhsingian">
+  <gtime:Age rdf:about="#changhsingian">
      <trela:hasEndTime rdf:resource="#251.0MYA" />
      <trela:hasStartTime rdf:resource="#253.8MYA" />
-     <trela:temporalPartOf rdf:resource="#Lopingian" />
+     <trela:temporalPartOf rdf:resource="#lopingian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Wuchiapingian">
+  <gtime:Age rdf:about="#wuchiapingian">
      <trela:hasEndTime rdf:resource="#253.8MYA" />
      <trela:hasStartTime rdf:resource="#260.4MYA" />
-     <trela:temporalPartOf rdf:resource="#Lopingian" />
+     <trela:temporalPartOf rdf:resource="#lopingian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Capitanian">
+  <gtime:Age rdf:about="#capitanian">
      <trela:hasEndTime rdf:resource="#260.4MYA" />
      <trela:hasStartTime rdf:resource="#265.8MYA" />
-     <trela:temporalPartOf rdf:resource="#Guadalupian" />
+     <trela:temporalPartOf rdf:resource="#guadalupian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Wordian">
+  <gtime:Age rdf:about="#wordian">
      <trela:hasEndTime rdf:resource="#265.8MYA" />
      <trela:hasStartTime rdf:resource="#268.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Guadalupian" />
+     <trela:temporalPartOf rdf:resource="#guadalupian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Roadian">
+  <gtime:Age rdf:about="#roadian">
      <trela:hasEndTime rdf:resource="#268.0MYA" />
      <trela:hasStartTime rdf:resource="#270.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Guadalupian" />
+     <trela:temporalPartOf rdf:resource="#guadalupian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Kungurian">
+  <gtime:Age rdf:about="#kungurian">
      <trela:hasEndTime rdf:resource="#270.6MYA" />
      <trela:hasStartTime rdf:resource="#275.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Cisuralian" />
+     <trela:temporalPartOf rdf:resource="#cisuralian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Artinskian">
+  <gtime:Age rdf:about="#artinskian">
      <trela:hasEndTime rdf:resource="#275.6MYA" />
      <trela:hasStartTime rdf:resource="#284.4MYA" />
-     <trela:temporalPartOf rdf:resource="#Cisuralian" />
+     <trela:temporalPartOf rdf:resource="#cisuralian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Artinskian">
+  <gtime:Age rdf:about="#artinskian">
      <trela:hasEndTime rdf:resource="#284.4MYA" />
      <trela:hasStartTime rdf:resource="#294.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Cisuralian" />
+     <trela:temporalPartOf rdf:resource="#cisuralian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Sakmarian">
+  <gtime:Age rdf:about="#sakmarian">
      <trela:hasEndTime rdf:resource="#284.4MYA" />
      <trela:hasStartTime rdf:resource="#294.6MYA" />
-     <trela:temporalPartOf rdf:resource="#Cisuralian" />
+     <trela:temporalPartOf rdf:resource="#cisuralian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Asselian">
+  <gtime:Age rdf:about="#asselian">
      <trela:hasEndTime rdf:resource="#294.6MYA" />
      <trela:hasStartTime rdf:resource="#299.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Cisuralian" />
+     <trela:temporalPartOf rdf:resource="#cisuralian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Gzhelian">
+  <gtime:Age rdf:about="#gzhelian">
      <trela:hasEndTime rdf:resource="#299.0MYA" />
      <trela:hasStartTime rdf:resource="#303.4MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperPennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#upperpennsylvanian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Kasimovian">
+  <gtime:Age rdf:about="#kasimovian">
      <trela:hasEndTime rdf:resource="#303.4MYA" />
      <trela:hasStartTime rdf:resource="#307.2MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperPennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#upperpennsylvanian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Moscovian">
+  <gtime:Age rdf:about="#moscovian">
      <trela:hasEndTime rdf:resource="#307.2MYA" />
      <trela:hasStartTime rdf:resource="#311.7MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddlePennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#middlepennsylvanian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Bashkirian">
+  <gtime:Age rdf:about="#bashkirian">
      <trela:hasEndTime rdf:resource="#311.7MYA" />
      <trela:hasStartTime rdf:resource="#318.1MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerPennsylvanian" />
+     <trela:temporalPartOf rdf:resource="#lowerpennsylvanian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Serpukhovian">
+  <gtime:Age rdf:about="#serpukhovian">
      <trela:hasEndTime rdf:resource="#318.1MYA" />
      <trela:hasStartTime rdf:resource="#328.3MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperMississippian" />
+     <trela:temporalPartOf rdf:resource="#uppermississippian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Visean">
+  <gtime:Age rdf:about="#visean">
      <trela:hasEndTime rdf:resource="#328.3MYA" />
      <trela:hasStartTime rdf:resource="#345.3MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleMississippian" />
+     <trela:temporalPartOf rdf:resource="#middlemississippian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Tournaisian">
+  <gtime:Age rdf:about="#tournaisian">
      <trela:hasEndTime rdf:resource="#345.3MYA" />
      <trela:hasStartTime rdf:resource="#359.2MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerMississippian" />
+     <trela:temporalPartOf rdf:resource="#lowermississippian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Famennian">
+  <gtime:Age rdf:about="#famennian">
      <trela:hasEndTime rdf:resource="#359.2MYA" />
      <trela:hasStartTime rdf:resource="#374.5MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperDevonian" />
+     <trela:temporalPartOf rdf:resource="#upperdevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Frasnian">
+  <gtime:Age rdf:about="#frasnian">
      <trela:hasEndTime rdf:resource="#374.5MYA" />
      <trela:hasStartTime rdf:resource="#385.3MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperDevonian" />
+     <trela:temporalPartOf rdf:resource="#upperdevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Givetian">
+  <gtime:Age rdf:about="#givetian">
      <trela:hasEndTime rdf:resource="#385.3MYA" />
      <trela:hasStartTime rdf:resource="#391.8MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleDevonian" />
+     <trela:temporalPartOf rdf:resource="#middledevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Eifelian">
+  <gtime:Age rdf:about="#eifelian">
      <trela:hasEndTime rdf:resource="#391.8MYA" />
      <trela:hasStartTime rdf:resource="#397.5MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleDevonian" />
+     <trela:temporalPartOf rdf:resource="#middledevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Emsian">
+  <gtime:Age rdf:about="#emsian">
      <trela:hasEndTime rdf:resource="#397.5MYA" />
      <trela:hasStartTime rdf:resource="#407.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerDevonian" />
+     <trela:temporalPartOf rdf:resource="#lowerdevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Pragian">
+  <gtime:Age rdf:about="#pragian">
      <trela:hasEndTime rdf:resource="#407.0MYA" />
      <trela:hasStartTime rdf:resource="#411.2MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerDevonian" />
+     <trela:temporalPartOf rdf:resource="#lowerdevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Lochkovian">
+  <gtime:Age rdf:about="#lochkovian">
      <trela:hasEndTime rdf:resource="#411.2MYA" />
      <trela:hasStartTime rdf:resource="#416.0MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerDevonian" />
+     <trela:temporalPartOf rdf:resource="#lowerdevonian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Ludfordian">
+  <gtime:Age rdf:about="#ludfordian">
      <trela:hasEndTime rdf:resource="#418.7MYA" />
      <trela:hasStartTime rdf:resource="#421.3MYA" />
-     <trela:temporalPartOf rdf:resource="#Ludlow" />
+     <trela:temporalPartOf rdf:resource="#ludlow" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Gorstian">
+  <gtime:Age rdf:about="#gorstian">
      <trela:hasEndTime rdf:resource="#421.3MYA" />
      <trela:hasStartTime rdf:resource="#422.9MYA" />
-     <trela:temporalPartOf rdf:resource="#Ludlow" />
+     <trela:temporalPartOf rdf:resource="#ludlow" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Homerian">
+  <gtime:Age rdf:about="#homerian">
      <trela:hasEndTime rdf:resource="#422.9MYA" />
      <trela:hasStartTime rdf:resource="#426.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Wenlock" />
+     <trela:temporalPartOf rdf:resource="#wenlock" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Sheinwoodian">
+  <gtime:Age rdf:about="#sheinwoodian">
      <trela:hasEndTime rdf:resource="#426.2MYA" />
      <trela:hasStartTime rdf:resource="#428.2MYA" />
-     <trela:temporalPartOf rdf:resource="#Wenlock" />
+     <trela:temporalPartOf rdf:resource="#wenlock" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Telychian">
+  <gtime:Age rdf:about="#telychian">
      <trela:hasEndTime rdf:resource="#428.2MYA" />
      <trela:hasStartTime rdf:resource="#436.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Llandoveri" />
+     <trela:temporalPartOf rdf:resource="#llandoveri" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Aeronhian">
+  <gtime:Age rdf:about="#aeronhian">
      <trela:hasEndTime rdf:resource="#436.0MYA" />
      <trela:hasStartTime rdf:resource="#439.0MYA" />
-     <trela:temporalPartOf rdf:resource="#Llandoveri" />
+     <trela:temporalPartOf rdf:resource="#llandoveri" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Rhuddanian">
+  <gtime:Age rdf:about="#rhuddanian">
      <trela:hasEndTime rdf:resource="#439.0MYA" />
      <trela:hasStartTime rdf:resource="#443.7MYA" />
-     <trela:temporalPartOf rdf:resource="#Llandoveri" />
+     <trela:temporalPartOf rdf:resource="#llandoveri" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Himantian">
+  <gtime:Age rdf:about="#himantian">
      <trela:hasEndTime rdf:resource="#443.7MYA" />
      <trela:hasStartTime rdf:resource="#445.6MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperOrdovician" />
+     <trela:temporalPartOf rdf:resource="#upperordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Katian">
+  <gtime:Age rdf:about="#katian">
      <trela:hasEndTime rdf:resource="#445.6MYA" />
      <trela:hasStartTime rdf:resource="#455.8MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperOrdovician" />
+     <trela:temporalPartOf rdf:resource="#upperordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Sandbian">
+  <gtime:Age rdf:about="#sandbian">
      <trela:hasEndTime rdf:resource="#455.8MYA" />
      <trela:hasStartTime rdf:resource="#460.9MYA" />
-     <trela:temporalPartOf rdf:resource="#UpperOrdovician" />
+     <trela:temporalPartOf rdf:resource="#upperordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Darriwilian">
+  <gtime:Age rdf:about="#darriwilian">
      <trela:hasEndTime rdf:resource="#460.9MYA" />
      <trela:hasStartTime rdf:resource="#468.1MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleOrdovician" />
+     <trela:temporalPartOf rdf:resource="#middleordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Dapingian">
+  <gtime:Age rdf:about="#dapingian">
      <trela:hasEndTime rdf:resource="#468.1MYA" />
      <trela:hasStartTime rdf:resource="#471.8MYA" />
-     <trela:temporalPartOf rdf:resource="#MiddleOrdovician" />
+     <trela:temporalPartOf rdf:resource="#middleordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Floian">
+  <gtime:Age rdf:about="#floian">
      <trela:hasEndTime rdf:resource="#471.8MYA" />
      <trela:hasStartTime rdf:resource="#478.6MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerOrdovician" />
+     <trela:temporalPartOf rdf:resource="#lowerordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Tremadocian">
+  <gtime:Age rdf:about="#tremadocian">
      <trela:hasEndTime rdf:resource="#478.6MYA" />
      <trela:hasStartTime rdf:resource="#488.3MYA" />
-     <trela:temporalPartOf rdf:resource="#LowerOrdovician" />
+     <trela:temporalPartOf rdf:resource="#lowerordovician" />
   </gtime:Age>
-  <gtime:Age rdf:about="#FurongianStage10">
+  <gtime:Age rdf:about="#furongianstage10">
      <trela:hasEndTime rdf:resource="#488.3MYA" />
-     <trela:hasStartTime rdf:resource="#492MyA" />
-     <trela:temporalPartOf rdf:resource="#Furongian" />
+     <trela:hasStartTime rdf:resource="#492mya" />
+     <trela:temporalPartOf rdf:resource="#furongian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#FurongianStage9">
-     <trela:hasEndTime rdf:resource="#492MyA" />
-     <trela:hasStartTime rdf:resource="#496MyA" />
-     <trela:temporalPartOf rdf:resource="#Furongian" />
+  <gtime:Age rdf:about="#furongianstage9">
+     <trela:hasEndTime rdf:resource="#492mya" />
+     <trela:hasStartTime rdf:resource="#496mya" />
+     <trela:temporalPartOf rdf:resource="#furongian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Paibian">
-     <trela:hasEndTime rdf:resource="#496MyA" />
-     <trela:hasStartTime rdf:resource="#499MyA" />
-     <trela:temporalPartOf rdf:resource="#Furongian" />
+  <gtime:Age rdf:about="#paibian">
+     <trela:hasEndTime rdf:resource="#496mya" />
+     <trela:hasStartTime rdf:resource="#499mya" />
+     <trela:temporalPartOf rdf:resource="#furongian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Guzhangian">
-     <trela:hasEndTime rdf:resource="#499MyA" />
-     <trela:hasStartTime rdf:resource="#503MyA" />
-     <trela:temporalPartOf rdf:resource="#CambrianSeries3" />
+  <gtime:Age rdf:about="#guzhangian">
+     <trela:hasEndTime rdf:resource="#499mya" />
+     <trela:hasStartTime rdf:resource="#503mya" />
+     <trela:temporalPartOf rdf:resource="#cambrianseries3" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Drumian">
-     <trela:hasEndTime rdf:resource="#503MyA" />
+  <gtime:Age rdf:about="#drumian">
+     <trela:hasEndTime rdf:resource="#503mya" />
      <trela:hasStartTime rdf:resource="#506.5MYA" />
-     <trela:temporalPartOf rdf:resource="#CambrianSeries3" />
+     <trela:temporalPartOf rdf:resource="#cambrianseries3" />
   </gtime:Age>
-  <gtime:Age rdf:about="#CambrianStage5">
+  <gtime:Age rdf:about="#cambrianstage5">
      <trela:hasEndTime rdf:resource="#506.5MYA" />
-     <trela:hasStartTime rdf:resource="#510MyA" />
-     <trela:temporalPartOf rdf:resource="#CambrianSeries3" />
+     <trela:hasStartTime rdf:resource="#510mya" />
+     <trela:temporalPartOf rdf:resource="#cambrianseries3" />
   </gtime:Age>
-  <gtime:Age rdf:about="#CambrianStage4">
-     <trela:hasEndTime rdf:resource="#510MyA" />
-     <trela:hasStartTime rdf:resource="#515MyA" />
-     <trela:temporalPartOf rdf:resource="#CambrianSeries2" />
+  <gtime:Age rdf:about="#cambrianstage4">
+     <trela:hasEndTime rdf:resource="#510mya" />
+     <trela:hasStartTime rdf:resource="#515mya" />
+     <trela:temporalPartOf rdf:resource="#cambrianseries2" />
   </gtime:Age>
-  <gtime:Age rdf:about="#CambrianStage3">
-     <trela:hasEndTime rdf:resource="#515MyA" />
-     <trela:hasStartTime rdf:resource="#521MyA" />
-     <trela:temporalPartOf rdf:resource="#CambrianSeries2" />
+  <gtime:Age rdf:about="#cambrianstage3">
+     <trela:hasEndTime rdf:resource="#515mya" />
+     <trela:hasStartTime rdf:resource="#521mya" />
+     <trela:temporalPartOf rdf:resource="#cambrianseries2" />
   </gtime:Age>
-  <gtime:Age rdf:about="#CambrianStage2">
-     <trela:hasEndTime rdf:resource="#521MyA" />
-     <trela:hasStartTime rdf:resource="#528MyA" />
-     <trela:temporalPartOf rdf:resource="#Terreneuvian" />
+  <gtime:Age rdf:about="#cambrianstage2">
+     <trela:hasEndTime rdf:resource="#521mya" />
+     <trela:hasStartTime rdf:resource="#528mya" />
+     <trela:temporalPartOf rdf:resource="#terreneuvian" />
   </gtime:Age>
-  <gtime:Age rdf:about="#Fortunian">
-     <trela:hasEndTime rdf:resource="#528MyA" />
-     <trela:hasStartTime rdf:resource="#542MyA" />
-     <trela:temporalPartOf rdf:resource="#Terreneuvian" />
+  <gtime:Age rdf:about="#fortunian">
+     <trela:hasEndTime rdf:resource="#528mya" />
+     <trela:hasStartTime rdf:resource="#542mya" />
+     <trela:temporalPartOf rdf:resource="#terreneuvian" />
   </gtime:Age>
 
 <!-- Numerics -->
 
-  <owlt:Instant rdf:about="#0MyA">
+  <owlt:Instant rdf:about="#0mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">0</screla:hasNumericValue>
      <mrela:hasError rdf:datatype="&xsd;double">0</mrela:hasError>
   </owlt:Instant>
@@ -1295,80 +1295,80 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">488.3</screla:hasNumericValue>
      <mrela:hasError rdf:datatype="&xsd;double">1.7</mrela:hasError>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#492MyA">
+  <owlt:Instant rdf:about="#492mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">492</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#496MyA">
+  <owlt:Instant rdf:about="#496mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">496</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#499MyA">
+  <owlt:Instant rdf:about="#499mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">499</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#503MyA">
+  <owlt:Instant rdf:about="#503mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">503</screla:hasNumericValue>
   </owlt:Instant>
   <owlt:Instant rdf:about="#506.5MYA">
      <screla:hasNumericValue rdf:datatype="&xsd;double">506.5</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#510MyA">
+  <owlt:Instant rdf:about="#510mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">510</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#515MyA">
+  <owlt:Instant rdf:about="#515mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">515</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#521MyA">
+  <owlt:Instant rdf:about="#521mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">521</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#528MyA">
+  <owlt:Instant rdf:about="#528mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">528</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#542MyA">
+  <owlt:Instant rdf:about="#542mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">542</screla:hasNumericValue>
      <mrela:hasError rdf:datatype="&xsd;double">1.0</mrela:hasError>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#635MyA">
+  <owlt:Instant rdf:about="#635mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">635</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#850MyA">
+  <owlt:Instant rdf:about="#850mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">850</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#1000MyA">
+  <owlt:Instant rdf:about="#1000mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">1000</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#1200MyA">
+  <owlt:Instant rdf:about="#1200mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">1200</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#1400MyA">
+  <owlt:Instant rdf:about="#1400mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">1400</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#1600MyA">
+  <owlt:Instant rdf:about="#1600mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">1600</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#1800MyA">
+  <owlt:Instant rdf:about="#1800mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">1800</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#2050MyA">
+  <owlt:Instant rdf:about="#2050mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">2050</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#2300MyA">
+  <owlt:Instant rdf:about="#2300mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">2300</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#2500MyA">
+  <owlt:Instant rdf:about="#2500mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">2500</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#2800MyA">
+  <owlt:Instant rdf:about="#2800mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">2800</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#3200MyA">
+  <owlt:Instant rdf:about="#3200mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">3200</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#3600MyA">
+  <owlt:Instant rdf:about="#3600mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">3600</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#4000MyA">
+  <owlt:Instant rdf:about="#4000mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">4000</screla:hasNumericValue>
   </owlt:Instant>
-  <owlt:Instant rdf:about="#4600MyA">
+  <owlt:Instant rdf:about="#4600mya">
      <screla:hasNumericValue rdf:datatype="&xsd;double">4600</screla:hasNumericValue>
   </owlt:Instant>
 

@@ -42,60 +42,60 @@
      <owl:imports rdf:resource="&char;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ElectricDipol">
-    <rdfs:subClassOf rdf:resource="&obj3d;#Dipol"/>
-    <rdfs:subClassOf rdf:resource="#ElectricField"/>
+  <owl:Class rdf:about="#electricdipol">
+    <rdfs:subClassOf rdf:resource="&obj3d;#dipol"/>
+    <rdfs:subClassOf rdf:resource="#electricfield"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagneticDipol">
-    <rdfs:subClassOf rdf:resource="&obj3d;#Dipol"/>
-    <rdfs:subClassOf rdf:resource="#MagneticField"/>
+  <owl:Class rdf:about="#magneticdipol">
+    <rdfs:subClassOf rdf:resource="&obj3d;#dipol"/>
+    <rdfs:subClassOf rdf:resource="#magneticfield"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeomagneticField">
-    <rdfs:subClassOf rdf:resource="#MagneticField"/>
+  <owl:Class rdf:about="#geomagneticfield">
+    <rdfs:subClassOf rdf:resource="#magneticfield"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CurrentSheet">
-    <rdfs:subClassOf rdf:resource="#ElectricField"/>
+  <owl:Class rdf:about="#currentsheet">
+    <rdfs:subClassOf rdf:resource="#electricfield"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagneticField">
-    <rdfs:subClassOf rdf:resource="&func;#VectorField"/>
+  <owl:Class rdf:about="#magneticfield">
+    <rdfs:subClassOf rdf:resource="&func;#vectorfield"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialDistribut" />
-        <owl:someValuesFrom rdf:resource="&char;#MagneticMo"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialdistribut" />
+        <owl:someValuesFrom rdf:resource="&char;#magneticmo"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElectricField">
-    <rdfs:subClassOf rdf:resource="&func;#VectorField"/>
+  <owl:Class rdf:about="#electricfield">
+    <rdfs:subClassOf rdf:resource="&func;#vectorfield"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialDistribut" />
-        <owl:someValuesFrom rdf:resource="&char;#Charg" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialdistribut" />
+        <owl:someValuesFrom rdf:resource="&char;#charg" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagneticFieldPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena" />
+  <owl:Class rdf:about="#magneticfieldphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasField" />
-        <owl:allValuesFrom rdf:resource="#MagneticField" />
+        <owl:onProperty rdf:resource="&mrela;#hasfield" />
+        <owl:allValuesFrom rdf:resource="#magneticfield" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagneticMirror">
-    <rdfs:subClassOf rdf:resource="#MagneticFieldPhenomena" />
+  <owl:Class rdf:about="#magneticmirror">
+    <rdfs:subClassOf rdf:resource="#magneticfieldphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Gyroreson">
-    <rdfs:subClassOf rdf:resource="#MagneticFieldPhenomena" />
+  <owl:Class rdf:about="#gyroreson">
+    <rdfs:subClassOf rdf:resource="#magneticfieldphenomena" />
   </owl:Class>
 
 </rdf:RDF>

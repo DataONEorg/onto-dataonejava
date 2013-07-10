@@ -58,7 +58,7 @@
      <owl:imports rdf:resource="&root;realmClimateZone.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Time">
+  <owl:Class rdf:about="#time">
     <rdfs:subClassOf rdf:resource="&quan;PhysicalQuantity"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -69,78 +69,78 @@
     <rdfs:comment xml:lang="en">This is a reference to time as a dependent variable</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Age">
+  <owl:Class rdf:about="#age">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cycl">
+  <owl:Class rdf:about="#cycl">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Period"/>
+        <owl:allValuesFrom rdf:resource="#period"/>
         <owl:onProperty rdf:resource="&trela;hasTime"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Delay">
+  <owl:Class rdf:about="#delay">
     <rdfs:subClassOf rdf:resource="&owlt;Interval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Latenc">
-    <rdfs:subClassOf rdf:resource="#Delay"/>
+  <owl:Class rdf:about="#latenc">
+    <rdfs:subClassOf rdf:resource="#delay"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Period">
+  <owl:Class rdf:about="#period">
     <rdfs:subClassOf rdf:resource="&owlt;ProperInterval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ResidenceTim">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#residencetim">
+    <rdfs:subClassOf rdf:resource="#durat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DoublingTim">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#doublingtim">
+    <rdfs:subClassOf rdf:resource="#durat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EFoldingTim">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#efoldingtim">
+    <rdfs:subClassOf rdf:resource="#durat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Timestamp">
+  <owl:Class rdf:about="#timestamp">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Durat">
-    <rdfs:subClassOf rdf:resource="#TemporalRang"/>
+  <owl:Class rdf:about="#durat">
+    <rdfs:subClassOf rdf:resource="#temporalrang"/>
     <rdfs:subClassOf rdf:resource="&math;Interval"/>
-    <owl:equivalentClass rdf:resource="#DurationDescript"/>
-    <owl:equivalentClass rdf:resource="#TimeInterv"/>
+    <owl:equivalentClass rdf:resource="#durationdescript"/>
+    <owl:equivalentClass rdf:resource="#timeinterv"/>
   </owl:Class>
-  <owl:Class rdf:about="#DurationDescript"/>
-  <owl:Class rdf:about="#TimeInterv"/>
+  <owl:Class rdf:about="#durationdescript"/>
+  <owl:Class rdf:about="#timeinterv"/>
 
-  <owl:Class rdf:about="#TemporalRang">
+  <owl:Class rdf:about="#temporalrang">
     <rdfs:subClassOf rdf:resource="&quan;IntervalQuantity"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;rangeOf"/>
-        <owl:allValuesFrom rdf:resource="#Time"/>
+        <owl:allValuesFrom rdf:resource="#time"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#TimeRang"/>
+    <owl:equivalentClass rdf:resource="#timerang"/>
   </owl:Class>
-  <owl:Class rdf:about="#TimeRang"/>
+  <owl:Class rdf:about="#timerang"/>
 
-  <owl:Class rdf:about="#TemporalExt">
+  <owl:Class rdf:about="#temporalext">
     <rdfs:subClassOf rdf:resource="&time;TemporalEntity"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TimePeriod">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#timeperiod">
+    <rdfs:subClassOf rdf:resource="#durat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Time"/>
+        <owl:allValuesFrom rdf:resource="#time"/>
         <owl:onProperty rdf:resource="&trela;hasStartTime"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -152,39 +152,39 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Repos">
+  <owl:Class rdf:about="#repo">
     <rdfs:subClassOf rdf:resource="&owlt;Interval"/>
     <rdfs:comment xml:lang="en">The interval of time between volcanic eruptions.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydroperiod">
-    <rdfs:subClassOf rdf:resource="#Period"/>
+  <owl:Class rdf:about="#hydroperiod">
+    <rdfs:subClassOf rdf:resource="#period"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Episod">
-    <rdfs:subClassOf rdf:resource="#Exposur"/>
-    <owl:equivalentClass rdf:resource="#Episod"/>
+  <owl:Class rdf:about="#episod">
+    <rdfs:subClassOf rdf:resource="#exposur"/>
+    <owl:equivalentClass rdf:resource="#episod"/>
   </owl:Class>
-  <owl:Class rdf:about="#Episod"/>
+  <owl:Class rdf:about="#episod"/>
 
-  <owl:Class rdf:about="#Exposur">
+  <owl:Class rdf:about="#exposur">
     <rdfs:subClassOf rdf:resource="&owlt;Interval"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CurrentTim">
+  <owl:Class rdf:about="#currenttim">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StartTim">
+  <owl:Class rdf:about="#starttim">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EndTime">
+  <owl:Class rdf:about="#endtime">
     <rdfs:subClassOf rdf:resource="&owlt;Instant"/>
   </owl:Class>
 
   <owl:Class rdf:ID="MonthRange">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+    <rdfs:subClassOf rdf:resource="#durat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&units;month"/>
@@ -193,12 +193,12 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TimeStep">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#timestep">
+    <rdfs:subClassOf rdf:resource="#durat"/>
   </owl:Class>
 
 <!-- Time references -->
-  <owl:Class rdf:about="#GeologicTim">
+  <owl:Class rdf:about="#geologictim">
     <rdfs:subClassOf rdf:resource="&time;TimeReference"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -211,21 +211,21 @@
 
   <owl:Class rdf:ID="AverageSnowCoverDuration">
     <rdfs:subClassOf rdf:resource="&func;AnnualAverage"/>
-    <rdfs:subClassOf rdf:resource="#SnowCoverDur"/>
+    <rdfs:subClassOf rdf:resource="#snowcoverdur"/>
   </owl:Class>
 
   <owl:Class rdf:ID="AverageWinterDuration">
     <rdfs:subClassOf rdf:resource="&func;AnnualAverage"/>
-    <rdfs:subClassOf rdf:resource="#WinterDur"/>
+    <rdfs:subClassOf rdf:resource="#winterdur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AverageITCZDominanceDur">
+  <owl:Class rdf:about="#averageitczdominancedur">
     <rdfs:subClassOf rdf:resource="&func;AnnualAverage"/>
-    <rdfs:subClassOf rdf:resource="#ITCZDominanceDur"/>
+    <rdfs:subClassOf rdf:resource="#itczdominancedur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SnowCoverDur">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#snowcoverdur">
+    <rdfs:subClassOf rdf:resource="#durat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasPhenomena"/>
@@ -234,8 +234,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WinterDur">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#winterdur">
+    <rdfs:subClassOf rdf:resource="#durat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&trela;hasTime"/>
@@ -244,8 +244,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ITCZDominanceDur">
-    <rdfs:subClassOf rdf:resource="#Durat"/>
+  <owl:Class rdf:about="#itczdominancedur">
+    <rdfs:subClassOf rdf:resource="#durat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasPhenomena"/>
@@ -256,10 +256,10 @@
 
 <!-- owl-time extensions -->
   <owl:Class rdf:about="&owlt;ProperInterval">
-    <rdfs:subClassOf rdf:resource="#TimeRang"/>
+    <rdfs:subClassOf rdf:resource="#timerang"/>
   </owl:Class>
   <owl:Class rdf:about="&owlt;Interval">
-    <rdfs:subClassOf rdf:resource="#TimeRang"/>
+    <rdfs:subClassOf rdf:resource="#timerang"/>
   </owl:Class>
 
 </rdf:RDF>

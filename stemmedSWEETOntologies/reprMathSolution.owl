@@ -30,123 +30,123 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Algorithm">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#algorithm">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AlgebraicSolut">
-    <rdfs:subClassOf rdf:resource="#AnalyticalSolut"/>
+  <owl:Class rdf:about="#algebraicsolut">
+    <rdfs:subClassOf rdf:resource="#analyticalsolut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AnalyticalSolut">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#analyticalsolut">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Approxim">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#approxim">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BreadthFirstSearch">
-    <rdfs:subClassOf rdf:resource="#Search"/>
+  <owl:Class rdf:about="#breadthfirstsearch">
+    <rdfs:subClassOf rdf:resource="#search"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DepthFirstSearch">
-    <rdfs:subClassOf rdf:resource="#Search"/>
+  <owl:Class rdf:about="#depthfirstsearch">
+    <rdfs:subClassOf rdf:resource="#search"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DivideAndConqu">
-    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  <owl:Class rdf:about="#divideandconqu">
+    <rdfs:subClassOf rdf:resource="#algorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DynamicProgram">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#dynamicprogram">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ExhaustiveSearch">
-    <rdfs:subClassOf rdf:resource="#Search"/>
+  <owl:Class rdf:about="#exhaustivesearch">
+    <rdfs:subClassOf rdf:resource="#search"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Expansion">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#expansion">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FlowChart">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#flowchart">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeneticAlgorithm">
-    <rdfs:subClassOf rdf:resource="#HeuristicAlgorithm"/>
+  <owl:Class rdf:about="#geneticalgorithm">
+    <rdfs:subClassOf rdf:resource="#heuristicalgorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HeuristicAlgorithm">
-    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  <owl:Class rdf:about="#heuristicalgorithm">
+    <rdfs:subClassOf rdf:resource="#algorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Iterat">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#iterat">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MapReduc">
-    <rdfs:subClassOf rdf:resource="#ParallelAlgorithm"/>
+  <owl:Class rdf:about="#mapreduc">
+    <rdfs:subClassOf rdf:resource="#parallelalgorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NewtonianRelax">
-    <rdfs:subClassOf rdf:resource="#NumericalSolut"/>
+  <owl:Class rdf:about="#newtonianrelax">
+    <rdfs:subClassOf rdf:resource="#numericalsolut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NumericalApproxim">
-    <rdfs:subClassOf rdf:resource="#Approxim"/>
+  <owl:Class rdf:about="#numericalapproxim">
+    <rdfs:subClassOf rdf:resource="#approxim"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NumericalSolut">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#numericalsolut">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parallel">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#parallel">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ParallelAlgorithm">
-    <rdfs:subClassOf rdf:resource="#Algorithm"/>
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#parallelalgorithm">
+    <rdfs:subClassOf rdf:resource="#algorithm"/>
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reduct">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
+  <owl:Class rdf:about="#reduct">
+    <rdfs:subClassOf rdf:resource="#solut"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Search">
-    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  <owl:Class rdf:about="#search">
+    <rdfs:subClassOf rdf:resource="#algorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SensitivityAnalysi">
-    <rdfs:subClassOf rdf:resource="&res;#Assessment"/>
+  <owl:Class rdf:about="#sensitivityanalysi">
+    <rdfs:subClassOf rdf:resource="&res;#assessment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeriesAlgorithm">
-    <rdfs:subClassOf rdf:resource="#Algorithm"/>
+  <owl:Class rdf:about="#seriesalgorithm">
+    <rdfs:subClassOf rdf:resource="#algorithm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Simul">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
-    <owl:equivalentClass rdf:resource="#Simul"/>
-    <owl:equivalentClass rdf:resource="#Emulat"/>
+  <owl:Class rdf:about="#simul">
+    <rdfs:subClassOf rdf:resource="#solut"/>
+    <owl:equivalentClass rdf:resource="#simul"/>
+    <owl:equivalentClass rdf:resource="#emulat"/>
   </owl:Class>
-  <owl:Class rdf:about="#Simul"/>
-  <owl:Class rdf:about="#Emulat"/>
+  <owl:Class rdf:about="#simul"/>
+  <owl:Class rdf:about="#emulat"/>
 
-  <owl:Class rdf:about="#Solut">
-    <rdfs:subClassOf rdf:resource="&math;#NumericalEnt"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#TaylorSeri">
-    <rdfs:subClassOf rdf:resource="#NumericalSolut"/>
-    <rdfs:subClassOf rdf:resource="#Expansion"/>
+  <owl:Class rdf:about="#solut">
+    <rdfs:subClassOf rdf:resource="&math;#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VisualSolut">
-    <rdfs:subClassOf rdf:resource="#Solut"/>
-    <rdfs:subClassOf rdf:resource="#Approxim"/>
+  <owl:Class rdf:about="#taylorseri">
+    <rdfs:subClassOf rdf:resource="#numericalsolut"/>
+    <rdfs:subClassOf rdf:resource="#expansion"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#visualsolut">
+    <rdfs:subClassOf rdf:resource="#solut"/>
+    <rdfs:subClassOf rdf:resource="#approxim"/>
   </owl:Class>
 
 

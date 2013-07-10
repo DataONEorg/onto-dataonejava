@@ -44,266 +44,266 @@
   </owl:Ontology>
 
 <!-- Transportation -->
-  <owl:Class rdf:about="#Aircraft">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#aircraft">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&realm;#Atmospher"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&realm;#atmospher"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>An aircraft is a vehicle which is able to fly through the air (or through any other atmosphere). All the human activity which surrounds aircraft is called aviation. (Most rocket vehicles are not aircraft because they are not supported by the surrounding air).</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Airplan">
-    <rdfs:subClassOf rdf:resource="#Aircraft" />
+  <owl:Class rdf:about="#airplan">
+    <rdfs:subClassOf rdf:resource="#aircraft" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Helicopt">
-    <rdfs:subClassOf rdf:resource="#Aircraft" />
+  <owl:Class rdf:about="#helicopt">
+    <rdfs:subClassOf rdf:resource="#aircraft" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Jet">
-    <rdfs:subClassOf rdf:resource="#Aircraft" />
+  <owl:Class rdf:about="#jet">
+    <rdfs:subClassOf rdf:resource="#aircraft" />
   </owl:Class>
 
-  <owl:Class rdf:about="#NavigationEquip">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#navigationequip">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Navig"/>
-        <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+        <owl:allValuesFrom rdf:resource="#navig"/>
+        <owl:onProperty rdf:resource="&hrela;#hashumanact"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Navig">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#navig">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TransportationEquip">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#transportationequip">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&tran;#Transport"/>
-        <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+        <owl:allValuesFrom rdf:resource="&tran;#transport"/>
+        <owl:onProperty rdf:resource="&hrela;#hashumanact"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rocket">
-    <rdfs:subClassOf rdf:resource="#Spacecraft"/>
+  <owl:Class rdf:about="#rocket">
+    <rdfs:subClassOf rdf:resource="#spacecraft"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Satellit">
-    <rdfs:subClassOf rdf:resource="#Spacecraft"/>
+  <owl:Class rdf:about="#satellit">
+    <rdfs:subClassOf rdf:resource="#spacecraft"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spacecraft">
-    <rdfs:subClassOf rdf:resource="#TransportationEquip"/>
+  <owl:Class rdf:about="#spacecraft">
+    <rdfs:subClassOf rdf:resource="#transportationequip"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&body;#OuterSpac"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&body;#outerspac"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceShuttl">
-    <rdfs:subClassOf rdf:resource="#Spacecraft"/>
+  <owl:Class rdf:about="#spaceshuttl">
+    <rdfs:subClassOf rdf:resource="#spacecraft"/>
   </owl:Class>
 
 <!-- Ground Travel -->
-  <owl:Class rdf:about="#Car">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#car">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rover">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#rover">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trailer">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#trailer">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Train">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#train">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Truck">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#truck">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EmergencyVehicl">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#emergencyvehicl">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vehicl">
-    <rdfs:subClassOf rdf:resource="#TransportationEquip"/>
+  <owl:Class rdf:about="#vehicl">
+    <rdfs:subClassOf rdf:resource="#transportationequip"/>
   </owl:Class>
 
 <!-- Water Travel -->
-  <owl:Class rdf:about="#Ship">
-    <rdfs:subClassOf rdf:resource="#Vehicl"/>
+  <owl:Class rdf:about="#ship">
+    <rdfs:subClassOf rdf:resource="#vehicl"/>
   </owl:Class>
 
 <!-- Underground -->
-  <owl:Class rdf:about="#Pipelin">
-    <rdfs:subClassOf rdf:resource="#TransportationEquip"/>
+  <owl:Class rdf:about="#pipelin">
+    <rdfs:subClassOf rdf:resource="#transportationequip"/>
   </owl:Class>
 
 <!-- Communications -->
-  <owl:Class rdf:about="#Antenna">
-    <rdfs:subClassOf rdf:resource="#CommunicationsEquip"/>
+  <owl:Class rdf:about="#antenna">
+    <rdfs:subClassOf rdf:resource="#communicationsequip"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Commun">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
-    <owl:equivalentClass rdf:resource="#Commun"/>
+  <owl:Class rdf:about="#commun">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
+    <owl:equivalentClass rdf:resource="#commun"/>
   </owl:Class>
-  <owl:Class rdf:about="#Commun"/>
+  <owl:Class rdf:about="#commun"/>
 
-  <owl:Class rdf:about="#CommunicationsEquip">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#communicationsequip">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Commun"/>
-        <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+        <owl:allValuesFrom rdf:resource="#commun"/>
+        <owl:onProperty rdf:resource="&hrela;#hashumanact"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CommunicationMethod">
-    <rdfs:subClassOf rdf:resource="#Commun"/>
+  <owl:Class rdf:about="#communicationmethod">
+    <rdfs:subClassOf rdf:resource="#commun"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Internet">
-    <rdfs:subClassOf rdf:resource="#CommunicationMethod"/>
+  <owl:Class rdf:about="#internet">
+    <rdfs:subClassOf rdf:resource="#communicationmethod"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandLin">
-    <rdfs:subClassOf rdf:resource="#Phone"/>
+  <owl:Class rdf:about="#landlin">
+    <rdfs:subClassOf rdf:resource="#phone"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Phone">
-    <rdfs:subClassOf rdf:resource="#CommunicationsEquip"/>
-    <rdfs:subClassOf rdf:resource="#CommunicationMethod"/>
+  <owl:Class rdf:about="#phone">
+    <rdfs:subClassOf rdf:resource="#communicationsequip"/>
+    <rdfs:subClassOf rdf:resource="#communicationmethod"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MobilePhon">
-    <rdfs:subClassOf rdf:resource="#Phone"/>
+  <owl:Class rdf:about="#mobilephon">
+    <rdfs:subClassOf rdf:resource="#phone"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Radio">
-    <rdfs:subClassOf rdf:resource="#CommunicationsEquip"/>
-    <rdfs:subClassOf rdf:resource="#CommunicationMethod"/>
+  <owl:Class rdf:about="#radio">
+    <rdfs:subClassOf rdf:resource="#communicationsequip"/>
+    <rdfs:subClassOf rdf:resource="#communicationmethod"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Receiv">
-    <rdfs:subClassOf rdf:resource="#Commun"/>
-    <owl:equivalentClass rdf:resource="#Recept"/>
+  <owl:Class rdf:about="#receiv">
+    <rdfs:subClassOf rdf:resource="#commun"/>
+    <owl:equivalentClass rdf:resource="#recept"/>
   </owl:Class>
-  <owl:Class rdf:about="#Recept"/>
+  <owl:Class rdf:about="#recept"/>
 
-  <owl:Class rdf:about="#Signal">
-    <rdfs:subClassOf rdf:resource="#Commun"/>
+  <owl:Class rdf:about="#signal">
+    <rdfs:subClassOf rdf:resource="#commun"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transmit">
-    <rdfs:subClassOf rdf:resource="#Commun"/>
-    <owl:equivalentClass rdf:resource="#Transmiss"/>
+  <owl:Class rdf:about="#transmit">
+    <rdfs:subClassOf rdf:resource="#commun"/>
+    <owl:equivalentClass rdf:resource="#transmiss"/>
   </owl:Class>
-  <owl:Class rdf:about="#Transmiss"/>
+  <owl:Class rdf:about="#transmiss"/>
 
-  <owl:Class rdf:about="#Transmitt">
-    <rdfs:subClassOf rdf:resource="#CommunicationsEquip"/>
+  <owl:Class rdf:about="#transmitt">
+    <rdfs:subClassOf rdf:resource="#communicationsequip"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Transmiss"/>
-        <owl:onProperty rdf:resource="&rela;#hasRol"/>
+        <owl:allValuesFrom rdf:resource="#transmiss"/>
+        <owl:onProperty rdf:resource="&rela;#hasrol"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Receiv">
-    <rdfs:subClassOf rdf:resource="#CommunicationsEquip"/>
+  <owl:Class rdf:about="#receiv">
+    <rdfs:subClassOf rdf:resource="#communicationsequip"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Recept"/>
-        <owl:onProperty rdf:resource="&rela;#hasRol"/>
+        <owl:allValuesFrom rdf:resource="#recept"/>
+        <owl:onProperty rdf:resource="&rela;#hasrol"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wireless">
-    <rdfs:subClassOf rdf:resource="#CommunicationMethod"/>
+  <owl:Class rdf:about="#wireless">
+    <rdfs:subClassOf rdf:resource="#communicationmethod"/>
   </owl:Class>
 
 <!-- Equipment-->
-  <owl:Class rdf:about="#MaterialTh">
-    <rdfs:subClassOf rdf:resource="&subs;#Substanc"/>
+  <owl:Class rdf:about="#materialth">
+    <rdfs:subClassOf rdf:resource="&subs;#substanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ComputerHardwar">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#computerhardwar">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Equipment">
-    <rdfs:subClassOf rdf:resource="#Infrastructur"/>
+  <owl:Class rdf:about="#equipment">
+    <rdfs:subClassOf rdf:resource="#infrastructur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sink">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#sink">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Infrastructur">
-    <rdfs:subClassOf rdf:resource="#MaterialTh"/>
+  <owl:Class rdf:about="#infrastructur">
+    <rdfs:subClassOf rdf:resource="#materialth"/>
   </owl:Class>
 
 <!-- Extraction Equipment -->
-  <owl:Class rdf:about="#ArtesianWel">
-    <rdfs:subClassOf rdf:resource="#ConfinedWel"/>
+  <owl:Class rdf:about="#artesianwel">
+    <rdfs:subClassOf rdf:resource="#confinedwel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Borehol">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#borehol">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
     <rdfs:comment>A borehole is the generalised term for any narrow shaft drilled in the ground, either vertically or horizontally. A borehole may be constructed for many different purposes including the extraction of water or fluid (such as oil) or gases (such as natural gas or methane), as part of a geotechnical investigation or environmental site assessment, for mineral exploration, or as a pilot hole for installing piers or underground utilities. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConfinedWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#confinedwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DisposalWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#disposalwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DrainageWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#drainagewel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#InjectionWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#injectionwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MonitoringWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#monitoringwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PumpingWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#pumpingwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RechargeWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#rechargewel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#UnconfinedWel">
-    <rdfs:subClassOf rdf:resource="#Well"/>
+  <owl:Class rdf:about="#unconfinedwel">
+    <rdfs:subClassOf rdf:resource="#well"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Well">
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  <owl:Class rdf:about="#well">
+    <rdfs:subClassOf rdf:resource="#equipment"/>
   <rdfs:comment xml:lang="en">A bored, drilled or driven shaft, or a dug hole, whose depth is greater than the largest surface dimension.  </rdfs:comment>
   </owl:Class>
 

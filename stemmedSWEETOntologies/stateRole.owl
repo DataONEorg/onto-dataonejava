@@ -38,114 +38,114 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <prop:Role rdf:about="#Accessori">
+  <prop:Role rdf:about="#accessori">
   </prop:Role>
 
-  <prop:Role rdf:about="#Adjust">
+  <prop:Role rdf:about="#adjust">
   </prop:Role>
 
-  <prop:Role rdf:about="#ByProduct">
+  <prop:Role rdf:about="#byproduct">
   </prop:Role>
 
-  <prop:Role rdf:about="#Conduit">
+  <prop:Role rdf:about="#conduit">
   </prop:Role>
 
-  <prop:Role rdf:about="#Desir">
+  <prop:Role rdf:about="#desir">
   </prop:Role>
 
-  <prop:Role rdf:about="#Domin">
-     <screla:greaterRoleThan rdf:resource="#Subordin"/>
+  <prop:Role rdf:about="#domin">
+     <screla:greaterRoleThan rdf:resource="#subordin"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Extraordinari">
+  <prop:Role rdf:about="#extraordinari">
   </prop:Role>
 
-  <prop:Role rdf:about="#Important">
+  <prop:Role rdf:about="#important">
   </prop:Role>
 
-  <prop:Role rdf:about="#Prevail">
+  <prop:Role rdf:about="#prevail">
   </prop:Role>
 
-  <prop:Role rdf:about="#Induce">
+  <prop:Role rdf:about="#induce">
   </prop:Role>
 
-  <prop:Role rdf:about="#Key">
-    <owl:sameAs rdf:resource="#Keyston"/>
+  <prop:Role rdf:about="#key">
+    <owl:sameAs rdf:resource="#keyston"/>
   </prop:Role>
-  <prop:Role rdf:about="#Keyston"/>
+  <prop:Role rdf:about="#keyston"/>
 
-  <prop:Role rdf:about="#Main">
-     <screla:greaterRoleThan rdf:resource="#Secondari"/>
-  </prop:Role>
-
-  <prop:Role rdf:about="#Major">
-     <screla:greaterRoleThan rdf:resource="#Minor"/>
+  <prop:Role rdf:about="#main">
+     <screla:greaterRoleThan rdf:resource="#secondari"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Minor">
+  <prop:Role rdf:about="#major">
+     <screla:greaterRoleThan rdf:resource="#minor"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Nich">
+  <prop:Role rdf:about="#minor">
   </prop:Role>
 
-  <prop:Role rdf:about="#Pioneer">
+  <prop:Role rdf:about="#nich">
   </prop:Role>
 
-  <prop:Role rdf:about="#Negat">
-    <owl:differentFrom rdf:resource="#Posit"/>
+  <prop:Role rdf:about="#pioneer">
   </prop:Role>
 
-  <prop:Role rdf:about="#Posit">
+  <prop:Role rdf:about="#negat">
+    <owl:differentFrom rdf:resource="#posit"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#PreExist">
+  <prop:Role rdf:about="#posit">
   </prop:Role>
 
-  <prop:Role rdf:about="#Primari">
-     <screla:greaterRoleThan rdf:resource="#Secondari"/>
+  <prop:Role rdf:about="#preexist">
   </prop:Role>
 
-  <prop:Role rdf:about="#Princip">
-     <screla:greaterRoleThan rdf:resource="#Secondari"/>
+  <prop:Role rdf:about="#primari">
+     <screla:greaterRoleThan rdf:resource="#secondari"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Secur">
+  <prop:Role rdf:about="#princip">
+     <screla:greaterRoleThan rdf:resource="#secondari"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Secondari">
-     <screla:greaterRoleThan rdf:resource="#Tertiari"/>
+  <prop:Role rdf:about="#secur">
   </prop:Role>
 
-  <prop:Role rdf:about="#Stressor">
+  <prop:Role rdf:about="#secondari">
+     <screla:greaterRoleThan rdf:resource="#tertiari"/>
   </prop:Role>
 
-  <prop:Role rdf:about="#Tertiari">
+  <prop:Role rdf:about="#stressor">
   </prop:Role>
 
-  <prop:Role rdf:about="#Subordin">
+  <prop:Role rdf:about="#tertiari">
   </prop:Role>
 
-  <prop:Role rdf:about="#Surplus">
+  <prop:Role rdf:about="#subordin">
   </prop:Role>
 
-  <prop:Role rdf:about="#Trace">
+  <prop:Role rdf:about="#surplus">
   </prop:Role>
 
-  <prop:Role rdf:about="#Undesir">
-    <owl:differentFrom rdf:resource="#Desir"/>
+  <prop:Role rdf:about="#trace">
   </prop:Role>
 
-  <prop:Role rdf:about="#Vulner">
-    <owl:differentFrom rdf:resource="#Secur"/>
+  <prop:Role rdf:about="#undesir">
+    <owl:differentFrom rdf:resource="#desir"/>
+  </prop:Role>
+
+  <prop:Role rdf:about="#vulner">
+    <owl:differentFrom rdf:resource="#secur"/>
   </prop:Role>
 
 <!-- Physical roles -->
-  <owl:Class rdf:about="#PhysicalRol">
+  <owl:Class rdf:about="#physicalrol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConductionRol">
-    <rdfs:subClassOf rdf:resource="#PhysicalRol"/>
+  <owl:Class rdf:about="#conductionrol">
+    <rdfs:subClassOf rdf:resource="#physicalrol"/>
     <rdfs:subClassOf rdf:resource="&ordi;OrdinalProperty"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -155,75 +155,75 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <role:ConductionRole rdf:about="#Conductor">
+  <role:ConductionRole rdf:about="#conductor">
   </role:ConductionRole>
 
-  <role:ConductionRole rdf:about="#Insulat">
+  <role:ConductionRole rdf:about="#insulat">
   </role:ConductionRole>
 
-  <role:PhysicalRole rdf:about="#Propel">
+  <role:PhysicalRole rdf:about="#propel">
   </role:PhysicalRole>
 
-  <role:PhysicalRole rdf:about="#Antifreez">
+  <role:PhysicalRole rdf:about="#antifreez">
   </role:PhysicalRole>
 
-  <role:PhysicalRole rdf:about="#Cryoprotect">
+  <role:PhysicalRole rdf:about="#cryoprotect">
   </role:PhysicalRole>
 
 <!-- other -->
-  <owl:Class rdf:about="#ProvenanceRol">
+  <owl:Class rdf:about="#provenancerol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
-  <role:ProvenanceRole rdf:about="#Accessor">
+  <role:ProvenanceRole rdf:about="#accessor">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Archivist">
+  <role:ProvenanceRole rdf:about="#archivist">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Author">
+  <role:ProvenanceRole rdf:about="#author">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#ChangeReason">
+  <role:ProvenanceRole rdf:about="#changereason">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Contributor">
+  <role:ProvenanceRole rdf:about="#contributor">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Creator">
+  <role:ProvenanceRole rdf:about="#creator">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Curat">
+  <role:ProvenanceRole rdf:about="#curat">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Deploy">
+  <role:ProvenanceRole rdf:about="#deploy">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Processor">
+  <role:ProvenanceRole rdf:about="#processor">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Provid">
+  <role:ProvenanceRole rdf:about="#provid">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Publish">
+  <role:ProvenanceRole rdf:about="#publish">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Refer">
+  <role:ProvenanceRole rdf:about="#refer">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Replac">
+  <role:ProvenanceRole rdf:about="#replac">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Serial">
+  <role:ProvenanceRole rdf:about="#serial">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Signer">
+  <role:ProvenanceRole rdf:about="#signer">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#Submitt">
+  <role:ProvenanceRole rdf:about="#submitt">
   </role:ProvenanceRole>
 
-  <role:ProvenanceRole rdf:about="#User">
+  <role:ProvenanceRole rdf:about="#user">
   </role:ProvenanceRole>
 
 </rdf:RDF>

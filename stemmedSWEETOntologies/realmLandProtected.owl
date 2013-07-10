@@ -33,19 +33,19 @@
      <owl:imports rdf:resource="&root;matrNaturalResource.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#LandReserv">
+  <owl:Class rdf:about="#landreserv">
    <rdfs:subClassOf rdf:resource="&jur;AdministrativeRegion"/>
     <rdfs:subClassOf rdf:resource="&nat;LandResource"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MarineProtectedArea">
-    <rdfs:subClassOf rdf:resource="#WaterReserv" />
-    <owl:equivalentClass rdf:resource="#MPA"/>
+  <owl:Class rdf:about="#marineprotectedarea">
+    <rdfs:subClassOf rdf:resource="#waterreserv" />
+    <owl:equivalentClass rdf:resource="#mpa"/>
   </owl:Class>
-  <owl:Class rdf:about="#MPA"/>
+  <owl:Class rdf:about="#mpa"/>
 
-  <owl:Class rdf:about="#NationalForest">
-    <rdfs:subClassOf rdf:resource="#LandReserv"/>
+  <owl:Class rdf:about="#nationalforest">
+    <rdfs:subClassOf rdf:resource="#landreserv"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -54,8 +54,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NationalMonu">
-    <rdfs:subClassOf rdf:resource="#LandReserv"/>
+  <owl:Class rdf:about="#nationalmonu">
+    <rdfs:subClassOf rdf:resource="#landreserv"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -64,8 +64,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NationalPark">
-    <rdfs:subClassOf rdf:resource="#Park"/>
+  <owl:Class rdf:about="#nationalpark">
+    <rdfs:subClassOf rdf:resource="#park"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -74,8 +74,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CityPark">
-    <rdfs:subClassOf rdf:resource="#Park"/>
+  <owl:Class rdf:about="#citypark">
+    <rdfs:subClassOf rdf:resource="#park"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -84,8 +84,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CountyPark">
-    <rdfs:subClassOf rdf:resource="#Park"/>
+  <owl:Class rdf:about="#countypark">
+    <rdfs:subClassOf rdf:resource="#park"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -94,14 +94,14 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Park">
-    <rdfs:subClassOf rdf:resource="#LandReserv" />
-    <owl:equivalentClass rdf:resource="#Parkland"/>
+  <owl:Class rdf:about="#park">
+    <rdfs:subClassOf rdf:resource="#landreserv" />
+    <owl:equivalentClass rdf:resource="#parkland"/>
   </owl:Class>
-  <owl:Class rdf:about="#Parkland"/>
+  <owl:Class rdf:about="#parkland"/>
 
-  <owl:Class rdf:about="#StateForest">
-    <rdfs:subClassOf rdf:resource="#LandReserv"/>
+  <owl:Class rdf:about="#stateforest">
+    <rdfs:subClassOf rdf:resource="#landreserv"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -110,8 +110,8 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#StatePark">
-    <rdfs:subClassOf rdf:resource="#Park"/>
+  <owl:Class rdf:about="#statepark">
+    <rdfs:subClassOf rdf:resource="#park"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&hrela;hasJurisdiction"/>
@@ -120,13 +120,13 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterReserv">
+  <owl:Class rdf:about="#waterreserv">
    <rdfs:subClassOf rdf:resource="&jur;AdministrativeRegion"/>
     <rdfs:subClassOf rdf:resource="&nat;WaterResource"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WildlifeRefug">
-    <rdfs:subClassOf rdf:resource="#LandReserv"/>
+  <owl:Class rdf:about="#wildliferefug">
+    <rdfs:subClassOf rdf:resource="#landreserv"/>
   </owl:Class>
 
 </rdf:RDF>

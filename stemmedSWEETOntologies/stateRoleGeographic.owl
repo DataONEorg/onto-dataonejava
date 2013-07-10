@@ -29,84 +29,84 @@
      <owl:imports rdf:resource="http://sweet.jpl.nasa.gov/2.3/humanCommerce.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#GeographicRol">
+  <owl:Class rdf:about="#geographicrol">
     <rdfs:subClassOf rdf:resource="&prop;Role"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Collector">
-    <rdfs:subClassOf rdf:resource="#GeographicRol"/>
+  <owl:Class rdf:about="#collector">
+    <rdfs:subClassOf rdf:resource="#geographicrol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tributari">
-    <rdfs:subClassOf rdf:resource="#Collector"/>
+  <owl:Class rdf:about="#tributari">
+    <rdfs:subClassOf rdf:resource="#collector"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Edge">
-    <owl:equivalentClass rdf:resource="#Boundari"/>
+  <owl:Class rdf:about="#edge">
+    <owl:equivalentClass rdf:resource="#boundari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Face">
-    <owl:equivalentClass rdf:resource="#Boundari"/>
+  <owl:Class rdf:about="#face">
+    <owl:equivalentClass rdf:resource="#boundari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Margin">
-    <rdfs:subClassOf rdf:resource="#Boundari"/>
+  <owl:Class rdf:about="#margin">
+    <rdfs:subClassOf rdf:resource="#boundari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Obstruction">
-    <rdfs:subClassOf rdf:resource="#Barrier"/>
+  <owl:Class rdf:about="#obstruction">
+    <rdfs:subClassOf rdf:resource="#barrier"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Peripheri">
-    <rdfs:subClassOf rdf:resource="#Margin"/>
-    <owl:equivalentClass rdf:resource="#Fring"/>
+  <owl:Class rdf:about="#peripheri">
+    <rdfs:subClassOf rdf:resource="#margin"/>
+    <owl:equivalentClass rdf:resource="#fring"/>
   </owl:Class>
-  <owl:Class rdf:about="#Fring"/>
+  <owl:Class rdf:about="#fring"/>
 
-  <owl:Class rdf:about="#Boundari">
-    <rdfs:subClassOf rdf:resource="#Barrier"/>
+  <owl:Class rdf:about="#boundari">
+    <rdfs:subClassOf rdf:resource="#barrier"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Barrier">
-    <rdfs:subClassOf rdf:resource="#GeographicRol"/>
-  </owl:Class>
-  
-  <owl:Class rdf:about="#Highway">
-    <rdfs:subClassOf rdf:resource="#GeographicRol"/>
+  <owl:Class rdf:about="#barrier">
+    <rdfs:subClassOf rdf:resource="#geographicrol"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Separ">
-    <rdfs:subClassOf rdf:resource="#Barrier"/>
+  <owl:Class rdf:about="#highway">
+    <rdfs:subClassOf rdf:resource="#geographicrol"/>
+  </owl:Class>
+  
+  <owl:Class rdf:about="#separ">
+    <rdfs:subClassOf rdf:resource="#barrier"/>
   </owl:Class>
 
-  <comm:LandUse rdf:about="#Industrial">
+  <comm:LandUse rdf:about="#industrial">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Commerci">
+  <comm:LandUse rdf:about="#commerci">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Residenti">
+  <comm:LandUse rdf:about="#residenti">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Wild">
+  <comm:LandUse rdf:about="#wild">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Popul">
+  <comm:LandUse rdf:about="#popul">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Irrigat">
+  <comm:LandUse rdf:about="#irrigat">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Rainf">
+  <comm:LandUse rdf:about="#rainf">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Crop">
+  <comm:LandUse rdf:about="#crop">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Pastor">
+  <comm:LandUse rdf:about="#pastor">
   </comm:LandUse>
 
-  <comm:LandUse rdf:about="#Remot">
+  <comm:LandUse rdf:about="#remot">
   </comm:LandUse>
 
 </rdf:RDF>

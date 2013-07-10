@@ -36,142 +36,142 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Assembl">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#assembl">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Construct">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#construct">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Develop">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#develop">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Grade">
-    <rdfs:subClassOf rdf:resource="#Process"/>
+  <owl:Class rdf:about="#grade">
+    <rdfs:subClassOf rdf:resource="#process"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Industrial">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#industrial">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandUs">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#landu">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Manafactur">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#manafactur">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Manag">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#manag">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ManagementSystem">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#managementsystem">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Manag"/>
-        <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+        <owl:allValuesFrom rdf:resource="#manag"/>
+        <owl:onProperty rdf:resource="&hrela;#hashumanact"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Process">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#process">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Product">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#product">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Packag">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#packag">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EngineeringAct">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#engineeringact">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Product">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#product">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CapacityBuiid">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#capacitybuiid">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConsumptiveUs">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#consumptiveu">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Demand">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#demand">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SustainableDevelop">
-    <rdfs:subClassOf rdf:resource="#Develop"/>
+  <owl:Class rdf:about="#sustainabledevelop">
+    <rdfs:subClassOf rdf:resource="#develop"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:allValuesFrom rdf:resource="&cons;#Sustain"/>
-         <owl:onProperty rdf:resource="&hrela;#hasHumanAct"/>
+         <owl:allValuesFrom rdf:resource="&cons;#sustain"/>
+         <owl:onProperty rdf:resource="&hrela;#hashumanact"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
 <!-- other -->
-  <owl:Class rdf:about="#Urbaniz">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#urbaniz">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Forestri">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#forestri">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#InSitu">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
-    <owl:equivalentClass rdf:resource="#OnSite"/>
+  <owl:Class rdf:about="#insitu">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
+    <owl:equivalentClass rdf:resource="#onsite"/>
   </owl:Class>
-  <owl:Class rdf:about="#OnSite"/>
+  <owl:Class rdf:about="#onsite"/>
 
-  <owl:Class rdf:about="#FossilFuelBurn">
-    <rdfs:subClassOf rdf:resource="&huma;#HumanAct"/>
+  <owl:Class rdf:about="#fossilfuelburn">
+    <rdfs:subClassOf rdf:resource="&huma;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ClearCut">
-    <rdfs:subClassOf rdf:resource="#Forestri"/>
+  <owl:Class rdf:about="#clearcut">
+    <rdfs:subClassOf rdf:resource="#forestri"/>
   </owl:Class>
 
 <!-- Extraction -->
-  <owl:Class rdf:about="#Dig">
-    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  <owl:Class rdf:about="#dig">
+    <rdfs:subClassOf rdf:resource="#extraction"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drill">
-    <rdfs:subClassOf rdf:resource="#Extraction"/>
+  <owl:Class rdf:about="#drill">
+    <rdfs:subClassOf rdf:resource="#extraction"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Explorat">
-    <rdfs:subClassOf rdf:resource="#EngineeringAct"/>
+  <owl:Class rdf:about="#explorat">
+    <rdfs:subClassOf rdf:resource="#engineeringact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Extraction">
-    <rdfs:subClassOf rdf:resource="#EngineeringAct"/>
-    <owl:equivalentClass rdf:resource="#ResourceExtract"/>
+  <owl:Class rdf:about="#extraction">
+    <rdfs:subClassOf rdf:resource="#engineeringact"/>
+    <owl:equivalentClass rdf:resource="#resourceextract"/>
   </owl:Class>
-  <owl:Class rdf:about="#ResourceExtract"/>
+  <owl:Class rdf:about="#resourceextract"/>
 
-  <owl:Class rdf:about="#Mine">
-    <rdfs:subClassOf rdf:resource="#Extraction"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Prospect">
-    <rdfs:subClassOf rdf:resource="#Explorat"/>
+  <owl:Class rdf:about="#mine">
+    <rdfs:subClassOf rdf:resource="#extraction"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StripMin">
-    <rdfs:subClassOf rdf:resource="#Mine"/>
+  <owl:Class rdf:about="#prospect">
+    <rdfs:subClassOf rdf:resource="#explorat"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#stripmin">
+    <rdfs:subClassOf rdf:resource="#mine"/>
   </owl:Class>
 
 </rdf:RDF>

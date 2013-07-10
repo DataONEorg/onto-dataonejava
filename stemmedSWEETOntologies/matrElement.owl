@@ -28,391 +28,391 @@
   </owl:Ontology>
 
 <!-- Substances -->
-  <owl:Class rdf:about="#Element">
+  <owl:Class rdf:about="#element">
     <rdfs:subClassOf rdf:resource="&chem;Chemical"/>
-    <owl:equivalentClass rdf:resource="#ChemicalEl"/>
+    <owl:equivalentClass rdf:resource="#chemicalel"/>
     <rdfs:comment xml:lang="en">A chemical element is a pure chemical substance consisting of one type of atom distinguished by its atomic number, which is the number of protons in its nucleus. The term is also used to refer to a pure chemical substance composed of atoms with the same number of protons. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#ChemicalEl"/>
+  <owl:Class rdf:about="#chemicalel"/>
 
-  <owl:Class rdf:about="#HeavyMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#heavymet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Metal">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#metal">
+    <rdfs:subClassOf rdf:resource="#element"/>
     <rdfs:comment xml:lang="en">A metal is a chemical element whose atoms readily lose electrons to form positive ions (cations), and form metallic bonds between other metal atoms and ionic bonds between nonmetal atoms.[Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chalcophil">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#chalcophil">
+    <rdfs:subClassOf rdf:resource="#element"/>
     <rdfs:comment xml:lang="en">An element such as copper that forms sulphide minerals if sufficient sulphur is available.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lithophil">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#lithophil">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Siderophil">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#siderophil">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Atmophil">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#atmophil">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Actinoid">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#actinoid">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AlkalineEarthMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#alkalineearthmet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chalcogen">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#chalcogen">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RareEarthEl">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#rareearthel">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AlkaliMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#alkalimet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NobleGa">
-    <rdfs:subClassOf rdf:resource="#Element"/>
+  <owl:Class rdf:about="#noblega">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Metalloid">
-    <rdfs:subClassOf rdf:resource="#Element"/>
-    <owl:disjointWith rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#metalloid">
+    <rdfs:subClassOf rdf:resource="#element"/>
+    <owl:disjointWith rdf:resource="#metal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Nonmet">
-    <rdfs:subClassOf rdf:resource="#Element"/>
-    <owl:disjointWith rdf:resource="#Metal"/>
-    <owl:disjointWith rdf:resource="#Metalloid"/>
+  <owl:Class rdf:about="#nonmet">
+    <rdfs:subClassOf rdf:resource="#element"/>
+    <owl:disjointWith rdf:resource="#metal"/>
+    <owl:disjointWith rdf:resource="#metalloid"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PostTransitionMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#posttransitionmet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Halogen">
-    <rdfs:subClassOf rdf:resource="#Element"/>
-    <owl:equivalentClass rdf:resource="#Ha"/>
+  <owl:Class rdf:about="#halogen">
+    <rdfs:subClassOf rdf:resource="#element"/>
+    <owl:equivalentClass rdf:resource="#ha"/>
   </owl:Class>
-  <owl:Class rdf:about="#Ha"/> 
+  <owl:Class rdf:about="#ha"/> 
 
-  <owl:Class rdf:about="#Prictogen">
-    <rdfs:subClassOf rdf:resource="#Element"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#TransitionMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#prictogen">
+    <rdfs:subClassOf rdf:resource="#element"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TraceMet">
-    <rdfs:subClassOf rdf:resource="#Metal"/>
+  <owl:Class rdf:about="#transitionmet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#tracemet">
+    <rdfs:subClassOf rdf:resource="#metal"/>
     <rdfs:subClassOf rdf:resource="&chem;TraceSubstance"/>
   </owl:Class>
 
 <!-- Chemical elements -->
 
-  <elem:Element rdf:about="#Al">
-    <rdf:type rdf:resource="#Metal"/>
+  <elem:Element rdf:about="#al">
+    <rdf:type rdf:resource="#metal"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">13</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">14</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Aluminum"/>
+    <owl:sameAs rdf:resource="#aluminum"/>
   </elem:Element>
-  <elem:Element rdf:about="#Aluminum"/>
+  <elem:Element rdf:about="#aluminum"/>
 
-  <elem:Element rdf:about="#Ar">
-    <rdf:type rdf:resource="#NobleGa"/>
+  <elem:Element rdf:about="#ar">
+    <rdf:type rdf:resource="#noblega"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">18</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">22</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Argon"/>
+    <owl:sameAs rdf:resource="#argon"/>
   </elem:Element>
-  <elem:Element rdf:about="#Argon"/>
+  <elem:Element rdf:about="#argon"/>
 
-  <elem:Element rdf:about="#As">
-    <rdf:type rdf:resource="#Prictogen"/>
+  <elem:Element rdf:about="#as">
+    <rdf:type rdf:resource="#prictogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">33</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">42</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Arsenic"/>
+    <owl:sameAs rdf:resource="#arsenic"/>
   </elem:Element>
-  <elem:Element rdf:about="#Arsenic"/>
+  <elem:Element rdf:about="#arsenic"/>
 
-  <elem:Element rdf:about="#B">
-    <rdf:type rdf:resource="#Metalloid"/>
+  <elem:Element rdf:about="#b">
+    <rdf:type rdf:resource="#metalloid"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">5</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">6</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Boron"/>
+    <owl:sameAs rdf:resource="#boron"/>
   </elem:Element>
-  <elem:Element rdf:about="#Boron"/>
+  <elem:Element rdf:about="#boron"/>
 
-  <elem:Element rdf:about="#Be">
-    <rdf:type rdf:resource="#AlkalineEarthMet"/>
+  <elem:Element rdf:about="#be">
+    <rdf:type rdf:resource="#alkalineearthmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">4</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">5</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Beryllium"/>
+    <owl:sameAs rdf:resource="#beryllium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Beryllium"/>
+  <elem:Element rdf:about="#beryllium"/>
 
-  <elem:Element rdf:about="#Br">
-    <rdf:type rdf:resource="#Halogen"/>
+  <elem:Element rdf:about="#br">
+    <rdf:type rdf:resource="#halogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">45</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">35</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Bromin"/>
+    <owl:sameAs rdf:resource="#bromin"/>
   </elem:Element>
-  <elem:Element rdf:about="#Bromin"/>
+  <elem:Element rdf:about="#bromin"/>
 
-  <elem:Element rdf:about="#C">
-    <rdf:type rdf:resource="#Nonmet"/>
+  <elem:Element rdf:about="#c">
+    <rdf:type rdf:resource="#nonmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">6</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">6</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Carbon"/>
+    <owl:sameAs rdf:resource="#carbon"/>
   </elem:Element>
-  <elem:Element rdf:about="#Carbon"/>
+  <elem:Element rdf:about="#carbon"/>
 
-  <elem:Element rdf:about="#Ca">
-    <rdf:type rdf:resource="#AlkalineEarthMet"/>
+  <elem:Element rdf:about="#ca">
+    <rdf:type rdf:resource="#alkalineearthmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">20</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">20</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Calcium"/>
+    <owl:sameAs rdf:resource="#calcium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Calcium"/>
+  <elem:Element rdf:about="#calcium"/>
 
-  <elem:Element rdf:about="#Cd">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#cd">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">65</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">48</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Cadmium"/>
+    <owl:sameAs rdf:resource="#cadmium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Cadmium"/>
+  <elem:Element rdf:about="#cadmium"/>
 
-  <elem:Element rdf:about="#Ch">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#ch">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">28</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">24</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Chromium"/>
+    <owl:sameAs rdf:resource="#chromium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Chromium"/>
+  <elem:Element rdf:about="#chromium"/>
 
-  <elem:Element rdf:about="#Cl">
-    <rdf:type rdf:resource="#Halogen"/>
+  <elem:Element rdf:about="#cl">
+    <rdf:type rdf:resource="#halogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">18</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">17</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Chlorin"/>
+    <owl:sameAs rdf:resource="#chlorin"/>
   </elem:Element>
-  <elem:Element rdf:about="#Chlorin"/>
+  <elem:Element rdf:about="#chlorin"/>
 
-  <elem:Element rdf:about="#Cu">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#cu">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">34</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">29</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Copper"/>
+    <owl:sameAs rdf:resource="#copper"/>
   </elem:Element>
-  <elem:Element rdf:about="#Copper"/>
+  <elem:Element rdf:about="#copper"/>
 
-  <elem:Element rdf:about="#F">
-    <rdf:type rdf:resource="#Halogen"/>
+  <elem:Element rdf:about="#f">
+    <rdf:type rdf:resource="#halogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">9</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">10</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Fluorin"/>
+    <owl:sameAs rdf:resource="#fluorin"/>
   </elem:Element>
-  <elem:Element rdf:about="#Fluorin"/>
+  <elem:Element rdf:about="#fluorin"/>
 
-  <elem:Element rdf:about="#Fe">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#fe">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">30</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">26</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Iron"/>
+    <owl:sameAs rdf:resource="#iron"/>
   </elem:Element>
-  <elem:Element rdf:about="#Iron"/>
+  <elem:Element rdf:about="#iron"/>
 
-  <elem:Element rdf:about="#H">
-    <rdf:type rdf:resource="#Nonmet"/>
+  <elem:Element rdf:about="#h">
+    <rdf:type rdf:resource="#nonmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">0</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">1</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Hydrogen"/>
+    <owl:sameAs rdf:resource="#hydrogen"/>
   </elem:Element>
-  <elem:Element rdf:about="#Hydrogen"/>
+  <elem:Element rdf:about="#hydrogen"/>
 
-  <elem:Element rdf:about="#He">
-    <rdf:type rdf:resource="#NobleGa"/>
+  <elem:Element rdf:about="#he">
+    <rdf:type rdf:resource="#noblega"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">2</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">2</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Helium"/>
+    <owl:sameAs rdf:resource="#helium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Helium"/>
+  <elem:Element rdf:about="#helium"/>
 
-  <elem:Element rdf:about="#Hg">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#hg">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">80</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">121</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Mercuri"/>
+    <owl:sameAs rdf:resource="#mercuri"/>
   </elem:Element>
-  <elem:Element rdf:about="#Mercuri"/>
+  <elem:Element rdf:about="#mercuri"/>
 
-  <elem:Element rdf:about="#I">
-    <rdf:type rdf:resource="#Halogen"/>
+  <elem:Element rdf:about="#i">
+    <rdf:type rdf:resource="#halogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">53</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">74</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Iodin"/>
+    <owl:sameAs rdf:resource="#iodin"/>
   </elem:Element>
-  <elem:Element rdf:about="#Iodin"/> 
+  <elem:Element rdf:about="#iodin"/> 
 
-  <elem:Element rdf:about="#K">
-    <rdf:type rdf:resource="#AlkaliMet"/>
+  <elem:Element rdf:about="#k">
+    <rdf:type rdf:resource="#alkalimet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">20</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">19</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Potassium"/>
+    <owl:sameAs rdf:resource="#potassium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Potassium"/>
+  <elem:Element rdf:about="#potassium"/>
 
-  <elem:Element rdf:about="#Li">
-    <rdf:type rdf:resource="#AlkaliMet"/>
+  <elem:Element rdf:about="#li">
+    <rdf:type rdf:resource="#alkalimet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">3</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">4</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Lithium"/>
+    <owl:sameAs rdf:resource="#lithium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Lithium"/>
+  <elem:Element rdf:about="#lithium"/>
 
-  <elem:Element rdf:about="#Mg">
-    <rdf:type rdf:resource="#AlkalineEarthMet"/>
+  <elem:Element rdf:about="#mg">
+    <rdf:type rdf:resource="#alkalineearthmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">12</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">12</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Magnesium"/>
+    <owl:sameAs rdf:resource="#magnesium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Magnesium"/>
+  <elem:Element rdf:about="#magnesium"/>
 
-  <elem:Element rdf:about="#Mn">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#mn">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">25</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">30</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Manganes"/>
+    <owl:sameAs rdf:resource="#mangan"/>
   </elem:Element>
-  <elem:Element rdf:about="#Manganes"/>
+  <elem:Element rdf:about="#mangan"/>
 
-  <elem:Element rdf:about="#Mo">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#mo">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">42</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">54</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Molybdenum"/>
+    <owl:sameAs rdf:resource="#molybdenum"/>
   </elem:Element>
-  <elem:Element rdf:about="#Molybdenum"/>
+  <elem:Element rdf:about="#molybdenum"/>
 
-  <elem:Element rdf:about="#N">
-    <rdf:type rdf:resource="#Prictogen"/>
+  <elem:Element rdf:about="#n">
+    <rdf:type rdf:resource="#prictogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">7</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">7</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Nitrogen"/>
+    <owl:sameAs rdf:resource="#nitrogen"/>
   </elem:Element>
-  <elem:Element rdf:about="#Nitrogen"/>
+  <elem:Element rdf:about="#nitrogen"/>
 
-  <elem:Element rdf:about="#Na">
-    <rdf:type rdf:resource="#AlkaliMet"/>
+  <elem:Element rdf:about="#na">
+    <rdf:type rdf:resource="#alkalimet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">11</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">12</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Sodium"/>
+    <owl:sameAs rdf:resource="#sodium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Sodium"/>
+  <elem:Element rdf:about="#sodium"/>
 
-  <elem:Element rdf:about="#Ne">
-    <rdf:type rdf:resource="#NobleGa"/>
+  <elem:Element rdf:about="#ne">
+    <rdf:type rdf:resource="#noblega"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">10</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">10</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Neon"/>
+    <owl:sameAs rdf:resource="#neon"/>
   </elem:Element>
-  <elem:Element rdf:about="#Neon"/>
+  <elem:Element rdf:about="#neon"/>
 
-  <elem:Element rdf:about="#O">
-    <rdf:type rdf:resource="#Chalcogen"/>
+  <elem:Element rdf:about="#o">
+    <rdf:type rdf:resource="#chalcogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">8</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">8</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Oxygen"/>
+    <owl:sameAs rdf:resource="#oxygen"/>
   </elem:Element>
-  <elem:Element rdf:about="#Oxygen"/>
+  <elem:Element rdf:about="#oxygen"/>
 
-  <elem:Element rdf:about="#P">
-    <rdf:type rdf:resource="#Prictogen"/>
+  <elem:Element rdf:about="#p">
+    <rdf:type rdf:resource="#prictogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">16</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">15</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Phosphorus"/>
+    <owl:sameAs rdf:resource="#phosphorus"/>
   </elem:Element>
-  <elem:Element rdf:about="#Phosphorus"/>
+  <elem:Element rdf:about="#phosphorus"/>
 
-  <elem:Element rdf:about="#Pb">
-    <rdf:type rdf:resource="#PostTransitionMet"/>
+  <elem:Element rdf:about="#pb">
+    <rdf:type rdf:resource="#posttransitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">82</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">125</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Lead"/>
+    <owl:sameAs rdf:resource="#lead"/>
   </elem:Element>
-  <elem:Element rdf:about="#Lead"/>
+  <elem:Element rdf:about="#lead"/>
 
-  <elem:Element rdf:about="#Rn">
-    <rdf:type rdf:resource="#NobleGa"/>
+  <elem:Element rdf:about="#rn">
+    <rdf:type rdf:resource="#noblega"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">86</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">136</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Radon"/>
+    <owl:sameAs rdf:resource="#radon"/>
   </elem:Element>
-  <elem:Element rdf:about="#Radon"/>
+  <elem:Element rdf:about="#radon"/>
 
-  <elem:Element rdf:about="#S">
-    <rdf:type rdf:resource="#Chalcogen"/>
+  <elem:Element rdf:about="#s">
+    <rdf:type rdf:resource="#chalcogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">16</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">16</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Sulfur"/>
+    <owl:sameAs rdf:resource="#sulfur"/>
   </elem:Element>
-  <elem:Element rdf:about="#Sulfur"/>
+  <elem:Element rdf:about="#sulfur"/>
 
-  <elem:Element rdf:about="#Sb">
-    <rdf:type rdf:resource="#Prictogen"/>
+  <elem:Element rdf:about="#sb">
+    <rdf:type rdf:resource="#prictogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">51</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">71</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Antimoni"/>
+    <owl:sameAs rdf:resource="#antimoni"/>
   </elem:Element>
-  <elem:Element rdf:about="#Antimoni"/>
+  <elem:Element rdf:about="#antimoni"/>
 
-  <elem:Element rdf:about="#Se">
-    <rdf:type rdf:resource="#Chalcogen"/>
+  <elem:Element rdf:about="#se">
+    <rdf:type rdf:resource="#chalcogen"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">34</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">45</crela:hasBaseNeutrons>
   </elem:Element>
-  <elem:Element rdf:about="#Selenium"/>
+  <elem:Element rdf:about="#selenium"/>
 
-  <elem:Element rdf:about="#Si">
-    <rdf:type rdf:resource="#Metalloid"/>
+  <elem:Element rdf:about="#si">
+    <rdf:type rdf:resource="#metalloid"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">14</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">18</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Silicon"/>
+    <owl:sameAs rdf:resource="#silicon"/>
   </elem:Element>
-  <elem:Element rdf:about="#Silicon"/>
+  <elem:Element rdf:about="#silicon"/>
 
-  <elem:Element rdf:about="#Th">
-    <rdf:type rdf:resource="#Actinoid"/>
+  <elem:Element rdf:about="#th">
+    <rdf:type rdf:resource="#actinoid"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">90</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">142</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Thorium"/>
+    <owl:sameAs rdf:resource="#thorium"/>
   </elem:Element>
-  <elem:Element rdf:about="#Thorium"/>
+  <elem:Element rdf:about="#thorium"/>
 
-  <elem:Element rdf:about="#U">
-    <rdf:type rdf:resource="#Actinoid"/>
+  <elem:Element rdf:about="#u">
+    <rdf:type rdf:resource="#actinoid"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">92</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">146</crela:hasBaseNeutrons>
   </elem:Element>
-  <elem:Element rdf:about="#Uranium"/>
+  <elem:Element rdf:about="#uranium"/>
 
-  <elem:Element rdf:about="#Zi">
-    <rdf:type rdf:resource="#TransitionMet"/>
+  <elem:Element rdf:about="#zi">
+    <rdf:type rdf:resource="#transitionmet"/>
     <crela:hasProtons rdf:datatype="&xsd;integer">30</crela:hasProtons>
     <crela:hasBaseNeutrons rdf:datatype="&xsd;integer">34</crela:hasBaseNeutrons>
-    <owl:sameAs rdf:resource="#Zinc"/>
+    <owl:sameAs rdf:resource="#zinc"/>
   </elem:Element>
-  <elem:Element rdf:about="#Zinc"/>
+  <elem:Element rdf:about="#zinc"/>
 
 </rdf:RDF>

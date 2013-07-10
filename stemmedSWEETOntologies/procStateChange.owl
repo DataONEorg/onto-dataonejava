@@ -34,191 +34,191 @@
      <owl:imports rdf:resource="&prela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#StateChang">
-    <rdfs:subClassOf rdf:resource="&phys;#PhysicalProcess"/>
-    <owl:equivalentClass rdf:resource="#PhaseTransit"/>
+  <owl:Class rdf:about="#statechang">
+    <rdfs:subClassOf rdf:resource="&phys;#physicalprocess"/>
+    <owl:equivalentClass rdf:resource="#phasetransit"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:allValuesFrom rdf:resource="&pstate;#StateOfMatt" />
+        <owl:allValuesFrom rdf:resource="&pstate;#stateofmatt" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:allValuesFrom rdf:resource="&pstate;#StateOfMatt" />
+        <owl:allValuesFrom rdf:resource="&pstate;#stateofmatt" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>change of state by state variable change</rdfs:comment>
     <rdfs:label>State Change</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#PhaseTransit"/>
+  <owl:Class rdf:about="#phasetransit"/>
 
 <!-- To gas -->
-  <owl:Class rdf:about="#Boil">
-    <rdfs:subClassOf rdf:resource="#Vapor"/>
+  <owl:Class rdf:about="#boil">
+    <rdfs:subClassOf rdf:resource="#vapor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Evapor">
-    <rdfs:subClassOf rdf:resource="#Vapor"/>
+  <owl:Class rdf:about="#evapor">
+    <rdfs:subClassOf rdf:resource="#vapor"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sublim">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#sublim">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid" />
+        <owl:hasValue rdf:resource="&pstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vapor">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#vapor">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid" />
+        <owl:hasValue rdf:resource="&pstate;#liquid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The physical process by which a liquid is transformed to the gaseous state; the opposite of condensation.</rdfs:comment>
   </owl:Class>
 
 <!-- To liquid -->
-  <owl:Class rdf:about="#Melt">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#melt">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid" />
+        <owl:hasValue rdf:resource="&pstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid" />
+        <owl:hasValue rdf:resource="&pstate;#liquid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thaw">
-    <rdfs:subClassOf rdf:resource="#Melt"/>
+  <owl:Class rdf:about="#thaw">
+    <rdfs:subClassOf rdf:resource="#melt"/>
   </owl:Class>
 
 <!-- To solid -->
-  <owl:Class rdf:about="#Condens">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#conden">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid" />
+        <owl:hasValue rdf:resource="&pstate;#liquid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Deposit">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#deposit">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid" />
+        <owl:hasValue rdf:resource="&pstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Refreez">
-    <rdfs:subClassOf rdf:resource="#Freez"/>
+  <owl:Class rdf:about="#refreez">
+    <rdfs:subClassOf rdf:resource="#freez"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Freez">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#freez">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid" />
+        <owl:hasValue rdf:resource="&pstate;#liquid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid" />
+        <owl:hasValue rdf:resource="&pstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The phase transition of a substance passing from the liquid to the solid state; solidification; the opposite of fusion.</rdfs:comment>
   </owl:Class>
 
 <!-- Ionization state changes -->
-  <owl:Class rdf:about="#Deioniz">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#deioniz">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#from"/>
-        <owl:hasValue rdf:resource="&pstate;#IonizedSt" />
+        <owl:hasValue rdf:resource="&pstate;#ionizedst" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#NeutralSt" />
+        <owl:hasValue rdf:resource="&pstate;#neutralst" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ioniz">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#ioniz">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#IonizedSt" />
+        <owl:hasValue rdf:resource="&pstate;#ionizedst" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Ionization is the physical process of converting an atom or molecule into an ion by changing the difference between the number of protons and electrons. This process works slightly differently depending on whether an ion with a positive or a negative electric charge is being produced. A positive electric charge is produced when an electron bond to an atom or molecule absorbs enough energy from an external source to escape from the electric potential barrier that originally confined it, where the amount of energy required is called the Ionization potential. A negative electric charge is produced when a free electron collides with an atom and is subsequently caught inside the electric potential barrier, releasing any excess energy.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photoion">
-    <rdfs:subClassOf rdf:resource="#Ioniz"/>
+  <owl:Class rdf:about="#photoion">
+    <rdfs:subClassOf rdf:resource="#ioniz"/>
   </owl:Class>
  
-  <owl:Class rdf:about="#Gasif">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#gasif">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas" />
+        <owl:hasValue rdf:resource="&pstate;#gas" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
  
-  <owl:Class rdf:about="#Liquiefact">
-    <rdfs:subClassOf rdf:resource="#StateChang"/>
+  <owl:Class rdf:about="#liquiefact">
+    <rdfs:subClassOf rdf:resource="#statechang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&prela;#to"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid" />
+        <owl:hasValue rdf:resource="&pstate;#liquid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

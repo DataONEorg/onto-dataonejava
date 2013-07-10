@@ -48,7 +48,7 @@
   </owl:Ontology>
 
 <!-- Substances -->
-  <owl:Class rdf:about="#OrganicSubst">
+  <owl:Class rdf:about="#organicsubst">
     <rdfs:subClassOf rdf:resource="&chem;Substance"/>
     <owl:disjointWith rdf:resource="&chem;InorganicSubstance" />
     <rdfs:subClassOf>
@@ -59,30 +59,30 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrganicCompound">
-    <rdfs:subClassOf rdf:resource="#OrganicSubst"/>
+  <owl:Class rdf:about="#organiccompound">
+    <rdfs:subClassOf rdf:resource="#organicsubst"/>
     <rdfs:subClassOf rdf:resource="&comp;Compound"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HCFC">
-    <rdfs:subClassOf rdf:resource="#CFC"/>
-    <owl:equivalentClass rdf:resource="#Hydrochlorofluorocarbon"/>
+  <owl:Class rdf:about="#hcfc">
+    <rdfs:subClassOf rdf:resource="#cfc"/>
+    <owl:equivalentClass rdf:resource="#hydrochlorofluorocarbon"/>
   </owl:Class>
-  <owl:Class rdf:about="#Hydrochlorofluorocarbon"/>
+  <owl:Class rdf:about="#hydrochlorofluorocarbon"/>
 
-  <owl:Class rdf:about="#CFC">
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
-    <owl:equivalentClass rdf:resource="#Chlorofluorocarbon"/>
+  <owl:Class rdf:about="#cfc">
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
+    <owl:equivalentClass rdf:resource="#chlorofluorocarbon"/>
   </owl:Class>
-  <owl:Class rdf:about="#Chlorofluorocarbon"/>
+  <owl:Class rdf:about="#chlorofluorocarbon"/>
 
-  <owl:Class rdf:about="#ChlorinatedHydrocarbon">
-    <rdfs:subClassOf rdf:resource="#Organochlorid"/>
+  <owl:Class rdf:about="#chlorinatedhydrocarbon">
+    <rdfs:subClassOf rdf:resource="#organochlorid"/>
     <rdfs:comment>Chlorinated hydrocarbons consist of simple hydrocarbons in which one or more hydrogen atoms have been replaced with chlorine.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Organochlorid">
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
+  <owl:Class rdf:about="#organochlorid">
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&elem;Cl"/>
@@ -92,45 +92,45 @@
     <rdfs:comment>An organochloride, organochlorine, or chlorocarbon, is an organic compound containing at least one covalently bonded chlorine atom. Their wide structural variety and divergent chemical properties lead to a broad range of uses.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#VolatileOrganicCompound">
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
-    <owl:equivalentClass rdf:resource="#VOC"/>
+  <owl:Class rdf:about="#volatileorganiccompound">
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
+    <owl:equivalentClass rdf:resource="#voc"/>
   </owl:Class>
-  <owl:Class rdf:about="#VOC"/>
+  <owl:Class rdf:about="#voc"/>
 
-  <owl:Class rdf:about="#NonMethaneVolatileOrganicCompound">
-    <rdfs:subClassOf rdf:resource="#VOC"/>
-    <owl:equivalentClass rdf:resource="#NMVOC"/>
+  <owl:Class rdf:about="#nonmethanevolatileorganiccompound">
+    <rdfs:subClassOf rdf:resource="#voc"/>
+    <owl:equivalentClass rdf:resource="#nmvoc"/>
   </owl:Class>
-  <owl:Class rdf:about="#NMVOC"/>
+  <owl:Class rdf:about="#nmvoc"/>
 
-  <owl:Class rdf:about="#Halon"> 
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#HCFC">
-    <rdfs:subClassOf rdf:resource="#CFC"/>
-    <owl:equivalentClass rdf:resource="#Hydrochlorofluorocarbon"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Hydrochlorofluorocarbon"/>
-
-  <owl:Class rdf:about="#CFC">
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
-    <owl:equivalentClass rdf:resource="#Chlorofluorocarbon"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Chlorofluorocarbon"/>
-
-  <owl:Class rdf:about="#Alkane">
-    <rdfs:subClassOf rdf:resource="#Hydrocarbon"/>
+  <owl:Class rdf:about="#halon"> 
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Alkene">
-    <rdfs:subClassOf rdf:resource="#Hydrocarbon"/>
+  <owl:Class rdf:about="#hcfc">
+    <rdfs:subClassOf rdf:resource="#cfc"/>
+    <owl:equivalentClass rdf:resource="#hydrochlorofluorocarbon"/>
+  </owl:Class>
+  <owl:Class rdf:about="#hydrochlorofluorocarbon"/>
+
+  <owl:Class rdf:about="#cfc">
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
+    <owl:equivalentClass rdf:resource="#chlorofluorocarbon"/>
+  </owl:Class>
+  <owl:Class rdf:about="#chlorofluorocarbon"/>
+
+  <owl:Class rdf:about="#alkane">
+    <rdfs:subClassOf rdf:resource="#hydrocarbon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydrocarbon">
-    <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
-    <owl:equivalentClass rdf:resource="#HC"/>
+  <owl:Class rdf:about="#alkene">
+    <rdfs:subClassOf rdf:resource="#hydrocarbon"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#hydrocarbon">
+    <rdfs:subClassOf rdf:resource="#organiccompound"/>
+    <owl:equivalentClass rdf:resource="#hc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:resource="&allo;Cx"/>
@@ -144,430 +144,430 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#HC"/>
+  <owl:Class rdf:about="#hc"/>
 
 <!-- Organic compounds -->
-  <orga:OrganicCompound rdf:about="#Carbonyl">
+  <orga:OrganicCompound rdf:about="#carbonyl">
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#CCl4">
+  <orga:OrganicCompound rdf:about="#ccl4">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;Cl4"/>
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#CF4">
+  <orga:OrganicCompound rdf:about="#cf4">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;F4"/>
-    <owl:sameAs rdf:resource="#CarbonTetrafluorid"/>
-    <owl:sameAs rdf:resource="#CarbonTetrafluoromethan"/>
-    <owl:sameAs rdf:resource="#Freon14"/>
+    <owl:sameAs rdf:resource="#carbontetrafluorid"/>
+    <owl:sameAs rdf:resource="#carbontetrafluoromethan"/>
+    <owl:sameAs rdf:resource="#freon14"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#CarbonTetrafluorid"/>
-  <orga:OrganicCompound rdf:about="#CarbonTetrafluoromethan"/>
-  <orga:OrganicCompound rdf:about="#Freon14"/>
+  <orga:OrganicCompound rdf:about="#carbontetrafluorid"/>
+  <orga:OrganicCompound rdf:about="#carbontetrafluoromethan"/>
+  <orga:OrganicCompound rdf:about="#freon14"/>
 
-  <orga:OrganicCompound rdf:about="#C2H3NO5">
+  <orga:OrganicCompound rdf:about="#c2h3no5">
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;H3"/>
     <crela:hasChemical_3 rdf:resource="&elem;N"/>
     <crela:hasChemical_4 rdf:resource="&allo;O5"/>
-    <owl:sameAs rdf:resource="#PeroxyacetylNitr"/>
-    <owl:sameAs rdf:resource="#PAN"/>
+    <owl:sameAs rdf:resource="#peroxyacetylnitr"/>
+    <owl:sameAs rdf:resource="#pan"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#PeroxyacetylNitr"/>
-  <orga:OrganicCompound rdf:about="#PAN"/>
+  <orga:OrganicCompound rdf:about="#peroxyacetylnitr"/>
+  <orga:OrganicCompound rdf:about="#pan"/>
 
-  <orga:OrganicCompound rdf:about="#C2H6O">
+  <orga:OrganicCompound rdf:about="#c2h6o">
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;H6"/>
     <crela:hasChemical_3 rdf:resource="&elem;O"/>
     <rela:hasRole rdf:resource="&crole;Solvent"/>
-    <owl:sameAs rdf:resource="#Ethanol"/>
+    <owl:sameAs rdf:resource="#ethanol"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Ethanol"/>
+  <orga:OrganicCompound rdf:about="#ethanol"/>
 
-  <orga:OrganicCompound rdf:about="#CH2O2">
+  <orga:OrganicCompound rdf:about="#ch2o2">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H2"/>
     <crela:hasChemical_3 rdf:resource="&allo;O2"/>
-    <owl:sameAs rdf:resource="#FormicAcid"/>
-    <owl:sameAs rdf:resource="#MethanoicAcid"/>
+    <owl:sameAs rdf:resource="#formicacid"/>
+    <owl:sameAs rdf:resource="#methanoicacid"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#FormicAcid"/>
-  <orga:OrganicCompound rdf:about="#MethanoicAcid"/>
+  <orga:OrganicCompound rdf:about="#formicacid"/>
+  <orga:OrganicCompound rdf:about="#methanoicacid"/>
 
-  <orga:OrganicCompound rdf:about="#C2H6S">
+  <orga:OrganicCompound rdf:about="#c2h6s">
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;H6"/>
     <crela:hasChemical_3 rdf:resource="&elem;S"/>
-    <owl:sameAs rdf:resource="#DimethylSulfid"/>
-    <owl:sameAs rdf:resource="#DMS"/>
+    <owl:sameAs rdf:resource="#dimethylsulfid"/>
+    <owl:sameAs rdf:resource="#dms"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#DimethylSulfid"/>
-  <orga:OrganicCompound rdf:about="#DMS"/>
+  <orga:OrganicCompound rdf:about="#dimethylsulfid"/>
+  <orga:OrganicCompound rdf:about="#dms"/>
 
-  <orga:OrganicCompound rdf:about="#CH2CHCN">
+  <orga:OrganicCompound rdf:about="#ch2chcn">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H2"/>
     <crela:hasChemical_3 rdf:resource="&elem;C"/>
     <crela:hasChemical_4 rdf:resource="&elem;H"/>
     <crela:hasChemical_5 rdf:resource="&elem;C"/>
     <crela:hasChemical_6 rdf:resource="&elem;N"/>
-    <owl:sameAs rdf:resource="#Acrylonitril"/>
+    <owl:sameAs rdf:resource="#acrylonitril"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Acrylonitril"/>
+  <orga:OrganicCompound rdf:about="#acrylonitril"/>
 
-  <orga:OrganicCompound rdf:about="#CH2O">
+  <orga:OrganicCompound rdf:about="#ch2o">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H2"/>
     <crela:hasChemical_3 rdf:resource="&elem;O"/>
-    <owl:sameAs rdf:resource="#Formaldehyd"/>
+    <owl:sameAs rdf:resource="#formaldehyd"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Formaldehyd"/>
+  <orga:OrganicCompound rdf:about="#formaldehyd"/>
 
-  <orga:OrganicCompound rdf:about="#CH3CN">
+  <orga:OrganicCompound rdf:about="#ch3cn">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H3"/>
     <crela:hasChemical_3 rdf:resource="&elem;O"/>
     <crela:hasChemical_4 rdf:resource="&elem;N"/>
-    <owl:sameAs rdf:resource="#MethylCyanid"/>
-    <owl:sameAs rdf:resource="#Acetonitril"/>
+    <owl:sameAs rdf:resource="#methylcyanid"/>
+    <owl:sameAs rdf:resource="#acetonitril"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#MethylCyanid"/>
-  <orga:OrganicCompound rdf:about="#Acetonitril"/>
+  <orga:OrganicCompound rdf:about="#methylcyanid"/>
+  <orga:OrganicCompound rdf:about="#acetonitril"/>
 
-  <orga:OrganicCompound rdf:about="#CH3COOH">
+  <orga:OrganicCompound rdf:about="#ch3cooh">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H3"/>
     <crela:hasChemical_3 rdf:resource="&elem;C"/>
     <crela:hasChemical_4 rdf:resource="&allo;O2"/>
     <crela:hasChemical_5 rdf:resource="&elem;H"/>
-    <owl:sameAs rdf:resource="#EthanoicAcid"/>
+    <owl:sameAs rdf:resource="#ethanoicacid"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#EthanoicAcid"/>
+  <orga:OrganicCompound rdf:about="#ethanoicacid"/>
 
-  <orga:OrganicCompound rdf:about="#C3H4O">
+  <orga:OrganicCompound rdf:about="#c3h4o">
     <crela:hasChemical_1 rdf:resource="&allo;C3"/>
     <crela:hasChemical_2 rdf:resource="&allo;H4"/>
     <crela:hasChemical_3 rdf:resource="&elem;O"/>
-    <owl:sameAs rdf:resource="#Acrolein"/>
+    <owl:sameAs rdf:resource="#acrolein"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Acrolein"/>
+  <orga:OrganicCompound rdf:about="#acrolein"/>
   
-  <orga:OrganicCompound rdf:about="#C5H12O">
+  <orga:OrganicCompound rdf:about="#c5h12o">
     <crela:hasChemical_1 rdf:resource="&allo;C5"/>
     <crela:hasChemical_2 rdf:resource="&allo;H12"/>
     <crela:hasChemical_3 rdf:resource="&elem;O"/>
-    <owl:sameAs rdf:resource="#MTBE"/>
-    <owl:sameAs rdf:resource="#MethylTertButylEth"/>
+    <owl:sameAs rdf:resource="#mtbe"/>
+    <owl:sameAs rdf:resource="#methyltertbutyleth"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#MTBE"/>
-  <orga:OrganicCompound rdf:about="#MethylTertButylEth"/>
+  <orga:OrganicCompound rdf:about="#mtbe"/>
+  <orga:OrganicCompound rdf:about="#methyltertbutyleth"/>
 
-  <orga:OrganicCompound rdf:about="#CaCO3">
+  <orga:OrganicCompound rdf:about="#caco3">
     <crela:hasChemical_1 rdf:resource="&elem;Ca"/>
     <crela:hasChemical_2 rdf:resource="&elem;C"/>
     <crela:hasChemical_3 rdf:resource="&allo;O3"/>
-    <owl:sameAs rdf:resource="#CalciumCarbon"/>
+    <owl:sameAs rdf:resource="#calciumcarbon"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#CalciumCarbon"/>
+  <orga:OrganicCompound rdf:about="#calciumcarbon"/>
 
-  <orga:OrganicCompound rdf:about="#HCH">
+  <orga:OrganicCompound rdf:about="#hch">
     <crela:hasChemical_1 rdf:resource="&elem;H"/>
     <crela:hasChemical_2 rdf:resource="&elem;C"/>
     <crela:hasChemical_3 rdf:resource="&elem;H"/>
-    <owl:sameAs rdf:resource="#Hexachlorocyclohexan"/>
+    <owl:sameAs rdf:resource="#hexachlorocyclohexan"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Hexachlorocyclohexan"/>
+  <orga:OrganicCompound rdf:about="#hexachlorocyclohexan"/>
 
-  <orga:OrganicCompound rdf:about="#Aldrin">
+  <orga:OrganicCompound rdf:about="#aldrin">
     <rela:hasRole rdf:resource="&brole;Pesticide"/>
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#PCB">
+  <orga:OrganicCompound rdf:about="#pcb">
     <rela:hasRole rdf:resource="&brole;Pesticide"/>
-    <owl:sameAs rdf:resource="#PolychlorinatedBiphenyl"/>
+    <owl:sameAs rdf:resource="#polychlorinatedbiphenyl"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#PolychlorinatedBiphenyl"/>
+  <orga:OrganicCompound rdf:about="#polychlorinatedbiphenyl"/>
 
-  <orga:OrganicCompound rdf:about="#Hexachlorobiphenyl">
-    <owl:sameAs rdf:resource="#PCB153"/>
+  <orga:OrganicCompound rdf:about="#hexachlorobiphenyl">
+    <owl:sameAs rdf:resource="#pcb153"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#PCB153"/>
+  <orga:OrganicCompound rdf:about="#pcb153"/>
 
-  <orga:OrganicCompound rdf:about="#MethylBromid">
-  </orga:OrganicCompound>
-
-  <orga:OrganicCompound rdf:about="#MethylChlorid">
+  <orga:OrganicCompound rdf:about="#methylbromid">
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#HydrogenCyanid">
+  <orga:OrganicCompound rdf:about="#methylchlorid">
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#Silk">
+  <orga:OrganicCompound rdf:about="#hydrogencyanid">
   </orga:OrganicCompound>
 
-  <orga:OrganicCompound rdf:about="#Hydrofluorocarbon">
+  <orga:OrganicCompound rdf:about="#silk">
   </orga:OrganicCompound>
 
-  <owl:Class rdf:about="#Chlorophyl">
-      <rdfs:subClassOf rdf:resource="#OrganicCompound"/>
+  <orga:OrganicCompound rdf:about="#hydrofluorocarbon">
+  </orga:OrganicCompound>
+
+  <owl:Class rdf:about="#chlorophyl">
+      <rdfs:subClassOf rdf:resource="#organiccompound"/>
     <rdfs:comment xml:lang="en">Chlorophyll is a green pigment found in most plants, algae, and cyanobacteria. Chlorophyll absorbs light most strongly in the blue and red but poorly in the green portions of the electromagnetic spectrum, hence the green color of chlorophyll-containing tissues like plant leaves. </rdfs:comment>
   </owl:Class>
 
-  <orga:Chlorophyll rdf:about="#ChlorophyllA">
+  <orga:Chlorophyll rdf:about="#chlorophylla">
   </orga:Chlorophyll>
 
-  <orga:Chlorophyll rdf:about="#Pheophytin">
+  <orga:Chlorophyll rdf:about="#pheophytin">
   </orga:Chlorophyll>
 
-  <orga:OrganicCompound rdf:about="#FC">
+  <orga:OrganicCompound rdf:about="#fc">
     <crela:hasChemical_1 rdf:resource="&elem;F"/>
     <crela:hasChemical_2 rdf:resource="&elem;C"/>
-    <owl:sameAs rdf:resource="#Fluorocarbon"/>
+    <owl:sameAs rdf:resource="#fluorocarbon"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#Fluorocarbon"/>
+  <orga:OrganicCompound rdf:about="#fluorocarbon"/>
 
-  <orga:OrganicCompound rdf:about="#HCN">
+  <orga:OrganicCompound rdf:about="#hcn">
     <crela:hasChemical_1 rdf:resource="&elem;H"/>
     <crela:hasChemical_2 rdf:resource="&elem;C"/>
     <crela:hasChemical_3 rdf:resource="&elem;N"/>
-    <owl:sameAs rdf:resource="#HydrogenCyanid"/>
+    <owl:sameAs rdf:resource="#hydrogencyanid"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#HydrogenCyanid"/> 
+  <orga:OrganicCompound rdf:about="#hydrogencyanid"/> 
 
-  <orga:OrganicCompound rdf:about="#OCS">
+  <orga:OrganicCompound rdf:about="#ocs">
     <crela:hasChemical_1 rdf:resource="&elem;O"/>
     <crela:hasChemical_2 rdf:resource="&elem;C"/>
     <crela:hasChemical_3 rdf:resource="&elem;S"/>
-    <owl:sameAs rdf:resource="#CarbonylSulfid"/>
+    <owl:sameAs rdf:resource="#carbonylsulfid"/>
   </orga:OrganicCompound>
-  <orga:OrganicCompound rdf:about="#CarbonylSulfid"/>
+  <orga:OrganicCompound rdf:about="#carbonylsulfid"/>
 
-  <orga:OrganicCompound rdf:about="#Carbohydr">
+  <orga:OrganicCompound rdf:about="#carbohydr">
   </orga:OrganicCompound>
 
 <!-- Halons -->
-  <orga:Halon rdf:about="#CBrF2">
+  <orga:Halon rdf:about="#cbrf2">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&elem;Br"/>
     <crela:hasChemical_3 rdf:resource="&allo;F2"/>
-    <owl:sameAs rdf:resource="#Halon1202"/>
+    <owl:sameAs rdf:resource="#halon1202"/>
   </orga:Halon>
-  <orga:Halon rdf:about="#Halon1202"/> 
+  <orga:Halon rdf:about="#halon1202"/> 
 
-  <orga:Halon rdf:about="#CF2ClBr">
+  <orga:Halon rdf:about="#cf2clbr">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;F2"/>
     <crela:hasChemical_3 rdf:resource="&elem;Cl"/>
     <crela:hasChemical_4 rdf:resource="&elem;Br"/>
-    <owl:sameAs rdf:resource="#Halon1211"/>
+    <owl:sameAs rdf:resource="#halon1211"/>
   </orga:Halon>
-  <orga:Halon rdf:about="#Halon1211"/> 
+  <orga:Halon rdf:about="#halon1211"/> 
 
-  <orga:Halon rdf:about="#CBrF3">
+  <orga:Halon rdf:about="#cbrf3">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&elem;Br"/>
     <crela:hasChemical_3 rdf:resource="&allo;F3"/>
-    <owl:sameAs rdf:resource="#Halon1301"/>
+    <owl:sameAs rdf:resource="#halon1301"/>
   </orga:Halon>
-  <orga:Halon rdf:about="#Halon1301"/> 
+  <orga:Halon rdf:about="#halon1301"/> 
 
-  <orga:Halon rdf:about="#C2Br2F4">
+  <orga:Halon rdf:about="#c2br2f4">
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;Br2"/>
     <crela:hasChemical_3 rdf:resource="&allo;F4"/>
-    <owl:sameAs rdf:resource="#Halon2402"/>
-    <owl:sameAs rdf:resource="#C2F4Br2"/>
-    <owl:sameAs rdf:resource="#Dibromotetrafluoroethan"/>
+    <owl:sameAs rdf:resource="#halon2402"/>
+    <owl:sameAs rdf:resource="#c2f4br2"/>
+    <owl:sameAs rdf:resource="#dibromotetrafluoroethan"/>
   </orga:Halon>
-  <orga:Halon rdf:about="#Halon2402"/> 
-  <orga:Halon rdf:about="#C2F4Br2"/> 
-  <orga:Halon rdf:about="#Dibromotetrafluoroethan"/> 
+  <orga:Halon rdf:about="#halon2402"/> 
+  <orga:Halon rdf:about="#c2f4br2"/> 
+  <orga:Halon rdf:about="#dibromotetrafluoroethan"/> 
 
 <!-- CFC -->
-  <orga:CFC rdf:about="#CCl2F2">
+  <orga:CFC rdf:about="#ccl2f2">
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;Cl2"/>
     <crela:hasChemical_3 rdf:resource="&allo;F2"/>
-    <owl:sameAs rdf:resource="#Freon12"/>
-    <owl:sameAs rdf:resource="#Dichlorodifluoromethan"/>
+    <owl:sameAs rdf:resource="#freon12"/>
+    <owl:sameAs rdf:resource="#dichlorodifluoromethan"/>
   </orga:CFC>
-  <orga:CFC rdf:about="#Freon12"/> 
-  <orga:CFC rdf:about="#Dichlorodifluoromethan"/> 
+  <orga:CFC rdf:about="#freon12"/> 
+  <orga:CFC rdf:about="#dichlorodifluoromethan"/> 
 
-  <orga:CFC rdf:about="#CFC11">
-  </orga:CFC>
-
-  <orga:CFC rdf:about="#CFC113">
+  <orga:CFC rdf:about="#cfc11">
   </orga:CFC>
 
-  <orga:CFC rdf:about="#CFC113a">
+  <orga:CFC rdf:about="#cfc113">
   </orga:CFC>
 
-  <orga:CFC rdf:about="#CFC114">
+  <orga:CFC rdf:about="#cfc113a">
   </orga:CFC>
 
-  <orga:CFC rdf:about="#CFC115">
+  <orga:CFC rdf:about="#cfc114">
   </orga:CFC>
 
-  <orga:CFC rdf:about="#CFC12">
+  <orga:CFC rdf:about="#cfc115">
   </orga:CFC>
 
-  <orga:HCFC rdf:about="#HClFC">
+  <orga:CFC rdf:about="#cfc12">
+  </orga:CFC>
+
+  <orga:HCFC rdf:about="#hclfc">
     <crela:hasChemical_1 rdf:resource="&elem;H"/>
     <crela:hasChemical_2 rdf:resource="&elem;Cl"/>
     <crela:hasChemical_3 rdf:resource="&elem;F"/>
     <crela:hasChemical_4 rdf:resource="&elem;C"/>
   </orga:HCFC>
 
-  <orga:HCFC rdf:about="#HCFC140a">
+  <orga:HCFC rdf:about="#hcfc140a">
   </orga:HCFC>
 
-  <orga:HCFC rdf:about="#HCFC141b">
+  <orga:HCFC rdf:about="#hcfc141b">
   </orga:HCFC>
 
-  <orga:HCFC rdf:about="#HCFC142b">
+  <orga:HCFC rdf:about="#hcfc142b">
   </orga:HCFC>
 
-  <orga:HCFC rdf:about="#HCFC22">
+  <orga:HCFC rdf:about="#hcfc22">
   </orga:HCFC>
 
 <!-- Hydrocarbons -->
-  <orga:Hydrocarbon rdf:about="#CH4">
-    <rdf:type rdf:resource="#Alkane"/>
+  <orga:Hydrocarbon rdf:about="#ch4">
+    <rdf:type rdf:resource="#alkane"/>
     <crela:hasChemical_1 rdf:resource="&elem;C"/>
     <crela:hasChemical_2 rdf:resource="&allo;H4"/>
-    <owl:sameAs rdf:resource="#Methan"/>
+    <owl:sameAs rdf:resource="#methan"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Methan"/>
+  <orga:Hydrocarbon rdf:about="#methan"/>
 
-  <orga:Hydrocarbon rdf:about="#C2H4">
-    <rdf:type rdf:resource="#Alkene"/>
+  <orga:Hydrocarbon rdf:about="#c2h4">
+    <rdf:type rdf:resource="#alkene"/>
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;H4"/>
-    <owl:sameAs rdf:resource="#Ethene"/>
+    <owl:sameAs rdf:resource="#ethene"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Ethene"/>
+  <orga:Hydrocarbon rdf:about="#ethene"/>
 
-  <orga:Hydrocarbon rdf:about="#C2H6">
-    <rdf:type rdf:resource="#Alkane"/>
+  <orga:Hydrocarbon rdf:about="#c2h6">
+    <rdf:type rdf:resource="#alkane"/>
     <crela:hasChemical_1 rdf:resource="&allo;C2"/>
     <crela:hasChemical_2 rdf:resource="&allo;H6"/>
-    <owl:sameAs rdf:resource="#Ethane"/>
+    <owl:sameAs rdf:resource="#ethane"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Ethane"/>
+  <orga:Hydrocarbon rdf:about="#ethane"/>
 
-  <orga:Hydrocarbon rdf:about="#C3H6">
-    <rdf:type rdf:resource="#Alkene"/>
+  <orga:Hydrocarbon rdf:about="#c3h6">
+    <rdf:type rdf:resource="#alkene"/>
     <crela:hasChemical_1 rdf:resource="&allo;C3"/>
     <crela:hasChemical_2 rdf:resource="&allo;H6"/>
-    <owl:sameAs rdf:resource="#Propen"/>
+    <owl:sameAs rdf:resource="#propen"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Propen"/>
+  <orga:Hydrocarbon rdf:about="#propen"/>
 
-  <orga:Hydrocarbon rdf:about="#C3H8">
-    <rdf:type rdf:resource="#Alkane"/>
+  <orga:Hydrocarbon rdf:about="#c3h8">
+    <rdf:type rdf:resource="#alkane"/>
     <crela:hasChemical_1 rdf:resource="&allo;C3"/>
     <crela:hasChemical_2 rdf:resource="&allo;H8"/>
-    <owl:sameAs rdf:resource="#Propan"/>
+    <owl:sameAs rdf:resource="#propan"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Propan"/>
+  <orga:Hydrocarbon rdf:about="#propan"/>
 
-  <orga:Hydrocarbon rdf:about="#C4H10">
-    <rdf:type rdf:resource="#Alkane"/>
+  <orga:Hydrocarbon rdf:about="#c4h10">
+    <rdf:type rdf:resource="#alkane"/>
     <crela:hasChemical_1 rdf:resource="&allo;C4"/>
     <crela:hasChemical_2 rdf:resource="&allo;H10"/>
-    <owl:sameAs rdf:resource="#Butan"/>
+    <owl:sameAs rdf:resource="#butan"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Butan"/>
+  <orga:Hydrocarbon rdf:about="#butan"/>
 
-  <orga:Hydrocarbon rdf:about="#C5H8">
+  <orga:Hydrocarbon rdf:about="#c5h8">
     <crela:hasChemical_1 rdf:resource="&allo;C5"/>
     <crela:hasChemical_2 rdf:resource="&allo;H8"/>
-    <owl:sameAs rdf:resource="#Isopren"/>
+    <owl:sameAs rdf:resource="#isopren"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Isopren"/>
+  <orga:Hydrocarbon rdf:about="#isopren"/>
   
-  <orga:Hydrocarbon rdf:about="#C12H8">
+  <orga:Hydrocarbon rdf:about="#c12h8">
     <crela:hasChemical_1 rdf:resource="&allo;C12"/>
     <crela:hasChemical_2 rdf:resource="&allo;H8"/>
-    <owl:sameAs rdf:resource="#Acenaphthylen"/>
+    <owl:sameAs rdf:resource="#acenaphthylen"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Acenaphthylen"/>
+  <orga:Hydrocarbon rdf:about="#acenaphthylen"/>
 
-  <orga:Hydrocarbon rdf:about="#C12H10">
+  <orga:Hydrocarbon rdf:about="#c12h10">
     <crela:hasChemical_1 rdf:resource="&allo;C12"/>
     <crela:hasChemical_2 rdf:resource="&allo;H10"/>
-    <owl:sameAs rdf:resource="#Acenaphthen"/>
+    <owl:sameAs rdf:resource="#acenaphthen"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Acenaphthen"/>
+  <orga:Hydrocarbon rdf:about="#acenaphthen"/>
 
-  <orga:Hydrocarbon rdf:about="#C6H6">
+  <orga:Hydrocarbon rdf:about="#c6h6">
     <crela:hasChemical_1 rdf:resource="&allo;C6"/>
     <crela:hasChemical_2 rdf:resource="&allo;H6"/>
-    <owl:sameAs rdf:resource="#Benzen"/>
-    <owl:sameAs rdf:resource="#Benzol"/>
+    <owl:sameAs rdf:resource="#benzen"/>
+    <owl:sameAs rdf:resource="#benzol"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Benzen"/>
-  <orga:Hydrocarbon rdf:about="#Benzol"/>
+  <orga:Hydrocarbon rdf:about="#benzen"/>
+  <orga:Hydrocarbon rdf:about="#benzol"/>
 
-  <orga:Hydrocarbon rdf:about="#C7H8">
+  <orga:Hydrocarbon rdf:about="#c7h8">
     <crela:hasChemical_1 rdf:resource="&allo;C7"/>
     <crela:hasChemical_2 rdf:resource="&allo;H8"/>
-    <owl:sameAs rdf:resource="#Toluen"/>
+    <owl:sameAs rdf:resource="#toluen"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Toluen"/>
+  <orga:Hydrocarbon rdf:about="#toluen"/>
 
-  <orga:Hydrocarbon rdf:about="#C8H10">
+  <orga:Hydrocarbon rdf:about="#c8h10">
     <crela:hasChemical_1 rdf:resource="&allo;C8"/>
     <crela:hasChemical_2 rdf:resource="&allo;H10"/>
-    <owl:sameAs rdf:resource="#Xylen"/>
+    <owl:sameAs rdf:resource="#xylen"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#Xylen"/>
+  <orga:Hydrocarbon rdf:about="#xylen"/>
 
-  <orga:Hydrocarbon rdf:about="#C10H16">
+  <orga:Hydrocarbon rdf:about="#c10h16">
     <crela:hasChemical_1 rdf:resource="&allo;C10"/>
     <crela:hasChemical_2 rdf:resource="&allo;H16"/>
   </orga:Hydrocarbon>
 
-  <orga:Hydrocarbon rdf:about="#Pinen">
+  <orga:Hydrocarbon rdf:about="#pinen">
     <crela:hasChemical_1 rdf:resource="&allo;C10"/>
     <crela:hasChemical_2 rdf:resource="&allo;H16"/>
   </orga:Hydrocarbon>
 
-  <orga:Hydrocarbon rdf:about="#Limonen">
+  <orga:Hydrocarbon rdf:about="#limonen">
     <crela:hasChemical_1 rdf:resource="&allo;C10"/>
     <crela:hasChemical_2 rdf:resource="&allo;H16"/>
   </orga:Hydrocarbon>
 
-  <orga:Hydrocarbon rdf:about="#Terpen">
+  <orga:Hydrocarbon rdf:about="#terpen">
   </orga:Hydrocarbon>
 
-  <orga:Hydrocarbon rdf:about="#NMHC">
-    <owl:differentFrom rdf:resource="#Methan" />
-    <owl:sameAs rdf:resource="#NonMethaneHydrocarbon"/>
+  <orga:Hydrocarbon rdf:about="#nmhc">
+    <owl:differentFrom rdf:resource="#methan" />
+    <owl:sameAs rdf:resource="#nonmethanehydrocarbon"/>
   </orga:Hydrocarbon>
-  <orga:Hydrocarbon rdf:about="#NonMethaneHydrocarbon"/>
+  <orga:Hydrocarbon rdf:about="#nonmethanehydrocarbon"/>
 
-  <owl:Class rdf:about="#ClathrateHydr">
+  <owl:Class rdf:about="#clathratehydr">
     <rdfs:subClassOf rdf:resource="&comp;Clathrate"/>
-    <owl:equivalentClass rdf:resource="#GasHydr"/>
+    <owl:equivalentClass rdf:resource="#gashydr"/>
   </owl:Class>
-  <owl:Class rdf:about="#GasHydr"/>
+  <owl:Class rdf:about="#gashydr"/>
 
-  <owl:Class rdf:about="#MethaneClathr">
-    <rdfs:subClassOf rdf:resource="#ClathrateHydr"/>
+  <owl:Class rdf:about="#methaneclathr">
+    <rdfs:subClassOf rdf:resource="#clathratehydr"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="#Methan"/>
+        <owl:hasValue rdf:resource="#methan"/>
         <owl:onProperty rdf:resource="&crela;hasSubstance"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#MethaneHydr"/>
-    <owl:equivalentClass rdf:resource="#MethaneIc"/>
+    <owl:equivalentClass rdf:resource="#methanehydr"/>
+    <owl:equivalentClass rdf:resource="#methaneic"/>
   </owl:Class>
-  <owl:Class rdf:about="#MethaneHydr"/>
-  <owl:Class rdf:about="#MethaneIc"/>
+  <owl:Class rdf:about="#methanehydr"/>
+  <owl:Class rdf:about="#methaneic"/>
 
 </rdf:RDF>

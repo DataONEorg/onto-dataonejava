@@ -54,260 +54,260 @@
   </owl:Ontology>
 
 
-  <owl:Class rdf:about="#AtmosphericSci">
-    <rdfs:subClassOf rdf:resource="#PlanetarySci"/>
+  <owl:Class rdf:about="#atmosphericsci">
+    <rdfs:subClassOf rdf:resource="#planetarysci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Meteorolog">
-    <rdfs:subClassOf rdf:resource="#AtmosphericSci"/>
+  <owl:Class rdf:about="#meteorolog">
+    <rdfs:subClassOf rdf:resource="#atmosphericsci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Climatolog">
-    <rdfs:subClassOf rdf:resource="#PlanetarySci"/>
+  <owl:Class rdf:about="#climatolog">
+    <rdfs:subClassOf rdf:resource="#planetarysci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Paleoclimatolog">
-    <rdfs:subClassOf rdf:resource="#Climatolog"/>
+  <owl:Class rdf:about="#paleoclimatolog">
+    <rdfs:subClassOf rdf:resource="#climatolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Phenolog">
-    <rdfs:subClassOf rdf:resource="#Climatolog"/>
+  <owl:Class rdf:about="#phenolog">
+    <rdfs:subClassOf rdf:resource="#climatolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Anatomi">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#anatomi">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Biochemistri">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#biochemistri">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Biolog">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
+  <owl:Class rdf:about="#biolog">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Genet">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#genet">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Physiolog">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#physiolog">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Paleontolog">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#paleontolog">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ecolog">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#ecolog">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandscapeEcolog">
-    <rdfs:subClassOf rdf:resource="#Ecolog"/>
+  <owl:Class rdf:about="#landscapeecolog">
+    <rdfs:subClassOf rdf:resource="#ecolog"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Geolog">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
+ <owl:Class rdf:about="#geolog">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Biogeochemistri">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
-    <rdfs:subClassOf rdf:resource="#Geochemistri"/>
+  <owl:Class rdf:about="#biogeochemistri">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
+    <rdfs:subClassOf rdf:resource="#geochemistri"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Geochemistri">
-    <rdfs:subClassOf rdf:resource="#Chemistri"/>
-    <rdfs:subClassOf rdf:resource="#Geolog"/>
+  <owl:Class rdf:about="#geochemistri">
+    <rdfs:subClassOf rdf:resource="#chemistri"/>
+    <rdfs:subClassOf rdf:resource="#geolog"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#Geophys">
-    <rdfs:subClassOf rdf:resource="#Geolog"/>
-    <rdfs:subClassOf rdf:resource="#Physic"/>
+   <owl:Class rdf:about="#geophi">
+    <rdfs:subClassOf rdf:resource="#geolog"/>
+    <rdfs:subClassOf rdf:resource="#physic"/>
     <rdfs:comment xml:lang="en">Geophysics, a branch of Earth sciences, is the study of the Earth by quantitative physical methods, especially by seismic, electromagnetic, and radioactivity methods. The theories and techniques of geophysics are employed extensively in the planetary sciences in general.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Petrolog">
-    <rdfs:subClassOf rdf:resource="#Geolog"/>
+  <owl:Class rdf:about="#petrolog">
+    <rdfs:subClassOf rdf:resource="#geolog"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&rock;#Rock"/>
-        <owl:onProperty rdf:resource="&hrela;#studyOf"/>
+        <owl:allValuesFrom rdf:resource="&rock;#rock"/>
+        <owl:onProperty rdf:resource="&hrela;#studyof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Litholog">
-    <rdfs:subClassOf rdf:resource="#Petrolog"/>
+  <owl:Class rdf:about="#litholog">
+    <rdfs:subClassOf rdf:resource="#petrolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Petrographi">
-    <rdfs:subClassOf rdf:resource="#Petrolog"/>
+  <owl:Class rdf:about="#petrographi">
+    <rdfs:subClassOf rdf:resource="#petrolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Stratigraphi">
-    <rdfs:subClassOf rdf:resource="#Petrolog"/>
+  <owl:Class rdf:about="#stratigraphi">
+    <rdfs:subClassOf rdf:resource="#petrolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Seismolog">
-    <rdfs:subClassOf rdf:resource="#Geolog"/>
+  <owl:Class rdf:about="#seismolog">
+    <rdfs:subClassOf rdf:resource="#geolog"/>
     <rdfs:comment xml:lang="en">Seismology (from the Greek seismos = earthquake and λόγος,logos = knowledge ) is the scientific study of earthquakes and the propagation of elastic waves through the Earth. The field also includes studies of earthquake effects, such as tsunamis as well as diverse seismic sources such as volcanic, tectonic, oceanic, atmospheric, and artificial processes (such as explosions).
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tecton">
-    <rdfs:subClassOf rdf:resource="#Geolog"/>
+  <owl:Class rdf:about="#tecton">
+    <rdfs:subClassOf rdf:resource="#geolog"/>
     <rdfs:comment>Tectonics is a field of study within geology concerned generally with the structures within the crust of the Earth (or other planets) and particularly with the forces and movements that have operated in a region to create these structures. Tectonics is concerned with the orogenies and tectonic development of cratons and tectonic terranes as well as the earthquake and volcanic belts which directly affect much of the global population. Tectonic studies are also important for understanding erosion patterns in geomorphology and as guides for the economic geologist searching for petroleum and metallic ores. A subfield of tectonics that deals with tectonic phenomena in the geologically recent period is called neotectonics. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Neotecton">
-    <rdfs:subClassOf rdf:resource="#Tecton"/>
+  <owl:Class rdf:about="#neotecton">
+    <rdfs:subClassOf rdf:resource="#tecton"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&gtim;#NeotectonicPeriod"/>
-        <owl:onProperty rdf:resource="&trela;#hasTimeRefer"/>
+        <owl:allValuesFrom rdf:resource="&gtim;#neotectonicperiod"/>
+        <owl:onProperty rdf:resource="&trela;#hastimeref"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>Neotectonics is a subdiscipline of tectonics. It is the study of the motions and deformations of the Earth's crust (geological and geomorphological processes) which are current or recent in geologic time.[1] The term may also refer to the motions/deformations in question themselves. The corresponding time frame is referred to as the neotectonic period.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlateTecton">
-    <rdfs:subClassOf rdf:resource="#Tecton"/>
+  <owl:Class rdf:about="#platetecton">
+    <rdfs:subClassOf rdf:resource="#tecton"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&geol;#Lithospher"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&geol;#lithosph"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In plate tectonic theory earth history, at its simplest, is one of plates rifting into pieces diverging apart and new ocean basins being born, followed by motion reversal, convergence back together, subduction of the oceanic crust, plate collision, and mountain building. This cycle of opening and closing ocean basins is the Wilson Cycle . [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#BehavioralSci">
-    <rdfs:subClassOf rdf:resource="#KnowledgeDomain"/>
+  <owl:Class rdf:about="#behavioralsci">
+    <rdfs:subClassOf rdf:resource="#knowledgedomain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Econom">
-    <rdfs:subClassOf rdf:resource="#BehavioralSci"/>
+  <owl:Class rdf:about="#econom">
+    <rdfs:subClassOf rdf:resource="#behavioralsci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sociolog">
-    <rdfs:subClassOf rdf:resource="#BehavioralSci"/>
+  <owl:Class rdf:about="#sociolog">
+    <rdfs:subClassOf rdf:resource="#behavioralsci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Psycholog">
-    <rdfs:subClassOf rdf:resource="#BehavioralSci"/>
+  <owl:Class rdf:about="#psycholog">
+    <rdfs:subClassOf rdf:resource="#behavioralsci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydrolog">
-    <rdfs:subClassOf rdf:resource="#PlanetarySci"/>
+  <owl:Class rdf:about="#hydrolog">
+    <rdfs:subClassOf rdf:resource="#planetarysci"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Limnolog">
-    <rdfs:subClassOf rdf:resource="#Hydrolog"/>
+  <owl:Class rdf:about="#limnolog">
+    <rdfs:subClassOf rdf:resource="#hydrolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Oceanographi">
-    <rdfs:subClassOf rdf:resource="#PlanetarySci"/>
-    <owl:equivalentClass rdf:resource="#MarineSci"/>
+  <owl:Class rdf:about="#oceanographi">
+    <rdfs:subClassOf rdf:resource="#planetarysci"/>
+    <owl:equivalentClass rdf:resource="#marinesci"/>
   </owl:Class>
-  <owl:Class rdf:about="#MarineSci"/>
+  <owl:Class rdf:about="#marinesci"/>
 
-  <owl:Class rdf:about="#Oceanolog">
-    <rdfs:subClassOf rdf:resource="#Oceanographi"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Rheolog">
-    <rdfs:subClassOf rdf:resource="#Physic"/>
+  <owl:Class rdf:about="#oceanolog">
+    <rdfs:subClassOf rdf:resource="#oceanographi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Physic">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
+  <owl:Class rdf:about="#rheolog">
+    <rdfs:subClassOf rdf:resource="#physic"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mechan">
-    <rdfs:subClassOf rdf:resource="#Physic"/>
+  <owl:Class rdf:about="#physic">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#mechan">
+    <rdfs:subClassOf rdf:resource="#physic"/>
     <rdfs:comment>Mechanics is the branch of physics concerned with the behaviour of physical bodies when subjected to forces or displacements, and the subsequent effect of the bodies on their environment.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thermodynam">
-    <rdfs:subClassOf rdf:resource="#Physic" />
+  <owl:Class rdf:about="#thermodynam">
+    <rdfs:subClassOf rdf:resource="#physic" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&hrela;#studyOf" />
-        <owl:allValuesFrom rdf:resource="&ther;#Heat" />
+        <owl:onProperty rdf:resource="&hrela;#studyof" />
+        <owl:allValuesFrom rdf:resource="&ther;#heat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dynam">
-    <rdfs:subClassOf rdf:resource="#Physic"/>
+  <owl:Class rdf:about="#dynam">
+    <rdfs:subClassOf rdf:resource="#physic"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scienc">
-    <rdfs:subClassOf rdf:resource="#KnowledgeDomain"/>
+  <owl:Class rdf:about="#scienc">
+    <rdfs:subClassOf rdf:resource="#knowledgedomain"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#KnowledgeDomain">
-    <rdfs:subClassOf rdf:resource="&know;#Knowledg"/>
+  <owl:Class rdf:about="#knowledgedomain">
+    <rdfs:subClassOf rdf:resource="&know;#knowledg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NutritionSci">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#nutritionsci">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&biol;#Food"/>
-        <owl:onProperty rdf:resource="&hrela;#studyOf"/>
+        <owl:allValuesFrom rdf:resource="&biol;#food"/>
+        <owl:onProperty rdf:resource="&hrela;#studyof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Toxicolog">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#toxicolog">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Epidemiolog">
-    <rdfs:subClassOf rdf:resource="#Biolog"/>
+  <owl:Class rdf:about="#epidemiolog">
+    <rdfs:subClassOf rdf:resource="#biolog"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&heal;#Diseas"/>
-        <owl:onProperty rdf:resource="&hrela;#studyOf"/>
+        <owl:allValuesFrom rdf:resource="&heal;#disea"/>
+        <owl:onProperty rdf:resource="&hrela;#studyof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photochemistri">
-    <rdfs:subClassOf rdf:resource="#Chemistri"/>
+  <owl:Class rdf:about="#photochemistri">
+    <rdfs:subClassOf rdf:resource="#chemistri"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Chemistri">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
+ <owl:Class rdf:about="#chemistri">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mineralog">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
+  <owl:Class rdf:about="#mineralog">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlanetarySci">
-    <rdfs:subClassOf rdf:resource="#Scienc"/>
-    <owl:equivalentClass rdf:resource="#Planetolog"/>
+  <owl:Class rdf:about="#planetarysci">
+    <rdfs:subClassOf rdf:resource="#scienc"/>
+    <owl:equivalentClass rdf:resource="#planetolog"/>
     <rdfs:comment xml:lang="en">Planetary science, also known as planetology and closely related to planetary astronomy, is the science of planets, or planetary systems, and the solar system. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Planetolog"/>
+  <owl:Class rdf:about="#planetolog"/>
 
-  <owl:Class rdf:about="#Geodesi">
-    <rdfs:subClassOf rdf:resource="#PlanetarySci"/>
-    <owl:equivalentClass rdf:resource="#Geodet"/>
-    <owl:equivalentClass rdf:resource="#GeodeticSci"/>
+  <owl:Class rdf:about="#geodesi">
+    <rdfs:subClassOf rdf:resource="#planetarysci"/>
+    <owl:equivalentClass rdf:resource="#geodet"/>
+    <owl:equivalentClass rdf:resource="#geodeticsci"/>
     <rdfs:comment xml:lang="en">Geodesy is the scientific discipline that deals with the measurement and representation of a planet, including its gravity field, in a three-dimensional time varying space. Besides the gravity field, geodesists study also geodynamical phenomena such as crustal motion, tides, and polar motion. For this they design global and national Control networks, using Space and terrestrial techniques while relying on datums and coordinate systems</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Geodet"/>
-  <owl:Class rdf:about="#GeodeticSci"/>
+  <owl:Class rdf:about="#geodet"/>
+  <owl:Class rdf:about="#geodeticsci"/>
 
-  <owl:Class rdf:about="#HumanDimens">
-    <rdfs:subClassOf rdf:resource="#KnowledgeDomain"/>
+  <owl:Class rdf:about="#humandimen">
+    <rdfs:subClassOf rdf:resource="#knowledgedomain"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&huma;#HumanAct"/>
-        <owl:onProperty rdf:resource="&hrela;#studyOf"/>
+        <owl:allValuesFrom rdf:resource="&huma;#humanact"/>
+        <owl:onProperty rdf:resource="&hrela;#studyof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

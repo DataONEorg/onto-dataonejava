@@ -66,220 +66,220 @@
      <owl:imports rdf:resource="&units;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#OxygenDemand">
-    <rdfs:subClassOf rdf:resource="&conc;#Densiti"/>
+  <owl:Class rdf:about="#oxygendemand">
+    <rdfs:subClassOf rdf:resource="&conc;#densiti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BiologicalOxygenDemand">
-    <rdfs:subClassOf rdf:resource="#OxygenDemand"/>
-     <owl:equivalentClass rdf:resource="#BiochemicalOxygenDemand" />
-     <owl:equivalentClass rdf:resource="#BOD" />
+  <owl:Class rdf:about="#biologicaloxygendemand">
+    <rdfs:subClassOf rdf:resource="#oxygendemand"/>
+     <owl:equivalentClass rdf:resource="#biochemicaloxygendemand" />
+     <owl:equivalentClass rdf:resource="#bod" />
   </owl:Class>
-  <owl:Class rdf:about="#BiochemicalOxygenDemand"/>
-  <owl:Class rdf:about="#BOD"/>
+  <owl:Class rdf:about="#biochemicaloxygendemand"/>
+  <owl:Class rdf:about="#bod"/>
 
-  <owl:Class rdf:about="#ChemicalOxygenDemand">
-    <rdfs:subClassOf rdf:resource="#OxygenDemand"/>
-     <owl:equivalentClass rdf:resource="#COD" />
+  <owl:Class rdf:about="#chemicaloxygendemand">
+    <rdfs:subClassOf rdf:resource="#oxygendemand"/>
+     <owl:equivalentClass rdf:resource="#cod" />
   </owl:Class>
-  <owl:Class rdf:about="#COD"/>
+  <owl:Class rdf:about="#cod"/>
 
-  <owl:Class rdf:about="#SaturationPoint">
-    <rdfs:subClassOf rdf:resource="#SaturationProperti"/>
+  <owl:Class rdf:about="#saturationpoint">
+    <rdfs:subClassOf rdf:resource="#saturationproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SaturationProperti">
-    <rdfs:subClassOf rdf:resource="&prop;#Properti"/>
+  <owl:Class rdf:about="#saturationproperti">
+    <rdfs:subClassOf rdf:resource="&prop;#properti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasProperti" />
-        <owl:hasValue rdf:resource="&cstate;#Satur" />
+        <owl:onProperty rdf:resource="&rela;#hasproperti" />
+        <owl:hasValue rdf:resource="&cstate;#satur" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Puriti">
-    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti"/>
+  <owl:Class rdf:about="#puriti">
+    <rdfs:subClassOf rdf:resource="&prop;#chemicalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aciditi">
-    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti"/>
+  <owl:Class rdf:about="#aciditi">
+    <rdfs:subClassOf rdf:resource="&prop;#chemicalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Alkalin">
-    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti"/>
-    <owl:equivalentClass rdf:resource="#Basic"/>
-    <owl:equivalentClass rdf:resource="#Basic"/>
-    <owl:equivalentClass rdf:resource="#Alkalic"/>
-    <owl:equivalentClass rdf:resource="#Alkalin"/>
+  <owl:Class rdf:about="#alkalin">
+    <rdfs:subClassOf rdf:resource="&prop;#chemicalproperti"/>
+    <owl:equivalentClass rdf:resource="#basic"/>
+    <owl:equivalentClass rdf:resource="#basic"/>
+    <owl:equivalentClass rdf:resource="#alkalic"/>
+    <owl:equivalentClass rdf:resource="#alkalin"/>
   </owl:Class>
-  <owl:Class rdf:about="#Basic"/>
-  <owl:Class rdf:about="#Basic"/>
-  <owl:Class rdf:about="#Alkalic"/>
-  <owl:Class rdf:about="#Alkalin"/>
+  <owl:Class rdf:about="#basic"/>
+  <owl:Class rdf:about="#basic"/>
+  <owl:Class rdf:about="#alkalic"/>
+  <owl:Class rdf:about="#alkalin"/>
 
-  <owl:Class rdf:about="#CarbonateAlkalin">
-    <rdfs:subClassOf rdf:resource="#Alkalin"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Composit">
-    <rdfs:subClassOf rdf:resource="&prop;#ChemicalProperti"/>
+  <owl:Class rdf:about="#carbonatealkalin">
+    <rdfs:subClassOf rdf:resource="#alkalin"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HplusConcentr">
-    <rdfs:subClassOf rdf:resource="&quan;#ChemicalQuant"/>
+  <owl:Class rdf:about="#composit">
+    <rdfs:subClassOf rdf:resource="&prop;#chemicalproperti"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#hplusconcentr">
+    <rdfs:subClassOf rdf:resource="&quan;#chemicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
-        <owl:hasValue rdf:resource="&ion;#Hplus" />
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
+        <owl:hasValue rdf:resource="&ion;#hplus" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#pH">
-    <rdfs:subClassOf rdf:resource="&quan;#ChemicalQuant"/>
+  <owl:Class rdf:about="#ph">
+    <rdfs:subClassOf rdf:resource="&quan;#chemicalqu"/>
     <rdfs:comment xml:lang="en">pH is a measure of the acidity or basicity of a solution. It is defined as the cologarithm of the activity of dissolved hydrogen ions (H+). Hydrogen ion activity coefficients cannot be measured experimentally, so they are based on theoretical calculations. The pH scale is not an absolute scale; it is relative to a set of standard solutions whose pH is established by international agreement. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TotalAlkalin">
-    <rdfs:subClassOf rdf:resource="#Alkalin"/>
+  <owl:Class rdf:about="#totalalkalin">
+    <rdfs:subClassOf rdf:resource="#alkalin"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reactiv">
-    <rdfs:subClassOf rdf:resource="&prop;#ReactionProperti"/>
+  <owl:Class rdf:about="#reactiv">
+    <rdfs:subClassOf rdf:resource="&prop;#reactionproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Solubl">
-    <rdfs:subClassOf rdf:resource="&prop;#ReactionProperti"/>
+  <owl:Class rdf:about="#solubl">
+    <rdfs:subClassOf rdf:resource="&prop;#reactionproperti"/>
     <rdfs:comment xml:lang="en">The total amount of solute species that will remain indefinitely in a solution maintained at constant temperature and pressure in contact with the solid crystals from which the solutes were derived.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Salin">
-    <rdfs:subClassOf rdf:resource="&conc;#MassConcentr"/>
+  <owl:Class rdf:about="#salin">
+    <rdfs:subClassOf rdf:resource="&conc;#massconcentr"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&ion;#SaltIon"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:allValuesFrom rdf:resource="&ion;#saltion"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#perMil"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Sodic">
-    <rdfs:subClassOf rdf:resource="&conc;#MassConcentr"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue rdf:resource="&elem;#Sodium"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:hasValue rdf:resource="&units;#permil"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#IonComposit">
-    <rdfs:subClassOf rdf:resource="#Composit"/>
+  <owl:Class rdf:about="#sodic">
+    <rdfs:subClassOf rdf:resource="&conc;#massconcentr"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&pstate;#IonizedSt"/>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
+        <owl:hasValue rdf:resource="&elem;#sodium"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Zoomass">
-    <rdfs:subClassOf rdf:resource="&conc;#DryWeight"/>
+  <owl:Class rdf:about="#ioncomposit">
+    <rdfs:subClassOf rdf:resource="#composit"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&pstate;#ionizedst"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#zoomass">
+    <rdfs:subClassOf rdf:resource="&conc;#dryweight"/>
   </owl:Class>
 
 <!-- Hydro properties -->
-  <owl:Class rdf:about="#Moistur">
-    <rdfs:subClassOf rdf:resource="#WaterConcentr"/>
+  <owl:Class rdf:about="#moistur">
+    <rdfs:subClassOf rdf:resource="#waterconcentr"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterConcentr">
-    <rdfs:subClassOf rdf:resource="&conc;#MassConcentr"/>
+  <owl:Class rdf:about="#waterconcentr">
+    <rdfs:subClassOf rdf:resource="&conc;#massconcentr"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:hasValue rdf:resource="&comp;#Water" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:hasValue rdf:resource="&comp;#water" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SodiumAdsorptionRatio">
-    <rdfs:subClassOf rdf:resource="&indx;#WaterQualityIndex" />
-    <owl:equivalentClass rdf:resource="#SAR"/>
+  <owl:Class rdf:about="#sodiumadsorptionratio">
+    <rdfs:subClassOf rdf:resource="&indx;#waterqualityindex" />
+    <owl:equivalentClass rdf:resource="#sar"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Sodic"/>
-        <owl:onProperty rdf:resource="&screla;#measureOf"/>
+        <owl:allValuesFrom rdf:resource="#sodic"/>
+        <owl:onProperty rdf:resource="&screla;#measureof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#SAR"/>
+  <owl:Class rdf:about="#sar"/>
 
-  <owl:Class rdf:about="#TotalDissolvedSolid">
-    <rdfs:subClassOf rdf:resource="&conc;#Densiti"/>
+  <owl:Class rdf:about="#totaldissolvedsolid">
+    <rdfs:subClassOf rdf:resource="&conc;#densiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&chem;#DissolvedSolid"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="#TotalSuspendedSolid">
-    <rdfs:subClassOf rdf:resource="&conc;#Densiti"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&chem;#SuspendedSolid"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:allValuesFrom rdf:resource="&chem;#dissolvedsolid"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Load">
-    <rdfs:subClassOf rdf:resource="&conc;#Densiti"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#BedLoad">
-    <rdfs:subClassOf rdf:resource="#Load"/>
-    <owl:disjointWith rdf:resource="#SuspendedLoad"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#DissolvedLoad">
-    <rdfs:subClassOf rdf:resource="#Load"/>
-    <rdfs:subClassOf rdf:resource="&chem;#DissolvedSolid"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#SuspendedLoad">
-    <rdfs:subClassOf rdf:resource="#Load"/>
-    <rdfs:subClassOf rdf:resource="&chem;#SuspendedSolid"/>
-    <owl:equivalentClass rdf:resource="#SuspensionLoad" />
-  </owl:Class>
-  <owl:Class rdf:about="#SuspensionLoad"/>
-
-  <owl:Class rdf:about="#WashLoad">
-    <rdfs:subClassOf rdf:resource="#Load"/>
-    <owl:disjointWith rdf:resource="#SuspendedLoad"/>
+  <owl:Class rdf:about="#totalsuspendedsolid">
+    <rdfs:subClassOf rdf:resource="&conc;#densiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&pstate;#Float" />
+        <owl:allValuesFrom rdf:resource="&chem;#suspendedsolid"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Abundanc">
-    <rdfs:subClassOf rdf:resource="#Composit"/>
+  <owl:Class rdf:about="#load">
+    <rdfs:subClassOf rdf:resource="&conc;#densiti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Constitu">
-    <rdfs:subClassOf rdf:resource="&conc;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="&repr;#Compon"/>
+  <owl:Class rdf:about="#bedload">
+    <rdfs:subClassOf rdf:resource="#load"/>
+    <owl:disjointWith rdf:resource="#suspendedload"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#dissolvedload">
+    <rdfs:subClassOf rdf:resource="#load"/>
+    <rdfs:subClassOf rdf:resource="&chem;#dissolvedsolid"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#suspendedload">
+    <rdfs:subClassOf rdf:resource="#load"/>
+    <rdfs:subClassOf rdf:resource="&chem;#suspendedsolid"/>
+    <owl:equivalentClass rdf:resource="#suspensionload" />
+  </owl:Class>
+  <owl:Class rdf:about="#suspensionload"/>
+
+  <owl:Class rdf:about="#washload">
+    <rdfs:subClassOf rdf:resource="#load"/>
+    <owl:disjointWith rdf:resource="#suspendedload"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&pstate;#float" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#abundanc">
+    <rdfs:subClassOf rdf:resource="#composit"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#constitu">
+    <rdfs:subClassOf rdf:resource="&conc;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="&repr;#compon"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -27,92 +27,92 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Behavior">
-     <rdfs:subClassOf rdf:resource="#PsychologicalParamet"/>
+  <owl:Class rdf:about="#behavior">
+     <rdfs:subClassOf rdf:resource="#psychologicalparamet"/>
    </owl:Class>
 
-  <owl:Class rdf:about="#Census">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#census">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CivilDisturb">
-    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  <owl:Class rdf:about="#civildisturb">
+    <rdfs:subClassOf rdf:resource="#socialact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HumanAct" />
+  <owl:Class rdf:about="#humanact" />
 
-  <owl:Class rdf:about="#HumanCapit">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
-    <rdfs:subClassOf rdf:resource="&know;#Knowledg"/>
+  <owl:Class rdf:about="#humancapit">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
+    <rdfs:subClassOf rdf:resource="&know;#knowledg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HumanNe">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#humann">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Profess">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#profess">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PsychologicalParamet">
-    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  <owl:Class rdf:about="#psychologicalparamet">
+    <rdfs:subClassOf rdf:resource="#socialact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Recreat">
-    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  <owl:Class rdf:about="#recreat">
+    <rdfs:subClassOf rdf:resource="#socialact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Servic">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#servic">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SocialAct">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#socialact">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SocialBehavior">
-    <rdfs:subClassOf rdf:resource="#SocialAct"/>
+  <owl:Class rdf:about="#socialbehavior">
+    <rdfs:subClassOf rdf:resource="#socialact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Work">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#work">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Man">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#man">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Unman">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
-    <owl:disjointWith rdf:resource="#Man"/>
+  <owl:Class rdf:about="#unman">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
+    <owl:disjointWith rdf:resource="#man"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Colon">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#colon">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConsumptiveUs">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#consumptiveu">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Map">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#map">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnergyEndUs">
-    <rdfs:subClassOf rdf:resource="#HumanAct"/>
+  <owl:Class rdf:about="#energyendu">
+    <rdfs:subClassOf rdf:resource="#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceCool">
-    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  <owl:Class rdf:about="#spacecool">
+    <rdfs:subClassOf rdf:resource="#energyendu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceH">
-    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  <owl:Class rdf:about="#spaceh">
+    <rdfs:subClassOf rdf:resource="#energyendu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterH">
-    <rdfs:subClassOf rdf:resource="#EnergyEndUs"/>
+  <owl:Class rdf:about="#waterh">
+    <rdfs:subClassOf rdf:resource="#energyendu"/>
   </owl:Class>
 
 </rdf:RDF>

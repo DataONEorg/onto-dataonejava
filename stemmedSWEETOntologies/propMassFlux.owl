@@ -30,75 +30,75 @@
      <owl:imports rdf:resource="&quan;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#MassFlux">
-    <rdfs:subClassOf rdf:resource="&quan;#Flux"/>
+  <owl:Class rdf:about="#massflux">
+    <rdfs:subClassOf rdf:resource="&quan;#flux"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:allValuesFrom rdf:resource="&mass;#Mass" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:allValuesFrom rdf:resource="&mass;#mass" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#DifferentialFlux">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#differentialflux">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DarcyFlux">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#darcyflux">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificCapac">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#specificcapac">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
   <rdfs:comment xml:lang="en">The rate of discharge of water from the well divided by the drawdown of the water level within the well.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificDischarg">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#specificdischarg">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
     <rdfs:comment xml:lang="en"> The rate of discharge of groundwater per unit area of a porous medium measured at right angle to the direction of flow.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PrimaryProduct">
-    <rdfs:subClassOf rdf:resource="#Product"/>
+  <owl:Class rdf:about="#primaryproduct">
+    <rdfs:subClassOf rdf:resource="#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Product">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#product">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GrossPrimaryProduct">
-    <rdfs:subClassOf rdf:resource="#PrimaryProduct"/>
-     <owl:equivalentClass rdf:resource="#GPP" />
+  <owl:Class rdf:about="#grossprimaryproduct">
+    <rdfs:subClassOf rdf:resource="#primaryproduct"/>
+     <owl:equivalentClass rdf:resource="#gpp" />
   </owl:Class>
-  <owl:Class rdf:about="#GPP"/>
+  <owl:Class rdf:about="#gpp"/>
 
-  <owl:Class rdf:about="#NetPrimaryProduct">
-    <rdfs:subClassOf rdf:resource="#PrimaryProduct"/>
-     <owl:equivalentClass rdf:resource="#NPP" />
+  <owl:Class rdf:about="#netprimaryproduct">
+    <rdfs:subClassOf rdf:resource="#primaryproduct"/>
+     <owl:equivalentClass rdf:resource="#npp" />
   </owl:Class>
-  <owl:Class rdf:about="#NPP"/>
+  <owl:Class rdf:about="#npp"/>
 
-  <owl:Class rdf:about="#PermeabilityCoeffic">
-    <rdfs:subClassOf rdf:resource="#Permeabl"/>
+  <owl:Class rdf:about="#permeabilitycoeff">
+    <rdfs:subClassOf rdf:resource="#permeabl"/>
   <rdfs:comment xml:lang="en">The rate of flow of water through a unit cross-sectional area under a unit hydraulic gradient at the prevailing temperature (field permeability coefficient) or adjusted to a temperature of 150C (60-F).</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Permeabl">
-    <rdfs:subClassOf rdf:resource="#MassFlux"/>
+  <owl:Class rdf:about="#permeabl">
+    <rdfs:subClassOf rdf:resource="#massflux"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EffectivePerm">
-    <rdfs:subClassOf rdf:resource="#Permeabl"/>
+  <owl:Class rdf:about="#effectiveperm">
+    <rdfs:subClassOf rdf:resource="#permeabl"/>
   <rdfs:comment xml:lang="en">The observed permeability of a porous medium to one fluid phase under conditions of physical interaction between this phase and other fluid phases present.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#IntrinsicPerm">
-    <rdfs:subClassOf rdf:resource="#Permeabl"/>
+  <owl:Class rdf:about="#intrinsicperm">
+    <rdfs:subClassOf rdf:resource="#permeabl"/>
   <rdfs:comment xml:lang="en">A measure of the relative ease with which a porous medium can transmit a fluid under a potential gradient and is a property of the medium alone (after Lohman and others, 1972). The property of a porous medium itself that expresses the ease with which gases, liquids, or other substances can pass through it.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificPerm">
-    <rdfs:subClassOf rdf:resource="#Permeabl"/>
+  <owl:Class rdf:about="#specificperm">
+    <rdfs:subClassOf rdf:resource="#permeabl"/>
   <rdfs:comment xml:lang="en">The permeability measured when the rock contains only one fluid.</rdfs:comment>
   </owl:Class>
 

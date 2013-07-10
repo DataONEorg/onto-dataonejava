@@ -69,12 +69,12 @@
     <rdfs:subClassOf rdf:resource="&cate;Category"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ClimateZoneTyp">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+  <owl:Class rdf:about="#climatezonetyp">
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MarineClim">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif" />
+  <owl:Class rdf:about="#marineclim">
+    <rdfs:subClassOf rdf:resource="#climateclassif" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasRealm" />
@@ -84,13 +84,13 @@
     <rdfs:comment xml:lang="en">(Also called maritime climate, oceanic climate.) A regional climate under the predominant influence of the sea, characterized by relatively small seasonal variations and high atmospheric moisture content; the antithesis of a continental climate.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RainShadow">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
+  <owl:Class rdf:about="#rainshadow">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
     <rdfs:comment xml:lang="en">A region of sharply reduced precipitation on the lee side of an orographic barrier, as compared with regions upwind of the barrier.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Doldrum">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
+  <owl:Class rdf:about="#doldrum">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasRealm" />
@@ -100,32 +100,32 @@
     <rdfs:comment xml:lang="en">A nautical term for the equatorial trough, with special reference to the light and variable nature of the winds.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DesertClimateZon">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
+  <owl:Class rdf:about="#desertclimatezon">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IntertropicalConvergenceZon">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
-    <owl:equivalentClass rdf:resource="#ITCZ"/>
+  <owl:Class rdf:about="#intertropicalconvergencezon">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
+    <owl:equivalentClass rdf:resource="#itcz"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&rela;hasRealm" />
-        <owl:allValuesFrom rdf:resource="#Equator" />
+        <owl:allValuesFrom rdf:resource="#equator" />
         </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#ITCZ"/>
+  <owl:Class rdf:about="#itcz"/>
 
-  <owl:Class rdf:about="#SubtropicalClimateZon">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
+  <owl:Class rdf:about="#subtropicalclimatezon">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TropicalClimateZon">
-    <rdfs:subClassOf rdf:resource="#ClimateZoneTyp"/>
+  <owl:Class rdf:about="#tropicalclimatezon">
+    <rdfs:subClassOf rdf:resource="#climatezonetyp"/>
   </owl:Class>
 
   <owl:Class rdf:ID="DryWinterClimate">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&crela;hasDrySeason"/>
@@ -135,7 +135,7 @@
   </owl:Class>
 
   <owl:Class rdf:ID="WetSummerClimate">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&crela;hasWetSeason"/>
@@ -145,14 +145,14 @@
   </owl:Class>
 
   <owl:Class rdf:ID="WetSummerDryWinterClimate">
-    <rdfs:subClassOf rdf:resource="#DryWinterClim"/>
-    <rdfs:subClassOf rdf:resource="#WetSummerClim"/>
+    <rdfs:subClassOf rdf:resource="#drywinterclim"/>
+    <rdfs:subClassOf rdf:resource="#wetsummerclim"/>
   </owl:Class>
 
 <!-- Climate zones -->
   <owl:Class rdf:ID="A">
-    <owl:equivalentClass rdf:resource="#TropicalClim"/>
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <owl:equivalentClass rdf:resource="#tropicalclim"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
     <rdfs:comment xml:lang="en">The A climate classification, also known as the Tropical climate classification, is characterized as being consistently warm with all months averaging above 18 degrees C and having annual precipitation exceeds potential evapotranspiration (POTET).</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -178,8 +178,8 @@
   <owl:Class rdf:ID="TropicalClimate"/>
 
   <owl:Class rdf:ID="B">
-    <owl:equivalentClass rdf:resource="#DryClim"/>
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <owl:equivalentClass rdf:resource="#dryclim"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
     <rdfs:comment xml:lang="en">Potential evapotranspiration (POTET) exceeds precipitation in all B climates. Subdivisions are based on precipitation timing and amount and mean annual temperature.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -195,8 +195,8 @@
   <owl:Class rdf:ID="DryClimate"/>
 
   <owl:Class rdf:ID="C">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
-    <owl:equivalentClass rdf:resource="#TemperateClim"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
+    <owl:equivalentClass rdf:resource="#temperateclim"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&crela;hasAverageColdestMonthTemperature"/>
@@ -223,7 +223,7 @@
   <owl:Class rdf:ID="TemperateClimate"/>
 
   <owl:Class rdf:ID="D">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&crela;hasAverageColdestMonthTemperature"/>
@@ -248,12 +248,12 @@
   </owl:Class>
 
   <owl:Class rdf:ID="E">
-    <rdfs:subClassOf rdf:resource="#ClimateClassif"/>
+    <rdfs:subClassOf rdf:resource="#climateclassif"/>
   </owl:Class>
 
 <!-- Individuals -->
   <zone:A rdf:ID="Af">
-    <owl:sameAs rdf:resource="#TropicalRainForestClim"/>
+    <owl:sameAs rdf:resource="#tropicalrainforestclim"/>
     <crela:hasAverageMonthlyPrecipitation>
       <thic:PrecipitationRange_cm>
         <mrela:hasLowerBound rdf:datatype="&xsd;integer">6</mrela:hasLowerBound>
@@ -264,7 +264,7 @@
   <zone:A rdf:ID="TropicalRainForestClimate"/>
 
   <zone:A rdf:ID="Am">
-    <owl:sameAs rdf:resource="#TropicalMonsoonClim"/>
+    <owl:sameAs rdf:resource="#tropicalmonsoonclim"/>
     <crela:hasAverageDrySeasonPrecipitation>
       <thic:PrecipitationRange_cm>
         <mrela:hasUpperBound rdf:datatype="&xsd;integer">6</mrela:hasUpperBound>
@@ -280,8 +280,8 @@
   <zone:A rdf:ID="TropicalMonsoonClimate"/>
 
   <zone:A rdf:ID="Aw">
-    <owl:sameAs rdf:resource="#TropicalSavannaClim"/>
-    <rdf:type rdf:resource="#WetSummerDryWinterClim"/>
+    <owl:sameAs rdf:resource="#tropicalsavannaclim"/>
+    <rdf:type rdf:resource="#wetsummerdrywinterclim"/>
     <crela:hasAverageITCZDominanceDuration>
       <ptime:MonthRange>
         <mrela:hasUpperBound rdf:datatype="&xsd;integer">6</mrela:hasUpperBound>
@@ -292,7 +292,7 @@
   <zone:A rdf:ID="TropicalSavannaClimate"/>
 
   <zone:B rdf:ID="BS">
-    <owl:sameAs rdf:resource="#SemiAridClim"/>
+    <owl:sameAs rdf:resource="#semiaridclim"/>
         <crela:hasAverageAnnualPrecipitation>
           <thic:PrecipitationRange>
             <srela:hasLowerQuantity rdf:resource="&thic;AnnualHalfPotentialEvapotranspiration"/>
@@ -304,7 +304,7 @@
   <zone:B rdf:ID="SemiAridClimate"/>
 
   <zone:B rdf:ID="BSh">
-    <owl:sameAs rdf:resource="#HotLowLatitudeSteppeClim"/>
+    <owl:sameAs rdf:resource="#hotlowlatitudesteppeclim"/>
     <rdfs:comment xml:lang="en">The BSh climate classification, also known as the hot low-latitude steppe, is characterized by having mean annual temperatures greater than 18 degree C.</rdfs:comment>
     <crela:hasAverageAnnualTemperature>
       <temp:TemperatureRange>
@@ -315,7 +315,7 @@
   <zone:B rdf:ID="HotLowLatitudeSteppeClimate"/>
 
   <zone:B rdf:ID="BSk">
-    <owl:sameAs rdf:resource="#ColdMidlatitudeSteppeClim"/>
+    <owl:sameAs rdf:resource="#coldmidlatitudesteppeclim"/>
     <crela:hasAverageAnnualTemperature>
       <temp:TemperatureRange>
         <mrela:hasUpperBound rdf:datatype="&xsd;integer">18</mrela:hasUpperBound>
@@ -326,8 +326,8 @@
   <zone:B rdf:ID="ColdMidlatitudeSteppeClimate"/>
 
   <zone:B rdf:ID="BW">
-    <owl:sameAs rdf:resource="#AridClim"/>
-    <owl:sameAs rdf:resource="#Arid"/>
+    <owl:sameAs rdf:resource="#aridclim"/>
+    <owl:sameAs rdf:resource="#arid"/>
     <rdfs:comment xml:lang="en">The BW climate classification, also known as the arid climate classification, is characterized by having precipitation amounts less than 1/2 potential evapotranspiration (POTET).</rdfs:comment>
         <crela:hasAverageAnnualPrecipitation>
           <thic:PrecipitationRange>
@@ -339,7 +339,7 @@
   <zone:B rdf:ID="Arid"/>
 
   <zone:B rdf:ID="BWh">
-    <owl:sameAs rdf:resource="#HotLowLatitudeDesertClim"/>
+    <owl:sameAs rdf:resource="#hotlowlatitudedesertclim"/>
     <rdfs:comment xml:lang="en">the BWh climate classification, also known as the hot low-latitude desert, is characterized by having mean annual temperatures greater than 18 degree C.</rdfs:comment>
     <crela:hasAverageAnnualTemperature>
       <temp:TemperatureRange>
@@ -350,7 +350,7 @@
   <zone:B rdf:ID="HotLowLatitudeDesertClimate"/>
 
   <zone:B rdf:ID="BWk">
-    <owl:sameAs rdf:resource="#ColdMidlatitudeDesertClim"/>
+    <owl:sameAs rdf:resource="#coldmidlatitudedesertclim"/>
     <rdfs:comment xml:lang="en">The BWk climate classification, also known as the cold midlatitude desert, is characterized by having mean annual temperatures less than 18 degree C.</rdfs:comment>
     <crela:hasAverageAnnualTemperature>
       <temp:TemperatureRange>
@@ -405,7 +405,7 @@
   </zone:C>
 
   <zone:C rdf:ID="Csb">
-    <rdf:type rdf:resource="#WetSummerDryWinterClim"/>
+    <rdf:type rdf:resource="#wetsummerdrywinterclim"/>
     <crela:hasAverageWarmestMonthTemperature>
       <temp:TemperatureRange>
         <mrela:hasLowerBound rdf:datatype="&xsd;integer">10</mrela:hasLowerBound>
@@ -415,7 +415,7 @@
   </zone:C>
 
   <zone:C rdf:ID="Cwa">
-    <rdf:type rdf:resource="#WetSummerDryWinterClim"/>
+    <rdf:type rdf:resource="#wetsummerdrywinterclim"/>
     <crela:hasAverageWarmestMonthTemperature>
       <temp:TemperatureRange>
         <mrela:hasLowerBound rdf:datatype="&xsd;integer">22</mrela:hasLowerBound>
@@ -453,7 +453,7 @@
   </zone:D>
 
   <zone:D rdf:ID="Dwa">
-    <rdf:type rdf:resource="#DryWinterClim"/>
+    <rdf:type rdf:resource="#drywinterclim"/>
     <crela:hasAverageWarmestMonthTemperature>
       <temp:TemperatureRange>
         <mrela:hasLowerBound rdf:datatype="&xsd;integer">22</mrela:hasLowerBound>
@@ -463,7 +463,7 @@
   </zone:D>
 
   <zone:D rdf:ID="Dwb">
-    <rdf:type rdf:resource="#DryWinterClim"/>
+    <rdf:type rdf:resource="#drywinterclim"/>
     <crela:hasAverageWarmestMonthTemperature>
       <temp:TemperatureRange>
         <mrela:hasUpperBound rdf:datatype="&xsd;integer">22</mrela:hasUpperBound>
@@ -473,7 +473,7 @@
   </zone:D>
 
   <zone:D rdf:ID="Dwc">
-    <rdf:type rdf:resource="#DryWinterClim"/>
+    <rdf:type rdf:resource="#drywinterclim"/>
     <rdfs:comment xml:lang="en">The Dwc climate classification is characterized by winter drought and haviong 1 - 4 months with temperatures above 10 degrees C.</rdfs:comment>
     <crela:hasAverageWinterDuration>
       <ptime:MonthRange>
@@ -484,7 +484,7 @@
   </zone:D>
 
   <zone:D rdf:ID="Dwd">
-    <rdf:type rdf:resource="#DryWinterClim"/>
+    <rdf:type rdf:resource="#drywinterclim"/>
     <rdfs:comment xml:lang="en">The Dwd climate classification is characterized by winter drought and having coldest month temperatures below -38 degree C (in Siberia only).</rdfs:comment>
     <crela:hasAverageColdestMonthTemperature>
       <temp:TemperatureRange>
@@ -494,7 +494,7 @@
   </zone:D>
 
   <zone:E rdf:ID="EF">
-    <owl:sameAs rdf:resource="#IceCapClim"/>
+    <owl:sameAs rdf:resource="#icecapclim"/>
     <rdfs:comment xml:lang="en">The EF climate classification, also known as the Ice Cap climate classification, is characterized by having warmest month temperatures below 0 degrees C and having precipitation exceeding very small potential evapotranspiration (POTET).</rdfs:comment>
     <crela:hasAverageWarmestMonthTemperature>
       <temp:TemperatureRange>
@@ -510,7 +510,7 @@
   <zone:E rdf:ID="IceCapClimate"/>
 
   <zone:E rdf:ID="EM">
-    <owl:sameAs rdf:resource="#PolarMarineClim"/>
+    <owl:sameAs rdf:resource="#polarmarineclim"/>
     <rdfs:comment xml:lang="en">The EM climate classification, also known as the polar marine climate classification, is characterized by all months having temperatures above -7 degree C, warmest month above 0 degree C, and annual temperatures less than 17 degree C.</rdfs:comment>
     <crela:hasAverageMonthlyTemperature>
       <temp:TemperatureRange>
@@ -531,7 +531,7 @@
   <zone:E rdf:ID="PolarMarineClimate"/>
 
   <zone:E rdf:ID="ET">
-    <owl:sameAs rdf:resource="#TundraClim"/>
+    <owl:sameAs rdf:resource="#tundraclim"/>
     <crela:hasAverageSnowCoverDuration>
       <ptime:MonthRange>
         <mrela:hasLowerBound rdf:datatype="&xsd;integer">8</mrela:hasLowerBound>
@@ -553,8 +553,8 @@
   </zone:E>
   <zone:E rdf:ID="TundraClimate"/>
 
-  <owl:Class rdf:about="#Equator">
-    <rdfs:subClassOf rdf:resource="#TropicalClimateZon" />
+  <owl:Class rdf:about="#equator">
+    <rdfs:subClassOf rdf:resource="#tropicalclimatezon" />
   </owl:Class>
 
 </rdf:RDF>

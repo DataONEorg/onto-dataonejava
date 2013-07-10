@@ -28,67 +28,67 @@
      <owl:imports rdf:resource="&subs;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Calcit">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#calcit">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Evaporit">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#evaporit">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Feldspar">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#feldspar">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Glass">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
-    <owl:disjointWith rdf:resource="#Miner" />
+  <owl:Class rdf:about="#glass">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
+    <owl:disjointWith rdf:resource="#miner" />
     <rdfs:comment xml:lang="en">In the scientific sense the term glass is often extended to all amorphous solids (and melts that easily form amorphous solids), including plastics, resins, or other silica-free amorphous solids. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hematit">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#hematit">
+    <rdfs:subClassOf rdf:resource="#miner"/>
     <rdfs:comment xml:lang="en">Hematite, also spelled as hæmatite, is the mineral form of Iron(III) oxide (Fe2O3), one of several iron oxides. Hematite crystallizes in the rhombohedral system, and it has the same crystal structure as ilmenite and as corundum. Hematite is a mineral, colored black to steel or silver-gray, brown to reddish brown, or red. It is mined as the main ore of iron [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Magnetit">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#magnetit">
+    <rdfs:subClassOf rdf:resource="#miner"/>
     <rdfs:comment xml:lang="en">Magnetite is a ferrimagnetic mineral with chemical formula Fe3O4, one of several iron oxides and a member of the spinel group. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Malic">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#malic">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Miner">
-    <rdfs:subClassOf rdf:resource="&subs;#SolidSubst"/>
+  <owl:Class rdf:about="#miner">
+    <rdfs:subClassOf rdf:resource="&subs;#solidsubst"/>
     <rdfs:comment xml:lang="en">A mineral is a naturally occurring solid formed through geological processes that has a characteristic chemical composition, a highly ordered atomic structure, and specific physical properties [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mineraloid">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#mineraloid">
+    <rdfs:subClassOf rdf:resource="#miner"/>
     <rdfs:comment xml:lang="en">A mineraloid is a mineral-like substance that does not demonstrate crystallinity. Mineraloids possess chemical compositions that vary beyond the generally accepted ranges for specific minerals. For example, obsidian is an amorphous glass and not a crystal. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#NonmetallicMiner">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#nonmetallicmin">
+    <rdfs:subClassOf rdf:resource="#miner"/>
     <rdfs:comment xml:lang="en">The majority of minerals are non-metallic, i.e., they are not elemental minerals which are of metal elements or alloys of metals. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Olvine">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#olvine">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Quartz">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#quartz">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pyrolit">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#pyrolit">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pyroxin">
-    <rdfs:subClassOf rdf:resource="#Miner"/>
+  <owl:Class rdf:about="#pyroxin">
+    <rdfs:subClassOf rdf:resource="#miner"/>
   </owl:Class>
 
 </rdf:RDF>

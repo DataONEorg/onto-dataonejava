@@ -33,185 +33,185 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Constant">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#constant">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interval">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
-    <owl:disjointWith rdf:resource="#Point" />
+  <owl:Class rdf:about="#interval">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
+    <owl:disjointWith rdf:resource="#point" />
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Window">
-    <rdfs:subClassOf rdf:resource="#Interval"/>
+  <owl:Class rdf:about="#window">
+    <rdfs:subClassOf rdf:resource="#interval"/>
   </owl:Class>
 
-  <math:Interval rdf:about="#NormalizedRang">
+  <math:Interval rdf:about="#normalizedrang">
     <mrela2:hasLowerBound rdf:datatype="&xsd;double">0</mrela2:hasLowerBound>
     <mrela2:hasUpperBound rdf:datatype="&xsd;double">1.0</mrela2:hasUpperBound>
   </math:Interval>
 
-  <owl:Class rdf:about="#Neighborhood">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#neighborhood">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NumericalEnt">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent"/>
+  <owl:Class rdf:about="#numericalent">
+    <rdfs:subClassOf rdf:resource="&repr;#repres"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Point">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#point">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#FuzzyPoint">
-    <rdfs:subClassOf rdf:resource="#Neighborhood"/>
+  <owl:Class rdf:about="#fuzzypoint">
+    <rdfs:subClassOf rdf:resource="#neighborhood"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scalar">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#scalar">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Set">
-    <rdfs:subClassOf rdf:resource="#Bag"/>
+  <owl:Class rdf:about="#set">
+    <rdfs:subClassOf rdf:resource="#bag"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FuzzySet">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#fuzzyset">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bag">
-    <rdfs:subClassOf rdf:resource="#Contain"/>
-    <owl:equivalentClass rdf:resource="#Multiset"/>
+  <owl:Class rdf:about="#bag">
+    <rdfs:subClassOf rdf:resource="#contain"/>
+    <owl:equivalentClass rdf:resource="#multiset"/>
   </owl:Class>
-  <owl:Class rdf:about="#Multiset"/>
+  <owl:Class rdf:about="#multiset"/>
 
-  <owl:Class rdf:about="#Contain">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Variabl">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#contain">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Array">
-    <rdfs:subClassOf rdf:resource="#Seq"/>
+  <owl:Class rdf:about="#variabl">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Matrix">
-    <rdfs:subClassOf rdf:resource="#Seq"/>
+  <owl:Class rdf:about="#array">
+    <rdfs:subClassOf rdf:resource="#seq"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#matrix">
+    <rdfs:subClassOf rdf:resource="#seq"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Array"/>
-        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
+        <owl:allValuesFrom rdf:resource="#array"/>
+        <owl:onProperty rdf:resource="&mrela;#eachelementhastyp"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrderedPair">
-    <rdfs:subClassOf rdf:resource="#Array"/>
-    <rdfs:subClassOf rdf:resource="&repr;#2D"/>
+  <owl:Class rdf:about="#orderedpair">
+    <rdfs:subClassOf rdf:resource="#array"/>
+    <rdfs:subClassOf rdf:resource="&repr;#2d"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand"/>
+        <owl:onProperty rdf:resource="&mrela;#hasfirstoperand"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand"/>
+        <owl:onProperty rdf:resource="&mrela;#hassecondoperand"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#UnorderedPair">
-    <rdfs:subClassOf rdf:resource="#Bag"/>
-    <rdfs:subClassOf rdf:resource="&repr;#2D"/>
+  <owl:Class rdf:about="#unorderedpair">
+    <rdfs:subClassOf rdf:resource="#bag"/>
+    <rdfs:subClassOf rdf:resource="&repr;#2d"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrderedTripl">
-    <rdfs:subClassOf rdf:resource="#Array"/>
-    <rdfs:subClassOf rdf:resource="&repr;#3D"/>
+  <owl:Class rdf:about="#orderedtripl">
+    <rdfs:subClassOf rdf:resource="#array"/>
+    <rdfs:subClassOf rdf:resource="&repr;#3d"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand"/>
+        <owl:onProperty rdf:resource="&mrela;#hasfirstoperand"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand"/>
+        <owl:onProperty rdf:resource="&mrela;#hassecondoperand"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasThirdOperand"/>
+        <owl:onProperty rdf:resource="&mrela;#hasthirdoperand"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Seq">
-    <rdfs:subClassOf rdf:resource="#Contain"/>
-    <owl:equivalentClass rdf:resource="#Order"/>
-    <owl:equivalentClass rdf:resource="#Sequenc"/>
+  <owl:Class rdf:about="#seq">
+    <rdfs:subClassOf rdf:resource="#contain"/>
+    <owl:equivalentClass rdf:resource="#order"/>
+    <owl:equivalentClass rdf:resource="#sequenc"/>
   </owl:Class>
-  <owl:Class rdf:about="#Order"/>
-  <owl:Class rdf:about="#Sequenc"/>
+  <owl:Class rdf:about="#order"/>
+  <owl:Class rdf:about="#sequenc"/>
 
-  <owl:Class rdf:about="#Tensor">
-    <rdfs:subClassOf rdf:resource="#Seq"/>
+  <owl:Class rdf:about="#tensor">
+    <rdfs:subClassOf rdf:resource="#seq"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Matrix"/>
-        <owl:onProperty rdf:resource="&mrela;#eachElementHasTyp"/>
+        <owl:allValuesFrom rdf:resource="#matrix"/>
+        <owl:onProperty rdf:resource="&mrela;#eachelementhastyp"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vector">
-    <rdfs:subClassOf rdf:resource="#Array"/>
-    <owl:disjointWith rdf:resource="#Scalar" />
+  <owl:Class rdf:about="#vector">
+    <rdfs:subClassOf rdf:resource="#array"/>
+    <owl:disjointWith rdf:resource="#scalar" />
     <rdfs:comment xml:lang="en">Any quantity, such as force, velocity, or acceleration, that has both magnitude and direction at each point in space, as opposed to a scalar that has magnitude only.</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:about="#Vector_3D">
-    <rdfs:subClassOf rdf:resource="#Vector"/>
-    <rdfs:subClassOf rdf:resource="&repr;#3D"/>
+    <rdfs:subClassOf rdf:resource="#vector"/>
+    <rdfs:subClassOf rdf:resource="&repr;#3d"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Exponent">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+ <owl:Class rdf:about="#exponent">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Collect">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+ <owl:Class rdf:about="#collect">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Equation">
-    <rdfs:subClassOf rdf:resource="#Relat"/>
+  <owl:Class rdf:about="#equation">
+    <rdfs:subClassOf rdf:resource="#relat"/>
     <rdfs:comment xml:lang="en">An equation is a mathematical statement, in symbols, that two things are exactly the same (or equivalent). [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inequal">
-    <rdfs:subClassOf rdf:resource="#Relat"/>
+  <owl:Class rdf:about="#inequal">
+    <rdfs:subClassOf rdf:resource="#relat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Relat">
-    <rdfs:subClassOf rdf:resource="#NumericalEnt"/>
+  <owl:Class rdf:about="#relat">
+    <rdfs:subClassOf rdf:resource="#numericalent"/>
     <rdfs:comment xml:lang="en">In mathematics, the concept of a relation is a generalization of 2-place relations, such as the relation of equality, less than, greater than, etc.. [Wikipedia]</rdfs:comment>
   </owl:Class>
 

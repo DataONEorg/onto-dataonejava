@@ -35,83 +35,83 @@
   </owl:Ontology>
 
 <!-- Particles -->
-  <owl:Class rdf:about="#Atom">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
+  <owl:Class rdf:about="#atom">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CosmicRay">
-    <rdfs:subClassOf rdf:resource="#EnergeticParticl"/>
+  <owl:Class rdf:about="#cosmicray">
+    <rdfs:subClassOf rdf:resource="#energeticparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Electron">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#electron">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnergeticParticl">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#energeticparticl">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GammaRay">
-    <rdfs:subClassOf rdf:resource="#Photon"/>
+  <owl:Class rdf:about="#gammaray">
+    <rdfs:subClassOf rdf:resource="#photon"/>
     <rdfs:comment>Gamma rays are a form of electromagnetic radiation or light emission of frequencies produced by sub-atomic particle interactions, such as electron-positron annihilation or radioactive decay. Gamma rays are generally characterized as electromagnetic radiation having the highest frequency and energy, and also the shortest wavelength, within the electromagnetic spectrum, i.e. high energy photons. Due to their high energy content, they can cause serious damage when absorbed by living cells.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#HeavyNuclei">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#heavynuclei">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Molecul">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
+  <owl:Class rdf:about="#molecul">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Neutrino">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#neutrino">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Nucleon">
+  <owl:Class rdf:about="#nucleon">
     <owl:equivalentClass>
           <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="#Neutron"/>
-              <rdf:Description rdf:about="#Proton"/>
+              <rdf:Description rdf:about="#neutron"/>
+              <rdf:Description rdf:about="#proton"/>
             </owl:unionOf>
           </owl:Class>
     </owl:equivalentClass>
     <rdfs:comment>A collective name for the two baryons: neutron and the proton. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Neutron">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#neutron">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Particl">
-    <rdfs:subClassOf rdf:resource="&chem;#Substanc"/>
+  <owl:Class rdf:about="#particl">
+    <rdfs:subClassOf rdf:resource="&chem;#substanc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Photon">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#photon">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Proton">
-    <rdfs:subClassOf rdf:resource="#SubatomicParticl"/>
+  <owl:Class rdf:about="#proton">
+    <rdfs:subClassOf rdf:resource="#subatomicparticl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SubatomicParticl">
-    <rdfs:subClassOf rdf:resource="&chem;#Substanc"/>
+  <owl:Class rdf:about="#subatomicparticl">
+    <rdfs:subClassOf rdf:resource="&chem;#substanc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&ordi;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&scale;#SubatomicScal" />
+        <owl:onProperty rdf:resource="&ordi;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&scale;#subatomicsc" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AnomalousEnergeticParticl">
-    <rdfs:subClassOf rdf:resource="#CosmicRay"/>
+  <owl:Class rdf:about="#anomalousenergeticparticl">
+    <rdfs:subClassOf rdf:resource="#cosmicray"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarEnergeticParticl">
-    <rdfs:subClassOf rdf:resource="#CosmicRay"/>
+  <owl:Class rdf:about="#solarenergeticparticl">
+    <rdfs:subClassOf rdf:resource="#cosmicray"/>
   </owl:Class>
 
 </rdf:RDF>

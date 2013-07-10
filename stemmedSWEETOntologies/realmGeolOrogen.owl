@@ -75,111 +75,111 @@
   </owl:Ontology>
 
 <!-- Realms -->
-  <owl:Class rdf:about="#Arc">
-    <rdfs:subClassOf rdf:resource="&geom;#Arc"/>
-    <rdfs:subClassOf rdf:resource="&geolr;#GeologicFeatur"/>
+  <owl:Class rdf:about="#arc">
+    <rdfs:subClassOf rdf:resource="&geom;#arc"/>
+    <rdfs:subClassOf rdf:resource="&geolr;#geologicfeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BackArc">
-    <rdfs:subClassOf rdf:resource="#Arc"/>
+  <owl:Class rdf:about="#backarc">
+    <rdfs:subClassOf rdf:resource="#arc"/>
     <rdfs:comment xml:lang="en">Back-arc basins (or retro-arc basins) are geologic features, submarine basins associated with island arcs and subduction zones. They are found at some convergent plate boundaries, presently concentrated in the Western Pacific ocean. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Orogen">
-    <rdfs:subClassOf rdf:resource="&geolr;#GeologicProvinc"/>
+  <owl:Class rdf:about="#orogen">
+    <rdfs:subClassOf rdf:resource="&geolr;#geologicprovinc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
-        <owl:someValuesFrom rdf:resource="&tec;#ThrustSystem"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
+        <owl:someValuesFrom rdf:resource="&tec;#thrustsystem"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&geol;#Orogeni"/>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:someValuesFrom rdf:resource="&geol;#orogeni"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&tecp;#Terran"/>
-          <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
+        <owl:someValuesFrom rdf:resource="&tecp;#terran"/>
+          <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
-        <owl:someValuesFrom rdf:resource="&petr;#Melang"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
+        <owl:someValuesFrom rdf:resource="&petr;#melang"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
-        <owl:someValuesFrom rdf:resource="&geol;#OrogenicCollaps"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
+        <owl:someValuesFrom rdf:resource="&geol;#orogeniccollap"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="&tec;#Sutur"/>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
+        <owl:someValuesFrom rdf:resource="&tec;#sutur"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
-       <owl:someValuesFrom rdf:resource="&def;#Deform"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
+       <owl:someValuesFrom rdf:resource="&def;#deform"/>
        </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
-        <owl:someValuesFrom rdf:resource="&basin;#ForelandBasin"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
+        <owl:someValuesFrom rdf:resource="&basin;#forelandbasin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ForeArc">
-    <rdfs:subClassOf rdf:resource="#Arc"/>
-    <rdfs:subClassOf rdf:resource="&tec;#SupraSubductionZoneComplex"/>
+  <owl:Class rdf:about="#forearc">
+    <rdfs:subClassOf rdf:resource="#arc"/>
+    <rdfs:subClassOf rdf:resource="&tec;#suprasubductionzonecomplex"/>
     <rdfs:comment xml:lang="en">A forearc is a depression in the sea floor located between a subduction zone and an associated volcanic arc. It is typically filled with sediments from the adjacent landmass and the island arc in addition to trapped oceanic crustal material.  [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagmaticArc">
-    <rdfs:subClassOf rdf:resource="#Arc"/>
+  <owl:Class rdf:about="#magmaticarc">
+    <rdfs:subClassOf rdf:resource="#arc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
-        <owl:someValuesFrom rdf:resource="#ForeArc"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
+        <owl:someValuesFrom rdf:resource="#forearc"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#RearArc"/>
-        <owl:onProperty rdf:resource="&prela;#hasPlanetaryStructur"/>
+        <owl:someValuesFrom rdf:resource="#reararc"/>
+        <owl:onProperty rdf:resource="&prela;#hasplanetarystructur"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasAxi"/>
-        <owl:allValuesFrom rdf:resource="#ArcAxis"/>
+        <owl:onProperty rdf:resource="&srela;#hasaxi"/>
+        <owl:allValuesFrom rdf:resource="#arcaxis"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RemnantArc">
-    <rdfs:subClassOf rdf:resource="#Arc"/>
+  <owl:Class rdf:about="#remnantarc">
+    <rdfs:subClassOf rdf:resource="#arc"/>
     <rdfs:comment xml:lang="en">The remnant arc is what is left on the rear side of the speading zone as athe basin broadens. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RearArc">
-    <owl:equivalentClass rdf:resource="#BackArc"/>
+  <owl:Class rdf:about="#reararc">
+    <owl:equivalentClass rdf:resource="#backarc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RetroArc">
-    <owl:equivalentClass rdf:resource="#BackArc"/>
+  <owl:Class rdf:about="#retroarc">
+    <owl:equivalentClass rdf:resource="#backarc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ArcAxis">
-    <rdfs:subClassOf rdf:resource="&dir;#Axis"/>
+  <owl:Class rdf:about="#arcaxis">
+    <rdfs:subClassOf rdf:resource="&dir;#axis"/>
     <rdfs:comment xml:lang="en">In a Back-arc basin the arc axis is the line where spreading occurs on the overlying plate of the subduction zone. [Wikipedia]</rdfs:comment>
   </owl:Class>
 

@@ -15,7 +15,7 @@
     <owl:imports rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl"/>
   </owl:Ontology>
   <owl:Class rdf:ID="CEDARmetadataService">
-    <rdfs:subClassOf rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#MetadataServic"/>
+    <rdfs:subClassOf rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#metadataserv"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Class that defines the possible metadata queries specific to the CEDAR data archive.</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -117,7 +117,7 @@
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >lg([HE])</vsto:hasName>
   </vsto:AtomicNeutralDensity>
-  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#PositiveOneElectricCharg">
+  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#positiveoneelectriccharg">
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Positive One Electric Charge</vsto:hasName>
   </rdf:Description>
@@ -261,7 +261,7 @@
     <vsto:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OPeNDAP Ascii Response</vsto:hasDescription>
   </vsto:AsciiDataFile>
-  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#NegativeOneElectricCharg">
+  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#negativeoneelectriccharg">
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Negative One Electric Charge</vsto:hasName>
   </rdf:Description>
@@ -340,7 +340,7 @@
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Beg TimeInc</vsto:hasName>
   </vsto:Time>
-  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#ZeroElectricCharg">
+  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#zeroelectriccharg">
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Zero Electric Charge</vsto:hasName>
   </rdf:Description>
@@ -460,7 +460,7 @@ Although it has been given many usages, the observatory's main purpose is to det
     <vsto:hasIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >880</vsto:hasIdentifier>
   </vsto:AtomicNeutralDensity>
-  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#PositiveElectricCharg">
+  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#positiveelectriccharg">
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Positive Electric Charge</vsto:hasName>
   </rdf:Description>
@@ -577,7 +577,7 @@ Although it has been given many usages, the observatory's main purpose is to det
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >DDS</vsto:hasName>
   </vsto:DdsDataFile>
-  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#NegativeElectricCharg">
+  <rdf:Description rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#negativeelectriccharg">
     <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Negative Electric Charge</vsto:hasName>
   </rdf:Description>
@@ -7984,7 +7984,7 @@ There are 4 areas in the summary plots. There are image plots as a function of h
                     >Kp: high geomagnetic activity</vsto:hasName>
                   </vsto:NumericalInterval>
                 </vsto:hasNumericalInterval>
-                <vsto:hasPhysicalDomain rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#EarthIonospher"/>
+                <vsto:hasPhysicalDomain rdf:resource="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#earthionosph"/>
                 <vsto:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
                 >Kp</vsto:hasName>
                 <vsto:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

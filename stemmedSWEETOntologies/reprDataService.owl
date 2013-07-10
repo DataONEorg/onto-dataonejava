@@ -32,77 +32,77 @@
     <owl:imports rdf:resource = "&solu;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#DataServic">
-    <rdfs:subClassOf rdf:resource="&huma;#Servic" />
+  <owl:Class rdf:about="#dataserv">
+    <rdfs:subClassOf rdf:resource="&huma;#servic" />
   </owl:Class>
 
-  <owl:Class rdf:about="#PostProcess">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
+  <owl:Class rdf:about="#postprocess">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PreProcess">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
+  <owl:Class rdf:about="#preprocess">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DataSynchron">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
+  <owl:Class rdf:about="#datasynchron">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Discov">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
-    <owl:equivalentClass rdf:resource="#Discoveri"/>
-    <owl:equivalentClass rdf:resource="#DiscoveryServic"/>
+  <owl:Class rdf:about="#discov">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
+    <owl:equivalentClass rdf:resource="#discoveri"/>
+    <owl:equivalentClass rdf:resource="#discoveryserv"/>
   </owl:Class>
-  <owl:Class rdf:about="#Discoveri"/>
-  <owl:Class rdf:about="#DiscoveryServic"/>
+  <owl:Class rdf:about="#discoveri"/>
+  <owl:Class rdf:about="#discoveryserv"/>
 
 <!-- Data Format -->
-  <owl:Class rdf:about="#Reformat">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
-    <owl:equivalentClass rdf:resource="#FormatConvers"/>
-    <owl:equivalentClass rdf:resource="#Reformat"/>
+  <owl:Class rdf:about="#reformat">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
+    <owl:equivalentClass rdf:resource="#formatconv"/>
+    <owl:equivalentClass rdf:resource="#reformat"/>
   </owl:Class>
-  <owl:Class rdf:about="#FormatConvers"/>
-  <owl:Class rdf:about="#Reformat"/>
+  <owl:Class rdf:about="#formatconv"/>
+  <owl:Class rdf:about="#reformat"/>
 
 <!-- Compression -->
-  <owl:Class rdf:about="#Compress">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
+  <owl:Class rdf:about="#compress">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CompressionMethod">
-    <rdfs:subClassOf rdf:resource="&solu;#Algorithm"/>
+  <owl:Class rdf:about="#compressionmethod">
+    <rdfs:subClassOf rdf:resource="&solu;#algorithm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Compress"/>
-        <owl:onProperty rdf:resource="&prrela;#hasDataServic"/>
+        <owl:allValuesFrom rdf:resource="#compress"/>
+        <owl:onProperty rdf:resource="&prrela;#hasdataserv"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <serv:CompressionMethod rdf:about="#Bzip2">
+  <serv:CompressionMethod rdf:about="#bzip2">
   </serv:CompressionMethod>
 
-  <serv:CompressionMethod rdf:about="#Gzip">
+  <serv:CompressionMethod rdf:about="#gzip">
   </serv:CompressionMethod>
 
-  <serv:CompressionMethod rdf:about="#Z">
+  <serv:CompressionMethod rdf:about="#z">
   </serv:CompressionMethod>
 
 <!-- Data Access -->
-  <owl:Class rdf:about="#Access">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
-    <owl:equivalentClass rdf:resource="#Access"/>
+  <owl:Class rdf:about="#access">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
+    <owl:equivalentClass rdf:resource="#access"/>
   </owl:Class>
-  <owl:Class rdf:about="#Access"/>
+  <owl:Class rdf:about="#access"/>
 
-  <owl:Class rdf:about="#InterfaceProtocol">
-    <rdfs:subClassOf rdf:resource="#DataServic"/>
+  <owl:Class rdf:about="#interfaceprotocol">
+    <rdfs:subClassOf rdf:resource="#dataserv"/>
   </owl:Class>
 
-  <serv:InterfaceProtocol rdf:about="#OPeNDAP">
-    <owl:sameAs rdf:resource="#DODS"/>
+  <serv:InterfaceProtocol rdf:about="#opendap">
+    <owl:sameAs rdf:resource="#dods"/>
   </serv:InterfaceProtocol>
-  <serv:InterfaceProtocol rdf:about="#DODS"/>
+  <serv:InterfaceProtocol rdf:about="#dods"/>
 
 </rdf:RDF>

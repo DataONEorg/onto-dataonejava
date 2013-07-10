@@ -42,106 +42,106 @@
      <owl:imports rdf:resource="&res;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Metadata">
-    <rdfs:subClassOf rdf:resource="&repr;#Represent" />
+  <owl:Class rdf:about="#metadata">
+    <rdfs:subClassOf rdf:resource="&repr;#repres" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Agent">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#agent">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Artifact">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#artifact">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Process">
-    <rdfs:subClassOf rdf:resource="&proc;#Process"/>
+  <owl:Class rdf:about="#process">
+    <rdfs:subClassOf rdf:resource="&proc;#process"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Background">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#background">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chronolog">
-    <rdfs:subClassOf rdf:resource="#Histori"/>
+  <owl:Class rdf:about="#chronolog">
+    <rdfs:subClassOf rdf:resource="#histori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Document">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#document">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Excavat">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#excavat">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Genesi">
-    <rdfs:subClassOf rdf:resource="#Histori"/>
+  <owl:Class rdf:about="#genesi">
+    <rdfs:subClassOf rdf:resource="#histori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Histori">
-    <rdfs:subClassOf rdf:resource="&prop;#Properti"/>
+  <owl:Class rdf:about="#histori">
+    <rdfs:subClassOf rdf:resource="&prop;#properti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pipelin">
-    <rdfs:subClassOf rdf:resource="#Process"/>
+  <owl:Class rdf:about="#pipelin">
+    <rdfs:subClassOf rdf:resource="#process"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Proven">
-    <rdfs:subClassOf rdf:resource="#Histori"/>
+  <owl:Class rdf:about="#proven">
+    <rdfs:subClassOf rdf:resource="#histori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reconstruct">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#reconstruct">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sequenc">
-    <rdfs:subClassOf rdf:resource="#Histori"/>
+  <owl:Class rdf:about="#sequenc">
+    <rdfs:subClassOf rdf:resource="#histori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Record">
-    <rdfs:subClassOf rdf:resource="&res;#Research"/>
+  <owl:Class rdf:about="#record">
+    <rdfs:subClassOf rdf:resource="&res;#research"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Workflow">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
+  <owl:Class rdf:about="#workflow">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VariableMap">
-    <owl:equivalentClass rdf:resource="#Crosswalk"/>
-    <rdfs:subClassOf rdf:resource="#ProvenanceEl"/>
+  <owl:Class rdf:about="#variablemap">
+    <owl:equivalentClass rdf:resource="#crosswalk"/>
+    <rdfs:subClassOf rdf:resource="#provenanceel"/>
   </owl:Class>
-  <owl:Class rdf:about="#Crosswalk"/>
+  <owl:Class rdf:about="#crosswalk"/>
 
-  <owl:Class rdf:about="#ProvenanceEl">
-    <rdfs:subClassOf rdf:resource="&res;#ExperimentAct"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#JustificationEl">
-    <rdfs:subClassOf rdf:resource="#ProvenanceEl"/>
+  <owl:Class rdf:about="#provenanceel">
+    <rdfs:subClassOf rdf:resource="&res;#experimentact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#InferenceRul">
-    <rdfs:subClassOf rdf:resource="#ProvenanceEl"/>
+  <owl:Class rdf:about="#justificationel">
+    <rdfs:subClassOf rdf:resource="#provenanceel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PrimitiveRul">
-    <rdfs:subClassOf rdf:resource="#InferenceRul"/>
+  <owl:Class rdf:about="#inferencerul">
+    <rdfs:subClassOf rdf:resource="#provenanceel"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DerivedRul">
-    <rdfs:subClassOf rdf:resource="#InferenceRul"/>
+  <owl:Class rdf:about="#primitiverul">
+    <rdfs:subClassOf rdf:resource="#inferencerul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MethodRul">
-    <rdfs:subClassOf rdf:resource="#InferenceRul"/>
+  <owl:Class rdf:about="#derivedrul">
+    <rdfs:subClassOf rdf:resource="#inferencerul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Predecessor">
-    <rdfs:subClassOf rdf:resource="#ProvenanceEl"/>
+  <owl:Class rdf:about="#methodrul">
+    <rdfs:subClassOf rdf:resource="#inferencerul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Successor">
-    <rdfs:subClassOf rdf:resource="#ProvenanceEl"/>
+  <owl:Class rdf:about="#predecessor">
+    <rdfs:subClassOf rdf:resource="#provenanceel"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#successor">
+    <rdfs:subClassOf rdf:resource="#provenanceel"/>
   </owl:Class>
 
 </rdf:RDF>

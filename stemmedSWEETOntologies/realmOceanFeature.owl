@@ -53,7 +53,7 @@
      <owl:imports rdf:resource="&root;reprSciUnits.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#EarthOcean">
+  <owl:Class rdf:about="#earthocean">
     <rdfs:subClassOf rdf:resource="&planet;Ocean" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -63,7 +63,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanDepth">
+  <owl:Class rdf:about="#oceandepth">
     <rdfs:subClassOf rdf:resource="&ht;Depth" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -73,7 +73,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanArea">
+  <owl:Class rdf:about="#oceanarea">
     <rdfs:subClassOf rdf:resource="&mult;Area" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -83,7 +83,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OceanVolum">
+  <owl:Class rdf:about="#oceanvolum">
     <rdfs:subClassOf rdf:resource="&mult;Volume" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -93,7 +93,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <feat:EarthOcean rdf:about="#PacificOcean">
+  <feat:EarthOcean rdf:about="#pacificocean">
      <srela:hasAverageDepth rdf:resource="#4282m" />
      <srela:hasMaximumDepth rdf:resource="#10911m" />
      <srela:hasVolume rdf:resource="#707pt6million_km3" />
@@ -112,7 +112,7 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">165.2</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <feat:EarthOcean rdf:about="#AtlanticOcean">
+  <feat:EarthOcean rdf:about="#atlanticocean">
      <srela:hasAverageDepth rdf:resource="#3926m" />
      <srela:hasMaximumDepth rdf:resource="#8605m" />
      <srela:hasVolume rdf:resource="#323pt6million_km3" />
@@ -131,7 +131,7 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">82.4</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <feat:EarthOcean rdf:about="#ArcticOcean">
+  <feat:EarthOcean rdf:about="#arcticocean">
      <srela:hasAverageDepth rdf:resource="#1038m" />
      <srela:hasArea rdf:resource="#14pt1million_km2" />
   </feat:EarthOcean>
@@ -142,7 +142,7 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">14.1</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <feat:EarthOcean rdf:about="#IndianOcean">
+  <feat:EarthOcean rdf:about="#indianocean">
      <srela:hasAverageDepth rdf:resource="#3963m" />
      <srela:hasMaximumDepth rdf:resource="#8047m" />
      <srela:hasVolume rdf:resource="#291pt0million_km3" />
@@ -161,7 +161,7 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">73.4</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <feat:EarthOcean rdf:about="#CaribbeanSea">
+  <feat:EarthOcean rdf:about="#caribbeansea">
      <srela:hasMaximumDepth rdf:resource="#7686m" />
      <srela:hasArea rdf:resource="#2pt8million_km2" />
   </feat:EarthOcean>
@@ -172,7 +172,7 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">2.8</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <feat:EarthOcean rdf:about="#SouthernOcean">
+  <feat:EarthOcean rdf:about="#southernocean">
      <srela:hasMaximumDepth rdf:resource="#7235m" />
      <srela:hasArea rdf:resource="#20pt3million_km2" />
   </feat:EarthOcean>
@@ -183,18 +183,18 @@
      <screla:hasNumericValue rdf:datatype="&xsd;double">20.3</screla:hasNumericValue>
   </feat:OceanArea>
 
-  <owl:Class rdf:about="#KamchatkaCurr">
+  <owl:Class rdf:about="#kamchatkacurr">
     <rdfs:subClassOf rdf:resource="&odyn;OceanCurrent" />
     <rdfs:comment xml:lang="en">The western part of the subpolar gyre in the deep (western) part of the Bering Sea.
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#yellowSeaWarmCurr">
+  <owl:Class rdf:about="#yellowseawarmcurr">
     <rdfs:subClassOf rdf:resource="&odyn;OceanCurrent" />
     <rdfs:comment xml:lang="en">A surface current flowing northward along the central axis of the Yellow Sea.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#EarthOceanCurr">
+  <owl:Class rdf:about="#earthoceancurr">
     <rdfs:subClassOf rdf:resource="&odyn;OceanCurrent" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -204,74 +204,74 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#EarthWesternBoundaryCurr">
+  <owl:Class rdf:about="#earthwesternboundarycurr">
     <rdfs:subClassOf rdf:resource="&odyn;WesternBoundaryCurrent" />
-    <rdfs:subClassOf rdf:resource="#EarthOceanCurr" />
+    <rdfs:subClassOf rdf:resource="#earthoceancurr" />
   </owl:Class>
 
-  <owl:Class rdf:about="#EarthEasternBoundaryCurr">
+  <owl:Class rdf:about="#eartheasternboundarycurr">
     <rdfs:subClassOf rdf:resource="&odyn;EasternBoundaryCurrent" />
-    <rdfs:subClassOf rdf:resource="#EarthOceanCurr" />
+    <rdfs:subClassOf rdf:resource="#earthoceancurr" />
   </owl:Class>
 
-  <feat:EarthOceanCurrent rdf:about="#AntarcticCircumpolarCurr">
+  <feat:EarthOceanCurrent rdf:about="#antarcticcircumpolarcurr">
   </feat:EarthOceanCurrent>
 
-  <feat:EarthOceanCurrent rdf:about="#BenguelaCurr">
+  <feat:EarthOceanCurrent rdf:about="#benguelacurr">
   </feat:EarthOceanCurrent>
 
-  <feat:EarthOceanCurrent rdf:about="#DeepOceanCurr">
+  <feat:EarthOceanCurrent rdf:about="#deepoceancurr">
   </feat:EarthOceanCurrent>
 
-  <feat:EarthOceanCurrent rdf:about="#DeepOceanCurr">
+  <feat:EarthOceanCurrent rdf:about="#deepoceancurr">
   </feat:EarthOceanCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#AgulhasCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#agulhascurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#BrazilCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#brazilcurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#EastAustraliaCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#eastaustraliacurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#GulfStream">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#gulfstream">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#NorthAtlanticCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#northatlanticcurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#KurishioCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#kurishiocurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthWesternBoundaryCurrent rdf:about="#LabradorCurr">
+  <feat:EarthWesternBoundaryCurrent rdf:about="#labradorcurr">
   </feat:EarthWesternBoundaryCurrent>
 
-  <feat:EarthEasternBoundaryCurrent rdf:about="#CaliforniaCurr">
+  <feat:EarthEasternBoundaryCurrent rdf:about="#californiacurr">
   </feat:EarthEasternBoundaryCurrent>
 
-  <feat:EarthEasternBoundaryCurrent rdf:about="#PeruCurr">
+  <feat:EarthEasternBoundaryCurrent rdf:about="#perucurr">
   </feat:EarthEasternBoundaryCurrent>
 
-  <feat:EarthEasternBoundaryCurrent rdf:about="#CanaryCurr">
+  <feat:EarthEasternBoundaryCurrent rdf:about="#canarycurr">
   </feat:EarthEasternBoundaryCurrent>
 
-  <feat:EarthEasternBoundaryCurrent rdf:about="#BenguelaCurr">
+  <feat:EarthEasternBoundaryCurrent rdf:about="#benguelacurr">
   </feat:EarthEasternBoundaryCurrent>
 
-  <odyn:OceanGyre rdf:about="#NorthAtlanticGyr">
+  <odyn:OceanGyre rdf:about="#northatlanticgyr">
   </odyn:OceanGyre>
 
-  <odyn:OceanGyre rdf:about="#SouthAtlanticGyr">
+  <odyn:OceanGyre rdf:about="#southatlanticgyr">
   </odyn:OceanGyre>
 
-  <odyn:OceanGyre rdf:about="#NorthPacificGyr">
+  <odyn:OceanGyre rdf:about="#northpacificgyr">
   </odyn:OceanGyre>
 
-  <odyn:OceanGyre rdf:about="#SouthPacificGyr">
+  <odyn:OceanGyre rdf:about="#southpacificgyr">
   </odyn:OceanGyre>
 
-  <odyn:OceanGyre rdf:about="#IndianOceanGyr">
+  <odyn:OceanGyre rdf:about="#indianoceangyr">
   </odyn:OceanGyre>
 
 </rdf:RDF>

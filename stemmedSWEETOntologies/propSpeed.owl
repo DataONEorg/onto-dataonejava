@@ -51,160 +51,160 @@
   </owl:Ontology>
 
 <!-- Physical Properties -->
-  <owl:Class rdf:about="#Acceler">
-    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#acceler">
+    <rdfs:subClassOf rdf:resource="&prop;#motionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerSecondSquar"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterpersecondsquar"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>The rate of change with time of the velocity vector of a particle.</rdfs:comment>
     <rdfs:label>Acceleration</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inertia">
-    <rdfs:subClassOf rdf:resource="#Momentum" />
+  <owl:Class rdf:about="#inertia">
+    <rdfs:subClassOf rdf:resource="#momentum" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Momentum">
-    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#momentum">
+    <rdfs:subClassOf rdf:resource="&prop;#motionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#kilogramMeterPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#kilogrammeterpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Speed">
-    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
+  <owl:Class rdf:about="#speed">
+    <rdfs:subClassOf rdf:resource="&prop;#motionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TerminalVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc" />
+  <owl:Class rdf:about="#terminalveloc">
+    <rdfs:subClassOf rdf:resource="#veloc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Veloc">
-    <rdfs:subClassOf rdf:resource="&prop;#MotionProperti" />
-    <rdfs:subClassOf rdf:resource="&quan;#PhysicalQuant"/>
-    <rdfs:subClassOf rdf:resource="&math;#Vector" />
+  <owl:Class rdf:about="#veloc">
+    <rdfs:subClassOf rdf:resource="&prop;#motionproperti" />
+    <rdfs:subClassOf rdf:resource="&quan;#physicalqu"/>
+    <rdfs:subClassOf rdf:resource="&math;#vector" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#meterPerSecond"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#meterpersecond"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The time rate of change of a position vector; that is, a change of position expressed in terms of speed and direction.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#VerticalVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc" />
+  <owl:Class rdf:about="#verticalveloc">
+    <rdfs:subClassOf rdf:resource="#veloc" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasDirect" />
-        <owl:hasValue rdf:resource="&sdir;#Vertic" />
+        <owl:onProperty rdf:resource="&srela;#hasdirect" />
+        <owl:hasValue rdf:resource="&sdir;#vertic" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Omega">
-    <rdfs:subClassOf rdf:resource="#VerticalVeloc" />
+  <owl:Class rdf:about="#omega">
+    <rdfs:subClassOf rdf:resource="#verticalveloc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#DopplerVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc" />
+  <owl:Class rdf:about="#dopplerveloc">
+    <rdfs:subClassOf rdf:resource="#veloc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#RadialVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc" />
+  <owl:Class rdf:about="#radialveloc">
+    <rdfs:subClassOf rdf:resource="#veloc" />
     <rdfs:comment xml:lang="en">The component of a three-dimensional velocity vector oriented along the radial direction from the origin point or axis in polar, cylindrical, or spherical coordinates.  In connection with Doppler radar, the radial velocity component is called Doppler velocity.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#WindSpe">
-    <rdfs:subClassOf rdf:resource="#Speed"/>
+  <owl:Class rdf:about="#windsp">
+    <rdfs:subClassOf rdf:resource="#speed"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&wind;#Wind" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&wind;#wind" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drift">
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#drift">
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagnetiCurvatureDrift">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticQuant"/>
-    <rdfs:subClassOf rdf:resource="#Drift"/>
+  <owl:Class rdf:about="#magneticurvaturedrift">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticqu"/>
+    <rdfs:subClassOf rdf:resource="#drift"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AlfvenVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#alfvenveloc">
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IonVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#ionveloc">
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NeutralVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#neutralveloc">
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ThermalVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#thermalveloc">
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TangentialAcceler">
-    <rdfs:subClassOf rdf:resource="#Acceler" />
+  <owl:Class rdf:about="#tangentialaccel">
+    <rdfs:subClassOf rdf:resource="#acceler" />
     <rdfs:comment xml:lang="en">The component of the acceleration directed along the velocity vector (streamline), with magnitude equal to the rate of change of speed of the parcel dV/dt, where V is the speed.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#WindShear">
-    <rdfs:subClassOf rdf:resource="&prop;#FluidProperti"/>
+  <owl:Class rdf:about="#windshear">
+    <rdfs:subClassOf rdf:resource="&prop;#fluidproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroupVeloc">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#groupveloc">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PhaseVeloc">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#phaseveloc">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeepageVeloc">
-    <rdfs:subClassOf rdf:resource="&prop;#HydrogeologicalProperti"/>
-    <rdfs:subClassOf rdf:resource="#Veloc"/>
+  <owl:Class rdf:about="#seepageveloc">
+    <rdfs:subClassOf rdf:resource="&prop;#hydrogeologicalproperti"/>
+    <rdfs:subClassOf rdf:resource="#veloc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EscapeVeloc">
-    <rdfs:subClassOf rdf:resource="#Veloc" />
+  <owl:Class rdf:about="#escapeveloc">
+    <rdfs:subClassOf rdf:resource="#veloc" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Airspe">
-    <rdfs:subClassOf rdf:resource="#Speed"/>
+  <owl:Class rdf:about="#airsp">
+    <rdfs:subClassOf rdf:resource="#speed"/>
     <rdfs:comment>Airspeed is the speed of an aircraft relative to the air. There are several different measures of airspeed: indicated airspeed, calibrated airspeed, equivalent airspeed and true airspeed.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroundSpe">
-    <rdfs:subClassOf rdf:resource="#Speed"/>
+  <owl:Class rdf:about="#groundsp">
+    <rdfs:subClassOf rdf:resource="#speed"/>
     <rdfs:comment>Ground speed is the speed of an aircraft relative to the ground. It is the sum of the aircraft's true airspeed and the current wind and weather conditions; a headwind subtracts from the ground speed, while a tailwind adds to it. Winds at other angles to the heading will have components of either headwind or tailwind as well as a crosswind component.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ProperMot">
-    <rdfs:subClassOf rdf:resource="#Speed"/>
+  <owl:Class rdf:about="#propermot">
+    <rdfs:subClassOf rdf:resource="#speed"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -39,101 +39,101 @@
   </owl:Ontology>
   
 <!-- Values -->
-  <dist:Size rdf:about="#Big">
-    <srela:largerThan rdf:resource="#Littl"/>
+  <dist:Size rdf:about="#big">
+    <srela:largerThan rdf:resource="#littl"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Coars">
-    <srela:largerThan rdf:resource="#Medium"/>
+  <dist:Size rdf:about="#coar">
+    <srela:largerThan rdf:resource="#medium"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Fine">
+  <dist:Size rdf:about="#fine">
   </dist:Size>
 
-  <dist:Size rdf:about="#Larg">
-    <srela:largerThan rdf:resource="#Medium"/>
+  <dist:Size rdf:about="#larg">
+    <srela:largerThan rdf:resource="#medium"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Littl"/>
+  <dist:Size rdf:about="#littl"/>
 
-  <dist:Size rdf:about="#Macro">
-    <srela:largerThan rdf:resource="#Meso"/>
+  <dist:Size rdf:about="#macro">
+    <srela:largerThan rdf:resource="#meso"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Medium">
-    <srela:largerThan rdf:resource="#Small"/>
+  <dist:Size rdf:about="#medium">
+    <srela:largerThan rdf:resource="#small"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Meso">
-    <srela:largerThan rdf:resource="#Micro"/>
+  <dist:Size rdf:about="#meso">
+    <srela:largerThan rdf:resource="#micro"/>
   </dist:Size>
 
-  <dist:Size rdf:about="#Micro"/>
+  <dist:Size rdf:about="#micro"/>
 
-  <dist:Size rdf:about="#Microscop"/>
+  <dist:Size rdf:about="#microscop"/>
 
-  <dist:Size rdf:about="#Small"/>
+  <dist:Size rdf:about="#small"/>
 
-  <dist:Size rdf:about="#Tini"/>
+  <dist:Size rdf:about="#tini"/>
   
-  <dist:Size rdf:about="#Widespread"/>
+  <dist:Size rdf:about="#widespread"/>
   
 <!-- Vertical extents -->
-  <vert:VerticalExtent rdf:about="#Shallow"/>
+  <vert:VerticalExtent rdf:about="#shallow"/>
 
-  <vert:VerticalExtent rdf:about="#Lower"/>
+  <vert:VerticalExtent rdf:about="#lower"/>
   
-  <vert:VerticalExtent rdf:about="#Upper"/>
+  <vert:VerticalExtent rdf:about="#upper"/>
 
-  <vert:VerticalExtent rdf:about="#High">
-     <srela:greaterVerticalExtentThan rdf:resource="#Low"/>
+  <vert:VerticalExtent rdf:about="#high">
+     <srela:greaterVerticalExtentThan rdf:resource="#low"/>
   </vert:VerticalExtent>
 
-  <vert:VerticalExtent rdf:about="#Low"/>
+  <vert:VerticalExtent rdf:about="#low"/>
 
-  <vert:VerticalExtent rdf:about="#Deep">
-     <srela:greaterVerticalExtentThan rdf:resource="#Shallow"/>
+  <vert:VerticalExtent rdf:about="#deep">
+     <srela:greaterVerticalExtentThan rdf:resource="#shallow"/>
   </vert:VerticalExtent>
   
 <!-- Distances -->
-  <dist:Distance rdf:about="#Far">
-    <srela:fartherThan rdf:resource="#Near"/>
+  <dist:Distance rdf:about="#far">
+    <srela:fartherThan rdf:resource="#near"/>
   </dist:Distance>
 
-  <dist:Distance rdf:about="#Near">
-    <owl:sameAs rdf:resource="#Nearbi"/>
-    <owl:sameAs rdf:resource="#Close"/>
+  <dist:Distance rdf:about="#near">
+    <owl:sameAs rdf:resource="#nearbi"/>
+    <owl:sameAs rdf:resource="#close"/>
   </dist:Distance>
-  <dist:Distance rdf:about="#Nearbi"/>
-  <dist:Distance rdf:about="#Close"/>
+  <dist:Distance rdf:about="#nearbi"/>
+  <dist:Distance rdf:about="#close"/>
 
-  <dist:Distance rdf:about="#Remot">
-    <srela:fartherThan rdf:resource="#Near"/>
+  <dist:Distance rdf:about="#remot">
+    <srela:fartherThan rdf:resource="#near"/>
   </dist:Distance>
 
 <!-- Sources -->
-  <spac:SpatialSource rdf:about="#Point">
+  <spac:SpatialSource rdf:about="#point">
   </spac:SpatialSource>
 
-  <spac:SpatialSource rdf:about="#NonPoint">
-    <owl:differentFrom rdf:resource="#Point" />
+  <spac:SpatialSource rdf:about="#nonpoint">
+    <owl:differentFrom rdf:resource="#point" />
   </spac:SpatialSource>
 
-  <spac:SpatialSource rdf:about="#Mobil">
-    <owl:differentFrom rdf:resource="#Stationari" />
+  <spac:SpatialSource rdf:about="#mobil">
+    <owl:differentFrom rdf:resource="#stationari" />
   </spac:SpatialSource>
 
-  <spac:SpatialSource rdf:about="#Stationari">
+  <spac:SpatialSource rdf:about="#stationari">
   </spac:SpatialSource>
 
-  <spac:SpatialSource rdf:about="#FarField">
+  <spac:SpatialSource rdf:about="#farfield">
   </spac:SpatialSource>
 
-  <spac:SpatialSource rdf:about="#Reson">
+  <spac:SpatialSource rdf:about="#reson">
   </spac:SpatialSource>
 
 <!-- Other -->
-  <mult:AngularExtent rdf:about="#FullDisk">
+  <mult:AngularExtent rdf:about="#fulldisk">
   </mult:AngularExtent>
 
 </rdf:RDF>

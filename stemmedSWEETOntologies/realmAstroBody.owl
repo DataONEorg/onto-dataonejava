@@ -39,56 +39,56 @@
 
 <!-- Realms -->
 
-  <owl:Class rdf:about="#Asteroid">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#asteroid">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AstronomicalBodi">
-    <rdfs:subClassOf rdf:resource="&obj3d;#Bodi"/>
+  <owl:Class rdf:about="#astronomicalbodi">
+    <rdfs:subClassOf rdf:resource="&obj3d;#bodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Comet">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#comet">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Galaxi">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#galaxi">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Moon">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#moon">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#revolvesAround"/>
-        <owl:allValuesFrom rdf:resource="#Planet"/>
+        <owl:onProperty rdf:resource="&prela;#revolvesaround"/>
+        <owl:allValuesFrom rdf:resource="#planet"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Planet">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#planet">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#revolvesAround"/>
-        <owl:allValuesFrom rdf:resource="#Star"/>
+        <owl:onProperty rdf:resource="&prela;#revolvesaround"/>
+        <owl:allValuesFrom rdf:resource="#star"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Satellit">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#satellit">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Star">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#star">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OuterSpac">
-    <rdfs:subClassOf rdf:resource="&realm;#Realm"/>
+  <owl:Class rdf:about="#outerspac">
+    <rdfs:subClassOf rdf:resource="&realm;#realm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Extraterrestri">
-    <rdfs:subClassOf rdf:resource="#AstronomicalBodi"/>
+  <owl:Class rdf:about="#extraterrestri">
+    <rdfs:subClassOf rdf:resource="#astronomicalbodi"/>
     <rdfs:comment xml:lang="en">A body or substance which does not originate from Earth. [Wikipedia]</rdfs:comment>
   </owl:Class>
 

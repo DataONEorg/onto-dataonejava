@@ -40,61 +40,61 @@
      <owl:imports rdf:resource="&root;realmClimateZone.owl"/>
   </owl:Ontology>
 
-  <owl:ObjectProperty rdf:about="#hasClimateZoneTyp">
+  <owl:ObjectProperty rdf:about="#hasclimatezonetyp">
     <rdfs:range rdf:resource="&zone;ClimateZoneType"/>
-    <owl:equivalentProperty rdf:resource="#hasClimateZon"/>
+    <owl:equivalentProperty rdf:resource="#hasclimatezon"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasClimateZon"/>
+  <owl:ObjectProperty rdf:about="#hasclimatezon"/>
 
-  <owl:ObjectProperty rdf:about="#hasAverageDrySeasonPrecipit">
+  <owl:ObjectProperty rdf:about="#hasaveragedryseasonprecipit">
     <rdfs:range rdf:resource="&thic;AverageDrySeasonPrecipitation"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageMonthlyPrecipit">
+  <owl:ObjectProperty rdf:about="#hasaveragemonthlyprecipit">
     <rdfs:range rdf:resource="&thic;AverageMonthlyPrecipitation"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageAnnualPrecipit">
+  <owl:ObjectProperty rdf:about="#hasaverageannualprecipit">
     <rdfs:range rdf:resource="&thic;AverageAnnualPrecipitation"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageSnowCoverDur">
+  <owl:ObjectProperty rdf:about="#hasaveragesnowcoverdur">
     <rdfs:range rdf:resource="&time;AverageSnowCoverDuration"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageWinterDur">
+  <owl:ObjectProperty rdf:about="#hasaveragewinterdur">
     <rdfs:range rdf:resource="&time;AverageWinterDuration"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageITCZDominanceDur">
+  <owl:ObjectProperty rdf:about="#hasaverageitczdominancedur">
     <rdfs:range rdf:resource="&time;AverageITCZDominanceDuration"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasDrySeason">
+  <owl:ObjectProperty rdf:about="#hasdryseason">
     <rdfs:range rdf:resource="&seas;Season"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasWetSeason">
+  <owl:ObjectProperty rdf:about="#haswetseason">
     <rdfs:range rdf:resource="&seas;WetSeason"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasWarmestMonthTemperatur">
+  <owl:ObjectProperty rdf:about="#haswarmestmonthtemperatur">
     <rdfs:range rdf:resource="&temp;WarmestMonthTemperature"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageAnnualTemperatur">
+  <owl:ObjectProperty rdf:about="#hasaverageannualtemperatur">
     <rdfs:range rdf:resource="&temp;MeanAnnualTemperature"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageColdestMonthTemperatur">
+  <owl:ObjectProperty rdf:about="#hasaveragecoldestmonthtemperatur">
     <rdfs:range rdf:resource="&temp;ColdestMonthTemperature"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageWarmestMonthTemperatur">
+  <owl:ObjectProperty rdf:about="#hasaveragewarmestmonthtemperatur">
     <rdfs:range rdf:resource="&temp;WarmestMonthTemperature"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="#hasAverageMonthlyTemperatur">
+  <owl:ObjectProperty rdf:about="#hasaveragemonthlytemperatur">
     <rdfs:range rdf:resource="&temp;MeanMonthlyTemperature"/>
   </owl:ObjectProperty>
 

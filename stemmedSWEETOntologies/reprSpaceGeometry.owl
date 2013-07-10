@@ -38,191 +38,191 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Arc">
+  <owl:Class rdf:about="#arc">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_1D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Contour">
-    <rdfs:subClassOf rdf:resource="#Surfac"/>
+  <owl:Class rdf:about="#contour">
+    <rdfs:subClassOf rdf:resource="#surfac"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Curv">
+  <owl:Class rdf:about="#curv">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_1D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GeometricalObject">
-    <rdfs:subClassOf rdf:resource="&math;#NumericalEnt"/>
+  <owl:Class rdf:about="#geometricalobject">
+    <rdfs:subClassOf rdf:resource="&math;#numericalent"/>
   </owl:Class>
 
   <owl:Class rdf:about="#GeometricalObject_0D">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
-    <owl:equivalentClass rdf:resource="#Point"/>
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
+    <owl:equivalentClass rdf:resource="#point"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
-        <owl:onProperty rdf:resource="&mrela;#hasDimens"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdimen"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="#GeometricalObject_1D">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
-    <rdfs:subClassOf rdf:resource="&repr;#1D"/>
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
+    <rdfs:subClassOf rdf:resource="&repr;#1d"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Line">
-    <rdfs:subClassOf rdf:resource="#Curv"/>
+  <owl:Class rdf:about="#line">
+    <rdfs:subClassOf rdf:resource="#curv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Point">
+  <owl:Class rdf:about="#point">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_0D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trajectori">
-    <rdfs:subClassOf rdf:resource="#Curv"/>
-    <owl:equivalentClass rdf:resource="#Path"/>
+  <owl:Class rdf:about="#trajectori">
+    <rdfs:subClassOf rdf:resource="#curv"/>
+    <owl:equivalentClass rdf:resource="#path"/>
     <rdfs:comment xml:lang="en">Curve in space tracing the points successivley occupied by a particle in motion</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#Path"/>
+  <owl:Class rdf:about="#path"/>
 
-  <owl:Class rdf:about="#Rout">
-    <rdfs:subClassOf rdf:resource="#Path"/>
+  <owl:Class rdf:about="#rout">
+    <rdfs:subClassOf rdf:resource="#path"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spiral">
-    <rdfs:subClassOf rdf:resource="#Arc"/>
+  <owl:Class rdf:about="#spiral">
+    <rdfs:subClassOf rdf:resource="#arc"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#BoundingBox">
-   <rdfs:subClassOf rdf:resource="#Rectangl"/>
+  <owl:Class rdf:about="#boundingbox">
+   <rdfs:subClassOf rdf:resource="#rectangl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Circular">
+  <owl:Class rdf:about="#circular">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Crescent">
+  <owl:Class rdf:about="#crescent">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parabol">
+  <owl:Class rdf:about="#parabol">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Circl">
-    <rdfs:subClassOf rdf:resource="#ConicSect"/>
+  <owl:Class rdf:about="#circl">
+    <rdfs:subClassOf rdf:resource="#conicsect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SmallCircl">
-    <rdfs:subClassOf rdf:resource="#Circl"/>
-    <owl:disjointWith rdf:resource="#GreatCircl"/>
+  <owl:Class rdf:about="#smallcircl">
+    <rdfs:subClassOf rdf:resource="#circl"/>
+    <owl:disjointWith rdf:resource="#greatcircl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GreatCircl">
-    <rdfs:subClassOf rdf:resource="#Circl"/>
+  <owl:Class rdf:about="#greatcircl">
+    <rdfs:subClassOf rdf:resource="#circl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Conic">
+  <owl:Class rdf:about="#conic">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
-    <owl:equivalentClass rdf:resource="#ConicSect"/>
+    <owl:equivalentClass rdf:resource="#conicsect"/>
   </owl:Class>
-  <owl:Class rdf:about="#ConicSect"/>
+  <owl:Class rdf:about="#conicsect"/>
 
-  <owl:Class rdf:about="#Ellips">
-    <rdfs:subClassOf rdf:resource="#ConicSect"/>
+  <owl:Class rdf:about="#ellip">
+    <rdfs:subClassOf rdf:resource="#conicsect"/>
   </owl:Class>
 
   <owl:Class rdf:about="#GeometricalObject_2D">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
-    <rdfs:subClassOf rdf:resource="&repr;#2D"/>
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
+    <rdfs:subClassOf rdf:resource="&repr;#2d"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Helic">
+  <owl:Class rdf:about="#helic">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hyperbola">
-    <rdfs:subClassOf rdf:resource="#ConicSect"/>
+  <owl:Class rdf:about="#hyperbola">
+    <rdfs:subClassOf rdf:resource="#conicsect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hyperplan">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#hyperplan">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Parabola">
-    <rdfs:subClassOf rdf:resource="#ConicSect"/>
+  <owl:Class rdf:about="#parabola">
+    <rdfs:subClassOf rdf:resource="#conicsect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Plane">
-    <rdfs:subClassOf rdf:resource="#Surfac"/>
+  <owl:Class rdf:about="#plane">
+    <rdfs:subClassOf rdf:resource="#surfac"/>
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Polygon">
+  <owl:Class rdf:about="#polygon">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Point"/>
-        <owl:onProperty rdf:resource="&srela;#hasVertic"/>
+        <owl:allValuesFrom rdf:resource="#point"/>
+        <owl:onProperty rdf:resource="&srela;#hasvert"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rectangl">
-    <rdfs:subClassOf rdf:resource="#Polygon"/>
+  <owl:Class rdf:about="#rectangl">
+    <rdfs:subClassOf rdf:resource="#polygon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Squar">
-    <rdfs:subClassOf rdf:resource="#Rectangl"/>
+  <owl:Class rdf:about="#squar">
+    <rdfs:subClassOf rdf:resource="#rectangl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Star">
+  <owl:Class rdf:about="#star">
     <rdfs:subClassOf rdf:resource="#GeometricalObject_2D"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Surfac">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#surfac">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Patch">
-    <rdfs:subClassOf rdf:resource="#Surfac"/>
+  <owl:Class rdf:about="#patch">
+    <rdfs:subClassOf rdf:resource="#surfac"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lattic">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
-    <rdfs:subClassOf rdf:resource="&mathp;#Discret"/>
+  <owl:Class rdf:about="#lattic">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
+    <rdfs:subClassOf rdf:resource="&mathp;#discret"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Region">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#region">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cluster">
-    <rdfs:subClassOf rdf:resource="&math;#Collect"/>
-    <owl:equivalentClass rdf:resource="#Famili"/>
-    <owl:equivalentClass rdf:resource="#Swarm"/>
+  <owl:Class rdf:about="#cluster">
+    <rdfs:subClassOf rdf:resource="&math;#collect"/>
+    <owl:equivalentClass rdf:resource="#famili"/>
+    <owl:equivalentClass rdf:resource="#swarm"/>
   </owl:Class>
-  <owl:Class rdf:about="#Famili"/>
-  <owl:Class rdf:about="#Swarm"/>
+  <owl:Class rdf:about="#famili"/>
+  <owl:Class rdf:about="#swarm"/>
 
-  <owl:Class rdf:about="#Zone">
-    <rdfs:subClassOf rdf:resource="#Region"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Ridg">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#zone">
+    <rdfs:subClassOf rdf:resource="#region"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Depress">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#ridg">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Trough">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#depress">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Peak">
-    <rdfs:subClassOf rdf:resource="#GeometricalObject"/>
+  <owl:Class rdf:about="#trough">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#peak">
+    <rdfs:subClassOf rdf:resource="#geometricalobject"/>
   </owl:Class>
 
 </rdf:RDF>

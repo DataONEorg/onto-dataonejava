@@ -25,173 +25,173 @@ owl:versionInfo="2.3">
   </owl:Ontology>
 
 <!-- LivingThings -->
-   <owl:Class rdf:about="#AcornWorm">
-      <rdfs:subClassOf rdf:resource="#Invertebr"/>
+   <owl:Class rdf:about="#acornworm">
+      <rdfs:subClassOf rdf:resource="#invertebr"/>
       <rdfs:comment>The Acorn worms or Enteropneusta are a hemichordate class of invertebrates. Acorn worms are classified in the phylum Hemichordata, closely related to the chordates. There are about 70 species of acorn worm in the world, the main species for research being Saccoglossus kowaleski. All species are infaunal benthos that either may be deposit feeders or suspension feeders. Some of these worms may grow to be very long; one particular species may reach a length of 2.5 meters (almost eight feet), although most acorn worms are much, much smaller.</rdfs:comment>
    </owl:Class>
 
-   <owl:Class rdf:about="#Amphibian">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#amphibian">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Anemon">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#anemon">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Animal">
-      <rdfs:subClassOf rdf:resource="&biol;#Organism"/>
+   <owl:Class rdf:about="#animal">
+      <rdfs:subClassOf rdf:resource="&biol;#organism"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Arachnid">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#arachnid">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Arthropod">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#arthropod">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Bee">
-     <rdfs:subClassOf rdf:resource="#Insect"/>
+   <owl:Class rdf:about="#bee">
+     <rdfs:subClassOf rdf:resource="#insect"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Bird">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#bird">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Centiped">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#centip">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Coral">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#coral">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Cow">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#cow">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Crustacean">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#crustacean">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Dairi">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#dairi">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Echinoderm">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#echinoderm">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#ExoticSpeci">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#exoticspeci">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Fauna">
-     <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#fauna">
+     <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Fish">
-      <rdfs:subClassOf rdf:resource="#MarineAnim"/>
+   <owl:Class rdf:about="#fish">
+      <rdfs:subClassOf rdf:resource="#marineanim"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Flatworm">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#flatworm">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Human">
-      <rdfs:subClassOf rdf:resource="#Mammal"/>
+   <owl:Class rdf:about="#human">
+      <rdfs:subClassOf rdf:resource="#mammal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#IndigenousSpeci">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#indigenousspeci">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Invertebr">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#invertebr">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Insect">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#insect">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Jellyfish">
-      <rdfs:subClassOf rdf:resource="#MarineAnim"/>
+   <owl:Class rdf:about="#jellyfish">
+      <rdfs:subClassOf rdf:resource="#marineanim"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Mammal">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#mammal">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#MarineAnim">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#marineanim">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#MarineBird">
-      <rdfs:subClassOf rdf:resource="#MarineAnim"/>
+   <owl:Class rdf:about="#marinebird">
+      <rdfs:subClassOf rdf:resource="#marineanim"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#MarineInvertebr">
-      <rdfs:subClassOf rdf:resource="#MarineAnim"/>
+   <owl:Class rdf:about="#marineinvertebr">
+      <rdfs:subClassOf rdf:resource="#marineanim"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#MarineMamm">
-      <rdfs:subClassOf rdf:resource="#MarineAnim"/>
+   <owl:Class rdf:about="#marinemamm">
+      <rdfs:subClassOf rdf:resource="#marineanim"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Milliped">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#millip">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Mollusk">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#mollusk">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Poultri">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#poultri">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Reptil">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#reptil">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Roundworm">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#roundworm">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#SegmentedWorm">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#segmentedworm">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Silkworm">
-     <rdfs:subClassOf rdf:resource="#Invertebr"/>
+   <owl:Class rdf:about="#silkworm">
+     <rdfs:subClassOf rdf:resource="#invertebr"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Spong">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#spong">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Vertebr">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#vertebr">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Zooplankton">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#zooplankton">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Mesozooplankton">
-      <rdfs:subClassOf rdf:resource="#Zooplankton"/>
+   <owl:Class rdf:about="#mesozooplankton">
+      <rdfs:subClassOf rdf:resource="#zooplankton"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Microzooplankton">
-      <rdfs:subClassOf rdf:resource="#Zooplankton"/>
+   <owl:Class rdf:about="#microzooplankton">
+      <rdfs:subClassOf rdf:resource="#zooplankton"/>
    </owl:Class>
 
-   <owl:Class rdf:about="#Livestock">
-      <rdfs:subClassOf rdf:resource="#Animal"/>
+   <owl:Class rdf:about="#livestock">
+      <rdfs:subClassOf rdf:resource="#animal"/>
    </owl:Class>
 
-  <owl:Class rdf:about="#Poultri">
-    <rdfs:subClassOf rdf:resource="#Animal"/>
+  <owl:Class rdf:about="#poultri">
+    <rdfs:subClassOf rdf:resource="#animal"/>
   </owl:Class>
 
 </rdf:RDF>

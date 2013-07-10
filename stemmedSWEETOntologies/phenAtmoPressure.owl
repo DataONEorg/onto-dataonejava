@@ -61,308 +61,308 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#AtmosphericHighPressur">
-    <rdfs:subClassOf rdf:resource="&fluid;#HighPressur"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmospherichighpressur">
+    <rdfs:subClassOf rdf:resource="&fluid;#highpressur"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericLowPressur">
-    <rdfs:subClassOf rdf:resource="&fluid;#LowPressur"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmosphericlowpressur">
+    <rdfs:subClassOf rdf:resource="&fluid;#lowpressur"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericCyclon">
-    <rdfs:subClassOf rdf:resource="&fluid;#Cyclon"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmosphericcyclon">
+    <rdfs:subClassOf rdf:resource="&fluid;#cyclon"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericAnticyclon">
-    <rdfs:subClassOf rdf:resource="&fluid;#Anticyclon"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmosphericanticyclon">
+    <rdfs:subClassOf rdf:resource="&fluid;#anticyclon"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericTrough">
-    <rdfs:subClassOf rdf:resource="&fluid;#Trough"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmospherictrough">
+    <rdfs:subClassOf rdf:resource="&fluid;#trough"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericRidg">
-    <rdfs:subClassOf rdf:resource="&fluid;#Ridg"/>
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphericPhenomena"/>
+  <owl:Class rdf:about="#atmosphericridg">
+    <rdfs:subClassOf rdf:resource="&fluid;#ridg"/>
+    <rdfs:subClassOf rdf:resource="&atmo;#atmosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Barometr">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#barometr">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Block">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#block">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&fluid;#Cyclon" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&fluid;#cyclon" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CutOffHigh">
-    <rdfs:subClassOf rdf:resource="#AtmosphericHighPressur" />
+  <owl:Class rdf:about="#cutoffhigh">
+    <rdfs:subClassOf rdf:resource="#atmospherichighpressur" />
   </owl:Class>
 
-  <owl:Class rdf:about="#CutOffLow">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLowPressur" />
+  <owl:Class rdf:about="#cutofflow">
+    <rdfs:subClassOf rdf:resource="#atmosphericlowpressur" />
     <rdfs:comment xml:lang="en">A cold low that has grown out of a trough and become displaced out of the basic westerly current and lies equatorward of this current.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cyclogenesi">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#cyclogenesi">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:comment>A physical process at the initial stage of cyclone life cycle</rdfs:comment>
     <rdfs:label>Cyclogenesis</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#Deepen">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#deepen">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:comment xml:lang="en">A decrease in the central pressure of a pressure system as depicted on a constant- height chart, or an analogous decrease in height on a constant-pressure chart; the opposite of filling.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ExtratropicalCyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericCyclon" />
+  <owl:Class rdf:about="#extratropicalcyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericcyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#originatesFrom" />
-        <owl:hasValue rdf:resource="&reg;#Extratrop" />
+        <owl:onProperty rdf:resource="&srela;#originatesfrom" />
+        <owl:hasValue rdf:resource="&reg;#extratrop" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Any cyclonic-scale storm that is not a tropical cyclone, usually referring only to the migratory frontal cyclones of middle and high latitudes.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SubtropicalCyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericCyclon" />
+  <owl:Class rdf:about="#subtropicalcyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericcyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#originatesFrom" />
-        <owl:hasValue rdf:resource="&reg;#Subtrop" />
+        <owl:onProperty rdf:resource="&srela;#originatesfrom" />
+        <owl:hasValue rdf:resource="&reg;#subtrop" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Multivortex">
-    <rdfs:subClassOf rdf:resource="&space;#Cluster"/>
+  <owl:Class rdf:about="#multivortex">
+    <rdfs:subClassOf rdf:resource="&space;#cluster"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&fluid;#Vortex"/>
-        <owl:onProperty rdf:resource="&srela;#clusterOf"/>
+        <owl:allValuesFrom rdf:resource="&fluid;#vortex"/>
+        <owl:onProperty rdf:resource="&srela;#clusterof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TropicalCyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericCyclon" />
+  <owl:Class rdf:about="#tropicalcyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericcyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#originatesFrom" />
-        <owl:hasValue rdf:resource="&reg;#Tropic" />
+        <owl:onProperty rdf:resource="&srela;#originatesfrom" />
+        <owl:hasValue rdf:resource="&reg;#tropic" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TropicalUpperTroposphericTrough">
-    <rdfs:subClassOf rdf:resource="#TropicalCyclon" />
-    <owl:equivalentClass rdf:resource="#TUTT" />
+  <owl:Class rdf:about="#tropicaluppertropospherictrough">
+    <rdfs:subClassOf rdf:resource="#tropicalcyclon" />
+    <owl:equivalentClass rdf:resource="#tutt" />
   </owl:Class>
-  <owl:Class rdf:about="#TUTT"/>
+  <owl:Class rdf:about="#tutt"/>
 
-  <owl:Class rdf:about="#KatallobaticCent">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLowPressur" />
+  <owl:Class rdf:about="#katallobaticc">
+    <rdfs:subClassOf rdf:resource="#atmosphericlowpressur" />
     <rdfs:comment xml:lang="en">A point of maximum decrease in atmospheric pressure over a specified interval of time; on synoptic charts, a point of greatest negative pressure tendency; opposed to a pressure- rise center.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#LongmontAnticyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericAnticyclon" />
+  <owl:Class rdf:about="#longmontanticyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericanticyclon" />
     <rdfs:comment xml:lang="en">A mesoscale zone of anticyclonically turning winds that develops downstream of the Cheyenne Ridge in northeast Colorado and southeast Wyoming, and is often centered just east of the foothills of the Rocky Mountains near the town of Longmont, Colorado. The cause of the feature is the interaction of the ambient low level northwest flow with the east?west terrain feature known as the Cheyenne Ridge. See also Denver convergence?vorticity zone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mesoanticyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericAnticyclon" />
+  <owl:Class rdf:about="#mesoanticyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericanticyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&trans;#Convect" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&trans;#convect" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&scale;#Mesoscal" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&scale;#mesosc" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An anticyclonically rotating vortex, around 210 km in diameter, in a convective storm.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mesocyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericCyclon" />
+  <owl:Class rdf:about="#mesocyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericcyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&scale;#Mesoscal" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&scale;#mesosc" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&trans;#Convect" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&trans;#convect" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A cyclonically rotating vortex, around 2?10 km in diameter, in a convective storm. The vorticity associated with a mesocyclone is often on the order of 10-2 s-1 or greater. (It should be noted that a mesocyclone is not just any cyclone on the mesoscale; it refers specifically to cyclones within convective storms.) Mesocyclones are frequently found in conjunction with updrafts in supercells. Tornadoes sometimes form in mesocyclones. Persistent mesocyclones that have significant vertical extent are detected by Doppler radar as mesocyclone signatures. Tornado warnings may be issued when a mesocyclone signature is detected.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mesolow">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLowPressur" />
+  <owl:Class rdf:about="#mesolow">
+    <rdfs:subClassOf rdf:resource="#atmosphericlowpressur" />
     <rdfs:comment xml:lang="en">A low pressure area on the mesoscale. It has been used to refer both to features observed within convective storms and features even larger in scale.</rdfs:comment>
   </owl:Class>
   
-  <owl:Class rdf:about="#MinorRidg">
-    <rdfs:subClassOf rdf:resource="#AtmosphericRidg" />
+  <owl:Class rdf:about="#minorridg">
+    <rdfs:subClassOf rdf:resource="#atmosphericridg" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRol" />
-        <owl:hasValue rdf:resource="&role;#Minor" />
+        <owl:onProperty rdf:resource="&rela;#hasrol" />
+        <owl:hasValue rdf:resource="&role;#minor" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A ridge of smaller scale than a long-wave ridge. It ordinarily moves rapidly and is associated with a migratory anticyclonic disturbance in the lower troposphere. See short wave.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MinorTrough">
-    <rdfs:subClassOf rdf:resource="#AtmosphericTrough" />
+  <owl:Class rdf:about="#minortrough">
+    <rdfs:subClassOf rdf:resource="#atmospherictrough" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRol" />
-        <owl:hasValue rdf:resource="&role;#Minor" />
+        <owl:onProperty rdf:resource="&rela;#hasrol" />
+        <owl:hasValue rdf:resource="&role;#minor" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A pressure trough of smaller scale than a long-wave trough. It ordinarily moves rapidly and is associated with a migratory cyclonic disturbance in the lower troposphere. See short wave.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MonsoonDepress">
-    <rdfs:subClassOf rdf:resource="&precip;#Monsoon" />
+  <owl:Class rdf:about="#monsoondepress">
+    <rdfs:subClassOf rdf:resource="&precip;#monsoon" />
     <rdfs:comment xml:lang="en">A depression that forms within the monsoon trough. The term is most frequently used to describe weak cyclonic disturbances that form over the Bay of Bengal and generally track northwestward over the Indian subcontinent. These occasionally intensify into tropical cyclones if they remain over warm ocean water long enough. The term is also used to describe depressions that form within the monsoon trough near Australia and in the western North Pacific region. The term has gained ascendancy in use to refer to a broad tropical cyclonic vortex characterized by 1) its large size, where the outermost closed isobar may have a diameter on the order of 600 n mi (1000 km); 2) a loosely organized cluster of deep convective elements, which may form an elongated band of deep convection in the east semicircle; 3) a low- level wind distribution that features a 100 n mi (200 km) diameter light-wind core, which may be surrounded by a band of gales or contain a highly asymmetric wind field; and 4) a lack of a distinct cloud system center. Most monsoon depressions that develop in the western North Pacific eventually acquire persistent central convection and accelerated core winds, marking their transitions into conventional tropical cyclones.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MonsoonLow">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLowPressur" />
+  <owl:Class rdf:about="#monsoonlow">
+    <rdfs:subClassOf rdf:resource="#atmosphericlowpressur" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&precip;#Monsoon" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&precip;#monsoon" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A seasonal low found over a continent in the summer and over the adjacent sea in the winter. Examples are the lows over the southwestern US and India in summer and those located off lower California and in the Bay of Bengal in winter. Palmer (1951) points out that, while the winter and summer monsoon lows appear similar on mean charts, they are dynamically quite different. Compare thermal low.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarCyclon">
-    <rdfs:subClassOf rdf:resource="#AtmosphericCyclon" />
+  <owl:Class rdf:about="#polarcyclon">
+    <rdfs:subClassOf rdf:resource="#atmosphericcyclon" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#originatesFrom" />
-        <owl:hasValue rdf:resource="&reg;#Polar" />
+        <owl:onProperty rdf:resource="&srela;#originatesfrom" />
+        <owl:hasValue rdf:resource="&reg;#polar" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PolarLow">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLowPressur" />
+  <owl:Class rdf:about="#polarlow">
+    <rdfs:subClassOf rdf:resource="#atmosphericlowpressur" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#originatesFrom" />
-        <owl:hasValue rdf:resource="&reg;#Polar" />
+        <owl:onProperty rdf:resource="&srela;#originatesfrom" />
+        <owl:hasValue rdf:resource="&reg;#polar" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#BowEcho">
-    <rdfs:subClassOf rdf:resource="&fluid;#CellClust" />
+  <owl:Class rdf:about="#bowecho">
+    <rdfs:subClassOf rdf:resource="&fluid;#cellclust" />
     <rdfs:comment xml:lang="en">A bow-shaped line of convective cells that is often associated with swaths of damaging straight-line winds and small tornadoes.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConvectionCel">
-    <rdfs:subClassOf rdf:resource="&fluid;#CellClust" />
+  <owl:Class rdf:about="#convectioncel">
+    <rdfs:subClassOf rdf:resource="&fluid;#cellclust" />
     <rdfs:comment xml:lang="en">An organized unit of convection within a convecting layer.  It is isolated by a stream surface, with ascending motion in the center and descending motion near the periphery, or vice versa.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MesoscaleCellularConvect">
-    <rdfs:subClassOf rdf:resource="&fluid;#CellClust" />
+  <owl:Class rdf:about="#mesoscalecellularconvect">
+    <rdfs:subClassOf rdf:resource="&fluid;#cellclust" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&scale;#Mesoscal" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&scale;#mesosc" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A regular pattern of convective cells that can develop in an atmospheric boundary layer heated from below or radiatively cooled from cloud top. This phenomenon is readily observed in satellite imagery during cold air outbreaks when continental air passes over the relatively warm coastal ocean. Cloud lines, marking horizontal roll vortices, form initially in the developing marine atmospheric boundary layer. These lines evolve into open cells, which are defined by clouds in the upward motion along the edges of honeycomb- shaped cells, with less cloudy subsiding air in their centers. The convective structure further evolves into closed cells, which have cloudy centers and cloud-free edges.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MesoscaleConvectiveComplex">
-    <rdfs:subClassOf rdf:resource="#MesoscaleConvectiveSystem" />
+  <owl:Class rdf:about="#mesoscaleconvectivecomplex">
+    <rdfs:subClassOf rdf:resource="#mesoscaleconvectivesystem" />
     <rdfs:label>Mesoscale Convective Complex</rdfs:label>
     <rdfs:comment xml:lang="en">A subset of mesoscale convective systems (MCS) that exhibit a large, circular (as observed by satellite), long-lived, cold cloud shield.  Alternatively, a dynamical definition of an MCC requires that the system have a Rossby number of order 1 and exhibit a horizontal scale comparable to the Rossby radius of deformation. In midlatitude MCS environments, the Rossby radius of deformation is about 300 km.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MesoscaleConvectiveSystem">
-    <rdfs:subClassOf rdf:resource="&precip;#Storm"/>
+  <owl:Class rdf:about="#mesoscaleconvectivesystem">
+    <rdfs:subClassOf rdf:resource="&precip;#storm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&scale;#Mesoscal" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&scale;#mesosc" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A cloud system that occurs in connection with an ensemble of thunderstorms and produces a contiguous precipitation area on the order of 100 km or more in horizontal scale in at least one direction. An MCS exhibits deep, moist convective overturning contiguous with or embedded within a mesoscale vertical circulation that is at least partially driven by the convective overturning.</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#MiniSupercel">
-    <rdfs:subClassOf rdf:resource="&precip;#ConvectiveStorm" />
+ <owl:Class rdf:about="#minisupercel">
+    <rdfs:subClassOf rdf:resource="&precip;#convectivestorm" />
     <rdfs:comment xml:lang="en">Convective storm that contains similar radar characteristics to those of a supercell (e.g., hook echo, WER, BWER), but is significantly smaller in height and width. The diameter of the radar-detected rotation is 1?8 km. This is a relatively new storm type, the existence of which has been confirmed by data from the recently installed WSR?88D radars in the US. Mini-supercells occur in areas where the height of the equilibrium level is low, most often in the northern US, but possibly under certain weather conditions in any area of the world. They are sometimes found in landfalling tropical cyclones.</rdfs:comment>
   </owl:Class>
 
 <!-- Convection Phenomena: -->
-  <owl:Class rdf:about="#MoistConvect">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect" />
+  <owl:Class rdf:about="#moistconvect">
+    <rdfs:subClassOf rdf:resource="&trans;#convect" />
     <rdfs:comment xml:lang="en">Atmospheric convection in which the phase changes of water play an appreciable role. All cumuliform clouds are manifestations of moist convection. The enthalpy exchange between condensing water vapor or freezing liquid water and air (see latent heat) is a major contributor to the positive buoyancy of updrafts, while the reverse exchange between air and evaporating water or melting ice contributes strongly to the negative buoyancy of downdrafts.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#UpdraftCurtain">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect" />
+  <owl:Class rdf:about="#updraftcurtain">
+    <rdfs:subClassOf rdf:resource="&trans;#convect" />
     <rdfs:comment xml:lang="en">Long narrow sheets of warm air rising from a heated surface.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MonsoonGyr">
-    <rdfs:subClassOf rdf:resource="&fluid;#Circul" />
+  <owl:Class rdf:about="#monsoongyr">
+    <rdfs:subClassOf rdf:resource="&fluid;#circul" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&trans;#Convect" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&trans;#convect" />
       </owl:Restriction>
       </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A convection of the summer monsoon circulation of the western North Pacific characterized by 1) a very large nearly circular low-level cyclonic vortex (not the result of the expanding wind field of a preexisting monsoon depression or tropical cyclone) that has an outermost closed isobar with a diameter on the order of 1200 n mi (2500 km); 2) a cloud band bordering the southern through eastern periphery of the vortex/surface low; and 3) a relatively long (two week) life span. Initially, a subsequent regime exists in its core and western and northwestern quadrants with light winds and scattered low cumulus clouds; later, the area within the outer closed isobar may fill with deep convective cloud and become a isobar or tropical cyclone. Note: a series of midget tropical cyclones may emerge from the ?head? or leading edge of the peripheral tropical cyclone of a monsoon gyre.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeepConvect">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect"/>
+  <owl:Class rdf:about="#deepconvect">
+    <rdfs:subClassOf rdf:resource="&trans;#convect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DryConvect">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect"/>
+  <owl:Class rdf:about="#dryconvect">
+    <rdfs:subClassOf rdf:resource="&trans;#convect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ElevatedConvect">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect"/>
+  <owl:Class rdf:about="#elevatedconvect">
+    <rdfs:subClassOf rdf:resource="&trans;#convect"/>
     <rdfs:comment xml:lang="en">Convection that originates from an atmospheric layer above the boundary layer.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ShallowConvect">
-    <rdfs:subClassOf rdf:resource="&trans;#Convect"/>
+  <owl:Class rdf:about="#shallowconvect">
+    <rdfs:subClassOf rdf:resource="&trans;#convect"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LeesideConverg">
-    <rdfs:subClassOf rdf:resource="&rate;#Converg" />
+  <owl:Class rdf:about="#leesideconverg">
+    <rdfs:subClassOf rdf:resource="&rate;#converg" />
     <rdfs:comment xml:lang="en">Region of convergence, often a line, downwind of a mountain or mountain ridge during fair-weather daytime conditions that are favorable for the formation of thermally forced upslope flow and deep convective mixing. Convergence forms between upslope (or sometimes light and variable) flow at lower elevations of the lee slopes and downslope flow at higher elevations, which results from the downward convective mixing of ambient momentum from the flow above ridgetops. With moist upslope flow and favorable conditions, updrafts produced by the convergence can lead to mountain cumulus formation, or trigger thunderstorm or severe weather activity.</rdfs:comment>
   </owl:Class>
 

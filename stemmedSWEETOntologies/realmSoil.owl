@@ -40,79 +40,79 @@
   </owl:Ontology>
 
 <!-- Substances -->
-  <owl:Class rdf:about="#Alfisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#alfisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Andisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#andisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aridisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#aridisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cryosol">
-    <owl:equivalentClass rdf:resource="#Gelisol"/>
+  <owl:Class rdf:about="#cryosol">
+    <owl:equivalentClass rdf:resource="#gelisol"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Entisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#entisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gelisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#gelisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasProcess" />
-        <owl:allValuesFrom rdf:resource="&mix;#Cryoturb" />
+        <owl:onProperty rdf:resource="&rela;#hasprocess" />
+        <owl:allValuesFrom rdf:resource="&mix;#cryoturb" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Gelisols are soils of very cold climates which are defined as containing permafrost within two metres of the soil surface. The word Gelisol comes from the Latin gelare meaning to freeze, a reference to the process of cryoturbation that occurs from the alternating thawing and freezing characteristic of Gelisols. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Histisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#histisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Inceptisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#inceptisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mollisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#mollisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Oxisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#oxisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Paleosol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#paleosol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SoilOrder">
-    <rdfs:subClassOf rdf:resource="&cate;#Classif"/>
+  <owl:Class rdf:about="#soilorder">
+    <rdfs:subClassOf rdf:resource="&cate;#classif"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spodosol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#spodosol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ultisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#ultisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Vertisol">
-    <rdfs:subClassOf rdf:resource="#SoilOrder"/>
+  <owl:Class rdf:about="#vertisol">
+    <rdfs:subClassOf rdf:resource="#soilorder"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OrganicMatt">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#organicmatt">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#abov" />
-        <owl:someValuesFrom rdf:resource="#Topsoil" />
+        <owl:someValuesFrom rdf:resource="#topsoil" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -126,96 +126,96 @@
   <owl:Class rdf:about="#O_Horizon"/>
 
   <owl:Class rdf:about="#P_Horizon">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+    <rdfs:subClassOf rdf:resource="#soillay"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Permafrost">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&cstate;#Frozen" />
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&cstate;#frozen" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ParentRock">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#parentrock">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <owl:equivalentClass rdf:resource="#C_Horizon"/>
   </owl:Class>
   <owl:Class rdf:about="#C_Horizon"/>
 
-  <owl:Class rdf:about="#Regolith">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#regolith">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SoilLay">
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryLay"/>
+  <owl:Class rdf:about="#soillay">
+    <rdfs:subClassOf rdf:resource="&realm;#planetarylay"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SoilHorizon">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#soilhorizon">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Subsoil">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#subsoil">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#abov" />
-        <owl:someValuesFrom rdf:resource="#ParentRock" />
+        <owl:someValuesFrom rdf:resource="#parentrock" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <owl:equivalentClass rdf:resource="#B_Horizon"/>
   </owl:Class>
   <owl:Class rdf:about="#B_Horizon"/>
 
-  <owl:Class rdf:about="#Substrata">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
-    <owl:equivalentClass rdf:resource="#Substratum"/>
+  <owl:Class rdf:about="#substrata">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
+    <owl:equivalentClass rdf:resource="#substratum"/>
   </owl:Class>
-  <owl:Class rdf:about="#Substratum"/>
+  <owl:Class rdf:about="#substratum"/>
 
-  <owl:Class rdf:about="#Talik">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#talik">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Permafrost"/>
-        <owl:onProperty rdf:resource="&rela;#partOf"/>
+        <owl:allValuesFrom rdf:resource="#permafrost"/>
+        <owl:onProperty rdf:resource="&rela;#partof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Topsoil">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#topsoil">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#abov" />
-        <owl:someValuesFrom rdf:resource="#Subsoil" />
+        <owl:someValuesFrom rdf:resource="#subsoil" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <owl:equivalentClass rdf:resource="#A_Horizon"/>
-    <owl:equivalentClass rdf:resource="#SurfaceSoil"/>
+    <owl:equivalentClass rdf:resource="#surfacesoil"/>
   </owl:Class>
   <owl:Class rdf:about="#A_Horizon"/>
-  <owl:Class rdf:about="#SurfaceSoil"/>
+  <owl:Class rdf:about="#surfacesoil"/>
 
-  <owl:Class rdf:about="#ActiveLay">    
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#activelay">    
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#partOf" />
-        <owl:someValuesFrom rdf:resource="#Permafrost" />
+        <owl:onProperty rdf:resource="&rela;#partof" />
+        <owl:someValuesFrom rdf:resource="#permafrost" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">In environments containing permafrost, the active layer is the top layer of soil that thaws during the summer and freezes again during the autumn. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ground">
-    <rdfs:subClassOf rdf:resource="#SoilLay"/>
+  <owl:Class rdf:about="#ground">
+    <rdfs:subClassOf rdf:resource="#soillay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&cstate;#Solid" />
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&cstate;#solid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

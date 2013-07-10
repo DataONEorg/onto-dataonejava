@@ -59,116 +59,116 @@
      <owl:imports rdf:resource="&trela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Phenomena"/>
+  <owl:Class rdf:about="#phenomena"/>
 
-  <owl:Class rdf:about="#Event">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
-    <owl:equivalentClass rdf:resource="#Occurrenc"/>
+  <owl:Class rdf:about="#event">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
+    <owl:equivalentClass rdf:resource="#occurrenc"/>
   </owl:Class>
-  <owl:Class rdf:about="#Occurrenc"/>
+  <owl:Class rdf:about="#occurrenc"/>
 
-  <owl:Class rdf:about="#ExtremeEv">
-    <rdfs:subClassOf rdf:resource="#Event"/>
+  <owl:Class rdf:about="#extremeev">
+    <rdfs:subClassOf rdf:resource="#event"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&trela;#hasFrequ" />
-        <owl:hasValue rdf:resource="&tstate;#Infrequent" />
+        <owl:onProperty rdf:resource="&trela;#hasfrequ" />
+        <owl:hasValue rdf:resource="&tstate;#infrequent" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlanetaryPhenomena">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
+  <owl:Class rdf:about="#planetaryphenomena">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialScal" />
-        <owl:hasValue rdf:resource="&sscale;#PlanetaryScal" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialsc" />
+        <owl:hasValue rdf:resource="&sscale;#planetarysc" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en"> Planetary phenomena are the movements of planets and the sun, including  for example orbits, alignments, eclipses day and night cycles, and the change of seasons. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphereLandExchang">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
-    <rdfs:subClassOf rdf:resource="&sys;#Exchang"/>
+  <owl:Class rdf:about="#atmospherelandexchang">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
+    <rdfs:subClassOf rdf:resource="&sys;#exchang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSourc" />
-        <owl:someValuesFrom rdf:resource="&realm;#Atmospher" />
+        <owl:onProperty rdf:resource="&screla;#hassourc" />
+        <owl:someValuesFrom rdf:resource="&realm;#atmospher" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSourc" />
-        <owl:someValuesFrom rdf:resource="&realm;#Land" />
+        <owl:onProperty rdf:resource="&screla;#hassourc" />
+        <owl:someValuesFrom rdf:resource="&realm;#land" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirSeaExchang">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
-    <rdfs:subClassOf rdf:resource="&sys;#Exchang"/>
-    <owl:equivalentClass rdf:resource="#AtmosphereOceanExchang"/>
+  <owl:Class rdf:about="#airseaexchang">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
+    <rdfs:subClassOf rdf:resource="&sys;#exchang"/>
+    <owl:equivalentClass rdf:resource="#atmosphereoceanexchang"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSourc" />
-        <owl:someValuesFrom rdf:resource="&realm;#Atmospher" />
+        <owl:onProperty rdf:resource="&screla;#hassourc" />
+        <owl:someValuesFrom rdf:resource="&realm;#atmospher" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSourc" />
-        <owl:someValuesFrom rdf:resource="&realm;#Ocean" />
+        <owl:onProperty rdf:resource="&screla;#hassourc" />
+        <owl:someValuesFrom rdf:resource="&realm;#ocean" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#AtmosphereOceanExchang"/>
+  <owl:Class rdf:about="#atmosphereoceanexchang"/>
 
-  <owl:Class rdf:about="#Teleconnect">
-    <rdfs:subClassOf rdf:resource="#PlanetaryPhenomena"/>
+  <owl:Class rdf:about="#teleconnect">
+    <rdfs:subClassOf rdf:resource="#planetaryphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BrownianMot">
-    <rdfs:subClassOf rdf:resource="#StochasticProcess" />
+  <owl:Class rdf:about="#brownianmot">
+    <rdfs:subClassOf rdf:resource="#stochasticprocess" />
     <rdfs:comment xml:lang="en">A stochastic process that describes (among other things) the rapid and chaotic motion of particles suspended in a fluid at rest as a consequence of fluctuations in the rate at which fluid molecules collide with the particles.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DynamicalPhenomena">
-    <rdfs:subClassOf rdf:resource="#Phenomena" />
+  <owl:Class rdf:about="#dynamicalphenomena">
+    <rdfs:subClassOf rdf:resource="#phenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#StochasticProcess">
-    <rdfs:subClassOf rdf:resource="#DynamicalPhenomena"/>
+  <owl:Class rdf:about="#stochasticprocess">
+    <rdfs:subClassOf rdf:resource="#dynamicalphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&sstate;#Stochast" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&sstate;#stochast" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadiativeH">
-    <rdfs:subClassOf rdf:resource="&proc;#Heat" />
-    <rdfs:subClassOf rdf:resource="&rad;#RadiativeForc"/>
-    <owl:equivalentClass rdf:resource="#RadiationalH"/>
+  <owl:Class rdf:about="#radiativeh">
+    <rdfs:subClassOf rdf:resource="&proc;#heat" />
+    <rdfs:subClassOf rdf:resource="&rad;#radiativeforc"/>
+    <owl:equivalentClass rdf:resource="#radiationalh"/>
   </owl:Class>
-  <owl:Class rdf:about="#RadiationalH"/>
+  <owl:Class rdf:about="#radiationalh"/>
 
-  <owl:Class rdf:about="#RadiativeCool">
-    <rdfs:subClassOf rdf:resource="&proc;#Cool" />
-    <owl:equivalentClass rdf:resource="#RadiationalCool"/>
-    <rdfs:subClassOf rdf:resource="&rad;#RadiativeForc"/>
-    <owl:disjointWith rdf:resource="#RadiativeH"/>
+  <owl:Class rdf:about="#radiativecool">
+    <rdfs:subClassOf rdf:resource="&proc;#cool" />
+    <owl:equivalentClass rdf:resource="#radiationalcool"/>
+    <rdfs:subClassOf rdf:resource="&rad;#radiativeforc"/>
+    <owl:disjointWith rdf:resource="#radiativeh"/>
     <rdfs:comment xml:lang="en">In meteorology, the result of radiative cooling of the earth's surface and adjacent air.  Radiational cooling occurs, as is typical on calm, clear nights</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#RadiationalCool"/>
+  <owl:Class rdf:about="#radiationalcool"/>
 
-  <owl:Class rdf:about="#Precipit">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
+  <owl:Class rdf:about="#precipit">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flash">
-    <rdfs:subClassOf rdf:resource="#Phenomena"/>
+  <owl:Class rdf:about="#flash">
+    <rdfs:subClassOf rdf:resource="#phenomena"/>
   </owl:Class>
 
 </rdf:RDF>

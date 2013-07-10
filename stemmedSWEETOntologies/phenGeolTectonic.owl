@@ -46,116 +46,116 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#CompositeProcess">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#compositeprocess">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalBreakup">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#continentalbreakup">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinentalCollis">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#continentalcolli">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlateConverg">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
-    <owl:disjointWith rdf:resource="#PlateDiverg" />
+  <owl:Class rdf:about="#plateconverg">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
+    <owl:disjointWith rdf:resource="#platediverg" />
     <rdfs:comment xml:lang="en">Plate convergence is the phenomena of two plates moving toward one another. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlateDiverg">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#platediverg">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
     <rdfs:comment xml:lang="en">Plate divergence is the phenomena of plates drifting apart [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TectonicUplift">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#tectonicuplift">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TectonicAssemblag">
-    <rdfs:subClassOf rdf:resource="&geolr;#GeologicFeatur"/>
+  <owl:Class rdf:about="#tectonicassemblag">
+    <rdfs:subClassOf rdf:resource="&geolr;#geologicfeatur"/>
      <rdfs:comment xml:lang="en">A tectonic ssemblage is a geological term for an accreted terrane of heterogeneous rocks. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Terran">
-    <rdfs:subClassOf rdf:resource="#TectonicAssemblag"/>
+  <owl:Class rdf:about="#terran">
+    <rdfs:subClassOf rdf:resource="#tectonicassemblag"/>
     <rdfs:comment xml:lang="en">A terrane in geology is a fragment of crustal material formed on, or broken off from, one tectonic plate and accreted — "sutured" — to crust lying on another plate.  [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AsymmetricHeatFlow">
-    <rdfs:subClassOf rdf:resource="&fld;#Flow"/>
+  <owl:Class rdf:about="#asymmetricheatflow">
+    <rdfs:subClassOf rdf:resource="&fld;#flow"/>
     <rdfs:comment xml:lang="en">Asymmetric heat flow in geology is an observation that the heat from upwelling mantle does not spread symmetrically away from the hot spot or rift due to differences in crust composition. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ContinenetalDrift">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#continenetaldrift">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
 <rdfs:comment xml:lang="en">Continental drift is the movement of the Earth's continents relative to each other. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ExtensionEv">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#extensionev">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
     <rdfs:comment xml:lang="en">An extension event occurs when a seismic event causes an extension in the crust.   [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#IsostaticRebound">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
-    <owl:equivalentClass rdf:resource="#IsostaticAdjust"/>
+  <owl:Class rdf:about="#isostaticrebound">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
+    <owl:equivalentClass rdf:resource="#isostaticadjust"/>
     <rdfs:comment xml:lang="en">Post-glacial rebound (sometimes called continental rebound, isostatic rebound, isostatic adjustment or post-ice-age isostatic recovery) is the rise of land masses that were depressed by the huge weight of ice sheets during the last glacial period, through a process known as isostatic depression. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#IsostaticAdjust"/>
+  <owl:Class rdf:about="#isostaticadjust"/>
 
-  <owl:Class rdf:about="#Spread">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#spread">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
     <rdfs:comment xml:lang="en">A spreading event occurs whenever plates drift apart (Plate Divergence). [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Subduct">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#subduct">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TectonicForc">
-    <rdfs:subClassOf rdf:resource="&proc;#Forc"/>
-    <owl:equivalentClass rdf:resource="#TectonicProcess"/>
+  <owl:Class rdf:about="#tectonicforc">
+    <rdfs:subClassOf rdf:resource="&proc;#forc"/>
+    <owl:equivalentClass rdf:resource="#tectonicprocess"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
-        <owl:allValuesFrom rdf:resource="#TectonicPhenomena"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
+        <owl:allValuesFrom rdf:resource="#tectonicphenomena"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The tectonic force is the force created by one tectonic plate pushing against another due to upwellings of the mantle, [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#TectonicProcess"/>
+  <owl:Class rdf:about="#tectonicprocess"/>
 
-  <owl:Class rdf:about="#TectonicPhenomena">
-    <rdfs:subClassOf rdf:resource="&geol;#GeospherePhenomena"/>
+  <owl:Class rdf:about="#tectonicphenomena">
+    <rdfs:subClassOf rdf:resource="&geol;#geospherephenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&soli;#Deform"/>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:allValuesFrom rdf:resource="&soli;#deform"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&geolr;#Crust"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&geolr;#crust"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The tectonic phenomena is the observable motions of the tectonic plates in the Earth's Lithosphere. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TransformFault">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#transformfault">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&tecl;#TransformFault"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="&tecl;#transformfault"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Creep">
-    <rdfs:subClassOf rdf:resource="#TectonicPhenomena"/>
+  <owl:Class rdf:about="#creep">
+    <rdfs:subClassOf rdf:resource="#tectonicphenomena"/>
   </owl:Class>
 
 </rdf:RDF>

@@ -33,182 +33,182 @@
   </owl:Ontology>
 
 <!-- Directional values or modifiers -->
-  <mdir2:AngularDirection rdf:about="#Clockwis">
+  <mdir2:AngularDirection rdf:about="#clockwi">
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Counterclockwis">
-    <owl:differentFrom rdf:resource="#Clockwis"/>
+  <mdir2:AngularDirection rdf:about="#counterclockwi">
+    <owl:differentFrom rdf:resource="#clockwi"/>
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Direct">
+  <mdir2:Angulardirection rdf:about="#direct">
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Direct">
+  <mdir2:Angulardirection rdf:about="#direct">
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Emerg">
+  <mdir2:AngularDirection rdf:about="#emerg">
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Hemispher">
+  <mdir2:AngularDirection rdf:about="#hemisph">
   </mdir2:AngularDirection>
 
-  <mdir2:HorizontalDirection rdf:about="#East">
-    <owl:sameAs rdf:resource="#Eastward"/>
+  <mdir2:HorizontalDirection rdf:about="#east">
+    <owl:sameAs rdf:resource="#eastward"/>
   </mdir2:HorizontalDirection>
-  <mdir2:HorizontalDirection rdf:about="#Eastward"/>
+  <mdir2:HorizontalDirection rdf:about="#eastward"/>
 
-  <mdir2:VerticalDirection rdf:about="#Down">
-    <owl:sameAs rdf:resource="#Downward"/>
+  <mdir2:VerticalDirection rdf:about="#down">
+    <owl:sameAs rdf:resource="#downward"/>
   </mdir2:VerticalDirection>
-  <mdir2:VerticalDirection rdf:about="#Downward"/>
+  <mdir2:VerticalDirection rdf:about="#downward"/>
 
-  <mdir2:VerticalDirection rdf:about="#Downflow">
-  </mdir2:VerticalDirection>
-
-  <mdir2:VerticalDirection rdf:about="#Sink">
+  <mdir2:VerticalDirection rdf:about="#downflow">
   </mdir2:VerticalDirection>
 
-  <mdir2:Direction rdf:about="#Left">
+  <mdir2:VerticalDirection rdf:about="#sink">
+  </mdir2:VerticalDirection>
+
+  <mdir2:Direction rdf:about="#left">
   </mdir2:Direction>
 
-  <mdir2:AngularDirection rdf:about="#LineOfSight">
+  <mdir2:AngularDirection rdf:about="#lineofsight">
   </mdir2:AngularDirection>
 
-  <mdir2:HorizontalDirection rdf:about="#South">
-    <owl:sameAs rdf:resource="#Southward"/>
+  <mdir2:HorizontalDirection rdf:about="#south">
+    <owl:sameAs rdf:resource="#southward"/>
   </mdir2:HorizontalDirection>
-  <mdir2:HorizontalDirection rdf:about="#Southward"/>
+  <mdir2:HorizontalDirection rdf:about="#southward"/>
 
-  <mdir2:HorizontalDirection rdf:about="#North">
-    <owl:sameAs rdf:resource="#Northward"/>
-    <srela2:oppositeTo rdf:resource="#South"/>
+  <mdir2:HorizontalDirection rdf:about="#north">
+    <owl:sameAs rdf:resource="#northward"/>
+    <srela2:oppositeTo rdf:resource="#south"/>
   </mdir2:HorizontalDirection>
-  <mdir2:HorizontalDirection rdf:about="#Northward"/>
+  <mdir2:HorizontalDirection rdf:about="#northward"/>
 
-  <mdir2:Direction rdf:about="#Longitudin">
+  <mdir2:Direction rdf:about="#longitudin">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Obliqu">
-    <owl:differentFrom rdf:resource="#Parallel"/>
+  <mdir2:Direction rdf:about="#obliqu">
+    <owl:differentFrom rdf:resource="#parallel"/>
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Parallel">
+  <mdir2:Direction rdf:about="#parallel">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Perpendicular">
-    <srela2:orthogonalTo rdf:resource="#Parallel"/>
-    <owl:sameAs rdf:resource="#Transvers"/>
-    <owl:sameAs rdf:resource="#Normal"/>
+  <mdir2:Direction rdf:about="#perpendicular">
+    <srela2:orthogonalTo rdf:resource="#parallel"/>
+    <owl:sameAs rdf:resource="#transver"/>
+    <owl:sameAs rdf:resource="#normal"/>
   </mdir2:Direction>
-  <mdir2:Direction rdf:about="#Transvers"/>
-  <mdir2:Direction rdf:about="#Normal"/>
+  <mdir2:Direction rdf:about="#transver"/>
+  <mdir2:Direction rdf:about="#normal"/>
 
-  <mdir2:Direction rdf:about="#Right">
-    <srela2:oppositeTo rdf:resource="#Left"/>
-  </mdir2:Direction>
-
-  <mdir2:Direction rdf:about="#Shear">
+  <mdir2:Direction rdf:about="#right">
+    <srela2:oppositeTo rdf:resource="#left"/>
   </mdir2:Direction>
 
-  <mdir2:VerticalDirection rdf:about="#Up">
-    <owl:sameAs rdf:resource="#Upward"/>
-    <srela2:oppositeTo rdf:resource="#Down"/>
+  <mdir2:Direction rdf:about="#shear">
+  </mdir2:Direction>
+
+  <mdir2:VerticalDirection rdf:about="#up">
+    <owl:sameAs rdf:resource="#upward"/>
+    <srela2:oppositeTo rdf:resource="#down"/>
   </mdir2:VerticalDirection>
-  <mdir2:VerticalDirection rdf:about="#Upward"/>
+  <mdir2:VerticalDirection rdf:about="#upward"/>
 
-  <mdir2:VerticalDirection rdf:about="#Upflow">
-    <srela2:oppositeTo rdf:resource="#Downflow"/>
-  </mdir2:VerticalDirection>
-
-  <mdir2:VerticDirection rdf:about="#Vertic">
-    <srela2:perpendicularTo rdf:resource="#Horizont"/>
+  <mdir2:VerticalDirection rdf:about="#upflow">
+    <srela2:oppositeTo rdf:resource="#downflow"/>
   </mdir2:VerticalDirection>
 
-  <mdir2:HorizontDirection rdf:about="#Horizont">
-  </mdir2:HorizontalDirection>
-
-  <mdir2:HorizontalDirection rdf:about="#West">
-    <owl:sameAs rdf:resource="#Westward"/>
-    <srela2:oppositeTo rdf:resource="#East"/>
-  </mdir2:HorizontalDirection>
-  <mdir2:HorizontalDirection rdf:about="#Westward"/>
-
-  <mdir2:HorizontalDirection rdf:about="#X">
-  </mdir2:HorizontalDirection>
-
-  <mdir2:HorizontalDirection rdf:about="#Y">
-    <srela2:orthogonalTo rdf:resource="#X"/>
-  </mdir2:HorizontalDirection>
-
-  <mdir2:VerticalDirection rdf:about="#Z">
-    <srela2:orthogonalTo rdf:resource="#X"/>
+  <mdir2:verticDirection rdf:about="#vertic">
+    <srela2:perpendicularTo rdf:resource="#horizont"/>
   </mdir2:VerticalDirection>
 
-  <mdir2:VerticalDirection rdf:about="#Zenith">
+  <mdir2:horizontDirection rdf:about="#horizont">
+  </mdir2:HorizontalDirection>
+
+  <mdir2:HorizontalDirection rdf:about="#west">
+    <owl:sameAs rdf:resource="#westward"/>
+    <srela2:oppositeTo rdf:resource="#east"/>
+  </mdir2:HorizontalDirection>
+  <mdir2:HorizontalDirection rdf:about="#westward"/>
+
+  <mdir2:HorizontalDirection rdf:about="#x">
+  </mdir2:HorizontalDirection>
+
+  <mdir2:HorizontalDirection rdf:about="#y">
+    <srela2:orthogonalTo rdf:resource="#x"/>
+  </mdir2:HorizontalDirection>
+
+  <mdir2:VerticalDirection rdf:about="#z">
+    <srela2:orthogonalTo rdf:resource="#x"/>
+  </mdir2:VerticalDirection>
+
+  <mdir2:VerticalDirection rdf:about="#zenith">
   </mdir2:VerticalDirection>
 
 <!-- Process related -->
-  <mdir2:AngularDirection rdf:about="#Diffus">
+  <mdir2:AngularDirection rdf:about="#diffus">
   </mdir2:AngularDirection>
 
-  <mdir2:Direction rdf:about="#Downhil">
+  <mdir2:Direction rdf:about="#downhil">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Downstream">
+  <mdir2:Direction rdf:about="#downstream">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Downslop">
+  <mdir2:Direction rdf:about="#downslop">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Downwind">
+  <mdir2:Direction rdf:about="#downwind">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Downstream">
+  <mdir2:Direction rdf:about="#downstream">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Landward">
+  <mdir2:Direction rdf:about="#landward">
   </mdir2:Direction>
 
-  <mdir2:HorizontalDirection rdf:about="#Lee">
-    <owl:sameAs rdf:resource="#Leeward"/>
+  <mdir2:HorizontalDirection rdf:about="#lee">
+    <owl:sameAs rdf:resource="#leeward"/>
   </mdir2:HorizontalDirection>
-  <mdir2:HorizontalDirection rdf:about="#Leeward"/>
+  <mdir2:HorizontalDirection rdf:about="#leeward"/>
 
-  <mdir2:AngularDirection rdf:about="#Retrograd">
-    <srela2:oppositeTo rdf:resource="#Prograd"/>
+  <mdir2:AngularDirection rdf:about="#retrograd">
+    <srela2:oppositeTo rdf:resource="#prograd"/>
   </mdir2:AngularDirection>
 
-  <mdir2:AngularDirection rdf:about="#Prograd">
+  <mdir2:AngularDirection rdf:about="#prograd">
   </mdir2:AngularDirection>
 
-  <mdir2:Direction rdf:about="#Seaward">
-    <srela2:oppositeTo rdf:resource="#Landward"/>
+  <mdir2:Direction rdf:about="#seaward">
+    <srela2:oppositeTo rdf:resource="#landward"/>
   </mdir2:Direction>
 
-  <mdir2:AngularDirection rdf:about="#Specular">
+  <mdir2:AngularDirection rdf:about="#specular">
   </mdir2:AngularDirection>
 
-  <mdir2:Direction rdf:about="#Sunward">
+  <mdir2:Direction rdf:about="#sunward">
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Upslope">
-    <srela2:oppositeTo rdf:resource="#Downslop"/>
+  <mdir2:Direction rdf:about="#upslope">
+    <srela2:oppositeTo rdf:resource="#downslop"/>
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Uphill">
-    <srela2:oppositeTo rdf:resource="#Downhil"/>
+  <mdir2:Direction rdf:about="#uphill">
+    <srela2:oppositeTo rdf:resource="#downhil"/>
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Upstream">
-    <srela2:oppositeTo rdf:resource="#Downstream"/>
+  <mdir2:Direction rdf:about="#upstream">
+    <srela2:oppositeTo rdf:resource="#downstream"/>
   </mdir2:Direction>
 
-  <mdir2:Direction rdf:about="#Upwind">
-    <srela2:oppositeTo rdf:resource="#Downstream"/>
+  <mdir2:Direction rdf:about="#upwind">
+    <srela2:oppositeTo rdf:resource="#downstream"/>
   </mdir2:Direction>
 
-  <mdir2:HorizontalDirection rdf:about="#Windward">
-    <srela2:oppositeTo rdf:resource="#Leeward"/>
+  <mdir2:HorizontalDirection rdf:about="#windward">
+    <srela2:oppositeTo rdf:resource="#leeward"/>
   </mdir2:HorizontalDirection>
 
 </rdf:RDF>

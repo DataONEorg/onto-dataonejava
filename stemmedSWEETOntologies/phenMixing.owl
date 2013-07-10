@@ -42,75 +42,75 @@
      <owl:imports rdf:resource="&statec;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Mix">
-    <rdfs:subClassOf rdf:resource="&phen;#DynamicalPhenomena" />
-    <owl:equivalentClass rdf:resource="#Mix"/>
+  <owl:Class rdf:about="#mix">
+    <rdfs:subClassOf rdf:resource="&phen;#dynamicalphenomena" />
+    <owl:equivalentClass rdf:resource="#mix"/>
   </owl:Class>
-  <owl:Class rdf:about="#Mix"/>
+  <owl:Class rdf:about="#mix"/>
 
-  <owl:Class rdf:about="#Separ">
-    <rdfs:subClassOf rdf:resource="&phen;#DynamicalPhenomena" />
-    <owl:disjointWith rdf:resource="#Mix"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Settl">
-    <rdfs:subClassOf rdf:resource="&phen;#DynamicalPhenomena" />
+  <owl:Class rdf:about="#separ">
+    <rdfs:subClassOf rdf:resource="&phen;#dynamicalphenomena" />
+    <owl:disjointWith rdf:resource="#mix"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cryoturb">
-    <rdfs:subClassOf rdf:resource="#Mix" />
+  <owl:Class rdf:about="#settl">
+    <rdfs:subClassOf rdf:resource="&phen;#dynamicalphenomena" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#cryoturb">
+    <rdfs:subClassOf rdf:resource="#mix" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasStateChang" />
-        <owl:allValuesFrom rdf:resource="&statec;#Freez" />
+        <owl:onProperty rdf:resource="&prela;#hasstatechang" />
+        <owl:allValuesFrom rdf:resource="&statec;#freez" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Cryoturbation (frost churning) refers to the mixing of materials from various horizons of the soil right down to the parent rock due to freezing and thawing. Cryoturbation occurs to varying degrees in most Gelisols (permafrost soils). The cause of crytoturbation lies in the way in which the repeated freezing of the soil during autumn causes the formation of ice wedges at the most easily erodible parts of the parent rock. If the parent rock is hard, this can cause quite deep erosion of the rock over many years. As this process continues, during the summer when an active layer forms in the soil this eroded material can easily move both from the soil surface downward and from the permafrost table upward. As this process occurs, the upper soil material gradually dries out (because the soil moisture moves from the warm surface layer to the colder layer at the phen of the permafrost) so that it forms a granular structure with many very distinctive crystalline shapes (such as ice lenses). Separation of coarse from fine soil materials produces distinctive patterned ground with different types of soil.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aerat">
-    <rdfs:subClassOf rdf:resource="#Mix"/>
+  <owl:Class rdf:about="#aerat">
+    <rdfs:subClassOf rdf:resource="#mix"/>
     <rdfs:comment xml:lang="en">Aeration (also called aerification) is the process by which air is circulated through, mixed with or dissolved in a liquid or substance. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bioturb">
-    <rdfs:subClassOf rdf:resource="#Mix" />
+  <owl:Class rdf:about="#bioturb">
+    <rdfs:subClassOf rdf:resource="#mix" />
     <rdfs:subClassOf>
       <owl:Restriction>
-         <owl:onProperty rdf:resource="&crela;#hasSubst" />
-         <owl:allValuesFrom rdf:resource="&sed;#Sediment" />
+         <owl:onProperty rdf:resource="&crela;#hassubst" />
+         <owl:allValuesFrom rdf:resource="&sed;#sediment" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Bioturbation is the displacement and mixing of sediment particles by benthic fauna (animals) or flora (plants). The mediators of bioturbation are typically annelid worms (e.g. polychaetes, oligochaetes), bivalves (e.g. mussels, clams), gastropods, holothurians, or any other infaunal or epifaunal organisms. Faunal activities, such as burrowing, ingestion and defecation of sediment grains, construction and maintenance of galleries, and infilling of abandoned dwellings, displace sediment grains and mix the sediment matrix. In soil science, bioturbation is the physical rearrangement of the soil profile by soil life. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Entrainment">
-    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
+  <owl:Class rdf:about="#entrainment">
+    <rdfs:subClassOf rdf:resource="&proc;#physicalprocess"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="#Mix" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="#mix" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
 <!-- Diffusion -->
-  <owl:Class rdf:about="#Diffus">
-    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
-    <owl:equivalentClass rdf:resource="#Diffus"/>
+  <owl:Class rdf:about="#diffus">
+    <rdfs:subClassOf rdf:resource="&proc;#physicalprocess"/>
+    <owl:equivalentClass rdf:resource="#diffus"/>
   </owl:Class>
-  <owl:Class rdf:about="#Diffus"/>
+  <owl:Class rdf:about="#diffus"/>
 
-  <owl:Class rdf:about="#EddyDiffus">
-    <rdfs:subClassOf rdf:resource="#Diffus" />
-  </owl:Class>
-
-  <owl:Class rdf:about="#FickianDiffus">
-    <rdfs:subClassOf rdf:resource="#Diffus" />
+  <owl:Class rdf:about="#eddydiffus">
+    <rdfs:subClassOf rdf:resource="#diffus" />
   </owl:Class>
 
-  <owl:Class rdf:about="#TurbulentDiffus">
-    <rdfs:subClassOf rdf:resource="#Diffus" />
+  <owl:Class rdf:about="#fickiandiffus">
+    <rdfs:subClassOf rdf:resource="#diffus" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#turbulentdiffus">
+    <rdfs:subClassOf rdf:resource="#diffus" />
     <rdfs:comment xml:lang="en">Diffusion or dispersion due to the effects of turbulent motions.</rdfs:comment>
   </owl:Class>
 

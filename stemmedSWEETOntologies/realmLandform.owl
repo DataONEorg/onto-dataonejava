@@ -39,130 +39,130 @@
   </owl:Ontology>
 
 <!-- Realms -->
-  <owl:Class rdf:about="#Contin">
-    <rdfs:subClassOf rdf:resource="#LandRegion"/>
+  <owl:Class rdf:about="#contin">
+    <rdfs:subClassOf rdf:resource="#landregion"/>
     <rdfs:comment xml:lang="en">A continent is one of several large landmasses. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#DebrisBasin">
-    <rdfs:subClassOf rdf:resource="#LandRegion"/>
+  <owl:Class rdf:about="#debrisbasin">
+    <rdfs:subClassOf rdf:resource="#landregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DeflationZon">
-    <rdfs:subClassOf rdf:resource="#LandRegion"/>
+  <owl:Class rdf:about="#deflationzon">
+    <rdfs:subClassOf rdf:resource="#landregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dryland">
-    <rdfs:subClassOf rdf:resource="#LandRegion"/>
+  <owl:Class rdf:about="#dryland">
+    <rdfs:subClassOf rdf:resource="#landregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Land">
-    <rdfs:subClassOf rdf:resource="&obj;#Region"/>
-    <owl:equivalentClass rdf:resource="#LandRegion"/>
-    <owl:equivalentClass rdf:resource="#SurfaceRegion"/>
-    <owl:equivalentClass rdf:resource="#LandSurfac"/>
+  <owl:Class rdf:about="#land">
+    <rdfs:subClassOf rdf:resource="&obj;#region"/>
+    <owl:equivalentClass rdf:resource="#landregion"/>
+    <owl:equivalentClass rdf:resource="#surfaceregion"/>
+    <owl:equivalentClass rdf:resource="#landsurfac"/>
   </owl:Class>
-  <owl:Class rdf:about="#SurfaceRegion"/>
-  <owl:Class rdf:about="#LandRegion"/>
-  <owl:Class rdf:about="#LandSurfac"/>
+  <owl:Class rdf:about="#surfaceregion"/>
+  <owl:Class rdf:about="#landregion"/>
+  <owl:Class rdf:about="#landsurfac"/>
 
-  <owl:Class rdf:about="#LandCov">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#landcov">
+    <rdfs:subClassOf rdf:resource="#landform"/>
     <rdfs:comment xml:lang="en">Land cover is the physical material at the surface of the earth. Land covers include grass, asphalt, trees, bare ground, water, etc. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Landscap">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#landscap">
+    <rdfs:subClassOf rdf:resource="#landform"/>
     <rdfs:comment xml:lang="en">A landscape comprises the visible features of an area of land, including physical elements such as landforms, living elements of flora and fauna, abstract elements such as lighting and weather conditions, and human elements, for instance human activity or the built environment. Landscape may also signify the objects around one in a building. </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Landform">
-    <rdfs:subClassOf rdf:resource="#LandRegion"/>
+  <owl:Class rdf:about="#landform">
+    <rdfs:subClassOf rdf:resource="#landregion"/>
     <rdfs:comment xml:lang="en">A landform comprises a geomorphological unit, and is largely defined by its surface form and location in the landscape, as part of the terrain, and as such, is typically an element of topography. Landforms are categorised by features such as elevation, slope, orientation, stratification, rock exposure, and soil type. They include berms, mounds, hills, cliffs, valleys, rivers and numerous other elements.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lamin">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#lamin">
+    <rdfs:subClassOf rdf:resource="#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lowland">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
-    <owl:disjointWith rdf:resource="#Highland"/>
+  <owl:Class rdf:about="#lowland">
+    <rdfs:subClassOf rdf:resource="#landform"/>
+    <owl:disjointWith rdf:resource="#highland"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Highland">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#highland">
+    <rdfs:subClassOf rdf:resource="#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mare">
-    <rdfs:subClassOf rdf:resource="#Plain"/>
+  <owl:Class rdf:about="#mare">
+    <rdfs:subClassOf rdf:resource="#plain"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasVis" />
-        <owl:hasValue rdf:resource="&vis;#Dark" />
+        <owl:onProperty rdf:resource="&prela;#hasvi" />
+        <owl:hasValue rdf:resource="&vis;#dark" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Plain">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#plain">
+    <rdfs:subClassOf rdf:resource="#landform"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfigur" />
-        <owl:hasValue rdf:resource="&conf;#Flat" />
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur" />
+        <owl:hasValue rdf:resource="&conf;#flat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Prari">
-    <rdfs:subClassOf rdf:resource="#Plain"/>
+  <owl:Class rdf:about="#prari">
+    <rdfs:subClassOf rdf:resource="#plain"/>
   </owl:Class>
 
- <owl:Class rdf:about="#Field">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+ <owl:Class rdf:about="#field">
+    <rdfs:subClassOf rdf:resource="#landform"/>
     <rdfs:comment xml:lang="en">Field (agriculture), an area of land used to cultivate crops, or to keep livestock [Wikipedia]</rdfs:comment>
   </owl:Class>
 
 <!-- Craters -->
-  <owl:Class rdf:about="#CentralCreekCrat">
-    <rdfs:subClassOf rdf:resource="#Crater"/>
+  <owl:Class rdf:about="#centralcreekcrat">
+    <rdfs:subClassOf rdf:resource="#crater"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ComplexCrat">
-    <rdfs:subClassOf rdf:resource="#Crater"/>
+  <owl:Class rdf:about="#complexcrat">
+    <rdfs:subClassOf rdf:resource="#crater"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Crater">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
-    <rdfs:subClassOf rdf:resource="&obj3d;#Caviti"/>
+  <owl:Class rdf:about="#crater">
+    <rdfs:subClassOf rdf:resource="#landform"/>
+    <rdfs:subClassOf rdf:resource="&obj3d;#caviti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ImpactBasin">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#impactbasin">
+    <rdfs:subClassOf rdf:resource="#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ImpactCrat">
-    <rdfs:subClassOf rdf:resource="#Crater"/>
+  <owl:Class rdf:about="#impactcrat">
+    <rdfs:subClassOf rdf:resource="#crater"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PedestalCrat">
-    <rdfs:subClassOf rdf:resource="#Crater"/>
+  <owl:Class rdf:about="#pedestalcrat">
+    <rdfs:subClassOf rdf:resource="#crater"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PitCrat">
-    <rdfs:subClassOf rdf:resource="#Crater"/>
+  <owl:Class rdf:about="#pitcrat">
+    <rdfs:subClassOf rdf:resource="#crater"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RockyPitFloorCrat">
-    <rdfs:subClassOf rdf:resource="#PitCrat"/>
+  <owl:Class rdf:about="#rockypitfloorcrat">
+    <rdfs:subClassOf rdf:resource="#pitcrat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ShatterCon">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#shattercon">
+    <rdfs:subClassOf rdf:resource="#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Spall">
-    <rdfs:subClassOf rdf:resource="#Landform"/>
+  <owl:Class rdf:about="#spall">
+    <rdfs:subClassOf rdf:resource="#landform"/>
   </owl:Class>
 
 </rdf:RDF>

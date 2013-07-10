@@ -48,113 +48,113 @@
      <owl:imports rdf:resource="&realm;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#AtmosphericBoundaryLay">
-    <rdfs:subClassOf rdf:resource="&atmo;#AtmosphereLay" />
-    <owl:equivalentClass rdf:resource="#BoundaryLay" />
+  <owl:Class rdf:about="#atmosphericboundarylay">
+    <rdfs:subClassOf rdf:resource="&atmo;#atmospherelay" />
+    <owl:equivalentClass rdf:resource="#boundarylay" />
     <rdfs:comment xml:lang="en">The bottom layer of the troposphere that is in contact with the surface of the earth.
     </rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#BoundaryLay"/>
+  <owl:Class rdf:about="#boundarylay"/>
 
-  <owl:Class rdf:about="#ConstantFluxLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#constantfluxlay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
     <rdfs:comment xml:lang="en">A layer of air tens of meters thick at the bottom of the atmosphere where the variation of vertical turbulent flux with altitude is less than 10% of its magnitude.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#InternalBoundaryLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#internalboundarylay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
     <rdfs:comment xml:lang="en">A layer within the atmosphere bounded below by the surface, and above by a more or less sharp discontinuity in some atmospheric property. Internal boundary layers are associated with the horizontal advection of air across a discontinuity in some property of the surface (e.g., aerodynamic roughness length or surface heat flux) and can be viewed as layers in which the atmosphere is adjusting to new surface properties. See thermal internal boundary layer, mechanical internal boundary layer.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MechanicalInternalBoundaryLay">
-    <rdfs:subClassOf rdf:resource="#InternalBoundaryLay" />
+  <owl:Class rdf:about="#mechanicalinternalboundarylay">
+    <rdfs:subClassOf rdf:resource="#internalboundarylay" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&trans;#Advection" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&trans;#advection" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">(Abbreviated MIBL.) An internal boundary layer caused by advection of air across a discontinuity in surface roughness. When the new surface is rougher than the old one, the MIBL depth grows roughly as the 0.8 power of the ratio of the two roughness lengths. In this example, the MIBL grows to include the whole surface layer.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixedLay">
+  <owl:Class rdf:about="#mixedlay">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&inst;#Turbul" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&inst;#turbul" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#BoundaryLay" />
+    <rdfs:subClassOf rdf:resource="#boundarylay" />
     <rdfs:comment xml:lang="en">A type of atmospheric boundary layer characterized by vigorous turbulence tending to stir and uniformly mix, primarily in the vertical, quantities such as conservative tracer concentrations, potential temperature, and momentum or wind speed.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#NocturnalBoundaryLay">
-    <rdfs:subClassOf rdf:resource="#BoundaryLay" />
+  <owl:Class rdf:about="#nocturnalboundarylay">
+    <rdfs:subClassOf rdf:resource="#boundarylay" />
     <rdfs:subClassOf>
       <owl:Restriction>
 <!--
-        <owl:onProperty rdf:resource="&atmp;#hasMeteorologicalPhenomena" />
+        <owl:onProperty rdf:resource="&atmp;#hasmeteorologicalphenomena" />
 -->
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:someValuesFrom rdf:resource="&atmp;#NocturnalCool" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:someValuesFrom rdf:resource="&atmp;#nocturnalcool" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The cool layer of air adjacent to the ground that forms at night. At night under clear skies, radiation to space cools the land surface, which in turn cools the adjacent air through processes of molecular conduction, turbulence, and radiative transfer. This causes a stable boundary layer to form and grow to depths of a few hundreds of meters, depending on the season. Many interacting processes can occur within the statically stable nocturnal boundary layer: patchy sporadic turbulence, internal gravity waves, drainage flows, inertial oscillations, and nocturnal jets.</rdfs:comment>
   </owl:Class>
 
- <owl:Class rdf:about="#OuterLay">
-    <rdfs:subClassOf rdf:resource="#BoundaryLay" />
+ <owl:Class rdf:about="#outerlay">
+    <rdfs:subClassOf rdf:resource="#boundarylay" />
     <rdfs:comment xml:lang="en">For flow over a hill, the top layer in the boundary layer that accelerates relative to its upstream value due to the Bernoulli effect.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlanetaryBoundaryLay">
-    <owl:equivalentClass rdf:resource="#BoundaryLay" />
+  <owl:Class rdf:about="#planetaryboundarylay">
+    <owl:equivalentClass rdf:resource="#boundarylay" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:someValuesFrom rdf:resource="&realm;#Atmospher" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:someValuesFrom rdf:resource="&realm;#atmospher" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The bottom layer of the troposphere that is in contact with the surface of the earth.   It is often turbulent and is capped by a statically stable layer of air or temperature inversion.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#ResidualLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#residuallay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
     <rdfs:comment xml:lang="en">The middle portion of the nocturnal atmospheric boundary layer characterized by weak sporadic turbulence and initially uniformly mixed potential temperature and pollutants remaining from the mixed layer of the previous day.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RoughnessSublay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#roughnesssublay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat" />
-        <owl:hasValue rdf:resource="&cont;#Rough" />
+        <owl:onProperty rdf:resource="&rela;#hasstat" />
+        <owl:hasValue rdf:resource="&cont;#rough" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Same as transition layer. The lowest atmospheric layer immediately adjacent to a surface covered with relatively large roughness elements such as stones, vegetation, trees, or buildings.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SkinLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#skinlay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
   </owl:Class>
 
-  <owl:Class rdf:about="#StableBoundaryLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay" />
+  <owl:Class rdf:about="#stableboundarylay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay" />
   </owl:Class>
 
-  <owl:Class rdf:about="#WellMixedLay">
-    <rdfs:subClassOf rdf:resource="#AtmosphericBoundaryLay"/>
+  <owl:Class rdf:about="#wellmixedlay">
+    <rdfs:subClassOf rdf:resource="#atmosphericboundarylay"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&mix;#Mix" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&mix;#mix" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A type of atmospheric boundary layer characterized by vigorous turbulence tending to stir and uniformly mix, primarily in the vertical, quantities such as conservative tracer concentrations, potential temperature, and momentum or wind speed.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cap">
-    <rdfs:subClassOf rdf:resource="&ht;#Level" />
+  <owl:Class rdf:about="#cap">
+    <rdfs:subClassOf rdf:resource="&ht;#level" />
     <rdfs:comment> A region of negative buoyancy below an existing level of free convection (LFC) where energy must be supplied to the parcel to maintain its ascent.</rdfs:comment>
   </owl:Class>
 

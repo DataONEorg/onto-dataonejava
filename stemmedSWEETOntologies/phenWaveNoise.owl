@@ -34,68 +34,68 @@
   </owl:Ontology>
 
 <!-- Noise -->
-  <owl:Class rdf:about="#Nois">
-    <rdfs:subClassOf rdf:resource="&wave;#WavePhenomena"/>
+  <owl:Class rdf:about="#noi">
+    <rdfs:subClassOf rdf:resource="&wave;#wavephenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRol" />
-        <owl:hasValue rdf:resource="&role;#Undesir" />
+        <owl:onProperty rdf:resource="&rela;#hasrol" />
+        <owl:hasValue rdf:resource="&role;#undesir" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Beat">
-    <rdfs:subClassOf rdf:resource="#Interfer"/>
+  <owl:Class rdf:about="#beat">
+    <rdfs:subClassOf rdf:resource="#interfer"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Distort">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#distort">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hiss">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#hiss">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Interfer">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#interfer">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AmbientNois">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#ambientnoi">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flicker">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#flicker">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WhiteNois">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#whitenoi">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SideLob">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#sidelob">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Scintil">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#scintil">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PulseSpread">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#pulsespread">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reson">
-    <rdfs:subClassOf rdf:resource="&wave;#WavePhenomena"/>
-    <owl:equivalentClass rdf:resource="#Reson"/>
+  <owl:Class rdf:about="#reson">
+    <rdfs:subClassOf rdf:resource="&wave;#wavephenomena"/>
+    <owl:equivalentClass rdf:resource="#reson"/>
   </owl:Class>
-  <owl:Class rdf:about="#Reson"/>
+  <owl:Class rdf:about="#reson"/>
 
-  <owl:Class rdf:about="#Vibrat">
-    <rdfs:subClassOf rdf:resource="#Nois"/>
+  <owl:Class rdf:about="#vibrat">
+    <rdfs:subClassOf rdf:resource="#noi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chorus">
-    <rdfs:subClassOf rdf:resource="#Reson"/>
+  <owl:Class rdf:about="#chorus">
+    <rdfs:subClassOf rdf:resource="#reson"/>
   </owl:Class>
 
 </rdf:RDF>

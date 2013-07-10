@@ -41,123 +41,123 @@
      <owl:imports rdf:resource="&ht;"/>
   </owl:Ontology>
 
- <owl:Class rdf:about="#Alpine">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+ <owl:Class rdf:about="#alpine">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
     <rdfs:comment xml:lang="en">Alpine region is one above the tree line. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:ID="Bluff">
-    <rdfs:subClassOf rdf:resource="#Hill"/>
+    <rdfs:subClassOf rdf:resource="#hill"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Butte">
-    <rdfs:subClassOf rdf:resource="#Hill"/>
+    <rdfs:subClassOf rdf:resource="#hill"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Cliff">
-    <rdfs:subClassOf rdf:resource="#Hill"/>
+    <rdfs:subClassOf rdf:resource="#hill"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Foothill">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hill">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+  <owl:Class rdf:about="#hill">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
 <!--
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&xten;#hasSpatialExt" />
-        <owl:allValuesFrom rdf:resource="&ht;#Elevat" />
+        <owl:onProperty rdf:resource="&xten;#hasspatialext" />
+        <owl:allValuesFrom rdf:resource="&ht;#elevat" />
       </owl:Restriction>
     </rdfs:subClassOf>
 -->
     <rdfs:comment xml:lang="en">A hill is a landform that extends above the surrounding terrain, in a limited area. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may refer to a particular section of scarp slope without a well-defined summit (e.g. Box Hill). A hillock is a small hill. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hummock">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+  <owl:Class rdf:about="#hummock">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mesa">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#mesa">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Mountain">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
 <!--
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&xten;#hasSpatialExt" />
-        <owl:allValuesFrom rdf:resource="&ht;#Elevat" />
+        <owl:onProperty rdf:resource="&xten;#hasspatialext" />
+        <owl:allValuesFrom rdf:resource="&ht;#elevat" />
       </owl:Restriction>
     </rdfs:subClassOf>
 -->
   </owl:Class>
 
   <owl:Class rdf:ID="MountainRange">
-    <rdfs:subClassOf rdf:resource="&space;#Cluster"/>
+    <rdfs:subClassOf rdf:resource="&space;#cluster"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Mountain"/>
-        <owl:onProperty rdf:resource="&srela;#clusterOf"/>
+        <owl:allValuesFrom rdf:resource="#mountain"/>
+        <owl:onProperty rdf:resource="&srela;#clusterof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MountainRegion">
-    <rdfs:subClassOf rdf:resource="&land;#LandRegion" />
+  <owl:Class rdf:about="#mountainregion">
+    <rdfs:subClassOf rdf:resource="&land;#landregion" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Mountain"/>
-        <owl:onProperty rdf:resource="&rela;#hasRealm"/>
+        <owl:allValuesFrom rdf:resource="#mountain"/>
+        <owl:onProperty rdf:resource="&rela;#hasrealm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NonOrograph">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
-    <owl:disjointWith rdf:resource="#Orograph"/>
+  <owl:Class rdf:about="#nonorograph">
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
+    <owl:disjointWith rdf:resource="#orograph"/>
   </owl:Class>
 
   <owl:Class rdf:ID="Orography">
-    <rdfs:subClassOf rdf:resource="&land;#Landform"/>
-    <owl:equivalentClass rdf:resource="#Mountain"/>
-    <owl:equivalentClass rdf:resource="#Orograph"/>
+    <rdfs:subClassOf rdf:resource="&land;#landform"/>
+    <owl:equivalentClass rdf:resource="#mountain"/>
+    <owl:equivalentClass rdf:resource="#orograph"/>
   </owl:Class>
   <owl:Class rdf:ID="Orographic"/>
 
-  <owl:Class rdf:about="#Pass">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#pass">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Plateau">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#plateau">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Protrus">
-    <rdfs:subClassOf rdf:resource="#Ridg"/>
+  <owl:Class rdf:about="#protrus">
+    <rdfs:subClassOf rdf:resource="#ridg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ridg">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#ridg">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Summit">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#summit">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Talus">
-    <rdfs:subClassOf rdf:resource="#MountainRegion"/>
+  <owl:Class rdf:about="#talus">
+    <rdfs:subClassOf rdf:resource="#mountainregion"/>
     <rdfs:comment xml:lang="en">A slope formed at the base of a steeper slope, made of fallen and disintegrated materials.</rdfs:comment>
   </owl:Class>
   
-  <owl:Class rdf:about="#TopographicalRegion">
-    <rdfs:subClassOf rdf:resource="&land;#SurfaceRegion"/>
+  <owl:Class rdf:about="#topographicalregion">
+    <rdfs:subClassOf rdf:resource="&land;#surfaceregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ubac">
-    <rdfs:subClassOf rdf:resource="#MountainRegion" />
+  <owl:Class rdf:about="#ubac">
+    <rdfs:subClassOf rdf:resource="#mountainregion" />
     <rdfs:comment>The shady (usually poleward) side of a mountain.</rdfs:comment>
   </owl:Class>
 

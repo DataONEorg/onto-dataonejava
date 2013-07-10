@@ -31,59 +31,59 @@
      <owl:imports rdf:resource="&proc;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Accumul">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
-    <rdfs:subClassOf rdf:resource="&sys;#Accumul"/>
+  <owl:Class rdf:about="#accumul">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
+    <rdfs:subClassOf rdf:resource="&sys;#accumul"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Calv">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
-    <rdfs:subClassOf rdf:resource="&statec;#Melt"/>
-    <owl:equivalentClass rdf:resource="#IceCalv" />
+  <owl:Class rdf:about="#calv">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
+    <rdfs:subClassOf rdf:resource="&statec;#melt"/>
+    <owl:equivalentClass rdf:resource="#icecalv" />
   </owl:Class>
-  <owl:Class rdf:about="#IceCalv"/>
+  <owl:Class rdf:about="#icecalv"/>
 
-  <owl:Class rdf:about="#Glaciat">
-    <rdfs:subClassOf rdf:resource="#Accumul"/>
-    <owl:equivalentClass rdf:resource="#Glacial" />
+  <owl:Class rdf:about="#glaciat">
+    <rdfs:subClassOf rdf:resource="#accumul"/>
+    <owl:equivalentClass rdf:resource="#glacial" />
   </owl:Class>
-  <owl:Class rdf:about="#Glacial"/>
+  <owl:Class rdf:about="#glacial"/>
 
-  <owl:Class rdf:about="#GlacialProcess">
-    <rdfs:subClassOf rdf:resource="&proc;#PhysicalProcess"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Periglaci">
-    <rdfs:subClassOf rdf:resource="#Glaciat"/>
+  <owl:Class rdf:about="#glacialprocess">
+    <rdfs:subClassOf rdf:resource="&proc;#physicalprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GlacierRetreat">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
-    <rdfs:subClassOf rdf:resource="&statec;#Melt"/>
-    <owl:disjointWith rdf:resource="#Glaciat" />
+  <owl:Class rdf:about="#periglaci">
+    <rdfs:subClassOf rdf:resource="#glaciat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Proglaci">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
+  <owl:Class rdf:about="#glacierretreat">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
+    <rdfs:subClassOf rdf:resource="&statec;#melt"/>
+    <owl:disjointWith rdf:resource="#glaciat" />
+  </owl:Class>
+
+  <owl:Class rdf:about="#proglaci">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
     <rdfs:comment xml:lang="en">Of streams, deposits, and other features, being immediately in front of or just beyond the outer limits of a glacier or ice sheet, and formed by or derived from glacier ice.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Englacial">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
+  <owl:Class rdf:about="#englacial">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
     <rdfs:comment xml:lang="en">Embedded in, carried by, or running through a glacier</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Periglaci">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
+  <owl:Class rdf:about="#periglaci">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Subglaci">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
+  <owl:Class rdf:about="#subglaci">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
     <rdfs:comment xml:lang="en">Pertaining to the area in or at the bottom of, or immediately beneath, a glacier.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Supraglaci">
-    <rdfs:subClassOf rdf:resource="#GlacialProcess"/>
+  <owl:Class rdf:about="#supraglaci">
+    <rdfs:subClassOf rdf:resource="#glacialprocess"/>
   </owl:Class>
 
 </rdf:RDF>

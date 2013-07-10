@@ -51,155 +51,155 @@
   </owl:Ontology>
 
 <!-- Mesaures  of central tendency -->
-  <owl:Class rdf:about="#Moment">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#moment">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mean">
-    <rdfs:subClassOf rdf:resource="#Moment"/>
-    <owl:equivalentClass rdf:resource="#Averag"/>
+  <owl:Class rdf:about="#mean">
+    <rdfs:subClassOf rdf:resource="#moment"/>
+    <owl:equivalentClass rdf:resource="#averag"/>
   </owl:Class>
-  <owl:Class rdf:about="#Averag"/>
+  <owl:Class rdf:about="#averag"/>
 
-  <owl:Class rdf:about="#TimeMean">
-    <rdfs:subClassOf rdf:resource="#Averag"/>
-    <owl:equivalentClass rdf:resource="#TemporalAverag"/>
-    <owl:equivalentClass rdf:resource="#TemporalMean"/>
-    <owl:equivalentClass rdf:resource="#TimeAverag"/>
+  <owl:Class rdf:about="#timemean">
+    <rdfs:subClassOf rdf:resource="#averag"/>
+    <owl:equivalentClass rdf:resource="#temporalaverag"/>
+    <owl:equivalentClass rdf:resource="#temporalmean"/>
+    <owl:equivalentClass rdf:resource="#timeaverag"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#averageOv"/>
-        <owl:someValuesFrom rdf:resource="&time;#Time"/>
+        <owl:onProperty rdf:resource="&mrela;#averageov"/>
+        <owl:someValuesFrom rdf:resource="&time;#time"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#TemporalAverag"/>
-  <owl:Class rdf:about="#TemporalMean"/>
-  <owl:Class rdf:about="#TimeAverag"/>
+  <owl:Class rdf:about="#temporalaverag"/>
+  <owl:Class rdf:about="#temporalmean"/>
+  <owl:Class rdf:about="#timeaverag"/>
 
-  <owl:Class rdf:about="#AnnualAverag">
-    <rdfs:subClassOf rdf:resource="#TimeMean"/>
+  <owl:Class rdf:about="#annualaverag">
+    <rdfs:subClassOf rdf:resource="#timemean"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#averageOv"/>
+        <owl:onProperty rdf:resource="&mrela;#averageov"/>
         <owl:hasValue rdf:resource="&units;#year"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MonthlyAverag">
-    <rdfs:subClassOf rdf:resource="#TimeMean"/>
+  <owl:Class rdf:about="#monthlyaverag">
+    <rdfs:subClassOf rdf:resource="#timemean"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#averageOv"/>
+        <owl:onProperty rdf:resource="&mrela;#averageov"/>
         <owl:hasValue rdf:resource="&units;#month"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Median">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#median">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MidRang">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#midrang">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mode">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#mode">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
 <!-- Spread -->
-  <owl:Class rdf:about="#Maximum">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#maximum">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Minimum">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#minimum">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Peak">
-    <rdfs:subClassOf rdf:resource="#Maximum"/>
+  <owl:Class rdf:about="#peak">
+    <rdfs:subClassOf rdf:resource="#maximum"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Percentil">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#percentil">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Quartil">
-    <rdfs:subClassOf rdf:resource="#Percentil"/>
+  <owl:Class rdf:about="#quartil">
+    <rdfs:subClassOf rdf:resource="#percentil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Quintil">
-    <rdfs:subClassOf rdf:resource="#Percentil"/>
+  <owl:Class rdf:about="#quintil">
+    <rdfs:subClassOf rdf:resource="#percentil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decil">
-    <rdfs:subClassOf rdf:resource="#Percentil"/>
+  <owl:Class rdf:about="#decil">
+    <rdfs:subClassOf rdf:resource="#percentil"/>
   </owl:Class>
 
 <!-- Deviations -->
-  <owl:Class rdf:about="#StandardDevi">
-    <rdfs:subClassOf rdf:resource="#Spread"/>
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#standarddevi">
+    <rdfs:subClassOf rdf:resource="#spread"/>
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Varianc">
-    <rdfs:subClassOf rdf:resource="#Spread"/>
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#varianc">
+    <rdfs:subClassOf rdf:resource="#spread"/>
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StandardError">
-    <rdfs:subClassOf rdf:resource="&mod;#Estimat"/>
+  <owl:Class rdf:about="#standarderror">
+    <rdfs:subClassOf rdf:resource="&mod;#estimat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#StandardDevi"/>
-        <owl:onProperty rdf:resource="&mrela;#estimateOf"/>
+        <owl:allValuesFrom rdf:resource="#standarddevi"/>
+        <owl:onProperty rdf:resource="&mrela;#estimateof"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ErrorBar">
-    <rdfs:subClassOf rdf:resource="&quan;#IntervalQuant"/>
+  <owl:Class rdf:about="#errorbar">
+    <rdfs:subClassOf rdf:resource="&quan;#intervalqu"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#rangeOf"/>
-        <owl:allValuesFrom rdf:resource="&prop;#Error"/>
+        <owl:onProperty rdf:resource="&screla;#rangeof"/>
+        <owl:allValuesFrom rdf:resource="&prop;#error"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Kurtosi">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#kurtosi">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Skew">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#skew">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Disturb">
-    <rdfs:subClassOf rdf:resource="&prop;#Error" />
+  <owl:Class rdf:about="#disturb">
+    <rdfs:subClassOf rdf:resource="&prop;#error" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Spread">
-    <rdfs:subClassOf rdf:resource="&diff;#Deviat"/>
+  <owl:Class rdf:about="#spread">
+    <rdfs:subClassOf rdf:resource="&diff;#deviat"/>
   </owl:Class>
 
 <!-- function thresholds -->
-  <owl:Class rdf:about="#Threshold">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#threshold">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TippingPoint">
-    <rdfs:subClassOf rdf:resource="#CriticalPoint"/>
-    <owl:equivalentClass rdf:resource="#FlippingPoint"/>
+  <owl:Class rdf:about="#tippingpoint">
+    <rdfs:subClassOf rdf:resource="#criticalpoint"/>
+    <owl:equivalentClass rdf:resource="#flippingpoint"/>
   </owl:Class>
-  <owl:Class rdf:about="#FlippingPoint"/>
+  <owl:Class rdf:about="#flippingpoint"/>
 
-  <owl:Class rdf:about="#CriticalPoint">
-    <rdfs:subClassOf rdf:resource="#Threshold"/>
-    <owl:equivalentClass rdf:resource="#CriticalLevel"/>
+  <owl:Class rdf:about="#criticalpoint">
+    <rdfs:subClassOf rdf:resource="#threshold"/>
+    <owl:equivalentClass rdf:resource="#criticallevel"/>
   </owl:Class>
-  <owl:Class rdf:about="#CriticalLevel"/>
+  <owl:Class rdf:about="#criticallevel"/>
 
 </rdf:RDF>

@@ -42,118 +42,118 @@
   </owl:Ontology>
 
 <!-- Classes -->
-  <owl:Class rdf:about="#Buoy">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#buoy">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Instrument">
-    <rdfs:subClassOf rdf:resource="&comm;#Equipment"/>
-    <owl:equivalentClass rdf:resource="#Devic"/>
+  <owl:Class rdf:about="#instrument">
+    <rdfs:subClassOf rdf:resource="&comm;#equipment"/>
+    <owl:equivalentClass rdf:resource="#devic"/>
   </owl:Class>
-  <owl:Class rdf:about="#Devic"/>
+  <owl:Class rdf:about="#devic"/>
 
-  <owl:Class rdf:about="#Sensor">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#sensor">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Piezomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#piezomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   <rdfs:comment xml:lang="en"> A devise used to measure groundwater pressure head at a point in the subsurface.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Tensiomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#tensiomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   <rdfs:comment xml:lang="en">A device used to measure the moisture tension in the unsaturated zone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Anemomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#anemomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;#measur" />
-        <owl:allValuesFrom rdf:resource="&vel;#WindSpe" />
+        <owl:allValuesFrom rdf:resource="&vel;#windsp" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Manomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#manomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&screla;#measur" />
-        <owl:allValuesFrom rdf:resource="&pres;#Pressur" />
+        <owl:allValuesFrom rdf:resource="&pres;#pressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#TideGaug">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#tidegaug">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:subClassOf>
       <owl:Restriction>
          <owl:onProperty rdf:resource="&screla;#measur" />
-         <owl:allValuesFrom rdf:resource="&ocea;#OceanTid" />
+         <owl:allValuesFrom rdf:resource="&ocea;#oceantid" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Radar">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#radar">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DopplerRadar">
-    <rdfs:subClassOf rdf:resource="#Radar"/>
+  <owl:Class rdf:about="#dopplerradar">
+    <rdfs:subClassOf rdf:resource="#radar"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LIDAR">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#lidar">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:comment>LIDAR (Light Detection and Ranging) is an optical remote sensing technology that measures properties of scattered light to find range and/or other information of a distant target. The prevalent method to determine distance to an object or surface is to use laser pulses. Like the similar radar technology, which uses radio waves instead of light, the range to an object is determined by measuring the time delay between transmission of a pulse and detection of the reflected signal. LIDAR technology has application in archaeology, geography, geology, geomorphology, seismology, remote sensing and atmospheric physics.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Magnetogram">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#magnetogram">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Microscop">
-    <rdfs:subClassOf rdf:resource="#OpticalInstru"/>
+  <owl:Class rdf:about="#microscop">
+    <rdfs:subClassOf rdf:resource="#opticalinstru"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#OpticalInstru">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#opticalinstru">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Telescop">
-    <rdfs:subClassOf rdf:resource="#OpticalInstru"/>
+  <owl:Class rdf:about="#telescop">
+    <rdfs:subClassOf rdf:resource="#opticalinstru"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Telethermomet">
-    <rdfs:subClassOf rdf:resource="#Thermomet" />
+  <owl:Class rdf:about="#telethermomet">
+    <rdfs:subClassOf rdf:resource="#thermomet" />
     <rdfs:comment xml:lang="en">A temperature-measuring system in which the thermally sensitive element is located at a distance from the indicating element.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Thermomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#thermomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:subClassOf>
       <owl:Restriction>
          <owl:onProperty rdf:resource="&screla;#measur" />
-        <owl:allValuesFrom rdf:resource="&temp;#Temperatur" />
+        <owl:allValuesFrom rdf:resource="&temp;#temperatur" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Piezomet">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
+  <owl:Class rdf:about="#piezomet">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
     <rdfs:subClassOf>
       <owl:Restriction>
          <owl:onProperty rdf:resource="&screla;#measur" />
-        <owl:allValuesFrom rdf:resource="&pres;#Pressur" />
+        <owl:allValuesFrom rdf:resource="&pres;#pressur" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#GPS">
-    <rdfs:subClassOf rdf:resource="#Instrument"/>
-    <owl:equivalentClass rdf:resource="#GlobalPositioningSystem"/>
+  <owl:Class rdf:about="#gps">
+    <rdfs:subClassOf rdf:resource="#instrument"/>
+    <owl:equivalentClass rdf:resource="#globalpositioningsystem"/>
   </owl:Class>
-  <owl:Class rdf:about="#GlobalPositioningSystem"/>
+  <owl:Class rdf:about="#globalpositioningsystem"/>
 
 </rdf:RDF>

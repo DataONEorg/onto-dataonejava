@@ -69,184 +69,184 @@
     <swrl:Variable rdf:ID="tpmiamb"/>
     <swrl:Variable rdf:ID="veg"/>
     <owl:Class rdf:ID="AbioticEntity">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
-        <owl:disjointWith rdf:resource="#BioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
+        <owl:disjointWith rdf:resource="#bioticent"/>
     </owl:Class>
     <owl:Class rdf:ID="Adult">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#larva"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <Adult rdf:ID="AdultoA"/>
     <owl:Class rdf:ID="AffluentEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Air">
-        <rdfs:subClassOf rdf:resource="#AbioticEnt"/>
-        <owl:disjointWith rdf:resource="#Soil"/>
-        <owl:disjointWith rdf:resource="#Water"/>
+        <rdfs:subClassOf rdf:resource="#abioticent"/>
+        <owl:disjointWith rdf:resource="#soil"/>
+        <owl:disjointWith rdf:resource="#water"/>
     </owl:Class>
     <RandomCollect rdf:ID="Aleatoria"/>
     <owl:DatatypeProperty rdf:ID="altitude">
-        <rdfs:domain rdf:resource="#GeographicalCoordin"/>
+        <rdfs:domain rdf:resource="#geographicalcoordin"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <State rdf:ID="AM">
-        <spatiallyConteinedInEstPais rdf:resource="#Brasil"/>
+        <spatiallyConteinedInEstPais rdf:resource="#brasil"/>
     </State>
     <owl:Class rdf:ID="Amazonia">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Caatinga"/>
-        <owl:disjointWith rdf:resource="#Cerrado"/>
-        <owl:disjointWith rdf:resource="#MataAtlantica"/>
-        <owl:disjointWith rdf:resource="#Pantan"/>
-        <owl:disjointWith rdf:resource="#ZonasCosteira"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#caatinga"/>
+        <owl:disjointWith rdf:resource="#cerrado"/>
+        <owl:disjointWith rdf:resource="#mataatlantica"/>
+        <owl:disjointWith rdf:resource="#pantan"/>
+        <owl:disjointWith rdf:resource="#zonascosteira"/>
     </owl:Class>
     <owl:Class rdf:ID="AmazonRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeAreiaFina">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeAreiaGrossa">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeArgila">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeCascalho">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeFolha">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeFuro">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeHumus">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeRocha">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeSeixo">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeTerraPreta"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeterrapreta"/>
     </owl:Class>
     <owl:Class rdf:ID="AmbientedeTerraPreta">
-        <rdfs:subClassOf rdf:resource="#TypeMicroEnviron"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaFina"/>
-        <owl:disjointWith rdf:resource="#AmbientedeAreiaGrossa"/>
-        <owl:disjointWith rdf:resource="#AmbientedeArgila"/>
-        <owl:disjointWith rdf:resource="#AmbientedeCascalho"/>
-        <owl:disjointWith rdf:resource="#AmbientedeFolha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeHumus"/>
-        <owl:disjointWith rdf:resource="#AmbientedeRocha"/>
-        <owl:disjointWith rdf:resource="#AmbientedeSeixo"/>
+        <rdfs:subClassOf rdf:resource="#typemicroenviron"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiafina"/>
+        <owl:disjointWith rdf:resource="#ambientedeareiagrossa"/>
+        <owl:disjointWith rdf:resource="#ambientedeargila"/>
+        <owl:disjointWith rdf:resource="#ambientedecascalho"/>
+        <owl:disjointWith rdf:resource="#ambientedefolha"/>
+        <owl:disjointWith rdf:resource="#ambientedehumus"/>
+        <owl:disjointWith rdf:resource="#ambientederocha"/>
+        <owl:disjointWith rdf:resource="#ambientedeseixo"/>
     </owl:Class>
     <Classifier rdf:ID="Ana"/>
     <owl:Class rdf:ID="Animal">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
-        <owl:disjointWith rdf:resource="#MicroOrgan"/>
-        <owl:disjointWith rdf:resource="#Plant"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
+        <owl:disjointWith rdf:resource="#microorgan"/>
+        <owl:disjointWith rdf:resource="#plant"/>
     </owl:Class>
     <owl:Class rdf:ID="AquaticVegatation">
-        <rdfs:subClassOf rdf:resource="#VegetationEnviron"/>
-        <owl:disjointWith rdf:resource="#FloodedVeget"/>
-        <owl:disjointWith rdf:resource="#MarginalVaget"/>
+        <rdfs:subClassOf rdf:resource="#vegetationenviron"/>
+        <owl:disjointWith rdf:resource="#floodedveget"/>
+        <owl:disjointWith rdf:resource="#marginalvaget"/>
     </owl:Class>
     <owl:Class rdf:ID="AraucariasRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <TrapCollect rdf:ID="Armadilha"/>
     <Sex rdf:ID="Asexual">
         <asexual rdf:datatype="&xsd;string">asexual</asexual>
     </Sex>
     <owl:DatatypeProperty rdf:ID="asexual">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <CollectAssistent rdf:ID="AuxA"/>
@@ -254,146 +254,146 @@
     <CollectAssistent rdf:ID="AuxC"/>
     <CollectAssistent rdf:ID="AuxD"/>
     <owl:Class rdf:ID="BayEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="BeachEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <County rdf:ID="Belem">
-        <spatiallyConteinedInMunEst rdf:resource="#PA"/>
+        <spatiallyConteinedInMunEst rdf:resource="#pa"/>
     </County>
     <Amazonia rdf:ID="BiomaAmazonia">
-        <isConteinedInEcosLocalEspa rdf:resource="#LocaldeColetaA"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#localdecoletaa"/>
     </Amazonia>
     <Caatinga rdf:ID="BiomaCaatinga">
-        <isConteinedInEcosLocalEspa rdf:resource="#LocaldeColetaB"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#localdecoletab"/>
     </Caatinga>
     <Cerrado rdf:ID="BiomaCerrado">
-        <isConteinedInEcosLocalEspa rdf:resource="#LocaldeColetaC"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#localdecoletac"/>
     </Cerrado>
     <Pantanal rdf:ID="BiomaPantanal">
-        <isConteinedInEcosLocalEspa rdf:resource="#LocaldeColetaD"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#localdecoletad"/>
     </Pantanal>
     <owl:Class rdf:ID="Biome">
-        <rdfs:subClassOf rdf:resource="#MacroEcosystem"/>
+        <rdfs:subClassOf rdf:resource="#macroecosystem"/>
     </owl:Class>
     <owl:Class rdf:ID="BioticEntity">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
-        <owl:disjointWith rdf:resource="#AbioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
+        <owl:disjointWith rdf:resource="#abioticent"/>
     </owl:Class>
     <Sex rdf:ID="Bisexual">
         <bisexual rdf:datatype="&xsd;string">bisexual</bisexual>
     </Sex>
     <owl:DatatypeProperty rdf:ID="bisexual">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="BrakishWater">
-        <rdfs:subClassOf rdf:resource="#TypeWat"/>
-        <owl:disjointWith rdf:resource="#SalineWat"/>
-        <owl:disjointWith rdf:resource="#SweetWat"/>
+        <rdfs:subClassOf rdf:resource="#typewat"/>
+        <owl:disjointWith rdf:resource="#salinewat"/>
+        <owl:disjointWith rdf:resource="#sweetwat"/>
     </owl:Class>
     <Country rdf:ID="Brasil"/>
     <owl:Class rdf:ID="Caatinga">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Amazonia"/>
-        <owl:disjointWith rdf:resource="#Cerrado"/>
-        <owl:disjointWith rdf:resource="#MataAtlantica"/>
-        <owl:disjointWith rdf:resource="#Pantan"/>
-        <owl:disjointWith rdf:resource="#ZonasCosteira"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#amazonia"/>
+        <owl:disjointWith rdf:resource="#cerrado"/>
+        <owl:disjointWith rdf:resource="#mataatlantica"/>
+        <owl:disjointWith rdf:resource="#pantan"/>
+        <owl:disjointWith rdf:resource="#zonascosteira"/>
     </owl:Class>
     <owl:Class rdf:ID="CaatingaRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <County rdf:ID="Campinas">
-        <spatiallyConteinedInMunEst rdf:resource="#SP"/>
+        <spatiallyConteinedInMunEst rdf:resource="#sp"/>
     </County>
     <owl:Class rdf:ID="CanopyEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="CapoeiraVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="caracterizationAmConClima">
-        <rdfs:domain rdf:resource="#Environ"/>
+        <rdfs:domain rdf:resource="#environ"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#caracterizationAmConClima"/>
-                <owl:someValuesFrom rdf:resource="#ClimaticCondit"/>
+                <owl:onProperty rdf:resource="#caracterizationamconclima"/>
+                <owl:someValuesFrom rdf:resource="#climaticcondit"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="caracterizationAmLocalEspa">
-        <rdfs:domain rdf:resource="#Environ"/>
+        <rdfs:domain rdf:resource="#environ"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#caracterizationAmLocalEspa"/>
-                <owl:someValuesFrom rdf:resource="#SpatialLoc"/>
+                <owl:onProperty rdf:resource="#caracterizationamlocalespa"/>
+                <owl:someValuesFrom rdf:resource="#spatialloc"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="caracterizationAmLumi">
-        <rdfs:domain rdf:resource="#Environ"/>
+        <rdfs:domain rdf:resource="#environ"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#caracterizationAmLumi"/>
-                <owl:someValuesFrom rdf:resource="#Luminos"/>
+                <owl:onProperty rdf:resource="#caracterizationamlumi"/>
+                <owl:someValuesFrom rdf:resource="#lumino"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="caracterizationMaAmEspGeo">
-        <rdfs:domain rdf:resource="#GeographicalSpac"/>
-        <rdfs:range rdf:resource="#MacroEnviron"/>
+        <rdfs:domain rdf:resource="#geographicalspac"/>
+        <rdfs:range rdf:resource="#macroenviron"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="caracterizationMiAmPontoGeo">
-        <rdfs:domain rdf:resource="#MicroEnviron"/>
-        <rdfs:range rdf:resource="#GeographicPoint"/>
+        <rdfs:domain rdf:resource="#microenviron"/>
+        <rdfs:range rdf:resource="#geographicpoint"/>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="CaveEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Cerrado">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Amazonia"/>
-        <owl:disjointWith rdf:resource="#Caatinga"/>
-        <owl:disjointWith rdf:resource="#MataAtlantica"/>
-        <owl:disjointWith rdf:resource="#Pantan"/>
-        <owl:disjointWith rdf:resource="#ZonasCosteira"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#amazonia"/>
+        <owl:disjointWith rdf:resource="#caatinga"/>
+        <owl:disjointWith rdf:resource="#mataatlantica"/>
+        <owl:disjointWith rdf:resource="#pantan"/>
+        <owl:disjointWith rdf:resource="#zonascosteira"/>
     </owl:Class>
     <owl:Class rdf:ID="Class_1"/>
     <classification rdf:ID="classificacaoA">
-        <mediationClassificadorClassificacao rdf:resource="#Ana"/>
+        <mediationClassificadorClassificacao rdf:resource="#ana"/>
     </classification>
     <classification rdf:ID="classificacaoB">
-        <mediationClassificadorClassificacao rdf:resource="#Luana"/>
+        <mediationClassificadorClassificacao rdf:resource="#luana"/>
     </classification>
     <classification rdf:ID="classificacaoC">
-        <mediationClassificadorClassificacao rdf:resource="#Maria"/>
+        <mediationClassificadorClassificacao rdf:resource="#maria"/>
     </classification>
     <classification rdf:ID="classificacaoD">
-        <mediationClassificadorClassificacao rdf:resource="#Suelem"/>
+        <mediationClassificadorClassificacao rdf:resource="#suelem"/>
     </classification>
     <owl:Class rdf:ID="classification">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
     </owl:Class>
     <owl:Class rdf:ID="ClassifiedObject">
-        <rdfs:subClassOf rdf:resource="#ObjectUnderStudi"/>
-        <owl:disjointWith rdf:resource="#CollectedObject"/>
+        <rdfs:subClassOf rdf:resource="#objectunderstudi"/>
+        <owl:disjointWith rdf:resource="#collectedobject"/>
     </owl:Class>
     <swrl:Imp rdf:ID="CQ5-QuemClassificaObjetoColeta">
         <swrl:body>
@@ -404,7 +404,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcla"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#ClassifiedObject"/>
+                        <swrl:classPredicate rdf:resource="#classifiedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -429,7 +429,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcla"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationClasObjCla"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationclasobjcla"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -440,7 +440,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#cldrobj"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#Classifi"/>
+                                                <swrl:classPredicate rdf:resource="#classifi"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -454,7 +454,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#cla"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#mediationClassificadorClassificacao"/>
+                                                        <swrl:propertyPredicate rdf:resource="#mediationclassificadorclassificacao"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -499,85 +499,85 @@
         <swrla:isRuleEnabled rdf:datatype="&xsd;boolean">false</swrla:isRuleEnabled>
     </swrl:Imp>
     <owl:Class rdf:ID="Classifier">
-        <rdfs:subClassOf rdf:resource="#Person"/>
-        <owl:disjointWith rdf:resource="#CollectParticip"/>
-        <owl:disjointWith rdf:resource="#Research"/>
+        <rdfs:subClassOf rdf:resource="#person"/>
+        <owl:disjointWith rdf:resource="#collectparticip"/>
+        <owl:disjointWith rdf:resource="#research"/>
     </owl:Class>
     <owl:Class rdf:ID="Clayly">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Humus"/>
-        <owl:disjointWith rdf:resource="#Hydromorph"/>
-        <owl:disjointWith rdf:resource="#Litolit"/>
-        <owl:disjointWith rdf:resource="#Rocki"/>
-        <owl:disjointWith rdf:resource="#Sandi"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#humus"/>
+        <owl:disjointWith rdf:resource="#hydromorph"/>
+        <owl:disjointWith rdf:resource="#litolit"/>
+        <owl:disjointWith rdf:resource="#rocki"/>
+        <owl:disjointWith rdf:resource="#sandi"/>
     </owl:Class>
     <owl:Class rdf:ID="CleanWater">
-        <rdfs:subClassOf rdf:resource="#SweetWat"/>
-        <owl:disjointWith rdf:resource="#DarkWat"/>
-        <owl:disjointWith rdf:resource="#WhiteWat"/>
+        <rdfs:subClassOf rdf:resource="#sweetwat"/>
+        <owl:disjointWith rdf:resource="#darkwat"/>
+        <owl:disjointWith rdf:resource="#whitewat"/>
     </owl:Class>
     <owl:Class rdf:ID="ClimaticCondition"/>
     <owl:Class rdf:ID="ClimaticRegion">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:Class rdf:ID="Cloudy">
-        <rdfs:subClassOf rdf:resource="#ClimaticCondit"/>
-        <owl:disjointWith rdf:resource="#Raini"/>
-        <owl:disjointWith rdf:resource="#Sunni"/>
+        <rdfs:subClassOf rdf:resource="#climaticcondit"/>
+        <owl:disjointWith rdf:resource="#raini"/>
+        <owl:disjointWith rdf:resource="#sunni"/>
     </owl:Class>
     <owl:Class rdf:ID="CocaisRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <Collect rdf:ID="Coleta1">
-        <isClassifiedAsColetaTipoColeta rdf:resource="#Aleatoria"/>
-        <isClassifiedAsColetaTipoColeta rdf:resource="#Manual"/>
-        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#INPA"/>
-        <mediationColetaLocalColeta rdf:resource="#LocaldeColetaA"/>
-        <mediationColetaRespColeta rdf:resource="#ResponsavelA"/>
-        <mediationObjColetadoColeta rdf:resource="#ObjColetadoA"/>
-        <mediationObjColetadoColeta rdf:resource="#ObjColetadoB"/>
-        <mediationPartColetaCol rdf:resource="#AuxA"/>
-        <mediationPartColetaCol rdf:resource="#ResponsavelA"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#aleatoria"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#manual"/>
+        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#inpa"/>
+        <mediationColetaLocalColeta rdf:resource="#localdecoletaa"/>
+        <mediationColetaRespColeta rdf:resource="#responsavela"/>
+        <mediationObjColetadoColeta rdf:resource="#objcoletadoa"/>
+        <mediationObjColetadoColeta rdf:resource="#objcoletadob"/>
+        <mediationPartColetaCol rdf:resource="#auxa"/>
+        <mediationPartColetaCol rdf:resource="#responsavela"/>
     </Collect>
     <Collect rdf:ID="Coleta2">
-        <isClassifiedAsColetaTipoColeta rdf:resource="#porParcela"/>
-        <isClassifiedAsColetaTipoColeta rdf:resource="#Rede"/>
-        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#INPE"/>
-        <mediationColetaLocalColeta rdf:resource="#LocaldeColetaB"/>
-        <mediationColetaRespColeta rdf:resource="#ResponsavelB"/>
-        <mediationObjColetadoColeta rdf:resource="#ObjColetadoB"/>
-        <mediationPartColetaCol rdf:resource="#AuxB"/>
-        <mediationPartColetaCol rdf:resource="#ResponsavelB"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#porparcela"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#rede"/>
+        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#inpe"/>
+        <mediationColetaLocalColeta rdf:resource="#localdecoletab"/>
+        <mediationColetaRespColeta rdf:resource="#responsavelb"/>
+        <mediationObjColetadoColeta rdf:resource="#objcoletadob"/>
+        <mediationPartColetaCol rdf:resource="#auxb"/>
+        <mediationPartColetaCol rdf:resource="#responsavelb"/>
     </Collect>
     <Collect rdf:ID="Coleta3">
-        <isClassifiedAsColetaTipoColeta rdf:resource="#Manual"/>
-        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#MPEG"/>
-        <mediationColetaLocalColeta rdf:resource="#LocaldeColetaC"/>
-        <mediationColetaRespColeta rdf:resource="#ResponsavelC"/>
-        <mediationObjColetadoColeta rdf:resource="#ObjColetadoC"/>
-        <mediationPartColetaCol rdf:resource="#AuxC"/>
-        <mediationPartColetaCol rdf:resource="#ResponsavelC"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#manual"/>
+        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#mpeg"/>
+        <mediationColetaLocalColeta rdf:resource="#localdecoletac"/>
+        <mediationColetaRespColeta rdf:resource="#responsavelc"/>
+        <mediationobjcoletadocoleta rdf:resource="#objcoletadoc"/>
+        <mediationPartColetaCol rdf:resource="#auxc"/>
+        <mediationPartColetaCol rdf:resource="#responsavelc"/>
     </Collect>
     <Collect rdf:ID="Coleta4">
-        <isClassifiedAsColetaTipoColeta rdf:resource="#Armadilha"/>
-        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#USP"/>
-        <mediationColetaLocalColeta rdf:resource="#LocaldeColetaD"/>
-        <mediationColetaRespColeta rdf:resource="#ResponsavelD"/>
-        <mediationObjColetadoColeta rdf:resource="#ObjColetadoD"/>
-        <mediationPartColetaCol rdf:resource="#AuxD"/>
-        <mediationPartColetaCol rdf:resource="#ResponsavelD"/>
+        <isClassifiedAsColetaTipoColeta rdf:resource="#armadilha"/>
+        <mediationColetaInstituicaoResponsavelColeta rdf:resource="#usp"/>
+        <mediationColetaLocalColeta rdf:resource="#localdecoletad"/>
+        <mediationColetaRespColeta rdf:resource="#responsaveld"/>
+        <mediationObjColetadoColeta rdf:resource="#objcoletadod"/>
+        <mediationPartColetaCol rdf:resource="#auxd"/>
+        <mediationPartColetaCol rdf:resource="#responsaveld"/>
     </Collect>
     <owl:Class rdf:ID="ColetaporParcelas">
-        <rdfs:subClassOf rdf:resource="#TypeCollect"/>
-        <owl:disjointWith rdf:resource="#RandomCollect"/>
+        <rdfs:subClassOf rdf:resource="#typecollect"/>
+        <owl:disjointWith rdf:resource="#randomcollect"/>
     </owl:Class>
     <owl:Class rdf:ID="Collect"/>
     <swrl:Imp rdf:ID="CQ7-AuxiliarColeta">
@@ -589,7 +589,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -600,7 +600,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#auxcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectAssist"/>
+                                <swrl:classPredicate rdf:resource="#collectassist"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -614,7 +614,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationPartColetaCol"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationpartcoletacol"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -683,7 +683,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -694,7 +694,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#objcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                                <swrl:classPredicate rdf:resource="#collectedobject"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -708,7 +708,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationObjColetadoColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationobjcoletadocoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -719,7 +719,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#lcol"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                                <swrl:classPredicate rdf:resource="#localcollect"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -733,7 +733,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#col"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -744,7 +744,7 @@
                                                                 <swrl:argument1>
                                                                     <rdf:Description rdf:about="#maamb"/>
                                                                 </swrl:argument1>
-                                                                <swrl:classPredicate rdf:resource="#MacroEnviron"/>
+                                                                <swrl:classPredicate rdf:resource="#macroenviron"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -758,7 +758,7 @@
                                                                         <swrl:argument1>
                                                                             <rdf:Description rdf:about="#lcol"/>
                                                                         </swrl:argument1>
-                                                                        <swrl:propertyPredicate rdf:resource="#caracterizationMaAmEspGeo"/>
+                                                                        <swrl:propertyPredicate rdf:resource="#caracterizationmaamespgeo"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -769,7 +769,7 @@
                                                                                 <swrl:argument1>
                                                                                     <rdf:Description rdf:about="#tpmaamb"/>
                                                                                 </swrl:argument1>
-                                                                                <swrl:classPredicate rdf:resource="#TypeMacroEnviron"/>
+                                                                                <swrl:classPredicate rdf:resource="#typemacroenviron"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -783,7 +783,7 @@
                                                                                         <swrl:argument1>
                                                                                             <rdf:Description rdf:about="#maamb"/>
                                                                                         </swrl:argument1>
-                                                                                        <swrl:propertyPredicate rdf:resource="#isClassifiedAsMaAmTipoMaAm"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="#isclassifiedasmaamtipomaam"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -878,7 +878,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -889,7 +889,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#objcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                                <swrl:classPredicate rdf:resource="#collectedobject"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -903,7 +903,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationObjColetadoColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationobjcoletadocoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -914,7 +914,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#esp"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#Speci"/>
+                                                <swrl:classPredicate rdf:resource="#speci"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -928,7 +928,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#objcol"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#instanceOfSpeci"/>
+                                                        <swrl:propertyPredicate rdf:resource="#instanceofspeci"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -1008,7 +1008,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1019,7 +1019,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#parcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectParticip"/>
+                                <swrl:classPredicate rdf:resource="#collectparticip"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1033,7 +1033,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationPartColetaCol"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationpartcoletacol"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -1102,7 +1102,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1113,7 +1113,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#respcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectRespons"/>
+                                <swrl:classPredicate rdf:resource="#collectrespon"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1127,7 +1127,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaRespColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletarespcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -1196,7 +1196,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1207,7 +1207,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#irc"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#CollectResponsibleInstitut"/>
+                                <swrl:classPredicate rdf:resource="#collectresponsibleinstitut"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1221,7 +1221,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaInstituicaoResponsavelColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletainstituicaoresponsavelcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -1290,7 +1290,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1301,7 +1301,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1315,7 +1315,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1326,7 +1326,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#bioma"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#Biom"/>
+                                                <swrl:classPredicate rdf:resource="#biom"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1340,7 +1340,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#bioma"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#isConteinedInEcosLocalEspa"/>
+                                                        <swrl:propertyPredicate rdf:resource="#isconteinedinecoslocalespa"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -1420,7 +1420,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1431,7 +1431,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1445,7 +1445,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1456,7 +1456,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#objcol"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                                                <swrl:classPredicate rdf:resource="#collectedobject"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1470,7 +1470,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#col"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#mediationObjColetadoColeta"/>
+                                                        <swrl:propertyPredicate rdf:resource="#mediationobjcoletadocoleta"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1593,7 +1593,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1604,7 +1604,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1618,7 +1618,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1629,7 +1629,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#cgeo"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#GeographicalCoordin"/>
+                                                <swrl:classPredicate rdf:resource="#geographicalcoordin"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1643,7 +1643,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#lcol"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#localizationEspaGeoCoordGeo"/>
+                                                        <swrl:propertyPredicate rdf:resource="#localizationespageocoordgeo"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1785,7 +1785,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1796,7 +1796,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1810,7 +1810,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1821,7 +1821,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#lcdd"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#Local"/>
+                                                <swrl:classPredicate rdf:resource="#local"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1835,7 +1835,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#lcol"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#spatiallyContainedIn"/>
+                                                        <swrl:propertyPredicate rdf:resource="#spatiallycontainedin"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1846,7 +1846,7 @@
                                                                 <swrl:argument1>
                                                                     <rdf:Description rdf:about="#mun"/>
                                                                 </swrl:argument1>
-                                                                <swrl:classPredicate rdf:resource="#Counti"/>
+                                                                <swrl:classPredicate rdf:resource="#counti"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1860,7 +1860,7 @@
                                                                         <swrl:argument1>
                                                                             <rdf:Description rdf:about="#lcdd"/>
                                                                         </swrl:argument1>
-                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyConteinedInLocalidadeMun"/>
+                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyconteinedinlocalidademun"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -1871,7 +1871,7 @@
                                                                                 <swrl:argument1>
                                                                                     <rdf:Description rdf:about="#est"/>
                                                                                 </swrl:argument1>
-                                                                                <swrl:classPredicate rdf:resource="#State"/>
+                                                                                <swrl:classPredicate rdf:resource="#state"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -1885,7 +1885,7 @@
                                                                                         <swrl:argument1>
                                                                                             <rdf:Description rdf:about="#mun"/>
                                                                                         </swrl:argument1>
-                                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyConteinedInMunEst"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyconteinedinmunest"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -1896,7 +1896,7 @@
                                                                                                 <swrl:argument1>
                                                                                                     <rdf:Description rdf:about="#pa"/>
                                                                                                 </swrl:argument1>
-                                                                                                <swrl:classPredicate rdf:resource="#Countri"/>
+                                                                                                <swrl:classPredicate rdf:resource="#countri"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -1910,7 +1910,7 @@
                                                                                                         <swrl:argument1>
                                                                                                             <rdf:Description rdf:about="#est"/>
                                                                                                         </swrl:argument1>
-                                                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyConteinedInEstPai"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="#spatiallyconteinedinestpai"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2023,7 +2023,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2034,7 +2034,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2048,7 +2048,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2059,7 +2059,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#rfito"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#PhitophysiognomicRegion"/>
+                                                <swrl:classPredicate rdf:resource="#phitophysiognomicregion"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -2073,7 +2073,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#lcol"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#spatiallyContainedIn"/>
+                                                        <swrl:propertyPredicate rdf:resource="#spatiallycontainedin"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2153,7 +2153,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2164,7 +2164,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#lcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#LocalCollect"/>
+                                <swrl:classPredicate rdf:resource="#localcollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2178,7 +2178,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#mediationColetaLocalColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#mediationcoletalocalcoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2189,7 +2189,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#veg"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#TypeVeget"/>
+                                                <swrl:classPredicate rdf:resource="#typeveget"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -2203,7 +2203,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#veg"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#localizationInEntMatLocEspa"/>
+                                                        <swrl:propertyPredicate rdf:resource="#localizationinentmatlocespa"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2283,7 +2283,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#col"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#Collect"/>
+                        <swrl:classPredicate rdf:resource="#collect"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2294,7 +2294,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#tpcol"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#TypeCollect"/>
+                                <swrl:classPredicate rdf:resource="#typecollect"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2308,7 +2308,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#col"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#isClassifiedAsColetaTipoColeta"/>
+                                        <swrl:propertyPredicate rdf:resource="#isclassifiedascoletatipocoleta"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2369,12 +2369,12 @@
         <swrla:isRuleEnabled rdf:datatype="&xsd;boolean">false</swrla:isRuleEnabled>
     </swrl:Imp>
     <owl:Class rdf:ID="CollectAssistent">
-        <rdfs:subClassOf rdf:resource="#CollectParticip"/>
-        <owl:disjointWith rdf:resource="#ResearcherParticip"/>
+        <rdfs:subClassOf rdf:resource="#collectparticip"/>
+        <owl:disjointWith rdf:resource="#researcherparticip"/>
     </owl:Class>
     <owl:Class rdf:ID="CollectedObject">
-        <rdfs:subClassOf rdf:resource="#ObjectUnderStudi"/>
-        <owl:disjointWith rdf:resource="#ClassifiedObject"/>
+        <rdfs:subClassOf rdf:resource="#objectunderstudi"/>
+        <owl:disjointWith rdf:resource="#classifiedobject"/>
     </owl:Class>
     <swrl:Imp rdf:ID="CQ16-CoordenadaGeograficadoLocalObjColetado">
         <swrl:body>
@@ -2385,7 +2385,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2396,7 +2396,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#cgeo"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#GeographicalCoordin"/>
+                                <swrl:classPredicate rdf:resource="#geographicalcoordin"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2410,7 +2410,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#localizationInEntMatCoordGeo"/>
+                                        <swrl:propertyPredicate rdf:resource="#localizationinentmatcoordgeo"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2548,7 +2548,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2559,7 +2559,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#pgeo"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#GeographicPoint"/>
+                                <swrl:classPredicate rdf:resource="#geographicpoint"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2573,7 +2573,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#localizationInEntMatLocEspa"/>
+                                        <swrl:propertyPredicate rdf:resource="#localizationinentmatlocespa"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2584,7 +2584,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#miamb"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#MicroEnviron"/>
+                                                <swrl:classPredicate rdf:resource="#microenviron"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -2598,7 +2598,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#miamb"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#caracterizationMiAmPontoGeo"/>
+                                                        <swrl:propertyPredicate rdf:resource="#caracterizationmiampontogeo"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -2609,7 +2609,7 @@
                                                                 <swrl:argument1>
                                                                     <rdf:Description rdf:about="#tpmiamb"/>
                                                                 </swrl:argument1>
-                                                                <swrl:classPredicate rdf:resource="#TypeMicroEnviron"/>
+                                                                <swrl:classPredicate rdf:resource="#typemicroenviron"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -2623,7 +2623,7 @@
                                                                         <swrl:argument1>
                                                                             <rdf:Description rdf:about="#miamb"/>
                                                                         </swrl:argument1>
-                                                                        <swrl:propertyPredicate rdf:resource="#isClassifiedAsMiAmTipoMiAm"/>
+                                                                        <swrl:propertyPredicate rdf:resource="#isclassifiedasmiamtipomiam"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2707,7 +2707,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2718,7 +2718,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#sex"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#Sex"/>
+                                <swrl:classPredicate rdf:resource="#sex"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2732,7 +2732,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#RelacaoEntbioSexo"/>
+                                        <swrl:propertyPredicate rdf:resource="#relacaoentbiosexo"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2801,7 +2801,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2812,7 +2812,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#esp"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#Speci"/>
+                                <swrl:classPredicate rdf:resource="#speci"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2826,7 +2826,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#instanceOfTaxon"/>
+                                        <swrl:propertyPredicate rdf:resource="#instanceoftaxon"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2837,7 +2837,7 @@
                                                 <swrl:argument1>
                                                     <rdf:Description rdf:about="#gen"/>
                                                 </swrl:argument1>
-                                                <swrl:classPredicate rdf:resource="#Genus"/>
+                                                <swrl:classPredicate rdf:resource="#genus"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -2851,7 +2851,7 @@
                                                         <swrl:argument1>
                                                             <rdf:Description rdf:about="#objcol"/>
                                                         </swrl:argument1>
-                                                        <swrl:propertyPredicate rdf:resource="#instanceOfTaxon"/>
+                                                        <swrl:propertyPredicate rdf:resource="#instanceoftaxon"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -2862,7 +2862,7 @@
                                                                 <swrl:argument1>
                                                                     <rdf:Description rdf:about="#fam"/>
                                                                 </swrl:argument1>
-                                                                <swrl:classPredicate rdf:resource="#Famili"/>
+                                                                <swrl:classPredicate rdf:resource="#famili"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -2876,7 +2876,7 @@
                                                                         <swrl:argument1>
                                                                             <rdf:Description rdf:about="#objcol"/>
                                                                         </swrl:argument1>
-                                                                        <swrl:propertyPredicate rdf:resource="#instanceOfTaxon"/>
+                                                                        <swrl:propertyPredicate rdf:resource="#instanceoftaxon"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -2967,7 +2967,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2978,7 +2978,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#estvid"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#StageLif"/>
+                                <swrl:classPredicate rdf:resource="#stagelif"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2992,7 +2992,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#RelacaoEntbioEstvid"/>
+                                        <swrl:propertyPredicate rdf:resource="#relacaoentbioestvid"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
@@ -3061,7 +3061,7 @@
                         <swrl:argument1>
                             <rdf:Description rdf:about="#objcol"/>
                         </swrl:argument1>
-                        <swrl:classPredicate rdf:resource="#CollectedObject"/>
+                        <swrl:classPredicate rdf:resource="#collectedobject"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -3072,7 +3072,7 @@
                                 <swrl:argument1>
                                     <rdf:Description rdf:about="#tax"/>
                                 </swrl:argument1>
-                                <swrl:classPredicate rdf:resource="#Taxon"/>
+                                <swrl:classPredicate rdf:resource="#taxon"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -3086,7 +3086,7 @@
                                         <swrl:argument1>
                                             <rdf:Description rdf:about="#objcol"/>
                                         </swrl:argument1>
-                                        <swrl:propertyPredicate rdf:resource="#instanceOfTaxon"/>
+                                        <swrl:propertyPredicate rdf:resource="#instanceoftaxon"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -3170,84 +3170,84 @@
         <swrla:isRuleEnabled rdf:datatype="&xsd;boolean">false</swrla:isRuleEnabled>
     </swrl:Imp>
     <owl:Class rdf:ID="CollectParticipant">
-        <rdfs:subClassOf rdf:resource="#Person"/>
-        <owl:disjointWith rdf:resource="#Classifi"/>
-        <owl:disjointWith rdf:resource="#Research"/>
+        <rdfs:subClassOf rdf:resource="#person"/>
+        <owl:disjointWith rdf:resource="#classifi"/>
+        <owl:disjointWith rdf:resource="#research"/>
     </owl:Class>
     <owl:Class rdf:ID="CollectResponsible">
-        <rdfs:subClassOf rdf:resource="#ResearcherParticip"/>
+        <rdfs:subClassOf rdf:resource="#researcherparticip"/>
     </owl:Class>
     <owl:Class rdf:ID="CollectResponsibleInstitution">
-        <rdfs:subClassOf rdf:resource="#InstitutionResearch"/>
+        <rdfs:subClassOf rdf:resource="#institutionresearch"/>
     </owl:Class>
     <owl:Class rdf:ID="CollectTool">
-        <rdfs:subClassOf rdf:resource="#TypeCollect"/>
+        <rdfs:subClassOf rdf:resource="#typecollect"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="componentOfEcos">
-        <rdfs:domain rdf:resource="#Ecosystem"/>
+        <rdfs:domain rdf:resource="#ecosystem"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#componentOfEco"/>
-                <owl:someValuesFrom rdf:resource="#Ecosystem"/>
+                <owl:onProperty rdf:resource="#componentofeco"/>
+                <owl:someValuesFrom rdf:resource="#ecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="componentOfEntAbioticaEcoss">
-        <rdfs:domain rdf:resource="#AbioticEnt"/>
+        <rdfs:domain rdf:resource="#abioticent"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#componentOfEntAbioticaEcoss"/>
-                <owl:someValuesFrom rdf:resource="#Ecosystem"/>
+                <owl:onProperty rdf:resource="#componentofentabioticaecoss"/>
+                <owl:someValuesFrom rdf:resource="#ecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="componentOfEntBioticaEcoss">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#componentOfEntBioticaEcoss"/>
-                <owl:someValuesFrom rdf:resource="#Ecosystem"/>
+                <owl:onProperty rdf:resource="#componentofentbioticaecoss"/>
+                <owl:someValuesFrom rdf:resource="#ecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="componentOfMesEcoMaEco">
-        <rdfs:domain rdf:resource="#MesoEcosystem"/>
+        <rdfs:domain rdf:resource="#mesoecosystem"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#componentOfMesEcoMaEco"/>
-                <owl:someValuesFrom rdf:resource="#MacroEcosystem"/>
+                <owl:onProperty rdf:resource="#componentofmesecomaeco"/>
+                <owl:someValuesFrom rdf:resource="#macroecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="componentOfMiEcoMesEco">
-        <rdfs:domain rdf:resource="#MicroEcosystem"/>
+        <rdfs:domain rdf:resource="#microecosystem"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#componentOfMiEcoMesEco"/>
-                <owl:someValuesFrom rdf:resource="#MesoEcosystem"/>
+                <owl:onProperty rdf:resource="#componentofmiecomeseco"/>
+                <owl:someValuesFrom rdf:resource="#mesoecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="Comunity">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#ConservationUnit"/>
-        <owl:disjointWith rdf:resource="#Povoado"/>
-        <owl:disjointWith rdf:resource="#Settlement"/>
-        <owl:disjointWith rdf:resource="#Villag"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#conservationunit"/>
+        <owl:disjointWith rdf:resource="#povoado"/>
+        <owl:disjointWith rdf:resource="#settlement"/>
+        <owl:disjointWith rdf:resource="#villag"/>
     </owl:Class>
     <owl:Class rdf:ID="ConservationUnit">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#Comun"/>
-        <owl:disjointWith rdf:resource="#Povoado"/>
-        <owl:disjointWith rdf:resource="#Settlement"/>
-        <owl:disjointWith rdf:resource="#Villag"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#comun"/>
+        <owl:disjointWith rdf:resource="#povoado"/>
+        <owl:disjointWith rdf:resource="#settlement"/>
+        <owl:disjointWith rdf:resource="#villag"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="consistsVegFlora">
-        <rdfs:domain rdf:resource="#Veget"/>
+        <rdfs:domain rdf:resource="#veget"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#consistsVegFlora"/>
-                <owl:someValuesFrom rdf:resource="#Flora"/>
+                <owl:onProperty rdf:resource="#consistsvegflora"/>
+                <owl:someValuesFrom rdf:resource="#flora"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -3273,983 +3273,983 @@
         <longitude rdf:datatype="&xsd;string"></longitude>
     </GeographicalCoordinate>
     <owl:Class rdf:ID="Country">
-        <rdfs:subClassOf rdf:resource="#PoliticSocialRegion"/>
-        <owl:disjointWith rdf:resource="#Counti"/>
-        <owl:disjointWith rdf:resource="#Local"/>
-        <owl:disjointWith rdf:resource="#State"/>
+        <rdfs:subClassOf rdf:resource="#politicsocialregion"/>
+        <owl:disjointWith rdf:resource="#counti"/>
+        <owl:disjointWith rdf:resource="#local"/>
+        <owl:disjointWith rdf:resource="#state"/>
     </owl:Class>
     <owl:Class rdf:ID="County">
-        <rdfs:subClassOf rdf:resource="#PoliticSocialRegion"/>
-        <owl:disjointWith rdf:resource="#Countri"/>
-        <owl:disjointWith rdf:resource="#Local"/>
-        <owl:disjointWith rdf:resource="#State"/>
+        <rdfs:subClassOf rdf:resource="#politicsocialregion"/>
+        <owl:disjointWith rdf:resource="#countri"/>
+        <owl:disjointWith rdf:resource="#local"/>
+        <owl:disjointWith rdf:resource="#state"/>
     </owl:Class>
     <owl:Class rdf:ID="CountyLand">
-        <rdfs:subClassOf rdf:resource="#UnionArea"/>
-        <owl:disjointWith rdf:resource="#FederalLand"/>
-        <owl:disjointWith rdf:resource="#IndianLand"/>
-        <owl:disjointWith rdf:resource="#StateLand"/>
+        <rdfs:subClassOf rdf:resource="#unionarea"/>
+        <owl:disjointWith rdf:resource="#federalland"/>
+        <owl:disjointWith rdf:resource="#indianland"/>
+        <owl:disjointWith rdf:resource="#stateland"/>
     </owl:Class>
     <owl:Class rdf:ID="CreeksEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="CrescentMoon">
-        <rdfs:subClassOf rdf:resource="#MoonPhas"/>
-        <owl:disjointWith rdf:resource="#FullMoon"/>
-        <owl:disjointWith rdf:resource="#NewMoon"/>
-        <owl:disjointWith rdf:resource="#WaningMoon"/>
+        <rdfs:subClassOf rdf:resource="#moonpha"/>
+        <owl:disjointWith rdf:resource="#fullmoon"/>
+        <owl:disjointWith rdf:resource="#newmoon"/>
+        <owl:disjointWith rdf:resource="#waningmoon"/>
     </owl:Class>
     <owl:Class rdf:ID="DarkWater">
-        <rdfs:subClassOf rdf:resource="#SweetWat"/>
-        <owl:disjointWith rdf:resource="#CleanWat"/>
-        <owl:disjointWith rdf:resource="#WhiteWat"/>
+        <rdfs:subClassOf rdf:resource="#sweetwat"/>
+        <owl:disjointWith rdf:resource="#cleanwat"/>
+        <owl:disjointWith rdf:resource="#whitewat"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="dataHoraFim">
-        <rdfs:domain rdf:resource="#Collect"/>
+        <rdfs:domain rdf:resource="#collect"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="dataHoraInicio">
-        <rdfs:domain rdf:resource="#Collect"/>
+        <rdfs:domain rdf:resource="#collect"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="DeforestedAreaEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Ecosystem"/>
     <owl:Class rdf:ID="Egg">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#larva"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <Embryo rdf:ID="EmbriaoB"/>
     <owl:Class rdf:ID="Embryo">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#larva"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="enderecoLocalidade">
-        <rdfs:domain rdf:resource="#Local"/>
+        <rdfs:domain rdf:resource="#local"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="EntomologicalUmbrella">
-        <rdfs:subClassOf rdf:resource="#InstrumentedCollect"/>
+        <rdfs:subClassOf rdf:resource="#instrumentedcollect"/>
     </owl:Class>
     <owl:Class rdf:ID="Environment"/>
     <owl:Class rdf:ID="Equatorial">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Humid"/>
-        <owl:disjointWith rdf:resource="#SemiArid"/>
-        <owl:disjointWith rdf:resource="#SemiHumid"/>
-        <owl:disjointWith rdf:resource="#Temper"/>
-        <owl:disjointWith rdf:resource="#Tropic"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#humid"/>
+        <owl:disjointWith rdf:resource="#semiarid"/>
+        <owl:disjointWith rdf:resource="#semihumid"/>
+        <owl:disjointWith rdf:resource="#temper"/>
+        <owl:disjointWith rdf:resource="#tropic"/>
     </owl:Class>
     <Species rdf:ID="EspecieA">
-        <mediationClasEspe rdf:resource="#classificacaoA"/>
+        <mediationClasEspe rdf:resource="#classificacaoa"/>
         <nomepopular rdf:datatype="&xsd;string">nomepopespecieA</nomepopular>
     </Species>
     <Species rdf:ID="EspecieB">
-        <mediationClasEspe rdf:resource="#classificacaoB"/>
+        <mediationClasEspe rdf:resource="#classificacaob"/>
         <nomepopular rdf:datatype="&xsd;string">nomepopespecieB</nomepopular>
     </Species>
     <Species rdf:ID="EspecieC">
-        <mediationClasEspe rdf:resource="#classificacaoC"/>
+        <mediationClasEspe rdf:resource="#classificacaoc"/>
         <nomepopular rdf:datatype="&xsd;string">nomepopespecieC</nomepopular>
     </Species>
     <Species rdf:ID="EspecieD">
-        <mediationClasEspe rdf:resource="#classificacaoD"/>
+        <mediationClasEspe rdf:resource="#classificacaod"/>
         <nomepopular rdf:datatype="&xsd;string">nomepopespecieD</nomepopular>
     </Species>
     <owl:Class rdf:ID="FallsEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <Family rdf:ID="FamiliaA">
         <nomepopular rdf:datatype="&xsd;string">nomepopfamiliaA</nomepopular>
-        <subkindOfGenFam rdf:resource="#GeneroA"/>
+        <subkindOfGenFam rdf:resource="#generoa"/>
     </Family>
     <Family rdf:ID="FamiliaB">
         <nomepopular rdf:datatype="&xsd;string">nomepopfamiliaB</nomepopular>
-        <subkindOfGenFam rdf:resource="#GeneroB"/>
+        <subkindOfGenFam rdf:resource="#generob"/>
     </Family>
     <Family rdf:ID="FamiliaC">
         <nomepopular rdf:datatype="&xsd;string">nomepopfamiliaC</nomepopular>
-        <subkindOfGenFam rdf:resource="#GeneroC"/>
+        <subkindOfGenFam rdf:resource="#generoc"/>
     </Family>
     <Family rdf:ID="FamiliaD">
         <nomepopular rdf:datatype="&xsd;string">nomepopfamiliaD</nomepopular>
-        <subkindOfGenFam rdf:resource="#GeneroD"/>
+        <subkindOfGenFam rdf:resource="#generod"/>
     </Family>
     <owl:Class rdf:ID="Family">
-        <rdfs:subClassOf rdf:resource="#Taxon"/>
-        <owl:disjointWith rdf:resource="#Genus"/>
-        <owl:disjointWith rdf:resource="#Speci"/>
+        <rdfs:subClassOf rdf:resource="#taxon"/>
+        <owl:disjointWith rdf:resource="#genus"/>
+        <owl:disjointWith rdf:resource="#speci"/>
     </owl:Class>
     <owl:Class rdf:ID="Faun">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="FederalArea">
-        <rdfs:subClassOf rdf:resource="#FederalLand"/>
-        <owl:disjointWith rdf:resource="#VacantLand"/>
+        <rdfs:subClassOf rdf:resource="#federalland"/>
+        <owl:disjointWith rdf:resource="#vacantland"/>
     </owl:Class>
     <owl:Class rdf:ID="FederalLand">
-        <rdfs:subClassOf rdf:resource="#UnionArea"/>
-        <owl:disjointWith rdf:resource="#CountyLand"/>
-        <owl:disjointWith rdf:resource="#IndianLand"/>
-        <owl:disjointWith rdf:resource="#StateLand"/>
+        <rdfs:subClassOf rdf:resource="#unionarea"/>
+        <owl:disjointWith rdf:resource="#countyland"/>
+        <owl:disjointWith rdf:resource="#indianland"/>
+        <owl:disjointWith rdf:resource="#stateland"/>
     </owl:Class>
     <Sex rdf:ID="Female">
         <female rdf:datatype="&xsd;string">female</female>
     </Sex>
     <owl:DatatypeProperty rdf:ID="female">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="FieldRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <owl:Class rdf:ID="FieldVagetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="FloodedVegetation">
-        <rdfs:subClassOf rdf:resource="#VegetationEnviron"/>
-        <owl:disjointWith rdf:resource="#AquaticVegat"/>
-        <owl:disjointWith rdf:resource="#MarginalVaget"/>
+        <rdfs:subClassOf rdf:resource="#vegetationenviron"/>
+        <owl:disjointWith rdf:resource="#aquaticvegat"/>
+        <owl:disjointWith rdf:resource="#marginalvaget"/>
     </owl:Class>
     <owl:Class rdf:ID="Flora">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="ForestEnvironmet">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="ForestVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="FullMoon">
-        <rdfs:subClassOf rdf:resource="#MoonPhas"/>
-        <owl:disjointWith rdf:resource="#CrescentMoon"/>
-        <owl:disjointWith rdf:resource="#NewMoon"/>
-        <owl:disjointWith rdf:resource="#WaningMoon"/>
+        <rdfs:subClassOf rdf:resource="#moonpha"/>
+        <owl:disjointWith rdf:resource="#crescentmoon"/>
+        <owl:disjointWith rdf:resource="#newmoon"/>
+        <owl:disjointWith rdf:resource="#waningmoon"/>
     </owl:Class>
     <Genus rdf:ID="GeneroA">
         <nomepopular rdf:datatype="&xsd;string">nomepopgeneroA</nomepopular>
-        <subkindOfEspGen rdf:resource="#EspecieA"/>
+        <subkindOfEspGen rdf:resource="#especiea"/>
     </Genus>
     <Genus rdf:ID="GeneroB">
         <nomepopular rdf:datatype="&xsd;string">nomepopgeneroB</nomepopular>
-        <subkindOfEspGen rdf:resource="#EspecieB"/>
+        <subkindOfEspGen rdf:resource="#especieb"/>
     </Genus>
     <Genus rdf:ID="GeneroC">
         <nomepopular rdf:datatype="&xsd;string">nomepopgeneroC</nomepopular>
-        <subkindOfEspGen rdf:resource="#EspecieC"/>
+        <subkindOfEspGen rdf:resource="#especiec"/>
     </Genus>
     <Genus rdf:ID="GeneroD">
         <nomepopular rdf:datatype="&xsd;string"></nomepopular>
-        <subkindOfEspGen rdf:resource="#EspecieD"/>
+        <subkindOfEspGen rdf:resource="#especied"/>
     </Genus>
     <owl:Class rdf:ID="Genus">
-        <rdfs:subClassOf rdf:resource="#Taxon"/>
-        <owl:disjointWith rdf:resource="#Famili"/>
-        <owl:disjointWith rdf:resource="#Speci"/>
+        <rdfs:subClassOf rdf:resource="#taxon"/>
+        <owl:disjointWith rdf:resource="#famili"/>
+        <owl:disjointWith rdf:resource="#speci"/>
     </owl:Class>
     <owl:Class rdf:ID="GeographicalCoordinate"/>
     <owl:Class rdf:ID="GeographicalSpace">
-        <rdfs:subClassOf rdf:resource="#SpatialLoc"/>
-        <owl:disjointWith rdf:resource="#GeographicPoint"/>
+        <rdfs:subClassOf rdf:resource="#spatialloc"/>
+        <owl:disjointWith rdf:resource="#geographicpoint"/>
     </owl:Class>
     <owl:Class rdf:ID="GeographicPoint">
-        <rdfs:subClassOf rdf:resource="#SpatialLoc"/>
-        <owl:disjointWith rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#spatialloc"/>
+        <owl:disjointWith rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="hermaphrodite">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="HIghLuminosity">
-        <rdfs:subClassOf rdf:resource="#Luminos"/>
-        <owl:disjointWith rdf:resource="#LowLuminos"/>
-        <owl:disjointWith rdf:resource="#MediumLuminos"/>
+        <rdfs:subClassOf rdf:resource="#lumino"/>
+        <owl:disjointWith rdf:resource="#lowlumino"/>
+        <owl:disjointWith rdf:resource="#mediumlumino"/>
     </owl:Class>
     <owl:Class rdf:ID="Humid">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Equatori"/>
-        <owl:disjointWith rdf:resource="#SemiArid"/>
-        <owl:disjointWith rdf:resource="#SemiHumid"/>
-        <owl:disjointWith rdf:resource="#Temper"/>
-        <owl:disjointWith rdf:resource="#Tropic"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#equatori"/>
+        <owl:disjointWith rdf:resource="#semiarid"/>
+        <owl:disjointWith rdf:resource="#semihumid"/>
+        <owl:disjointWith rdf:resource="#temper"/>
+        <owl:disjointWith rdf:resource="#tropic"/>
     </owl:Class>
     <owl:Class rdf:ID="Humus">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Clayli"/>
-        <owl:disjointWith rdf:resource="#Hydromorph"/>
-        <owl:disjointWith rdf:resource="#Litolit"/>
-        <owl:disjointWith rdf:resource="#Rocki"/>
-        <owl:disjointWith rdf:resource="#Sandi"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#clayli"/>
+        <owl:disjointWith rdf:resource="#hydromorph"/>
+        <owl:disjointWith rdf:resource="#litolit"/>
+        <owl:disjointWith rdf:resource="#rocki"/>
+        <owl:disjointWith rdf:resource="#sandi"/>
     </owl:Class>
     <owl:Class rdf:ID="Hydromorphic">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Clayli"/>
-        <owl:disjointWith rdf:resource="#Humus"/>
-        <owl:disjointWith rdf:resource="#Litolit"/>
-        <owl:disjointWith rdf:resource="#Rocki"/>
-        <owl:disjointWith rdf:resource="#Sandi"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#clayli"/>
+        <owl:disjointWith rdf:resource="#humus"/>
+        <owl:disjointWith rdf:resource="#litolit"/>
+        <owl:disjointWith rdf:resource="#rocki"/>
+        <owl:disjointWith rdf:resource="#sandi"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="identificacao">
-        <rdfs:domain rdf:resource="#CollectedObject"/>
+        <rdfs:domain rdf:resource="#collectedobject"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:ObjectProperty rdf:ID="identityOfSpecies">
-        <rdfs:domain rdf:resource="#Speci"/>
+        <rdfs:domain rdf:resource="#speci"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#identityOfSpeci"/>
-                <owl:someValuesFrom rdf:resource="#Speci"/>
+                <owl:onProperty rdf:resource="#identityofspeci"/>
+                <owl:someValuesFrom rdf:resource="#speci"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="IgapoVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="Indeterminated">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#larva"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <owl:Class rdf:ID="IndianLand">
-        <rdfs:subClassOf rdf:resource="#UnionArea"/>
-        <owl:disjointWith rdf:resource="#CountyLand"/>
-        <owl:disjointWith rdf:resource="#FederalLand"/>
-        <owl:disjointWith rdf:resource="#StateLand"/>
+        <rdfs:subClassOf rdf:resource="#unionarea"/>
+        <owl:disjointWith rdf:resource="#countyland"/>
+        <owl:disjointWith rdf:resource="#federalland"/>
+        <owl:disjointWith rdf:resource="#stateland"/>
     </owl:Class>
     <CollectResponsibleInstitution rdf:ID="INPA"/>
     <CollectResponsibleInstitution rdf:ID="INPE"/>
     <owl:ObjectProperty rdf:ID="instanceOfSpecies">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#instanceOfSpeci"/>
-                <owl:someValuesFrom rdf:resource="#Speci"/>
+                <owl:onProperty rdf:resource="#instanceofspeci"/>
+                <owl:someValuesFrom rdf:resource="#speci"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="instanceOfTaxon">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
-        <rdfs:range rdf:resource="#Taxon"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
+        <rdfs:range rdf:resource="#taxon"/>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="InstitutionResearch"/>
     <owl:Class rdf:ID="InstrumentedCollect">
-        <rdfs:subClassOf rdf:resource="#TypeCollect"/>
-        <owl:disjointWith rdf:resource="#ManualCollect"/>
+        <rdfs:subClassOf rdf:resource="#typecollect"/>
+        <owl:disjointWith rdf:resource="#manualcollect"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="isClassifiedAsAguaTipoAgua">
-        <rdfs:domain rdf:resource="#Water"/>
+        <rdfs:domain rdf:resource="#water"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsAguaTipoAgua"/>
-                <owl:someValuesFrom rdf:resource="#TypeWat"/>
+                <owl:onProperty rdf:resource="#isclassifiedasaguatipoagua"/>
+                <owl:someValuesFrom rdf:resource="#typewat"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsBiomaTipoBioma">
-        <rdfs:domain rdf:resource="#Biom"/>
+        <rdfs:domain rdf:resource="#biom"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsBiomaTipoBioma"/>
-                <owl:someValuesFrom rdf:resource="#TypeBiom"/>
+                <owl:onProperty rdf:resource="#isclassifiedasbiomatipobioma"/>
+                <owl:someValuesFrom rdf:resource="#typebiom"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsColetaTipoColeta">
-        <rdfs:domain rdf:resource="#Collect"/>
+        <rdfs:domain rdf:resource="#collect"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsColetaTipoColeta"/>
-                <owl:someValuesFrom rdf:resource="#TypeCollect"/>
+                <owl:onProperty rdf:resource="#isclassifiedascoletatipocoleta"/>
+                <owl:someValuesFrom rdf:resource="#typecollect"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsEcosTipoEcos">
-        <rdfs:domain rdf:resource="#Ecosystem"/>
+        <rdfs:domain rdf:resource="#ecosystem"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsEcosTipoEco"/>
-                <owl:someValuesFrom rdf:resource="#TypeEcosystem"/>
+                <owl:onProperty rdf:resource="#isclassifiedasecostipoeco"/>
+                <owl:someValuesFrom rdf:resource="#typeecosystem"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsEstvidaTipoEstVida">
-        <rdfs:domain rdf:resource="#StageLif"/>
+        <rdfs:domain rdf:resource="#stagelif"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsMaAmTipoMaAm">
-        <rdfs:domain rdf:resource="#MacroEnviron"/>
-        <rdfs:range rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:domain rdf:resource="#macroenviron"/>
+        <rdfs:range rdf:resource="#typemacroenviron"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsMiAmTipoMiAm">
-        <rdfs:domain rdf:resource="#MicroEnviron"/>
-        <rdfs:range rdf:resource="#TypeMicroEnviron"/>
+        <rdfs:domain rdf:resource="#microenviron"/>
+        <rdfs:range rdf:resource="#typemicroenviron"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsRegClimaTipoRegClima">
-        <rdfs:domain rdf:resource="#ClimaticRegion"/>
+        <rdfs:domain rdf:resource="#climaticregion"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsRegClimaTipoRegClima"/>
-                <owl:someValuesFrom rdf:resource="#TypeClimaticRegion"/>
+                <owl:onProperty rdf:resource="#isclassifiedasregclimatiporegclima"/>
+                <owl:someValuesFrom rdf:resource="#typeclimaticregion"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsRegFitoTipoRegFito">
-        <rdfs:domain rdf:resource="#PhitophysiognomicRegion"/>
+        <rdfs:domain rdf:resource="#phitophysiognomicregion"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsRegFitoTipoRegFito"/>
-                <owl:someValuesFrom rdf:resource="#TipodeRegiaoFitofisionomica"/>
+                <owl:onProperty rdf:resource="#isclassifiedasregfitotiporegfito"/>
+                <owl:someValuesFrom rdf:resource="#tipoderegiaofitofisionomica"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsRegPolSocTipoRegPolSoc">
-        <rdfs:domain rdf:resource="#PoliticSocialRegion"/>
+        <rdfs:domain rdf:resource="#politicsocialregion"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsRegPolSocTipoRegPolSoc"/>
-                <owl:someValuesFrom rdf:resource="#SocialPolicyRegionTyp"/>
+                <owl:onProperty rdf:resource="#isclassifiedasregpolsoctiporegpolsoc"/>
+                <owl:someValuesFrom rdf:resource="#socialpolicyregiontyp"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsSexTipoSex">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsSoloTipoSolo">
-        <rdfs:domain rdf:resource="#Soil"/>
+        <rdfs:domain rdf:resource="#soil"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsSoloTipoSolo"/>
-                <owl:someValuesFrom rdf:resource="#TypedeSoil"/>
+                <owl:onProperty rdf:resource="#isclassifiedassolotiposolo"/>
+                <owl:someValuesFrom rdf:resource="#typedesoil"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isClassifiedAsVegTipoVeg">
-        <rdfs:domain rdf:resource="#Veget"/>
+        <rdfs:domain rdf:resource="#veget"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isClassifiedAsVegTipoVeg"/>
-                <owl:someValuesFrom rdf:resource="#TypeVeget"/>
+                <owl:onProperty rdf:resource="#isclassifiedasvegtipoveg"/>
+                <owl:someValuesFrom rdf:resource="#typeveget"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isConteinedInEcosLocalEspa">
-        <rdfs:domain rdf:resource="#Ecosystem"/>
-        <rdfs:range rdf:resource="#SpatialLoc"/>
+        <rdfs:domain rdf:resource="#ecosystem"/>
+        <rdfs:range rdf:resource="#spatialloc"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="isLinkedPesquisadorInstituicao">
-        <rdfs:domain rdf:resource="#Research"/>
+        <rdfs:domain rdf:resource="#research"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#isLinkedPesquisadorInstituicao"/>
-                <owl:someValuesFrom rdf:resource="#InstitutionResearch"/>
+                <owl:onProperty rdf:resource="#islinkedpesquisadorinstituicao"/>
+                <owl:someValuesFrom rdf:resource="#institutionresearch"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <Young rdf:ID="JovemC"/>
     <owl:Class rdf:ID="LakeEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Larva">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="latitude">
-        <rdfs:domain rdf:resource="#GeographicalCoordin"/>
+        <rdfs:domain rdf:resource="#geographicalcoordin"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="Litolitic">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Clayli"/>
-        <owl:disjointWith rdf:resource="#Humus"/>
-        <owl:disjointWith rdf:resource="#Hydromorph"/>
-        <owl:disjointWith rdf:resource="#Rocki"/>
-        <owl:disjointWith rdf:resource="#Sandi"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#clayli"/>
+        <owl:disjointWith rdf:resource="#humus"/>
+        <owl:disjointWith rdf:resource="#hydromorph"/>
+        <owl:disjointWith rdf:resource="#rocki"/>
+        <owl:disjointWith rdf:resource="#sandi"/>
     </owl:Class>
     <owl:Class rdf:ID="LitoralRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <owl:Class rdf:ID="LocalCollect">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <LocalCollect rdf:ID="LocaldeColetaA">
-        <caracterizationMaAmEspGeo rdf:resource="#MacroAmbA"/>
-        <isConteinedInEcosLocalEspa rdf:resource="#BiomaAmazonia"/>
-        <localizationEspaGeoCoordGeo rdf:resource="#CoordGeoA"/>
-        <spatiallyContainedIn rdf:resource="#LocalidadeA"/>
-        <spatiallyContainedIn rdf:resource="#RegiaoFitoAmazonica"/>
+        <caracterizationMaAmEspGeo rdf:resource="#macroamba"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#biomaamazonia"/>
+        <localizationEspaGeoCoordGeo rdf:resource="#coordgeoa"/>
+        <spatiallyContainedIn rdf:resource="#localidadea"/>
+        <spatiallyContainedIn rdf:resource="#regiaofitoamazonica"/>
     </LocalCollect>
     <LocalCollect rdf:ID="LocaldeColetaB">
-        <caracterizationMaAmEspGeo rdf:resource="#MacroAmbB"/>
-        <isConteinedInEcosLocalEspa rdf:resource="#BiomaCaatinga"/>
-        <localizationEspaGeoCoordGeo rdf:resource="#CoordGeoB"/>
-        <spatiallyContainedIn rdf:resource="#LocalidadeB"/>
-        <spatiallyContainedIn rdf:resource="#RegiaoFitoAtlantica"/>
+        <caracterizationMaAmEspGeo rdf:resource="#macroambb"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#biomacaatinga"/>
+        <localizationEspaGeoCoordGeo rdf:resource="#coordgeob"/>
+        <spatiallyContainedIn rdf:resource="#localidadeb"/>
+        <spatiallyContainedIn rdf:resource="#regiaofitoatlantica"/>
     </LocalCollect>
     <LocalCollect rdf:ID="LocaldeColetaC">
-        <caracterizationMaAmEspGeo rdf:resource="#MacroAmbC"/>
-        <isConteinedInEcosLocalEspa rdf:resource="#BiomaCerrado"/>
-        <localizationEspaGeoCoordGeo rdf:resource="#CoordGeoC"/>
-        <spatiallyContainedIn rdf:resource="#LocalidadeC"/>
-        <spatiallyContainedIn rdf:resource="#RegiaoFitodeAraucaria"/>
+        <caracterizationMaAmEspGeo rdf:resource="#macroambc"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#biomacerrado"/>
+        <localizationEspaGeoCoordGeo rdf:resource="#coordgeoc"/>
+        <spatiallyContainedIn rdf:resource="#localidadec"/>
+        <spatiallyContainedIn rdf:resource="#regiaofitodearaucaria"/>
     </LocalCollect>
     <LocalCollect rdf:ID="LocaldeColetaD">
-        <caracterizationMaAmEspGeo rdf:resource="#MacroAmbD"/>
-        <isConteinedInEcosLocalEspa rdf:resource="#BiomaPantan"/>
-        <localizationEspaGeoCoordGeo rdf:resource="#CoordGeoD"/>
-        <spatiallyContainedIn rdf:resource="#LocalidadeD"/>
-        <spatiallyContainedIn rdf:resource="#RegiaoFitodeCaatinga"/>
+        <caracterizationMaAmEspGeo rdf:resource="#macroambd"/>
+        <isConteinedInEcosLocalEspa rdf:resource="#biomapantan"/>
+        <localizationEspaGeoCoordGeo rdf:resource="#coordgeod"/>
+        <spatiallyContainedIn rdf:resource="#localidaded"/>
+        <spatiallyContainedIn rdf:resource="#regiaofitodecaatinga"/>
     </LocalCollect>
     <Locality rdf:ID="LocalidadeA">
-        <spatiallyConteinedInLocalidadeMun rdf:resource="#Belem"/>
+        <spatiallyConteinedInLocalidadeMun rdf:resource="#belem"/>
     </Locality>
     <Locality rdf:ID="LocalidadeB">
-        <spatiallyConteinedInLocalidadeMun rdf:resource="#Campina"/>
+        <spatiallyConteinedInLocalidadeMun rdf:resource="#campina"/>
     </Locality>
     <Locality rdf:ID="LocalidadeC">
-        <spatiallyConteinedInLocalidadeMun rdf:resource="#Manaus"/>
+        <spatiallyConteinedInLocalidadeMun rdf:resource="#manaus"/>
     </Locality>
     <Locality rdf:ID="LocalidadeD">
-        <spatiallyConteinedInLocalidadeMun rdf:resource="#Rio"/>
+        <spatiallyConteinedInLocalidadeMun rdf:resource="#rio"/>
     </Locality>
     <owl:Class rdf:ID="Locality">
-        <rdfs:subClassOf rdf:resource="#PoliticSocialRegion"/>
-        <owl:disjointWith rdf:resource="#Countri"/>
-        <owl:disjointWith rdf:resource="#Counti"/>
-        <owl:disjointWith rdf:resource="#State"/>
+        <rdfs:subClassOf rdf:resource="#politicsocialregion"/>
+        <owl:disjointWith rdf:resource="#countri"/>
+        <owl:disjointWith rdf:resource="#counti"/>
+        <owl:disjointWith rdf:resource="#state"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="localizationEspaGeoCoordGeo">
-        <rdfs:domain rdf:resource="#GeographicalSpac"/>
-        <rdfs:range rdf:resource="#GeographicalCoordin"/>
+        <rdfs:domain rdf:resource="#geographicalspac"/>
+        <rdfs:range rdf:resource="#geographicalcoordin"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="localizationInEntMatCoordGeo">
-        <rdfs:domain rdf:resource="#MaterialEnt"/>
-        <rdfs:range rdf:resource="#GeographicalCoordin"/>
+        <rdfs:domain rdf:resource="#materialent"/>
+        <rdfs:range rdf:resource="#geographicalcoordin"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="localizationInEntMatLocEspa">
-        <rdfs:domain rdf:resource="#MaterialEnt"/>
-        <rdfs:range rdf:resource="#SpatialLoc"/>
+        <rdfs:domain rdf:resource="#materialent"/>
+        <rdfs:range rdf:resource="#spatialloc"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="localizationLocalEspaCoordGeo">
-        <rdfs:domain rdf:resource="#SpatialLoc"/>
+        <rdfs:domain rdf:resource="#spatialloc"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#localizationLocalEspaCoordGeo"/>
-                <owl:allValuesFrom rdf:resource="#GeographicalCoordin"/>
+                <owl:onProperty rdf:resource="#localizationlocalespacoordgeo"/>
+                <owl:allValuesFrom rdf:resource="#geographicalcoordin"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="localizationPontGeoCoordGeo">
-        <rdfs:domain rdf:resource="#GeographicPoint"/>
+        <rdfs:domain rdf:resource="#geographicpoint"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#localizationPontGeoCoordGeo"/>
-                <owl:allValuesFrom rdf:resource="#GeographicalCoordin"/>
+                <owl:onProperty rdf:resource="#localizationpontgeocoordgeo"/>
+                <owl:allValuesFrom rdf:resource="#geographicalcoordin"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="localizationVegetacaoEspGeo">
-        <rdfs:domain rdf:resource="#Veget"/>
+        <rdfs:domain rdf:resource="#veget"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#localizationVegetacaoEspGeo"/>
-                <owl:someValuesFrom rdf:resource="#GeographicalSpac"/>
+                <owl:onProperty rdf:resource="#localizationvegetacaoespgeo"/>
+                <owl:someValuesFrom rdf:resource="#geographicalspac"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:DatatypeProperty rdf:ID="longitude">
-        <rdfs:domain rdf:resource="#GeographicalCoordin"/>
+        <rdfs:domain rdf:resource="#geographicalcoordin"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="LooseRocksEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="LowLandVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="LowLuminosity">
-        <rdfs:subClassOf rdf:resource="#Luminos"/>
-        <owl:disjointWith rdf:resource="#HIghLuminos"/>
-        <owl:disjointWith rdf:resource="#MediumLuminos"/>
+        <rdfs:subClassOf rdf:resource="#lumino"/>
+        <owl:disjointWith rdf:resource="#highlumino"/>
+        <owl:disjointWith rdf:resource="#mediumlumino"/>
     </owl:Class>
     <Classifier rdf:ID="Luana"/>
     <owl:Class rdf:ID="Luminosity"/>
     <MacroEnvironment rdf:ID="MacroAmbA">
-        <caracterizationMaAmEspGeo rdf:resource="#LocaldeColetaA"/>
-        <isClassifiedAsMaAmTipoMaAm rdf:resource="#MacroAmbAfluent"/>
+        <caracterizationMaAmEspGeo rdf:resource="#localdecoletaa"/>
+        <isClassifiedAsMaAmTipoMaAm rdf:resource="#macroambaflu"/>
     </MacroEnvironment>
     <AffluentEnvironment rdf:ID="MacroAmbAfluente"/>
     <MacroEnvironment rdf:ID="MacroAmbB">
-        <caracterizationMaAmEspGeo rdf:resource="#LocaldeColetaB"/>
-        <isClassifiedAsMaAmTipoMaAm rdf:resource="#MacroAmbBrejo"/>
+        <caracterizationMaAmEspGeo rdf:resource="#localdecoletab"/>
+        <isClassifiedAsMaAmTipoMaAm rdf:resource="#macroambbrejo"/>
     </MacroEnvironment>
     <MarshEnvironment rdf:ID="MacroAmbBrejo"/>
     <MacroEnvironment rdf:ID="MacroAmbC">
-        <caracterizationMaAmEspGeo rdf:resource="#LocaldeColetaC"/>
-        <isClassifiedAsMaAmTipoMaAm rdf:resource="#MacroAmbCopadeArvor"/>
+        <caracterizationMaAmEspGeo rdf:resource="#localdecoletac"/>
+        <isClassifiedAsMaAmTipoMaAm rdf:resource="#macroambcopadearvor"/>
     </MacroEnvironment>
     <CanopyEnvironment rdf:ID="MacroAmbCopadeArvore"/>
     <MacroEnvironment rdf:ID="MacroAmbD">
-        <caracterizationMaAmEspGeo rdf:resource="#LocaldeColetaD"/>
-        <isClassifiedAsMaAmTipoMaAm rdf:resource="#MacroAmbFlorestaPrimaria"/>
+        <caracterizationMaAmEspGeo rdf:resource="#localdecoletad"/>
+        <isClassifiedAsMaAmTipoMaAm rdf:resource="#macroambflorestaprimaria"/>
     </MacroEnvironment>
     <PrimaryForestEnvironment rdf:ID="MacroAmbFlorestaPrimaria"/>
     <owl:Class rdf:ID="MacroEcosystem">
-        <rdfs:subClassOf rdf:resource="#Ecosystem"/>
-        <owl:disjointWith rdf:resource="#MesoEcosystem"/>
-        <owl:disjointWith rdf:resource="#MicroEcosystem"/>
+        <rdfs:subClassOf rdf:resource="#ecosystem"/>
+        <owl:disjointWith rdf:resource="#mesoecosystem"/>
+        <owl:disjointWith rdf:resource="#microecosystem"/>
     </owl:Class>
     <owl:Class rdf:ID="MacroEnvironment">
-        <rdfs:subClassOf rdf:resource="#Environ"/>
-        <owl:disjointWith rdf:resource="#MicroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#environ"/>
+        <owl:disjointWith rdf:resource="#microenviron"/>
     </owl:Class>
     <Sex rdf:ID="Male">
         <male rdf:datatype="&xsd;string">male</male>
     </Sex>
     <owl:DatatypeProperty rdf:ID="male">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <County rdf:ID="Manaus">
-        <spatiallyConteinedInMunEst rdf:resource="#AM"/>
+        <spatiallyConteinedInMunEst rdf:resource="#am"/>
     </County>
     <owl:Class rdf:ID="MangroveEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <ManualCollect rdf:ID="Manual"/>
     <owl:Class rdf:ID="ManualCollect">
-        <rdfs:subClassOf rdf:resource="#TypeCollect"/>
-        <owl:disjointWith rdf:resource="#InstrumentedCollect"/>
+        <rdfs:subClassOf rdf:resource="#typecollect"/>
+        <owl:disjointWith rdf:resource="#instrumentedcollect"/>
     </owl:Class>
     <owl:Class rdf:ID="MarginalVagetation">
-        <rdfs:subClassOf rdf:resource="#VegetationEnviron"/>
-        <owl:disjointWith rdf:resource="#AquaticVegat"/>
-        <owl:disjointWith rdf:resource="#FloodedVeget"/>
+        <rdfs:subClassOf rdf:resource="#vegetationenviron"/>
+        <owl:disjointWith rdf:resource="#aquaticvegat"/>
+        <owl:disjointWith rdf:resource="#floodedveget"/>
     </owl:Class>
     <Classifier rdf:ID="Maria"/>
     <owl:Class rdf:ID="MarshEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="MataAtlantica">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Amazonia"/>
-        <owl:disjointWith rdf:resource="#Caatinga"/>
-        <owl:disjointWith rdf:resource="#Cerrado"/>
-        <owl:disjointWith rdf:resource="#Pantan"/>
-        <owl:disjointWith rdf:resource="#ZonasCosteira"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#amazonia"/>
+        <owl:disjointWith rdf:resource="#caatinga"/>
+        <owl:disjointWith rdf:resource="#cerrado"/>
+        <owl:disjointWith rdf:resource="#pantan"/>
+        <owl:disjointWith rdf:resource="#zonascosteira"/>
     </owl:Class>
     <owl:Class rdf:ID="MataAtlanticaRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <owl:Class rdf:ID="MaterialEntity"/>
     <owl:ObjectProperty rdf:ID="mediationClasEspe">
-        <rdfs:domain rdf:resource="#Speci"/>
+        <rdfs:domain rdf:resource="#speci"/>
         <rdfs:range rdf:resource="#classif"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationClasObjClas">
-        <rdfs:domain rdf:resource="#ClassifiedObject"/>
+        <rdfs:domain rdf:resource="#classifiedobject"/>
         <rdfs:range rdf:resource="#classif"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationClassificadorClassificacao">
         <rdfs:domain rdf:resource="#classif"/>
-        <rdfs:range rdf:resource="#Classifi"/>
+        <rdfs:range rdf:resource="#classifi"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationColetaInstituicaoResponsavelColeta">
-        <rdfs:domain rdf:resource="#Collect"/>
-        <rdfs:range rdf:resource="#CollectResponsibleInstitut"/>
+        <rdfs:domain rdf:resource="#collect"/>
+        <rdfs:range rdf:resource="#collectresponsibleinstitut"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationColetaLocalColeta">
-        <rdfs:domain rdf:resource="#Collect"/>
+        <rdfs:domain rdf:resource="#collect"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#mediationColetaLocalColeta"/>
-                <owl:someValuesFrom rdf:resource="#LocalCollect"/>
+                <owl:onProperty rdf:resource="#mediationcoletalocalcoleta"/>
+                <owl:someValuesFrom rdf:resource="#localcollect"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationColetaRespColeta">
-        <rdfs:domain rdf:resource="#Collect"/>
-        <rdfs:range rdf:resource="#CollectRespons"/>
+        <rdfs:domain rdf:resource="#collect"/>
+        <rdfs:range rdf:resource="#collectrespon"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationColInstrumentadaInstrumentoCol">
-        <rdfs:domain rdf:resource="#InstrumentedCollect"/>
+        <rdfs:domain rdf:resource="#instrumentedcollect"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#mediationColInstrumentadaInstrumentoCol"/>
-                <owl:someValuesFrom rdf:resource="#CollectTool"/>
+                <owl:onProperty rdf:resource="#mediationcolinstrumentadainstrumentocol"/>
+                <owl:someValuesFrom rdf:resource="#collecttool"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationInstituicaoVinculo">
-        <rdfs:domain rdf:resource="#InstitutionResearch"/>
+        <rdfs:domain rdf:resource="#institutionresearch"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#mediationInstituicaoVinculo"/>
-                <owl:someValuesFrom rdf:resource="#VinculoInstitucion"/>
+                <owl:onProperty rdf:resource="#mediationinstituicaovinculo"/>
+                <owl:someValuesFrom rdf:resource="#vinculoinstitucion"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationObjColetadoColeta">
-        <rdfs:domain rdf:resource="#Collect"/>
+        <rdfs:domain rdf:resource="#collect"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#mediationObjColetadoColeta"/>
-                <owl:someValuesFrom rdf:resource="#CollectedObject"/>
+                <owl:onProperty rdf:resource="#mediationobjcoletadocoleta"/>
+                <owl:someValuesFrom rdf:resource="#collectedobject"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationPartColetaCol">
-        <rdfs:domain rdf:resource="#Collect"/>
-        <rdfs:range rdf:resource="#CollectParticip"/>
+        <rdfs:domain rdf:resource="#collect"/>
+        <rdfs:range rdf:resource="#collectparticip"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="mediationPesqVinculo">
-        <rdfs:domain rdf:resource="#Research"/>
+        <rdfs:domain rdf:resource="#research"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#mediationPesqVinculo"/>
-                <owl:someValuesFrom rdf:resource="#VinculoInstitucion"/>
+                <owl:onProperty rdf:resource="#mediationpesqvinculo"/>
+                <owl:someValuesFrom rdf:resource="#vinculoinstitucion"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="MediumLuminosity">
-        <rdfs:subClassOf rdf:resource="#Luminos"/>
-        <owl:disjointWith rdf:resource="#HIghLuminos"/>
-        <owl:disjointWith rdf:resource="#LowLuminos"/>
+        <rdfs:subClassOf rdf:resource="#lumino"/>
+        <owl:disjointWith rdf:resource="#highlumino"/>
+        <owl:disjointWith rdf:resource="#lowlumino"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="memberOfAnimalFauna">
-        <rdfs:domain rdf:resource="#Animal"/>
+        <rdfs:domain rdf:resource="#animal"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#memberOfAnimalFauna"/>
-                <owl:someValuesFrom rdf:resource="#Faun"/>
+                <owl:onProperty rdf:resource="#memberofanimalfauna"/>
+                <owl:someValuesFrom rdf:resource="#faun"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="memberOfMiOrgMicrobiota">
-        <rdfs:domain rdf:resource="#MicroOrgan"/>
+        <rdfs:domain rdf:resource="#microorgan"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#memberOfMiOrgMicrobiota"/>
-                <owl:someValuesFrom rdf:resource="#Microbiota"/>
+                <owl:onProperty rdf:resource="#memberofmiorgmicrobiota"/>
+                <owl:someValuesFrom rdf:resource="#microbiota"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="memberOfPlanFlora">
-        <rdfs:domain rdf:resource="#Plant"/>
+        <rdfs:domain rdf:resource="#plant"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#memberOfPlanFlora"/>
-                <owl:someValuesFrom rdf:resource="#Flora"/>
+                <owl:onProperty rdf:resource="#memberofplanflora"/>
+                <owl:someValuesFrom rdf:resource="#flora"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="MesoEcosystem">
-        <rdfs:subClassOf rdf:resource="#Ecosystem"/>
-        <owl:disjointWith rdf:resource="#MacroEcosystem"/>
-        <owl:disjointWith rdf:resource="#MicroEcosystem"/>
+        <rdfs:subClassOf rdf:resource="#ecosystem"/>
+        <owl:disjointWith rdf:resource="#macroecosystem"/>
+        <owl:disjointWith rdf:resource="#microecosystem"/>
     </owl:Class>
     <AmbientedeAreiaFina rdf:ID="MicroAmAreiaFina"/>
     <MicroEnvironment rdf:ID="MicroAmbA">
-        <caracterizationMiAmPontoGeo rdf:resource="#PontoGeoA"/>
-        <isClassifiedAsMiAmTipoMiAm rdf:resource="#MicroAmAreiaFina"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#pontogeoa"/>
+        <isClassifiedAsMiAmTipoMiAm rdf:resource="#microamareiafina"/>
     </MicroEnvironment>
     <AmbientedeAreiaGrossa rdf:ID="MIcroAmbAreiaGrossa"/>
     <MicroEnvironment rdf:ID="MicroAmbB">
-        <caracterizationMiAmPontoGeo rdf:resource="#PontoGeoB"/>
-        <isClassifiedAsMiAmTipoMiAm rdf:resource="#MIcroAmbAreiaGrossa"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#pontogeob"/>
+        <isClassifiedAsMiAmTipoMiAm rdf:resource="#microambareiagrossa"/>
     </MicroEnvironment>
     <MicroEnvironment rdf:ID="MicroAmbC">
-        <caracterizationMiAmPontoGeo rdf:resource="#PontoGeoC"/>
-        <isClassifiedAsMiAmTipoMiAm rdf:resource="#MicroAmbCascalho"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#pontogeoc"/>
+        <isClassifiedAsMiAmTipoMiAm rdf:resource="#microambcascalho"/>
     </MicroEnvironment>
     <AmbientedeCascalho rdf:ID="MicroAmbCascalho"/>
     <MicroEnvironment rdf:ID="MicroAmbD">
-        <caracterizationMiAmPontoGeo rdf:resource="#PontoGeoD"/>
-        <isClassifiedAsMiAmTipoMiAm rdf:resource="#MicroAmbHumus"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#pontogeod"/>
+        <isClassifiedAsMiAmTipoMiAm rdf:resource="#microambhumus"/>
     </MicroEnvironment>
     <AmbientedeHumus rdf:ID="MicroAmbHumus"/>
     <owl:Class rdf:ID="Microbiota">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="MicroEcosystem">
-        <rdfs:subClassOf rdf:resource="#Ecosystem"/>
-        <owl:disjointWith rdf:resource="#MacroEcosystem"/>
-        <owl:disjointWith rdf:resource="#MesoEcosystem"/>
+        <rdfs:subClassOf rdf:resource="#ecosystem"/>
+        <owl:disjointWith rdf:resource="#macroecosystem"/>
+        <owl:disjointWith rdf:resource="#mesoecosystem"/>
     </owl:Class>
     <owl:Class rdf:ID="MicroEnvironment">
-        <rdfs:subClassOf rdf:resource="#Environ"/>
-        <owl:disjointWith rdf:resource="#MacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#environ"/>
+        <owl:disjointWith rdf:resource="#macroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="MicroOrganism">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
-        <owl:disjointWith rdf:resource="#Animal"/>
-        <owl:disjointWith rdf:resource="#Plant"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
+        <owl:disjointWith rdf:resource="#animal"/>
+        <owl:disjointWith rdf:resource="#plant"/>
     </owl:Class>
     <owl:Class rdf:ID="MoonPhase"/>
     <CollectResponsibleInstitution rdf:ID="MPEG"/>
     <owl:Class rdf:ID="NetCollect">
-        <rdfs:subClassOf rdf:resource="#InstrumentedCollect"/>
+        <rdfs:subClassOf rdf:resource="#instrumentedcollect"/>
     </owl:Class>
     <owl:Class rdf:ID="NewMoon">
-        <rdfs:subClassOf rdf:resource="#MoonPhas"/>
-        <owl:disjointWith rdf:resource="#CrescentMoon"/>
-        <owl:disjointWith rdf:resource="#FullMoon"/>
-        <owl:disjointWith rdf:resource="#WaningMoon"/>
+        <rdfs:subClassOf rdf:resource="#moonpha"/>
+        <owl:disjointWith rdf:resource="#crescentmoon"/>
+        <owl:disjointWith rdf:resource="#fullmoon"/>
+        <owl:disjointWith rdf:resource="#waningmoon"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="nomecientifico">
-        <rdfs:domain rdf:resource="#Taxon"/>
+        <rdfs:domain rdf:resource="#taxon"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="nomeInstituicao">
-        <rdfs:domain rdf:resource="#InstitutionResearch"/>
+        <rdfs:domain rdf:resource="#institutionresearch"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="nomePessoa">
-        <rdfs:domain rdf:resource="#Person"/>
+        <rdfs:domain rdf:resource="#person"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="nomepopular">
-        <rdfs:domain rdf:resource="#Taxon"/>
+        <rdfs:domain rdf:resource="#taxon"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="nomeRegPolSoc">
-        <rdfs:domain rdf:resource="#PoliticSocialRegion"/>
+        <rdfs:domain rdf:resource="#politicsocialregion"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="notreviewed">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <ClassifiedObject rdf:ID="ObjClassificadoA">
-        <mediationClasObjClas rdf:resource="#classificacaoA"/>
+        <mediationClasObjClas rdf:resource="#classificacaoa"/>
     </ClassifiedObject>
     <ClassifiedObject rdf:ID="ObjClassificadoB">
-        <mediationClasObjClas rdf:resource="#classificacaoB"/>
+        <mediationClasObjClas rdf:resource="#classificacaob"/>
     </ClassifiedObject>
     <ClassifiedObject rdf:ID="ObjClassificadoC">
-        <mediationClasObjClas rdf:resource="#classificacaoC"/>
+        <mediationClasObjClas rdf:resource="#classificacaoc"/>
     </ClassifiedObject>
     <ClassifiedObject rdf:ID="ObjClassificadoD">
-        <mediationClasObjClas rdf:resource="#classificacaoD"/>
+        <mediationClasObjClas rdf:resource="#classificacaod"/>
     </ClassifiedObject>
     <CollectedObject rdf:ID="ObjColetadoA">
-        <instanceOfSpecies rdf:resource="#EspecieA"/>
-        <instanceOfTaxon rdf:resource="#EspecieA"/>
-        <instanceOfTaxon rdf:resource="#FamiliaA"/>
-        <instanceOfTaxon rdf:resource="#GeneroA"/>
-        <localizationInEntMatCoordGeo rdf:resource="#CoordGeoA"/>
-        <localizationInEntMatLocEspa rdf:resource="#PontoGeoA"/>
+        <instanceOfSpecies rdf:resource="#especiea"/>
+        <instanceOfTaxon rdf:resource="#especiea"/>
+        <instanceOfTaxon rdf:resource="#familiaa"/>
+        <instanceOfTaxon rdf:resource="#generoa"/>
+        <localizationInEntMatCoordGeo rdf:resource="#coordgeoa"/>
+        <localizationInEntMatLocEspa rdf:resource="#pontogeoa"/>
         <peso rdf:datatype="&xsd;float">10.0</peso>
-        <RelacaoEntbioEstvid rdf:resource="#AdultoA"/>
-        <RelacaoEntbioSexo rdf:resource="#Asexual"/>
+        <RelacaoEntbioEstvid rdf:resource="#adultoa"/>
+        <RelacaoEntbioSexo rdf:resource="#asexual"/>
     </CollectedObject>
     <CollectedObject rdf:ID="ObjColetadoB">
-        <instanceOfSpecies rdf:resource="#EspecieB"/>
-        <instanceOfTaxon rdf:resource="#EspecieB"/>
-        <instanceOfTaxon rdf:resource="#FamiliaB"/>
-        <instanceOfTaxon rdf:resource="#GeneroB"/>
-        <localizationInEntMatCoordGeo rdf:resource="#CoordGeoB"/>
-        <localizationInEntMatLocEspa rdf:resource="#PontoGeoB"/>
+        <instanceOfSpecies rdf:resource="#especieb"/>
+        <instanceOfTaxon rdf:resource="#especieb"/>
+        <instanceOfTaxon rdf:resource="#familiab"/>
+        <instanceOfTaxon rdf:resource="#generob"/>
+        <localizationInEntMatCoordGeo rdf:resource="#coordgeob"/>
+        <localizationInEntMatLocEspa rdf:resource="#pontogeob"/>
         <peso rdf:datatype="&xsd;float">10.0</peso>
-        <RelacaoEntbioEstvid rdf:resource="#OvoD"/>
-        <RelacaoEntbioSexo rdf:resource="#Bisexu"/>
+        <RelacaoEntbioEstvid rdf:resource="#ovod"/>
+        <RelacaoEntbioSexo rdf:resource="#bisexu"/>
     </CollectedObject>
     <CollectedObject rdf:ID="ObjColetadoC">
-        <instanceOfSpecies rdf:resource="#EspecieC"/>
-        <instanceOfTaxon rdf:resource="#EspecieC"/>
-        <instanceOfTaxon rdf:resource="#FamiliaC"/>
-        <instanceOfTaxon rdf:resource="#GeneroC"/>
-        <localizationInEntMatCoordGeo rdf:resource="#CoordGeoC"/>
-        <localizationInEntMatLocEspa rdf:resource="#PontoGeoC"/>
+        <instanceOfSpecies rdf:resource="#especiec"/>
+        <instanceOfTaxon rdf:resource="#especiec"/>
+        <instanceOfTaxon rdf:resource="#familiac"/>
+        <instanceOfTaxon rdf:resource="#generoc"/>
+        <localizationInEntMatCoordGeo rdf:resource="#coordgeoc"/>
+        <localizationInEntMatLocEspa rdf:resource="#pontogeoc"/>
         <peso rdf:datatype="&xsd;float">10.0</peso>
-        <RelacaoEntbioEstvid rdf:resource="#EmbriaoB"/>
-        <RelacaoEntbioSexo rdf:resource="#Femal"/>
+        <RelacaoEntbioEstvid rdf:resource="#embriaob"/>
+        <RelacaoEntbioSexo rdf:resource="#femal"/>
     </CollectedObject>
     <CollectedObject rdf:ID="ObjColetadoD">
-        <instanceOfSpecies rdf:resource="#EspecieD"/>
-        <instanceOfTaxon rdf:resource="#EspecieD"/>
-        <instanceOfTaxon rdf:resource="#FamiliaD"/>
-        <instanceOfTaxon rdf:resource="#GeneroD"/>
-        <localizationInEntMatCoordGeo rdf:resource="#CoordGeoD"/>
-        <localizationInEntMatLocEspa rdf:resource="#PontoGeoD"/>
+        <instanceOfSpecies rdf:resource="#especied"/>
+        <instanceOfTaxon rdf:resource="#especied"/>
+        <instanceOfTaxon rdf:resource="#familiad"/>
+        <instanceOfTaxon rdf:resource="#generod"/>
+        <localizationInEntMatCoordGeo rdf:resource="#coordgeod"/>
+        <localizationInEntMatLocEspa rdf:resource="#pontogeod"/>
         <peso rdf:datatype="&xsd;float">0.0</peso>
-        <RelacaoEntbioEstvid rdf:resource="#JovemC"/>
-        <RelacaoEntbioSexo rdf:resource="#Male"/>
+        <RelacaoEntbioEstvid rdf:resource="#jovemc"/>
+        <RelacaoEntbioSexo rdf:resource="#male"/>
     </CollectedObject>
     <owl:Class rdf:ID="ObjectUnderStudy">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
     </owl:Class>
     <Egg rdf:ID="OvoD"/>
     <State rdf:ID="PA">
-        <spatiallyConteinedInEstPais rdf:resource="#Brasil"/>
+        <spatiallyConteinedInEstPais rdf:resource="#brasil"/>
     </State>
     <owl:Class rdf:ID="Pantanal">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Amazonia"/>
-        <owl:disjointWith rdf:resource="#Caatinga"/>
-        <owl:disjointWith rdf:resource="#Cerrado"/>
-        <owl:disjointWith rdf:resource="#MataAtlantica"/>
-        <owl:disjointWith rdf:resource="#ZonasCosteira"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#amazonia"/>
+        <owl:disjointWith rdf:resource="#caatinga"/>
+        <owl:disjointWith rdf:resource="#cerrado"/>
+        <owl:disjointWith rdf:resource="#mataatlantica"/>
+        <owl:disjointWith rdf:resource="#zonascosteira"/>
     </owl:Class>
     <owl:Class rdf:ID="PantanalRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#SavannahRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#savannahregion"/>
     </owl:Class>
     <owl:Class rdf:ID="Person">
-        <rdfs:subClassOf rdf:resource="#Animal"/>
+        <rdfs:subClassOf rdf:resource="#animal"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="peso">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="phAgua">
-        <rdfs:domain rdf:resource="#Water"/>
+        <rdfs:domain rdf:resource="#water"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="PhitophysiognomicRegion">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="phSolo">
-        <rdfs:domain rdf:resource="#Soil"/>
+        <rdfs:domain rdf:resource="#soil"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="Plant">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
-        <owl:disjointWith rdf:resource="#Animal"/>
-        <owl:disjointWith rdf:resource="#MicroOrgan"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
+        <owl:disjointWith rdf:resource="#animal"/>
+        <owl:disjointWith rdf:resource="#microorgan"/>
     </owl:Class>
     <owl:Class rdf:ID="PoliticSocialRegion">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <GeographicPoint rdf:ID="PontoGeoA">
-        <caracterizationMiAmPontoGeo rdf:resource="#MicroAmbA"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#microamba"/>
     </GeographicPoint>
     <GeographicPoint rdf:ID="PontoGeoB">
-        <caracterizationMiAmPontoGeo rdf:resource="#MicroAmbB"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#microambb"/>
     </GeographicPoint>
     <GeographicPoint rdf:ID="PontoGeoC">
-        <caracterizationMiAmPontoGeo rdf:resource="#MicroAmbC"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#microambc"/>
     </GeographicPoint>
     <GeographicPoint rdf:ID="PontoGeoD">
-        <caracterizationMiAmPontoGeo rdf:resource="#MicroAmbD"/>
+        <caracterizationMiAmPontoGeo rdf:resource="#microambd"/>
     </GeographicPoint>
     <ColetaporParcelas rdf:ID="porParcelas"/>
     <owl:Class rdf:ID="Povoado">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#Comun"/>
-        <owl:disjointWith rdf:resource="#ConservationUnit"/>
-        <owl:disjointWith rdf:resource="#Settlement"/>
-        <owl:disjointWith rdf:resource="#Villag"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#comun"/>
+        <owl:disjointWith rdf:resource="#conservationunit"/>
+        <owl:disjointWith rdf:resource="#settlement"/>
+        <owl:disjointWith rdf:resource="#villag"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="pressaoAtmosferica">
-        <rdfs:domain rdf:resource="#Environ"/>
+        <rdfs:domain rdf:resource="#environ"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="PrimaryForestEnvironment">
-        <rdfs:subClassOf rdf:resource="#ForestEnvironmet"/>
-        <owl:disjointWith rdf:resource="#SecondaryForestEnviron"/>
+        <rdfs:subClassOf rdf:resource="#forestenvironmet"/>
+        <owl:disjointWith rdf:resource="#secondaryforestenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="PrivateArea">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#UnionArea"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#unionarea"/>
     </owl:Class>
     <owl:Class rdf:ID="Pupa">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#larva"/>
         <owl:disjointWith rdf:resource="#young"/>
     </owl:Class>
     <owl:Class rdf:ID="Rainy">
-        <rdfs:subClassOf rdf:resource="#ClimaticCondit"/>
-        <owl:disjointWith rdf:resource="#Cloudi"/>
-        <owl:disjointWith rdf:resource="#Sunni"/>
+        <rdfs:subClassOf rdf:resource="#climaticcondit"/>
+        <owl:disjointWith rdf:resource="#cloudi"/>
+        <owl:disjointWith rdf:resource="#sunni"/>
     </owl:Class>
     <owl:Class rdf:ID="RandomCollect">
-        <rdfs:subClassOf rdf:resource="#TypeCollect"/>
-        <owl:disjointWith rdf:resource="#ColetaporParcela"/>
+        <rdfs:subClassOf rdf:resource="#typecollect"/>
+        <owl:disjointWith rdf:resource="#coletaporparcela"/>
     </owl:Class>
     <owl:Class rdf:ID="RapidsEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <NetCollect rdf:ID="Rede"/>
     <AmazonRegion rdf:ID="RegiaoFitoAmazonica"/>
@@ -4257,371 +4257,371 @@
     <AraucariasRegion rdf:ID="RegiaoFitodeAraucarias"/>
     <CaatingaRegion rdf:ID="RegiaoFitodeCaatinga"/>
     <owl:ObjectProperty rdf:ID="RelacaoEntbioEstvid">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
-        <rdfs:range rdf:resource="#StageLif"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
+        <rdfs:range rdf:resource="#stagelif"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="RelacaoEntbioSexo">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
-        <rdfs:range rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
+        <rdfs:range rdf:resource="#sex"/>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="Researcher">
-        <rdfs:subClassOf rdf:resource="#Person"/>
-        <owl:disjointWith rdf:resource="#Classifi"/>
-        <owl:disjointWith rdf:resource="#CollectParticip"/>
+        <rdfs:subClassOf rdf:resource="#person"/>
+        <owl:disjointWith rdf:resource="#classifi"/>
+        <owl:disjointWith rdf:resource="#collectparticip"/>
     </owl:Class>
     <owl:Class rdf:ID="ResearcherParticipant">
-        <rdfs:subClassOf rdf:resource="#CollectParticip"/>
-        <owl:disjointWith rdf:resource="#CollectAssist"/>
+        <rdfs:subClassOf rdf:resource="#collectparticip"/>
+        <owl:disjointWith rdf:resource="#collectassist"/>
     </owl:Class>
     <CollectResponsible rdf:ID="ResponsavelA"/>
     <CollectResponsible rdf:ID="ResponsavelB"/>
     <CollectResponsible rdf:ID="ResponsavelC"/>
     <CollectResponsible rdf:ID="ResponsavelD"/>
     <County rdf:ID="Rio">
-        <spatiallyConteinedInMunEst rdf:resource="#RJ"/>
+        <spatiallyConteinedInMunEst rdf:resource="#rj"/>
     </County>
     <owl:Class rdf:ID="RiverEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <State rdf:ID="RJ">
-        <spatiallyConteinedInEstPais rdf:resource="#Brasil"/>
+        <spatiallyConteinedInEstPais rdf:resource="#brasil"/>
     </State>
     <owl:Class rdf:ID="RockBottomEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Rocky">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Clayli"/>
-        <owl:disjointWith rdf:resource="#Humus"/>
-        <owl:disjointWith rdf:resource="#Hydromorph"/>
-        <owl:disjointWith rdf:resource="#Litolit"/>
-        <owl:disjointWith rdf:resource="#Sandi"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#clayli"/>
+        <owl:disjointWith rdf:resource="#humus"/>
+        <owl:disjointWith rdf:resource="#hydromorph"/>
+        <owl:disjointWith rdf:resource="#litolit"/>
+        <owl:disjointWith rdf:resource="#sandi"/>
     </owl:Class>
     <owl:Class rdf:ID="SalineWater">
-        <rdfs:subClassOf rdf:resource="#TypeWat"/>
-        <owl:disjointWith rdf:resource="#BrakishWat"/>
-        <owl:disjointWith rdf:resource="#SweetWat"/>
+        <rdfs:subClassOf rdf:resource="#typewat"/>
+        <owl:disjointWith rdf:resource="#brakishwat"/>
+        <owl:disjointWith rdf:resource="#sweetwat"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="salinidade">
-        <rdfs:domain rdf:resource="#Water"/>
+        <rdfs:domain rdf:resource="#water"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="SandbankVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="Sandy">
-        <rdfs:subClassOf rdf:resource="#TypedeSoil"/>
-        <owl:disjointWith rdf:resource="#Clayli"/>
-        <owl:disjointWith rdf:resource="#Humus"/>
-        <owl:disjointWith rdf:resource="#Hydromorph"/>
-        <owl:disjointWith rdf:resource="#Litolit"/>
-        <owl:disjointWith rdf:resource="#Rocki"/>
+        <rdfs:subClassOf rdf:resource="#typedesoil"/>
+        <owl:disjointWith rdf:resource="#clayli"/>
+        <owl:disjointWith rdf:resource="#humus"/>
+        <owl:disjointWith rdf:resource="#hydromorph"/>
+        <owl:disjointWith rdf:resource="#litolit"/>
+        <owl:disjointWith rdf:resource="#rocki"/>
     </owl:Class>
     <owl:Class rdf:ID="SavannahRegion">
-        <rdfs:subClassOf rdf:resource="#PhitophysiognomicRegion"/>
-        <owl:disjointWith rdf:resource="#AmazonRegion"/>
-        <owl:disjointWith rdf:resource="#AraucariasRegion"/>
-        <owl:disjointWith rdf:resource="#CaatingaRegion"/>
-        <owl:disjointWith rdf:resource="#CocaisRegion"/>
-        <owl:disjointWith rdf:resource="#FieldRegion"/>
-        <owl:disjointWith rdf:resource="#LitoralRegion"/>
-        <owl:disjointWith rdf:resource="#MataAtlanticaRegion"/>
-        <owl:disjointWith rdf:resource="#PantanalRegion"/>
+        <rdfs:subClassOf rdf:resource="#phitophysiognomicregion"/>
+        <owl:disjointWith rdf:resource="#amazonregion"/>
+        <owl:disjointWith rdf:resource="#araucariasregion"/>
+        <owl:disjointWith rdf:resource="#caatingaregion"/>
+        <owl:disjointWith rdf:resource="#cocaisregion"/>
+        <owl:disjointWith rdf:resource="#fieldregion"/>
+        <owl:disjointWith rdf:resource="#litoralregion"/>
+        <owl:disjointWith rdf:resource="#mataatlanticaregion"/>
+        <owl:disjointWith rdf:resource="#pantanalregion"/>
     </owl:Class>
     <owl:Class rdf:ID="SavannahVegetation">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#VegetacaoMata"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#vegetacaomata"/>
     </owl:Class>
     <owl:Class rdf:ID="SeaEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="SecondaryForestEnvironment">
-        <rdfs:subClassOf rdf:resource="#ForestEnvironmet"/>
-        <owl:disjointWith rdf:resource="#PrimaryForestEnviron"/>
+        <rdfs:subClassOf rdf:resource="#forestenvironmet"/>
+        <owl:disjointWith rdf:resource="#primaryforestenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="SemiArid">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Equatori"/>
-        <owl:disjointWith rdf:resource="#Humid"/>
-        <owl:disjointWith rdf:resource="#SemiHumid"/>
-        <owl:disjointWith rdf:resource="#Temper"/>
-        <owl:disjointWith rdf:resource="#Tropic"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#equatori"/>
+        <owl:disjointWith rdf:resource="#humid"/>
+        <owl:disjointWith rdf:resource="#semihumid"/>
+        <owl:disjointWith rdf:resource="#temper"/>
+        <owl:disjointWith rdf:resource="#tropic"/>
     </owl:Class>
     <owl:Class rdf:ID="SemiHumid">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Equatori"/>
-        <owl:disjointWith rdf:resource="#Humid"/>
-        <owl:disjointWith rdf:resource="#SemiArid"/>
-        <owl:disjointWith rdf:resource="#Temper"/>
-        <owl:disjointWith rdf:resource="#Tropic"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#equatori"/>
+        <owl:disjointWith rdf:resource="#humid"/>
+        <owl:disjointWith rdf:resource="#semiarid"/>
+        <owl:disjointWith rdf:resource="#temper"/>
+        <owl:disjointWith rdf:resource="#tropic"/>
     </owl:Class>
     <owl:Class rdf:ID="Settlement">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#Comun"/>
-        <owl:disjointWith rdf:resource="#ConservationUnit"/>
-        <owl:disjointWith rdf:resource="#Povoado"/>
-        <owl:disjointWith rdf:resource="#Villag"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#comun"/>
+        <owl:disjointWith rdf:resource="#conservationunit"/>
+        <owl:disjointWith rdf:resource="#povoado"/>
+        <owl:disjointWith rdf:resource="#villag"/>
     </owl:Class>
     <owl:Class rdf:ID="Sex">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="siglaInstituicao">
-        <rdfs:domain rdf:resource="#InstitutionResearch"/>
+        <rdfs:domain rdf:resource="#institutionresearch"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="size">
-        <rdfs:domain rdf:resource="#BioticEnt"/>
+        <rdfs:domain rdf:resource="#bioticent"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="SocialPolicyRegionType">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:Class rdf:ID="Soil">
-        <rdfs:subClassOf rdf:resource="#AbioticEnt"/>
-        <owl:disjointWith rdf:resource="#Air"/>
-        <owl:disjointWith rdf:resource="#Water"/>
+        <rdfs:subClassOf rdf:resource="#abioticent"/>
+        <owl:disjointWith rdf:resource="#air"/>
+        <owl:disjointWith rdf:resource="#water"/>
     </owl:Class>
     <State rdf:ID="SP">
-        <spatiallyConteinedInEstPais rdf:resource="#Brasil"/>
+        <spatiallyConteinedInEstPais rdf:resource="#brasil"/>
     </State>
     <owl:Class rdf:ID="SpatialLocation"/>
     <owl:ObjectProperty rdf:ID="spatiallyContainedIn">
-        <rdfs:domain rdf:resource="#GeographicalSpac"/>
+        <rdfs:domain rdf:resource="#geographicalspac"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="#spatiallyContainedIn"/>
-                <owl:someValuesFrom rdf:resource="#GeographicalSpac"/>
+                <owl:onProperty rdf:resource="#spatiallycontainedin"/>
+                <owl:someValuesFrom rdf:resource="#geographicalspac"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="spatiallyConteinedInEstPais">
-        <rdfs:domain rdf:resource="#State"/>
-        <rdfs:range rdf:resource="#Countri"/>
+        <rdfs:domain rdf:resource="#state"/>
+        <rdfs:range rdf:resource="#countri"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="spatiallyConteinedInLocalidadeMun">
-        <rdfs:domain rdf:resource="#Local"/>
-        <rdfs:range rdf:resource="#Counti"/>
+        <rdfs:domain rdf:resource="#local"/>
+        <rdfs:range rdf:resource="#counti"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="spatiallyConteinedInMunEst">
-        <rdfs:domain rdf:resource="#Counti"/>
-        <rdfs:range rdf:resource="#State"/>
+        <rdfs:domain rdf:resource="#counti"/>
+        <rdfs:range rdf:resource="#state"/>
     </owl:ObjectProperty>
     <owl:Class rdf:ID="Species">
-        <rdfs:subClassOf rdf:resource="#Taxon"/>
-        <owl:disjointWith rdf:resource="#Famili"/>
-        <owl:disjointWith rdf:resource="#Genus"/>
+        <rdfs:subClassOf rdf:resource="#taxon"/>
+        <owl:disjointWith rdf:resource="#famili"/>
+        <owl:disjointWith rdf:resource="#genus"/>
     </owl:Class>
     <owl:Class rdf:ID="StageLife">
-        <rdfs:subClassOf rdf:resource="#BioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#bioticent"/>
     </owl:Class>
     <owl:Class rdf:ID="State">
-        <rdfs:subClassOf rdf:resource="#PoliticSocialRegion"/>
-        <owl:disjointWith rdf:resource="#Countri"/>
-        <owl:disjointWith rdf:resource="#Counti"/>
-        <owl:disjointWith rdf:resource="#Local"/>
+        <rdfs:subClassOf rdf:resource="#politicsocialregion"/>
+        <owl:disjointWith rdf:resource="#countri"/>
+        <owl:disjointWith rdf:resource="#counti"/>
+        <owl:disjointWith rdf:resource="#local"/>
     </owl:Class>
     <owl:Class rdf:ID="StateLand">
-        <rdfs:subClassOf rdf:resource="#UnionArea"/>
-        <owl:disjointWith rdf:resource="#CountyLand"/>
-        <owl:disjointWith rdf:resource="#FederalLand"/>
-        <owl:disjointWith rdf:resource="#IndianLand"/>
+        <rdfs:subClassOf rdf:resource="#unionarea"/>
+        <owl:disjointWith rdf:resource="#countyland"/>
+        <owl:disjointWith rdf:resource="#federalland"/>
+        <owl:disjointWith rdf:resource="#indianland"/>
     </owl:Class>
     <owl:ObjectProperty rdf:ID="subkindOfEspGen">
-        <rdfs:domain rdf:resource="#Genus"/>
-        <rdfs:range rdf:resource="#Speci"/>
+        <rdfs:domain rdf:resource="#genus"/>
+        <rdfs:range rdf:resource="#speci"/>
     </owl:ObjectProperty>
     <owl:ObjectProperty rdf:ID="subkindOfGenFam">
-        <rdfs:domain rdf:resource="#Famili"/>
-        <rdfs:range rdf:resource="#Genus"/>
+        <rdfs:domain rdf:resource="#famili"/>
+        <rdfs:range rdf:resource="#genus"/>
     </owl:ObjectProperty>
     <Classifier rdf:ID="Suelem"/>
     <owl:Class rdf:ID="Sunny">
-        <rdfs:subClassOf rdf:resource="#ClimaticCondit"/>
-        <owl:disjointWith rdf:resource="#Cloudi"/>
-        <owl:disjointWith rdf:resource="#Raini"/>
+        <rdfs:subClassOf rdf:resource="#climaticcondit"/>
+        <owl:disjointWith rdf:resource="#cloudi"/>
+        <owl:disjointWith rdf:resource="#raini"/>
     </owl:Class>
     <owl:Class rdf:ID="SwampEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="SweetWater">
-        <rdfs:subClassOf rdf:resource="#TypeWat"/>
-        <owl:disjointWith rdf:resource="#BrakishWat"/>
-        <owl:disjointWith rdf:resource="#SalineWat"/>
+        <rdfs:subClassOf rdf:resource="#typewat"/>
+        <owl:disjointWith rdf:resource="#brakishwat"/>
+        <owl:disjointWith rdf:resource="#salinewat"/>
     </owl:Class>
     <owl:Class rdf:ID="Taxon">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="Temperate">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Equatori"/>
-        <owl:disjointWith rdf:resource="#Humid"/>
-        <owl:disjointWith rdf:resource="#SemiArid"/>
-        <owl:disjointWith rdf:resource="#SemiHumid"/>
-        <owl:disjointWith rdf:resource="#Tropic"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#equatori"/>
+        <owl:disjointWith rdf:resource="#humid"/>
+        <owl:disjointWith rdf:resource="#semiarid"/>
+        <owl:disjointWith rdf:resource="#semihumid"/>
+        <owl:disjointWith rdf:resource="#tropic"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="temperaturaAgua">
-        <rdfs:domain rdf:resource="#Water"/>
+        <rdfs:domain rdf:resource="#water"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="temperaturaAr">
-        <rdfs:domain rdf:resource="#Air"/>
+        <rdfs:domain rdf:resource="#air"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="teperaturaSolo">
-        <rdfs:domain rdf:resource="#Soil"/>
+        <rdfs:domain rdf:resource="#soil"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="TipodeRegiaoFitofisionomica">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:Class rdf:ID="Tool">
-        <rdfs:subClassOf rdf:resource="#CollectTool"/>
+        <rdfs:subClassOf rdf:resource="#collecttool"/>
     </owl:Class>
     <owl:Class rdf:ID="TrapCollect">
-        <rdfs:subClassOf rdf:resource="#InstrumentedCollect"/>
+        <rdfs:subClassOf rdf:resource="#instrumentedcollect"/>
     </owl:Class>
     <owl:Class rdf:ID="Tropical">
-        <rdfs:subClassOf rdf:resource="#ClimaticRegion"/>
-        <owl:disjointWith rdf:resource="#Equatori"/>
-        <owl:disjointWith rdf:resource="#Humid"/>
-        <owl:disjointWith rdf:resource="#SemiArid"/>
-        <owl:disjointWith rdf:resource="#SemiHumid"/>
-        <owl:disjointWith rdf:resource="#Temper"/>
+        <rdfs:subClassOf rdf:resource="#climaticregion"/>
+        <owl:disjointWith rdf:resource="#equatori"/>
+        <owl:disjointWith rdf:resource="#humid"/>
+        <owl:disjointWith rdf:resource="#semiarid"/>
+        <owl:disjointWith rdf:resource="#semihumid"/>
+        <owl:disjointWith rdf:resource="#temper"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeBiome">
-        <rdfs:subClassOf rdf:resource="#MacroEcosystem"/>
+        <rdfs:subClassOf rdf:resource="#macroecosystem"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeClimaticRegion">
-        <rdfs:subClassOf rdf:resource="#GeographicalSpac"/>
+        <rdfs:subClassOf rdf:resource="#geographicalspac"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeCollect"/>
     <owl:Class rdf:ID="TypedeSoil">
-        <rdfs:subClassOf rdf:resource="#AbioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#abioticent"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeEcosystem"/>
     <owl:Class rdf:ID="TypeLocality">
-        <rdfs:subClassOf rdf:resource="#PoliticSocialRegion"/>
+        <rdfs:subClassOf rdf:resource="#politicsocialregion"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeMacroEnvironment">
-        <rdfs:subClassOf rdf:resource="#Environ"/>
+        <rdfs:subClassOf rdf:resource="#environ"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeMicroEnvironment">
-        <rdfs:subClassOf rdf:resource="#Environ"/>
+        <rdfs:subClassOf rdf:resource="#environ"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeVegetation">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="TypeWater">
-        <rdfs:subClassOf rdf:resource="#AbioticEnt"/>
+        <rdfs:subClassOf rdf:resource="#abioticent"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="umidadeAr">
-        <rdfs:domain rdf:resource="#Air"/>
+        <rdfs:domain rdf:resource="#air"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:DatatypeProperty rdf:ID="undetermined">
-        <rdfs:domain rdf:resource="#Sex"/>
+        <rdfs:domain rdf:resource="#sex"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="UnionArea">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#PrivateArea"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#privatearea"/>
     </owl:Class>
     <owl:Class rdf:ID="UrbanEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <CollectResponsibleInstitution rdf:ID="USP"/>
     <owl:Class rdf:ID="VacantLand">
-        <rdfs:subClassOf rdf:resource="#FederalLand"/>
-        <owl:disjointWith rdf:resource="#FederalArea"/>
+        <rdfs:subClassOf rdf:resource="#federalland"/>
+        <owl:disjointWith rdf:resource="#federalarea"/>
     </owl:Class>
     <ForestVegetation rdf:ID="VegCaatinga">
-        <localizationInEntMatLocEspa rdf:resource="#LocaldeColetaA"/>
+        <localizationInEntMatLocEspa rdf:resource="#localdecoletaa"/>
     </ForestVegetation>
     <FieldVagetation rdf:ID="VegCampo">
-        <localizationInEntMatLocEspa rdf:resource="#LocaldeColetaB"/>
+        <localizationInEntMatLocEspa rdf:resource="#localdecoletab"/>
     </FieldVagetation>
     <CapoeiraVegetation rdf:ID="VegCapoeira">
-        <localizationInEntMatLocEspa rdf:resource="#LocaldeColetaC"/>
+        <localizationInEntMatLocEspa rdf:resource="#localdecoletac"/>
     </CapoeiraVegetation>
     <SavannahVegetation rdf:ID="VegCerrado">
-        <localizationInEntMatLocEspa rdf:resource="#LocaldeColetaD"/>
+        <localizationInEntMatLocEspa rdf:resource="#localdecoletad"/>
     </SavannahVegetation>
     <owl:Class rdf:ID="VegetacaoMata">
-        <rdfs:subClassOf rdf:resource="#TypeVeget"/>
-        <owl:disjointWith rdf:resource="#CapoeiraVeget"/>
-        <owl:disjointWith rdf:resource="#FieldVaget"/>
-        <owl:disjointWith rdf:resource="#ForestVeget"/>
-        <owl:disjointWith rdf:resource="#IgapoVeget"/>
-        <owl:disjointWith rdf:resource="#LowLandVeget"/>
-        <owl:disjointWith rdf:resource="#SandbankVeget"/>
-        <owl:disjointWith rdf:resource="#SavannahVeget"/>
+        <rdfs:subClassOf rdf:resource="#typeveget"/>
+        <owl:disjointWith rdf:resource="#capoeiraveget"/>
+        <owl:disjointWith rdf:resource="#fieldvaget"/>
+        <owl:disjointWith rdf:resource="#forestveget"/>
+        <owl:disjointWith rdf:resource="#igapoveget"/>
+        <owl:disjointWith rdf:resource="#lowlandveget"/>
+        <owl:disjointWith rdf:resource="#sandbankveget"/>
+        <owl:disjointWith rdf:resource="#savannahveget"/>
     </owl:Class>
     <owl:Class rdf:ID="Vegetation">
-        <rdfs:subClassOf rdf:resource="#MaterialEnt"/>
+        <rdfs:subClassOf rdf:resource="#materialent"/>
     </owl:Class>
     <owl:Class rdf:ID="VegetationEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:DatatypeProperty rdf:ID="velocidadeAr">
-        <rdfs:domain rdf:resource="#Air"/>
+        <rdfs:domain rdf:resource="#air"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     <owl:Class rdf:ID="Village">
-        <rdfs:subClassOf rdf:resource="#TypeLoc"/>
-        <owl:disjointWith rdf:resource="#Comun"/>
-        <owl:disjointWith rdf:resource="#ConservationUnit"/>
-        <owl:disjointWith rdf:resource="#Povoado"/>
-        <owl:disjointWith rdf:resource="#Settlement"/>
+        <rdfs:subClassOf rdf:resource="#typeloc"/>
+        <owl:disjointWith rdf:resource="#comun"/>
+        <owl:disjointWith rdf:resource="#conservationunit"/>
+        <owl:disjointWith rdf:resource="#povoado"/>
+        <owl:disjointWith rdf:resource="#settlement"/>
     </owl:Class>
     <owl:Class rdf:ID="VinculoInstitucional"/>
     <owl:Class rdf:ID="WaningMoon">
-        <rdfs:subClassOf rdf:resource="#MoonPhas"/>
-        <owl:disjointWith rdf:resource="#CrescentMoon"/>
-        <owl:disjointWith rdf:resource="#FullMoon"/>
-        <owl:disjointWith rdf:resource="#NewMoon"/>
+        <rdfs:subClassOf rdf:resource="#moonpha"/>
+        <owl:disjointWith rdf:resource="#crescentmoon"/>
+        <owl:disjointWith rdf:resource="#fullmoon"/>
+        <owl:disjointWith rdf:resource="#newmoon"/>
     </owl:Class>
     <owl:Class rdf:ID="Water">
-        <rdfs:subClassOf rdf:resource="#AbioticEnt"/>
-        <owl:disjointWith rdf:resource="#Air"/>
-        <owl:disjointWith rdf:resource="#Soil"/>
+        <rdfs:subClassOf rdf:resource="#abioticent"/>
+        <owl:disjointWith rdf:resource="#air"/>
+        <owl:disjointWith rdf:resource="#soil"/>
     </owl:Class>
     <owl:Class rdf:ID="WhiteWater">
-        <rdfs:subClassOf rdf:resource="#SweetWat"/>
-        <owl:disjointWith rdf:resource="#CleanWat"/>
-        <owl:disjointWith rdf:resource="#DarkWat"/>
+        <rdfs:subClassOf rdf:resource="#sweetwat"/>
+        <owl:disjointWith rdf:resource="#cleanwat"/>
+        <owl:disjointWith rdf:resource="#darkwat"/>
     </owl:Class>
     <owl:Class rdf:ID="WoodDebrisEnvironment">
-        <rdfs:subClassOf rdf:resource="#TypeMacroEnviron"/>
+        <rdfs:subClassOf rdf:resource="#typemacroenviron"/>
     </owl:Class>
     <owl:Class rdf:ID="Young">
-        <rdfs:subClassOf rdf:resource="#StageLif"/>
-        <owl:disjointWith rdf:resource="#Adult"/>
-        <owl:disjointWith rdf:resource="#Egg"/>
-        <owl:disjointWith rdf:resource="#Embryo"/>
-        <owl:disjointWith rdf:resource="#Indetermin"/>
-        <owl:disjointWith rdf:resource="#Larva"/>
-        <owl:disjointWith rdf:resource="#Pupa"/>
+        <rdfs:subClassOf rdf:resource="#stagelif"/>
+        <owl:disjointWith rdf:resource="#adult"/>
+        <owl:disjointWith rdf:resource="#egg"/>
+        <owl:disjointWith rdf:resource="#embryo"/>
+        <owl:disjointWith rdf:resource="#indetermin"/>
+        <owl:disjointWith rdf:resource="#larva"/>
+        <owl:disjointWith rdf:resource="#pupa"/>
     </owl:Class>
     <owl:Class rdf:ID="ZonasCosteiras">
-        <rdfs:subClassOf rdf:resource="#Biom"/>
-        <owl:disjointWith rdf:resource="#Amazonia"/>
-        <owl:disjointWith rdf:resource="#Caatinga"/>
-        <owl:disjointWith rdf:resource="#Cerrado"/>
-        <owl:disjointWith rdf:resource="#MataAtlantica"/>
-        <owl:disjointWith rdf:resource="#Pantan"/>
+        <rdfs:subClassOf rdf:resource="#biom"/>
+        <owl:disjointWith rdf:resource="#amazonia"/>
+        <owl:disjointWith rdf:resource="#caatinga"/>
+        <owl:disjointWith rdf:resource="#cerrado"/>
+        <owl:disjointWith rdf:resource="#mataatlantica"/>
+        <owl:disjointWith rdf:resource="#pantan"/>
     </owl:Class>
 </rdf:RDF>
 

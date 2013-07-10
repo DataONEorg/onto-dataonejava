@@ -47,137 +47,137 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#ColdFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#coldfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&proc;#Cool" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&proc;#cool" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Any nonoccluded front, or portion thereof, that moves so that the colder air replaces the warmer air; that is, the leading edge of a relatively cold air mass.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dam">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#dam">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:allValuesFrom rdf:resource="&orog;#Orographi" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:allValuesFrom rdf:resource="&orog;#orographi" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Drylin">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#drylin">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A low-level mesoscale boundary or transition zone hundreds of kilometers in length and up to tens of kilometers in width separating dry air from moist air.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Front">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
-    <rdfs:subClassOf rdf:resource="&math;#Discontinu"/>
+  <owl:Class rdf:about="#front">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
+    <rdfs:subClassOf rdf:resource="&math;#discontinu"/>
     <rdfs:comment>In meteorology, generally, the interface or transition zone between two air masses of different density</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FrontRegion">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#frontregion">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#componentOf" />
-        <owl:allValuesFrom rdf:resource="#Front" />
+        <owl:onProperty rdf:resource="&screla;#componentof" />
+        <owl:allValuesFrom rdf:resource="#front" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MediterraneanFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#mediterraneanfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A front that forms in the low pressure zone that covers the Mediterranean between the cold air over Europe and the warm air over the Sahara.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MeiyuFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#meiyufront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">(Also called baiu front). A quasi-persistent, nearly stationary, east?west-oriented weak baroclinic zone in the lower troposphere that typically stretches from the east China coast, across Taiwan, and eastward into the Pacific, south of Japan. The term ?mei-yu? is the Chinese expression for ?plum rains.? The mei-yu front generally occurs from mid- to late spring through early to midsummer. This low-level baroclinic zone typically lies beneath a confluent jet entrance region aloft situated downstream of the Tibetan Plateau. The mei-yu/baiu front is very significant in the weather and climate of southeast Asia as it serves as the focus for persistent heavy convective rainfall associated with mesoscale convective complexes (MCCs) or mesoscale convective systems (MCSs) that propagate eastward along the baroclinic zone. The moisture source is typically the South China Sea and sometimes the Bay of Bengal. The usual lifting mechanism is low-level warm-air advection in association with a low-level jet on the equatorward flank of the baroclinic zone. Deep ascent and resulting organized MCCs/MCSs are especially favored when the low-level warm-air advection is situated beneath the favorable equatorward jet entrance region aloft.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FrontalLift">
-    <rdfs:subClassOf rdf:resource="&inst;#Lift" />
+  <owl:Class rdf:about="#frontallift">
+    <rdfs:subClassOf rdf:resource="&inst;#lift" />
     <rdfs:comment xml:lang="en">The forced ascent of the warmer, less dense air at and near a front, occurring whenever the relative velocities of the two air masses are such that they converge at the front.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#KataFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#katafront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A front (usually a cold front) at which the warm air descends the frontal surface (except, presumably, in the lowest layers).</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#KatabaticFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#katabaticfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">Frontal surface above which air is descending.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#OccludedFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#occludedfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A front that forms as a cyclone moves deeper into colder air.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#OutflowBoundari">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#outflowboundari">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A surface boundary formed by the horizontal spreading of thunderstorm-cooled air.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Seclus">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#seclus">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A special (and rare) case of the process of occlusion, where the point at which the cold front first overtakes the warm front (or quasi-stationary front) is at some distance from the apex of the wave cyclone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#WarmFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#warmfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&proc;#Heat" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&proc;#heat" />
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="#ColdFront" />
+    <owl:disjointWith rdf:resource="#coldfront" />
     <rdfs:label>Warm Front</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#WarmSector">
-    <rdfs:subClassOf rdf:resource="#FrontRegion" />
+  <owl:Class rdf:about="#warmsector">
+    <rdfs:subClassOf rdf:resource="#frontregion" />
     <rdfs:comment xml:lang="en">That area, within the circulation of a wave cyclone, where the warm air is found.  Traditionally, it lies between the cold front and warm front of the storm; in the typical case, the warm sector continually diminishes in size and ultimately disappears (at the surface) as the result of occlusion.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeaBreezeFront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#seabreezefront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&mwind;#SeaBreez" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&mwind;#seabreez" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The horizontal discontinuity in temperature and humidity that marks the leading edge of the intrusion of cooler, more moist marine air associated with a sea breeze.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FalseWarmSector">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena" />
+  <owl:Class rdf:about="#falsewarmsector">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena" />
     <rdfs:comment xml:lang="en">The sector, in a horizontal plane, between the occluded front and a secondary cold-front of an occluded cyclone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TriplePoint">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#triplepoint">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
     <rdfs:comment xml:lang="en">A junction point within the tropics of three distinct air masses, considered to be an ideal point of origin for a tropical cyclone.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MoistTongu">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena" />
+  <owl:Class rdf:about="#moisttongu">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena" />
     <rdfs:comment xml:lang="en">An extension or protrusion of moist air into a region of lower moisture content. Cloudiness and precipitation are closely related to moist tongues.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TransitionZon">
-    <rdfs:subClassOf rdf:resource="&atmo;#MeteorologicalPhenomena"/>
+  <owl:Class rdf:about="#transitionzon">
+    <rdfs:subClassOf rdf:resource="&atmo;#meteorologicalphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Microfront">
-    <rdfs:subClassOf rdf:resource="#Front" />
+  <owl:Class rdf:about="#microfront">
+    <rdfs:subClassOf rdf:resource="#front" />
     <rdfs:comment xml:lang="en">A sharp horizontal temperature contrast of a few degrees Celsius within a width of tens of centimeters to a few meters along the trailing edge of a thermal plume in the surface layer of the atmospheric boundary layer.</rdfs:comment>
   </owl:Class>
 

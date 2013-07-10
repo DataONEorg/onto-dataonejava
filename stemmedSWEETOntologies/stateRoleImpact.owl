@@ -28,93 +28,93 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <ordi:Impact rdf:about="#Catastroph">
-    <prela:strongerThan rdf:resource="#Strong"/>
-    <prela:strongerThan rdf:resource="#Extreme"/>
+  <ordi:Impact rdf:about="#catastroph">
+    <prela:strongerThan rdf:resource="#strong"/>
+    <prela:strongerThan rdf:resource="#extreme"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Consider">
-    <prela:strongerThan rdf:resource="#Moder"/>
+  <ordi:Impact rdf:about="#consid">
+    <prela:strongerThan rdf:resource="#moder"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Devast">
-    <prela:strongerThan rdf:resource="#Strong"/>
+  <ordi:Impact rdf:about="#devast">
+    <prela:strongerThan rdf:resource="#strong"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Incredibl">
-    <prela:strongerThan rdf:resource="#Devast"/>
+  <ordi:Impact rdf:about="#incredibl">
+    <prela:strongerThan rdf:resource="#devast"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Disast">
-    <prela:strongerThan rdf:resource="#Strong"/>
-    <owl:sameAs rdf:resource="#Disaster"/>
+  <ordi:Impact rdf:about="#disast">
+    <prela:strongerThan rdf:resource="#strong"/>
+    <owl:sameAs rdf:resource="#disast"/>
   </ordi:Impact>
-  <ordi:Impact rdf:about="#Disaster"/>
+  <ordi:Impact rdf:about="#disast"/>
 
-  <ordi:Impact rdf:about="#Gentl">
-  </ordi:Impact>
-
-  <ordi:Impact rdf:about="#Hazard">
+  <ordi:Impact rdf:about="#gentl">
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Minim">
+  <ordi:Impact rdf:about="#hazard">
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Heavi">
-    <prela:strongerThan rdf:resource="#Light"/>
+  <ordi:Impact rdf:about="#minim">
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Massiv">
-    <prela:strongerThan rdf:resource="#Heavi"/>
+  <ordi:Impact rdf:about="#heavi">
+    <prela:strongerThan rdf:resource="#light"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Light">
+  <ordi:Impact rdf:about="#massiv">
+    <prela:strongerThan rdf:resource="#heavi"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Minor">
+  <ordi:Impact rdf:about="#light">
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Major">
-    <prela:strongerThan rdf:resource="#Minor"/>
+  <ordi:Impact rdf:about="#minor">
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Rough">
-    <prela:strongerThan rdf:resource="#Moder"/>
+  <ordi:Impact rdf:about="#major">
+    <prela:strongerThan rdf:resource="#minor"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Strong">
-    <prela:strongerThan rdf:resource="#Moder"/>
+  <ordi:Impact rdf:about="#rough">
+    <prela:strongerThan rdf:resource="#moder"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Extensiv">
-    <prela:strongerThan rdf:resource="#Moder"/>
+  <ordi:Impact rdf:about="#strong">
+    <prela:strongerThan rdf:resource="#moder"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Extreme">
-    <prela:strongerThan rdf:resource="#Extensiv"/>
+  <ordi:Impact rdf:about="#extensiv">
+    <prela:strongerThan rdf:resource="#moder"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Sever">
-    <prela:strongerThan rdf:resource="#Strong"/>
+  <ordi:Impact rdf:about="#extreme">
+    <prela:strongerThan rdf:resource="#extensiv"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Moder">
-    <prela:strongerThan rdf:resource="#Weak"/>
-    <prela:strongerThan rdf:resource="#Minim"/>
+  <ordi:Impact rdf:about="#sever">
+    <prela:strongerThan rdf:resource="#strong"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Signific">
-    <prela:strongerThan rdf:resource="#Moder"/>
+  <ordi:Impact rdf:about="#moder">
+    <prela:strongerThan rdf:resource="#weak"/>
+    <prela:strongerThan rdf:resource="#minim"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Violent">
-    <prela:strongerThan rdf:resource="#Strong"/>
+  <ordi:Impact rdf:about="#signif">
+    <prela:strongerThan rdf:resource="#moder"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Great">
+  <ordi:Impact rdf:about="#violent">
+    <prela:strongerThan rdf:resource="#strong"/>
   </ordi:Impact>
 
-  <ordi:Impact rdf:about="#Weak">
+  <ordi:Impact rdf:about="#great">
+  </ordi:Impact>
+
+  <ordi:Impact rdf:about="#weak">
   </ordi:Impact>
 
 </rdf:RDF>

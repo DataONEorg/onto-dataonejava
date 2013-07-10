@@ -26,205 +26,205 @@
   </owl:Ontology>
 
 <!-- Values -->
-  <ordi:Trust rdf:about="#Acceptabl">
+  <ordi:Trust rdf:about="#acceptabl">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Accurat">
+  <ordi:Trust rdf:about="#accurat">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Analyz">
+  <ordi:Trust rdf:about="#analyz">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Artifact">
+  <ordi:Trust rdf:about="#artifact">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Assess">
+  <ordi:Trust rdf:about="#assess">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Believ">
+  <ordi:Trust rdf:about="#believ">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Certain">
-    <owl:sameAs rdf:resource="#Certainti"/>
+  <ordi:Trust rdf:about="#certain">
+    <owl:sameAs rdf:resource="#certainti"/>
   </ordi:Trust>
-  <ordi:Trust rdf:about="#Certainti"/>
+  <ordi:Trust rdf:about="#certainti"/>
 
-  <ordi:Trust rdf:about="#Confid">
-  </ordi:Trust>
-
-  <ordi:Trust rdf:about="#DeepUncertainti">
-    <owl:differentFrom rdf:resource="#Certainti"/>
+  <ordi:Trust rdf:about="#confid">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Defend">
+  <ordi:Trust rdf:about="#deepuncertainti">
+    <owl:differentFrom rdf:resource="#certainti"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Defend">
+  <ordi:Trust rdf:about="#defend">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Discrep">
+  <ordi:Trust rdf:about="#defend">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Examin">
+  <ordi:Trust rdf:about="#discrep">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Forecast">
+  <ordi:Trust rdf:about="#examin">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Imprecis">
-    <owl:differentFrom rdf:resource="#Precis"/>
+  <ordi:Trust rdf:about="#forecast">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Inaccur">
-    <owl:differentFrom rdf:resource="#Accurat"/>
+  <ordi:Trust rdf:about="#impreci">
+    <owl:differentFrom rdf:resource="#preci"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Irregular">
-    <owl:differentFrom rdf:resource="#Regular"/>
+  <ordi:Trust rdf:about="#inaccur">
+    <owl:differentFrom rdf:resource="#accurat"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Known">
+  <ordi:Trust rdf:about="#irregular">
+    <owl:differentFrom rdf:resource="#regular"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Observ">
+  <ordi:Trust rdf:about="#known">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#PeerReview">
+  <ordi:Trust rdf:about="#observ">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Posterior">
+  <ordi:Trust rdf:about="#peerreview">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Precis">
+  <ordi:Trust rdf:about="#posterior">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Predictive">
-    <owl:sameAs rdf:resource="#Predict"/>
-  </ordi:Trust>
-  <ordi:Trust rdf:about="#Predict"/>
-
-  <ordi:Trust rdf:about="#Prior">
+  <ordi:Trust rdf:about="#preci">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Proven">
+  <ordi:Trust rdf:about="#predict">
+    <owl:sameAs rdf:resource="#predict"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#predict"/>
+
+  <ordi:Trust rdf:about="#prior">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Publish">
+  <ordi:Trust rdf:about="#proven">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Question">
+  <ordi:Trust rdf:about="#publish">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Regular">
+  <ordi:Trust rdf:about="#question">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Reliabl">
+  <ordi:Trust rdf:about="#regular">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Research">
-    <owl:sameAs rdf:resource="#Investig"/>
-  </ordi:Trust>
-  <ordi:Trust rdf:about="#Investig"/>
-
-  <ordi:Trust rdf:about="#Review">
+  <ordi:Trust rdf:about="#reliabl">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Riski">
-    <owl:differentFrom rdf:resource="#Safe"/>
-    <owl:sameAs rdf:resource="#Risk"/>
+  <ordi:Trust rdf:about="#research">
+    <owl:sameAs rdf:resource="#investig"/>
   </ordi:Trust>
-  <ordi:Trust rdf:about="#Risk"/>
+  <ordi:Trust rdf:about="#investig"/>
 
-  <ordi:Trust rdf:about="#Safe">
-  </ordi:Trust>
-
-  <ordi:Trust rdf:about="#Schedul">
+  <ordi:Trust rdf:about="#review">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Spurious">
+  <ordi:Trust rdf:about="#riski">
+    <owl:differentFrom rdf:resource="#safe"/>
+    <owl:sameAs rdf:resource="#risk"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#risk"/>
+
+  <ordi:Trust rdf:about="#safe">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Sure">
+  <ordi:Trust rdf:about="#schedul">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Tenabl">
+  <ordi:Trust rdf:about="#spurious">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Test">
+  <ordi:Trust rdf:about="#sure">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Trust">
-    <owl:sameAs rdf:resource="#Trustworthi"/>
-  </ordi:Trust>
-  <ordi:Trust rdf:about="#Trustworthi"/>
-
-  <ordi:Trust rdf:about="#Unaccept">
-    <owl:differentFrom rdf:resource="#Acceptabl"/>
+  <ordi:Trust rdf:about="#tenabl">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unbeliev">
-    <owl:differentFrom rdf:resource="#Believ"/>
+  <ordi:Trust rdf:about="#test">
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Uncertain">
-    <owl:differentFrom rdf:resource="#Certain"/>
-    <owl:sameAs rdf:resource="#Uncertainti"/>
+  <ordi:trust rdf:about="#trust">
+    <owl:sameAs rdf:resource="#trustworthi"/>
   </ordi:Trust>
-  <ordi:Trust rdf:about="#Uncertainti"/>
+  <ordi:Trust rdf:about="#trustworthi"/>
 
-  <ordi:Trust rdf:about="#Unconfid">
-    <owl:differentFrom rdf:resource="#Confid"/>
-  </ordi:Trust>
-
-  <ordi:Trust rdf:about="#Undefend">
-    <owl:differentFrom rdf:resource="#Defend"/>
+  <ordi:Trust rdf:about="#unaccept">
+    <owl:differentFrom rdf:resource="#acceptabl"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unknown">
-    <owl:differentFrom rdf:resource="#Known"/>
+  <ordi:Trust rdf:about="#unbeliev">
+    <owl:differentFrom rdf:resource="#believ"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unpredict">
-    <owl:differentFrom rdf:resource="#Predict"/>
+  <ordi:Trust rdf:about="#uncertain">
+    <owl:differentFrom rdf:resource="#certain"/>
+    <owl:sameAs rdf:resource="#uncertainti"/>
+  </ordi:Trust>
+  <ordi:Trust rdf:about="#uncertainti"/>
+
+  <ordi:Trust rdf:about="#unconfid">
+    <owl:differentFrom rdf:resource="#confid"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unforecast">
-    <owl:differentFrom rdf:resource="#Forecast"/>
+  <ordi:Trust rdf:about="#undefend">
+    <owl:differentFrom rdf:resource="#defend"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unproven">
-    <owl:differentFrom rdf:resource="#Proven"/>
+  <ordi:Trust rdf:about="#unknown">
+    <owl:differentFrom rdf:resource="#known"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unreliabl">
-    <owl:differentFrom rdf:resource="#Reliabl"/>
+  <ordi:Trust rdf:about="#unpredict">
+    <owl:differentFrom rdf:resource="#predict"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unschedul">
-    <owl:differentFrom rdf:resource="#Schedul"/>
+  <ordi:Trust rdf:about="#unforecast">
+    <owl:differentFrom rdf:resource="#forecast"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Unsure">
-    <owl:differentFrom rdf:resource="#Sure"/>
+  <ordi:Trust rdf:about="#unproven">
+    <owl:differentFrom rdf:resource="#proven"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Untenabl">
-    <owl:differentFrom rdf:resource="#Tenabl"/>
+  <ordi:Trust rdf:about="#unreliabl">
+    <owl:differentFrom rdf:resource="#reliabl"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Untest">
-    <owl:differentFrom rdf:resource="#Test"/>
+  <ordi:Trust rdf:about="#unschedul">
+    <owl:differentFrom rdf:resource="#schedul"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Untrust">
-    <owl:differentFrom rdf:resource="#Trust"/>
+  <ordi:Trust rdf:about="#unsure">
+    <owl:differentFrom rdf:resource="#sure"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Vagu">
-    <owl:differentFrom rdf:resource="#Precis"/>
+  <ordi:Trust rdf:about="#untenabl">
+    <owl:differentFrom rdf:resource="#tenabl"/>
   </ordi:Trust>
 
-  <ordi:Trust rdf:about="#Valid">
+  <ordi:Trust rdf:about="#untest">
+    <owl:differentFrom rdf:resource="#test"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#untrust">
+    <owl:differentFrom rdf:resource="#trust"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#vagu">
+    <owl:differentFrom rdf:resource="#preci"/>
+  </ordi:Trust>
+
+  <ordi:Trust rdf:about="#valid">
   </ordi:Trust>
 
 </rdf:RDF>

@@ -47,257 +47,257 @@
   </owl:Ontology>
 
 <!-- Properties -->
-  <owl:Class rdf:about="#FractionalQuant">
-    <rdfs:subClassOf rdf:resource="&quan;#Quantiti"/>
+  <owl:Class rdf:about="#fractionalqu">
+    <rdfs:subClassOf rdf:resource="&quan;#quantiti"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&units;#normalizedUnit"/>
-        <owl:onProperty rdf:resource="&screla;#hasDefaultUnit"/>
+        <owl:hasValue rdf:resource="&units;#normalizedunit"/>
+        <owl:onProperty rdf:resource="&screla;#hasdefaultunit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Albedo">
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#albedo">
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
      <rdfs:comment>The ratio of reflected flux density to incident flux density, referenced to some surface.</rdfs:comment>
      <rdfs:label>Albedo</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#BondAlbedo">
-    <rdfs:subClassOf rdf:resource="#Albedo"/>
+  <owl:Class rdf:about="#bondalbedo">
+    <rdfs:subClassOf rdf:resource="#albedo"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transpar">
-    <rdfs:subClassOf rdf:resource="&quan;#RadiationMediumInteractionQuant"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#transpar">
+    <rdfs:subClassOf rdf:resource="&quan;#radiationmediuminteractionqu"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Absorptanc">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#absorptanc">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reflect">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#reflect">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
     <rdfs:comment xml:lang="en">A general term referring to the radiation reflected from, or scattered back through, a given surface in response to radiation incident on the surface with the same wavelength or wavelength range.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Absorptiv">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#absorptiv">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Reflect">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#reflect">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Refract">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#refract">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Transmitt">
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#transmitt">
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CloudCov">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#cloudcov">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Efficienc">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#efficienc">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FPAR">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-     <owl:equivalentClass rdf:resource="#FractionPhotosyntheticActiveRadi" />
+  <owl:Class rdf:about="#fpar">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+     <owl:equivalentClass rdf:resource="#fractionphotosyntheticactiveradi" />
   </owl:Class>
-  <owl:Class rdf:about="#FractionPhotosyntheticActiveRadi"/>
+  <owl:Class rdf:about="#fractionphotosyntheticactiveradi"/>
 
-  <owl:Class rdf:about="#Metal">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Bioavail">
-    <rdfs:subClassOf rdf:resource="&prop;#BiologicalProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#metal">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Poros">
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-    <owl:equivalentClass rdf:resource="#Porous"/>
+  <owl:Class rdf:about="#bioavail">
+    <rdfs:subClassOf rdf:resource="&prop;#biologicalproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#poro">
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+    <owl:equivalentClass rdf:resource="#porous"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#measureOf"/>
-        <owl:allValuesFrom rdf:resource="&solid;#PoreSpac" />
+        <owl:onProperty rdf:resource="&screla;#measureof"/>
+        <owl:allValuesFrom rdf:resource="&solid;#porespac" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#Porous"/>
+  <owl:Class rdf:about="#porous"/>
 
-  <owl:Class rdf:about="#AirSpaceRatio">
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#airspaceratio">
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EffectivePoros">
-    <rdfs:subClassOf rdf:resource="#Poros"/>
+  <owl:Class rdf:about="#effectiveporo">
+    <rdfs:subClassOf rdf:resource="#poro"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MoleConcentr">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-    <owl:equivalentClass rdf:resource="#MolarConcentr"/>
+  <owl:Class rdf:about="#moleconcentr">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+    <owl:equivalentClass rdf:resource="#molarconcentr"/>
   </owl:Class>
-  <owl:Class rdf:about="#MolarConcentr"/>
+  <owl:Class rdf:about="#molarconcentr"/>
 
-  <owl:Class rdf:about="#MoleFract">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#MoleRatio">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#molefract">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MixingRatio">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#moleratio">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#mixingratio">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
     <rdfs:label>Mixing Ratio</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="#MassFract">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#massfract">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VolumeFract">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#volumefract">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VolumeMixingRatio">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#volumemixingratio">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SaturationMixingRatio">
-    <rdfs:subClassOf rdf:resource="#MixingRatio" />
-    <rdfs:subClassOf rdf:resource="&chem;#SaturationProperti"/>
+  <owl:Class rdf:about="#saturationmixingratio">
+    <rdfs:subClassOf rdf:resource="#mixingratio" />
+    <rdfs:subClassOf rdf:resource="&chem;#saturationproperti"/>
     <rdfs:comment xml:lang="en">A thermodynamic function of state; the value of the mixing ratio of saturated air at the given temperature and pressure.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Humid">
-    <rdfs:subClassOf rdf:resource="&chem;#WaterConcentr"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#humid">
+    <rdfs:subClassOf rdf:resource="&chem;#waterconcentr"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
     <rdfs:comment xml:lang="en">1. Generally, some measure of the water vapor content of air. The multiplicity of humidity measures is partly due to different methods of measurement and partly because the conservative measures (mixing ratio, specific humidity) cover an extremely wide dynamic range, as a result of the rapid variation of saturation vapor pressure with temperature. 2. Popularly, same as relative humidity.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#RelativeHumid">
-    <rdfs:subClassOf rdf:resource="#Humid"/>
+  <owl:Class rdf:about="#relativehumid">
+    <rdfs:subClassOf rdf:resource="#humid"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecificHumid">
-    <rdfs:subClassOf rdf:resource="#Humid"/>
+  <owl:Class rdf:about="#specifichumid">
+    <rdfs:subClassOf rdf:resource="#humid"/>
     <rdfs:comment xml:lang="en">In a system of moist air, the (dimensionless) ratio of the mass of water vapor to the total mass of the system.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FieldCapac">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-    <rdfs:subClassOf rdf:resource="&chem;#WaterConcentr"/>
+  <owl:Class rdf:about="#fieldcapac">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+    <rdfs:subClassOf rdf:resource="&chem;#waterconcentr"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CapacityFactor">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#capacityfactor">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Emissiv">
-    <rdfs:subClassOf rdf:resource="&quan;#ElectromagneticRadiationQuant"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-    <owl:equivalentClass rdf:resource="#Emittanc" />
+  <owl:Class rdf:about="#emissiv">
+    <rdfs:subClassOf rdf:resource="&quan;#electromagneticradiationqu"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+    <owl:equivalentClass rdf:resource="#emittanc" />
   </owl:Class>
-  <owl:Class rdf:about="#Emittanc"/>
+  <owl:Class rdf:about="#emittanc"/>
 
-  <owl:Class rdf:about="#WaterHoldingCapac">
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#AvailableWaterCapac">
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#waterholdingcapac">
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DifferentialWaterCapac">
-    <rdfs:subClassOf rdf:resource="&mass;#ConsistenceProperti"/>
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#availablewatercapac">
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DegreeOfIon">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#differentialwatercapac">
+    <rdfs:subClassOf rdf:resource="&mass;#consistenceproperti"/>
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MarketShar">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#degreeofion">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#marketshar">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
 <!-- Probabilities -->
-  <owl:Class rdf:about="#Probabl">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#probabl">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConditionalProb">
-    <rdfs:subClassOf rdf:resource="#Probabl"/>
+  <owl:Class rdf:about="#conditionalprob">
+    <rdfs:subClassOf rdf:resource="#probabl"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasCondit" />
+        <owl:onProperty rdf:resource="&mrela;#hascondit" />
         <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#JointProb">
-    <rdfs:subClassOf rdf:resource="#Probabl"/>
+  <owl:Class rdf:about="#jointprob">
+    <rdfs:subClassOf rdf:resource="#probabl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#pValu">
-    <rdfs:subClassOf rdf:resource="#Probabl"/>
+  <owl:Class rdf:about="#pvalu">
+    <rdfs:subClassOf rdf:resource="#probabl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Likelihood">
-    <rdfs:subClassOf rdf:resource="#FractionalQuant"/>
+  <owl:Class rdf:about="#likelihood">
+    <rdfs:subClassOf rdf:resource="#fractionalqu"/>
   </owl:Class>
 
 <!-- Properties with values -1 to 1 -->
-  <owl:Class rdf:about="#BivariateStatisticalSummari">
-    <rdfs:subClassOf rdf:resource="&prop;#StatisticalSummari"/>
+  <owl:Class rdf:about="#bivariatestatisticalsummari">
+    <rdfs:subClassOf rdf:resource="&prop;#statisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Coher">
-    <rdfs:subClassOf rdf:resource="#BivariateStatisticalSummari"/>
+  <owl:Class rdf:about="#coher">
+    <rdfs:subClassOf rdf:resource="#bivariatestatisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Correl">
-    <rdfs:subClassOf rdf:resource="#BivariateStatisticalSummari"/>
+  <owl:Class rdf:about="#correl">
+    <rdfs:subClassOf rdf:resource="#bivariatestatisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Covari">
-    <rdfs:subClassOf rdf:resource="#BivariateStatisticalSummari"/>
+  <owl:Class rdf:about="#covari">
+    <rdfs:subClassOf rdf:resource="#bivariatestatisticalsummari"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CrossCorrel">
-    <rdfs:subClassOf rdf:resource="#Correl"/>
+  <owl:Class rdf:about="#crosscorrel">
+    <rdfs:subClassOf rdf:resource="#correl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PartialCorrel">
-    <rdfs:subClassOf rdf:resource="#Correl"/>
+  <owl:Class rdf:about="#partialcorrel">
+    <rdfs:subClassOf rdf:resource="#correl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PearsonProductMomentCorrel">
-    <rdfs:subClassOf rdf:resource="#Correl"/>
+  <owl:Class rdf:about="#pearsonproductmomentcorrel">
+    <rdfs:subClassOf rdf:resource="#correl"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RankCorrel">
-    <rdfs:subClassOf rdf:resource="#Correl"/>
+  <owl:Class rdf:about="#rankcorrel">
+    <rdfs:subClassOf rdf:resource="#correl"/>
   </owl:Class>
 
 </rdf:RDF>

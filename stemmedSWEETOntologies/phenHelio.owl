@@ -55,150 +55,150 @@
   <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#GeomagneticStorm">
-    <rdfs:subClassOf rdf:resource="&sys;#Disturb"/>
-    <rdfs:subClassOf rdf:resource="#InterplanetaryPhenomena"/>
-    <rdfs:subClassOf rdf:resource="&phen;#Event"/>
+  <owl:Class rdf:about="#geomagneticstorm">
+    <rdfs:subClassOf rdf:resource="&sys;#disturb"/>
+    <rdfs:subClassOf rdf:resource="#interplanetaryphenomena"/>
+    <rdfs:subClassOf rdf:resource="&phen;#event"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#SpaceWeath"/>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+        <owl:allValuesFrom rdf:resource="#spaceweath"/>
+        <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment>A geomagnetic storm is a temporary disturbance of the Earths magnetosphere caused by a disturbance in space weather. Associated with solar coronal mass ejections (CME), coronal holes, or solar flares, a geomagnetic storm is caused by a solar wind shock wave which typically strikes the Earths magnetic field 24 to 36 hours after the event. This only happens if the shock wave travels in a direction toward Earth. The solar wind pressure on the magnetosphere will increase or decrease depending on the Sun's activity. These solar wind pressure changes modify the electric currents in the ionosphere.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#HeliosphericPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#heliosphericphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#InterplanetaryPhenomena">
-    <rdfs:subClassOf rdf:resource="&phen;#Phenomena"/>
+  <owl:Class rdf:about="#interplanetaryphenomena">
+    <rdfs:subClassOf rdf:resource="&phen;#phenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#InterplanetaryShock">
-    <rdfs:subClassOf rdf:resource="#InterplanetaryPhenomena"/>
+  <owl:Class rdf:about="#interplanetaryshock">
+    <rdfs:subClassOf rdf:resource="#interplanetaryphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagneticStorm">
-    <owl:equivalentClass rdf:resource="#GeomagneticStorm"/>
+  <owl:Class rdf:about="#magneticstorm">
+    <owl:equivalentClass rdf:resource="#geomagneticstorm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#MagnetopauseCross">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena"/>
+  <owl:Class rdf:about="#magnetopausecross">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ProtonPrecipit">
-    <rdfs:subClassOf rdf:resource="#GeomagneticStorm" />
-    <rdfs:subClassOf rdf:resource="&phen;#Precipit" />
+  <owl:Class rdf:about="#protonprecipit">
+    <rdfs:subClassOf rdf:resource="#geomagneticstorm" />
+    <rdfs:subClassOf rdf:resource="&phen;#precipit" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SchumannReson">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena"/>
+  <owl:Class rdf:about="#schumannreson">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarParticleEv">
-    <rdfs:subClassOf rdf:resource="#GeomagneticStorm" />
+  <owl:Class rdf:about="#solarparticleev">
+    <rdfs:subClassOf rdf:resource="#geomagneticstorm" />
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarWindExtrem">
-    <rdfs:subClassOf rdf:resource="#InterplanetaryPhenomena"/>
+  <owl:Class rdf:about="#solarwindextrem">
+    <rdfs:subClassOf rdf:resource="#interplanetaryphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarWind">
-     <rdfs:subClassOf rdf:resource="&star;#StellarWind"/>
+  <owl:Class rdf:about="#solarwind">
+     <rdfs:subClassOf rdf:resource="&star;#stellarwind"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&prela;#hasAstronomicalBodi" />
-        <owl:hasValue rdf:resource="&star;#Sun" />
+        <owl:onProperty rdf:resource="&prela;#hasastronomicalbodi" />
+        <owl:hasValue rdf:resource="&star;#sun" />
       </owl:Restriction>
     </rdfs:subClassOf>
      <rdfs:comment>The solar wind is a stream of charged particles (i.e., a plasma) which are ejected from the upper atmosphere of the sun. It consists mostly of high-energy electrons and protons (about 1 keV) that are able to escape the sun's gravity in part because of the high temperature of the corona and the high kinetic energy particles gain through a process that is not well understood at this time.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpaceWeath">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena"/>
+  <owl:Class rdf:about="#spaceweath">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena"/>
     <rdfs:comment>Space weather is the concept of changing environmental conditions in outer space. It is distinct from the concept of weather within a planetary atmosphere, and generally deals with the interactions of ambient radiation and matter within interplanetary, and occasionally interstellar space. Space weather describes the conditions in space that affect Earth and its technological systems. Our space weather is a consequence of the behavior of the sun, the nature of Earth's magnetic field, and our location in the solar system.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Substorm">
-    <rdfs:subClassOf rdf:resource="#InterplanetaryPhenomena"/>
+  <owl:Class rdf:about="#substorm">
+    <rdfs:subClassOf rdf:resource="#interplanetaryphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SunEarthInteract">
-    <rdfs:subClassOf rdf:resource="&sys;#Interact"/>
+  <owl:Class rdf:about="#sunearthinteract">
+    <rdfs:subClassOf rdf:resource="&sys;#interact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasEffect" />
-        <owl:hasValue rdf:resource="&planet;#Earth" />
+        <owl:onProperty rdf:resource="&screla;#haseffect" />
+        <owl:hasValue rdf:resource="&planet;#earth" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasCaus" />
-        <owl:hasValue rdf:resource="&star;#Sun" />
+        <owl:onProperty rdf:resource="&screla;#hascaus" />
+        <owl:hasValue rdf:resource="&star;#sun" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Geomagnet">
-    <rdfs:subClassOf rdf:resource="&pproc;#Magnet"/>
+  <owl:Class rdf:about="#geomagnet">
+    <rdfs:subClassOf rdf:resource="&pproc;#magnet"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TelluricCurr">
-    <rdfs:subClassOf rdf:resource="&pproc;#ElectricCurr"/>
+  <owl:Class rdf:about="#telluriccurr">
+    <rdfs:subClassOf rdf:resource="&pproc;#electriccurr"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BowShock">
-    <rdfs:subClassOf rdf:resource="#BowShockCross" />
+  <owl:Class rdf:about="#bowshock">
+    <rdfs:subClassOf rdf:resource="#bowshockcross" />
     <rdfs:comment xml:lang="en">The bow shock is a discontinuity that forms in the solar wind when the supersonic solar wind encounters the magnetic field of a planet, very similar to the shock wave that forms upstream of an aircraft moving at a supersonic speed.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Heliosheath">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena" />
+  <owl:Class rdf:about="#heliosheath">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#BowShockCross">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena" />
+  <owl:Class rdf:about="#bowshockcross">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#MagnetopauseCross">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena" />
+  <owl:Class rdf:about="#magnetopausecross">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Magnetosheath">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena" />
+  <owl:Class rdf:about="#magnetosheath">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Magnetotail">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena" />
+  <owl:Class rdf:about="#magnetotail">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena" />
   </owl:Class>
 
 <!-- Aurora -->
-  <owl:Class rdf:about="#Airglow">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLightEmiss"/>
+  <owl:Class rdf:about="#airglow">
+    <rdfs:subClassOf rdf:resource="#atmosphericlightemiss"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AtmosphericLightEmiss">
-    <rdfs:subClassOf rdf:resource="#HeliosphericPhenomena"/>
+  <owl:Class rdf:about="#atmosphericlightemiss">
+    <rdfs:subClassOf rdf:resource="#heliosphericphenomena"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&waves;#Emission" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&waves;#emission" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aurora">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLightEmiss"/>
+  <owl:Class rdf:about="#aurora">
+    <rdfs:subClassOf rdf:resource="#atmosphericlightemiss"/>
     <rdfs:comment xml:lang="en">The sporadic radiant emission from the upper atmosphere over the middle and high latitudes
     </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#AuroralSubstorm">
-    <rdfs:subClassOf rdf:resource="#AtmosphericLightEmiss"/>
-    <owl:equivalentClass rdf:resource="#MagneticSubstorm"/>
+  <owl:Class rdf:about="#auroralsubstorm">
+    <rdfs:subClassOf rdf:resource="#atmosphericlightemiss"/>
+    <owl:equivalentClass rdf:resource="#magneticsubstorm"/>
   </owl:Class>
-  <owl:Class rdf:about="#MagneticSubstorm"/>
+  <owl:Class rdf:about="#magneticsubstorm"/>
 
 </rdf:RDF>

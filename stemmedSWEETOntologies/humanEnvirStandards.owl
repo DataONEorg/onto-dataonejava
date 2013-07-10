@@ -36,139 +36,139 @@
      <owl:imports rdf:resource="&root;propMass.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#AcceptableDailyIntak">
-    <rdfs:subClassOf rdf:resource="#AcceptableLevel"/>
-    <owl:equivalentClass rdf:resource="#ADI"/>
+  <owl:Class rdf:about="#acceptabledailyintak">
+    <rdfs:subClassOf rdf:resource="#acceptablelevel"/>
+    <owl:equivalentClass rdf:resource="#adi"/>
   </owl:Class>
-  <owl:Class rdf:about="#ADI"/>
+  <owl:Class rdf:about="#adi"/>
 
-  <owl:Class rdf:about="#AcceptableLevel">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
+  <owl:Class rdf:about="#acceptablelevel">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AirborneToxicControlMeasur">
+  <owl:Class rdf:about="#airbornetoxiccontrolmeasur">
     <rdfs:subClassOf rdf:resource="&con;EnvironmentalControlStrategy"/>
-    <owl:equivalentClass rdf:resource="#ATCM"/>
+    <owl:equivalentClass rdf:resource="#atcm"/>
   </owl:Class>
-  <owl:Class rdf:about="#ATCM"/>
+  <owl:Class rdf:about="#atcm"/>
 
-  <owl:Class rdf:about="#AirQualityStandard">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
+  <owl:Class rdf:about="#airqualitystandard">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AmbientAirQualityStandard">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
-    <owl:equivalentClass rdf:resource="#AAQS"/>
+  <owl:Class rdf:about="#ambientairqualitystandard">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
+    <owl:equivalentClass rdf:resource="#aaqs"/>
   </owl:Class>
-  <owl:Class rdf:about="#AAQS"/>
+  <owl:Class rdf:about="#aaqs"/>
 
-  <owl:Class rdf:about="#EnvironmentalLaw">
+  <owl:Class rdf:about="#environmentallaw">
     <rdfs:subClassOf rdf:resource="&jur;HumanLaw"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalStandard">
+  <owl:Class rdf:about="#environmentalstandard">
     <rdfs:subClassOf rdf:resource="&con;EnvironmentalControlStrategy"/>
     <rdfs:subClassOf rdf:resource="&jur;Standard"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalStandardsBodi">
+  <owl:Class rdf:about="#environmentalstandardsbodi">
     <rdfs:subClassOf rdf:resource="&jur;StandardsBody"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NonAttainmentArea">
+  <owl:Class rdf:about="#nonattainmentarea">
     <rdfs:subClassOf rdf:resource="&land;LandRegion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ReferenceDos">
+  <owl:Class rdf:about="#referencedo">
     <rdfs:subClassOf rdf:resource="&indi;Dose"/>
-    <owl:equivalentClass rdf:resource="#RfD"/>
+    <owl:equivalentClass rdf:resource="#rfd"/>
   </owl:Class>
-  <owl:Class rdf:about="#RfD"/>
+  <owl:Class rdf:about="#rfd"/>
 
-  <owl:Class rdf:about="#ReferenceExposureConcentr">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
-    <owl:equivalentClass rdf:resource="#REC"/>
+  <owl:Class rdf:about="#referenceexposureconcentr">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
+    <owl:equivalentClass rdf:resource="#rec"/>
   </owl:Class>
-  <owl:Class rdf:about="#REC"/>
+  <owl:Class rdf:about="#rec"/>
 
-  <owl:Class rdf:about="#ReferenceExposureLevel">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
-    <owl:equivalentClass rdf:resource="#REL"/>
+  <owl:Class rdf:about="#referenceexposurelevel">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
+    <owl:equivalentClass rdf:resource="#rel"/>
   </owl:Class>
-  <owl:Class rdf:about="#REL"/>
+  <owl:Class rdf:about="#rel"/>
 
-  <owl:Class rdf:about="#WaterQualityStandard">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
+  <owl:Class rdf:about="#waterqualitystandard">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
   </owl:Class>
 
-  <stan:EnvironmentalStandardsBody rdf:about="#EPA">
-    <owl:sameAs rdf:resource="#EnvironmentalProtectionAg" />
+  <stan:EnvironmentalStandardsBody rdf:about="#epa">
+    <owl:sameAs rdf:resource="#environmentalprotectionag" />
   </stan:EnvironmentalStandardsBody>
-  <stan:EnvironmentalStandardsBody rdf:about="#EnvironmentalProtectionAg"/>
+  <stan:EnvironmentalStandardsBody rdf:about="#environmentalprotectionag"/>
 
-  <stan:EnvironmentalStandardsBody rdf:about="#FWS">
-    <owl:sameAs rdf:resource="#FishAndWildlifeServic" />
+  <stan:EnvironmentalStandardsBody rdf:about="#fws">
+    <owl:sameAs rdf:resource="#fishandwildlifeserv" />
   </stan:EnvironmentalStandardsBody>
-  <stan:EnvironmentalStandardsBody rdf:about="#FishAndWildlifeServic"/>
+  <stan:EnvironmentalStandardsBody rdf:about="#fishandwildlifeserv"/>
 
-  <stan:EnvironmentalStandardsBody rdf:about="#NFS">
-    <owl:sameAs rdf:resource="#NationalForestServic" />
+  <stan:EnvironmentalStandardsBody rdf:about="#nfs">
+    <owl:sameAs rdf:resource="#nationalforestserv" />
   </stan:EnvironmentalStandardsBody>
-  <stan:EnvironmentalStandardsBody rdf:about="#NationalForestServic"/>
+  <stan:EnvironmentalStandardsBody rdf:about="#nationalforestserv"/>
 
-  <jur:Treaty rdf:about="#MontrealProtocol"/>
+  <jur:Treaty rdf:about="#montrealprotocol"/>
 
-  <stan:EnvironmentalStandard rdf:about="#NationalEmissionStandardsForHazardousAirPollut">
-    <owl:sameAs rdf:resource="#NESHAP"/>
+  <stan:EnvironmentalStandard rdf:about="#nationalemissionstandardsforhazardousairpollut">
+    <owl:sameAs rdf:resource="#neshap"/>
   </stan:EnvironmentalStandard>
-  <stan:EnvironmentalStandard rdf:about="#NESHAP"/>
+  <stan:EnvironmentalStandard rdf:about="#neshap"/>
 
-  <stan:EnvironmentalLaw rdf:about="#NationalEnvironmentalProtectionAct">
-    <owl:sameAs rdf:resource="#NEPA"/>
+  <stan:EnvironmentalLaw rdf:about="#nationalenvironmentalprotectionact">
+    <owl:sameAs rdf:resource="#nepa"/>
   </stan:EnvironmentalLaw>
-  <stan:EnvironmentalLaw rdf:about="#NEPA"/>
+  <stan:EnvironmentalLaw rdf:about="#nepa"/>
 
-  <stan:EnvironmentalStandard rdf:about="#PollutantStandardsIndex">
-    <owl:sameAs rdf:resource="#PSI"/>
+  <stan:EnvironmentalStandard rdf:about="#pollutantstandardsindex">
+    <owl:sameAs rdf:resource="#psi"/>
   </stan:EnvironmentalStandard>
-  <stan:EnvironmentalStandard rdf:about="#PSI"/>
+  <stan:EnvironmentalStandard rdf:about="#psi"/>
 
-  <stan:EnvironmentalStandard rdf:about="#PreventionOfSignificantDeterior">
-    <owl:sameAs rdf:resource="#PSD"/>
+  <stan:EnvironmentalStandard rdf:about="#preventionofsignificantdeterior">
+    <owl:sameAs rdf:resource="#psd"/>
   </stan:EnvironmentalStandard>
-  <stan:EnvironmentalStandard rdf:about="#PSD"/>
+  <stan:EnvironmentalStandard rdf:about="#psd"/>
 
-  <stan:EnvironmentalLaw rdf:about="#NationalForestManagementAct">
-    <owl:sameAs rdf:resource="#NFMA"/>
+  <stan:EnvironmentalLaw rdf:about="#nationalforestmanagementact">
+    <owl:sameAs rdf:resource="#nfma"/>
   </stan:EnvironmentalLaw>
-  <stan:EnvironmentalLaw rdf:about="#NFMA"/>
+  <stan:EnvironmentalLaw rdf:about="#nfma"/>
 
-  <stan:EnvironmentalLaw rdf:about="#EndangeredSpeciesAct">
+  <stan:EnvironmentalLaw rdf:about="#endangeredspeciesact">
   </stan:EnvironmentalLaw>
 
-  <stan:EnvironmentalLaw rdf:about="#FederalCleanAirAct">
-    <owl:sameAs rdf:resource="#FCAA"/>
+  <stan:EnvironmentalLaw rdf:about="#federalcleanairact">
+    <owl:sameAs rdf:resource="#fcaa"/>
   </stan:EnvironmentalLaw>
-  <stan:EnvironmentalLaw rdf:about="#FCAA"/>
+  <stan:EnvironmentalLaw rdf:about="#fcaa"/>
 
-  <stan:EnvironmentalLaw rdf:about="#MarineLifeManagementAct">
-    <owl:sameAs rdf:resource="#MLMA"/>
+  <stan:EnvironmentalLaw rdf:about="#marinelifemanagementact">
+    <owl:sameAs rdf:resource="#mlma"/>
   </stan:EnvironmentalLaw>
-  <stan:EnvironmentalLaw rdf:about="#MLMA"/>
+  <stan:EnvironmentalLaw rdf:about="#mlma"/>
 
-  <stan:EnvironmentalLaw rdf:about="#ResourceConservationAndRecoveryAct">
-    <owl:sameAs rdf:resource="#RCRA"/>
+  <stan:EnvironmentalLaw rdf:about="#resourceconservationandrecoveryact">
+    <owl:sameAs rdf:resource="#rcra"/>
   </stan:EnvironmentalLaw>
-  <stan:EnvironmentalLaw rdf:about="#RCRA"/>
+  <stan:EnvironmentalLaw rdf:about="#rcra"/>
 
-  <owl:Class rdf:about="#NationalAmbientAirQualityStandard">
-    <rdfs:subClassOf rdf:resource="#AmbientAirQualityStandard"/>
+  <owl:Class rdf:about="#nationalambientairqualitystandard">
+    <rdfs:subClassOf rdf:resource="#ambientairqualitystandard"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NewSourcePerformanceStandard">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalStandard"/>
-    <owl:equivalentClass rdf:resource="#NSPS"/>
+  <owl:Class rdf:about="#newsourceperformancestandard">
+    <rdfs:subClassOf rdf:resource="#environmentalstandard"/>
+    <owl:equivalentClass rdf:resource="#nsps"/>
   </owl:Class>
-  <owl:Class rdf:about="#NSPS"/>
+  <owl:Class rdf:about="#nsps"/>
 
 </rdf:RDF>

@@ -30,105 +30,105 @@
   </owl:Ontology>
 
 <!-- System complexity -->
-  <owl:Class rdf:about="#Feedback">
-    <rdfs:subClassOf rdf:resource="#SelfRegul" />
+  <owl:Class rdf:about="#feedback">
+    <rdfs:subClassOf rdf:resource="#selfregul" />
   </owl:Class>
 
-  <owl:Class rdf:about="#NegativeFeedback">
-    <rdfs:subClassOf rdf:resource="#Feedback" />
+  <owl:Class rdf:about="#negativefeedback">
+    <rdfs:subClassOf rdf:resource="#feedback" />
   </owl:Class>
 
-  <owl:Class rdf:about="#PositiveFeedback">
-    <rdfs:subClassOf rdf:resource="#Feedback" />
-    <owl:disjointWith rdf:resource="#NegativeFeedback"/>
+  <owl:Class rdf:about="#positivefeedback">
+    <rdfs:subClassOf rdf:resource="#feedback" />
+    <owl:disjointWith rdf:resource="#negativefeedback"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SelfRegul">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemPhenomena"/>
+  <owl:Class rdf:about="#selfregul">
+    <rdfs:subClassOf rdf:resource="&sys;#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Resili">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemPhenomena"/>
+  <owl:Class rdf:about="#resili">
+    <rdfs:subClassOf rdf:resource="&sys;#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Emergent">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
-    <owl:equivalentClass rdf:resource="#Emergenc"/>
-    <owl:equivalentClass rdf:resource="#EmergentPhenomenon"/>
+  <owl:Class rdf:about="#emergent">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
+    <owl:equivalentClass rdf:resource="#emergenc"/>
+    <owl:equivalentClass rdf:resource="#emergentphenomenon"/>
   </owl:Class>
-  <owl:Class rdf:about="#Emergenc"/>
-  <owl:Class rdf:about="#EmergentPhenomenon"/>
+  <owl:Class rdf:about="#emergenc"/>
+  <owl:Class rdf:about="#emergentphenomenon"/>
 
-  <owl:Class rdf:about="#Shock">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
-    <rdfs:subClassOf rdf:resource="&math;#Discontinu" />
-  </owl:Class>
-
-  <owl:Class rdf:about="#Transform">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
-    <owl:equivalentClass rdf:resource="#Transform"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Transform"/>
-
-  <owl:Class rdf:about="#Cascad">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemPhenomena"/>
+  <owl:Class rdf:about="#shock">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
+    <rdfs:subClassOf rdf:resource="&math;#discontinu" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Synergi">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemPhenomena"/>
+  <owl:Class rdf:about="#transform">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
+    <owl:equivalentClass rdf:resource="#transform"/>
+  </owl:Class>
+  <owl:Class rdf:about="#transform"/>
+
+  <owl:Class rdf:about="#cascad">
+    <rdfs:subClassOf rdf:resource="&sys;#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Develop">
-    <rdfs:subClassOf rdf:resource="#Evolut"/>
+  <owl:Class rdf:about="#synergi">
+    <rdfs:subClassOf rdf:resource="&sys;#systemphenomena"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SystemDynam">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemPhenomena" />
+  <owl:Class rdf:about="#develop">
+    <rdfs:subClassOf rdf:resource="#evolut"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#systemdynam">
+    <rdfs:subClassOf rdf:resource="&sys;#systemphenomena" />
     <rdfs:comment>System dynamics is an approach to understanding the behaviour of complex systems over time. It deals with internal feedback loops and time delays that affect the behaviour of the entire system. What makes using system dynamics different from other approaches to studying complex systems is the use of feedback loops and stocks and flows. These elements help describe how even seemingly simple systems display baffling nonlinearity </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Pattern">
-    <rdfs:subClassOf rdf:resource="&sys;#Trend"/>
+  <owl:Class rdf:about="#pattern">
+    <rdfs:subClassOf rdf:resource="&sys;#trend"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Signatur">
-    <rdfs:subClassOf rdf:resource="#Pattern"/>
+  <owl:Class rdf:about="#signatur">
+    <rdfs:subClassOf rdf:resource="#pattern"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ErrorPropag">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#errorpropag">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Matur">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#matur">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
   
-  <owl:Class rdf:about="#Recharg">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#recharg">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decoupl">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#decoupl">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dissip">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#dissip">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Decay">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#decay">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Evolut">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#evolut">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fluctuat">
-    <rdfs:subClassOf rdf:resource="&sys;#Variat"/>
+  <owl:Class rdf:about="#fluctuat">
+    <rdfs:subClassOf rdf:resource="&sys;#variat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Collaps">
-    <rdfs:subClassOf rdf:resource="&sys;#SystemStateChang"/>
+  <owl:Class rdf:about="#collap">
+    <rdfs:subClassOf rdf:resource="&sys;#systemstatechang"/>
   </owl:Class>
 
 </rdf:RDF>

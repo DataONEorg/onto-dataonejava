@@ -34,99 +34,99 @@
      <owl:imports rdf:resource="&hydro;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Anthracite">
-    <rdfs:subClassOf rdf:resource="#Coal"/>
+  <owl:Class rdf:about="#anthracit">
+    <rdfs:subClassOf rdf:resource="#coal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Bituminous">
-    <rdfs:subClassOf rdf:resource="#Coal"/>
+  <owl:Class rdf:about="#bitumin">
+    <rdfs:subClassOf rdf:resource="#coal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Coal">
-    <rdfs:subClassOf rdf:resource="#FossilFuel"/>
+  <owl:Class rdf:about="#coal">
+    <rdfs:subClassOf rdf:resource="#fossilfuel"/>
     <rdfs:comment xml:lang="en">Coal is a readily combustible black or brownish-black sedimentary rock. The harder forms, such as anthracite coal, can be regarded as metamorphic rock because of later exposure to elevated temperature and pressure. It is composed primarily of carbon along with variable quantities of other elements, chiefly sulfur, hydrogen, oxygen and nitrogen. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CoralDeposit">
-    <rdfs:subClassOf rdf:resource="#Deposit"/>
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#coraldeposit">
+    <rdfs:subClassOf rdf:resource="#deposit"/>
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Deposit">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
+  <owl:Class rdf:about="#deposit">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
     <rdfs:comment xml:lang="en">Deposition is the geological process by which material is added to a landform or land mass. Fluids such as wind and water, as well as sediment gravity flows, transport previously eroded sediment, which, at the loss of enough kinetic energy in the fluid, is deposited, building up layers of sediment. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#FiniteResource">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#finiteresourc">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FossilFuel">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#fossilfuel">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
     <rdfs:comment xml:lang="en">Fossil fuels or mineral fuels are fuels formed by the natural resources such as anaerobic decomposition of buried dead organisms that lived up to 300 million years ago. These fuels contain high percentage of carbon and hydrocarbons. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Lignite">
-    <rdfs:subClassOf rdf:resource="#Coal"/>
+  <owl:Class rdf:about="#lignit">
+    <rdfs:subClassOf rdf:resource="#coal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NaturalGas">
-    <rdfs:subClassOf rdf:resource="#FossilFuel"/>
+  <owl:Class rdf:about="#naturalga">
+    <rdfs:subClassOf rdf:resource="#fossilfuel"/>
     <rdfs:comment xml:lang="en">Natural gas is a gas consisting primarily of methane. It is found associated with fossil fuels, in coal beds, as methane clathrates, and is created by methanogenic organisms in marshes, bogs, and landfills. It is an important fuel source, a major feedstock for fertilizers, and a potent greenhouse gas. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#NaturalResource">
-    <rdfs:subClassOf rdf:resource="&comp;#Compound"/>
+  <owl:Class rdf:about="#naturalresourc">
+    <rdfs:subClassOf rdf:resource="&comp;#compound"/>
     <rdfs:comment xml:lang="en">Natural resources (economically referred to as land or raw materials) are naturally forming substances that are considered valuable in their relatively unmodified (natural) form.  [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Oil">
-    <rdfs:subClassOf rdf:resource="#FossilFuel"/>
+  <owl:Class rdf:about="#oil">
+    <rdfs:subClassOf rdf:resource="#fossilfuel"/>
     <rdfs:comment xml:lang="en">An oil is a substance that is in a viscous liquid statel ("oily") at ambient temperatures or slightly warmer, and is both hydrophobic (immiscible with water) and lipophilic (miscible with other oils, literally). This generag definition includes compound classes with otherwise unrelated chemical structures, properties, and uses, including vegetable oils, resochemical oils, and volatile essential oils. Oil is a nonpolar substance. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#OilShale">
-    <rdfs:subClassOf rdf:resource="#Oil"/>
+  <owl:Class rdf:about="#oilshal">
+    <rdfs:subClassOf rdf:resource="#oil"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ore">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#ore">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Petroleum">
-    <rdfs:subClassOf rdf:resource="#Oil"/>
-    <owl:equivalentClass rdf:resource="#CrudeOil"/>
+  <owl:Class rdf:about="#petroleum">
+    <rdfs:subClassOf rdf:resource="#oil"/>
+    <owl:equivalentClass rdf:resource="#crudeoil"/>
     <rdfs:comment xml:lang="en">Petroleum  or crude oil is a naturally occurring, flammable liquid found in rock formations in the Earth consisting of a complex mixture of hydrocarbons of various molecular weights, plus other organic compounds. [Wikipedia]</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#CrudeOil"/>
+  <owl:Class rdf:about="#crudeoil"/>
 
-  <owl:Class rdf:about="#SubBituminous">
-    <rdfs:subClassOf rdf:resource="#Coal"/>
+  <owl:Class rdf:about="#subbitumin">
+    <rdfs:subClassOf rdf:resource="#coal"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#LandResource">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#landresourc">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:someValuesFrom rdf:resource="&realm;#Land" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:someValuesFrom rdf:resource="&realm;#land" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#WaterResource">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
+  <owl:Class rdf:about="#waterresourc">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRealm" />
-        <owl:someValuesFrom rdf:resource="&hydro;#BodyOfWater" />
+        <owl:onProperty rdf:resource="&rela;#hasrealm" />
+        <owl:someValuesFrom rdf:resource="&hydro;#bodyofwat" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#RenewableResource">
-    <rdfs:subClassOf rdf:resource="#NaturalResource"/>
-    <owl:disjointWith rdf:resource="#FiniteResource"/>
+  <owl:Class rdf:about="#renewableresourc">
+    <rdfs:subClassOf rdf:resource="#naturalresourc"/>
+    <owl:disjointWith rdf:resource="#finiteresourc"/>
   </owl:Class>
 
 </rdf:RDF>

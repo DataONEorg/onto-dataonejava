@@ -47,106 +47,106 @@
   </owl:Ontology>
 
 <!-- Phenomena -->
-  <owl:Class rdf:about="#Explosion">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
+  <owl:Class rdf:about="#explosion">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:hasValue rdf:resource="&impa;#Hazard" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:hasValue rdf:resource="&impa;#hazard" />
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasPhenomena" />
-        <owl:allValuesFrom rdf:resource="&noise;#Nois" />
+        <owl:onProperty rdf:resource="&rela;#hasphenomena" />
+        <owl:allValuesFrom rdf:resource="&noise;#noi" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fire">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
+  <owl:Class rdf:about="#fire">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:hasValue rdf:resource="&impa;#Hazard" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:hasValue rdf:resource="&impa;#hazard" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Flare">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
-    <owl:equivalentClass rdf:resource="#Flare"/>
+  <owl:Class rdf:about="#flare">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
+    <owl:equivalentClass rdf:resource="#flare"/>
   </owl:Class>
-  <owl:Class rdf:about="#Flare"/>
+  <owl:Class rdf:about="#flare"/>
 
-  <owl:Class rdf:about="#FluidLeak">
-    <rdfs:subClassOf rdf:resource="#Leak"/>
+  <owl:Class rdf:about="#fluidleak">
+    <rdfs:subClassOf rdf:resource="#leak"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GasFlar">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
+  <owl:Class rdf:about="#gasflar">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasImpact" />
-        <owl:hasValue rdf:resource="&impa;#Hazard" />
+        <owl:onProperty rdf:resource="&screla;#hasimpact" />
+        <owl:hasValue rdf:resource="&impa;#hazard" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#GasLeak">
-    <rdfs:subClassOf rdf:resource="#Leak"/>
+  <owl:Class rdf:about="#gasleak">
+    <rdfs:subClassOf rdf:resource="#leak"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Emission">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
+  <owl:Class rdf:about="#emission">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasRol" />
-        <owl:hasValue rdf:resource="&role;#ByProduct" />
+        <owl:onProperty rdf:resource="&rela;#hasrol" />
+        <owl:hasValue rdf:resource="&role;#byproduct" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Eruption">
-    <rdfs:subClassOf rdf:resource="#Releas"/>
+  <owl:Class rdf:about="#eruption">
+    <rdfs:subClassOf rdf:resource="#relea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Activat">
-    <rdfs:subClassOf rdf:resource="&cproc;#ChemicalReact"/>
+  <owl:Class rdf:about="#activat">
+    <rdfs:subClassOf rdf:resource="&cproc;#chemicalreact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#IndustrialEmiss">
-    <rdfs:subClassOf rdf:resource="#Emission"/>
+  <owl:Class rdf:about="#industrialemiss">
+    <rdfs:subClassOf rdf:resource="#emission"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Leak">
-    <rdfs:subClassOf rdf:resource="#Releas"/>
+  <owl:Class rdf:about="#leak">
+    <rdfs:subClassOf rdf:resource="#relea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Leach">
-    <rdfs:subClassOf rdf:resource="#Releas"/>
+  <owl:Class rdf:about="#leach">
+    <rdfs:subClassOf rdf:resource="#relea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Releas">
-    <rdfs:subClassOf rdf:resource="#Emission"/>
+  <owl:Class rdf:about="#relea">
+    <rdfs:subClassOf rdf:resource="#emission"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#BiochemicalReleas">
-    <rdfs:subClassOf rdf:resource="#Releas"/>
+  <owl:Class rdf:about="#biochemicalrelea">
+    <rdfs:subClassOf rdf:resource="#relea"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#RadioactivityReleas">
-    <rdfs:subClassOf rdf:resource="#Releas"/>
+  <owl:Class rdf:about="#radioactivityrelea">
+    <rdfs:subClassOf rdf:resource="#relea"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst" />
-        <owl:allValuesFrom rdf:resource="&isot;#RadioactiveSubst" />
+        <owl:onProperty rdf:resource="&crela;#hassubst" />
+        <owl:allValuesFrom rdf:resource="&isot;#radioactivesubst" />
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wildfir">
-    <rdfs:subClassOf rdf:resource="#Fire"/>
+  <owl:Class rdf:about="#wildfir">
+    <rdfs:subClassOf rdf:resource="#fire"/>
   </owl:Class>
 
 </rdf:RDF>

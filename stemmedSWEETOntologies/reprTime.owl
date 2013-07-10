@@ -41,7 +41,7 @@
      <owl:imports rdf:resource="&root;realmRegion.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Time">
+  <owl:Class rdf:about="#time">
     <rdfs:subClassOf rdf:resource="&repr;Dimension"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -52,60 +52,60 @@
     <rdfs:comment xml:lang="en">This concept is of time as an independent variable</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#TimeFram">
+  <owl:Class rdf:about="#timefram">
     <rdfs:subClassOf rdf:resource="&repr;ReferenceFrame"/>
-    <rdfs:subClassOf rdf:resource="#Time"/>
+    <rdfs:subClassOf rdf:resource="#time"/>
   </owl:Class>
   
-  <time:TimeFrame rdf:about="#Sider">
+  <time:TimeFrame rdf:about="#sider">
   </time:TimeFrame>
 
-  <time:TimeFrame rdf:about="#Synod">
+  <time:TimeFrame rdf:about="#synod">
   </time:TimeFrame>
 
-  <time:TimeZone rdf:about="#UniversalTim">
-    <owl:sameAs rdf:resource="#UT"/>
+  <time:TimeZone rdf:about="#universaltim">
+    <owl:sameAs rdf:resource="#ut"/>
   </time:TimeZone>
-  <time:TimeZone rdf:about="#UT"/>
+  <time:TimeZone rdf:about="#ut"/>
 
-  <owl:Class rdf:about="#LocalTim">
-    <rdfs:subClassOf rdf:resource="#TimeZon"/>
+  <owl:Class rdf:about="#localtim">
+    <rdfs:subClassOf rdf:resource="#timezon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SolarTim">
-    <rdfs:subClassOf rdf:resource="#LocalTim"/>
+  <owl:Class rdf:about="#solartim">
+    <rdfs:subClassOf rdf:resource="#localtim"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Local">
-    <rdfs:subClassOf rdf:resource="#LocalTim"/>
+  <owl:Class rdf:about="#local">
+    <rdfs:subClassOf rdf:resource="#localtim"/>
   </owl:Class>
 
 <!-- owl-time extensions -->
   <owl:Class rdf:about="&owlt;TemporalEntity">
-    <rdfs:subClassOf rdf:resource="#Time"/>
+    <rdfs:subClassOf rdf:resource="#time"/>
   </owl:Class>
   <owl:Class rdf:about="&owlt;Instant">
-    <rdfs:subClassOf rdf:resource="#Time"/>
+    <rdfs:subClassOf rdf:resource="#time"/>
     <rdfs:subClassOf rdf:resource="&math;Point"/>
   </owl:Class>
 
 <!-- Repeats of OWL-Time -->
-  <owl:Class rdf:about="#Durat">
-    <owl:equivalentClass rdf:resource="#TemporalEnt"/>
+  <owl:Class rdf:about="#durat">
+    <owl:equivalentClass rdf:resource="#temporalent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemporalEnt">
+  <owl:Class rdf:about="#temporalent">
     <rdfs:subClassOf rdf:resource="&math;NumericalEntity"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#TemporalRefer">
-    <rdfs:subClassOf rdf:resource="#TemporalEnt"/>
-    <owl:equivalentClass rdf:resource="#TimeRefer"/>
+  <owl:Class rdf:about="#temporalref">
+    <rdfs:subClassOf rdf:resource="#temporalent"/>
+    <owl:equivalentClass rdf:resource="#timeref"/>
   </owl:Class>
-  <owl:Class rdf:about="#TimeRefer"/>
+  <owl:Class rdf:about="#timeref"/>
 
-  <owl:Class rdf:about="#TimeZon">
-    <rdfs:subClassOf rdf:resource="#TemporalRefer"/>
+  <owl:Class rdf:about="#timezon">
+    <rdfs:subClassOf rdf:resource="#temporalref"/>
   </owl:Class>
 
 </rdf:RDF>

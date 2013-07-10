@@ -38,183 +38,183 @@
 
 <!-- Classes -->
 
-  <owl:Class rdf:about="#AdministrativeRegion">
-    <rdfs:subClassOf rdf:resource="&space;#Region"/>
-    <rdfs:subClassOf rdf:resource="#Jurisdict"/>
+  <owl:Class rdf:about="#administrativeregion">
+    <rdfs:subClassOf rdf:resource="&space;#region"/>
+    <rdfs:subClassOf rdf:resource="#jurisdict"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Citi">
-    <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#citi">
+    <rdfs:subClassOf rdf:resource="#administrativeregion"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#State"/>
+        <owl:allValuesFrom rdf:resource="#state"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Civil">
-    <rdfs:subClassOf rdf:resource="#Jurisdict"/>
-    <owl:equivalentClass rdf:resource="#Civilian"/>
+  <owl:Class rdf:about="#civil">
+    <rdfs:subClassOf rdf:resource="#jurisdict"/>
+    <owl:equivalentClass rdf:resource="#civilian"/>
   </owl:Class>
-  <owl:Class rdf:about="#Civilian"/>
+  <owl:Class rdf:about="#civilian"/>
 
-  <owl:Class rdf:about="#CombinedStatisticalArea">
-   <rdfs:subClassOf rdf:resource="#MetropolitanArea"/>
-    <owl:equivalentClass rdf:resource="#CSA"/>
+  <owl:Class rdf:about="#combinedstatisticalarea">
+   <rdfs:subClassOf rdf:resource="#metropolitanarea"/>
+    <owl:equivalentClass rdf:resource="#csa"/>
   </owl:Class>
-  <owl:Class rdf:about="#CSA"/>
+  <owl:Class rdf:about="#csa"/>
 
-  <owl:Class rdf:about="#Contin">
-    <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Countri">
-    <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#contin">
+    <rdfs:subClassOf rdf:resource="#administrativeregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Counti">
-    <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#countri">
+    <rdfs:subClassOf rdf:resource="#administrativeregion"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#counti">
+    <rdfs:subClassOf rdf:resource="#administrativeregion"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#State"/>
+        <owl:allValuesFrom rdf:resource="#state"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class> 
 
-  <owl:Class rdf:about="#Govern">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#govern">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GoverningBodi">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#governingbodi">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FederalGoverningBodi">
-    <rdfs:subClassOf rdf:resource="#GoverningBodi"/>
-    <owl:equivalentClass rdf:resource="#Feder"/>
+  <owl:Class rdf:about="#federalgoverningbodi">
+    <rdfs:subClassOf rdf:resource="#governingbodi"/>
+    <owl:equivalentClass rdf:resource="#feder"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-       <owl:onProperty rdf:resource="&hrela;#hasJurisdict"/>
-        <owl:allValuesFrom rdf:resource="#Countri"/>
+       <owl:onProperty rdf:resource="&hrela;#hasjurisdict"/>
+        <owl:allValuesFrom rdf:resource="#countri"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#Feder"/>
+  <owl:Class rdf:about="#feder"/>
 
-  <owl:Class rdf:about="#Jurisdict">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#jurisdict">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class> 
 
-  <owl:Class rdf:about="#MetropolitanArea">
-   <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#metropolitanarea">
+   <rdfs:subClassOf rdf:resource="#administrativeregion"/>
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#Countri"/>
+        <owl:allValuesFrom rdf:resource="#countri"/>
       </owl:Restriction>
    </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#MetropolitanStatisticalArea">
-   <rdfs:subClassOf rdf:resource="#MetropolitanArea"/>
-    <owl:equivalentClass rdf:resource="#MSA"/>
+  <owl:Class rdf:about="#metropolitanstatisticalarea">
+   <rdfs:subClassOf rdf:resource="#metropolitanarea"/>
+    <owl:equivalentClass rdf:resource="#msa"/>
   </owl:Class>
-  <owl:Class rdf:about="#MSA"/>
+  <owl:Class rdf:about="#msa"/>
 
-  <owl:Class rdf:about="#Militari">
-    <rdfs:subClassOf rdf:resource="#Jurisdict"/>
-    <owl:disjointWith rdf:resource="#Civil" />
+  <owl:Class rdf:about="#militari">
+    <rdfs:subClassOf rdf:resource="#jurisdict"/>
+    <owl:disjointWith rdf:resource="#civil" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Provinc">
+  <owl:Class rdf:about="#provinc">
     <rdfs:subClassOf>
       <owl:Restriction>
        <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#Countri"/>
+        <owl:allValuesFrom rdf:resource="#countri"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+    <rdfs:subClassOf rdf:resource="#administrativeregion"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StandardsBodi">
-    <rdfs:subClassOf rdf:resource="#GoverningBodi"/>
+  <owl:Class rdf:about="#standardsbodi">
+    <rdfs:subClassOf rdf:resource="#governingbodi"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#State">
-   <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#state">
+   <rdfs:subClassOf rdf:resource="#administrativeregion"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#Countri"/>
+        <owl:allValuesFrom rdf:resource="#countri"/>
       </owl:Restriction>
    </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SpecialAdministrationRegion">
-   <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
-    <owl:equivalentClass rdf:resource="#SAR"/>
+  <owl:Class rdf:about="#specialadministrationregion">
+   <rdfs:subClassOf rdf:resource="#administrativeregion"/>
+    <owl:equivalentClass rdf:resource="#sar"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="&srela;#insid"/>
-        <owl:allValuesFrom rdf:resource="#Countri"/>
+        <owl:allValuesFrom rdf:resource="#countri"/>
       </owl:Restriction>
    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#SAR"/>
+  <owl:Class rdf:about="#sar"/>
 
-  <owl:Class rdf:about="#StandardMetropolitanStatisticalArea">
-   <rdfs:subClassOf rdf:resource="#MetropolitanArea"/>
-    <owl:equivalentClass rdf:resource="#SMSA"/>
+  <owl:Class rdf:about="#standardmetropolitanstatisticalarea">
+   <rdfs:subClassOf rdf:resource="#metropolitanarea"/>
+    <owl:equivalentClass rdf:resource="#smsa"/>
   </owl:Class>
-  <owl:Class rdf:about="#SMSA"/>
+  <owl:Class rdf:about="#smsa"/>
 
-  <owl:Class rdf:about="#UrbanArea">
-   <rdfs:subClassOf rdf:resource="#AdministrativeRegion"/>
+  <owl:Class rdf:about="#urbanarea">
+   <rdfs:subClassOf rdf:resource="#administrativeregion"/>
     <rdfs:comment xml:lang="en">An urban area is an area with an increased density of human-created structures in comparison to the areas surrounding it. This term is at one end of the spectrum of suburban and rural areas. An urban area is more frequently called a city or town. </rdfs:comment>
   </owl:Class>
 
 <!-- Governing tools -->
-  <owl:Class rdf:about="#Penalti">
-    <rdfs:subClassOf rdf:resource="#Enforcement"/>
+  <owl:Class rdf:about="#penalti">
+    <rdfs:subClassOf rdf:resource="#enforcement"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Permit">
-    <rdfs:subClassOf rdf:resource="#GovtActiv"/>
+  <owl:Class rdf:about="#permit">
+    <rdfs:subClassOf rdf:resource="#govtactiv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Polici">
-    <rdfs:subClassOf rdf:resource="#GoverningBodyProduct"/>
+  <owl:Class rdf:about="#polici">
+    <rdfs:subClassOf rdf:resource="#governingbodyproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Regul">
-    <rdfs:subClassOf rdf:resource="#HumanLaw"/>
+  <owl:Class rdf:about="#regul">
+    <rdfs:subClassOf rdf:resource="#humanlaw"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Standard">
-    <rdfs:subClassOf rdf:resource="#GoverningBodyProduct"/>
+  <owl:Class rdf:about="#standard">
+    <rdfs:subClassOf rdf:resource="#governingbodyproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Treati">
-    <rdfs:subClassOf rdf:resource="#HumanLaw"/>
+  <owl:Class rdf:about="#treati">
+    <rdfs:subClassOf rdf:resource="#humanlaw"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HumanLaw">
-    <rdfs:subClassOf rdf:resource="#GoverningBodyProduct"/>
-    <rdfs:subClassOf rdf:resource="&know;#Knowledg"/>
+  <owl:Class rdf:about="#humanlaw">
+    <rdfs:subClassOf rdf:resource="#governingbodyproduct"/>
+    <rdfs:subClassOf rdf:resource="&know;#knowledg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Enforcement">
-    <rdfs:subClassOf rdf:resource="#GovtActiv"/>
+  <owl:Class rdf:about="#enforcement">
+    <rdfs:subClassOf rdf:resource="#govtactiv"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GovtActiv">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#govtactiv">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GoverningBodyProduct">
-    <rdfs:subClassOf rdf:resource="&hum;#HumanAct"/>
+  <owl:Class rdf:about="#governingbodyproduct">
+    <rdfs:subClassOf rdf:resource="&hum;#humanact"/>
   </owl:Class>
 
 </rdf:RDF>

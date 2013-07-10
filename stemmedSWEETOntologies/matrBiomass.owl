@@ -25,79 +25,79 @@ owl:versionInfo="2.3">
   </owl:Ontology>
 
 <!-- Living Things -->
-   <owl:Class rdf:about="#AquaticOrgan">
-      <rdfs:subClassOf rdf:resource="#Organism"/>
+   <owl:Class rdf:about="#aquaticorgan">
+      <rdfs:subClassOf rdf:resource="#organism"/>
    </owl:Class>
 
-  <owl:Class rdf:about="#Biomass">
-    <rdfs:subClassOf rdf:resource="#LivingEnt"/>
+  <owl:Class rdf:about="#biomass">
+    <rdfs:subClassOf rdf:resource="#livingent"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Honey">
-    <rdfs:subClassOf rdf:resource="#Food"/>
+  <owl:Class rdf:about="#honey">
+    <rdfs:subClassOf rdf:resource="#food"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Food">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#food">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Feed">
-    <rdfs:subClassOf rdf:resource="#Food"/>
+  <owl:Class rdf:about="#feed">
+    <rdfs:subClassOf rdf:resource="#food"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fertil">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#fertil">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Litter">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#litter">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Humus">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#humus">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Detritus">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#detritus">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#Organism">
-    <rdfs:subClassOf rdf:resource="#LivingEnt"/>
+   <owl:Class rdf:about="#organism">
+    <rdfs:subClassOf rdf:resource="#livingent"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#LivingEnt">
-    <rdfs:subClassOf rdf:resource="&subs;#Substanc"/>
+   <owl:Class rdf:about="#livingent">
+    <rdfs:subClassOf rdf:resource="&subs;#substanc"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#Speci">
-     <rdfs:subClassOf rdf:resource="#Organism"/>
+   <owl:Class rdf:about="#speci">
+     <rdfs:subClassOf rdf:resource="#organism"/>
   </owl:Class>
 
-   <owl:Class rdf:about="#IndicatorSpeci">
-     <rdfs:subClassOf rdf:resource="#Speci"/>
-     <owl:equivalentClass rdf:resource="#Bioindic" />
+   <owl:Class rdf:about="#indicatorspeci">
+     <rdfs:subClassOf rdf:resource="#speci"/>
+     <owl:equivalentClass rdf:resource="#bioindic" />
      <rdfs:comment>An indicator species is any biological species that defines a trait or characteristic of the environment. For example, a species may delineate an ecoregion or indicate an environmental condition such as a disease outbreak, pollution, species competition or climate change. Indicator species can be among the most sensitive species in a region, acting as an early warning to monitoring biologists.</rdfs:comment>
    </owl:Class>
-   <owl:Class rdf:about="#Bioindic"/>
+   <owl:Class rdf:about="#bioindic"/>
 
-  <owl:Class rdf:about="#Manur">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#manur">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#AnimalWast">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#animalwast">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Gelbstoff">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#gelbstoff">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Wood">
-    <rdfs:subClassOf rdf:resource="#Biomass"/>
+  <owl:Class rdf:about="#wood">
+    <rdfs:subClassOf rdf:resource="#biomass"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WoodDebri">
-    <rdfs:subClassOf rdf:resource="#Wood"/>
+  <owl:Class rdf:about="#wooddebri">
+    <rdfs:subClassOf rdf:resource="#wood"/>
   </owl:Class>
 
 </rdf:RDF>

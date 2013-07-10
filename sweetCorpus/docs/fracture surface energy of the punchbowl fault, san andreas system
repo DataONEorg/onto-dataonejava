@@ -1,0 +1,374 @@
+Vol 437|1 September 2005|doi:10.1038/nature03942
+LETTERS
+Fracture surface energy of the Punchbowl fault,
+San Andreas system
+Judith S. Chester1, Frederick M. Chester1 & Andreas K. Kronenberg1
+Fracture energy is a form of latent heat required to create an
+earthquake rupture surface and is related to parameters governing
+rupture propagation and processes of slip weakening1–3. Fracture
+energy has been estimated from seismological and experimental
+rock deformation data4–8, yet its magnitude, mechanisms of rupture
+surface formation and processes leading to slip weakening are not
+well defined8–10. Here we quantify structural observations of the
+Punchbowl fault, a large-displacement exhumed fault11,12 in the San
+Andreas fault system, and show that the energy required to create
+the fracture surface area in the fault is about 300 times greater than
+seismological estimates would predict for a single large earthquake.
+If fracture energy is attributed entirely to the production of fracture
+surfaces, then all of the fracture surface area in the Punchbowl fault
+could have been produced by earthquake displacements totalling
+<1 km. But this would only account for a small fraction of the total
+energy budget, and therefore additional processes probably con-
+tributed to slip weakening during earthquake rupture.
+Numerous models have been proposed that provide a basis for
+relating the macroscopic energy budget to physical processes of
+earthquake slip10,13. In the commonly used slip-weakening model,
+the elastic strain energy released during an earthquake is partitioned
+between the fracture energy, E G, the frictional heat, E H, and the
+energy radiated as seismic waves, E R (refs 10, 14) (Fig. 1). E H, often
+considered a large component of the total energy budget, does not
+directly influence earthquake rupture dynamics, whereas the relative
+magnitude of E R to E G, expressed by radiation efficiency h R 1⁄4 E R/
+(E R þ E G), plays a fundamental role2,14,15. E G describes the flow of
+energy at rupture tips that is required to form a rupture surface and
+produce a breakdown in strength1,2 (Fig. 1). For small E G (h R 1⁄4 1),
+an earthquake rupture is considered very brittle, rupture speed is
+rapid, and growth is favoured. Currently, the details of energy
+partitioning, the magnitude of each energy term, and whether h R
+varies with earthquake magnitude and tectonic setting are not well
+known13–15.
+Some constraints on E G are provided by laboratory estimates of
+the specific fracture energy, G, defined by G 1⁄4 E G/S, where S is the
+area of the rupture surface10. For a tensile fracture in brittle material,
+G is nearly equivalent to the free-surface energy of the fracture16,17.
+Experiments show that G for shear fracture of intact rock under
+pressures up to 470 MPa is greater than that for tensile cracking, and
+that G increases with normal stress and roughness for frictional
+slip4,5,18. These observations may reflect the formation of microfrac-
+tures and extreme fragmentation associated with the formation of
+shear surfaces4,19–22. Some seismologic data suggest that G increases
+with earthquake size8, qualitatively consistent with scaling relations
+between rupture dimension and extent of associated fracture
+damage22. Yet whether other processes, such as fluid pressurization
+or melt lubrication, also contribute to rupture formation and the
+breakdown in strength is still unknown8–10,23.
+1
+To answer this question, the magnitude of the total free-surface
+energy of fractures produced during an earthquake rupture must be
+determined. It is essential that this estimate should account for the
+fracture surface energy in the broad zone of damage bounding a fault,
+as well as that harboured within the narrow, intensely fragmented
+core2,3,7. Accordingly, we use structural observations of the Punchbowl
+fault zone to quantify the total fracture surface area, S T, which includes
+the surface area of cataclastic particles in the ultracataclasite, S UC, the
+surface area of gouge particles in subsidiary faults of the damage zone,
+S SF, and the surface area of microfractures in the damage zone, S MF
+(Fig. 2). This study provides the first quantification of fracture surface
+area over the entire deformed zone of a mature fault expressed as
+fracture surface area per unit area (in m2) of the macroscopic fault
+surface. The surface area of each component is determined by direct
+observation of fractures and particle sizes, and scaling relations for
+particle size and subsidiary fault length, thickness and density. We use
+S T to calculate the total fracture surface energy and relate this to the G
+of an earthquake. In so doing, we assume that all fracture damage in the
+Punchbowl fault zone was produced during seismic slip12.
+Figure 1 | Simple representation of the energy budget for earthquakes on
+the basis of fault slip-weakening models10,14,15. The upper line bounding
+region E R shows a shear stress drop from initiation of earthquake slip to a
+total slip, d. Frictional, or resistive, strength is shown by the lower line
+bounding region E R. Frictional strength decreases with slip over a
+characteristic displacement, d c, to a residual friction level. For brevity, more
+complex variations in shear stress and resistive strength expected for actual
+earthquake events13,15 are not shown. j o, initial stress; j f, final, frictional
+stress. Details of energy partitioning are model-specific. In general, however,
+the radiated energy, E R, is the difference between the mean shear stress and
+mean resistive strength2,15.
+Center for Tectonophysics, Department of Geology & Geophysics, Texas A&M University, College Station, Texas 77843-3115, USA.
+© 2005 Nature Publishing Group
+133
+LETTERS
+NATURE|Vol 437|1 September 2005
+Figure 2 | Structural model of the Punchbowl fault zone for calculating
+fracture surface area. Domains of damaged rock containing subsidiary
+faults and microfractures are bounded by undeformed host rock. The central
+core of the fault contains an ultracataclasite layer of thickness t. Total fracture
+surface area, ST 1⁄4 SUC þ SSF þ SMF ; is determined within the column of rock
+across the entire fault zone of cross-sectional area APF 1⁄4 1 m2 : Calculations
+assume damage is symmetric about the ultracataclasite layer.
+The Punchbowl fault is a 200-m-thick zone of fractured rock
+containing a core several metres thick of sheared cataclasite and
+ultracataclasite11,12,24. The fault records extreme localization of slip
+similar to other ancient exhumed and active seismic faults12. The
+Punchbowl fault juxtaposes igneous and metamorphic rocks of the
+San Gabriel complex and arkosic sandstones of the Punchbowl
+Formation along a continuous layer of ultracataclasite. Deformation
+is dominantly brittle and the fault is exhumed to a depth of 2–4 km
+(ref. 11). The ultracataclasite layer is 4 cm to 1 m thick, and displays a
+Figure 3 | Particle size of ultracataclasite and subsidiary fault
+cataclasite. a, TEM image of ultracataclasite showing particles 10 to
+200 nm in diameter. b, Measurements of particle density as a function of
+particle diameter, where density is given as number of particles in a class size,
+N(D), divided by area, A. Class sizes from 50–400 nm are imaged using
+TEM25 and from 6–400 mm are imaged optically12. All measurements are
+consistent with a power-law relation with slope of 22. Solid and dashed lines
+show particle size distributions assumed for the fracture surface area
+calculations of ultracataclasite and subsidiary fault cataclasite, respectively.
+134
+relatively planar, continuous surface that served as the principal slip
+surface during the last several kilometres of displacement12. The
+principal slip surface is a layer 1 mm thick of ultracataclasite
+distinguished by uniform birefringence, contains porphyroclasts of
+older ultracataclasite that record reworking, and has at least one
+relatively distinct and planar boundary25. Particles greater than
+10 mm in diameter constitute 28% of the ultracataclasite, the majority
+of which are fragments of microscopic veins11. Transmission electron
+microscopy reveals particles of host rock less than 100 nm in
+diameter25 (Fig. 3). The smallest (4 to 50 nm) particles imaged are
+cataclastic particles or euhedral grains produced by syn- and post-
+faulting reaction. Measurements of particle size in plane section12 are
+consistent with N(D) 1⁄4 cD 2a, where D is particle diameter, N(D) is
+the number of particles for each size bin, and a and c are constants,
+with a 1⁄4 2.0 and c 1⁄4 0.07 (Fig. 3b).
+The total fracture surface area in the ultracataclasite is determined
+assuming spherical particles with a power-law size distribution. Our
+observations indicate that the upper cut-off is 0.1 mm, and we
+assume that particles ,50 nm in diameter follow the same power-
+law distribution to a lower cut-off of 1.6 nm. Using a mean layer
+thickness of 0.3 m and the ratio of surface area to volume for spheres
+(3/r), gives a S UC of 1.3 £ 108 m2 per unit area of the fault surface.
+The total surface area in the 1-mm-thick principal slip surface is
+4.2 £ 105 m2 per unit area. The surface area per unit volume of the
+Punchbowl ultracataclasite is similar to that determined for gouge of
+the San Andreas fault at Tejon Pass26.
+Subsidiary faults of the damage zone are consistent with scaling
+relations between number, length, displacement and thickness of
+brittle faults in crustal rock22,27. Faults typically are metres in length,
+,1 mm thick and display centimetre offsets. Faults up to 1–2 cm
+thick, with 1–2-m offsets, are also present11 (Fig. 4). Linear density,
+P L, of subsidiary faults in the Punchbowl Formation decreases with
+the logarithm of distance from the ultracataclasite (Fig. 4). For the
+entire damage zone, we assume N(L) 1⁄4 cL 2a, where L is fault length,
+N(L) is the number of faults for each length bin, a 1⁄4 1 and c 1⁄4 2,500,
+the ratio of fault displacement to length is 0.01, and the ratio of
+thickness to displacement is 0.005.
+Subsidiary fault gouge is coarser-grained than the ultracataclasite
+(Fig. 3b), and particles 100–200 mm in diameter comprise 25% of the
+total volume. We assume particle size distributions fit N(D) 1⁄4 cD 2a
+with constants a 1⁄4 2.0 and c 1⁄4 0.15, and have an upper cut-off of
+200 mm and lower cut-off of 0.8 mm. Assuming the orientation of
+subsidiary faults is isotropic, such that the surface area is twice P L
+(ref. 28), integrating over the damage zone, and using scaling
+relations for fault thickness and particle size, we calculate a value
+for S SF of 3.3 £ 106 m2 per unit area of the fault surface.
+The linear density of microfractures in the Punchbowl Formation
+decreases with the logarithm of distance from the ultracataclasite to a
+constant, regional density at approximately 100 m (Fig. 4). Integrat-
+ing over the damage zone, assuming microfracture orientations are
+isotropic, and doubling for the two surfaces of a microfracture, gives
+a value for S MF of 2.4 £ 106 m2 per unit fault area.
+The total fracture surface area in the damage zone (S SF þ S MF) is
+less than 10% of that in the ultracataclasite layer, giving a total
+fracture surface area for the entire fault zone, S T, of 1.4 £ 108 m2 per
+unit fault area. Assuming the free-surface energy to be 1 J m22, and
+that the geometric surface area should be increased by about a factor
+of five to account for non-spherical grain shapes and finer-scale
+roughness16,19,26, brings the total fracture surface energy to 7 £ 108 J
+per unit fault area. Fracture surface energy of the millimetres-thick
+principal slip surface is 2 £ 106 J per unit area of the fault surface.
+To estimate the energy required to create fracture surfaces during a
+single earthquake, we divide the total energy by 10,000 large earth-
+quakes (to account for 44 km of total displacement), which yields
+7 £ 104 J m22 per earthquake. This estimate is a lower bound because
+it does not include the energy associated with refracturing healed
+grain boundaries and comminuted grains enlarged by Ostwald
+© 2005 Nature Publishing Group
+LETTERS
+NATURE|Vol 437|1 September 2005
+ripening. As an example, if 50% of the ultracataclasite in the
+millimetres-thick principal slip surface was refractured during an
+earthquake, and the energy to refracture a grain boundary is half of
+that required to fracture an intact grain, then fracture surface energy
+for a single earthquake increases to approximately 5 £ 105 J m22.
+Our estimate of the energy required to create fracture surfaces
+during a single earthquake is small (,1%) relative to estimates of E H/
+S for the Punchbowl fault at a depth of 2–4 km, which even for a
+coefficient of friction of 0.2 is about 5 £ 107 J m22. This is in direct
+contrast to a recent conclusion that the surface energy of gouge
+constitutes half or more of the earthquake energy budget26. Our
+estimate also cannot account for seismologic values of G (about
+106 J m22; refs 6–8) unless we assume that a significant number of
+healed grain boundaries and ripened grains are refractured in each
+successive earthquake, and that all fracturing is attributed to the
+breakdown phase of rupture. Because some proportion of fracture
+surface area must be produced during sliding at residual friction21,
+additional processes such as lubrication, flash heating, and thermal
+pressurization probably contribute to the breakdown in
+strength8–10,23. These latter processes are compatible with the micro-
+structure of the Punchbowl fault ultracataclasite12,25,29, but would not
+be recorded by fracture surface area.
+The total cumulative fracture surface energy of the Punchbowl
+fault is about 300 times greater than the fracture energy, G, for a
+single large earthquake. If G is attributed entirely to the creation of
+fracture surface, then the observed damage could be produced by
+earthquake slip totalling less than 1 km of displacement. The differ-
+ent estimates of fracture surface area created during seismic slip on a
+mature fault versus that associated with mining-induced rup-
+tures19,20,26 may be explained by extensive fracturing during fault
+formation and less fracturing associated with slip on an established
+fault surface. This explanation is consistent with large values of G
+determined in the laboratory for shear fracture relative to that for
+frictional sliding4,5. Our results are also consistent with previous
+conclusions that the overall structure of large-displacement faults is
+established early in faulting history12,30.
+Received 9 January; accepted 15 June 2005.
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+Figure 4 | Subsidiary fault and microfracture density in the damaged
+Punchbowl Formation along the fault24. Solid line shows best-fit relations
+(with 95% confidence interval) assumed for calculating fracture surface
+area. a, Linear density of subsidiary faults measured along four traverses
+across the damage zone (solid circles). Locations of subsidiary faults of the
+largest size class (gouge layers 1–2 cm thick) are identified with arrows.
+b, Linear density of microfractures (solid circles). At distances greater than
+approximately 100 m, microfracture density reflects regional density. The
+difference between near-fault and regional distributions is used to calculate
+the fracture surface area associated with faulting.
+24.
+25.
+26.
+27.
+Ida, Y. Cohesive force across the tip of a longitudinal-shear crack and Griffith’s
+specific surface energy. J. Geophys. Res. 77, 3796–
+-3805 (1972).
+Husseini, M. I. & Randall, M. J. Rupture velocity and radiation efficiency. Bull.
+Seismol. Soc. Am. 66, 1173–
+-1187 (1976).
+Andrews, D. J. Rupture dynamics with energy loss outside the slip zone.
+J. Geophys. Res. 110, B01307 (2005).
+Wong, T. F. Shear fracture energy of Westerly granite from post-failure
+behaviour. J. Geophys. Res. 87, 990–
+-1000 (1982).
+Okubo, P. G. & Dieterich, J. H. Effects of physical fault properties on frictional
+instabilities produced on simulated faults. J. Geophys. Res. 89, 5817–
+-5827
+(1984).
+Guatteri, M., Spudich, P. & Beroza, G. C. Inferring rate and state friction
+parameters from a rupture model of the 1995 Hyogo-ken Nanbu (Kobe) Japan
+earthquake. J. Geophys. Res. 106, 26511–
+-26521 (2001).
+Rice, J. R., Sammis, C. G. & Parsons, R. Off-fault secondary failure induced by a
+dynamic slip-pulse. Bull. Seismol. Soc. Am. 95, 109–
+-134 (2005).
+Abercrombie, R. E. & Rice, J. R. Can observations of earthquake scaling
+constrain slip weakening? Geophys. J. Int. 162, 406 (2005).
+Heaton, T. H. Evidence for and implications of self-healing pulses of slip in
+earthquake rupture. Phys. Earth Planet. Inter. 64, 1–
+-20 (1990).
+Kanamori, H. & Heaton, T. H. in GeoComplexity and the Physics of Earthquakes
+(eds Rundle, J. B., Turcotte, D. L. & Klein, W.) (American Geophysical Union,
+Washington DC, 2000).
+Chester, F. M. & Logan, J. M. Composite planar fabric of gouge from the
+Punchbowl fault, California. J. Struct. Geol. 9, 621–
+-634 (1987).
+Chester, F. M., Chester, J. S., Kirschner, D. L., Schulz, S. E. & Evans, J. P. in
+Rheology and Deformation in the Lithosphere at Continental Margins (eds Karner,
+G. D., Taylor, B., Driscoll, N. W. & Kohlstedt, D. L.) (Columbia Univ. Press, New
+York, 2004).
+Kanamori, H. Mechanics of earthquakes. Annu. Rev. Earth Planet. Sci. 22,
+207–
+-237 (1994).
+Venkataraman, A. & Kanamori, H. Observational constraints on the fracture
+energy of subduction zone earthquakes. J. Geophys. Res. 109, B05302 (2004).
+Beeler, N. M., Wong, T. F. & Hickman, S. H. On the expected relationships
+among apparent stress, static stress drop, effective shear fracture energy, and
+efficiency. Bull. Seismol. Soc. Am. 93, 1381–
+-1389 (2003).
+Brace, W. F. & Walsh, J. B. Some direct measurements of the surface energy of
+quartz and orthoclase. Am. Mineral. 47, 1111–
+-1122 (1962).
+Friedman, M., Handin, J. & Alani, G. Fracture-surface energy of rocks. Int.
+J. Rock Mech. Mining Sci. 9, 757–
+-766 (1972).
+Wong, T. F. in Earthquake Source Mechanics (eds Das, S., Boatwright, J. &
+Scholz, C. H.) 1– (American Geophysical Union, Washington DC, 1986).
+-12
+Olgaard, D. L. & Brace, W. F. The microstructure of gouge from a mining-
+induced seismic shear zone. Int. J. Rock Mech. Mining Sci. 20, 11–
+-19
+(1983).
+McGarr, A., Spottiswoode, S. M., Gay, N. C. & Ortlepp, W. D. Observations
+relevant to seismic driving stress, stress drop, and efficiency. J. Geophys. Res.
+84, 2251–
+-2261 (1979).
+Yund, R. A., Blanpied, M. L., Tullis, T. E. & Weeks, J. D. Amorphous material in
+-15602
+high strain experimental fault gouges. J. Geophys. Res. 95, 15589–
+(1990).
+Scholz, C. H., Dawers, N. H., Yu, J. Z., Anders, M. H. & Cowie, P. A. Fault
+growth and fault scaling laws: Preliminary results. J. Geophys. Res. 98,
+21951–
+-21961 (1993).
+Andrews, D. J. A fault constitutive relation accounting for thermal
+pressurization of pore fluid. J. Geophys. Res. 107, ESE15-1– art. no. 2363
+-8,
+(2002).
+Wilson, J. E., Chester, J. S. & Chester, F. M. Microfracture analysis of fault
+growth and wear processes, Punchbowl Fault, San Andreas System, California.
+-1873 (2003).
+J. Struct. Geol. 25, 1855–
+Chester, J. S., Kronenberg, A. K., Chester, F. M. & Guillemette, R. N.
+Characterization of natural slip surfaces relevant to earthquake mechanics. Eos
+84(46) (2003).
+Wilson, B., Dewers, T., Reches, Z. & Brune, J. Particle size and energetics of
+gouge from earthquake rupture zones. Nature 434, 749–
+-752 (2005).
+Bonnet, E. et al. Scaling of fracture systems in geological media. Rev. Geophys.
+39, 347–
+-383 (2001).
+© 2005 Nature Publishing Group
+135
+LETTERS
+NATURE|Vol 437|1 September 2005
+28. Underwood, E. E. Quantitative Stereology (Addison Wesley, Reading,
+Massachusetts, 1970).
+29. Sibson, R. H. Thickness of the seismic slip zone. Bull. Seismol. Soc. Am. 93,
+1169–
+-1178 (2003).
+30. Evans, J. P., Shipton, Z. K., Pachell, M. A., Lim, S. J. & Robeson, K. in Proc. 3rd
+Conf. on Tectonic Problems of the San Andreas Fault System (eds Bokelmann, G.
+& Kovach, R. L.) 67– (Stanford Univ. Publ., 2000).
+-81
+Acknowledgements We thank P. Spudich , T. Heaton and N. Beeler for
+discussions and review of an early version of this paper, and J. Jenson for advice
+regarding data analysis. The TEM work was performed in the Microscopy and
+Imaging Center of Texas A&M University and Z. Luo is acknowledged for his
+assistance. This research was supported by the Southern California Earthquake
+Center through a NSF and USGS Cooperative Agreement (J.S.C.), US National
+Science Foundation (J.S.C. and F.M.C.), and US Geological Survey (J.S.C.).
+Author Information Reprints and permissions information is available at
+npg.nature.com/reprintsandpermissions. The authors declare no competing
+financial interests. Correspondence and requests for materials should be
+addressed to J.S.C. (chesterj@geo.tamu.edu).
+136
+© 2005 Nature Publishing Group

@@ -40,59 +40,59 @@
   </owl:Ontology>
 
 <!-- Metrics -->
-  <owl:Class rdf:about="#Differ">
-    <rdfs:subClassOf rdf:resource="&oper;#Differ" />
+  <owl:Class rdf:about="#differ">
+    <rdfs:subClassOf rdf:resource="&oper;#differ" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Deviat">
-    <rdfs:subClassOf rdf:resource="&prop;#Error" />
-    <rdfs:subClassOf rdf:resource="#Differ" />
+  <owl:Class rdf:about="#deviat">
+    <rdfs:subClassOf rdf:resource="&prop;#error" />
+    <rdfs:subClassOf rdf:resource="#differ" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Toler">
-    <rdfs:subClassOf rdf:resource="#Deviat" />
-    <rdfs:subClassOf rdf:resource="&prop;#Error" />
+  <owl:Class rdf:about="#toler">
+    <rdfs:subClassOf rdf:resource="#deviat" />
+    <rdfs:subClassOf rdf:resource="&prop;#error" />
   </owl:Class>
 
-  <owl:Class rdf:about="#Bia">
-    <rdfs:subClassOf rdf:resource="#Deviat" />
-    <rdfs:subClassOf rdf:resource="&prop;#Error" />
+  <owl:Class rdf:about="#bia">
+    <rdfs:subClassOf rdf:resource="#deviat" />
+    <rdfs:subClassOf rdf:resource="&prop;#error" />
   </owl:Class>
 
 
-  <diff:Difference rdf:about="#NormalizedDifferenceVegetationIndex">
-     <owl:sameAs rdf:resource="#NDVI" />
+  <diff:Difference rdf:about="#normalizeddifferencevegetationindex">
+     <owl:sameAs rdf:resource="#ndvi" />
   </diff:Difference>
-  <diff:Difference rdf:about="#NDVI"/>
+  <diff:Difference rdf:about="#ndvi"/>
 
-  <owl:Class rdf:about="#Undulat">
-    <rdfs:subClassOf rdf:resource="&oper;#Differ"/>
+  <owl:Class rdf:about="#undulat">
+    <rdfs:subClassOf rdf:resource="&oper;#differ"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&ht;#Geoid"/>
-        <owl:onProperty rdf:resource="&mrela;#hasFirstOperand"/>
+        <owl:allValuesFrom rdf:resource="&ht;#geoid"/>
+        <owl:onProperty rdf:resource="&mrela;#hasfirstoperand"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&obj3d;#ReferenceEllipsoid"/>
-        <owl:onProperty rdf:resource="&mrela;#hasSecondOperand"/>
+        <owl:allValuesFrom rdf:resource="&obj3d;#referenceellipsoid"/>
+        <owl:onProperty rdf:resource="&mrela;#hassecondoperand"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Anomali">
-    <rdfs:subClassOf rdf:resource="#Deviat"/>
+  <owl:Class rdf:about="#anomali">
+    <rdfs:subClassOf rdf:resource="#deviat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Amplitud">
-    <rdfs:subClassOf rdf:resource="#Deviat"/>
-    <rdfs:subClassOf rdf:resource="&prop;#WaveProperti"/>
+  <owl:Class rdf:about="#amplitud">
+    <rdfs:subClassOf rdf:resource="#deviat"/>
+    <rdfs:subClassOf rdf:resource="&prop;#waveproperti"/>
     <rdfs:comment xml:lang="en">Often the greatest magnitude at a given point of any spatially and temporally varying physical quantity governed by a wave equation; can also mean the spatial part of a time-harmonic wave function.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#SaturationDeficit">
-    <rdfs:subClassOf rdf:resource="&chem;#SaturationProperti"/>
+  <owl:Class rdf:about="#saturationdeficit">
+    <rdfs:subClassOf rdf:resource="&chem;#saturationproperti"/>
     <rdfs:comment xml:lang="en">The amount by which the water vapor in the air must be increased to achieve saturation without changing the environmental temperature and pressure.</rdfs:comment>
   </owl:Class>
 

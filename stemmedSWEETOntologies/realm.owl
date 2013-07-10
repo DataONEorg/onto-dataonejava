@@ -54,140 +54,140 @@
      <owl:imports rdf:resource="&geom;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Realm" />
+  <owl:Class rdf:about="#realm" />
 
 <!-- Planetary Realms -->
-  <astro2:Planet rdf:about="#Earth"/>
+  <astro2:Planet rdf:about="#earth"/>
 
-  <owl:Class rdf:about="#PlanetaryRealm">
-    <rdfs:subClassOf rdf:resource="#Realm"/>
+  <owl:Class rdf:about="#planetaryrealm">
+    <rdfs:subClassOf rdf:resource="#realm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlanetaryStructur">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#planetarystructur">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Geospher">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#geospher">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#solid"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PlanetarySurfac"/>
-        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#planetarysurfac"/>
+        <owl:onProperty rdf:resource="&srela;#hasupperboundari"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The term Geosphere is often used to refer to the densest (solid) parts of a planet, which consist mostly of rock and regolith [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Hydrospher">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#hydrosph">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
-        <owl:hasValue rdf:resource="&comp;#Water"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
+        <owl:hasValue rdf:resource="&comp;#water"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A hydrosphere in physical geography describes the combined mass of water found on, under, and over the surface of a planet. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Land">
-    <rdfs:subClassOf rdf:resource="#Geospher"/>
+  <owl:Class rdf:about="#land">
+    <rdfs:subClassOf rdf:resource="#geospher"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#solid"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The part of a planetary surface that is a solid</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ocean">
-    <rdfs:subClassOf rdf:resource="#Hydrospher"/>
+  <owl:Class rdf:about="#ocean">
+    <rdfs:subClassOf rdf:resource="#hydrosph"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Liquid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#liquid"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PlanetarySurfac"/>
-        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#planetarysurfac"/>
+        <owl:onProperty rdf:resource="&srela;#hasupperboundari"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An ocean is a major body of saline water, and a principal component of the hydrosphere. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Atmospher">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#atmospher">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Gas"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#gas"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PlanetarySurfac"/>
-        <owl:onProperty rdf:resource="&srela;#hasLowerBoundari"/>
+        <owl:allValuesFrom rdf:resource="#planetarysurfac"/>
+        <owl:onProperty rdf:resource="&srela;#haslowerboundari"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An atmosphere is a layer of gases that may surround a material body of sufficient mass,[1] by the gravity of the body, and are retained for a longer duration if gravity is high and the atmosphere's temperature is low. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:ID="Cryosphere">
-    <rdfs:subClassOf rdf:resource="#Hydrospher"/>
+    <rdfs:subClassOf rdf:resource="#hydrosph"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
-        <owl:allValuesFrom rdf:resource="&water;#Ice"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
+        <owl:allValuesFrom rdf:resource="&water;#ice"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PlanetarySurfac"/>
-        <owl:onProperty rdf:resource="&srela;#hasUpperBoundari"/>
+        <owl:allValuesFrom rdf:resource="#planetarysurfac"/>
+        <owl:onProperty rdf:resource="&srela;#hasupperboundari"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">The cryosphere collectively describes the portions of a planetary surface in frozen form, including sea ice, lake ice, river ice, snow cover, glaciers, ice caps and ice sheets, and frozen ground (which includes permafrost).  [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#CriticalZon">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#criticalzon">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Ring">
-    <rdfs:subClassOf rdf:resource="#PlanetaryRealm"/>
+  <owl:Class rdf:about="#ring">
+    <rdfs:subClassOf rdf:resource="#planetaryrealm"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#hasStat"/>
-        <owl:hasValue rdf:resource="&pstate;#Solid"/>
+        <owl:onProperty rdf:resource="&rela;#hasstat"/>
+        <owl:hasValue rdf:resource="&pstate;#solid"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:ID="PlanetarySurface">
-    <rdfs:subClassOf rdf:resource="#PlanetarySurfaceLevel"/>
-    <owl:equivalentClass rdf:resource="#Subaeri"/>
+    <rdfs:subClassOf rdf:resource="#planetarysurfacelevel"/>
+    <owl:equivalentClass rdf:resource="#subaeri"/>
     <rdfs:comment xml:lang="en">The surface of the planet defined by solid and/or liquid layers</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Subaerial"/>
 
   <owl:Class rdf:ID="PlanetaryLayer">
-    <rdfs:subClassOf rdf:resource="&obj3d;#Layer"/>
-    <owl:equivalentClass rdf:resource="#GlobalPlanetaryLay"/>
+    <rdfs:subClassOf rdf:resource="&obj3d;#layer"/>
+    <owl:equivalentClass rdf:resource="#globalplanetarylay"/>
   </owl:Class>
   <owl:Class rdf:ID="GlobalPlanetaryLayer"/>
 
   <owl:Class rdf:ID="PlanetarySurfaceLevel">
-    <rdfs:subClassOf rdf:resource="&geom;#Surfac"/>
-    <owl:equivalentClass rdf:resource="#PlanetaryBoundari"/>
-    <rdfs:subClassOf rdf:resource="#CriticalZon"/>
+    <rdfs:subClassOf rdf:resource="&geom;#surfac"/>
+    <owl:equivalentClass rdf:resource="#planetaryboundari"/>
+    <rdfs:subClassOf rdf:resource="#criticalzon"/>
     <rdfs:comment xml:lang="en">A qusai-horizontal surface spanning all or part of a planet that corresponds to a constant value of some parameter</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="PlanetaryBoundary"/>

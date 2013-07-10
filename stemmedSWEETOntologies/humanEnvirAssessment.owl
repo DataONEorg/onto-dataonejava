@@ -26,86 +26,86 @@
      <owl:imports rdf:resource="&root;humanResearch.owl"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#ContinousEmissionMonitoringSystem">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
-    <owl:equivalentClass rdf:resource="#CEMS"/>
+  <owl:Class rdf:about="#continousemissionmonitoringsystem">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
+    <owl:equivalentClass rdf:resource="#cems"/>
   </owl:Class>
-  <owl:Class rdf:about="#CEMS"/>
+  <owl:Class rdf:about="#cems"/>
 
-  <owl:Class rdf:about="#CostBenefitAnalysi">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#EmissionInventori">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#costbenefitanalysi">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalImpactStat">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#emissioninventori">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#EnvironmentalMonitor">
+  <owl:Class rdf:about="#environmentalimpactstat">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#environmentalmonitor">
     <rdfs:subClassOf rdf:resource="&res;Monitoring"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HealthRiskAssess">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
-    <owl:equivalentClass rdf:resource="#HRA"/>
+  <owl:Class rdf:about="#healthriskassess">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
+    <owl:equivalentClass rdf:resource="#hra"/>
   </owl:Class>
-  <owl:Class rdf:about="#HRA"/>
+  <owl:Class rdf:about="#hra"/>
 
-  <owl:Class rdf:about="#NationalToxicsInventori">
-    <rdfs:subClassOf rdf:resource="#EmissionInventori"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#NaturalCapit">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#nationaltoxicsinventori">
+    <rdfs:subClassOf rdf:resource="#emissioninventori"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#NewSourceReview">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
-    <owl:equivalentClass rdf:resource="#NSR"/>
+  <owl:Class rdf:about="#naturalcapit">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
-  <owl:Class rdf:about="#NSR"/>
 
-  <owl:Class rdf:about="#NoObservedAdverseEffectLevel">
-    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
-    <owl:equivalentClass rdf:resource="#NOAEL"/>
+  <owl:Class rdf:about="#newsourcereview">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
+    <owl:equivalentClass rdf:resource="#nsr"/>
   </owl:Class>
-  <owl:Class rdf:about="#NOAEL"/>
+  <owl:Class rdf:about="#nsr"/>
 
-  <owl:Class rdf:about="#NoObservedEffectLevel">
-    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
-    <owl:equivalentClass rdf:resource="#NOEL"/>
+  <owl:Class rdf:about="#noobservedadverseeffectlevel">
+    <rdfs:subClassOf rdf:resource="#healthriskassess"/>
+    <owl:equivalentClass rdf:resource="#noael"/>
   </owl:Class>
-  <owl:Class rdf:about="#NOEL"/>
+  <owl:Class rdf:about="#noael"/>
 
-  <owl:Class rdf:about="#UnitRiskFactor">
-    <rdfs:subClassOf rdf:resource="#HealthRiskAssess"/>
-    <owl:equivalentClass rdf:resource="#URF"/>
+  <owl:Class rdf:about="#noobservedeffectlevel">
+    <rdfs:subClassOf rdf:resource="#healthriskassess"/>
+    <owl:equivalentClass rdf:resource="#noel"/>
   </owl:Class>
-  <owl:Class rdf:about="#URF"/>
+  <owl:Class rdf:about="#noel"/>
 
-  <owl:Class rdf:about="#EnvironmentalAssess">
+  <owl:Class rdf:about="#unitriskfactor">
+    <rdfs:subClassOf rdf:resource="#healthriskassess"/>
+    <owl:equivalentClass rdf:resource="#urf"/>
+  </owl:Class>
+  <owl:Class rdf:about="#urf"/>
+
+  <owl:Class rdf:about="#environmentalassess">
     <rdfs:subClassOf rdf:resource="&res;Assessment"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ImpactAssess">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#impactassess">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StatusAssess">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#statusassess">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SuitabilityAssess">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
+  <owl:Class rdf:about="#suitabilityassess">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonNeutr">
-    <rdfs:subClassOf rdf:resource="#EnvironmentalAssess"/>
-    <owl:equivalentClass rdf:resource="#CarbonNeutr"/>
+  <owl:Class rdf:about="#carbonneutr">
+    <rdfs:subClassOf rdf:resource="#environmentalassess"/>
+    <owl:equivalentClass rdf:resource="#carbonneutr"/>
   </owl:Class>
-  <owl:Class rdf:about="#CarbonNeutr"/>
+  <owl:Class rdf:about="#carbonneutr"/>
 
 </rdf:RDF>

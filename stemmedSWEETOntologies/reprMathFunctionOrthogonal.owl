@@ -34,57 +34,57 @@
      <owl:imports rdf:resource="&repr;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#OrthogonalFunct">
-    <rdfs:subClassOf rdf:resource="&func;#BasisFunct"/>
+  <owl:Class rdf:about="#orthogonalfunct">
+    <rdfs:subClassOf rdf:resource="&func;#basisfunct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fourier">
-    <rdfs:subClassOf rdf:resource="&func;#ExponentialFunct"/>
-    <owl:equivalentClass rdf:resource="#FourierFunct"/>
+  <owl:Class rdf:about="#fourier">
+    <rdfs:subClassOf rdf:resource="&func;#exponentialfunct"/>
+    <owl:equivalentClass rdf:resource="#fourierfunct"/>
   </owl:Class>
-  <owl:Class rdf:about="#FourierFunct"/>
+  <owl:Class rdf:about="#fourierfunct"/>
 
-  <owl:Class rdf:about="#SphericalHarmon">
-    <rdfs:subClassOf rdf:resource="#OrthogonalFunct"/>
-    <rdfs:subClassOf rdf:resource="&func;#TranscendentalFunct"/>
-    <owl:equivalentClass rdf:resource="#SphericalHarmonicFunct"/>
+  <owl:Class rdf:about="#sphericalharmon">
+    <rdfs:subClassOf rdf:resource="#orthogonalfunct"/>
+    <rdfs:subClassOf rdf:resource="&func;#transcendentalfunct"/>
+    <owl:equivalentClass rdf:resource="#sphericalharmonicfunct"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasOrder"/>
+        <owl:onProperty rdf:resource="&mrela;#hasorder"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&mrela;#hasDegre"/>
+        <owl:onProperty rdf:resource="&mrela;#hasdegr"/>
         <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#SphericalHarmonicFunct"/>
+  <owl:Class rdf:about="#sphericalharmonicfunct"/>
 
-  <owl:Class rdf:about="#WaveletFunct">
-    <rdfs:subClassOf rdf:resource="#OrthogonalFunct"/>
+  <owl:Class rdf:about="#waveletfunct">
+    <rdfs:subClassOf rdf:resource="#orthogonalfunct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Harmon">
-    <rdfs:subClassOf rdf:resource="&repr;#Coordin"/>
+  <owl:Class rdf:about="#harmon">
+    <rdfs:subClassOf rdf:resource="&repr;#coordin"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Degre">
-    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  <owl:Class rdf:about="#degr">
+    <rdfs:subClassOf rdf:resource="#harmon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Order">
-    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  <owl:Class rdf:about="#order">
+    <rdfs:subClassOf rdf:resource="#harmon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Mode">
-    <rdfs:subClassOf rdf:resource="#Harmon"/>
+  <owl:Class rdf:about="#mode">
+    <rdfs:subClassOf rdf:resource="#harmon"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Coeffici">
-    <rdfs:subClassOf rdf:resource="&math;#Scalar"/>
+  <owl:Class rdf:about="#coeffici">
+    <rdfs:subClassOf rdf:resource="&math;#scalar"/>
   </owl:Class>
 
 </rdf:RDF>

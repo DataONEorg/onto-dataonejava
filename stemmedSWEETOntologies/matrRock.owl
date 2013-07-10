@@ -35,109 +35,109 @@
 
 <!-- Matter -->
 
-  <owl:Class rdf:about="#Breccia">
-    <rdfs:subClassOf rdf:resource="#Rock"/>
+  <owl:Class rdf:about="#breccia">
+    <rdfs:subClassOf rdf:resource="#rock"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Chondrite">
-    <rdfs:subClassOf rdf:resource="#Meteorite"/>
+  <owl:Class rdf:about="#chondrit">
+    <rdfs:subClassOf rdf:resource="#meteorit"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#HeterogenousRock">
-    <rdfs:subClassOf rdf:resource="#SedimentaryRock"/>
+  <owl:Class rdf:about="#heterogenousrock">
+    <rdfs:subClassOf rdf:resource="#sedimentaryrock"/>
     <rdfs:comment xml:lang="en">A heterogeneous or conglomerate is a rock consisting of individual stones that have become cemented together. Conglomerates are sedimentary rocks consisting of rounded fragments and are thus differentiated from breccias, which consist of angular clasts.[1] Both conglomerates and breccias are characterized by clasts larger than sand (>2 mm). [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#MetamorphicRock">
-    <rdfs:subClassOf rdf:resource="#Rock"/>
+  <owl:Class rdf:about="#metamorphicrock">
+    <rdfs:subClassOf rdf:resource="#rock"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&geol;#Metamorphic"/>
-        <owl:onProperty rdf:resource="&prrela;#hasGenesis"/>
+        <owl:allValuesFrom rdf:resource="&geol;#metamorph"/>
+        <owl:onProperty rdf:resource="&prrela;#hasgenesi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">One of the major groups of rock that makes up the crust of the Earth; consists of pre-existing rock mass in which new minerals or textures are formed at higher temperatures and greater pressures than those present on the Earth's surface [wicktionary]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Melange">
-    <rdfs:subClassOf rdf:resource="#Rock"/>
+  <owl:Class rdf:about="#melang">
+    <rdfs:subClassOf rdf:resource="#rock"/>
     <rdfs:comment xml:lang="en">A mélange is a large scale breccia, a mappable body of rock characterized by a lack of continuous bedding and the inclusion of fragments of rock of all sizes, contained in a fine-grained deformed matrix. The mélange typically consists of a jumble of large blocks of varied lithologies of altered oceanic crustal material and blocks of continental slope sediments in a sheared mudstone matrix. Some larger blocks of rock may be as much as 1 km across. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Meteor">
-    <rdfs:subClassOf rdf:resource="#Rock"/>
+  <owl:Class rdf:about="#meteor">
+    <rdfs:subClassOf rdf:resource="#rock"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Meteorite">
-    <rdfs:subClassOf rdf:resource="#Meteor"/>
+  <owl:Class rdf:about="#meteorit">
+    <rdfs:subClassOf rdf:resource="#meteor"/>
     <rdfs:comment xml:lang="en">Meteoric substances are rocks that have composition significantly different from earth rocks. Meteorites have traditionally been divided into three broad categories: stony meteorites are rocks, mainly composed of silicate minerals; iron meteorites are largely composed of metallic iron-nickel; and, stony-iron meteorites contain large amounts of both metallic and rocky material. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Molasse">
-    <rdfs:subClassOf rdf:resource="&geol;#Sedimentary"/>
+  <owl:Class rdf:about="#molass">
+    <rdfs:subClassOf rdf:resource="&geol;#sedimentari"/>
     <rdfs:comment xml:lang="en">Molasse refers to the sandstones, shales and conglomerates formed as terrestrial or shallow marine deposits in front of rising mountain chains deposited in a foreland basin, especially on top of flysch, for example that left from the rising Alps, or erosion in the Himalaya. These deposits are typically the non-marine alluvial and fluvial sediments of lowlands, as compared to deep-water flysch sediments. Sedimentation stops once the orogeny stops, or once the mountains have eroded flat. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Regolith">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixture"/>
-    <owl:disjointWith rdf:resource="#Rock" />
+  <owl:Class rdf:about="#regolith">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
+    <owl:disjointWith rdf:resource="#rock" />
     <rdfs:comment xml:lang="en">Regolith (Greek: "blanket rock") is a layer of loose, heterogeneous material covering solid rock (bedrock). It includes dust, soil, broken rock, and other related materials  [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Rock">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixture"/>
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+  <owl:Class rdf:about="#rock">
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
     <rdfs:comment xml:lang="en">Rock is a naturally occurring solid aggregate of minerals and/or mineraloids.  In general rocks are of three types, namely, igneous, sedimentary, and metamorphic. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:ID="RockBody">
-    <rdfs:subClassOf rdf:resource="&chem;#Mixture"/>
-    <rdfs:subClassOf rdf:resource="&chem;#SolidSubstance"/>
+    <rdfs:subClassOf rdf:resource="&chem;#mixtur"/>
+    <rdfs:subClassOf rdf:resource="&chem;#solidsubst"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Rock"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubstance"/>
+        <owl:allValuesFrom rdf:resource="#rock"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SedimentaryRock">
-    <rdfs:subClassOf rdf:resource="#Rock"/>
+  <owl:Class rdf:about="#sedimentaryrock">
+    <rdfs:subClassOf rdf:resource="#rock"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="&geol;#Sedimentary"/>
-        <owl:onProperty rdf:resource="&prrela;#hasGenesis"/>
+        <owl:allValuesFrom rdf:resource="&geol;#sedimentari"/>
+        <owl:onProperty rdf:resource="&prrela;#hasgenesi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">One of the major groups of rock that makes up the crust of the Earth; formed by the deposition of either the weathered remains of other rocks, the results of biological activity, or precipitation from solution [wicktionary]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Serpentinite">
-    <rdfs:subClassOf rdf:resource="#MetamorphicRock"/>
+  <owl:Class rdf:about="#serpentinit">
+    <rdfs:subClassOf rdf:resource="#metamorphicrock"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Serpentinization"/>
-        <owl:onProperty rdf:resource="&prrela;#hasGenesis"/>
+        <owl:allValuesFrom rdf:resource="#serpentin"/>
+        <owl:onProperty rdf:resource="&prrela;#hasgenesi"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Serpentinization">
-    <rdfs:subClassOf rdf:resource="&geol;#Metamorphic"/>
+  <owl:Class rdf:about="#serpentin">
+    <rdfs:subClassOf rdf:resource="&geol;#metamorph"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fossil">
-    <rdfs:subClassOf rdf:resource="&pstate;#SubstanceForm"/>
+  <owl:Class rdf:about="#fossil">
+    <rdfs:subClassOf rdf:resource="&pstate;#substanceform"/>
     <rdfs:comment xml:lang="en">Fossils  are the preserved remains or traces of animals, plants, and other organisms from the remote past. Fossils vary in size from microscopic, such as single bacterial cells [2] only one micrometer in diameter, to gigantic (macroscopic), such as dinosaurs and trees many meters long and weighing many tons. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Macrofossil">
-    <rdfs:subClassOf rdf:resource="#Fossil"/>
+  <owl:Class rdf:about="#macrofossil">
+    <rdfs:subClassOf rdf:resource="#fossil"/>
     <rdfs:comment xml:lang="en">Macrofossils are preserved organic remains large enough to be visible without a microscope. [Wikipedia]</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Microfossil">
-    <rdfs:subClassOf rdf:resource="#Fossil"/>
+  <owl:Class rdf:about="#microfossil">
+    <rdfs:subClassOf rdf:resource="#fossil"/>
     <rdfs:comment xml:lang="en">Fossils which are of microscopic size such as bacteria. [Wikipedia]</rdfs:comment>
   </owl:Class>
 

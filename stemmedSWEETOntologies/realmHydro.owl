@@ -48,171 +48,171 @@
 
 <!-- Realms -->
   <owl:Class rdf:ID="Aquifer">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#partOf"/>
-        <owl:allValuesFrom rdf:resource="#SaturatedZone"/>
+        <owl:onProperty rdf:resource="&rela;#partof"/>
+        <owl:allValuesFrom rdf:resource="#saturatedzon"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CascadingWater">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-    <rdfs:subClassOf rdf:resource="&water;#Groundwater"/>
+  <owl:Class rdf:about="#cascadingwat">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
+    <rdfs:subClassOf rdf:resource="&water;#groundwat"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConeOfDepression"> 
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-    <rdfs:subClassOf rdf:resource="&geom;#Trough"/>
+  <owl:Class rdf:about="#coneofdepress"> 
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
+    <rdfs:subClassOf rdf:resource="&geom;#trough"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConeOfImpression"> 
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-    <rdfs:subClassOf rdf:resource="&geom;#Ridge"/>
+  <owl:Class rdf:about="#coneofimpress"> 
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
+    <rdfs:subClassOf rdf:resource="&geom;#ridg"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConfinedAquifer"> 
-    <rdfs:subClassOf rdf:resource="#Aquifer"/>
+  <owl:Class rdf:about="#confinedaquif"> 
+    <rdfs:subClassOf rdf:resource="#aquifer"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfiguration"/>
-        <owl:hasValue rdf:resource="&conf;#Confined"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur"/>
+        <owl:hasValue rdf:resource="&conf;#confin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConfinedBed"> 
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#confinedb"> 
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfiguration"/>
-        <owl:hasValue rdf:resource="&conf;#Confined"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur"/>
+        <owl:hasValue rdf:resource="&conf;#confin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConfinedUnit"> 
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#confinedunit"> 
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfiguration"/>
-        <owl:hasValue rdf:resource="&conf;#Confined"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur"/>
+        <owl:hasValue rdf:resource="&conf;#confin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ConfinedZone"> 
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#confinedzon"> 
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfiguration"/>
-        <owl:hasValue rdf:resource="&conf;#Confined"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur"/>
+        <owl:hasValue rdf:resource="&conf;#confin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#UndergroundWater">
-    <rdfs:subClassOf rdf:resource="&water;#Groundwater"/>
+  <owl:Class rdf:about="#undergroundwat">
+    <rdfs:subClassOf rdf:resource="&water;#groundwat"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#inside"/>
-        <owl:allValuesFrom rdf:resource="#VadoseZone"/>
+        <owl:onProperty rdf:resource="&srela;#insid"/>
+        <owl:allValuesFrom rdf:resource="#vadosezon"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SaturatedZone">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#saturatedzon">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&rela;#partOf"/>
-        <owl:allValuesFrom rdf:resource="#Aquifer"/>
+        <owl:onProperty rdf:resource="&rela;#partof"/>
+        <owl:allValuesFrom rdf:resource="#aquifer"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SeepageFace"> 
-    <rdfs:subClassOf rdf:resource="&sgeo;#Boundary"/>
+  <owl:Class rdf:about="#seepagefac"> 
+    <rdfs:subClassOf rdf:resource="&sgeo;#boundari"/>
   <rdfs:comment xml:lang="en"> A boundary between the saturated flow field and the atmosphere along which groundwater discharges, either by evaporation or movement "downhill" along the land surface or in a well as a thin film in response to the force of gravity.</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#UnconfinedAquifer"> 
-    <rdfs:subClassOf rdf:resource="#Aquifer"/>
-    <owl:equivalentClass rdf:resource="#WaterTableAquifer"/>
+  <owl:Class rdf:about="#unconfinedaquif"> 
+    <rdfs:subClassOf rdf:resource="#aquifer"/>
+    <owl:equivalentClass rdf:resource="#watertableaquif"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&srela;#hasSpatialConfiguration"/>
-        <owl:hasValue rdf:resource="&conf;#Unconfined"/>
+        <owl:onProperty rdf:resource="&srela;#hasspatialconfigur"/>
+        <owl:hasValue rdf:resource="&conf;#unconfin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#WaterTableAquifer"/> 
+  <owl:Class rdf:about="#watertableaquif"/> 
 
-  <owl:Class rdf:about="#WaterTable">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#watert">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   <rdfs:comment xml:lang="en">The water table or phreatic surface is the surface where the water pressure is equal to atmospheric pressure. A sustainable amount of water within a unit of sediment or rock, below the water table, in the phreatic zone is called an aquifer. The ability of the aquifer to store groundwater is dependent on the primary and secondary porosity and permeability </rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aquiclude">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#aquiclud">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aquifuge">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#aquifug">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aquitard">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#aquitard">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#WarmPool">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#warmpool">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#VadoseZone">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-    <owl:equivalentClass rdf:resource="#UnsaturatedZone"/>
+  <owl:Class rdf:about="#vadosezon">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
+    <owl:equivalentClass rdf:resource="#unsaturatedzon"/>
   </owl:Class>
-  <owl:Class rdf:about="#UnsaturatedZone"/>
+  <owl:Class rdf:about="#unsaturatedzon"/>
 
-  <owl:Class rdf:about="#WaterColumn">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Bank">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#watercolumn">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Dike">
-    <rdfs:subClassOf rdf:resource="#Bank"/>
-    <owl:equivalentClass rdf:resource="#Dyke"/>
-    <owl:equivalentClass rdf:resource="#Levee"/>
-    <owl:equivalentClass rdf:resource="#Embankment"/>
-    <owl:equivalentClass rdf:resource="#FloodBank"/>
-    <owl:equivalentClass rdf:resource="#RaisedBank"/>
-  </owl:Class>
-  <owl:Class rdf:about="#Dyke"/>
-  <owl:Class rdf:about="#Levee"/>
-  <owl:Class rdf:about="#Embankment"/>
-  <owl:Class rdf:about="#FloodBank"/>
-  <owl:Class rdf:about="#RaisedBank"/>
-
-  <owl:Class rdf:about="#HydrosphereFeature">
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetaryRealm"/>
+  <owl:Class rdf:about="#bank">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SurfaceWater">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#dike">
+    <rdfs:subClassOf rdf:resource="#bank"/>
+    <owl:equivalentClass rdf:resource="#dyke"/>
+    <owl:equivalentClass rdf:resource="#leve"/>
+    <owl:equivalentClass rdf:resource="#embankment"/>
+    <owl:equivalentClass rdf:resource="#floodbank"/>
+    <owl:equivalentClass rdf:resource="#raisedbank"/>
+  </owl:Class>
+  <owl:Class rdf:about="#dyke"/>
+  <owl:Class rdf:about="#leve"/>
+  <owl:Class rdf:about="#embankment"/>
+  <owl:Class rdf:about="#floodbank"/>
+  <owl:Class rdf:about="#raisedbank"/>
+
+  <owl:Class rdf:about="#hydrospherefeatur">
+    <rdfs:subClassOf rdf:resource="&realm;#planetaryrealm"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#GroundwaterLevel">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
-    <rdfs:subClassOf rdf:resource="&realm;#PlanetarySurfaceLevel"/>
+  <owl:Class rdf:about="#surfacewat">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#PotentiometricSurface">
-    <rdfs:subClassOf rdf:resource="#HydrosphereFeature"/>
+  <owl:Class rdf:about="#groundwaterlevel">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
+    <rdfs:subClassOf rdf:resource="&realm;#planetarysurfacelevel"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#potentiometricsurfac">
+    <rdfs:subClassOf rdf:resource="#hydrospherefeatur"/>
   <rdfs:comment xml:lang="en">An imaginary surface representing the static head of groundwater and defined by the level to which water will rise in a tightly cased well.</rdfs:comment>
   </owl:Class>
 

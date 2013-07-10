@@ -37,113 +37,113 @@
      <owl:imports rdf:resource="&crela;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#Agricultur">
-    <rdfs:subClassOf rdf:resource="&comm;#Product"/>
-    <rdfs:subClassOf rdf:resource="&comm;#LandUs"/>
+  <owl:Class rdf:about="#agricultur">
+    <rdfs:subClassOf rdf:resource="&comm;#product"/>
+    <rdfs:subClassOf rdf:resource="&comm;#landu"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#CropProduct">
-    <rdfs:subClassOf rdf:resource="#PlantProduct"/>
+  <owl:Class rdf:about="#cropproduct">
+    <rdfs:subClassOf rdf:resource="#plantproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Cultiv"> 
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#cultiv"> 
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#DripIrrig">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#dripirrig">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Log">
-    <rdfs:subClassOf rdf:resource="&comm;#Product"/>
+  <owl:Class rdf:about="#log">
+    <rdfs:subClassOf rdf:resource="&comm;#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Harvest">
-    <rdfs:subClassOf rdf:resource="#PlantProduct"/>
+  <owl:Class rdf:about="#harvest">
+    <rdfs:subClassOf rdf:resource="#plantproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Horticultur">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#horticultur">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
     <rdfs:comment xml:lang="en">Horticulture is the art and science of the cultivation of plants</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:about="#Irrigat">
-    <rdfs:subClassOf rdf:resource="#SoilCultiv"/>
+  <owl:Class rdf:about="#irrigat">
+    <rdfs:subClassOf rdf:resource="#soilcultiv"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue rdf:resource="&comp;#Water"/>
-        <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+        <owl:hasValue rdf:resource="&comp;#water"/>
+        <owl:onProperty rdf:resource="&crela;#hassubst"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PlantProduct">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#plantproduct">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#SoilCultiv">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#soilcultiv">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
   </owl:Class>
 
 <!-- Animal production -->
-  <owl:Class rdf:about="#AnimalProduct">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#animalproduct">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Apicultur">
-    <rdfs:subClassOf rdf:resource="#AnimalProduct"/>
+  <owl:Class rdf:about="#apicultur">
+    <rdfs:subClassOf rdf:resource="#animalproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Aquacultur">
-    <rdfs:subClassOf rdf:resource="#Agricultur"/>
+  <owl:Class rdf:about="#aquacultur">
+    <rdfs:subClassOf rdf:resource="#agricultur"/>
    <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSpeci"/>
-        <owl:allValuesFrom rdf:resource="&anim;#MarineAnim"/>
+        <owl:onProperty rdf:resource="&screla;#hasspeci"/>
+        <owl:allValuesFrom rdf:resource="&anim;#marineanim"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Beekeep">
-    <owl:equivalentClass rdf:resource="#Apicultur" />
+  <owl:Class rdf:about="#beekeep">
+    <owl:equivalentClass rdf:resource="#apicultur" />
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSpeci"/>
-        <owl:allValuesFrom rdf:resource="&anim;#Bee"/>
+        <owl:onProperty rdf:resource="&screla;#hasspeci"/>
+        <owl:allValuesFrom rdf:resource="&anim;#bee"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#Breed">
-    <rdfs:subClassOf rdf:resource="#AnimalProduct"/>
+  <owl:Class rdf:about="#breed">
+    <rdfs:subClassOf rdf:resource="#animalproduct"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#FishProduct">
-    <rdfs:subClassOf rdf:resource="#AnimalProduct"/>
-    <rdfs:subClassOf rdf:resource="#Aquacultur"/>
+  <owl:Class rdf:about="#fishproduct">
+    <rdfs:subClassOf rdf:resource="#animalproduct"/>
+    <rdfs:subClassOf rdf:resource="#aquacultur"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Fish">
-    <rdfs:subClassOf rdf:resource="&comm;#Product"/>
+  <owl:Class rdf:about="#fish">
+    <rdfs:subClassOf rdf:resource="&comm;#product"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Overfish">
-    <rdfs:subClassOf rdf:resource="#Fish"/>
+  <owl:Class rdf:about="#overfish">
+    <rdfs:subClassOf rdf:resource="#fish"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Sericultur">
-    <rdfs:subClassOf rdf:resource="#AnimalProduct"/>
+  <owl:Class rdf:about="#sericultur">
+    <rdfs:subClassOf rdf:resource="#animalproduct"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="&screla;#hasSpeci"/>
-        <owl:allValuesFrom rdf:resource="&anim;#Silkworm"/>
+        <owl:onProperty rdf:resource="&screla;#hasspeci"/>
+        <owl:allValuesFrom rdf:resource="&anim;#silkworm"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#ShellfishProduct">
-    <rdfs:subClassOf rdf:resource="#AnimalProduct"/>
-    <rdfs:subClassOf rdf:resource="#Aquacultur"/>
+  <owl:Class rdf:about="#shellfishproduct">
+    <rdfs:subClassOf rdf:resource="#animalproduct"/>
+    <rdfs:subClassOf rdf:resource="#aquacultur"/>
   </owl:Class>
 
 </rdf:RDF>

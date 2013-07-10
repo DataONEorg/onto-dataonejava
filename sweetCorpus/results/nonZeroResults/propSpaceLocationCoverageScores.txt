@@ -1,0 +1,4 @@
+Class Score = 0.4666666666666667
+Equivalence Score = 0.0
+SubClass Score = 0.0
+Breadth Score = 0.15555555555555556

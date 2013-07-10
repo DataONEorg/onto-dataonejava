@@ -32,49 +32,49 @@
   </owl:Ontology>
   
 <!-- Categories -->
-  <owl:Class rdf:about="#CategoricalProperti">
+  <owl:Class rdf:about="#categoricalproperti">
     <rdfs:subClassOf rdf:resource="&prop;Property"/>
     <owl:disjointWith rdf:resource="&ordi;OrdinalProperty"/>
     <owl:disjointWith rdf:resource="&quan;Quantity"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Categori">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
-    <owl:equivalentClass rdf:resource="#Classif"/>
+  <owl:Class rdf:about="#categori">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
+    <owl:equivalentClass rdf:resource="#classif"/>
   </owl:Class>
-  <owl:Class rdf:about="#Classif"/>
+  <owl:Class rdf:about="#classif"/>
 
-  <owl:Class rdf:about="#Name">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
-  </owl:Class>
-
-  <owl:Class rdf:about="#Group">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
+  <owl:Class rdf:about="#name">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#Characterist">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
-    <owl:equivalentClass rdf:resource="#Descript"/>
+  <owl:Class rdf:about="#group">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
   </owl:Class>
-  <owl:Class rdf:about="#Descript"/>
 
-   <owl:Class rdf:about="#Commun">
-     <rdfs:subClassOf rdf:resource="#Group"/>
+  <owl:Class rdf:about="#characterist">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
+    <owl:equivalentClass rdf:resource="#descript"/>
+  </owl:Class>
+  <owl:Class rdf:about="#descript"/>
+
+   <owl:Class rdf:about="#commun">
+     <rdfs:subClassOf rdf:resource="#group"/>
      <rdfs:comment>A community is a social group of organisms sharing an environment, normally with shared interests.</rdfs:comment>
    </owl:Class>
 
-  <owl:Class rdf:about="#Type">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
+  <owl:Class rdf:about="#type">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
   </owl:Class>
 
-  <owl:Class rdf:about="#StandardIndustrialClassif">
-    <rdfs:subClassOf rdf:resource="#Industri"/>
-    <owl:equivalentClass rdf:resource="#SIC"/>
+  <owl:Class rdf:about="#standardindustrialclassif">
+    <rdfs:subClassOf rdf:resource="#industri"/>
+    <owl:equivalentClass rdf:resource="#sic"/>
   </owl:Class>
-  <owl:Class rdf:about="#SIC"/>
+  <owl:Class rdf:about="#sic"/>
 
-  <owl:Class rdf:about="#Industri">
-    <rdfs:subClassOf rdf:resource="#CategoricalProperti"/>
+  <owl:Class rdf:about="#industri">
+    <rdfs:subClassOf rdf:resource="#categoricalproperti"/>
   </owl:Class>
 
 </rdf:RDF>

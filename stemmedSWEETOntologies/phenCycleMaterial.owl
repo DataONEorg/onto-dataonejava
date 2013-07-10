@@ -43,93 +43,93 @@ owl:versionInfo="2.3">
      <owl:imports rdf:resource="&elem;"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="#MaterialCycl">
-    <rdfs:subClassOf rdf:resource="&graph;#Cycl"/>
+  <owl:Class rdf:about="#materialcycl">
+    <rdfs:subClassOf rdf:resource="&graph;#cycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
          <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#BiogeochemicalCycl">
-    <rdfs:subClassOf rdf:resource="#MaterialCycl"/>
+  <owl:Class rdf:about="#biogeochemicalcycl">
+    <rdfs:subClassOf rdf:resource="#materialcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:allValuesFrom rdf:resource="&ecol;#EcologicalPhenomena"/>
-         <owl:onProperty rdf:resource="&rela;#hasPhenomena"/>
+         <owl:allValuesFrom rdf:resource="&ecol;#ecologicalphenomena"/>
+         <owl:onProperty rdf:resource="&rela;#hasphenomena"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#CarbonCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
+  <owl:Class rdf:about="#carboncycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&elem;#Carbon"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&elem;#carbon"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#NitrogenCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
+  <owl:Class rdf:about="#nitrogencycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&elem;#Nitrogen"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&elem;#nitrogen"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#OxygenCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
+  <owl:Class rdf:about="#oxygencycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&elem;#Oxygen"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&elem;#oxygen"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#PhosphorusCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
+  <owl:Class rdf:about="#phosphoruscycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&elem;#Phosphorus"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&elem;#phosphorus"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#SulfurCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
+  <owl:Class rdf:about="#sulfurcycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&elem;#Sulfur"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&elem;#sulfur"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:about="#HydrologicCycl">
-    <rdfs:subClassOf rdf:resource="#MaterialCycl"/>
+  <owl:Class rdf:about="#hydrologiccycl">
+    <rdfs:subClassOf rdf:resource="#materialcycl"/>
      <rdfs:subClassOf>
        <owl:Restriction>
-         <owl:hasValue rdf:resource="&comp;#Water"/>
-         <owl:onProperty rdf:resource="&crela;#hasSubst"/>
+         <owl:hasValue rdf:resource="&comp;#water"/>
+         <owl:onProperty rdf:resource="&crela;#hassubst"/>
        </owl:Restriction>
      </rdfs:subClassOf>
-    <owl:equivalentClass rdf:resource="#HydrologicalCycl"/>
-    <owl:equivalentClass rdf:resource="#WaterCycl"/>
+    <owl:equivalentClass rdf:resource="#hydrologicalcycl"/>
+    <owl:equivalentClass rdf:resource="#watercycl"/>
   </owl:Class>
-  <owl:Class rdf:about="#HydrologicalCycl"/>
-  <owl:Class rdf:about="#WaterCycl"/>
+  <owl:Class rdf:about="#hydrologicalcycl"/>
+  <owl:Class rdf:about="#watercycl"/>
 
-  <owl:Class rdf:about="#NutrientCycl">
-    <rdfs:subClassOf rdf:resource="#BiogeochemicalCycl"/>
-    <rdfs:subClassOf rdf:resource="&sys;#Recycl"/>
+  <owl:Class rdf:about="#nutrientcycl">
+    <rdfs:subClassOf rdf:resource="#biogeochemicalcycl"/>
+    <rdfs:subClassOf rdf:resource="&sys;#recycl"/>
   </owl:Class>
 
 </rdf:RDF>
